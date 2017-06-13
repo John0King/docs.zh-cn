@@ -55,10 +55,10 @@ ms.lasthandoff: 03/13/2017
  [!code-cs[csrefKeywordsModifiers#12](../../../csharp/language-reference/keywords/codesnippet/CSharp/protected_2.cs)]  
   
  如果将 `x` 和 `y` 的访问级别更改为 [private](../../../csharp/language-reference/keywords/private.md)，编译器将发出错误消息：  
+   
+ `'Point.y' 不可访问，因为它具有一定的保护级别。`  
   
- `'Point.y' is inaccessible due to its protection level.`  
-  
- `'Point.x' is inaccessible due to its protection level.`  
+ `'Point.x' 不可访问，因为它具有一定的保护级别。` 
   
 ## <a name="c-language-specification"></a>C# 语言规范  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
@@ -72,4 +72,4 @@ ms.lasthandoff: 03/13/2017
  [修饰符](../../../csharp/language-reference/keywords/modifiers.md)   
  [public](../../../csharp/language-reference/keywords/public.md)   
  [private](../../../csharp/language-reference/keywords/private.md)   
- [内部](../../../csharp/language-reference/keywords/internal.md)
+ [internal](../../../csharp/language-reference/keywords/internal.md)
