@@ -72,4 +72,4 @@ ms.lasthandoff: 03/13/2017
  [修饰符](../../../csharp/language-reference/keywords/modifiers.md)   
  [public](../../../csharp/language-reference/keywords/public.md)   
  [private](../../../csharp/language-reference/keywords/private.md)   
- [内部](../../../csharp/language-reference/keywords/internal.md)
+ [internal](../../../csharp/language-reference/keywords/internal.md)
