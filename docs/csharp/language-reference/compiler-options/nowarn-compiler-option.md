@@ -1,5 +1,5 @@
 ---
-title: "-nowarn（C# 编译器选项）| Microsoft Docs"
+title: "-nowarn（C# 编译器选项）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -31,11 +31,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 34152b6e7247ac112bcc9c725402b8c9a5d631ed
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 3bae7e6d16c044b8f1aeba26de434cdf17479e82
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="nowarn-c-compiler-options"></a>/nowarn（C# 编译器选项）
@@ -66,15 +66,16 @@ ms.lasthandoff: 03/13/2017
   
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>在 Visual Studio 开发环境中设置此编译器选项  
   
-1.  打开项目的“属性” **** 页。 有关详细信息，请参阅[“项目设计器”->“生成”页 (C#)](https://docs.microsoft.com/visualstudio/ide/reference/build-page-project-designer-csharp)。  
+1.  打开项目的“属性”  页。 有关详细信息，请参阅[“项目设计器”->“生成”页 (C#)](/visualstudio/ide/reference/build-page-project-designer-csharp)。  
   
-2.  单击“生成”****属性页。  
+2.  单击“生成”属性页。  
   
-3.  修改“禁止显示警告”****属性。  
+3.  修改“禁止显示警告”属性。  
   
- 有关如何以编程方式设置此编译器的信息，请参阅 <xref:VSLangProj80.ProjectProperties3.DelaySign%2A>。  
+ 有关如何以编程方式设置此编译器选项的信息，请参阅 <xref:VSLangProj80.ProjectProperties3.DelaySign%2A>。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [（C# 编译器选项）](../../../csharp/language-reference/compiler-options/index.md)   
- [NIB 如何：修改项目属性和配置设置](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)   
+ [管理项目和解决方案属性](/visualstudio/ide/managing-project-and-solution-properties)   
  [C# 编译器错误](../../../csharp/language-reference/compiler-messages/index.md)
+

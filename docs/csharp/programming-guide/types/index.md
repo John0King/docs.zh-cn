@@ -1,5 +1,5 @@
 ---
-title: "类型（C# 编程指南）| Microsoft 文档"
+title: "类型（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -35,11 +35,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
-ms.openlocfilehash: 74604c2dfe16e6f90d5c0534fad3d72906dc07cc
+ms.translationtype: HT
+ms.sourcegitcommit: 9fc16c63a6e0e0dd31ee4a68fca8b945b8281e04
+ms.openlocfilehash: 906fa362c249c3e5abbd6f2ed3ba879a81334aeb
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 # <a name="types-c-programming-guide"></a>类型（C# 编程指南）
@@ -83,13 +83,13 @@ ms.lasthandoff: 05/10/2017
  有关详细信息，请参阅[显式转换和类型转换](../../../csharp/programming-guide/types/casting-and-type-conversions.md)。  
   
 ## <a name="built-in-types"></a>内置类型  
- C# 提供了一组标准的内置数值类型来表示整数、浮点值、布尔表达式、文本字符、十进制值和其他类型数据。 还有内置的 `string` 和 `object` 类型。 可以在任意 C# 程序中使用这些类型。 有关内置类型的详细信息，请参阅[类型参考表](../../../csharp/language-reference/keywords/reference-tables-for-types.md)。  
+ C# 提供了一组标准的内置数值类型来表示整数、浮点值、布尔表达式、文本字符、十进制值和其他类型数据。 还有内置的 `string` 和 `object` 类型。 这些类型可供在任何 C# 程序中使用。 有关内置类型的详细信息，请参阅[类型参考表](../../../csharp/language-reference/keywords/reference-tables-for-types.md)。  
   
 ## <a name="custom-types"></a>自定义类型  
  可以使用[结构](../../../csharp/language-reference/keywords/struct.md)、[类](../../../csharp/language-reference/keywords/class.md)、[接口](../../../csharp/language-reference/keywords/interface.md)和[枚举](../../../csharp/language-reference/keywords/enum.md)构造来创建你自己的自定义类型。 .NET Framework 类库本身就是 Microsoft 提供的一组自定义类型，以供你在自己的应用程序中使用。 默认情况下，类库中最常用的类型在任何 C# 程序中均可用。 对于其他类型，只有在显式添加对定义这些类型的程序集的项目引用时才可用。 在编译器获取对程序集的引用后，便可以在源代码中声明在此程序集中声明的类型的变量（和常量）。 有关详细信息，请参阅 [.NET Framework 类库](http://go.microsoft.com/fwlink/?LinkID=217856)。  
   
 ## <a name="the-common-type-system"></a>通用类型系统  
- 对于 [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] 中的类型系统，请务必了解以下两个基本要点：  
+ 对于 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 中的类型系统，请务必了解以下两个基本要点：  
   
 -   支持继承原则。 类型可以派生自其他类型（称为*基类型*）。 派生类型继承（有一些限制）基类型的方法、属性和其他成员。 基类型可以转而派生自其他某种类型，在这种情况下，派生类型可以继承其继承层次结构中两个基类型的成员。 所有类型（包括 <xref:System.Int32?displayProperty=fullName>C# 关键字：[int](../../../csharp/language-reference/keywords/int.md)等内置数值类型）最终都派生自单个基类型，即 <xref:System.Object?displayProperty=fullName>（C# 关键字：[object](../../../csharp/language-reference/keywords/object.md)。 这样的统一类型层次结构称为[通用类型系统](../../../standard/base-types/common-type-system.md) (CTS)。 若要详细了解 C# 中的继承，请参阅[继承](../../../csharp/programming-guide/classes-and-structs/inheritance.md)。  
   
@@ -129,7 +129,7 @@ char c = 'Z';
   
  [!code-cs[csProgGuideObjects#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/index_4.cs)]  
   
- 有关结构的详细信息，请参阅[结构](../../../csharp/programming-guide/classes-and-structs/structs.md)。 若要详细了解 [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] 中的值类型，请参阅[通用类型系统](../../../standard/base-types/common-type-system.md)。  
+ 有关结构的详细信息，请参阅[结构](../../../csharp/programming-guide/classes-and-structs/structs.md)。 若要详细了解 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 中的值类型，请参阅[通用类型系统](../../../standard/base-types/common-type-system.md)。  
   
  另一种值类型是[枚举](../../../csharp/language-reference/keywords/enum.md)。 枚举定义的是一组已命名的整型常量。 例如，.NET Framework 类库中的 <xref:System.IO.FileMode?displayProperty=fullName> 枚举包含一组已命名的常量整数，用于指定应采用的文件打开方式。 下面的示例展示了具体定义：  
  
@@ -140,7 +140,7 @@ char c = 'Z';
  所有枚举从 <xref:System.Enum?displayProperty=fullName>（继承自 <xref:System.ValueType?displayProperty=fullName>）继承。 适用于结构的所有规则也适用于枚举。 有关枚举的详细信息，请参阅[枚举类型](../../../csharp/programming-guide/enumeration-types.md)。  
   
 ### <a name="reference-types"></a>引用类型  
- 定义为[类](../../../csharp/language-reference/keywords/class.md)、[委托](../../../csharp/language-reference/keywords/delegate.md)、数组或[接口](../../../csharp/language-reference/keywords/interface.md)的类型是*引用类型*。 在运行时，如果声明引用类型的变量，那么在使用 [new](../../../csharp/language-reference/keywords/new.md) 运算符显式创建对象实例或为变量分配已在其他位置使用 `new, as shown in the following example:` 创建的对象前，变量会一直包含 [null](../../../csharp/language-reference/keywords/null.md) 值，如以下示例所示：  
+ 定义为[类](../../../csharp/language-reference/keywords/class.md)、[委托](../../../csharp/language-reference/keywords/delegate.md)、数组或[接口](../../../csharp/language-reference/keywords/interface.md)的类型是*引用类型*。 在运行时，当声明引用类型的变量时，该变量会一直包含值 [null](../../../csharp/language-reference/keywords/null.md)，直至使用 [new](../../../csharp/language-reference/keywords/new.md) 运算符显式创建对象的实例，或者为该变量分配已经在其他位置使用 `new` 创建的对象，如下所示：
   
 ```csharp  
 MyClass mc = new MyClass();  
@@ -205,9 +205,9 @@ stringList.Add(4);
 -   [泛型](../../../csharp/programming-guide/generics/index.md)  
 
 ## <a name="c-language-specification"></a>C# 语言规范  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [C# 参考](../../../csharp/language-reference/index.md)   
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [XML 数据类型转换](../../../standard/data/xml/conversion-of-xml-data-types.md)   

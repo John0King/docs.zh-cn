@@ -1,5 +1,5 @@
 ---
-title: "C# 中的 LINQ 入门 | Microsoft Docs"
+title: "C# 中的 LINQ 入门"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -34,13 +34,14 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 88eff7c3909a31939f5789fd19bc4f1d07d013b7
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 02a76889912e441cc0d1bcf27cb5e9421ef852ad
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
-# <a name="getting-started-with-linq-in-c"></a>C 中的 LINQ 入门#
+# <a name="getting-started-with-linq-in-c"></a>C# 中的 LINQ 入门
 本部分包含可帮助了解 LINQ 文档和示例的其余内容的基本背景信息。  
   
 ## <a name="in-this-section"></a>本节内容  
@@ -83,3 +84,4 @@ ms.lasthandoff: 03/13/2017
   
  [Visual Basic 中的 LINQ 入门](../../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md)  
  提供指向某些主题的链接，这些主题介绍如何将 LINQ 与 Visual Basic 结合使用。
+

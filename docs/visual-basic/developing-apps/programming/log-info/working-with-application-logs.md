@@ -1,5 +1,5 @@
 ---
-title: "在 Visual Basic 中使用应用程序日志 | Microsoft Docs"
+title: "使用 Application 日志 (Visual Basic)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -33,18 +33,18 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: 3cc9bec56817bbccd5faa8e05535cb565a11baac
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 0f6916571ff978c6558343ff51217b5d342a4d5c
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="working-with-application-logs-in-visual-basic"></a>使用 Application 日志 (Visual Basic)
 使用 `My.Applicaton.Log` 和 `My.Log` 对象可以轻松将日志记录和跟踪信息写入日志。  
   
 ## <a name="how-messages-are-logged"></a>如何记录消息  
- 首先，通过日志的 <xref:Microsoft.VisualBasic.Logging.Log.TraceSource%2A> 属性的 <xref:System.Diagnostics.TraceSource.Switch%2A> 属性检查消息的严重性。 默认情况下，只有严重性级别为“信息”及以上的消息才会传递到日志的 `TraceListener` 集合中指定的跟踪侦听器。 然后，各侦听器会将消息的严重性与侦听器的 <xref:System.Diagnostics.TraceSource.Switch%2A> 属性进行比较。 如果消息的严重性足够很高，则侦听器将写出消息。  
+ 首先，通过日志的 <xref:System.Diagnostics.TraceSource.Switch%2A> 属性的 <xref:Microsoft.VisualBasic.Logging.Log.TraceSource%2A> 属性检查消息的严重性。 默认情况下，只有严重性级别为“信息”及以上的消息才会传递到日志的 `TraceListener` 集合中指定的跟踪侦听器。 然后，各侦听器会将消息的严重性与侦听器的 <xref:System.Diagnostics.TraceSource.Switch%2A> 属性进行比较。 如果消息的严重性足够很高，则侦听器将写出消息。  
   
  下图演示如何将写入 `WriteEntry` 方法的消息传递到日志的跟踪侦听器的 `WriteLine` 方法：  
   
@@ -57,9 +57,9 @@ ms.lasthandoff: 05/22/2017
 ## <a name="where-messages-are-logged"></a>记录消息的位置  
  如果程序集没有配置文件，则 `My.Application.Log` 和 `My.Log` 对象会将消息写入应用程序的调试输出（通过 <xref:System.Diagnostics.DefaultTraceListener> 类实现）。 此外，`My.Application.Log` 对象会将消息写入程序集的日志文件（通过 <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener> 类实现），`My.Log` 对象会将消息写入 ASP.NET 网页的输出（通过 <xref:System.Web.WebPageTraceListener> 类实现）。  
   
- 当在调试模式下运行应用程序时，可以在 [!INCLUDE[vsprvs](../../../../csharp/includes/vsprvs_md.md)] 的“输出”窗口中查看调试输出。 若要打开“输出”  窗口中，请单击“调试” 菜单项，指向“Windows” ，然后单击“输出” 。 在“输出” 窗口中，在“显示输出来源” 框中选择“调试”。  
+ 当在调试模式下运行应用程序时，可以在 [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] 的“输出”窗口中查看调试输出。 若要打开“输出”  窗口中，请单击“调试” 菜单项，指向“Windows” ，然后单击“输出” 。 在“输出”  窗口中，在“显示输出来源”  框中选择“调试”  。  
   
- 默认情况下， `My.Application.Log` 将日志文件写入用户应用程序数据的路径。 可以通过 <xref:Microsoft.VisualBasic.Logging.Log.DefaultFileLogWriter%2A> 对象的 <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.FullLogFileName%2A> 属性获取路径。 路径的格式如下：  
+ 默认情况下， `My.Application.Log` 将日志文件写入用户应用程序数据的路径。 可以通过 <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.FullLogFileName%2A> 对象的 <xref:Microsoft.VisualBasic.Logging.Log.DefaultFileLogWriter%2A> 属性获取路径。 路径的格式如下：  
   
  `BasePath`\\`CompanyName`\\`ProductName`\\`ProductVersion`  
   
@@ -84,7 +84,7 @@ ms.lasthandoff: 05/22/2017
   
  以下代码示例演示了 `<sources>`、 `<switches>`和 `<sharedListeners>` 节点：  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <sources>  
@@ -130,3 +130,4 @@ ms.lasthandoff: 05/22/2017
 ## <a name="see-also"></a>另请参阅  
  <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=fullName>   
  [记录来自应用程序的信息](../../../../visual-basic/developing-apps/programming/log-info/logging-information-from-the-application.md)
+

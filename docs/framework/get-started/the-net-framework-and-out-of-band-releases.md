@@ -1,5 +1,5 @@
 ---
-title: ".NET Framework 和非常态版本 | Microsoft Docs"
+title: ".NET Framework 和带外版本"
 ms.custom: 
 ms.date: 03/30/2017
 ms.prod: .net-framework
@@ -14,10 +14,11 @@ caps.latest.revision: 19
 author: mairaw
 ms.author: mairaw
 manager: wpickett
-translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: ed352825df8ba187add4b0d8bba252361c7167aa
-ms.lasthandoff: 04/18/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 208ea77318d67900eb059606b8ecd8e0e3b203a0
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="the-net-framework-and-out-of-band-releases"></a>.NET Framework 和带外版本
@@ -65,3 +66,4 @@ ms.lasthandoff: 04/18/2017
   
 ## <a name="see-also"></a>另请参阅  
  [入门](../../../docs/framework/get-started/index.md)
+

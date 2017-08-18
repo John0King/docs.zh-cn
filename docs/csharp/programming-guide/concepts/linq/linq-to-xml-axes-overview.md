@@ -1,5 +1,5 @@
 ---
-title: "LINQ to XML 轴概述 (C#) | Microsoft Docs"
+title: "LINQ to XML 轴概述 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,12 +14,11 @@ ms.assetid: 516792fb-461d-40a8-8a50-9993a51258fc
 caps.latest.revision: 4
 author: BillWagner
 ms.author: wiwagn
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: b43d3cb5cc7154c1133c5fa17e5bdacca97a38c9
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: fdd4e6ffc17bc2c39d0dbeadbba955aacfe02dd9
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
-
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="linq-to-xml-axes-overview-c"></a>LINQ to XML 轴概述 (C#)
@@ -27,9 +26,9 @@ ms.lasthandoff: 05/22/2017
   
  如同 [XElement 类概述](http://msdn.microsoft.com/library/d35180fe-7016-4895-9bfc-ba1e3f7875ec)中所述，<xref:System.Xml.Linq.XElement> 对象表示单个元素节点。 元素的内容可以是复杂的（有时称为结构化内容），也可以是简单元素。 简单元素可以是空的，也可以包含值。 如果节点包含结构化内容，则可以使用各种轴方法来检索子代元素的枚举。 最常使用的轴方法是 <xref:System.Xml.Linq.XContainer.Elements%2A> 和 <xref:System.Xml.Linq.XContainer.Descendants%2A>。  
   
- 除了返回集合的轴方法之外，还有两个方法会在 [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] 查询中经常用到。 <xref:System.Xml.Linq.XContainer.Element%2A> 方法返回单个 <xref:System.Xml.Linq.XElement>。 <xref:System.Xml.Linq.XElement.Attribute%2A> 方法返回单个 <xref:System.Xml.Linq.XAttribute>。  
+ 除了返回集合的轴方法之外，还有两个方法会在 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 查询中经常用到。 <xref:System.Xml.Linq.XContainer.Element%2A> 方法返回单个 <xref:System.Xml.Linq.XElement>。 <xref:System.Xml.Linq.XElement.Attribute%2A> 方法返回单个 <xref:System.Xml.Linq.XAttribute>。  
   
- 对于很多应用来说，[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] 查询提供了检查树、从树中提取数据以及转换树的最有效的方法。 [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] 查询对实现 <xref:System.Collections.Generic.IEnumerable%601> 的对象进行操作，[!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] 轴返回 <xref:System.Xml.Linq.XElement> 集合的 <xref:System.Collections.Generic.IEnumerable%601>，以及 <xref:System.Xml.Linq.XAttribute> 集合的 <xref:System.Collections.Generic.IEnumerable%601>。 需要使用这些集合来执行查询。  
+ 对于很多应用来说，[!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 查询提供了检查树、从树中提取数据以及转换树的最有效的方法。 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 查询对实现 <xref:System.Collections.Generic.IEnumerable%601> 的对象进行操作，[!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 轴返回 <xref:System.Xml.Linq.XElement> 集合的 <xref:System.Collections.Generic.IEnumerable%601>，以及 <xref:System.Xml.Linq.XAttribute> 集合的 <xref:System.Collections.Generic.IEnumerable%601>。 需要使用这些集合来执行查询。  
   
  除了检索元素和属性集合的轴方法之外，还有一些轴方法可以十分详尽地循环访问树。 例如，可以处理树的节点，而不是处理元素和属性。 节点比元素和属性有更细的粒度。 处理节点时，可以检查 XML 注释、文本节点、处理指令以及其他方面。 该功能很重要，例如对正在编写字处理器并希望将文档保存为 XML 的用户非常有用。 但是，大部分 XML 程序员主要关心的是元素、属性和它们的值。  
   
@@ -69,3 +68,4 @@ ms.lasthandoff: 05/22/2017
   
 ## <a name="see-also"></a>另请参阅  
  [LINQ to XML 轴 (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-axes.md)
+

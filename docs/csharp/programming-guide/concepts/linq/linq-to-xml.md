@@ -1,5 +1,5 @@
 ---
-title: LINQ to XML (C#) | Microsoft Docs
+title: LINQ to XML (C#)
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,10 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 9772ea7fb9671bef481f0b9011ddc83d0a1b7342
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: ccfecd45f68d60d2bbb58d51aa516a20c567a853
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="linq-to-xml-c"></a>LINQ to XML (C#)
@@ -32,7 +33,7 @@ LINQ to XML 提供使用 .NET 语言集成查询 (LINQ) Framework 的内存中 X
   
 ## <a name="in-this-section"></a>本节内容  
  [入门 (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/getting-started-linq-to-xml.md)  
- 提供有关 LINQ to XML 的介绍性信息，包括概念概述以及 <xref:System.Xml.Linq?displayProperty=fullName> 类的概述。  
+ 提供有关 LINQ to XML 的介绍性信息，包括概念概述和 <xref:System.Xml.Linq?displayProperty=fullName> 类的概述。  
   
  [编程指南 (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)  
  提供有关使用 LINQ to XML 进行编程的概念性和指导性信息。  
@@ -42,3 +43,4 @@ LINQ to XML 提供使用 .NET 语言集成查询 (LINQ) Framework 的内存中 X
   
 ## <a name="see-also"></a>请参阅  
  [语言集成查询 (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/index.md)
+

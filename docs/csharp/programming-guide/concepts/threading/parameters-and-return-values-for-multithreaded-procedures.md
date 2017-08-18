@@ -1,5 +1,5 @@
 ---
-title: "多线程过程的参数和返回值 (C#) | Microsoft Docs"
+title: "多线程过程的参数和返回值 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,10 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 95fdc0f74c1f2c35a4f3b5c0a8f40f5d4fe9457c
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 5e377a006409dbae49b3c00297f69e8d55a01295
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="parameters-and-return-values-for-multithreaded-procedures-c"></a>多线程过程的参数和返回值 (C#)
@@ -72,7 +73,7 @@ protected void TestArea()
  请注意，调用 `CalcArea` 方法后，`TestArea` 过程并不检查 `Area` 字段的值。 `CalcArea` 运行于单独的线程，因此，如果在调用 `Thread.Start` 后立即检查，则无法确定 `Area` 字段已被设置。 下一节讨论从多线程过程返回值的更好方法。  
   
 ## <a name="returning-values-from-multithreaded-procedures"></a>从多线程过程返回值  
- 由于这些过程不能为函数也不能使用 `ByRef` 参数，因而从运行于不同线程的过程返回值是很复杂的。 返回值的最简单的方法是：使用 <xref:System.ComponentModel.BackgroundWorker> 组件来管理线程，在任务完成时引发事件，然后用事件处理程序处理结果。  
+ 由于这些过程不能为函数也不能使用 `ByRef` 参数，因而从运行于不同线程的过程返回值是很复杂的。 返回值最简单的方法是：使用 <xref:System.ComponentModel.BackgroundWorker> 组件来管理线程，在任务完成时引发事件，然后用事件处理程序处理结果。  
   
  下面的示例通过从运行于单独线程的某过程引发一个事件来返回值：  
   
@@ -131,7 +132,7 @@ private void BackgroundWorker1_RunWorkerCompleted(
 }  
 ```  
   
- 可以通过使用 <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A> 方法的可选 `ByVal` 状态对象变量为线程池线程提供参数和返回值。 线程计时器线程也支持将状态对象用于此目的。 有关线程池和线程计时器的信息，请参阅[线程池 (C#)](../../../../csharp/programming-guide/concepts/threading/thread-pooling.md) 和[线程计时器 (C#)](../../../../csharp/programming-guide/concepts/threading/thread-timers.md)。  
+ 可以通过使用 <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A> 方法的可选 `ByVal` 状态对象变量来向线程池线程提供参数并返回值。 线程计时器线程也支持将状态对象用于此目的。 有关线程池和线程计时器的信息，请参阅[线程池 (C#)](../../../../csharp/programming-guide/concepts/threading/thread-pooling.md) 和[线程计时器 (C#)](../../../../csharp/programming-guide/concepts/threading/thread-timers.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [演练：利用 BackgroundWorker 组件进行多线程处理 (C#)](../../../../csharp/programming-guide/concepts/threading/walkthrough-multithreading-with-the-backgroundworker-component.md)   
@@ -141,3 +142,4 @@ private void BackgroundWorker1_RunWorkerCompleted(
  [多线程应用程序 (C#)](../../../../csharp/programming-guide/concepts/threading/multithreaded-applications.md)   
  [委托](../../../../csharp/programming-guide/delegates/index.md)   
  [组件中的多线程处理](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)
+

@@ -1,5 +1,5 @@
 ---
-title: "如何：执行大型 XML 文档的流式转换 (C#) | Microsoft 文档"
+title: "如何：执行大型 XML 文档的流式转换 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,11 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 400dfda51d978f35c3995f90840643aaff1b9c13
-ms.openlocfilehash: fc8716c2190ac42b66ba8d76ccfec152ea804c4a
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 952fad19f9abdea464e2763b721446ab5fe68301
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-perform-streaming-transform-of-large-xml-documents-c"></a>如何：执行大型 XML 文档的流式转换 (C#)
@@ -33,7 +33,7 @@ ms.lasthandoff: 05/22/2017
   
  即使使用[如何：流处理可访问标头信息的 XML 片段 (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-stream-xml-fragments-with-access-to-header-information.md) 中说明的技术，在试图装配包含转换的文档的 XML 树时，内存占用量也会过大。  
   
- 主要方法有两种。 一种方法是使用 <xref:System.Xml.Linq.XStreamingElement> 的延迟处理特性。 另一种方法是创建一个 <xref:System.Xml.XmlWriter> 并使用 [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] 的功能将元素写入 <xref:System.Xml.XmlWriter>。 本主题演示这两种方法。  
+ 主要方法有两种。 一种方法是使用 <xref:System.Xml.Linq.XStreamingElement> 的延迟处理特性。 另一种方法是创建一个 <xref:System.Xml.XmlWriter> 并使用 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 的功能将元素写入 <xref:System.Xml.XmlWriter>。 本主题演示这两种方法。  
   
 ## <a name="example"></a>示例  
  以下示例在[如何：流处理可访问标头信息的 XML 片段 (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-stream-xml-fragments-with-access-to-header-information.md) 中的示例基础上建立。  
@@ -208,7 +208,7 @@ static void Main(string[] args)
 ## <a name="example"></a>示例  
  以下示例同样在[如何：流处理可访问标头信息的 XML 片段 (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-stream-xml-fragments-with-access-to-header-information.md) 中的示例基础上建立。  
   
- 本示例使用 [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] 的功能将元素写入 <xref:System.Xml.XmlWriter>。 本示例可在保持很小的内存需求量的同时转换非常大的文档。  
+ 本示例使用 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 的功能将元素写入 <xref:System.Xml.XmlWriter>。 本示例可在保持很小的内存需求量的同时转换非常大的文档。  
   
  请注意，自定义轴 (`StreamCustomerItem`) 经过专门编写，可以处理具有 `Customer`、`Name` 和 `Item` 元素，并且这些元素将按下面 Source.xml 文档排列的文档。 不过，更可靠的实现将会使用 XSD 验证源文档或将会准备一个更可靠的实现以分析无效文档。  
   
@@ -341,3 +341,4 @@ static void Main(string[] args)
   
 ## <a name="see-also"></a>请参阅  
  [高级 LINQ to XML 编程 (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)
+

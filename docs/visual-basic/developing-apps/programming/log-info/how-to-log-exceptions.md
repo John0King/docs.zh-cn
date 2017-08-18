@@ -1,5 +1,5 @@
 ---
-title: "如何：在 Visual Basic 中记录异常 | Microsoft Docs"
+title: "如何：在 Visual Basic 中记录异常"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -31,11 +31,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: 8a5233f5e39c5e6c423a453cd241be40877d2ba8
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: adf2dc683a139d21f24379efc779d4510a2057eb
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-log-exceptions-in-visual-basic"></a>如何：在 Visual Basic 中记录异常
@@ -69,15 +69,15 @@ ms.lasthandoff: 05/22/2017
   
 ### <a name="to-log-an-unhandled-exception"></a>记录未处理的异常  
   
-1.  在 “解决方案资源管理器”中选择一个项目。**** 在 “项目” 菜单上，选择 “属性”。****  
+1.  在 “解决方案资源管理器”中选择一个项目。 在 **“项目”** 菜单上，选择 **“属性”**。  
   
-2.  单击“应用程序” 选项卡。****  
+2.  单击“应用程序”  选项卡。  
   
-3.  单击“查看应用程序事件” 按钮，打开“代码编辑器”。****  
+3.  单击“查看应用程序事件”  按钮，打开“代码编辑器”。  
   
      此时将打开 ApplicationEvents.vb 文件。  
   
-4.  在“代码编辑器”中打开 ApplicationEvents.vb 文件。 在“常规”  菜单上，选择“MyApplication 事件”。****  
+4.  在“代码编辑器”中打开 ApplicationEvents.vb 文件。 在“常规”  菜单上，选择“MyApplication 事件”。  
   
 5.  在“声明”菜单上，选择“UnhandledException”。  
   
@@ -99,3 +99,4 @@ ms.lasthandoff: 05/22/2017
  [如何：编写日志消息](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-log-messages.md)   
  [演练：确定 My.Application.Log 写入信息的位置](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md)   
  [演练：更改 My.Application.Log 写入信息的位置](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-changing-where-my-application-log-writes-information.md)
+

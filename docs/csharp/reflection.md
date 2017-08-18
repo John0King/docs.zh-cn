@@ -8,11 +8,12 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 53339c51-0fbc-4827-9de2-39c805bfc06b
-redirect_url: /dotnet/articles/framework/reflection-and-codedom/reflection
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 14bbb081c41eee6acf6482469987295f02ea9416
-ms.lasthandoff: 03/13/2017
+redirect_url: /dotnet/framework/reflection-and-codedom/reflection
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: c862e4a8294cf95975765107d59a8c65d65616af
+ms.contentlocale: zh-cn
+ms.lasthandoff: 08/11/2017
 
 ---
 

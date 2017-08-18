@@ -24,6 +24,8 @@
 ### [自动实现的属性](auto-implemented-properties.md)
 ### [如何：使用自动实现的属性实现轻量类](how-to-implement-a-lightweight-class-with-auto-implemented-properties.md)
 ## [方法](methods.md)
+### [本地函数](local-functions.md)
+### [ref 返回结果和局部变量](ref-returns.md)
 ### [传递参数](passing-parameters.md)
 #### [传递值类型参数](passing-value-type-parameters.md)
 #### [传递引用类型参数](passing-reference-type-parameters.md)

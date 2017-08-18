@@ -1,5 +1,5 @@
 ---
-title: "如何：使用特性创建 C-C++ 联合 (C#) | Microsoft Docs"
+title: "如何：使用特性创建 C-C++ 联合 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,10 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: dd6bc60dfd1c6146d8fa72abdcfc6a00006817aa
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 4532829080d994cf4cec92d64a12e3bf1890dc6a
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-create-a-cc-union-by-using-attributes-c"></a>如何：使用特性创建 C/C++ 联合 (C#)
@@ -82,7 +83,7 @@ ms.lasthandoff: 03/13/2017
   
  两个整数字段 `i1` 和 `i2` 共享与 `lg` 相同的内存位置。 使用平台调用时，这种对结构布局的控制很有用。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.Reflection>   
  <xref:System.Attribute>   
  [C# 编程指南](../../../../csharp/programming-guide/index.md)   
@@ -91,3 +92,4 @@ ms.lasthandoff: 03/13/2017
  [特性 (C#)](../../../../csharp/programming-guide/concepts/attributes/index.md)   
  [创建自定义特性 (C#)](../../../../csharp/programming-guide/concepts/attributes/creating-custom-attributes.md)   
  [使用反射访问特性 (C#)](../../../../csharp/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)
+

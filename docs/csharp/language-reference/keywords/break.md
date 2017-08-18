@@ -1,5 +1,5 @@
 ---
-title: "break（C# 参考）| Microsoft Docs"
+title: "break（C# 参考）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -30,11 +30,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 1ad255ce1b57da81b791897044d1038f0ef4981a
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 73f6b6a37513b3aed796d811672fa43fa9e1c0b1
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="break-c-reference"></a>break（C# 参考）
@@ -65,10 +65,11 @@ Sorry, invalid selection.
 ## <a name="c-language-specification"></a>C# 语言规范  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [C# 参考](../../../csharp/language-reference/index.md)   
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [C# 关键字](../../../csharp/language-reference/keywords/index.md)   
  [switch](../../../csharp/language-reference/keywords/switch.md)   
  [跳转语句](../../../csharp/language-reference/keywords/jump-statements.md)   
  [迭代语句](../../../csharp/language-reference/keywords/iteration-statements.md)
+

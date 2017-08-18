@@ -1,5 +1,5 @@
 ---
-title: "如何：执行文本到 XML 的流式转换 (C#) | Microsoft Docs"
+title: "如何：执行文本到 XML 的流式转换 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,15 +14,15 @@ ms.assetid: 9b3bd941-d0ff-4f2d-ae41-7c3b81d8fae6
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: bba371063439dfe5698ab6c3342500eec9fdc015
-ms.lasthandoff: 03/13/2017
-
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 3351f88bb27807714b3566992242e72a5d03ac14
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-perform-streaming-transformations-of-text-to-xml-c"></a>如何：执行文本到 XML 的流式转换 (C#)
-处理文本文件的一种方法是编写使用 `yield return` 构造一次流式处理一行文本文件的扩展方法。 然后可以编写以迟缓延迟方式处理文本文件的 LINQ 查询。 如果之后使用 <xref:System.Xml.Linq.XStreamingElement> 对输出进行流式处理，则可以创建从文本文件到 XML 的转换，不管源文本文件大小如何，这种转换占用的内存量始终最小。  
+处理文本文件的一种方法是编写使用 `yield return` 构造一次流式处理一行文本文件的扩展方法。 然后可以编写以迟缓延迟方式处理文本文件的 LINQ 查询。 如果之后使用 <xref:System.Xml.Linq.XStreamingElement> 对输出进行流式处理，则可以创建占用最少量内存的从文本文件到 XML 的转换，而不管源文本文件大小如何。  
   
  关于流式转换存在一些告诫。 流式转换最适用于可以一次性处理整个文件并且可以按照源文档中的行顺序处理各行的情况。 如果必须多次处理文件或者必须在处理行之前对行进行排序，则将失去使用流式技术所具有的许多好处。  
   
@@ -98,6 +98,7 @@ class Program
 </Root>  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.Xml.Linq.XStreamingElement>   
  [高级查询技术 (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)
+

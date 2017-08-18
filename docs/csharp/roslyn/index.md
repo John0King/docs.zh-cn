@@ -1,5 +1,5 @@
 ---
-title: "使用 .NET 编译器 SDK - C# 指南 | Microsoft Docs"
+title: "使用 .NET 编译器 SDK - C# 指南"
 description: "探索了 Roslyn API，以创建自动诊断和代码修复"
 keywords: .NET, .NET Core, C#, Roslyn,
 ms.date: 06/25/2016
@@ -8,12 +8,12 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: abed9e00-2ddc-468e-9cca-d033bd6a7e36
-redirect_url: /dotnet/articles/csharp/index
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 4437ce5d344cf06d30e31911def6287999fc6ffc
-ms.openlocfilehash: b08430b9d34fa5e5248438cf489eeb21e17404e3
+redirect_url: /dotnet/csharp/index
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: b227d67fd5431da328e1686fd9afc6a3b9db035e
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 

@@ -10,11 +10,11 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: b6a0539a-8ce5-4da7-adcf-44be345a2714
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 81f31f1abc9db14b6b899564d67ca6e90d269ad7
-ms.openlocfilehash: bbb524e50d74207227420d073afd5758d3d5aaa7
+ms.translationtype: HT
+ms.sourcegitcommit: 2762cdc983465979a530192716c33de7044dd1ed
+ms.openlocfilehash: 659a3366b00d6abe6598c31774d008c6b8f400fd
 ms.contentlocale: zh-cn
-ms.lasthandoff: 04/11/2017
+ms.lasthandoff: 08/04/2017
 
 ---
 
@@ -58,7 +58,7 @@ Lambda 表达式使用 [lambda 声明运算符](language-reference/operators/lam
 
 [!code-csharp[csSnippets.Lambdas](../../samples/snippets/csharp/concepts/lambda-expressions/expression3.cs#3)]
 
-在上一个示例中，请注意表达式 Lambda 的主体可以包含一个方法调用。 但是，如果要创建在 .NET Framework 外部（例如 SQL Server 或实体框架 (EF)）计算的表达式树，则应避免在 Lambda 表达式中使用方法调用，因为这些方法在 .NET 运行时上下文之外可能没有任何意义。 在这种情况下，如果选择使用方法调用，请务必对其进行全面测试，确保可成功解析此方法调用。
+在上一个示例中，请注意表达式 Lambda 的主体可以包含一个方法调用。 但是，如果要创建在 .NET Framework 外部（例如 SQL Server 或实体框架 (EF)）计算的表达式树，则应避免在 Lambda 表达式中使用方法调用，因为这些方法在 .NET 实现的上下文之外可能没有任何意义。 在这种情况下，如果选择使用方法调用，请务必对其进行全面测试，确保可成功解析此方法调用。
 
 ## <a name="statement-lambdas"></a>语句 lambda ##
 
@@ -156,7 +156,7 @@ Lambda 类型推理的一般规则如下：
 
 - Lambda 表达式中的返回语句不会导致封闭方法返回。
 
-- 如果跳转语句的目标在块外部，则 lambda 表达式不能包含位于 lambda 函数内部的 `goto` 语句、`break` 语句或 `continue` 语句。 同样，如果目标在块内部，则在 lambda 函数块外部使用跳转语句也是错误的。
+- 如果跳转语句的目标在块外部，则 lambda 表达式不能包含位于 lambda 函数内部的 `goto` 语句、 `break` 语句或 `continue` 语句。 同样，如果目标在块内部，则在 lambda 函数块外部使用跳转语句也是错误的。
 
 ## <a name="see-also"></a>请参阅 ##
 

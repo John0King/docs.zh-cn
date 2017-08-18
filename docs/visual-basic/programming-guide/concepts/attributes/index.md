@@ -1,5 +1,5 @@
 ---
-title: "特性概述 (Visual Basic) | Microsoft 文档"
+title: "特性概述 (Visual Basic)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -20,10 +20,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 81f6275334a0ba1507dcff2bcd85e0b1aa276067
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 0464de06390a9899cbe312b16cbad41d0b6639eb
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="attributes-overview-visual-basic"></a>特性概述 (Visual Basic)
@@ -42,7 +43,7 @@ ms.lasthandoff: 03/13/2017
 ## <a name="using-attributes"></a>使用属性  
  可以将特性附加到大多数的声明中，尽管特定特性可能会限制可有效附加到的声明的类型。 在 Visual Basic 中，特性是用尖括号 (\< >) 括起来的。 特性的后面必须紧接着应用它的元素，且两者必须位于同一代码行。  
   
- 在以下示例中，<xref:System.SerializableAttribute> 特性用于将具体特征应用于类：  
+ 在此示例中，<xref:System.SerializableAttribute> 特性用于将具体特征应用于类：  
   
 ```vb  
 <System.Serializable()> Public Class SampleClass  
@@ -50,7 +51,7 @@ ms.lasthandoff: 03/13/2017
 End Class  
 ```  
   
- 包含特性 <xref:System.Runtime.InteropServices.DllImportAttribute> 的方法声明如下：  
+ 下方声明了一个具有特性 <xref:System.Runtime.InteropServices.DllImportAttribute> 的方法：  
   
 ```vb  
 Imports System.Runtime.InteropServices  
@@ -75,7 +76,7 @@ Sub MethodB(<Out(), [In]()> ByVal x As Double)
 End Sub  
 ```  
   
- 对于给定实体，一些特性可以指定多次。 例如，特性 <xref:System.Diagnostics.ConditionalAttribute> 就指定了多次：  
+ 对于给定实体，一些特性可以指定多次。 <xref:System.Diagnostics.ConditionalAttribute> 便属于此类多用途特性：  
   
 ```vb  
 <Conditional("DEBUG"), Conditional("TEST1")>   
@@ -124,9 +125,9 @@ Module: CLSCompliant(True)>
 ## <a name="common-uses-for-attributes"></a>特性的常见用途  
  下面列出了代码中特性的一些常见用途：  
   
--   在 Web 服务中使用 `WebMethod` 特性标记方法，以指明方法应可通过 SOAP 协议进行调用。 有关详细信息，请参阅 <xref:System.Web.Services.WebMethodAttribute>。  
+-   在 Web 服务中使用 `WebMethod` 特性标记方法，以指明方法应可通过 SOAP 协议进行调用。 有关详细信息，请参阅<xref:System.Web.Services.WebMethodAttribute>。  
   
--   描述在与本机代码互操作时如何封送方法参数。 有关详细信息，请参阅 <xref:System.Runtime.InteropServices.MarshalAsAttribute>。  
+-   描述在与本机代码互操作时如何封送方法参数。 有关详细信息，请参阅<xref:System.Runtime.InteropServices.MarshalAsAttribute>。  
   
 -   描述类、方法和接口的 COM 属性。  
   
@@ -163,3 +164,4 @@ Module: CLSCompliant(True)>
  [Visual Basic 编程指南](../../../../visual-basic/programming-guide/index.md)   
  [反射 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md)   
  [特性](https://msdn.microsoft.com/library/5x6cd29c)
+

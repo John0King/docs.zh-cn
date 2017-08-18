@@ -5,15 +5,15 @@ author: spboyer
 keywords: ".NET, 容器, 控制台, 应用程序"
 ms.date: 09/28/2016
 ms.topic: article
-ms.prod: .net-framework-4.6
+ms.prod: .net-framework
 ms.technology: vs-ide-deployment
 ms.devlang: dotnet
 ms.assetid: 85cca1d5-c9a4-4eb2-93e6-4f878de07fd7
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 890c058bd09893c2adb185e1d8107246eef2e20a
-ms.openlocfilehash: 4f1034763e4dae3711694b441b7a64b40cc99456
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 2fdce1e131eaa0d6952b2910f73105f097487711
 ms.contentlocale: zh-cn
-ms.lasthandoff: 04/18/2017
+ms.lasthandoff: 08/11/2017
 
 ---
 
@@ -86,7 +86,7 @@ Dockerfile 中的首行使用 [`FROM`](https://docs.docker.com/engine/reference/
 ## <a name="creating-the-image"></a>创建映像
 为创建 Docker 映像，将以下代码添加到 *build.ps1* 脚本。 运行脚本时，使用从 MSBuild（在[生成应用程序](#building-the-application)部分定义）编译的资产创建 `console-random-answer-generator` 映像。
 
-```
+```powershell
 $ImageName="console-random-answer-generator"
 
 function Invoke-Docker-Build ([string]$ImageName, [string]$ImagePath, [string]$DockerBuildArgs = "") {

@@ -1,5 +1,5 @@
 ---
-title: "C++ 模板和 C# 泛型之间的区别（C# 编程指南）| Microsoft 文档"
+title: "C++ 模板和 C# 泛型之间的区别（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -27,10 +27,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: d3171b1e3f48907778be6e256780e06bad36481f
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 483d33531141127e083c5b75789f405427e46890
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="differences-between-c-templates-and-c-generics-c-programming-guide"></a>C++ 模板和 C# 泛型之间的区别（C# 编程指南）
@@ -57,4 +58,5 @@ C# 泛型和 C++ 模板均是支持参数化类型的语言功能。 但是，�
 ## <a name="see-also"></a>请参阅  
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [泛型简介](../../../csharp/programming-guide/generics/introduction-to-generics.md)   
- [模板](https://docs.microsoft.com/cpp/cpp/templates-cpp)
+ [模板](/cpp/cpp/templates-cpp)
+

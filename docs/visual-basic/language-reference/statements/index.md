@@ -1,33 +1,50 @@
 ---
-title: "语句 (Visual Basic) | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "语句 [Visual Basic]"
+title: "语句 (Visual Basic)"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- statements [Visual Basic]
 ms.assetid: 1cbd7703-8d3b-48fd-831e-14c9cc85675a
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 12
----
-# 语句 (Visual Basic)
-[!INCLUDE[vs2017banner](../../../visual-basic/includes/vs2017banner.md)]
+author: dotnet-bot
+ms.author: dotnetcontent
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 30d7fb19e5f11b538b780bf7225917ec50ed765b
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
-本节的主题包含 Visual Basic 声明和可执行语句的表格，以及适用于许多语句的重要列表的表格。  
+---
+# <a name="statements-visual-basic"></a>语句 (Visual Basic)
+本节中的主题包含 Visual Basic 声明表和可执行语句表，以及应用于许多语句的重要列表。  
   
-## 本节内容  
- [A\-E 语句](../../../visual-basic/language-reference/statements/a-e-statements.md)  
+## <a name="in-this-section"></a>本节内容  
+ [A-E 语句](../../../visual-basic/language-reference/statements/a-e-statements.md)  
   
- [F\-P 语句](../../../visual-basic/language-reference/statements/f-p-statements.md)  
+ [F-P 语句](../../../visual-basic/language-reference/statements/f-p-statements.md)  
   
- [Q\-Z 语句](../../../visual-basic/language-reference/statements/q-z-statements.md)  
+ [Q-Z 语句](../../../visual-basic/language-reference/statements/q-z-statements.md)  
   
  [子句](../../../visual-basic/language-reference/statements/clauses.md)  
   
@@ -39,7 +56,8 @@ caps.handback.revision: 12
   
  [类型列表](../../../visual-basic/language-reference/statements/type-list.md)  
   
-## 相关章节  
+## <a name="related-sections"></a>相关章节  
  [Visual Basic 语言参考](../../../visual-basic/language-reference/index.md)  
   
  [Visual Basic](../../../visual-basic/index.md)
+

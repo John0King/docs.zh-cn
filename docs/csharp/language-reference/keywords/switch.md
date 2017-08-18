@@ -1,5 +1,5 @@
 ---
-title: "switch（C# 参考）| Microsoft Docs"
+title: "switch 关键字（C# 参考）"
 ms.date: 2017-03-07
 ms.prod: .net
 ms.technology:
@@ -36,15 +36,15 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: b6f8b110e087093bd47573a1a4a05752be91e743
+ms.translationtype: HT
+ms.sourcegitcommit: 4609c30a03c835b9b1338ea6bc9672f7445cfd25
+ms.openlocfilehash: ebbfb5818c8f2a07df7a8cb4724e99b1b9268b03
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="switch-c-reference"></a>switch（C# 参考）
-`switch` 是一个选择语句，它根据与匹配表达式**匹配的模式，从候选列表中选择单个开关部分**进行执行。 
+`switch` 是一个选择语句，它根据与匹配表达式匹配的模式，从候选列表中选择单个开关部分进行执行。 
   
  [!code-cs[switch#1](../../../../samples/snippets/csharp/language-reference/keywords/switch/switch1.cs#1)]  
 
@@ -76,7 +76,7 @@ ms.lasthandoff: 03/13/2017
  
 ## <a name="the-switch-section"></a>开关部分
  
- `switch` 语句包含一个或多个开关部分。 每个开关部分包含一个或多个 case 标签**，后接一个或多个语句。 下面的示例展示了一个包含三个开关部分的简单 `switch` 语句。 每个开关部分各有一个 case 标签（例如 `case 1:`）和两个语句。
+ `switch` 语句包含一个或多个开关部分。 每个开关部分包含一个或多个 case 标签，后接一个或多个语句。 下面的示例展示了一个包含三个开关部分的简单 `switch` 语句。 每个开关部分各有一个 case 标签（例如 `case 1:`）和两个语句。
  
   `switch` 语句中可以包含任意数量的开关部分，每个开关部分可以具有一个或多个 case 标签，如以下示例所示。 但是，任何两个 case 标签不可包含相同的表达式。  
 
@@ -174,11 +174,11 @@ switch (caseSwitch)
 
 如果以下任一条件成立，则 `case` 表达式为 `true`：
 
-- *expr* 是与 *type* 相同类型的一个实例。
+- *expr* 是与 *type* 具有相同类型的一个实例。
 
 - *expr* 是派生自 *type* 的类型的一个实例。 换言之，*expr* 结果可以向上转换为 *type* 的一个实例。
 
-- *expr* 具有属于 *type* 的一个基类的编译时类型，*expr* 还具有属于 *type* 或派生自 *type* 的运行时类型。 变量的编译时类型**是其类型声明中定义的变量类型。 变量的运行时类型**是分配给该变量的实例类型。
+- *expr* 具有属于 *type* 的一个基类的编译时类型，*expr* 还具有属于 *type* 或派生自 *type* 的运行时类型。 变量的编译时类型是其类型声明中定义的变量类型。 变量的运行时类型是分配给该变量的实例类型。
 
 - *expr* 是实现 *type* 接口的类型的一个实例。
 
@@ -221,3 +221,4 @@ case null:
  
 
  
+

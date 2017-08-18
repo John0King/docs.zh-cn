@@ -1,5 +1,5 @@
 ---
-title: "~ 运算符（C# 参考）| Microsoft Docs"
+title: "~ 运算符（C# 参考）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -32,11 +32,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a5ed524a1b17f7be8903f998cbd732594faab831
-ms.openlocfilehash: c7245700f78ff52a98c499d895c7eb2f95efe5b6
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: ffbfc379b7c021ccd8fbed9b796aa9fda6618b55
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/15/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="-operator-c-reference"></a>~ 运算符（C# 参考）
@@ -56,3 +56,4 @@ ms.lasthandoff: 05/15/2017
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [C# 运算符](../../../csharp/language-reference/operators/index.md)   
  [终结器](../../../csharp/programming-guide/classes-and-structs/destructors.md)
+

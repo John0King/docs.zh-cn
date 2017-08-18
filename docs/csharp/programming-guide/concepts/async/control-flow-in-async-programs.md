@@ -1,5 +1,5 @@
 ---
-title: "异步程序中的控制流 (C#) | Microsoft Docs"
+title: "异步程序中的控制流 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,11 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: be7974018ce3195dc7344192d647fe64fb2ebcc4
-ms.openlocfilehash: 4d73428cd2a896309f90af45fef682186c470417
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 3bfb01f6825894b7388aebc1b92012b003c9e44c
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/14/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="control-flow-in-async-programs-c"></a>异步程序中的控制流 (C#)

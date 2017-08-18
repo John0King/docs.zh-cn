@@ -1,5 +1,5 @@
 ---
-title: "float（C# 参考）| Microsoft Docs"
+title: "float（C# 参考）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -31,10 +31,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 1c3a66e4f9c690effb35e280e00e29930ec64d75
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 2f1fb02f84de504112eee826dbee1275fa3ccb7a
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="float-c-reference"></a>float（C# 参考）
@@ -73,12 +74,12 @@ float x = 3.5F;
  有关这些值的详细信息，请参阅 [IEEE](http://go.microsoft.com/fwlink/?LinkId=26269) 网站中提供的二进制浮点算术的 IEEE 标准。  
   
 ## <a name="example"></a>示例  
- 在下面的示例中，提供 `float` 结果的数学表达式中包含 [int](int.md)、[short](short.md) 和 `float`。 （请记住，`float` 是 <xref:System.Single?displayProperty=fullName> 类型的一个别名。）请注意，表达式中没有任何 [double](double.md)。  
+ 在下面的示例中，提供 `float` 结果的数学表达式中包含 [int](int.md)、[short](short.md) 和 `float`。 （请记住，`float` 是 <xref:System.Single?displayProperty=fullName> 类型的别名。）请注意，表达式中没有任何 [double](double.md)。  
   
  [!code-cs[csrefKeywordsTypes#13](../../../csharp/language-reference/keywords/codesnippet/CSharp/float_1.cs)]  
   
 ## <a name="c-language-specification"></a>C# 语言规范  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## <a name="see-also"></a>另请参阅  
  <xref:System.Single>   
@@ -90,3 +91,4 @@ float x = 3.5F;
  [内置类型表](built-in-types-table.md)   
  [隐式数值转换表](implicit-numeric-conversions-table.md)   
  [显式数值转换表](explicit-numeric-conversions-table.md)
+

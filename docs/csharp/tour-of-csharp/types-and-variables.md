@@ -1,5 +1,5 @@
 ---
-title: "C# 类型和变量 | C# 语言介绍"
+title: "C# 类型和变量 - C# 语言介绍"
 description: "了解如何在 C# 中定义类型和声明变量"
 keywords: ".NET, C#, 类型, 引用类型, 值类型"
 author: BillWagner
@@ -10,11 +10,11 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: f8a8051e-0049-43f1-b594-9c84cc7b1224
-ms.translationtype: Human Translation
-ms.sourcegitcommit: be7974018ce3195dc7344192d647fe64fb2ebcc4
-ms.openlocfilehash: 24d405ad33cb4f11dd9e7ba7edb39f10db8041a1
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 1f1031384520b9ed37246361da8bbc1b42addb0b
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/14/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 

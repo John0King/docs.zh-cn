@@ -1,5 +1,5 @@
 ---
-title: "C# 演练 | Microsoft Docs"
+title: "C# 演练"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -29,11 +29,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 0832ee88bba58579eea001335be9cb8c2130834d
-ms.openlocfilehash: 1008d0ff78ee7c2876b49564dd03a767a63e78f3
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 0e49290852ccdc83ab7879366102602f0ca3f99b
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/28/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="c-walkthroughs"></a>C# 演练
@@ -47,7 +47,7 @@ ms.lasthandoff: 03/28/2017
  演示如何使用 [async](../csharp/language-reference/keywords/async.md) 和 [await](../csharp/language-reference/keywords/await.md) 创建异步解决方案。  
   
  [用 C# 或 Visual Basic 创建一个 Windows 运行时组件，然后从 JavaScript 中调用该组件](https://msdn.microsoft.com/library/windows/apps/hh779077.aspx)  
- 演示如何创建 [!INCLUDE[wrt](../csharp/includes/wrt_md.md)] 类型，将其打包到 [!INCLUDE[wrt](../csharp/includes/wrt_md.md)] 组件中，然后从使用 JavaScript 为 Windows 生成的 [!INCLUDE[win8_appname_long](../csharp/includes/win8_appname_long_md.md)] 应用调用该组件。  
+ 演示如何创建 [!INCLUDE[wrt](~/includes/wrt-md.md)] 类型，将其打包到 [!INCLUDE[wrt](~/includes/wrt-md.md)] 组件中，然后从使用 JavaScript 为 Windows 生成的 [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] 应用调用该组件。  
   
  [Office 编程（C# 和 Visual Basic）](../csharp/programming-guide/interop/walkthrough-office-programming.md)  
  演示如何通过使用 C# 和 Visual Basic 创建 Excel 工作薄和 Word 文档。  
@@ -71,10 +71,10 @@ ms.lasthandoff: 03/28/2017
  演示通常执行的部分任务，如在 `TabControl` 上添加或删除选项卡、将控件停靠在其父级，以及更改 `SplitContainer` 控件的方向。  
   
  [用 C# 编写查询 (LINQ)](../csharp/programming-guide/concepts/linq/walkthrough-writing-queries-linq.md)  
- 演示用于编写 [!INCLUDE[vbteclinq](../csharp/includes/vbteclinq_md.md)] 查询表达式的 C# 语言功能。  
+ 演示用于编写 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 查询表达式的 C# 语言功能。  
   
  [操作数据 (C#) (LINQ to SQL)](https://msdn.microsoft.com/library/bb386927.aspx)  
- 描述在数据库中添加、修改以及删除数据的 [!INCLUDE[vbtecdlinq](../csharp/includes/vbtecdlinq_md.md)] 方案。  
+ 描述在数据库中添加、修改以及删除数据的 [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] 方案。  
   
  [简单对象模型和查询 (C#) (LINQ to SQL)](https://msdn.microsoft.com/library/bb386940.aspx)  
  演示如何创建实体类和筛选实体类的简单查询。  
@@ -83,15 +83,16 @@ ms.lasthandoff: 03/28/2017
  演示如何使用 LINQ to SQL 来访问数据（仅执行存储过程）。  
   
  [跨关系查询 (C#) (LINQ to SQL)](https://msdn.microsoft.com/library/bb386951.aspx)  
- 演示如何使用 [!INCLUDE[vbtecdlinq](../csharp/includes/vbtecdlinq_md.md)] 关联来表示数据库中的外键关系。  
+ 演示如何使用 [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] 关联来表示数据库中的外键关系。  
 
- [用 C# 编写可视化工具](https://docs.microsoft.com/visualstudio/debugger/walkthrough-writing-a-visualizer-in-csharp)  
+ [用 C# 编写可视化工具](/visualstudio/debugger/walkthrough-writing-a-visualizer-in-csharp)  
  演示如何通过使用 C# 来编写简单的可视化工具。  
   
 ## <a name="related-sections"></a>相关章节  
- [部署示例和演练](https://docs.microsoft.com/visualstudio/deployment/clickonce-deployment-samples-and-walkthroughs)  
+ [部署示例和演练](/visualstudio/deployment/clickonce-deployment-samples-and-walkthroughs)  
  提供常见部署方案的分步示例。  
   
 ## <a name="see-also"></a>请参阅  
  [C# 编程指南](../csharp/programming-guide/index.md)   
- [Visual Studio 示例](https://docs.microsoft.com/visualstudio/ide/visual-studio-samples)
+ [Visual Studio 示例](/visualstudio/ide/visual-studio-samples)
+

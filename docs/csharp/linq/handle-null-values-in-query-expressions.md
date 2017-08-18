@@ -11,15 +11,16 @@ ms.prod: .net-core
 ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: ac63ae8b-724d-4251-9334-528f4e884ae7
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 14b64bf8d3590f4f7dc3d1b00cb50d0bc421d9bc
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: f4f189504c57c9c01268b10bc96ad3c9af49ddbd
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="handle-null-values-in-query-expressions"></a>在查询表达式中处理 null 值
 
-此示例显示如何在源集合中处理可能的 null 值。 对象集合（如 <xref:System.Collections.Generic.IEnumerable%601>）可以包含值为 [null](../language-reference/keywords/null.md) 的元素。 如果源集合为 null 或包含值为 null 的元素，并且查询不处理 null 值，则在执行查询时将引发 <xref:System.NullReferenceException>。  
+此示例显示如何在源集合中处理可能的 null 值。 <xref:System.Collections.Generic.IEnumerable%601> 等对象集合可包含值为 [null](../language-reference/keywords/null.md) 的元素。 如果源集合为 null 或包含值为 null 的元素，并且查询不处理 null 值，则在执行查询时将引发 <xref:System.NullReferenceException>。  
   
 ## <a name="example"></a>示例
 
@@ -35,7 +36,8 @@ ms.lasthandoff: 03/13/2017
   
  [!code-cs[csProgGuideLINQ#83](../../../samples/snippets/csharp/concepts/linq/how-to-handle-null-values-in-query-expressions_2.cs)]  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.Nullable%601>   
  [LINQ 查询表达式](index.md)   
  [可以为 null 的类型](../programming-guide/nullable-types/index.md)
+

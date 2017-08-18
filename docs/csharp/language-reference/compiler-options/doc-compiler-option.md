@@ -1,5 +1,5 @@
 ---
-title: "/doc（C# 编译器选项）| Microsoft Docs"
+title: "-doc（C# 编译器选项）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -35,11 +35,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 8addbbfe1e854feee560192292b713da4fc67e6c
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 58608c1301b2df3286c1f8a1de189f6256b19052
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="doc-c-compiler-options"></a>/doc（C# 编译器选项）
@@ -64,7 +64,7 @@ ms.lasthandoff: 03/13/2017
   
  包含 Main 的源代码文件首先输出到 XML 中。  
   
- 若要将生成的 xml 文件与 [IntelliSense](https://docs.microsoft.com/visualstudio/ide/using-intellisense) 功能配合使用，请将 .xml 文件的文件名设为与要支持的程序集相同的名称，然后确保 .xml 文件与程序集位于同一目录中。 这样，在 Visual Studio 项目中引用程序集时，也会找到 .xml 文件。 有关详细信息，请参阅[提供代码注释](https://docs.microsoft.com/visualstudio/ide/supplying-xml-code-comments)。  
+ 若要将生成的 xml 文件与 [IntelliSense](/visualstudio/ide/using-intellisense) 功能配合使用，请将 .xml 文件的文件名设为与要支持的程序集相同的名称，然后确保 .xml 文件与程序集位于同一目录中。 这样，在 Visual Studio 项目中引用程序集时，也会找到 .xml 文件。 有关详细信息，请参阅[提供代码注释](/visualstudio/ide/supplying-xml-code-comments)。  
   
  除非用 [/target:module](../../../csharp/language-reference/compiler-options/target-module-compiler-option.md) 进行编译，否则 `file` 将包含 \<assembly>\</assembly> 标记，以指定包含编译输出文件的程序集清单的文件名。  
   
@@ -75,14 +75,15 @@ ms.lasthandoff: 03/13/2017
   
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>在 Visual Studio 开发环境中设置此编译器选项  
   
-1.  打开项目的“属性”****页。  
+1.  打开项目的“属性”页。  
   
-2.  单击“生成”****选项卡。  
+2.  单击“生成”选项卡。  
   
-3.  修改“XML 文档文件”****属性。  
+3.  修改“XML 文档文件”属性。  
   
  有关如何以编程方式设置此编译器选项的信息，请参阅 <xref:VSLangProj80.CSharpProjectConfigurationProperties3.DocumentationFile%2A>。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [（C# 编译器选项）](../../../csharp/language-reference/compiler-options/index.md)   
- [NIB 如何：修改项目属性和配置设置](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [管理项目和解决方案属性](/visualstudio/ide/managing-project-and-solution-properties)
+

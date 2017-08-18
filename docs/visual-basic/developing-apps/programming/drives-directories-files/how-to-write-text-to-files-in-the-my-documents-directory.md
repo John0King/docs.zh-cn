@@ -1,5 +1,5 @@
 ---
-title: "如何：在 Visual Basic 中将文本写入“我的文档”目录中的文件 | Microsoft Docs"
+title: "如何：在 Visual Basic 中将文本写入“我的文档”目录中的文件"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -33,11 +33,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
-ms.openlocfilehash: 848f7c3eac56f85d2af4c613645d54b70061d072
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: c900072d184469ead75bb76a3e152edce357a34f
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-write-text-to-files-in-the-my-documents-directory-in-visual-basic"></a>如何：在 Visual Basic 中将文本写入“我的文档”目录中的文件
@@ -75,3 +75,4 @@ ms.lasthandoff: 05/22/2017
  <xref:Microsoft.VisualBasic.FileIO.FileSystem>   
  <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllText%2A>   
  <xref:Microsoft.VisualBasic.FileIO.SpecialDirectories>
+

@@ -1,5 +1,5 @@
 ---
-title: "在 .NET Framework 文件 I/O 和文件系统中使用的类 (Visual Basic) | Microsoft Docs"
+title: "在 .NET Framework 文件 I/O 和文件系统中使用的类 (Visual Basic)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -30,17 +30,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: ca1ecff264734c16369c9a7d28fbb388bb2f1ccc
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: a87d2e6f87b92b5f66706095d3f485c080008e0f
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="classes-used-in-net-framework-file-io-and-the-file-system-visual-basic"></a>在 .NET Framework 文件 I/O 和文件系统中使用的类 (Visual Basic)
 下列各表列出了常用于 .NET Framework 文件 I/O 的类，将这些类分为文件 I/O 类、用于创建流的类和用于读取和写入流的类。  
   
- 要输入 [!INCLUDE[dnprdnlong](../../../../csharp/programming-guide/events/includes/dnprdnlong_md.md)] 文档并查找更全面的列表，请参阅[类库概述](https://msdn.microsoft.com/library/hfa3fa08)。  
+ 要输入 [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)] 文档并查找更全面的列表，请参阅[类库概述](https://msdn.microsoft.com/library/hfa3fa08)。  
   
 ## <a name="basic-io-classes-for-files-drives-and-directories"></a>用于文件、驱动器和目录的基本 I/O 类  
  下表列出并说明了用于文件 I/O 的主类。  
@@ -87,3 +87,4 @@ ms.lasthandoff: 05/22/2017
  [文件和流 I/O](https://msdn.microsoft.com/library/k3352a4t)   
  [异步文件 I/O](https://msdn.microsoft.com/library/kztecsys)   
  [.NET Framework 文件 I/O 和文件系统基础知识 (Visual Basic)](../../../../visual-basic/developing-apps/programming/drives-directories-files/basics-of-net-framework-file-io-and-the-file-system.md)
+

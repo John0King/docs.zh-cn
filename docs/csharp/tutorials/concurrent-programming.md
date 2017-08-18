@@ -1,5 +1,5 @@
 ---
-title: "并发编程 | C# 指南"
+title: "并发编程 - C# 指南"
 description: "了解如何并行运行任务（很可能占用大量 CPU）"
 keywords: "C#, 异步, 占用大量 CPU, 网络倾向"
 ms.date: 08/24/2016
@@ -8,11 +8,12 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 0f8b42de-858a-44a3-87d9-998211f26377
-redirect_url: /dotnet/articles/csharp/tutorials/index
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 86546cc00abcb1279a0cd4c8cb6003ae412b2df7
-ms.lasthandoff: 03/13/2017
+redirect_url: /dotnet/csharp/tutorials/index
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 00cf3b04178ca48c9f8f35eb16bc216389e6b272
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 

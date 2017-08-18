@@ -1,5 +1,5 @@
 ---
-title: "为 Visual C# 程序员提供的附加资源 | Microsoft 文档"
+title: "为 Visual C# 程序员提供的附加资源"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -32,11 +32,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 7810948b8ee549d05d7e795f89822db2fdfd1648
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: f843abd4ec891a7da17151140fc524acee72a346
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="additional-resources-for-visual-c-programmers"></a>为 Visual C# 程序员提供的附加资源
@@ -88,7 +88,8 @@ ms.lasthandoff: 05/22/2017
 ## <a name="see-also"></a>另请参阅  
  [C#](../../csharp/csharp.md)   
  [C# 入门](../../csharp/getting-started/getting-started-with-csharp.md)   
- [自定义编辑器](https://docs.microsoft.com/visualstudio/ide/customizing-the-editor)   
+ [自定义编辑器](/visualstudio/ide/customizing-the-editor)   
  [如何：融入开发者社区](http://msdn.microsoft.com/library/f1503d98-7a64-41b6-a6c7-0e42a533e9c5)   
  [如何：发送反馈](http://msdn.microsoft.com/library/c9f1dd8f-bcb6-40ac-b896-1e9eca0bb209)   
- [与我们交流](https://docs.microsoft.com/visualstudio/ide/talk-to-us)
+ [与我们交流](/visualstudio/ide/talk-to-us)
+

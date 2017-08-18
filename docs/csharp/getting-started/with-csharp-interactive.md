@@ -1,5 +1,5 @@
 ---
-title: "C# 交互窗口入门 | C# 指南"
+title: "C# 交互窗口入门 - C# 指南"
 description: "C# 交互窗口入门"
 keywords: "C#, 入门, REPL, 跨平台"
 ms.date: 08/23/2016
@@ -8,11 +8,12 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: a6907ffe-7920-4813-984f-6001d9e44756
-redirect_url: /dotnet/articles/csharp/getting-started/index
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 81ee3d6c21307c79525cebe111df7a709c333636
-ms.lasthandoff: 03/13/2017
+redirect_url: /dotnet/csharp/getting-started/index
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 41deedefdf513a35f7894d7edd40530a3aa2c2f2
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 

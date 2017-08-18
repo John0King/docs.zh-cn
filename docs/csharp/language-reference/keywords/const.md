@@ -1,5 +1,5 @@
 ---
-title: "const（C# 参考）| Microsoft Docs"
+title: "const（C# 参考）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -30,18 +30,18 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 700e80272384a946609d538c5516f0480b7fed27
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: b8f6d567deed513ff5693fe39bd21c8607677402
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="const-c-reference"></a>const（C# 参考）
 使用 `const` 关键字来声明某个常量字段或常量局部变量。 常量字段和常量局部变量不是变量并且不能修改。 常量可以为数字、布尔值、字符串或 null 引用。 不要创建常量来表示你需要随时更改的信息。 例如，不要使用常量字段来存储服务的价格、产品版本号或公司的品牌名称。 这些值会随着时间发生变化；因为编译器会传播常量，所以必须重新编译通过库编译的其他代码以查看更改。 另请参阅 [readonly](../../../csharp/language-reference/keywords/readonly.md) 关键字。 例如：  
   
-```  
-      const int x = 0;  
+```csharp
+const int x = 0;  
 public const double gravitationalConstant = 6.673e-11;  
 private const string productName = "Visual C#";  
 ```  
@@ -53,7 +53,7 @@ private const string productName = "Visual C#";
   
  常数声明可以声明多个常数，例如：  
   
-```  
+```csharp
 public const double x = 1.0, y = 2.0, z = 3.0;  
 ```  
   
@@ -61,7 +61,7 @@ public const double x = 1.0, y = 2.0, z = 3.0;
   
  常数可以参与常数表达式，如下所示：  
   
-```  
+```csharp
 public const int c1 = 5;  
 public const int c2 = c1 + 100;  
 ```  
@@ -86,7 +86,7 @@ public const int c2 = c1 + 100;
 ## <a name="c-language-specification"></a>C# 语言规范  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [C# 参考](../../../csharp/language-reference/index.md)   
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [C# 关键字](../../../csharp/language-reference/keywords/index.md)   

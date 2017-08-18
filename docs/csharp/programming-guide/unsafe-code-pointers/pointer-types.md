@@ -1,5 +1,5 @@
 ---
-title: "指针类型（C# 编程指南）| Microsoft Docs"
+title: "指针类型（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -28,11 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 100fa20e69c9a1cd6133437c29d1d5955e871656
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 1a4ebc69762f18dc630100b544c18df0f43734ac
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="pointer-types-c-programming-guide"></a>指针类型（C# 编程指南）
@@ -82,7 +82,7 @@ int* myVariable;
   
  表达式 `*myVariable` 表示在 `int` 中包含的地址处找到的 `myVariable` 变量。  
   
- [fixed 语句](../../../csharp/language-reference/keywords/fixed-statement.md)和[指针转换](../../../csharp/programming-guide/unsafe-code-pointers/pointer-conversions.md)主题中有几个指针示例。  下面的示例显示需要 `unsafe` 关键字和 `fixed` 语句以及如何递增内部指针。  你可将此代码粘贴到控制台应用程序的 Main 函数中来运行它。 （记住在“项目设计器”****中启用不安全代码；选择菜单栏上的“项目”****、“属性”****，然后选择“生成”****选项卡中的“允许不安全代码”****。）  
+ [fixed 语句](../../../csharp/language-reference/keywords/fixed-statement.md)和[指针转换](../../../csharp/programming-guide/unsafe-code-pointers/pointer-conversions.md)主题中有几个指针示例。  下面的示例显示需要 `unsafe` 关键字和 `fixed` 语句以及如何递增内部指针。  你可将此代码粘贴到控制台应用程序的 Main 函数中来运行它。 （记住在“项目设计器”中启用不安全代码；选择菜单栏上的“项目”、“属性”，然后选择“生成”选项卡中的“允许不安全代码”。）  
   
 ```  
 // Normal pointer to an object.  

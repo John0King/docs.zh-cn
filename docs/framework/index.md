@@ -1,5 +1,5 @@
 ---
-title: ".NET Framework 4.7、4.6 和 4.5 | Microsoft Docs"
+title: ".NET Framework 4.7、4.6 和 4.5"
 ms.custom: 
 ms.date: 03/30/2017
 ms.prod: .net-framework
@@ -19,11 +19,11 @@ caps.latest.revision: 75
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fe9ab371ab8d3eee3778412e446b7aa30b42476b
-ms.openlocfilehash: a2ef49f9192c7fa414b02e7e41a270606f52bb3c
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 7f22d51a0c4fd4419fe2e499c7b0e96827696bf6
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/19/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 

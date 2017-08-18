@@ -1,5 +1,5 @@
 ---
-title: "如何：查找命名空间中的元素 (XPath-LINQ to XML) (C#) | Microsoft 文档"
+title: "如何：查找命名空间中的元素 (XPath-LINQ to XML) (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,22 +14,22 @@ ms.assetid: cae1c4ac-6cd5-46cf-9b1c-bd85bc9b7ea9
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: dc1b201a807b8e5c060720018195fe3639e748dc
-ms.lasthandoff: 03/13/2017
-
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: f67bea5244b69013a5f694415ded6f0bc94f77f7
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-find-elements-in-a-namespace-xpath-linq-to-xml-c"></a>如何：查找命名空间中的元素 (XPath-LINQ to XML) (C#)
-XPath 表达式可以在特定命名空间中查找节点。 XPath 表达式使用命名空间前缀来指定命名空间。 若要解析包含命名空间前缀的 XPath 表达式，必须向实现 <xref:System.Xml.IXmlNamespaceResolver> 的 XPath 方法传递一个对象。 此示例使用 <xref:System.Xml.XmlNamespaceManager>。  
+XPath 表达式可以在特定命名空间中查找节点。 XPath 表达式使用命名空间前缀来指定命名空间。 若要分析包含命名空间前缀的 XPath 表达式，必须向实现 <xref:System.Xml.IXmlNamespaceResolver> 的 XPath 方法传递一个对象。 本示例使用 <xref:System.Xml.XmlNamespaceManager>。  
   
  XPath 表达式为：  
   
  `./aw:*`  
   
 ## <a name="example"></a>示例  
- 下面的示例读取包含两个命名空间的 XML 树。 它使用 <xref:System.Xml.XmlReader> 读取 XML 文档。 然后，从 <xref:System.Xml.XmlReader> 获取 <xref:System.Xml.XmlNameTable>，以及从 <xref:System.Xml.XmlNameTable> 获取 <xref:System.Xml.XmlNamespaceManager>。 选择元素时使用 <xref:System.Xml.XmlNamespaceManager>。  
+ 下面的示例读取包含两个命名空间的 XML 树。 它使用 <xref:System.Xml.XmlReader> 来读取 XML 文档。 然后获取 <xref:System.Xml.XmlNameTable> 中的 <xref:System.Xml.XmlReader> 和 <xref:System.Xml.XmlNamespaceManager> 中的 <xref:System.Xml.XmlNameTable>。 示例在选择元素时使用 <xref:System.Xml.XmlNamespaceManager>。  
   
 ```csharp  
 XmlReader reader = XmlReader.Create("ConsolidatedPurchaseOrders.xml");  
@@ -88,3 +88,4 @@ Results are identical
   
 ## <a name="see-also"></a>请参阅  
  [针对 XPath 用户的 LINQ to XML (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)
+

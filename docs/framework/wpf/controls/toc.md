@@ -193,7 +193,7 @@
 #### [ComboBox 样式和模板](combobox-styles-and-templates.md)
 #### [ContextMenu 样式和模板](contextmenu-styles-and-templates.md)
 #### [DataGrid 样式和模板](datagrid-styles-and-templates.md)
-#### [DatePicker 样式和模板](datepicker-syles-and-templates.md)
+#### [DatePicker 样式和模板](datepicker-styles-and-templates.md)
 #### [DocumentViewer 样式和模板](documentviewer-styles-and-templates.md)
 #### [Expander 样式和模板](expander-styles-and-templates.md)
 #### [Frame 样式和模板](frame-styles-and-templates.md)

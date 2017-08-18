@@ -1,12 +1,14 @@
 # [欢迎使用](welcome.md)
 
-<!-- Start of .NET Platform Guide -->
-# [.NET 平台指南](standard/index.md)
+<!-- Start of .NET Guide -->
+# [.NET 指南](standard/index.md)
 ## [.NET 入门](standard/get-started.md)
 ## [.NET 教程](standard/tour.md)
+## [.NET 微服务：适用于容器化 .NET 应用的体系结构](standard/microservices-architecture/)
 ## [.NET 体系结构组件](standard/components.md)
-## [.NET 标准库](standard/library.md)
-## [框架和目标](standard/frameworks.md)
+## [.NET Standard](standard/net-standard.md)
+## [目标框架](standard/frameworks.md)
+## [.NET 术语表](standard/glossary.md)
 ## [为服务器应用选择 .NET Core 或 .NET Framework](standard/choosing-core-framework-server.md)
 ## [什么是“托管代码”？](standard/managed-code.md)
 ### [自动内存管理](standard/automatic-memory-management.md) 
@@ -46,8 +48,9 @@
 ## [线程处理](standard/threading/)
 ## [并行编程](standard/parallel-programming/)
 ## [安全性](standard/security/)
+## [序列化](standard/serialization/)
 ## [开发多平台应用程序](standard/cross-platform/)
-<!-- End of .NET Platform Guide -->
+<!-- End of .NET Guide -->
 
 <!-- .NET Core Content -->
 # [.NET Core 指南](core/index.md)
@@ -56,6 +59,7 @@
 ## [macOS 先决条件](core/macos-prerequisites.md)
 ## [教程](core/tutorials/index.md)
 ### [使用 Visual Studio 2017 在 Windows 上构建完整的 .NET Core 解决方案](core/tutorials/using-on-windows-full-solution.md)
+### [C# 和 Visual Studio Code 入门](core/tutorials/with-visual-studio-code.md)
 ### [在 macOS 上实现 .NET Core 入门](core/tutorials/using-on-macos.md)
 ### [借助 Visual Studio for Mac 在 macOS 上开始使用 .NET Core](core/tutorials/using-on-mac-vs.md)
 ### [使用 Visual Studio for Mac 在 macOS 上构建完整的 .NET Core 解决方案](core/tutorials/using-on-mac-vs-full-solution.md)
@@ -65,6 +69,7 @@
 ### [开发 ASP.NET Core 应用程序](core/tutorials/aspnet-core.md)
 ### [如何管理 .NET Core 1.0 的包依赖项版本](core/tutorials/managing-package-dependency-versions.md)
 ### [从本机代码承载 .NET Core](core/tutorials/netcore-hosting.md)
+### [创建 dotnet new 自定义模板](core/tutorials/create-custom-template.md)
 ## [包、元包和框架](core/packages.md)
 ## [CLI 变更概述](core/tools/cli-msbuild-architecture.md)
 ### [依赖项管理](core/tools/dependencies.md)
@@ -77,6 +82,7 @@
 ### [使用 CLI 工具部署应用](core/deploying/deploy-with-cli.md)
 ### [使用 Visual Studio 部署应用](core/deploying/deploy-with-vs.md)
 ### [使用跨平台工具创建 NuGet 包](core/deploying/creating-nuget-packages.md)
+### [运行时包存储](core/deploying/runtime-store.md)
 ## [Docker](core/docker/index.md)
 ### [为 .NET Core 应用程序生成 Docker 映像](core/docker/building-net-docker-images.md)
 ### [Visual Studio Tools for Docker](core/docker/visual-studio-tools-for-docker.md)
@@ -88,10 +94,12 @@
 ### [.NET Core 支持](core/versions/lts-current.md)
 <!--### [🔧 Servicing](core/versions/servicing.md)-->
 ## [运行时 IDentifier 目录](core/rid-catalog.md)
+## [.NET Core SDK 概述](core/sdk.md)
 ## [.NET Core CLI 工具](core/tools/index.md)
 ### [遥测](core/tools/telemetry.md)
 ### [扩展性模型](core/tools/extensibility.md)
 ### [持续集成](core/tools/using-ci-with-cli.md)
+### [自定义模板](core/tools/custom-templates.md)
 ### [dotnet](core/tools/dotnet.md)
 ### [dotnet-build](core/tools/dotnet-build.md)
 ### [dotnet-clean](core/tools/dotnet-clean.md)
@@ -107,6 +115,7 @@
 ### [dotnet-restore](core/tools/dotnet-restore.md)
 ### [dotnet-run](core/tools/dotnet-run.md)
 ### [dotnet-sln](core/tools/dotnet-sln.md)
+### [dotnet-store](core/tools/dotnet-store.md)
 ### [dotnet-test](core/tools/dotnet-test.md)
 ### [dotnet-vstest](core/tools/dotnet-vstest.md)
 ### 项目修改命令
@@ -123,6 +132,8 @@
 ### [分析第三方依赖项](core/porting/third-party-deps.md)
 ### [移植库](core/porting/libraries.md)
 <!--### [🔧 NuGet packages](core/porting/nuget-packages.md)-->
+## [从源生成 .NET Core](core/build/index.md)
+### [.NET Core 分发打包](core/build/distribution-packaging.md)
 ## [VS 2015/project.json 文档](project-json.md)
 <!-- End .NET Core Content -->
 
@@ -148,7 +159,6 @@
 ### [Windows 服务应用程序](framework/windows-services/)
 ### [64 位应用程序](framework/64-bit-apps.md)
 ### [使用 ASP.NET 的 Web 应用程序](framework/develop-web-apps-with-aspnet.md)
-### [序列化](framework/serialization/)
 ### [.NET Framework 中的网络编程](framework/network-programming/)
 ### [配置应用程序](framework/configure-apps/)
 ### [使用 .NET Native 编译应用程序](framework/net-native/)
@@ -186,12 +196,14 @@
 ### [类](csharp/classes.md)
 ### [结构](csharp/structs.md)
 ### [元组](csharp/tuples.md)
+### [解构元组和其他类型](csharp/deconstruct.md)
 ### [接口](csharp/programming-guide/interfaces/index.md)
 <!--### [🔧 Methods and Lambda Expressions](csharp/methods-lambda-expressions.md)-->
-#### [方法](csharp/methods.md)
+### [方法](csharp/methods.md)
 #### [Lambda 表达式](csharp/lambda-expressions.md)
 ### [属性](csharp/properties.md)
 ### [索引器](csharp/indexers.md)
+### [放弃](csharp/discards.md)
 ### [泛型](csharp/programming-guide/generics/index.md)
 ### [迭代器](csharp/iterators.md)
 ### [委托和事件](csharp/delegates-events.md)
@@ -200,7 +212,7 @@
 #### [强类型委托](csharp/delegates-strongly-typed.md)
 #### [常见委托模式](csharp/delegates-patterns.md)
 #### [事件简介](csharp/events-overview.md)
-#### [.NET 事件模式](csharp/event-pattern.md)
+#### [标准 .NET 事件模式](csharp/event-pattern.md)
 #### [已更新的 .NET 事件模式](csharp/modern-events.md)
 #### [区分委托和事件](csharp/distinguish-delegates-events.md)
 ### [语言集成查询 (LINQ)](csharp/linq/)
@@ -230,14 +242,13 @@
 # [F# 指南](fsharp/index.md)
 
 ## [F# 教程](fsharp/tour.md)
-
+## [入门](fsharp/get-started/index.md)
+### [Visual Studio 入门](fsharp/get-started/get-started-visual-studio.md)
+### [Visual Studio for Mac 入门](fsharp/get-started/get-started-with-visual-studio-for-mac.md)
+### [Visual Studio Code 和 Ionide 入门](fsharp/get-started/get-started-vscode.md)
+### [.NET Core CLI 入门](fsharp/get-started/get-started-command-line.md)
 <!--## [Tutorials](fsharp/tutorials/index.md)-->
 ## 教程
-### [入门](fsharp/tutorials/getting-started/index.md)
-#### [Visual Studio 入门](fsharp/tutorials/getting-started/getting-started-visual-studio.md)
-#### [Visual Studio for Mac 入门](fsharp/tutorials/getting-started/getting-started-with-visual-studio-for-mac.md)
-#### [Visual Studio Code 和 Ionide 入门](fsharp/tutorials/getting-started/getting-started-vscode.md)
-#### [命令行工具入门](fsharp/tutorials/getting-started/getting-started-command-line.md)
 ### [F# Interactive](fsharp/tutorials/fsharp-interactive/index.md)
 #### [F# Interactive 选项](fsharp/tutorials/fsharp-interactive/fsharp-interactive-options.md)
 ### [类型提供程序](fsharp/tutorials/type-providers/index.md)
@@ -375,7 +386,7 @@
 # [Visual Basic 指南](visual-basic/index.md)
 ## [入门](visual-basic/getting-started/index.md)
 ### [Visual Basic 的新增功能](visual-basic/getting-started/whats-new.md)
-### [Visual Studio 2015 中 Visual Basic 的重大更改](visual-basic/getting-started/breaking-changes-in-visual-studio-2015.md)
+### [Visual Studio 中 Visual Basic 的重大更改](visual-basic/getting-started/breaking-changes-in-visual-studio.md)
 ### [为 Visual Basic 程序员提供的附加资源](visual-basic/getting-started/additional-resources.md)
 
 ## [开发应用程序](visual-basic/developing-apps/index.md)
@@ -1057,7 +1068,7 @@
 ##### [/win32resource](visual-basic/reference/command-line-compiler/win32resource.md)
 #### [按类别列出的编译器选项](visual-basic/reference/command-line-compiler/compiler-options-listed-by-category.md)
 ### [.NET Framework 参考信息](visual-basic/reference/net-framework-reference-information.md)
-### [语言规范](visual-basic/reference/language-specification.md)
+### [语言规范](visual-basic/reference/language-specification/)
 ## [示例应用程序](visual-basic/sample-applications.md)
 ## [演练](visual-basic/walkthroughs.md)
 

@@ -1,5 +1,5 @@
 ---
-title: "启动多个异步任务并在其完成时进行处理 (C#) | Microsoft 文档"
+title: "启动多个异步任务并在其完成时进行处理 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,11 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 400dfda51d978f35c3995f90840643aaff1b9c13
-ms.openlocfilehash: 0ab1c8d117327c9f5805d184b263a0932ab0bc3f
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 770655005a3cf9cd13eb13cff1ca1d7e291e54e8
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/24/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="start-multiple-async-tasks-and-process-them-as-they-complete-c"></a>启动多个异步任务并在其完成时进行处理 (C#)
@@ -67,7 +67,7 @@ IEnumerable<Task<int>> downloadTasksQuery =
   
  在项目的 MainWindow.xaml.cs 文件中，对 `AccessTheWebAsync` 方法进行以下更改。  
   
--   通过应用 <xref:System.Linq.Enumerable.ToList%2A?displayProperty=fullName> 而不是 <xref:System.Linq.Enumerable.ToArray%2A>，执行查询。  
+-   通过应用 <xref:System.Linq.Enumerable.ToList%2A?displayProperty=fullName> 而非 <xref:System.Linq.Enumerable.ToArray%2A> 执行查询。  
   
     ```csharp  
     List<Task<int>> downloadTasks = downloadTasksQuery.ToList();  
@@ -87,7 +87,7 @@ IEnumerable<Task<int>> downloadTasksQuery =
         downloadTasks.Remove(firstFinishedTask);  
         ```  
   
-    3.  等待 `firstFinishedTask`，由对 `ProcessURLAsync` 的调用返回。 `firstFinishedTask` 变量是一个 <xref:System.Threading.Tasks.Task%601>，其中 `TReturn` 是整数。 任务已完成，但需等待它检索已下载网站的长度，如以下示例所示。  
+    3.  等待 `firstFinishedTask`，由对 `ProcessURLAsync` 的调用返回。 `firstFinishedTask` 变量是 <xref:System.Threading.Tasks.Task%601>，其中 `TReturn` 是整数。 任务已完成，但需等待它检索已下载网站的长度，如以下示例所示。  
   
         ```csharp  
         int length = await firstFinishedTask;  
@@ -247,3 +247,4 @@ namespace ProcessTasksAsTheyFinish
  [微调异步应用程序 (C#)](../../../../csharp/programming-guide/concepts/async/fine-tuning-your-async-application.md)   
  [使用 Async 和 Await 的异步编程 (C#)](../../../../csharp/programming-guide/concepts/async/index.md)   
  [Async Sample: Fine Tuning Your Application](http://go.microsoft.com/fwlink/?LinkId=255046)（异步示例：微调应用程序）
+

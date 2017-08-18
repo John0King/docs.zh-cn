@@ -1,5 +1,5 @@
 ---
-title: "where（泛型类型约束）（C# 参考）| Microsoft Docs"
+title: "where（泛型类型约束）（C# 参考）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -30,15 +30,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 400dfda51d978f35c3995f90840643aaff1b9c13
-ms.openlocfilehash: e5baa75c55d58a4d975fc42472f90ff4125cbb5c
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 8e81640ee56ed672bb09242a070fdf167740874b
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/24/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="where-generic-type-constraint-c-reference"></a>where（泛型类型约束）（C# 参考）
-在泛型类型定义中，`where` 子句用于指定对下列类型的约束：这些类型可用作泛型声明中定义的类型形参的实参。 例如，可以声明一个泛型类 `MyGenericClass`，这样，类型参数 `T` 就可以实现 <xref:System.IComparable%601> 接口：  
+在泛型类型定义中，`where` 子句用于指定对下列类型的约束：这些类型可用作泛型声明中定义的类型形参的实参。 例如，可以声明一个泛型类 `MyGenericClass`，以使类型参数 `T` 实现 <xref:System.IComparable%601> 接口：  
   
 ```csharp  
 public class MyGenericClass<T> where T:IComparable { }  
@@ -86,3 +86,4 @@ delegate T MyDelegate<T>() where T : new()
  [泛型简介](../../../csharp/programming-guide/generics/introduction-to-generics.md)   
  [new 约束](../../../csharp/language-reference/keywords/new-constraint.md)   
  [类型参数的约束](../../../csharp/programming-guide/generics/constraints-on-type-parameters.md)
+

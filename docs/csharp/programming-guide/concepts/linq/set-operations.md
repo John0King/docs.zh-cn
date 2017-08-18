@@ -1,5 +1,5 @@
 ---
-title: "集运算 (C#) | Microsoft Docs"
+title: "集运算 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,10 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 37841cde3aa5e4aaa6545b3a160422d024be5842
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 121dcd4d41dcfea332c45031a5fbed594e2f1e3e
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="set-operations-c"></a>集运算 (C#)
@@ -42,7 +43,7 @@ LINQ 中的集运算是指根据相同或不同集合（或集）中是否存在
 ## <a name="comparison-of-set-operations"></a>比较集运算  
   
 ### <a name="distinct"></a>Distinct  
- 下图演示 <xref:System.Linq.Enumerable.Distinct%2A?displayProperty=fullName> 方法对字符序列的行为。 返回的序列包含输入序列的唯一元素。  
+ 下图演示字符序列上 <xref:System.Linq.Enumerable.Distinct%2A?displayProperty=fullName> 方法的行为。 返回的序列包含输入序列的唯一元素。  
   
  ![演示 Distinct&#40;&#41; 的行为的图。](../../../../csharp/programming-guide/concepts/linq/media/distinct.png "Distinct")  
   
@@ -61,8 +62,9 @@ LINQ 中的集运算是指根据相同或不同集合（或集）中是否存在
   
  ![显示两个序列的联合的图。](../../../../csharp/programming-guide/concepts/linq/media/union.png "Union")  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.Linq>   
  [标准查询运算符概述 (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)   
  [如何：合并和比较字符串集合 (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-combine-and-compare-string-collections-linq.md)   
  [如何：查找两个列表之间的差集 (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-find-the-set-difference-between-two-lists-linq.md)
+

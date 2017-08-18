@@ -1,5 +1,5 @@
 ---
-title: C# | Microsoft Docs
+title: C#
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -31,10 +31,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: d8470043d266275cd70d48299be96f1ee6f50682
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: f9a46179f25c166923f702b745e874406adfdeac
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="c"></a>C#
@@ -44,10 +45,10 @@ C#（读作“C sharp”）是一种编程语言，它是为生成在 .NET Frame
   
 ## <a name="in-this-section"></a>本节内容  
  [C# 入门](../csharp/getting-started/getting-started-with-csharp.md)  
- 为不熟悉此语言或 [!INCLUDE[vsprvs](../csharp/includes/vsprvs_md.md)] 的程序员介绍 C# 的功能，并提供查找关于 [!INCLUDE[vsprvs](../csharp/includes/vsprvs_md.md)] 的帮助的路标。  
+ 为不熟悉此语言或 [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] 的程序员介绍 C# 的功能，并提供查找关于 [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] 的帮助的路标。  
   
- [使用 Visual Studio C# 开发环境](https://docs.microsoft.com/visualstudio/csharp-ide/using-the-visual-studio-development-environment-for-csharp)  
- 介绍 [!INCLUDE[csprcs](../csharp/includes/csprcs_md.md)] 开发环境。  
+ [使用 Visual Studio C# 开发环境](/visualstudio/csharp-ide/using-the-visual-studio-development-environment-for-csharp)  
+ 介绍 [!INCLUDE[csprcs](~/includes/csprcs-md.md)] 开发环境。  
   
  [C# 编程指南](../csharp/programming-guide/index.md)  
  提供有关如何使用 C# 语言结构的信息和实例。  
@@ -62,9 +63,10 @@ C#（读作“C sharp”）是一种编程语言，它是为生成在 .NET Frame
  提供指向使用 C# 的编程演练和每个演练的简要概述的链接。  
   
 ## <a name="related-sections"></a>相关章节  
- [C# 语言规范](../csharp/language-reference/language-specification.md)  
+ [C# 语言规范](../csharp/language-reference/language-specification/index.md)  
  指向 C# 规范的最新版本（Microsoft Word 格式）的链接。  
   
 ## <a name="see-also"></a>请参阅  
- [Visual C# 和 Visual Basic 入门](https://docs.microsoft.com/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)   
+ [Visual C# 和 Visual Basic 入门](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)   
  [.NET 开发](https://msdn.microsoft.com/library/ff361664)
+

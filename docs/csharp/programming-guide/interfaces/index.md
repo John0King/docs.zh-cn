@@ -1,5 +1,5 @@
 ---
-title: "接口（C# 编程指南）| Microsoft 文档"
+title: "接口（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -28,11 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a5ed524a1b17f7be8903f998cbd732594faab831
-ms.openlocfilehash: 9a580d0426038036f2e64167de8c540041c0a6b4
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 0552cea71f66ba8c299b1706cab6778c9e3367c9
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/15/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="interfaces-c-programming-guide"></a>接口（C# 编程指南）

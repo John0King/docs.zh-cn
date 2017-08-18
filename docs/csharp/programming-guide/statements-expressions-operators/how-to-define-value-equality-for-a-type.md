@@ -1,5 +1,5 @@
 ---
-title: "如何：为类型定义值相等性（C# 编程指南）| Microsoft Docs"
+title: "如何：为类型定义值相等性（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -31,10 +31,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 33b2ab2252fac8442caa7b2f3e9b5b311cc0f9b6
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: e008be022765ff7d2bb440f0a37193b882038b76
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-define-value-equality-for-a-type-c-programming-guide"></a>如何：为类型定义值相等性（C# 编程指南）
@@ -50,7 +51,7 @@ ms.lasthandoff: 03/13/2017
   
 5.  x.`Equals`(null) 返回 `false`。 但是，null.Equals(null) 会引发异常；它未遵循上面的第 2 条规则。  
   
- 定义的任何结构已具有其从 <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName> 方法的 <xref:System.ValueType?displayProperty=fullName> 替代中继承的默认值相等性实现。 此实现使用反射来检查类型中的所有字段和属性。 尽管此实现可生成正确的结果，但与专门为类型编写的自定义实现相比，它的速度相对较慢。  
+ 定义的任何结构都已具有其从 <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName> 方法的 <xref:System.ValueType?displayProperty=fullName> 替代中继承的值相等性的默认实现。 此实现使用反射来检查类型中的所有字段和属性。 尽管此实现可生成正确的结果，但与专门为类型编写的自定义实现相比，它的速度相对较慢。  
   
  类和结构的值相等性的实现详细信息有所不同。 但是，类和结构都需要相同的基础步骤来实现相等性：  
   
@@ -60,7 +61,7 @@ ms.lasthandoff: 03/13/2017
   
 3.  可选，但建议这样做：重载 [==](../../../csharp/language-reference/operators/equality-comparison-operator.md) 和 [!=](../../../csharp/language-reference/operators/not-equal-operator.md) 运算符。  
   
-4.  替代 <xref:System.Object.GetHashCode%2A?displayProperty=fullName>，以便具有值相等性的 2 个对象生成相同的哈希代码。  
+4.  替代 <xref:System.Object.GetHashCode%2A?displayProperty=fullName>，以便具有值相等性的两个对象生成相同的哈希代码。  
   
 5.  可选：若要支持“大于”或“小于”定义，请为类型实现 <xref:System.IComparable%601> 接口，并同时重载 [<=](../../../csharp/language-reference/operators/less-than-equal-operator.md) 和 [>=](../../../csharp/language-reference/operators/greater-than-equal-operator.md) 运算符。  
   

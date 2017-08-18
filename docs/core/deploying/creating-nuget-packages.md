@@ -1,6 +1,6 @@
 ---
 title: "使用跨平台工具创建 NuGet 包"
-description: "使用跨平台工具创建 NuGet 包"
+description: "了解如何使用“dotnet pack”命令创建 NuGet 包。"
 keywords: ".NET、.NET Core、NuGet"
 author: cartermp
 ms.author: mairaw
@@ -10,10 +10,11 @@ ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 2f0415c1-110b-433d-87c1-ae3d543a8844
-translationtype: Human Translation
-ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
-ms.openlocfilehash: 657981a05e831ffb849d0cd5b3ea25c079cb4fc1
-ms.lasthandoff: 03/02/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 9e5c762de0a14407c92c9752edc9619caa07d500
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Expression Trees
-description: Expression Trees
-keywords: ".NET、.NET Core"
+description: "介绍 .NET Core 中的表达式树，以及如何用它们将代码表示为可以检查、修改和执行的结构。"
+keywords: .NET, .NET Core
 author: BillWagner
 ms.author: wiwagn
 ms.date: 06/20/2016
@@ -10,11 +10,11 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: aceb4719-0d5a-4b19-b01f-b51063bcc54f
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: e6ec60b6cdbe29def719f7970dad15fad65902e7
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 3935906d9fca81a094999eefdd49ae4ed56990bf
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -31,12 +31,12 @@ ms.lasthandoff: 05/22/2017
 这使得 [Entity Framework](http://docs.efproject.net/en/latest/)（实体框架）能够将使用 C# 编写的查询转换为在数据库引擎中执行的 SQL。 另一个示例是 [Moq](https://github.com/Moq/moq)，它是用于 .NET 的热门模拟框架。
 
 本教程的其余部分将探索表达式树是什么、检查支持表达式树的框架类，并介绍如何使用表达式树。 你将学习如何阅读表达式树、如何创建表达式树、如何创建修改的表达式树，以及如何执行表达式树所表示的代码。 阅读后，便可以开始使用这些结构来创建丰富的自适应算法。
-<style type="text/css"> ol { list-style-type: upper-roman; } </style>
-1. [表达式树说明](expression-trees-explained.md)
 
-    Understand the structure and concepts behind *Expression Trees*.
+1. [已解释的表达式树](expression-trees-explained.md)
+
+    了解表达式树的结构和概念。
     
-2. [支持表达式树的框架类型](expression-classes.md)
+2. [框架类型支持表达式树](expression-classes.md)
     
     了解定义和控制表达式树的结构和类。
     

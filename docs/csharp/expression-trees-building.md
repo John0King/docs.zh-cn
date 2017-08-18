@@ -1,7 +1,7 @@
 ---
 title: "生成表达式树"
-description: "生成表达式树"
-keywords: ".NET、.NET Core"
+description: "了解生成表达式树的方法。"
+keywords: .NET, .NET Core
 author: BillWagner
 ms.author: wiwagn
 ms.date: 06/20/2016
@@ -10,11 +10,11 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 542754a9-7f40-4293-b299-b9f80241902c
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 890c058bd09893c2adb185e1d8107246eef2e20a
-ms.openlocfilehash: 5cce6b538e27f654c1f4fec732a9c69372f8c9ad
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: c0d7bcf6e07f4a49e15e6f6f4e028eebfe82d8bf
 ms.contentlocale: zh-cn
-ms.lasthandoff: 04/12/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 

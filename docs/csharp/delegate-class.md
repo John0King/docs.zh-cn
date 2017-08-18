@@ -1,7 +1,7 @@
 ---
-title: "System.Delegate 和 `delegate` 关键字"
-description: "System.Delegate 和 `delegate` 关键字"
-keywords: ".NET、.NET Core"
+title: "System.Delegate 和“delegate”关键字"
+description: "详细介绍 .NET Framework 中支持委托的类以及这些类映射到“delegate”关键字的方式。"
+keywords: .NET, .NET Core
 author: BillWagner
 ms.author: wiwagn
 ms.date: 06/20/2016
@@ -10,10 +10,11 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: f3742fda-13c2-4283-8966-9e21c2674393
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: b20c4816582ef3e4d36512c38947f64e86d26541
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 465326fe520d6a062609e0c4c471135ef88b0dd6
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -40,7 +41,7 @@ public delegate int Comparison<in T>(T left, T right);
 
 编译器会生成一个类，它派生自与使用的签名匹配的 `System.Delegate`（在此例中，是返回一个整数并具有两个参数的方法）。 该委托的类型是 `Comparison`。 `Comparison` 委托类型是泛型类型。 有关泛型的详细信息，请参阅[此处](generics.md)。
 
-请注意，语法可能看起来像是声明变量，但它实际上是声明类型**。 可以在类中、直接在命名空间中、甚至是在全局命名空间中定义委托类型。
+请注意，语法可能看起来像是声明变量，但它实际上是声明类型。 可以在类中、直接在命名空间中、甚至是在全局命名空间中定义委托类型。
 
 > [!NOTE]
 > 建议不要直接在全局命名空间中声明委托类型（或其他类型）。 
@@ -71,7 +72,7 @@ public Comparison<T> comparator;
 int result = comparator(left, right);
 ```
 
-在上面的行中，代码会调用**附加到委托的方法。
+在上面的行中，代码会调用附加到委托的方法。
 可将变量视为方法名称，并使用普通方法调用语法调用它。
 
 该代码行进行了不安全假设：不保证目标已添加到委托。 如果未附加目标，则上面的行会导致引发 `NullReferenceException`。 用于解决此问题的惯例比简单 null 检查更加复杂，在此[系列](delegates-patterns.md)的后面部分中会进行介绍。
@@ -142,3 +143,4 @@ Sort() 示例通常将单个目标方法附加到委托。 但是，委托对象
 现在你已了解支持委托的语言语法和类，我们来看一下如何使用、创建和调用强类型委托。
 
 [下一部分](delegates-strongly-typed.md)
+

@@ -11,11 +11,11 @@ ms.prod: .net-core
 ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: 2bf0c397-13fb-4f68-bc2b-531c6c88a167
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
-ms.openlocfilehash: d13387c4468a5c89cbe838139c767f0f95ab418d
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 9ce4a4ca62bb476b2414ec8b93d5633faca53b59
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 08/11/2017
 
 ---
 # <a name="handle-exceptions-in-query-expressions"></a>在查询表达式中处理异常
@@ -41,3 +41,4 @@ ms.lasthandoff: 05/10/2017
 
 ## <a name="see-also"></a>另请参阅  
  [LINQ 查询表达式](index.md)
+

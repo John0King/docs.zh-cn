@@ -1,5 +1,5 @@
 ---
-title: "如何：使用对象初始值设定项初始化对象（C# 编程指南）| Microsoft Docs"
+title: "如何：使用对象初始值设定项初始化对象（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -28,10 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 9d6537332b4ddcca185a0ac3039a925e0b3fcef2
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 01f2391680d9236b42f0d015b944b8f12455d0c8
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-initialize-objects-by-using-an-object-initializer-c-programming-guide"></a>如何：使用对象初始值设定项初始化对象（C# 编程指南）
@@ -52,8 +53,9 @@ ms.lasthandoff: 03/13/2017
  [!code-cs[csProgGuideLINQ#36](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-initialize-objects-by-using-an-object-initializer_2.cs)]  
   
 ## <a name="compiling-the-code"></a>编译代码  
- 若要运行此代码，请将该类复制并粘贴到已经在 [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)] 中创建的 Visual C# 控制台应用程序项目中。   
+ 若要运行此代码，请将该类复制并粘贴到已经在 [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] 中创建的 Visual C# 控制台应用程序项目中。   
   
 ## <a name="see-also"></a>请参阅  
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [对象和集合初始值设定项](../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)
+

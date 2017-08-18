@@ -1,5 +1,5 @@
 ---
-title: "固定大小的缓冲区（C# 编程指南）| Microsoft Docs"
+title: "固定大小的缓冲区（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -29,10 +29,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 6c5cacb588dc263e5b72e4b3cd93ad10b4b681f2
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: e1a3dcf953cb56fc3436fdd5e7ecb60478a12922
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="fixed-size-buffers-c-programming-guide"></a>固定大小的缓冲区（C# 编程指南）
@@ -55,7 +56,7 @@ private fixed char name[30];
   
  [!code-cs[csProgGuidePointers#20](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/fixed-size-buffers_2.cs)]  
   
- 包含 128 个元素的 `char` 数组的大小为 256 个字节。 固定大小的 [char](../../../csharp/language-reference/keywords/char.md) 缓冲区每个字符始终占用两个字节，而不考虑编码。 甚至在将 char 缓冲区封送到 API 方法或具有 `CharSet = CharSet.Auto` 或 `CharSet = CharSet.Ansi` 的结构时，这也为 true。 有关详细信息，请参阅 <xref:System.Runtime.InteropServices.CharSet>。  
+ 包含 128 个元素的 `char` 数组的大小为 256 个字节。 固定大小的 [char](../../../csharp/language-reference/keywords/char.md) 缓冲区每个字符始终占用两个字节，而不考虑编码。 甚至在将 char 缓冲区封送到 API 方法或具有 `CharSet = CharSet.Auto` 或 `CharSet = CharSet.Ansi` 的结构时，这也为 true。 有关更多信息，请参见<xref:System.Runtime.InteropServices.CharSet>。  
   
  另一常见的固定大小的数组是 [bool](../../../csharp/language-reference/keywords/bool.md) 数组。 `bool` 数组中的元素大小始终为一个字节。 `bool` 数组不适用于创建位数组或缓冲区。  
   
@@ -77,3 +78,4 @@ private fixed char name[30];
  [不安全代码和指针](../../../csharp/programming-guide/unsafe-code-pointers/index.md)   
  [fixed 语句](../../../csharp/language-reference/keywords/fixed-statement.md)   
  [互操作性](../../../csharp/programming-guide/interop/index.md)
+

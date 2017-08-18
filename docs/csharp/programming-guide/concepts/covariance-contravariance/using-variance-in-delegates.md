@@ -1,5 +1,5 @@
 ---
-title: "使用委托中的变体 (C#) | Microsoft Docs"
+title: "使用委托中的变体 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,14 +19,15 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: fbcf08eafe05e3299379b0455640fc08ec80e0ca
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 1a3ab3b62b20d6e4992421ac4fd98b73bded04c9
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="using-variance-in-delegates-c"></a>使用委托中的变体 (C#)
-向委托分配方法时，协变**和逆变**为匹配委托类型和方法签名提供了灵活性。 协变允许方法具有的派生返回类型多于委托中定义的类型。 逆变允许方法具有的派生参数类型少于委托类型中的类型。  
+向委托分配方法时，协变和逆变为匹配委托类型和方法签名提供了灵活性。 协变允许方法具有的派生返回类型多于委托中定义的类型。 逆变允许方法具有的派生参数类型少于委托类型中的类型。  
   
 ## <a name="example-1-covariance"></a>示例 1：协变  
   
@@ -72,7 +73,7 @@ class Program
 ### <a name="code"></a>代码  
   
 ```csharp  
-// Event hander that accepts a parameter of the EventArgs type.  
+// Event handler that accepts a parameter of the EventArgs type.  
 private void MultiHandler(object sender, System.EventArgs e)  
 {  
     label1.Text = System.DateTime.Now.ToString();  
@@ -96,3 +97,4 @@ public Form1()
 ## <a name="see-also"></a>请参阅  
  [委托中的变体 (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/variance-in-delegates.md)   
  [对 Func 和 Action 泛型委托使用变体 (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)
+

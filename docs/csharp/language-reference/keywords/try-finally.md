@@ -1,5 +1,5 @@
 ---
-title: "try-finally（C# 参考）| Microsoft Docs"
+title: "try-finally（C# 参考）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -31,11 +31,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 3f7618aa6d4ae3535b2b6cb562349650b3eba1ed
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 88b9960b8c026d1fcd8eed1815ade57422cd2a15
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="try-finally-c-reference"></a>try-finally（C# 参考）
@@ -65,8 +65,9 @@ ms.lasthandoff: 03/13/2017
  [C# 参考](../../../csharp/language-reference/index.md)   
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [C# 关键字](../../../csharp/language-reference/keywords/index.md)   
- [try、throw 和 catch 语句 (C++)](https://docs.microsoft.com/cpp/cpp/try-throw-and-catch-statements-cpp)   
+ [try、throw 和 catch 语句 (C++)](/cpp/cpp/try-throw-and-catch-statements-cpp)   
  [异常处理语句](../../../csharp/language-reference/keywords/exception-handling-statements.md)   
  [throw](../../../csharp/language-reference/keywords/throw.md)   
  [try-catch](../../../csharp/language-reference/keywords/try-catch.md)   
  [如何：显式引发异常](https://msdn.microsoft.com/library/xhcbs8fz)
+

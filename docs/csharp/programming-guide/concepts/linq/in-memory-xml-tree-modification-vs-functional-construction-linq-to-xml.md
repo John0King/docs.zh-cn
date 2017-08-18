@@ -1,5 +1,5 @@
 ---
-title: "内存中 XML 树修改与函数构造 (LINQ to XML) (C#) | Microsoft Docs"
+title: "内存中 XML 树修改与函数构造 (LINQ to XML) (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,17 +14,17 @@ ms.assetid: b5afc31d-a325-4ec6-bf17-0ff90a20ffca
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: ed42b0d8acf1baeba84feb1d0a3ed72f2d3b76ea
-ms.lasthandoff: 03/13/2017
-
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: ca3d24c8ff145bdc30db3f71b8ab3e28217f67d8
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="in-memory-xml-tree-modification-vs-functional-construction-linq-to-xml-c"></a>内存中 XML 树修改与函数构造 (LINQ to XML) (C#)
-就地修改 XML 树是更改 XML 文档形状的传统方法。 典型的应用程序将文档加载到数据存储区（如 DOM 或 [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)]）；使用编程接口插入节点、删除节点或更改节点的内容；然后将 XML 保存到文件或通过网络传输。  
+就地修改 XML 树是更改 XML 文档形状的传统方法。 典型的应用程序将文档加载到数据存储区（如 DOM 或 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]）；使用编程接口插入节点、删除节点或更改节点的内容；然后将 XML 保存到文件或通过网络传输。  
   
- [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] 允许使用另一种可在许多方案中使用的方法：*函数构造*。 函数构造将修改数据视为转换问题，而不是数据存储区的具体操作。 如果您采用某种数据表示形式并有效地将其从一种形式转换为另一种形式，其结果等效于您采用一个数据存储区并对其以某种方式进行操作以采用另一种形状。 函数构造方法的关键是将查询的结果传递给 <xref:System.Xml.Linq.XDocument> 和 <xref:System.Xml.Linq.XElement> 构造函数。  
+ [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 允许使用另一种可在许多方案中使用的方法：*函数构造*。 函数构造将修改数据视为转换问题，而不是数据存储区的具体操作。 如果您采用某种数据表示形式并有效地将其从一种形式转换为另一种形式，其结果等效于您采用一个数据存储区并对其以某种方式进行操作以采用另一种形状。 函数构造方法的关键是将查询的结果传递给 <xref:System.Xml.Linq.XDocument> 和 <xref:System.Xml.Linq.XElement> 构造函数。  
   
  在许多情况下，您可以在操作数据存储区所需的很短时间内编写转换代码，并且该代码更稳定、更易于维护。 在这些情况下，虽然转换方法可能具有较强的处理能力，但它更适合用于修改数据。 如果开发人员熟悉函数方法，则在很多情况下，生成的代码会更易于理解。 可以很容易地找到修改树的每部分的代码。  
   
@@ -87,3 +87,4 @@ Console.WriteLine(newTree);
   
 ## <a name="see-also"></a>请参阅  
  [修改 XML 树 (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/modifying-xml-trees-linq-to-xml.md)
+

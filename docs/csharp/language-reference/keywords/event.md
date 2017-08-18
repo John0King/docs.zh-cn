@@ -1,5 +1,5 @@
 ---
-title: "event（C# 参考）| Microsoft Docs"
+title: "event（C# 参考）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -32,11 +32,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 60a6322f8e120c6a443638b4f6e409acdfa0b235
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 674e36625a68243afff75f6c5028309dc7aff02a
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="event-c-reference"></a>event（C# 参考）
@@ -49,7 +49,7 @@ ms.lasthandoff: 03/13/2017
   
  事件是一种特殊的多播委托，仅可以从声明事件的类或结构（发布服务器类）中对其进行调用。 如果其他类或结构订阅该事件，则在发布服务器类引发该事件时，将调用其事件处理程序方法。 有关详细信息和代码示例，请参阅[事件](../../../csharp/programming-guide/events/index.md)和[委托](../../../csharp/programming-guide/delegates/index.md)。  
   
- 可以将事件标记为[公共](../../../csharp/language-reference/keywords/public.md)、[专用](../../../csharp/language-reference/keywords/private.md)、[受保护](../../../csharp/language-reference/keywords/protected.md)、[内部](../../../csharp/language-reference/keywords/internal.md)或 `protected``internal`。 这些访问修饰符定义该类的用户访问该事件的方式。 有关详细信息，请参阅[访问修饰符](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)。  
+ 可以将事件标记为[公共](../../../csharp/language-reference/keywords/public.md)、[专用](../../../csharp/language-reference/keywords/private.md)、[受保护](../../../csharp/language-reference/keywords/protected.md)、[内部](../../../csharp/language-reference/keywords/internal.md)或 `protected internal`。 这些访问修饰符定义该类的用户访问该事件的方式。 有关详细信息，请参阅[访问修饰符](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)。  
   
 ## <a name="keywords-and-events"></a>关键字和事件  
  下列关键字应用于事件。  
@@ -68,7 +68,7 @@ ms.lasthandoff: 03/13/2017
 ## <a name="c-language-specification"></a>C# 语言规范  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [C# 参考](../../../csharp/language-reference/index.md)   
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [C# 关键字](../../../csharp/language-reference/keywords/index.md)   
@@ -76,3 +76,4 @@ ms.lasthandoff: 03/13/2017
  [删除](../../../csharp/language-reference/keywords/remove.md)   
  [修饰符](../../../csharp/language-reference/keywords/modifiers.md)   
  [如何：合并委托（多播委托）](../../../csharp/programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md)
+

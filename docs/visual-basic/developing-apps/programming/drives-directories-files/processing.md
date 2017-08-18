@@ -1,5 +1,5 @@
 ---
-title: "处理驱动器、目录和文件 (Visual Basic) | Microsoft 文档"
+title: "处理驱动器、目录和文件 (Visual Basic)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -35,15 +35,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: 4cbb2ead7075e8cda58ac4ec33d9fb6535d3284a
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 8cb9735b82d381dfb57211bf37ce29dfbb7374aa
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="processing-drives-directories-and-files-visual-basic"></a>处理驱动器、目录和文件 (Visual Basic)
-可以通过 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] 使用 `My.Computer.FileSystem` 对象处理驱动器、文件夹和文件，这样可以提高性能，并且与诸如 `FileOpen` 和 `Write` 函数（尽管它们仍可用）的传统方法相比更易于使用。 以下各节详细地讨论了这些方法。  
+可以通过 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 使用 `My.Computer.FileSystem` 对象处理驱动器、文件夹和文件，这样可以提高性能，并且与诸如 `FileOpen` 和 `Write` 函数（尽管它们仍可用）的传统方法相比更易于使用。 以下各节详细地讨论了这些方法。  
   
 ## <a name="in-this-section"></a>本节内容  
  [使用 Visual Basic 访问文件](../../../../visual-basic/developing-apps/programming/drives-directories-files/file-access.md)  
@@ -53,7 +53,7 @@ ms.lasthandoff: 05/22/2017
  提供 .NET Framework 中文件 I/O 概念的概述，其中包括流、独立存储、文件事件、文件属性和文件访问。  
   
  [演练：使用 .NET Framework 方法操作文件](../../../../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-by-using-net-framework-methods.md)  
- 演示如何使用 [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)] 操作文件和文件夹。  
+ 演示如何使用 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 操作文件和文件夹。  
   
  [演练：在 Visual Basic 中操作文件和目录](../../../../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-and-directories.md)  
  演示如何使用 `My.Computer.FileSystem` 对象操作文件和文件夹。  
@@ -64,3 +64,4 @@ ms.lasthandoff: 05/22/2017
   
  <xref:Microsoft.VisualBasic.FileIO.FileSystem>  
  `My.Computer.FileSystem` 对象及其成员的参考文档。
+

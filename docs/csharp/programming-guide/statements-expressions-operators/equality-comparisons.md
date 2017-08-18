@@ -1,5 +1,5 @@
 ---
-title: "相等比较（C# 编程指南）| Microsoft Docs"
+title: "相等比较（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -28,11 +28,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 400dfda51d978f35c3995f90840643aaff1b9c13
-ms.openlocfilehash: 9f7d8c6e816efe248739d0771d332a784b1e185f
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 948bbc1b5b8535cc31ea362497fa69a816b43edc
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/24/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="equality-comparisons-c-programming-guide"></a>相等比较（C# 编程指南）
@@ -43,7 +43,7 @@ ms.lasthandoff: 03/24/2017
   
  [!code-cs[csProgGuideStatements#18](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/equality-comparisons_1.cs)]  
   
- 在此代码中，创建了两个对象，但在赋值语句后，这两个引用所引用的是同一对象。 因此，它们具有引用相等性。 使用 <xref:System.Object.ReferenceEquals%2A> 方法来确定两个引用是否引用同一对象。  
+ 在此代码中，创建了两个对象，但在赋值语句后，这两个引用所引用的是同一对象。 因此，它们具有引用相等性。 使用 <xref:System.Object.ReferenceEquals%2A> 方法确定两个引用是否引用同一对象。  
   
  引用相等性的概念仅适用于引用类型。 由于在将值类型的实例赋给变量时将产生值的副本，因此值类型对象无法具有引用相等性。 因此，永远不会有两个未装箱结构引用内存中的同一位置。 此外，如果使用 <xref:System.Object.ReferenceEquals%2A> 比较两个值类型，结果将始终为 `false`，即使对象中包含的值都相同也是如此。 这是因为会将每个变量装箱到单独的对象实例中。 有关详细信息，请参阅[如何：测试引用相等性（标识）](../../../csharp/programming-guide/statements-expressions-operators/how-to-test-for-reference-equality-identity.md)。  
   
@@ -66,7 +66,7 @@ if( b == a)
  但是，并不要求类型中的所有字段均相等。 只需子集相等即可。 比较不具所有权的类型时，应确保明确了解相等性对于该类型是如何定义的。 若要详细了解如何在自己的类和结构中定义值相等性，请参阅[如何：为类型定义值相等性](../../../csharp/programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type.md)。  
   
 ### <a name="value-equality-for-floating-point-values"></a>浮点值的值相等性  
- 由于二进制计算机上的浮点算法不精确，因此浮点值（[double](../../../csharp/language-reference/keywords/double.md) 和 [float](../../../csharp/language-reference/keywords/float.md)）的相等比较会出现问题。 有关详细信息，请参阅主题 <xref:System.Double?displayProperty=fullName> 中的备注。  
+ 由于二进制计算机上的浮点算法不精确，因此浮点值（[double](../../../csharp/language-reference/keywords/double.md) 和 [float](../../../csharp/language-reference/keywords/float.md)）的相等比较会出现问题。 有关更多信息，请参阅 <xref:System.Double?displayProperty=fullName> 主题中的备注部分。  
   
 ## <a name="related-topics"></a>相关主题  
   
@@ -79,3 +79,4 @@ if( b == a)
   
 ## <a name="see-also"></a>另请参阅  
  [C# 编程指南](../../../csharp/programming-guide/index.md)
+

@@ -1,5 +1,5 @@
 ---
-title: "编译器生成的异常（C# 编程指南）| Microsoft Docs"
+title: "编译器生成的异常（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -27,10 +27,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 4015551ac983610afc8bf1f08e73a33c1ac338ff
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: d8fbae9272b34dd4d010199470c930c846cd1b74
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="compiler-generated-exceptions-c-programming-guide"></a>编译器生成的异常（C# 编程指南）
@@ -38,7 +39,7 @@ ms.lasthandoff: 03/13/2017
   
 |例外|描述|  
 |---------------|-----------------|  
-|<xref:System.ArithmeticException>|算术运算过程中发生的异常的基类，例如 <xref:System.DivideByZeroException> 和 <xref:System.OverflowException>。|  
+|<xref:System.ArithmeticException>|算术运算期间出现的异常的基类，例如 <xref:System.DivideByZeroException> 和 <xref:System.OverflowException>。|  
 |<xref:System.ArrayTypeMismatchException>|由于元素的实际类型与数组的实际类型不兼容而导致数组无法存储给定元素时引发。|  
 |<xref:System.DivideByZeroException>|尝试将整数值除以零时引发。|  
 |<xref:System.IndexOutOfRangeException>|索引小于零或超出数组边界时，尝试对数组编制索引时引发。|  
@@ -56,3 +57,4 @@ ms.lasthandoff: 03/13/2017
  [try-catch](../../../csharp/language-reference/keywords/try-catch.md)   
  [try-finally](../../../csharp/language-reference/keywords/try-finally.md)   
  [try-catch-finally](../../../csharp/language-reference/keywords/try-catch-finally.md)
+

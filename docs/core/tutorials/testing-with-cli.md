@@ -1,7 +1,7 @@
 ---
-title: "使用 .NET Core 命令行组织和测试项目 | Microsoft Docs"
+title: "使用 .NET Core 命令行组织和测试项目"
 description: "本教程介绍如何从命令行组织和测试 .NET Core 项目。"
-keywords: .NET, .NET Core, unit testing, .NET CLI, xUnit
+keywords: ".NET, .NET Core, 单元测试, .NET Core CLI, xUnit"
 author: cartermp
 ms.author: mairaw
 ms.date: 05/16/2017
@@ -10,11 +10,11 @@ ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 52ff1be3-d92e-4477-9c84-8c1771e87ab5
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 6edd52bc56a03138fe16048fa06cad00a2af4847
-ms.openlocfilehash: 1e6e987777678ade860f108aed05bba926a6d4fd
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 1a0a0554b28600821fb15f64d31c6bce74a17136
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/16/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -260,3 +260,4 @@ Test execution time: 1.6634 Seconds
 测试通过。 在与所有者谈话时，宠物类型的方法返回正确的值。
 
 你已了解使用 xUnit 来组织和测试项目的方法。 继续使用这些方法，将它们应用于自己的项目中。 祝你编码愉快！
+

@@ -1,5 +1,5 @@
 ---
-title: "C# 编码约定（C# 编程指南）| Microsoft Docs"
+title: "C# 编码约定（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -29,11 +29,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
-ms.openlocfilehash: 85e113f66998157a69be3f1d9065a5c4c1117773
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 9f32fdc0eb1954cdac30c39e05c74d43301d850c
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="c-coding-conventions-c-programming-guide"></a>C# 编码约定（C# 编程指南）
@@ -60,7 +60,7 @@ ms.lasthandoff: 05/10/2017
 ## <a name="layout-conventions"></a>布局约定  
  好的布局利用格式设置来强调代码的结构并使代码更便于阅读。 Microsoft 示例和样本符合以下约定：  
   
--   使用默认的代码编辑器设置（智能缩进、4 字符缩进、制表符保存为空格）。 有关详细信息，请参阅[选项、文本编辑器、C#、格式设置](https://docs.microsoft.com/visualstudio/ide/reference/options-text-editor-csharp-formatting)。  
+-   使用默认的代码编辑器设置（智能缩进、4 字符缩进、制表符保存为空格）。 有关详细信息，请参阅[选项、文本编辑器、C#、格式设置](/visualstudio/ide/reference/options-text-editor-csharp-formatting)。  
   
 -   每行只写一条语句。  
   
@@ -221,3 +221,4 @@ ms.lasthandoff: 05/10/2017
 ## <a name="see-also"></a>另请参阅  
  [Visual Basic 编码约定](../../../visual-basic/programming-guide/program-structure/coding-conventions.md)   
  [安全编码准则](../../../standard/security/secure-coding-guidelines.md)
+

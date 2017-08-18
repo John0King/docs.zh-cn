@@ -1,5 +1,5 @@
 ---
-title: ".NET Framework 中的过时类型 | Microsoft Docs"
+title: ".NET Framework 中的过时类型"
 ms.custom: 
 ms.date: 03/30/2017
 ms.prod: .net-framework
@@ -18,11 +18,11 @@ caps.latest.revision: 41
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 01c66e2c291766ba00376261740906934f065855
-ms.openlocfilehash: b7040d4c82c9434b2d24a579a93602660479ec59
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 15ab48dedaef24ea209c38939ee87a0321da55cf
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="obsolete-types-in-the-net-framework"></a>.NET Framework 中的过时类型

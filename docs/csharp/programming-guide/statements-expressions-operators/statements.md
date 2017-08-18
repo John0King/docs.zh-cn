@@ -1,5 +1,5 @@
 ---
-title: "语句（C# 编程指南） | Microsoft Docs"
+title: "语句（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -28,11 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: cfbd607f614bd8d287dd33f08dd47b12fa651ced
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 4df592821f9bebb318138cffac9045fdbec1e759
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="statements-c-programming-guide"></a>语句（C# 编程指南）
@@ -54,7 +54,7 @@ ms.lasthandoff: 03/13/2017
 |[跳转语句](../../../csharp/language-reference/keywords/jump-statements.md)|跳转语句将控制转移给另一代码段。 有关详细信息，请参阅下列主题：<br /><br /> [break](../../../csharp/language-reference/keywords/break.md)、[continue](../../../csharp/language-reference/keywords/continue.md)、[default](../../../csharp/language-reference/keywords/switch.md)、[goto](../../../csharp/language-reference/keywords/goto.md)、[return](../../../csharp/language-reference/keywords/return.md)、[yield](../../../csharp/language-reference/keywords/yield.md)|  
 |[异常处理语句](../../../csharp/language-reference/keywords/exception-handling-statements.md)|异常处理语句用于从运行时发生的异常情况正常恢复。 有关详细信息，请参阅下列主题：<br /><br /> [throw](../../../csharp/language-reference/keywords/throw.md)、[try-catch](../../../csharp/language-reference/keywords/try-catch.md)、[try-finally](../../../csharp/language-reference/keywords/try-finally.md)、[try-catch-finally](../../../csharp/language-reference/keywords/try-catch-finally.md)|  
 |[Checked 和 unchecked](../../../csharp/language-reference/keywords/checked-and-unchecked.md)|Checked 和 unchecked 语句用于指定将结果存储在变量中、但该变量过小而不能容纳结果值时，是否允许数值运算导致溢出。 有关详细信息，请参阅 [checked](../../../csharp/language-reference/keywords/checked.md) 和 [unchecked](../../../csharp/language-reference/keywords/unchecked.md)。|  
-`await` 语句|如果用 [async](../../../csharp/language-reference/keywords/async.md) 修饰符标记方法，则可以在该方法中使用 [await](../../../csharp/language-reference/keywords/await.md) 运算符。 在控制到达异步方法的 `await` 表达式时，控制将返回到调用方，该方法中的进程将挂起，直到等待的任务完成为止。 任务完成后，可以在方法中恢复执行。<br /><br /> 有关简单示例，请参阅[方法](../../../csharp/programming-guide/classes-and-structs/methods.md)的“异步方法”一节。 有关详细信息，请参阅 [async 和 await 的异步编程](../../../csharp/programming-guide/concepts/async/index.md)。|  
+|`await` 语句|如果用 [async](../../../csharp/language-reference/keywords/async.md) 修饰符标记方法，则可以使用该方法中的 [await](../../../csharp/language-reference/keywords/await.md) 运算符。 在控制到达异步方法的 `await` 表达式时，控制将返回到调用方，该方法中的进程将挂起，直到等待的任务完成为止。 任务完成后，可以在方法中恢复执行。<br /><br /> 有关简单示例，请参阅[方法](../../../csharp/programming-guide/classes-and-structs/methods.md)的“异步方法”一节。 有关详细信息，请参阅 [async 和 await 的异步编程](../../../csharp/programming-guide/concepts/async/index.md)。|  
 |`yield return` 语句|迭代器对集合执行自定义迭代，如列表或数组。 迭代器使用 [yield return](../../../csharp/language-reference/keywords/yield.md) 语句返回元素，每次返回一个。 到达 `yield return` 语句时，会记住当前在代码中的位置。 下次调用迭代器时，将从该位置重新开始执行。<br /><br /> 有关详细信息，请参阅[迭代器](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7)。|  
 |`fixed` 语句|fixed 语句禁止垃圾回收器重定位可移动的变量。 有关详细信息，请参阅 [fixed](../../../csharp/language-reference/keywords/fixed-statement.md)。|  
 |`lock` 语句|lock 语句用于限制一次仅允许一个线程访问代码块。 有关详细信息，请参阅 [lock](../../../csharp/language-reference/keywords/lock-statement.md)。|  
@@ -95,5 +95,6 @@ ms.lasthandoff: 03/13/2017
 ## <a name="c-language-specification"></a>C# 语言规范  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [C# 编程指南](../../../csharp/programming-guide/index.md)
+

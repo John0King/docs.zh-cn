@@ -1,5 +1,5 @@
 ---
-title: "缓解：路径规范化 | Microsoft Docs"
+title: "缓解：路径规范化"
 ms.custom: 
 ms.date: 03/30/2017
 ms.prod: .net-framework
@@ -15,11 +15,11 @@ caps.latest.revision: 6
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: 0579bb975a62e512062b10d39c2967cdcd23438f
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: e30099e315f88bd051dca2e1f6c83d1bccc49569
 ms.contentlocale: zh-cn
-ms.lasthandoff: 04/18/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="mitigation-path-normalization"></a>缓解：路径规范化

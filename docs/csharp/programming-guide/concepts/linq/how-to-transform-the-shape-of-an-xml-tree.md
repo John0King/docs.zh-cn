@@ -1,5 +1,5 @@
 ---
-title: "如何：转换 XML 树的形状 (C#) | Microsoft Docs"
+title: "如何：转换 XML 树的形状 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,11 +14,11 @@ ms.assetid: 93c5d426-dea2-4709-a991-60204de42e8f
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 8f11c77bc6273642bc4ffce3bf546c5a897729bc
-ms.lasthandoff: 03/13/2017
-
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 3558cb7592641d784f0150ce7016563ad9c81c46
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-transform-the-shape-of-an-xml-tree-c"></a>如何：转换 XML 树的形状 (C#)
@@ -100,7 +100,7 @@ Console.WriteLine(newCustOrd);
 ## <a name="example"></a>示例  
  本示例重命名某些元素并将某些属性转换为元素。  
   
- 代码调用 `ConvertAddress`，后者返回一个 <xref:System.Xml.Linq.XElement> 对象列表。 此方法的参数是一个查询，该查询确定 `Address` 属性值为 `Type` 的 `"Shipping"` 复杂元素。  
+ 代码调用 `ConvertAddress`，它返回一个 <xref:System.Xml.Linq.XElement> 对象列表。 此方法的参数是一个查询，该查询确定 `Address` 属性值为 `Type` 的 `"Shipping"` 复杂元素。  
   
  本示例使用以下 XML 文档：[示例 XML 文件：典型采购订单 (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-linq-to-xml-1.md)。  
   
@@ -152,3 +152,4 @@ static void Main(string[] args)
   
 ## <a name="see-also"></a>请参阅  
  [投影和转换 (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/projections-and-transformations-linq-to-xml.md)
+

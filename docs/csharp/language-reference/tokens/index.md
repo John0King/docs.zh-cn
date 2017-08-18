@@ -1,5 +1,5 @@
 ---
-title: "特殊字符（C# 参考）| Microsoft 文档"
+title: "特殊字符（C# 参考）"
 ms.date: 2017-02-14
 ms.prod: .net
 ms.technology:
@@ -33,10 +33,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 03242440226552c5e4125446c453cf657137e403
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 50a6fd688ff86936ceee410e4aa7440d5a6900c9
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 

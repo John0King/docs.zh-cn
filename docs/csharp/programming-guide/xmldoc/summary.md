@@ -1,5 +1,5 @@
 ---
-title: "&lt;summary&gt;（C# 编程指南）| Microsoft Docs"
+title: "&lt;summary&gt;（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -32,17 +32,17 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: b74e5bf964ff82f88fe2822257a64eccb5697535
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: bd96e58494196fcfdeb46e9e59481666ec9466f3
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="ltsummarygt-c-programming-guide"></a>&lt;summary&gt;（C# 编程指南）
 ## <a name="syntax"></a>语法  
   
-```  
+```xml  
 <summary>description</summary>  
 ```  
   
@@ -51,18 +51,18 @@ ms.lasthandoff: 03/13/2017
  对象的摘要。  
   
 ## <a name="remarks"></a>备注  
- \<summary> 标记应当用于描述类型或类型成员。 使用 [\<remarks>](../../../csharp/programming-guide/xmldoc/remarks.md) 可针对某个类型说明添加补充信息。 使用 [cref 属性](../../../csharp/programming-guide/xmldoc/cref-attribute.md)可启用文档工具（如 [Sandcastle](http://go.microsoft.com/fwlink/?LinkId=124061)）来创建指向代码元素的文档页的内部超链接。  
+ \<summary> 标记应当用于描述类型或类型成员。 使用 [\<remarks>](../../../csharp/programming-guide/xmldoc/remarks.md) 可针对某个类型说明添加补充信息。 使用 [cref 属性](../../../csharp/programming-guide/xmldoc/cref-attribute.md)可启用文档工具（如 [Sandcastle](https://github.com/EWSoftware/SHFB)）来创建指向代码元素的文档页的内部超链接。  
   
  \<summary> 标记的文本是唯一有关 IntelliSense 中的类型的信息源，它也显示在对象浏览器窗口中。  
   
- 使用 [/doc](../../../csharp/language-reference/compiler-options/doc-compiler-option.md) 进行编译可以将文档注释处理到文件中。 若要基于编译器生成的文件创建最终文档，可以创建一个自定义工具，也可以使用 [Sandcastle](http://go.microsoft.com/fwlink/?LinkId=124061) 等工具。  
+ 使用 [/doc](../../../csharp/language-reference/compiler-options/doc-compiler-option.md) 进行编译可以将文档注释处理到文件中。 若要基于编译器生成的文件创建最终文档，可以创建一个自定义工具，也可以使用 [Sandcastle](https://github.com/EWSoftware/SHFB) 等工具。  
   
 ## <a name="example"></a>示例  
  [!code-cs[csProgGuideDocComments#12](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/summary_1.cs)]  
   
  前面的示例生成下面的 XML 文件。  
   
-```  
+```xml  
 <?xml version="1.0"?>  
 <doc>  
     <assembly>  
@@ -92,7 +92,7 @@ ms.lasthandoff: 03/13/2017
   
  前面的示例生成下面的 XML 文件。  
   
-```  
+```xml  
 <?xml version="1.0"?>  
 <doc>  
     <assembly>  

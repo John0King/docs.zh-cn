@@ -1,5 +1,5 @@
 ---
-title: "如何：检索元素的值 (LINQ to XML) (C#) | Microsoft Docs"
+title: "如何：检索元素的值 (LINQ to XML) (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,11 +14,11 @@ ms.assetid: 4228c007-07c9-4cf2-a45b-e7074c109581
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: a3f844917ff1d9841c1c6f7f727f593868ec43b8
-ms.lasthandoff: 03/13/2017
-
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 70e60c799157c7aa577bb8abd1fa6aaad746d3d1
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-retrieve-the-value-of-an-element-linq-to-xml-c"></a>如何：检索元素的值 (LINQ to XML) (C#)
@@ -58,9 +58,9 @@ Console.WriteLine("Value of e:" + (int)e);
 Value of e:44  
 ```  
   
- [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] 提供了以下数据类型的显式强制转换运算符：`string`、`bool`、`bool?`、`int`、`int?`、`uint`、`uint?`、`long`、`long?`、`ulong`、`ulong?`、`float`、`float?`、`double`、`double?`、`decimal`、`decimal?`、`DateTime`、`DateTime?`、`TimeSpan`、`TimeSpan?`、`GUID` 和 `GUID?`。  
+ [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 提供了以下数据类型的显式强制转换运算符：`string`、`bool`、`bool?`、`int`、`int?`、`uint`、`uint?`、`long`、`long?`、`ulong`、`ulong?`、`float`、`float?`、`double`、`double?`、`decimal`、`decimal?`、`DateTime`、`DateTime?`、`TimeSpan`、`TimeSpan?`、`GUID` 和 `GUID?`。  
   
- [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] 为 <xref:System.Xml.Linq.XAttribute> 对象提供相同的强制转换运算符。  
+ [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 为 <xref:System.Xml.Linq.XAttribute> 对象提供了相同的强制转换运算符。  
   
 ## <a name="example"></a>示例  
  可以使用 <xref:System.Xml.Linq.XElement.Value%2A> 属性来检索元素的内容：  
@@ -79,7 +79,7 @@ Value of e:abcde
 ```  
   
 ## <a name="example"></a>示例  
- 有时，尽管不能确定某个元素是否存在，还是会尝试检索该元素的值。 在这种情况下，将强制转换后的元素分配给可以为 null 的类型（`string` 或 [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)] 中可以为 null 的类型之一）时，如果该元素不存在，则将分配的变量设置为 `null`。 下面的代码演示当元素可能存在也可能不存在时，使用强制转换比使用 <xref:System.Xml.Linq.XElement.Value%2A> 属性更加简单。  
+ 有时，尽管不能确定某个元素是否存在，还是会尝试检索该元素的值。 在这种情况下，将强制转换后的元素分配给可以为 null 的类型（`string` 或 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 中可以为 null 的类型之一）时，如果该元素不存在，则将分配的变量设置为 `null`。 下面的代码演示当元素可能存在也可能不存在时，使用强制转换比使用 <xref:System.Xml.Linq.XElement.Value%2A> 属性更加简单。  
   
 ```csharp  
 XElement root = new XElement("Root",  
@@ -159,3 +159,4 @@ v4:element does not exist
   
 ## <a name="see-also"></a>请参阅  
  [LINQ to XML 轴 (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-axes.md)
+

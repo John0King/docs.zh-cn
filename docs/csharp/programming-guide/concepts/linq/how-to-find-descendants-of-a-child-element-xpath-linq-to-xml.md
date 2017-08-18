@@ -1,5 +1,5 @@
 ---
-title: "如何：查找子元素的后代 (XPath-LINQ to XML) (C#) | Microsoft 文档"
+title: "如何：查找子元素的后代 (XPath-LINQ to XML) (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,11 +14,11 @@ ms.assetid: 505b7512-bb8b-4f85-abbf-491f039c961e
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 29fdf6976c3f35c35f6cd70b1b4fadc056b2d64d
-ms.lasthandoff: 03/13/2017
-
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 1b645290b6cac55e48be0b15a33307f53c08edd6
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-find-descendants-of-a-child-element-xpath-linq-to-xml-c"></a>如何：查找子元素的后代 (XPath-LINQ to XML) (C#)
@@ -89,3 +89,4 @@ This is the start of a sentence.  This is a second sentence.
   
 ## <a name="see-also"></a>请参阅  
  [针对 XPath 用户的 LINQ to XML (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)
+

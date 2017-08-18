@@ -1,5 +1,5 @@
 ---
-title: "访问计算机资源 (Visual Basic) | Microsoft 文档"
+title: "访问计算机资源 (Visual Basic)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -32,11 +32,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 086c89b2264e9ef1744d601744e0d313e34fb24b
-ms.openlocfilehash: d2de1c5f325d618e338107364e30e59e440abeac
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: ae9517d2c06c2583a90b2bb503094094bb6e938c
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 

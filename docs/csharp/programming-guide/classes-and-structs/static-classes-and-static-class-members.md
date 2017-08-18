@@ -1,5 +1,5 @@
 ---
-title: "静态类和静态类成员（C# 编程指南）| Microsoft Docs"
+title: "静态类和静态类成员（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -31,10 +31,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: f93706bb5df41e46c860ca70d131d94015a6348f
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 63f46f9ae35b3c699744f7bf61cad3b08b796509
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="static-classes-and-static-class-members-c-programming-guide"></a>静态类和静态类成员（C# 编程指南）
@@ -58,7 +59,7 @@ Console.WriteLine(Math.Round(Math.Abs(dub)));
 // 3  
 ```  
   
- 与所有类类型的情况一样，静态类的类型信息在引用该类的程序加载时，由 [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] 公共语言运行时 (CLR) 加载。 程序无法确切指定类加载的时间。 但是，可保证进行加载，以及在程序中首次引用类之前初始化其字段并调用其静态构造函数。 静态构造函数只调用一次，在程序所驻留的应用程序域的生存期内，静态类会保留在内存中。  
+ 与所有类类型的情况一样，静态类的类型信息在引用该类的程序加载时，由 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 公共语言运行时 (CLR) 加载。 程序无法确切指定类加载的时间。 但是，可保证进行加载，以及在程序中首次引用类之前初始化其字段并调用其静态构造函数。 静态构造函数只调用一次，在程序所驻留的应用程序域的生存期内，静态类会保留在内存中。  
   
 > [!NOTE]
 >  若要创建仅允许创建本身的一个实例的非静态类，请参阅[在 C# 中实现单一实例](http://go.microsoft.com/fwlink/?LinkID=100567)。  
@@ -106,7 +107,7 @@ Console.WriteLine(Math.Round(Math.Abs(dub)));
  对静态方法的调用会采用 Microsoft 中间语言 (MSIL) 生成调用指令，而对实例方法的调用会生成 `callvirt` 指令，该指令还会检查是否存在 null 对象引用。 但是在大多数时候，两者之间的性能差异并不显著。  
   
 ## <a name="c-language-specification"></a>C# 语言规范  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## <a name="see-also"></a>请参阅  
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
@@ -115,3 +116,4 @@ Console.WriteLine(Math.Round(Math.Abs(dub)));
  [类](../../../csharp/language-reference/keywords/class.md)   
  [静态构造函数](../../../csharp/programming-guide/classes-and-structs/static-constructors.md)   
  [实例构造函数](../../../csharp/programming-guide/classes-and-structs/instance-constructors.md)
+

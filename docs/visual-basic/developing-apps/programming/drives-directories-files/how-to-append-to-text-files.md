@@ -1,5 +1,5 @@
 ---
-title: "如何：在 Visual Basic 中向文本文件追加内容 | Microsoft Docs"
+title: "如何：在 Visual Basic 中向文本文件追加内容"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -32,11 +32,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: eac2d621ba4fe2afebc9eb73f4723c3a869a23a8
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 3425c82ed73e4a6fbded187b9333f4083111e78f
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-append-to-text-files-in-visual-basic"></a>如何：在 Visual Basic 中向文本文件追加内容
@@ -53,7 +53,7 @@ ms.lasthandoff: 05/22/2017
 ## <a name="robust-programming"></a>可靠编程  
  以下情况可能会导致异常：  
   
--   路径由于以下原因之一而无效：是零长度字符串；仅为空白；包含无效字符；是一个设备路径（开头字符为 \\\\.\\）(<xref:System.ArgumentException>)。  
+-   路径由于以下原因之一无效：是零长度字符串；仅包含空白；包含无效字符；是一个设备路径（开头字符为 \\\\.\\）(<xref:System.ArgumentException>)。  
   
 -   路径无效，因为它是 `Nothing` (<xref:System.ArgumentNullException>)。  
   
@@ -71,3 +71,4 @@ ms.lasthandoff: 05/22/2017
  <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllText%2A>   
  <xref:Microsoft.VisualBasic.FileIO.FileSystem>   
  [写入文件](../../../../visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md)
+

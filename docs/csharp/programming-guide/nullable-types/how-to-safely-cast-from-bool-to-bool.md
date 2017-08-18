@@ -1,5 +1,5 @@
 ---
-title: "如何：安全地将 bool? 转换为 bool（C# 编程指南）| Microsoft Docs"
+title: "如何：安全地将 bool? 强制转换为 bool（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -28,11 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 400dfda51d978f35c3995f90840643aaff1b9c13
-ms.openlocfilehash: 7648b9bb5d54b58dc13371e1308f038289df8e56
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: c8a3dc3280b7dca802b327d9454c7f0ba9ed44be
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-safely-cast-from-bool-to-bool-c-programming-guide"></a>如何：安全地将 bool? 强制转换为 bool（C# 编程指南）
@@ -70,3 +70,4 @@ if((bool)test) //now this cast is safe
  [文字关键字](../../../csharp/language-reference/keywords/literal-keywords.md)   
  [可以为 null 的类型](../../../csharp/programming-guide/nullable-types/index.md)   
  [??运算符](../../../csharp/language-reference/operators/null-conditional-operator.md)
+

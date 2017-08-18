@@ -1,5 +1,5 @@
 ---
-title: "dotnet-add package 命令 - .NET Core CLI | Microsoft Docs"
+title: "dotnet-add package 命令 - .NET Core CLI"
 description: "使用 dotnet-add package 命令可方便地向项目添加 NuGet 包引用。"
 keywords: "dotnet-add, CLI, CLI 命令, .NET Core"
 author: spboyer
@@ -10,10 +10,11 @@ ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 88e0da69-a5ea-46cc-8b46-5493242b7af9
-translationtype: Human Translation
-ms.sourcegitcommit: dff752a9d31ec92b113dae9eed20cd72faf57c84
-ms.openlocfilehash: 41b46e879056d385ceb3abaec27db974cab812e3
-ms.lasthandoff: 03/22/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 40ee7cac969d4752ede66ba8df6ff6cb3f439aec
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -48,7 +49,7 @@ info : Package 'Newtonsoft.Json' is compatible with all the specified frameworks
 info : PackageReference for package 'Newtonsoft.Json' version '9.0.1' added to file 'ToDo.csproj'.
 ```
 
-*ToDo.csproj* 文件现包含用于引用的包的 [`<PackageReference>`](https://docs.microsoft.com/nuget/consume-packages/package-references-in-project-files) 元素。
+*ToDo.csproj* 文件现包含用于引用的包的 [`<PackageReference>`](/nuget/consume-packages/package-references-in-project-files) 元素。
 
 ```xml
 <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />

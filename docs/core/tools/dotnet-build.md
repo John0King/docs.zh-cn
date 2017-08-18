@@ -1,5 +1,5 @@
 ---
-title: "dotnet-build 命令 - .NET Core CLI | Microsoft Docs"
+title: "dotnet-build 命令 - .NET Core CLI"
 description: "dotnet-build 命令可生成项目及其所有依赖项。"
 keywords: "dotnet-build, CLI, CLI 命令, .NET Core"
 author: blackdwarf
@@ -10,10 +10,11 @@ ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 5e1a2bc4-a919-4a86-8f33-a9b218b1fcb3
-translationtype: Human Translation
-ms.sourcegitcommit: dff752a9d31ec92b113dae9eed20cd72faf57c84
-ms.openlocfilehash: e5deac8a7b8faac97ccf8b801f274a2c03268d64
-ms.lasthandoff: 03/22/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: d2006b15978f384e53e43a0a2562e81d10582abd
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -35,9 +36,9 @@ ms.lasthandoff: 03/22/2017
 
 构建需要 *project.assets.json* 文件，该文件列出了你的应用程序的依赖项。 在构建项目前执行 [`dotnet restore`](dotnet-restore.md) 时创建了该文件。 如果未正确放置资产文件，则工具无法解析引用程序集，这会导致错误。
 
-`dotnet build` 使用 MSBuild 构建项目；因此，它支持并行生成和增量生成。 有关详细信息，请参阅[增量生成](https://docs.microsoft.com/visualstudio/msbuild/incremental-builds)。 
+`dotnet build` 使用 MSBuild 构建项目；因此，它支持并行生成和增量生成。 有关详细信息，请参阅[增量生成](/visualstudio/msbuild/incremental-builds)。 
 
-除其自己的选项外，`dotnet build` 命令也接受 MSBuild 选项，如用来设置属性的 `/p` 或用来定义记录器的 `/l`。 在 [MSBuild 命令行引用](https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference)中了解这些选项的详细信息。 
+除其自己的选项外，`dotnet build` 命令也接受 MSBuild 选项，如用来设置属性的 `/p` 或用来定义记录器的 `/l`。 在 [MSBuild 命令行引用](/visualstudio/msbuild/msbuild-command-line-reference)中了解这些选项的详细信息。 
 
 项目是否可执行由项目文件中的 `<OutputType>` 属性决定。 以下示例显示会生成可执行代码的项目：
 

@@ -1,6 +1,0 @@
-# [桌面应用程序中的资源](index.md)
-## [创建资源文件](creating-resource-files-for-desktop-apps.md)
-### [以编程方式使用 .resx 文件](working-with-resx-files-programmatically.md)
-## [创建附属程序集](creating-satellite-assemblies-for-desktop-apps.md)
-## [打包和部署资源](packaging-and-deploying-resources-in-desktop-apps.md)
-## [检索资源](retrieving-resources-in-desktop-apps.md)

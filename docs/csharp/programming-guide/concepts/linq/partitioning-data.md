@@ -1,5 +1,5 @@
 ---
-title: "数据分区 (C#) | Microsoft 文档"
+title: "数据分区 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,10 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 8bab82ff0921871e610eef37650d1aa52e16006c
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 2f1690dac93d5e74f1305bd457f8bc749bec5449
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="partitioning-data-c"></a>数据分区 (C#)
@@ -43,6 +44,7 @@ LINQ 中的分区是指将输入序列划分为两个部分的操作，无需重
 |Take|获取序列中指定位置之前的元素。|不适用。|<xref:System.Linq.Enumerable.Take%2A?displayProperty=fullName><br /><br /> <xref:System.Linq.Queryable.Take%2A?displayProperty=fullName>|  
 |TakeWhile|基于谓词函数获取元素，直到元素不符合条件。|不适用。|<xref:System.Linq.Enumerable.TakeWhile%2A?displayProperty=fullName><br /><br /> <xref:System.Linq.Queryable.TakeWhile%2A?displayProperty=fullName>|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.Linq>   
  [标准查询运算符概述 (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)
+

@@ -1,5 +1,5 @@
 ---
-title: "如何：查找两个位置路径的并集 (XPath-LINQ to XML) (C#) | Microsoft Docs"
+title: "如何：查找两个位置路径的并集 (XPath-LINQ to XML) (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,11 +14,11 @@ ms.assetid: 069622d3-2b58-4919-8903-710a564c0788
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: c1e63adc27b32475b4cff908e72157464e0e5097
-ms.lasthandoff: 03/13/2017
-
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: b15991b6a97c19cd038114649bcef90f53ea5ace
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-find-a-union-of-two-location-paths-xpath-linq-to-xml-c"></a>如何：查找两个位置路径的并集 (XPath-LINQ to XML) (C#)
@@ -31,7 +31,7 @@ ms.lasthandoff: 03/13/2017
  通过使用 <xref:System.Linq.Enumerable.Concat%2A> 标准查询运算符可以获得相同的结果。  
   
 ## <a name="example"></a>示例  
- 本示例查找所有 `Category` 元素和所有 `Price` 元素，并将它们连接到单个集合中。 请注意，[!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] 查询调用 <xref:System.Xml.Linq.Extensions.InDocumentOrder%2A> 对结果进行排序。 XPath 表达式的计算结果也按文档顺序排列。  
+ 本示例查找所有 `Category` 元素和所有 `Price` 元素，并将它们连接到单个集合中。 请注意，[!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 查询会调用 <xref:System.Xml.Linq.Extensions.InDocumentOrder%2A> 以对结果进行排序。 XPath 表达式的计算结果也按文档顺序排列。  
   
  本示例使用下面的 XML 文档：[示例 XML 文件：数值数据 (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-numerical-data-linq-to-xml.md)。  
   
@@ -82,3 +82,4 @@ Results are identical
   
 ## <a name="see-also"></a>请参阅  
  [针对 XPath 用户的 LINQ to XML (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)
+

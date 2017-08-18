@@ -1,5 +1,5 @@
 ---
-title: "使用节点进行编程 (C#) | Microsofsuanst Docs"
+title: "使用节点进行编程 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,14 +19,15 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: b5cc31077c31d6ba08521a9ba6d602409734e695
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 6afa5c9ca5fdf4a8c64be826ead86e96aa94a446
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="programming-with-nodes-c"></a>使用节点进行编程 (C#)
-需要编写 XML 编辑器、转换系统或报告编写器这类程序的 [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] 开发人员通常需要编写在比元素和属性更细的粒度下运行的程序。 开发人员通常需要在节点级别上工作，操作文本节点、处理指令和添加注释。 本主题提供有关在节点级别进行编程的一些详细信息。  
+需要编写 XML 编辑器、转换系统或报告编写器这类程序的 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 开发人员通常需要编写在比元素和属性更细的粒度下运行的程序。 开发人员通常需要在节点级别上工作，操作文本节点、处理指令和添加注释。 本主题提供有关在节点级别进行编程的一些详细信息。  
   
 ## <a name="node-details"></a>节点详细信息  
  在节点级别上工作的程序员需要了解有关编程的许多细节。  
@@ -50,7 +51,7 @@ True
 ```  
   
 ### <a name="adjacent-text-nodes-are-possible"></a>可以存在相邻文本节点  
- 在许多 XML 编程模型中，相邻的文本节点始终会合并到一起。 这有时也称为文本节点的规范化。 [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] 不规范化文本节点。 如果向同一个元素添加两个文本节点，则会产生相邻文本节点。 但如果将指定内容添加为字符串而不是 <xref:System.Xml.Linq.XText> 节点，则 [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] 可能会将该字符串与相邻的文本节点合并在一起。  
+ 在许多 XML 编程模型中，相邻的文本节点始终会合并到一起。 这有时也称为文本节点的规范化。 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 不规范化文本节点。 如果向同一个元素添加两个文本节点，则会产生相邻文本节点。 但如果将指定内容添加为字符串而不是 <xref:System.Xml.Linq.XText> 节点，则 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 可能会将该字符串与相邻的文本节点合并在一起。  
   
  下面的示例演示这一操作：  
   
@@ -110,15 +111,15 @@ Console.WriteLine(child2);
   
  该示例产生下面的输出：  
   
-```  
+```xml  
 <Child1></Child1>  
 <Child2 />  
 ```  
   
 ### <a name="namespaces-are-attributes-in-the-linq-to-xml-tree"></a>命名空间是 LINQ to XML 树中的属性  
- 即使命名空间声明与特性具有完全相同的语法，在某些编程接口（如 XSLT 和 XPath）中，也不会将命名空间声明视为属性。 但在 [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] 中，命名空间存储为 XML 树中的 <xref:System.Xml.Linq.XAttribute> 对象。 如果您循环访问包含命名空间声明的元素的属性，则会在返回的集合中看到作为一项列出的命名空间声明。  
+ 即使命名空间声明与特性具有完全相同的语法，在某些编程接口（如 XSLT 和 XPath）中，也不会将命名空间声明视为属性。 但在 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 中，命名空间存储为 XML 树中的 <xref:System.Xml.Linq.XAttribute> 对象。 如果您循环访问包含命名空间声明的元素的属性，则会在返回的集合中看到作为一项列出的命名空间声明。  
   
- <xref:System.Xml.Linq.XAttribute.IsNamespaceDeclaration%2A> 属性指示特性是否是命名空间声明。  
+ <xref:System.Xml.Linq.XAttribute.IsNamespaceDeclaration%2A> 属性 (property) 指示某一属性 (attribute) 是否为命名空间声明。  
   
 ```csharp  
 XElement root = XElement.Parse(  
@@ -139,7 +140,7 @@ AnAttribute="abc"  IsNamespaceDeclaration:False
 ```  
   
 ### <a name="xpath-axis-methods-do-not-return-child-white-space-of-xdocument"></a>XPath 轴方法不返回 XDocument 的子空白  
- [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] 允许 <xref:System.Xml.Linq.XDocument> 具有子文本节点，但这些文本节点只能包含空白。 但是，XPath 对象模型不包括空白作为文档的子节点，因此在使用 <xref:System.Xml.Linq.XContainer.Nodes%2A> 轴循环访问 <xref:System.Xml.Linq.XDocument> 的子级时，将返回空白文本节点。 但在使用 XPath 轴方法循环访问 <xref:System.Xml.Linq.XDocument> 的子级时，不会返回空白文本节点。  
+ [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 允许 <xref:System.Xml.Linq.XDocument> 具有子文本节点，但这些文本节点只能包含空白。 但是，XPath 对象模型不包括空白作为文档的子节点，因此在使用 <xref:System.Xml.Linq.XDocument> 轴循环访问 <xref:System.Xml.Linq.XContainer.Nodes%2A> 的子级时，将返回空白文本节点。 但在使用 XPath 轴方法循环访问 <xref:System.Xml.Linq.XDocument> 的子级时，不会返回空白文本节点。  
   
 ```csharp  
 // Create a document with some white space child nodes of the document.  
@@ -190,3 +191,4 @@ Console.WriteLine(doc.Nodes().Count());
   
 ## <a name="see-also"></a>请参阅  
  [高级 LINQ to XML 编程 (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)
+

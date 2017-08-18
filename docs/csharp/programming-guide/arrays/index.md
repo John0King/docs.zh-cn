@@ -1,5 +1,5 @@
 ---
-title: "数组（C# 编程指南）| Microsoft Docs"
+title: "数组（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -28,11 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 7e33ed084c560470a486ebbb25035a59ddc18565
-ms.openlocfilehash: ada8ff44630118ce0e8b8d71668e2c56ebef4bbb
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 1035caae15b64d1311305cfe4c1f1a74c80ed19a
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="arrays-c-programming-guide"></a>数组（C# 编程指南）
@@ -78,3 +78,4 @@ ms.lasthandoff: 05/22/2017
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [集合](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b)   
  [数组集合类型](http://msdn.microsoft.com/en-us/8a9964de-8941-47b1-a3cf-a01bc88db9e8)
+

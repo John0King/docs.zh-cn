@@ -1,5 +1,5 @@
 ---
-title: "访问应用程序 Web 服务 (Visual Basic) | Microsoft Docs"
+title: "访问应用程序 Web 服务 (Visual Basic)"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.suite: 
@@ -30,15 +30,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: b9e7bb7884da98f419d6de4a7463216a32bb0a5c
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 1933167db4e42ae1a2d1634573bc824750a792da
 ms.contentlocale: zh-cn
-ms.lasthandoff: 04/12/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="accessing-application-web-services-visual-basic"></a>访问应用程序 Web 服务 (Visual Basic)
-`My.WebServices` 对象提供当前项目所引用的每个 Web 服务的实例。 按需实例化每个实例。 可以通过 `My.WebServices` 对象的属性访问这些 Web 服务。 该属性的名称与该属性所访问的 Web 服务的名称相同。 继承自 <xref:System.Web.Services.Protocols.SoapHttpClientProtocol> 的任何类都是 Web 服务。  
+`My.WebServices` 对象提供当前项目所引用的每个 Web 服务的实例。 按需实例化每个实例。 可以通过 `My.WebServices` 对象的属性访问这些 Web 服务。 该属性的名称与该属性所访问的 Web 服务的名称相同。 任何自 <xref:System.Web.Services.Protocols.SoapHttpClientProtocol> 继承的类均为 Web 服务。  
   
 ## <a name="tasks"></a>任务  
  下表列出了访问应用程序所引用的 Web 服务的可能方法。  
@@ -50,3 +50,4 @@ ms.lasthandoff: 04/12/2017
   
 ## <a name="see-also"></a>另请参阅  
  [My.WebServices 对象](../../../visual-basic/language-reference/objects/my-webservices-object.md)
+

@@ -1,77 +1,82 @@
 ---
-title: "如何：调试 CLR 激活问题 | Microsoft Docs"
-ms.custom: ""
-ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "CLR 激活, 调试问题"
+title: "如何：调试 CLR 激活问题"
+ms.custom: 
+ms.date: 03/30/2017
+ms.prod: .net-framework
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- dotnet-clr
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- CLR activation, debugging issues
 ms.assetid: 4fe17546-d56e-4344-a930-6d8e4a545914
 caps.latest.revision: 5
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
-caps.handback.revision: 5
+author: mairaw
+ms.author: mairaw
+manager: wpickett
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: f1f1f3393457c783fe8f73d987a287f1afb18f40
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
+
 ---
-# 如何：调试 CLR 激活问题
-如果在使用正确版本的公共语言运行时 \(CLR\) 的运行应用程序时遇到问题，则可以查看和调试 CLR 激活日志。  这些日志非常有用。确定启动问题的根本原因，那么，当您的应用程序比预期加载不同的 CLR 版本或根本不加载 CLR。  当没有 CLR 发现应用程序时，[.NET Framework 初始化错误：管理用户体验](../../../docs/framework/deployment/initialization-errors-managing-the-user-experience.md) 讨论体验。  
+# <a name="how-to-debug-clr-activation-issues"></a>如何：调试 CLR 激活问题
+如果在使用正确版本的公共语言运行时 (CLR) 运行应用程序时遇到问题，可以查看和调试 CLR 激活日志。 如果应用程序加载不同于预期的 CLR 版本或者根本未加载 CLR，这些日志对于确定激活问题的根本原因非常有用。 [.NET Framework 初始化错误：管理用户体验](../../../docs/framework/deployment/initialization-errors-managing-the-user-experience.md)中探讨了未能找到应用程序 CLR 的体验。  
   
- 使用 HKEY\_LOCAL\_MACHINE 注册表项或系统环境变量，可启用 CLR 激活日志记录。  将生成日志，直到注册表项或环境变量移除。  或者，您可以使用用户或进程本地环境变量来启动记录的不同范围和持续时间。  
+ 可以通过使用 HKEY_LOCAL_MACHINE 注册表项或系统环境变量在系统范围内启用 CLR 激活日志记录。 在删除注册表项或环境变量前，将持续生成日志。 或者，可以使用用户或进程局部环境变量来启用具有不同范围和持续时间的日志记录。  
   
- CLR 激活日志不应与[程序集绑定日志](../../../docs/framework/tools/fuslogvw-exe-assembly-binding-log-viewer.md)混淆，它们完全不同。  
+ CLR 激活日志不应与[程序集绑定日志](../../../docs/framework/tools/fuslogvw-exe-assembly-binding-log-viewer.md)混淆，两者完全不同。  
   
-## 启用 CLR 激活日志记录  
+## <a name="to-enable-clr-activation-logging"></a>启用 CLR 激活日志记录  
   
-#### 使用注册表  
+#### <a name="using-the-registry"></a>使用注册表  
   
-1.  在“注册表编辑器”中，请导航到 HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\.NETFramework 文件夹（位于 32 位计算机上）或 HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\.NETFramework 文件夹（位于 64 位计算机上）。  
+1.  在注册表编辑器中，导航到 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework（在 32 位计算机上）或 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework 文件夹（在 64 位计算机上）。  
   
 2.  添加名为 `CLRLoadLogDir` 的字符串值，并将其设置为要存储 CLR 激活日志的现有目录的完整路径。  
   
- 保持启用激活记录，直至移除字符串值。  
+ 保持启用激活记录，直至删除字符串值。  
   
-#### 使用环境变量  
+#### <a name="using-an-environment-variable"></a>使用环境变量  
   
--   设置字符串的 `COMPLUS_CLRLoadLogDir` 环境变量，该字符串表示您要存储 CLR 激活日志所在的现有目录的完整路径。  
+-   将 `COMPLUS_CLRLoadLogDir` 环境变量设置为字符串，该字符串表示要存储 CLR 激活日志的现有目录的完整路径。  
   
-     如何设置环境变量将决定其作用域：  
+     环境变量的设置方式将决定其作用域：  
   
-    -   如果将其设置在系统级别上，则在移除环境变量时，将在该计算机上针对所有 .NET Framework 应用程序启用激活日志记录。  
+    -   如果在系统级别进行设置，将对该计算机上的所有 .NET Framework 应用程序启用激活日志记录，直至删除环境变量。  
   
-    -   如果将其设置在用户级别，则仅对当前用户帐户启用激活日志记录。  记录继续，直到环境变量已移除。  
+    -   如果在用户级别进行设置，则仅对当前用户帐户启用激活日志记录。 在删除环境变量前，将持续记录。  
   
-    -   如果正在加载 CLR 之前从进程内设置它，启用激活日志记录直到进程终止。  
+    -   如果在加载 CLR 前，从进程内进行设置，将在进程终止前持续启用激活日志记录。  
   
-    -   如果在命令提示下设置在您运行应用程序之前启用从命令提示中运行任何应用程序的激活日志记录。  
+    -   如果在运行应用程序之前，在命令提示符下进行设置，将对通过该命令提示符运行的任意应用程序启用激活日志记录。  
   
-     例如，若要将激活日志存储在具有进程级别作用域的 c:\\clrloadlogs 目录下，请打开“命令提示”窗口并在运行应用程序前键入以下内容：  
+     例如，若要将激活日志存储在具有进程级作用域的 c:\clrloadlogs 目录中，请在运行应用程序之前打开“命令提示符”窗口并键入以下内容：  
   
     ```  
     set COMPLUS_CLRLoadLogDir=c:\clrloadlogs  
     ```  
   
-## 示例  
- CLR 激活日志提供有关 CLR 激活的大量数据和承载 API 的 CLR 的使用。  如本文所述，大部分数据在 Microsoft 内部使用，但是，某些数据还可用于帮助开发人员。  
+## <a name="example"></a>示例  
+ CLR 激活日志提供大量关于 CLR 激活和 CLR 宿主 API 的用法的数据。 如本文所述，大部分数据由 Microsoft 内部使用，但有些数据对开发人员也非常有用。  
   
- 记录以反映承载 API 的 CLR 调用的顺序。  它还包括有关在计算机上检测到已安装运行时集的有关数据。  CLR 激活日志格式本身没有记录，但是可用于协作需要解决 CLR 激活问题的开发人员。  
-  
-> [!NOTE]
->  在使用 CLR 的过程终止之前不能打开激活日志。  
+ 日志反映了 CLR 宿主 API 的调用顺序。 它还包括有关计算机上检测到的已安装运行时集的有用数据。 CLR 激活日志格式本身不进行存档，但可用于帮助需要解决 CLR 激活问题的开发人员。  
   
 > [!NOTE]
->  CLR 激活日志不本地化；它们始终以英语生成。  
+>  在使用该 CLR 的进程终止前，无法打开激活日志。  
   
- 在以下的激活日志示例中，最有用的信息在日志后会有说明。  
+> [!NOTE]
+>  CLR 激活日志未进行本地化；它们始终用英语生成。  
+  
+ 在下面的激活日志示例中，日志后面突出显示和说明了最有用的信息。  
   
 ```  
 532,205950.367,CLR Loading log for C:\Tests\myapp.exe   
@@ -100,37 +105,33 @@ caps.handback.revision: 5
 532,205950.398,Launching feature-on-demand installation. CmdLine: C:\Windows\system32\fondue.exe /enable-feature:NetFx3   
 532,205950.398,FunctionCall: RealDllMain. Reason: 0   
 532,205950.398,FunctionCall: OnShimDllMainCalled. Reason: 0  
-  
 ```  
   
--   **CLR 加载日志**提供启动加载托管代码的进程的可执行文件的路径。  请注意，这可能是一个本机宿主。  
+-   CLR 加载日志提供启动加载托管代码的进程的可执行文件的路径。 请注意，这可能是本地主机。  
   
     ```  
     532,205950.367,CLR Loading log for C:\Tests\myapp.exe  
-  
     ```  
   
--   **Installed Runtime** 是 CLR 版本集，其安装在属于激活请求的候选的计算机上。  
+-   安装的运行时是安装在计算机上作为激活请求的候选项的 CLR 版本集。  
   
     ```  
     532,205950.382,Installed Runtime: v4.0.30319. VERSION_ARCHITECTURE: 0  
-  
     ```  
   
--   **生成使用的版本** 是用于生成提供给诸如 [ICLRMetaHostPolicy::GetRequestedRuntime](../Topic/ICLRMetaHostPolicy::GetRequestedRuntime%20Method.md) 的方法二进制的 CLR 的版本。  
+-   生成所用版本是在生成向 [ICLRMetaHostPolicy::GetRequestedRuntime](../../../docs/framework/unmanaged-api/hosting/iclrmetahostpolicy-getrequestedruntime-method.md).等方法提供的二进制文件时所用的 CLR 版本。  
   
     ```  
     532,205950.382,C:\Tests\myapp.exe was built with version: v2.0.50727  
-  
     ```  
   
--   **功能按需安装** 是指在 Windows 8 上启用 .NET Framework 3.5。  有关此方案的更多信息，请参见 [.NET Framework 初始化错误：管理用户体验](../../../docs/framework/deployment/initialization-errors-managing-the-user-experience.md)。  
+-   功能按需安装是指在 Windows 8 上启用 .NET Framework 3.5。 若要了解有关此情况的详细信息，请参阅 [.NET Framework 初始化错误：管理用户体验](../../../docs/framework/deployment/initialization-errors-managing-the-user-experience.md)。  
   
     ```  
     532,205950.398,Launching feature-on-demand installation. CmdLine: C:\Windows\system32\fondue.exe /enable-feature:NetFx3  
-  
     ```  
   
-## 请参阅  
- [部署](../../../docs/framework/deployment/net-framework-and-applications.md)   
- [如何：配置应用程序以支持 .NET Framework 4 或 4.5](../../../docs/framework/migration-guide/how-to-configure-an-app-to-support-net-framework-4-or-4-5.md)
+## <a name="see-also"></a>另请参阅  
+ [部署](../../../docs/framework/deployment/index.md)   
+ [如何：将应用程序配置为支持 .NET Framework 4 或 4.5](../../../docs/framework/migration-guide/how-to-configure-an-app-to-support-net-framework-4-or-4-5.md)
+

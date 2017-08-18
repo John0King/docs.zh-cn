@@ -1,5 +1,5 @@
 ---
-title: ".NET Framework 4.7、4.6 和 4.5 的迁移指南 | Microsoft Docs"
+title: ".NET Framework 4.7、4.6 和 4.5 的迁移指南 "
 ms.custom: 
 ms.date: 03/30/2017
 ms.prod: .net-framework
@@ -17,15 +17,15 @@ caps.latest.revision: 56
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d745ff3729fed78cdaf7402d8e8847e95a4ed400
-ms.openlocfilehash: aa587b7ca0beaabae8eb44f83355427579241b47
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 820d1966172a93c06c6451c51bc7f360496f46b8
 ms.contentlocale: zh-cn
-ms.lasthandoff: 04/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="migration-guide-to-the-net-framework-47-46-and-45"></a>.NET Framework 4.7、4.6 和 4.5 的迁移指南 
-如果已使用早期版本的 .NET Framework 构建应用，通常可以将其轻松升级到 .NET Framework 4.5 及其点版本（4.5.1 和 4.5.2）、.NET Framework 4.6 及其点版本（4.6.1 和 4.6.2），或 .NET Framework 4.7。 在 Visual Studio 中打开项目。 如果已在早期版本中创建项目，“项目兼容性”对话框将自动打开。 有关在 Visual Studio 中升级项目的详细信息，请参阅[移植、迁移和升级 Visual Studio 项目](https://docs.microsoft.com/en-us/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects)和 [Visual Studio 2017 平台目标以及兼容性](https://www.visualstudio.com/en-us/productinfo/vs2017-compatibility-vs)。  
+如果已使用早期版本的 .NET Framework 构建应用，通常可以将其轻松升级到 .NET Framework 4.5 及其点版本（4.5.1 和 4.5.2）、.NET Framework 4.6 及其点版本（4.6.1 和 4.6.2），或 .NET Framework 4.7。 在 Visual Studio 中打开项目。 如果已在早期版本中创建项目，“项目兼容性”对话框将自动打开。 有关在 Visual Studio 中升级项目的详细信息，请参阅[移植、迁移和升级 Visual Studio 项目](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects)和 [Visual Studio 2017 平台目标以及兼容性](https://www.visualstudio.com/en-us/productinfo/vs2017-compatibility-vs)。  
   
  但是，.NET Framework 中的某些更改需要更改你的代码。 你可能还希望利用 .NET Framework 4.5 及其点版本、.NET Framework 4.6 及其点版本或 .NET Framework 4.7 中的新增功能。 通常，针对新版本的 .NET Framework 来对应用进行这些类型的更改的过程称作“迁移”。 如果不必迁移应用，那么你可以在 .NET Framework 4.5 或更高版本中运行它，而无需编译它。  
   
@@ -49,4 +49,5 @@ ms.lasthandoff: 04/13/2017
  [新增功能](../../../docs/framework/whats-new/index.md)   
  [类库中过时的内容](../../../docs/framework/whats-new/whats-obsolete.md)   
  [.NET Framework 版本和程序集信息](http://go.microsoft.com/fwlink/?LinkId=201701)   
- [Microsoft .NET Framework 支持生命周期策略](http://go.microsoft.com/fwlink/?LinkId=196607)
+ [Microsoft .NET Framework 支持生命周期策略](http://go.microsoft.com/fwlink/?LinkId=196607) [.NET Framework 4 迁移问题](net-framework-4-migration-issues.md)
+

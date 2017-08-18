@@ -1,6 +1,6 @@
 ---
 title: ".NET Core 运行时标识符 (RID) 目录"
-description: ".NET Core 运行时标识符 (RID) 目录"
+description: "了解运行时标识符 (RID) 及如何在 .NET Core 中使用 RID。"
 keywords: .NET, .NET Core
 author: blackdwarf
 ms.author: mairaw
@@ -9,10 +9,11 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: b2032f5d-771f-48d9-917c-587d9509035c
-translationtype: Human Translation
-ms.sourcegitcommit: 811b9539019b7cc2817b5742760ae52fbc2f95dd
-ms.openlocfilehash: fc59a9f3333f01caf9622dd500a5de6e2ae5132b
-ms.lasthandoff: 03/02/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 3490fb639efd223dc36190324bdf3a06bc23c10e
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 

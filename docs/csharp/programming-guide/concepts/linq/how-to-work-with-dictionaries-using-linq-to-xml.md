@@ -1,5 +1,5 @@
 ---
-title: "如何：通过 LINQ to XML 使用字典 (C#) | Microsoft Docs"
+title: "如何：通过 LINQ to XML 使用字典 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,18 +14,18 @@ ms.assetid: 57bcefe3-8433-4d3b-935a-511c9bcbdfa8
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 1570e4bb0be707d1c27e8bdfc1ef853413d70784
-ms.lasthandoff: 03/13/2017
-
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 66668c14c472f68dd3da365bd7c7cbc64ccd4365
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-work-with-dictionaries-using-linq-to-xml-c"></a>如何：通过 LINQ to XML 使用字典 (C#)
 通常需要将各种数据结构转换为 XML 和将 XML 转换回其他数据结构。 本主题通过 <xref:System.Collections.Generic.Dictionary%602> 和 XML 的相互转换演示这一常规方法的具体实现。  
   
 ## <a name="example"></a>示例  
- 此示例使用函数构造形式：查询投影新 <xref:System.Xml.Linq.XElement> 对象，生成的集合作为参数传递给根 <xref:System.Xml.Linq.XElement> 对象的构造函数。  
+ 本示例使用函数构造形式：查询投影新 <xref:System.Xml.Linq.XElement> 对象，生成的集合作为自变量传递给根 <xref:System.Xml.Linq.XElement> 对象的构造函数。  
   
 ```csharp  
 Dictionary<string, string> dict = new Dictionary<string, string>();  
@@ -80,3 +80,4 @@ Child4:Value4
   
 ## <a name="see-also"></a>请参阅  
  [投影和转换 (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/projections-and-transformations-linq-to-xml.md)
+

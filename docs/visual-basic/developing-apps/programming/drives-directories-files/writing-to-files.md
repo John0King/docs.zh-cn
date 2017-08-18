@@ -1,5 +1,5 @@
 ---
-title: "在 Visual Basic 中写入文件| Microsoft Docs"
+title: "写入文件 (Visual Basic)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -34,11 +34,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: 5b6d02b8a1284a4b795617db32caed69d28db2de
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: c2bee678ced4cfbcae186f298b228e691d1e6cd3
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="writing-to-files-in-visual-basic"></a>写入文件 (Visual Basic)
@@ -85,3 +85,4 @@ ms.lasthandoff: 05/22/2017
   
  [文件编码](../../../../visual-basic/developing-apps/programming/drives-directories-files/file-encodings.md)  
  提供文件编码概述。
+

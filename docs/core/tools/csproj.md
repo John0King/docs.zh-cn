@@ -1,25 +1,25 @@
 ---
-title: "csproj 引用 | Microsoft Docs"
+title: "csproj 引用"
 description: "了解现有文件和 .NET Core csproj 文件之间的区别"
 keywords: "引用, csproj, .NET Core"
 author: blackdwarf
 ms.author: mairaw
-ms.date: 03/03/2017
+ms.date: 05/24/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: bdc29497-64f2-4d11-a21b-4097e0bdf5c9
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 81f31f1abc9db14b6b899564d67ca6e90d269ad7
-ms.openlocfilehash: 154f60d8f4c0f45d335c6125d5e6a106688dc8db
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 63c7a6f0aa3a926c7ae01ad6c434ecf296c81811
 ms.contentlocale: zh-cn
-ms.lasthandoff: 04/11/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 
 # <a name="additions-to-the-csproj-format-for-net-core"></a>.NET Core 的 csproj 格式的新增内容
 
-本文档概述了作为从 *project.json* 移动到 *csproj* 和 [MSBuild](https://github.com/Microsoft/MSBuild) 的一部分，添加到项目文件的更改。 有关常规项目文件的语法和引用的详细信息，请参阅 [MSBuild 项目文件](https://docs.microsoft.com/visualstudio/msbuild/msbuild-project-file-schema-reference)文档。  
+本文档概述了作为从 *project.json* 移动到 *csproj* 和 [MSBuild](https://github.com/Microsoft/MSBuild) 的一部分，添加到项目文件的更改。 有关常规项目文件的语法和引用的详细信息，请参阅 [MSBuild 项目文件](/visualstudio/msbuild/msbuild-project-file-schema-reference)文档。  
 
 ## <a name="implicit-package-references"></a>隐式包引用
 基于项目文件的 `<TargetFramework>` 或 `<TargetFrameworks>` 属性中指定的目标框架对元包进行隐式引用。 如果指定了 `<TargetFramework>`，则忽略 `<TargetFrameworks>`，而与顺序无关。
@@ -39,7 +39,7 @@ ms.lasthandoff: 04/11/2017
 ### <a name="recommendations"></a>建议
 由于隐式引用了 `Microsoft.NETCore.App` 或 `NetStandard.Library` 元包，以下是建议的最佳做法：
 
-* 绝不通过项目文件中的 `<PackageReference>` 属性，对 `Microsoft.NETCore.App` 或 `NetStandard.Library` 元包进行显示引用。
+* 绝不通过项目文件中的 `<PackageReference>` 项，对 `Microsoft.NETCore.App` 或 `NetStandard.Library` 元包进行显式引用。
 * 如果需要特定版本的运行时，应使用项目中的 `<RuntimeFrameworkVersion>` 属性（例如，`1.0.4`），而不是引用元包。
     * 例如，如果使用[独立部署](../deploying/index.md#self-contained-deployments-scd)且需要 1.0.0 LTS 运行时的特定修补程序版本，可能会发生这种情况。
 * 如果需要特定版本的 `NetStandard.Library` 元包，可以使用 `<NetStandardImplicitPackageVersion>` 属性并设置所需版本。 
@@ -51,11 +51,11 @@ ms.lasthandoff: 04/11/2017
 
 下表显示同时在 SDK 中包含和排除的元素和 [globs](https://en.wikipedia.org/wiki/Glob_(programming))： 
 
-| 元素              | 包含 glob                               | 排除 glob                                                     | 删除 glob                  |
+| 元素           | 包含 glob                              | 排除 glob                                                  | 删除 glob                |
 |-------------------|-------------------------------------------|---------------------------------------------------------------|----------------------------|
-| Compile              | \*\*/\*.cs（或其他语言扩展名） | \*\*/\*.user;  \*\*/\*.\*proj;  \*\*/\*.sln;  \*\*/\*.vssscc     | 不可用                          |
-| EmbeddedResource     | \*\*/\*.resx                                 | \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc     | 不可用                          |
-| 无                 | \*\*/\*                                      | \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc     | - \*\*/\*.cs; \*\*/\*.resx |
+| Compile           | \*\*/\*.cs（或其他语言扩展名） | \*\*/\*.user;  \*\*/\*.\*proj;  \*\*/\*.sln;  \*\*/\*.vssscc  | 不可用                        |
+| EmbeddedResource  | \*\*/\*.resx                              | \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc     | 不可用                        |
+| 无              | \*\*/\*                                   | \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc     | - \*\*/\*.cs; \*\*/\*.resx |
 
 如果项目中有 glob，却又尝试使用最新的 SDK 生成它，则将收到以下错误：
 
@@ -73,13 +73,22 @@ ms.lasthandoff: 04/11/2017
 此更改不会修改其他包含项的主要机制。 但是，如果要指定（例如，指定某些文件通过应用发布），仍可以使用 *csproj* 中相应的已知机制来实现（例如，`<Content>` 元素）。
 
 ### <a name="recommendation"></a>建议
-使用 csproj 时，建议从项目中删除默认 glob，且仅为应用/库需用于各种方案（运行时、NuGet 打包等）的项目添加 glob 文件路径
+使用 csproj 时，建议从项目中删除默认 glob，且仅为应用/库需要用于各种方案（例如，运行时和 NuGet 封装）的项目添加 glob 文件路径。
 
+## <a name="how-to-see-the-whole-project-as-msbuild-sees-it"></a>如何像 MSBuild 一样查看整个项目
+
+虽然这些 csproj 更改极大地简化了项目文件，但建议查看完全展开的项目，就像 MSBuild 查看添加了 SDK 及其目标的项目一样。 使用 [`dotnet msbuild`](dotnet-msbuild.md) 命令的 [`/pp` 开关](/visualstudio/msbuild/msbuild-command-line-reference#preprocess)预处理项目，显示导入的文件、文件源及其在生成中的参与情况，而无需实际生成项目：
+
+`dotnet msbuild /pp:fullproject.xml`
+
+如果项目有多个目标框架，命令结果应仅侧重于框架之一，具体方法为将相应框架指定为 MSBuild 属性：
+
+`dotnet msbuild /p:TargetFramework=netcoreapp2.0 /pp:fullproject.xml`
 
 ## <a name="additions"></a>新增内容
 
 ### <a name="sdk-attribute"></a>Sdk 特性 
-*.csproj* 文件的 `<Project>` 元素具有名为 `Sdk` 的新特性。 `Sdk` 指定项目将使用的 SDK。 如[分层文档](cli-msbuild-architecture.md)中所述，SDK 是一组可生成 .NET Core 代码的 MSBuild [任务](https://docs.microsoft.com/visualstudio/msbuild/msbuild-tasks)和[目标](https://docs.microsoft.com/visualstudio/msbuild/msbuild-targets)。 .NET Core 工具随附了两个主要 SDK：
+*.csproj* 文件的 `<Project>` 元素具有名为 `Sdk` 的新特性。 `Sdk` 指定项目将使用的 SDK。 如[分层文档](cli-msbuild-architecture.md)中所述，SDK 是一组可生成 .NET Core 代码的 MSBuild [任务](/visualstudio/msbuild/msbuild-tasks)和[目标](/visualstudio/msbuild/msbuild-targets)。 .NET Core 工具随附了两个主要 SDK：
 
 1. ID 为 `Microsoft.NET.Sdk` 的 .NET Core SDK
 2. ID 为 `Microsoft.NET.Sdk.Web` 的 .NET Core Web SDK
@@ -94,7 +103,7 @@ ms.lasthandoff: 04/11/2017
 ```
 
 #### <a name="version"></a>版本
-`Version` 指定要还原的包的版本。 此元素遵从 NuGet 版本控制方案的规则。
+`Version` 指定要还原的包的版本。 此属性遵循 [NuGet 版本控制](/nuget/create-packages/dependency-versions#version-ranges)方案规则。 默认行为是精确的版本匹配。 例如，指定 `Version="1.2.3"` 等效于包的 1.2.3 版本的 NuGet 表示法 `[1.2.3]`。
 
 #### <a name="includeassets-excludeassets-and-privateassets"></a>IncludeAssets、ExcludeAssets 和 PrivateAssets
 `IncludeAssets` 属性指定应使用 `<PackageReference>` 指定的包中的哪些资产。 
@@ -128,7 +137,7 @@ ms.lasthandoff: 04/11/2017
 ```
 
 #### <a name="version"></a>版本
-`Version` 指定要还原的包的版本。 此属性遵循 NuGet 版本控制方案规则。
+`Version` 指定要还原的包的版本。 此属性遵循 [NuGet 版本控制](/nuget/create-packages/dependency-versions#version-ranges)方案规则。 默认行为是精确的版本匹配。 例如，指定 `Version="1.2.3"` 等效于包的 1.2.3 版本的 NuGet 表示法 `[1.2.3]`。
 
 ### <a name="runtimeidentifiers"></a>RuntimeIdentifiers
 `<RuntimeIdentifiers>` 元素可用于指定项目的[运行时标识符 (RID)](../rid-catalog.md) 的列表（以分号分隔）。 使用 RID ，可发布独立部署。 
@@ -137,7 +146,6 @@ ms.lasthandoff: 04/11/2017
 <RuntimeIdentifiers>win10-x64;osx.10.11-x64;ubuntu.16.04-x64</RuntimeIdentifiers>
 ```
 
-
 ### <a name="runtimeidentifier"></a>RuntimeIdentifier
 `<RuntimeIdentifier>` 元素可用于指定项目的唯一[运行时标识符 (RID)](../rid-catalog.md)。 使用 RID ，可发布独立部署。 
 
@@ -145,9 +153,8 @@ ms.lasthandoff: 04/11/2017
 <RuntimeIdentifier>ubuntu.16.04-x64</RuntimeIdentifier>
 ```
 
-
 ### <a name="packagetargetfallback"></a>PackageTargetFallback 
-`<PackageTargetFallback>` 元素可用于指定要在还原包时使用的一组兼容目标。 旨在允许使用 dotnet [TxM（目标 x 名字对象）](https://docs.microsoft.com/nuget/schema/target-frameworks) 的包处理未声明 dotnet TxM 的包。 如果项目使用 dotnet TxM，那么所依赖的所有包也必须有 dotnet TxM，除非将 `<PackageTargetFallback>` 添加到项目中，以允许非 dotnet 平台与 dotnet 兼容。 
+`<PackageTargetFallback>` 元素可用于指定要在还原包时使用的一组兼容目标。 旨在允许使用 dotnet [TxM（目标 x 名字对象）](/nuget/schema/target-frameworks) 的包处理未声明 dotnet TxM 的包。 如果项目使用 dotnet TxM，那么所依赖的所有包也必须有 dotnet TxM，除非将 `<PackageTargetFallback>` 添加到项目中，以允许非 dotnet 平台与 dotnet 兼容。 
 
 以下示例展示了项目中所有目标的回退： 
 

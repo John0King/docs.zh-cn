@@ -1,5 +1,5 @@
 ---
-title: "如何：查找前面的同级 (XPath-LINQ to XML) (C#) | Microsoft Docs"
+title: "如何：查找前面的同级 (XPath-LINQ to XML) (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,15 +14,15 @@ ms.assetid: b281ff99-d08a-43d0-bea1-eff831b2f8ae
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 964a85548b7cf5fd7334c46f21e2d50a9ff17987
-ms.lasthandoff: 03/13/2017
-
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: c49dd8998b0ad1e2a579b44f07462fb1111f3094
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-find-preceding-siblings-xpath-linq-to-xml-c"></a>如何：查找前面的同级 (XPath-LINQ to XML) (C#)
-本主题将 XPath `preceding-sibling` 轴与 [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] 子 <xref:System.Xml.Linq.XNode.ElementsBeforeSelf%2A?displayProperty=fullName> 轴进行比较。  
+本主题将 XPath `preceding-sibling` 轴与 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 子 <xref:System.Xml.Linq.XNode.ElementsBeforeSelf%2A?displayProperty=fullName> 轴进行比较。  
   
  XPath 表达式为：  
   
@@ -67,3 +67,4 @@ Results are identical
   
 ## <a name="see-also"></a>请参阅  
  [针对 XPath 用户的 LINQ to XML (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)
+

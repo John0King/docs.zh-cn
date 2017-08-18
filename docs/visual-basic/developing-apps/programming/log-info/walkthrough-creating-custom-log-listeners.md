@@ -1,5 +1,5 @@
 ---
-title: "创建自定义日志侦听器 (Visual Basic) | Microsoft Docs"
+title: "创建自定义日志侦听器 (Visual Basic)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -31,11 +31,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 98cec8d5077e777f18c18ad1af0040b3359151f7
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: bc6fde8dcbb27157f3fd180ad393bb406222195e
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="walkthrough-creating-custom-log-listeners-visual-basic"></a>演练：创建自定义日志侦听器 (Visual Basic)
@@ -50,9 +50,9 @@ ms.lasthandoff: 03/13/2017
   
      [!code-vb[VbVbalrMyApplicationLog#16](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/VisualBasic/walkthrough-creating-custom-log-listeners_1.vb)]  
   
-     基类所需的 <xref:System.Diagnostics.TraceListener.Write%2A> 和 <xref:System.Diagnostics.TraceListener.WriteLine%2A> 方法调用 `MsgBox` 来显示其输出内容。  
+     基类所需的 <xref:System.Diagnostics.TraceListener.Write%2A> 和 <xref:System.Diagnostics.TraceListener.WriteLine%2A> 方法调用 `MsgBox`，以显示其输入。  
   
-     <xref:System.Security.Permissions.HostProtectionAttribute> 特性应用于 <xref:System.Diagnostics.TraceListener.Write%2A> 和 <xref:System.Diagnostics.TraceListener.WriteLine%2A> 方法，以便它们的特性与基类方法匹配。 <xref:System.Security.Permissions.HostProtectionAttribute> 特性使运行代码的主机能够确定代码会公开主机保护同步。  
+     <xref:System.Security.Permissions.HostProtectionAttribute> 特性应用于 <xref:System.Diagnostics.TraceListener.Write%2A> 和 <xref:System.Diagnostics.TraceListener.WriteLine%2A> 方法，使其特性与基类方法匹配。 <xref:System.Security.Permissions.HostProtectionAttribute> 特性使运行代码的主机能够确定代码会公开主机保护同步。  
   
     > [!NOTE]
     >  <xref:System.Security.Permissions.HostProtectionAttribute> 特性仅在可托管公共语言运行时且实现主机保护的非托管应用程序上有效，如 SQL Server。  
@@ -63,21 +63,21 @@ ms.lasthandoff: 03/13/2017
   
 #### <a name="to-strongly-name-the-log-listener-assembly"></a>对日志侦听器程序集执行强名称  
   
-1.  在 **“解决方案资源管理器”**中选择一个项目。 在 **“项目”** 菜单上，选择 **“属性”**。 有关详细信息，请参阅[项目设计器简介](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7)。  
+1.  在 “解决方案资源管理器”中选择一个项目。 在 **“项目”** 菜单上，选择 **“属性”**。 有关详细信息，请参阅[项目设计器简介](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7)。  
   
-2.  单击“签名”****选项卡。  
+2.  单击“签名”选项卡。  
   
-3.  选择“为程序集签名”****框。  
+3.  选择“为程序集签名”框。  
   
-4.  在“选择强名称密钥文件”****下拉列表中，选择“\<新建>”****。  
+4.  在“选择强名称密钥文件”下拉列表中，选择“\<新建>”。  
   
-     将打开“创建强名称密钥”****对话框。  
+     将打开“创建强名称密钥”对话框。  
   
-5.  在“密钥文件名”****框中提供密钥文件的名称。  
+5.  在“密钥文件名”框中提供密钥文件的名称。  
   
-6.  在“输入密码”****和“确认密码”****框中输入密码。  
+6.  在“输入密码”和“确认密码”框中输入密码。  
   
-7.  单击“确定”****。  
+7.  单击“确定”。  
   
 8.  重新生成应用程序。  
   
@@ -100,7 +100,7 @@ ms.lasthandoff: 03/13/2017
   
 #### <a name="to-add-the-listener-to-myapplicationlog"></a>将侦听器添加到 My.Application.Log  
   
-1.  在“解决方案资源管理器”****中右键单击 app.config，然后选择“打开”****。  
+1.  在“解决方案资源管理器”中右键单击 app.config，然后选择“打开”。  
   
      - 或 -  
   
@@ -108,7 +108,7 @@ ms.lasthandoff: 03/13/2017
   
     1.  在 **“项目”** 菜单上选择 **“添加新项”**。  
   
-    2.  在“添加新项” **** 对话框中，选择“应用程序配置文件” ****。  
+    2.  在“添加新项”  对话框中，选择“应用程序配置文件” 。  
   
     3.  单击 **“添加”**。  
   
@@ -130,9 +130,10 @@ ms.lasthandoff: 03/13/2017
   
      将 `SimpleLogStrongName` 的值更改为该侦听器的强名称。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=fullName>   
  [使用应用程序日志](../../../../visual-basic/developing-apps/programming/log-info/working-with-application-logs.md)   
  [如何：记录异常](../../../../visual-basic/developing-apps/programming/log-info/how-to-log-exceptions.md)   
  [如何：编写日志消息](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-log-messages.md)   
  [演练：更改 My.Application.Log 写入信息的位置](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-changing-where-my-application-log-writes-information.md)
+

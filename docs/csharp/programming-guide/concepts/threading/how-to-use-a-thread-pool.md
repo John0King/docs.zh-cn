@@ -1,5 +1,5 @@
 ---
-title: "如何：使用线程池 (C#) | Microsoft Docs"
+title: "如何：使用线程池 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,11 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
-ms.openlocfilehash: 3814213389119f1fb6692fd57b0f5636a81025bb
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: f90262cdfa6e4d6c8c37c553e999d51fee736d6a
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-use-a-thread-pool-c"></a>如何：使用线程池 (C#)
@@ -161,3 +161,4 @@ Fibonacci(27) = 196418
  [线程处理 (C#)](../../../../csharp/programming-guide/concepts/threading/index.md)   
  @System.Threading.Monitor   
  [安全性](../../../../standard/security/index.md)
+

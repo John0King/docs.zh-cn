@@ -1,7 +1,7 @@
 ---
 title: "迭代器"
-description: "迭代器"
-keywords: ".NET、.NET Core"
+description: "了解如何使用内置 C# 迭代器以及如何创建自己的自定义迭代器方法。"
+keywords: .NET, .NET Core
 author: BillWagner
 ms.author: wiwagn
 ms.date: 06/20/2016
@@ -10,11 +10,11 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 5cf36f45-f91a-4fca-a0b7-87f233e108e9
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 890c058bd09893c2adb185e1d8107246eef2e20a
-ms.openlocfilehash: 7fea22be3b98c3218d173e5d80f1f22ef7ecf7e2
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 18a5819402c752f32aecd0cd4c3bd5a490292ebf
 ms.contentlocale: zh-cn
-ms.lasthandoff: 04/12/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 

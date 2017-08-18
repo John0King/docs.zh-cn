@@ -11,11 +11,11 @@ ms.prod: .net-core
 ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: db220f79-c35b-41f2-886c-cd068672d42d
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 0a83e3cc0e131351ef581fc15c68a3d0fda2bcce
-ms.lasthandoff: 03/13/2017
-
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 747345f0a765bc6cbe947a2b0c7bc025eb599550
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-return-a-query-from-a-method-c-programming-guide"></a>如何：从方法中返回查询（C# 编程指南）
@@ -30,3 +30,4 @@ ms.lasthandoff: 03/13/2017
 
 ## <a name="see-also"></a>请参阅  
  [LINQ 查询表达式](index.md)
+

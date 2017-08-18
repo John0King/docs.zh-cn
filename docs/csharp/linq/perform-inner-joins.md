@@ -11,23 +11,24 @@ ms.prod: .net-core
 ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: 45bceed6-f549-4114-a9b1-b44feb497742
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 6492e536976b74fa0a0b06cdc94d8aad9584e5be
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 2b73b954dbb090484a320302a3af72509fccd9d3
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="perform-inner-joins"></a>执行内部联接
 
-在关系数据库术语中，内部联接**会生成一个结果集，在该结果集中，第一个集合的每个元素对于第二个集合中的每个匹配元素都会出现一次。 如果第一个集合中的元素没有匹配元素，则它不会出现在结果集中。 由 C# 中的 `join` 子句调用的 <xref:System.Linq.Enumerable.Join%2A> 方法可实现内部联接。  
+在关系数据库术语中，内部联接会生成一个结果集，在该结果集中，第一个集合的每个元素对于第二个集合中的每个匹配元素都会出现一次。 如果第一个集合中的元素没有匹配元素，则它不会出现在结果集中。 由 C# 中的 `join` 子句调用的 <xref:System.Linq.Enumerable.Join%2A> 方法可实现内部联接。  
   
  本主题演示如何执行内部联接的四种变体：  
   
 -   基于简单键使两个数据源中的元素相关联的简单内部联接。  
   
--   基于复合**键使两个数据源中的元素相关联的内部联接。 复合键是由多个值组成的键，使你可以基于多个属性使元素相关联。  
+-   基于复合键使两个数据源中的元素相关联的内部联接。 复合键是由多个值组成的键，使你可以基于多个属性使元素相关联。  
   
--   在其中将连续联接操作相互追加的多联接**。  
+-   在其中将连续联接操作相互追加的多联接。  
   
 -   使用分组联接实现的内部联接。  
   
@@ -82,3 +83,4 @@ ms.lasthandoff: 03/13/2017
  [执行左外部联接](perform-left-outer-joins.md)   
  [匿名类型](../programming-guide/classes-and-structs/anonymous-types.md)   
  
+

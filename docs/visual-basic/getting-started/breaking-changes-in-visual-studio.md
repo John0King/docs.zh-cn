@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio 中 Visual Basic 的重大更改 | Microsoft Docs"
+title: "Visual Studio 中 Visual Basic 的重大更改"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -28,11 +28,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 50e128137fde445f64e10cf7c2a1ee5fdecb34e6
-ms.openlocfilehash: 12a8222081a1082a36d7b2710686ab33db474652
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: f9822ea140584a5b978b5fa8802a40db257ad7f8
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/01/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="visual-basic-breaking-changes-in-visual-studio"></a>Visual Studio 中 Visual Basic 的重大更改
@@ -47,3 +47,4 @@ Visual Studio 2015 中 Visual Basic 的任何改变都不能阻止在 Visual Stu
  [For Each...Next 语句](../../visual-basic/language-reference/statements/for-each-next-statement.md)   
  [入门](../../visual-basic/getting-started/index.md)   
  [不间断语言修复什么时候中断？](http://go.microsoft.com/fwlink/?LinkId=259542)
+

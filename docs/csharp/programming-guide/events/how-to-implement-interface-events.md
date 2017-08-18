@@ -1,5 +1,5 @@
 ---
-title: "如何：实现接口事件（C# 编程指南）| Microsoft 文档"
+title: "如何：实现接口事件（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -28,11 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a780a11d8dd238187eb82933359bbb151bb3c333
-ms.openlocfilehash: 4a5b5b862a88d7008049e411e6dc0f020952cc5c
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 8f8460674aa59170cf75eb2fa93e9d232df07e5e
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-implement-interface-events-c-programming-guide"></a>如何：实现接口事件（C# 编程指南）
@@ -89,3 +89,4 @@ ms.lasthandoff: 05/22/2017
  [委托](../../../csharp/programming-guide/delegates/index.md)   
  [显式接口实现](../../../csharp/programming-guide/interfaces/explicit-interface-implementation.md)   
  [如何：在派生类中引发基类事件](../../../csharp/programming-guide/events/how-to-raise-base-class-events-in-derived-classes.md)
+

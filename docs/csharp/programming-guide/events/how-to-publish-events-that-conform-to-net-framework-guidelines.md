@@ -1,5 +1,5 @@
 ---
-title: "如何：发布符合 .NET Framework 准则的事件（C# 编程指南） | Microsoft Docs"
+title: "如何：发布符合 .NET Framework 准则的事件（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -27,24 +27,24 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 400dfda51d978f35c3995f90840643aaff1b9c13
-ms.openlocfilehash: 6d529e60643966fbabd5290543146977b4dc83c5
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 21badd504a54c7000fef76e901cc952134eff61e
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/24/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-publish-events-that-conform-to-net-framework-guidelines-c-programming-guide"></a>如何：发布符合 .NET Framework 准则的事件（C# 编程指南）
-下面的过程演示了如何将遵循标准 [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] 模式的事件添加到类和结构中。 [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] 类库中的所有事件均基于 <xref:System.EventHandler> 委托，定义如下：  
+下面的过程演示了如何将遵循标准 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 模式的事件添加到类和结构中。 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 类库中的所有事件均基于 <xref:System.EventHandler> 委托，定义如下：  
   
 ```csharp  
 public delegate void EventHandler(object sender, EventArgs e);  
 ```  
   
 > [!NOTE]
->  [!INCLUDE[dnprdnlong](../../../csharp/programming-guide/events/includes/dnprdnlong_md.md)] 引入了泛型版本的委托 <xref:System.EventHandler%601>。 下例演示了如何使用这两个版本。  
+>  [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)] 引入了泛型版本的委托 <xref:System.EventHandler%601>。 下例演示了如何使用这两个版本。  
   
- 尽管定义的类中的事件可基于任何有效委托类型，甚至是返回值的委托，但一般还是建议使用 <xref:System.EventHandler> 使事件基于 [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] 模式，如下例中所示。  
+ 尽管定义的类中的事件可基于任何有效委托类型，甚至是返回值的委托，但一般还是建议使用 <xref:System.EventHandler> 使事件基于 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 模式，如下例中所示。  
   
 ### <a name="to-publish-events-based-on-the-eventhandler-pattern"></a>发布基于 EventHandler 模式的事件  
   
@@ -73,7 +73,7 @@ public delegate void EventHandler(object sender, EventArgs e);
   
 3.  使用下列步骤之一来声明发布类中的事件。  
   
-    1.  如果没有任何自定义 EventArgs 类，事件类型将为非泛型 EventHandler 委托。 你无需声明该委托，因为它已在你创建 C# 项目时包括的 <xref:System> 命名空间中声明。 将以下代码添加到发布服务器类。  
+    1.  如果没有任何自定义 EventArgs 类，事件类型将为非泛型 EventHandler 委托。 你无需声明该委托，因为它已在创建 C# 项目时包括的 <xref:System> 命名空间中声明。 将以下代码添加到发布服务器类。  
   
         ```csharp  
         public event EventHandler RaiseCustomEvent;  
@@ -96,8 +96,9 @@ public delegate void EventHandler(object sender, EventArgs e);
   
  [!code-cs[csProgGuideEvents#2](../../../csharp/programming-guide/events/codesnippet/CSharp/how-to-publish-events-that-conform-to-net-framework-guidelines_1.cs)]  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.Delegate>   
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [事件](../../../csharp/programming-guide/events/index.md)   
  [委托](../../../csharp/programming-guide/delegates/index.md)
+

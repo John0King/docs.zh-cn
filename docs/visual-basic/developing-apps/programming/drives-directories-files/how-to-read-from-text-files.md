@@ -1,5 +1,5 @@
 ---
-title: "如何：在 Visual Basic 中读取文本文件 | Microsoft Docs"
+title: "如何：在 Visual Basic 中读取文本文件"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -34,11 +34,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: 4ea4f6ebfaf06a8b2b5d161d9986eebd28f50d5b
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 9b38b7f869a1d4ff290042a18a9bc2e0fa2709b7
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-read-from-text-files-in-visual-basic"></a>如何：在 Visual Basic 中读取文本文件
@@ -80,7 +80,7 @@ ms.lasthandoff: 05/22/2017
   
 -   该用户缺少查看该路径所必需的权限 (<xref:System.Security.SecurityException>)。  
   
- 不要根据文件的名称来判断文件的内容。 例如，文件 Form1.vb 可能不是 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] 源文件。  
+ 不要根据文件的名称来判断文件的内容。 例如，文件 Form1.vb 可能不是 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 源文件。  
   
  在应用程序中使用输入的数据之前，需验证所有的输入内容。 文件的内容可能不是预期内容，并且用来读取该文件的方法可能失败。  
   
@@ -94,3 +94,4 @@ ms.lasthandoff: 05/22/2017
  [疑难解答：读取和写入文本文件](../../../../visual-basic/developing-apps/programming/drives-directories-files/troubleshooting-reading-from-and-writing-to-text-files.md)   
  [演练：在 Visual Basic 中操作文件和目录](../../../../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-and-directories.md)   
  [文件编码](../../../../visual-basic/developing-apps/programming/drives-directories-files/file-encodings.md)
+

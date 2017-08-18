@@ -1,5 +1,5 @@
 ---
-title: "如何：编写 LINQ to XML 轴方法 (C#) | Microsoft Docs"
+title: "如何：编写 LINQ to XML 轴方法 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,12 +14,11 @@ ms.assetid: 50aef06b-1d22-4718-a18a-21237e26d7c1
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 400dfda51d978f35c3995f90840643aaff1b9c13
-ms.openlocfilehash: afaaaa497a16c1dbf0f3e0e81351f5c614732d44
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 2f931bf850b094cf35db7c88aaf7aba9910f8c94
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/30/2017
-
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-write-a-linq-to-xml-axis-method-c"></a>如何：编写 LINQ to XML 轴方法 (C#)
@@ -306,3 +305,4 @@ class Program
   
 ## <a name="see-also"></a>请参阅  
  [高级查询技术 (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)
+

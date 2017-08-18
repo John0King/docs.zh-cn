@@ -1,7 +1,7 @@
 ---
 title: "强类型委托"
-description: "强类型委托"
-keywords: ".NET、.NET Core"
+description: "了解创建需要委托的功能时，如何使用泛型委托类型声明自定义类型。"
+keywords: .NET, .NET Core
 author: BillWagner
 ms.author: wiwagn
 ms.date: 06/20/2016
@@ -10,10 +10,11 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 564a683d-352b-4e57-8bac-b466529daf6b
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: ad73474ceb56f8610facd1668825bb0e71ccc7cb
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 0a8185c21e129c91b2c3ecb1f74f8ce2f75c5db9
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 

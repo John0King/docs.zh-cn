@@ -1,5 +1,5 @@
 ---
-title: ".NET Framework 中的新增功能 | Microsoft Docs"
+title: ".NET Framework 中的新增功能"
 ms.custom: 
 ms.date: 05/02/2017
 ms.prod: .net-framework
@@ -16,11 +16,11 @@ caps.latest.revision: 292
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fe9ab371ab8d3eee3778412e446b7aa30b42476b
-ms.openlocfilehash: 416e97cd7f59b0fc63052673acee8b55a3c11c1f
+ms.translationtype: HT
+ms.sourcegitcommit: 3155295489e1188640dae5aa5bf9fdceb7480ed6
+ms.openlocfilehash: f922abca6898e91748158ee16f89ca7f57a81bf7
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 08/05/2017
 
 ---
 
@@ -68,7 +68,7 @@ ms.lasthandoff: 05/22/2017
 - [Windows 窗体](#wf47)
 - [Windows Presentation Foundation (WPF)](#WPF47)
 
-有关 .NET Framework 4.7 中新增 API 的列表，请参阅 GitHub 上的 [.NET Framework 4.7 API 更改](https://github.com/Microsoft/dotnet/blob/master/releases/net47/dotnet47-api-changes.md)。 有关 .NET Framework 4.7 中功能改进和 bug 修复的列表，请参阅 GitHub 上的 [.NET Framework 4.7 更改列表](http://gutithub.com/Microsoft/dotnet/blob/master/releases/net47/dotnet47-changes.md)。  有关其他信息，请参阅 .NET 博客中的[宣布 .NET Framework 4.7](https://blogs.msdn.microsoft.com/dotnet/2017/04/05/announcing-the-net-framework-4-7/)。
+有关 .NET Framework 4.7 中新增 API 的列表，请参阅 GitHub 上的 [.NET Framework 4.7 API 更改](https://github.com/Microsoft/dotnet/blob/master/releases/net47/dotnet47-api-changes.md)。 有关 .NET Framework 4.7 中功能改进和 bug 修复的列表，请参阅 GitHub 上的 [.NET Framework 4.7 更改列表](http://github.com/Microsoft/dotnet/blob/master/releases/net47/dotnet47-changes.md)。  有关其他信息，请参阅 .NET 博客中的[宣布 .NET Framework 4.7](https://blogs.msdn.microsoft.com/dotnet/2017/04/05/announcing-the-net-framework-4-7/)。
 
 <a name="Core47" />
 #### <a name="core"></a>核心
@@ -190,8 +190,7 @@ WCF 包含大量代码更改，消除了争用条件，从而提升了序列化�
 ### <a name="aspnet"></a>ASP.NET
  在 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 中，ASP.NET 包括以下增强功能：
 
- 改进了对数据批注验证程序中本地化错误消息的支持****
- 数据批注验证程序使你能够通过将一个或多个属性添加到类属性来执行验证。 如果验证失败，该属性的 <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessage%2A?displayProperty=fullName> 元素定义错误消息的文本。 从 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 开始，ASP.NET 可以轻松地本地化错误消息。 如果有以下情况，将本地化错误消息：
+ **改进了对数据注释验证程序中本地化错误消息的支持** 借助数据注释验证程序，能够通过将一个或多个特性添加到类属性来执行验证。 如果验证失败，该属性的 <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessage%2A?displayProperty=fullName> 元素定义错误消息的文本。 从 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 开始，ASP.NET 可以轻松地本地化错误消息。 如果有以下情况，将本地化错误消息：
 
 1.  验证属性中提供 <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessage%2A?displayProperty=fullName>。
 
@@ -230,8 +229,7 @@ End Class
 
  此外，数据批注本地化可扩展。 开发人员可以通过实现 <xref:System.Web.Globalization.IStringLocalizerProvider> 接口插入自己的字符串本地化工具提供程序，以将本地化字符串存储在资源文件以外的某个位置。
 
- 会话状态存储提供程序的异步支持****
- ASP.NET 现允许将返回任务的方法与会话状态存储提供程序一起使用，从而允许 ASP.NET 应用获取异步的可伸缩性优势。 要使用会话状态存储提供程序支持异步操作，ASP.NET 包括一个新的接口 <xref:System.Web.SessionState.ISessionStateModule?displayProperty=fullName>，它继承自 <xref:System.Web.IHttpModule> 并允许开发人员实现其自己的会话状态模块和异步会话存储提供程序。 接口定义如下：
+ **会话状态存储提供程序的异步支持** ASP.NET 现允许将返回任务的方法与会话状态存储提供程序一起使用，从而使 ASP.NET 应用能够获取异步的可伸缩性优势。 要使用会话状态存储提供程序支持异步操作，ASP.NET 包括一个新的接口 <xref:System.Web.SessionState.ISessionStateModule?displayProperty=fullName>，它继承自 <xref:System.Web.IHttpModule> 并允许开发人员实现其自己的会话状态模块和异步会话存储提供程序。 接口定义如下：
 
 ```csharp
 public interface ISessionStateModule : IHttpModule {
@@ -242,8 +240,7 @@ public interface ISessionStateModule : IHttpModule {
 
  此外，<xref:System.Web.SessionState.SessionStateUtility> 类包括两种新方法：<xref:System.Web.SessionState.SessionStateUtility.IsSessionStateReadOnly%2A> 和 <xref:System.Web.SessionState.SessionStateUtility.IsSessionStateRequired%2A>，可用来支持异步操作。
 
- 输出缓存提供程序的异步支持 ****
- 从 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 开始，返回任务的方法可以与输出缓存提供程序一起使用，以提供异步的可伸缩性优势。  实现这些方法的提供程序减少了 Web 服务器上的线程阻止，并提高 ASP.NET 服务的可伸缩性。
+ **输出缓存提供程序的异步支持** 从 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 开始，返回任务的方法可以与输出缓存提供程序一起使用，从而提供异步的可伸缩性优势。  实现这些方法的提供程序减少了 Web 服务器上的线程阻止，并提高 ASP.NET 服务的可伸缩性。
 
  添加了以下 API 以支持异步输出缓存提供程序：
 
@@ -273,8 +270,7 @@ public interface ISessionStateModule : IHttpModule {
 
 <a name="Crypto462"></a> 
 ### <a name="cryptography"></a>密码
- 对包含 FIPS 186-3 DSA 的 X509 证书的支持****
-[!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 添加了对密钥超过 FIPS 186-2 1024 位限制的 DSA（数字签名算法）X509 证书的支持。
+ **对包含 FIPS 186-3 DSA 的 X509 证书的支持** [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 添加了对其密钥超过 FIPS 186-2 1024 位限制的 DSA（数字签名算法）X509 证书的支持。
 
  除支持更大的 FIPS 186-3 密钥大小以外，[!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 还允许使用 SHA-2 系列的哈希算法（SHA256、SHA384 和 SHA512）计算签名。 FIPS 186-3 支持由新的 <xref:System.Security.Cryptography.DSACng?displayProperty=fullName> 类提供。
 
@@ -318,8 +314,7 @@ public static bool VerifyDataDsaSha384(byte[] data, byte[] signature, X509Certif
 End Function
 ```
 
- 提高了 ECDiffieHellman 密钥派生例程的输入的清晰度****
- .NET Framework 3.5 通过三个不同的密钥派生功能 (KDF) 例程增加了对椭圆曲线 Diffie-Hellman 密钥协议的支持。 例程的输入以及这些例程本身通过 <xref:System.Security.Cryptography.ECDiffieHellmanCng> 对象上的属性进行配置。 但由于不是每个例程都会读取每个输入属性，因此过去很有可能对开发人员造成了困扰。
+ **提高了 ECDiffieHellman 密钥派生例程的输入的清晰度** .NET Framework 3.5 通过三个不同的密钥派生功能 (KDF) 例程增加了对椭圆曲线 Diffie-Hellman 密钥协议的支持。 例程的输入以及这些例程本身通过 <xref:System.Security.Cryptography.ECDiffieHellmanCng> 对象上的属性进行配置。 但由于不是每个例程都会读取每个输入属性，因此过去很有可能对开发人员造成了困扰。
 
  为解决 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 中的这一问题，已将以下三种方法添加到了 <xref:System.Security.Cryptography.ECDiffieHellman> 基类，以更清楚地表示这些 KDF 例程及其输入：
 
@@ -329,10 +324,9 @@ End Function
 |<xref:System.Security.Cryptography.ECDiffieHellman.DeriveKeyFromHmac%28System.Security.Cryptography.ECDiffieHellmanPublicKey%2CSystem.Security.Cryptography.HashAlgorithmName%2CSystem.Byte%5B%5D%2CSystem.Byte%5B%5D%2CSystem.Byte%5B%5D%29>|使用下面的公式派生密钥材料<br /><br /> HMAC(hmacKey, secretPrepend &#124;&#124; *x* &#124;&#124; secretAppend)<br /><br /> HMAC(hmacKey, secretPrepend OrElse *x* OrElse secretAppend)<br /><br /> 其中 *x* 是 EC Diffie-Hellman 算法的计算结果。|
 |<xref:System.Security.Cryptography.ECDiffieHellman.DeriveKeyTls%28System.Security.Cryptography.ECDiffieHellmanPublicKey%2CSystem.Byte%5B%5D%2CSystem.Byte%5B%5D%29>|使用 TLS 伪随机函数 (PRF) 派生算法派生密钥材料。|
 
- 对持久化密钥对称加密的支持****
- Windows 加密库 (CNG) 增加了对存储持久化对称密钥和使用硬件存储对称密钥的支持，并且 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 使开发人员可以使用此功能。  因为密钥名和密钥提供程序的概念是特定于实现的，所以使用此功能要求使用具体实现类型（而不是首选出厂方法）的构造函数（例如，调用 `Aes.Create`）。
+ **对持久化密钥对称加密的支持** Windows 加密库 (CNG) 添加了对存储持久化对称密钥和使用硬件存储的对称密钥的支持，并且 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 使开发人员可以使用此功能。  因为密钥名和密钥提供程序的概念是特定于实现的，所以使用此功能要求使用具体实现类型（而不是首选出厂方法）的构造函数（例如，调用 `Aes.Create`）。
 
- 持久化密钥对称加密支持因 AES (<xref:System.Security.Cryptography.AesCng>) 和 3DES (<xref:System.Security.Cryptography.TripleDESCng>) 算法存在。 例如：
+ 持久化密钥对称加密支持因 AES (<xref:System.Security.Cryptography.AesCng>) 和 3DES (<xref:System.Security.Cryptography.TripleDESCng>) 算法存在。 例如: 
 
 ```csharp
 public static byte[] EncryptDataWithPersistedKey(byte[] data, byte[] iv)
@@ -371,8 +365,7 @@ Public Shared Function EncryptDataWithPersistedKey(data As Byte(), iv As Byte())
 End Function
 ```
 
- **SignedXml 支持 SHA-2 哈希**
-[!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 向 <xref:System.Security.Cryptography.Xml.SignedXml> 类添加了对 RSA-SHA256、RSA-SHA384 和 RSA-SHA512 PKCS#1 签名方法以及 SHA256、SHA384 和 SHA512 引用摘要算法的支持。
+ **对 SHA-2 哈希的 SignedXml 支持** [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 向 <xref:System.Security.Cryptography.Xml.SignedXml> 类添加了对 RSA-SHA256、RSA-SHA384 和 RSA-SHA512 PKCS#1 签名方法以及 SHA256、SHA384 和 SHA512 引用摘要算法的支持。
 
  URI 常量都在 <xref:System.Security.Cryptography.Xml.SignedXml> 上公开：
 
@@ -391,15 +384,13 @@ End Function
 ### <a name="sqlclient"></a>SqlClient
  SQL Server 的 .NET framework 数据提供程序 (<xref:System.Data.SqlClient?displayProperty=fullName>) 包括 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 中的以下新功能：
 
- Azure SQL 数据库的连接池和超时****
- 启用连接池并出现超时或其他登录错误后，会缓存一个异常，并会在接下来的 5 秒到 1 分钟内尝试任何后续连接时引发缓存的异常。  有关更多详细信息，请参阅 [SQL Server 连接池 (ADO.NET)](../../../docs/framework/data/adonet/sql-server-connection-pooling.md)。
+ **Azure SQL 数据库的连接池和超时** 启用连接池并出现超时或其他登录错误后，会缓存一个异常，并会在接下来的 5 秒到 1 分钟内尝试进行任何后续连接时引发缓存的异常。  有关更多详细信息，请参阅 [SQL Server 连接池 (ADO.NET)](../../../docs/framework/data/adonet/sql-server-connection-pooling.md)。
 
  连接到 Azure SQL 数据库时此行为是不可取的，因为连接尝试可能会失败，出现通常会快速恢复的暂时性错误。 为更好地优化连接重试体验，会在与 Azure SQL 数据库连接失败时删除连接池阻塞期行为。
 
  新 `PoolBlockingPeriod` 关键字的添加使你能够选择最适合你的应用的阻塞期。 值包括：
 
- `Auto`
- 已禁用连接到 Azure SQL 数据库的应用程序的连接池阻塞期，已启用连接到任何其他 SQL Server 实例的应用程序的连接池阻塞期。 这是默认值。 如果 Server 终结点名称采用以下任一结尾，则将它们视为 Azure SQL 数据库：
+ `Auto` 已禁用连接到 Azure SQL 数据库的应用程序的连接池暂停时段，已启用连接到任何其他 SQL Server 实例的应用程序的连接池暂停时段。 这是默认值。 如果 Server 终结点名称采用以下任一结尾，则将它们视为 Azure SQL 数据库：
 
 - .database.windows.net
 
@@ -423,8 +414,7 @@ End Function
 ### <a name="windows-communication-foundation"></a>Windows Communication Foundation
  在 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 中，Windows Communication Foundation 在以下几个方面进行了增强：
 
- 对使用 CNG 存储的证书的 WCF 传输安全支持****
- WCF 传输安全支持使用 Windows 加密库 (CNG) 存储的证书。 在 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 中，这种支持仅限于使用具有公钥的证书，该公钥的指数长度不超过 32 位。 应用程序面向 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 时，此功能默认启用。
+ **对使用 CNG 存储的证书的 WCF 传输安全性支持** WCF 传输安全性支持使用 Windows 加密库 (CNG) 存储的证书。 在 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 中，这种支持仅限于使用具有公钥的证书，该公钥的指数长度不超过 32 位。 应用程序面向 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 时，此功能默认启用。
 
  对于面向 [!INCLUDE[net_v461](../../../includes/net-v461-md.md)] 及更早版本但在 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 上运行的应用程序，可以通过将下行添加到 app.config 或 web.config 文件的 [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) 部分来启用此功能。
 
@@ -446,8 +436,7 @@ Const DisableCngCertificates As String = "Switch.System.ServiceModel.DisableCngC
 AppContext.SetSwitch(disableCngCertificates, False)
 ```
 
- **通过 DataContractJsonSerializer 类更好地支持多个夏令时调整规则**
- 客户可以使用应用程序配置设置来确定 <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> 类是否支持一个时区的多个调整规则。 这是一项可以选择使用的功能。 若要启用它，将以下设置添加到 app.config 文件中：
+ **通过 DataContractJsonSerializer 类更好地支持多个夏令时调整规则** 客户可使用应用程序配置设置来确定 <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> 类是否支持一个时区的多个调整规则。 这是一项可以选择使用的功能。 若要启用它，将以下设置添加到 app.config 文件中：
 
 ```xml
 <runtime>
@@ -484,8 +473,7 @@ Dim utc As New Date(2016, 11, 07, 3, 0, 0, DateTimeKind.Utc)
 
 若要详细了解 <xref:System.TimeZoneInfo> 结构和时区调整，请参阅[时区概述](../../../docs/standard/datetime/time-zone-overview.md)。
 
- NetNamedPipeBinding 最佳匹配****
- WCF 包含可以在客户端应用程序上设置以确保它们始终连接到服务的新应用设置，该服务在与它们请求的最匹配的 URI 上进行侦听。 将此应用设置设置为 `false`（默认值）时，客户端可以使用 <xref:System.ServiceModel.NetNamedPipeBinding> 尝试连接到服务，该服务在是所请求 URI 的子字符串的 URI 上进行侦听。
+ **NetNamedPipeBinding 最佳匹配** WCF 具有一个新应用设置，可在客户端应用程序上进行设置以确保它们始终连接到服务，该服务在与它们请求的最匹配的 URI 上进行侦听。 将此应用设置设置为 `false`（默认值）时，客户端可以使用 <xref:System.ServiceModel.NetNamedPipeBinding> 尝试连接到服务，该服务在是所请求 URI 的子字符串的 URI 上进行侦听。
 
  例如，一个客户端尝试连接到在 `net.pipe://localhost/Service1` 处进行侦听的服务，但该计算机上使用管理员特权运行的另一个服务在 `net.pipe://localhost` 处进行侦听。 将此应用设置设置为 `false` 时，客户端将尝试连接到错误的服务。 将应用设置设置为 `true` 后，客户端将始终连接到最匹配的服务。
 
@@ -502,8 +490,7 @@ Dim utc As New Date(2016, 11, 07, 3, 0, 0, DateTimeKind.Utc)
 </configuration>
 ```
 
- SSL 3.0 不是默认协议****
- 结合使用 NetTcp 与传输安全和证书的凭据类型时，SSL 3.0 不再是用于协商安全连接的默认协议。 在大多数情况下，应该不会影响现有应用，因为 TLS 1.0 包含在 NetTcp 的协议列表中。 所有现有客户端应该能够至少使用 TLS 1.0 协商连接。      如果 Ssl3 必需，则使用以下配置机制之一将其添加到协商协议的列表。
+ **SSL 3.0 不是默认协议** 结合使用 NetTcp 与传输安全性和证书的凭据类型时，SSL 3.0 不再是用于协商安全连接的默认协议。 在大多数情况下，应该不会影响现有应用，因为 TLS 1.0 包含在 NetTcp 的协议列表中。 所有现有客户端应该能够至少使用 TLS 1.0 协商连接。      如果 Ssl3 必需，则使用以下配置机制之一将其添加到协商协议的列表。
 
 - <xref:System.ServiceModel.Channels.SslStreamSecurityBindingElement.SslProtocols%2A?displayProperty=fullName> 属性
 
@@ -517,8 +504,7 @@ Dim utc As New Date(2016, 11, 07, 3, 0, 0, DateTimeKind.Utc)
 ### <a name="windows-presentation-foundation-wpf"></a>Windows Presentation Foundation (WPF)
  在 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 中，Windows Presentation Foundation 在以下几个方面进行了增强：
 
- **组排序**
-使用 <xref:System.Windows.Data.CollectionView> 对象对数据进行分组的应用程序现在可以显式声明如何对组进行排序。 显式排序可解决在应用动态添加或删除组，或在它更改分组中包含的项属性的值时出现的非直观排序问题。 它还可通过将分组属性比较从完整集合排序移动到组排序来改善组创建过程的性能。
+ **组排序** 使用 <xref:System.Windows.Data.CollectionView> 对象对数据进行分组的应用程序现在可以显式声明如何对组进行排序。 显式排序可解决在应用动态添加或删除组，或在它更改分组中包含的项属性的值时出现的非直观排序问题。 它还可通过将分组属性比较从完整集合排序移动到组排序来改善组创建过程的性能。
 
  为支持组排序，新的 <xref:System.ComponentModel.GroupDescription.SortDescriptions%2A?displayProperty=fullName> 和 <xref:System.ComponentModel.GroupDescription.CustomSort%2A?displayProperty=fullName> 属性描述如何对 <xref:System.ComponentModel.GroupDescription> 对象生成的组的集合进行排序。 这类似于同名 <xref:System.Windows.Data.ListCollectionView> 属性描述如何对数据项进行排序的方式。
 
@@ -540,13 +526,11 @@ Dim utc As New Date(2016, 11, 07, 3, 0, 0, DateTimeKind.Utc)
 </SortDescriptions>
 ```
 
- 屏幕键盘支持****
- 在可采用文本输入的控件接收触摸输入时，通过自动调用和解除 Windows 10 中新的屏幕键盘，屏幕键盘支持可在 WPF 应用程序中启用焦点跟踪。
+ **屏幕键盘支持** 在可采用文本输入的控件接收到触控输入时，屏幕键盘支持通过自动调用和消除 Windows 10 中新的屏幕键盘，以在 WPF 应用程序中启用焦点跟踪。
 
  在 .NET framework 的早期版本中，WPF 应用程序不能在不禁用 WPF 笔/触摸手势支持的情况下选择加入焦点跟踪。  因此，WPF 应用程序必须选择完整的 WPF 触摸支持或依赖于 Windows 鼠标提升。
 
- 每监视器 DPI****
- 为了支持 WPF 应用的高 DPI 和混合 DPI 环境最近的增加，[!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 中的 WPF 启用了每监视器感知功能。 有关如何使 WPF 应用成为按监视器 DPI 感知的详细信息，请参阅 GitHub 上的[示例和开发人员指南](https://github.com/Microsoft/WPF-Samples/tree/master/PerMonitorDPI)。
+ **按监视器 DPI** 为了支持 WPF 应用的高 DPI 和混合 DPI 环境最近的增加，[!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 中的 WPF 启用了按监视器感知。 有关如何使 WPF 应用成为按监视器 DPI 感知的详细信息，请参阅 GitHub 上的[示例和开发人员指南](https://github.com/Microsoft/WPF-Samples/tree/master/PerMonitorDPI)。
 
  在 .NET framework 的早期版本中，WPF 应用为系统 DPI 感知。 换而言之，应用程序的 UI 由操作系统相应地进行缩放，具体取决于在其上呈现应用的监视器的 DPI。 ,
 
@@ -562,14 +546,11 @@ Dim utc As New Date(2016, 11, 07, 3, 0, 0, DateTimeKind.Utc)
 ### <a name="windows-workflow-foundation-wf"></a>Windows Workflow Foundation (WF)
  在 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 中，Windows Workflow Foundation 在以下几个方面进行了增强：
 
- 在重新托管的 WF 设计器中支持 C# 表达式和 IntelliSense****
- 从 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 开始，WF 同时在 Visual Studio 设计器和代码工作流中支持 C# 表达式。 重新托管的工作流设计器是 WF 的一项重要功能，允许工作流设计器位于 Visual Studio 外部的应用程序中（如 WPF 中）。  Windows Workflow Foundation 提供在重新托管的工作流设计器中支持 C# 表达式和 IntelliSense 的功能。 有关详细信息，请参阅 [Windows Workflow Foundation 博客](http://go.microsoft.com/fwlink/?LinkID=809042&clcid=0x409)。
+ **在重新托管的 WF 设计器中支持 C# 表达式和 IntelliSense** 从 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 开始，WF 同时在 Visual Studio 设计器和代码工作流中支持 C# 表达式。 重新托管的工作流设计器是 WF 的一项重要功能，允许工作流设计器位于 Visual Studio 外部的应用程序中（如 WPF 中）。  Windows Workflow Foundation 提供在重新托管的工作流设计器中支持 C# 表达式和 IntelliSense 的功能。 有关详细信息，请参阅 [Windows Workflow Foundation 博客](http://go.microsoft.com/fwlink/?LinkID=809042&clcid=0x409)。
 
- `Availability of IntelliSense when a customer rebuilds a workflow project from Visual Studio`
- 在 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 之前的 .NET Framework 版本中，当客户从 Visual Studio 重新生成工作流项目时，WF 设计器 IntelliSense 会中断。 虽然项目生成成功，但在设计器中找不到该工作流类型，并且来自 IntelliSense 的缺少工作流类型的警告会出现在**错误列表**窗口中。 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 解决这个问题，并使 IntelliSense 可用。
+ `Availability of IntelliSense when a customer rebuilds a workflow project from Visual Studio` 在低于 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 的 .NET Framework 版本中，客户从 Visual Studio 重新生成工作流项目时，WF 设计器 IntelliSense 会中断。 虽然项目生成成功，但在设计器中找不到该工作流类型，并且来自 IntelliSense 的缺少工作流类型的警告会出现在**错误列表**窗口中。 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 解决这个问题，并使 IntelliSense 可用。
 
- 启用了工作流跟踪的工作流 V1 应用程序现可在 FIPS 模式下运行****
- 已启用 FIPS 符合性模式的计算机现在可以成功运行启用了工作流跟踪的工作流版本 1 样式的应用程序。 若要启用此方案，必须对 app.config 文件进行以下更改：
+ **启用了工作流跟踪的工作流 V1 应用程序现可在 FIPS 模式下运行** 已启用 FIPS 符合性模式的计算机现在可以成功运行启用了工作流跟踪的工作流版本 1 样式的应用程序。 若要启用此方案，必须对 app.config 文件进行以下更改：
 
 ```xml
 <add key="microsoft:WorkflowRuntime:FIPSRequired" value="true" />
@@ -577,8 +558,7 @@ Dim utc As New Date(2016, 11, 07, 3, 0, 0, DateTimeKind.Utc)
 
  如果未启用此方案，运行应用程序将继续生成异常，并显示消息“此实现不是 Windows 平台 FIPS 验证的加密算法的一部分”。
 
- **结合使用动态更新和 Visual Studio 工作流设计器时工作流改进**
- 工作流设计器、流程图活动设计器和其他工作流活动设计器现在已成功加载并显示调用 <xref:System.Activities.DynamicUpdate.DynamicUpdateServices.PrepareForUpdate%2A?displayProperty=fullName> 方法后已保存的工作流。 在 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 之前的 .NET Framework 版本中，在 Visual Studio 中为调用 <xref:System.Activities.DynamicUpdate.DynamicUpdateServices.PrepareForUpdate%2A?displayProperty=fullName> 后已保存的工作流加载 XAML 文件可能会导致以下问题：
+ **结合使用动态更新和 Visual Studio 工作流设计器时工作流改进** 工作流设计器、流程图活动设计器和其他工作流活动设计器现在可成功加载并显示调用 <xref:System.Activities.DynamicUpdate.DynamicUpdateServices.PrepareForUpdate%2A?displayProperty=fullName> 方法后已保存的工作流。 在 [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] 之前的 .NET Framework 版本中，在 Visual Studio 中为调用 <xref:System.Activities.DynamicUpdate.DynamicUpdateServices.PrepareForUpdate%2A?displayProperty=fullName> 后已保存的工作流加载 XAML 文件可能会导致以下问题：
 
 - 工作流设计器无法正确加载 XAML 文件（当 <xref:System.Activities.Presentation.ViewState.ViewStateData.Id%2A?displayProperty=fullName> 位于行末尾处时）。
 
@@ -723,7 +703,7 @@ Dim utc As New Date(2016, 11, 07, 3, 0, 0, DateTimeKind.Utc)
 
 - **ASP.NET 5**
 
-     .NET 2015 包括 ASP.NET 5，是一个用于生成基于云的现代应用的精益 .NET 平台。 这是一个模块化的平台，你可以仅包含应用程序所需的那些功能。 其可承载于 IIS 上或自承载于自定义过程中，并且你可以在同一服务器上运行具有不同版本 .NET Framework 的应用。 它包括为云部署而设计的新环境配置系统。
+     .NET 2015 包括 ASP.NET 5，是一个用于生成基于云的新式应用的精益 .NET 实现。 ASP.NET 5 是模块化的，因此你可以仅包括应用程序所需的那些功能。 其可承载于 IIS 上或自承载于自定义过程中，并且你可以在同一服务器上运行具有不同版本 .NET Framework 的应用。 它包括为云部署而设计的新环境配置系统。
 
      MVC、Web API 和 Web Pages 统一至称为 MVC 6 的单个 Framework。 通过 Visual Studio 2015 中的新工具生成 ASP.NET 5 应用。 现有应用程序将在新 .NET Framework 上工作；但是，若要生成使用 MVC 6 或 SignalR 3 的应用，你必须使用 Visual Studio 2015 中的项目系统。
 
@@ -1092,23 +1072,13 @@ Dim utc As New Date(2016, 11, 07, 3, 0, 0, DateTimeKind.Utc)
 
 - **分析改进。** 以下新的非托管分析 API 提供更强大的分析功能：
 
-     [COR_PRF_ASSEMBLY_REFERENCE_INFO 结构](../../../docs/framework/unmanaged-api/profiling/cor-prf-assembly-reference-info-structure.md) 
-     [COR_PRF_HIGH_MONITOR 枚举](../../../docs/framework/unmanaged-api/profiling/cor-prf-high-monitor-enumeration.md) 
-     [GetAssemblyReferences 方法](../../../docs/framework/unmanaged-api/profiling/icorprofilercallback6-getassemblyreferences-method.md) 
-     [GetEventMask2 方法](../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo5-geteventmask2-method.md) 
-     [SetEventMask2 方法](../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo5-seteventmask2-method.md) 
-     [AddAssemblyReference 方法](../../../docs/framework/unmanaged-api/profiling/icorprofilerassemblyreferenceprovider-addassemblyreference-method.md)
+     [COR_PRF_ASSEMBLY_REFERENCE_INFO 结构](../../../docs/framework/unmanaged-api/profiling/cor-prf-assembly-reference-info-structure.md) [COR_PRF_HIGH_MONITOR 枚举](../../../docs/framework/unmanaged-api/profiling/cor-prf-high-monitor-enumeration.md) [GetAssemblyReferences 方法](../../../docs/framework/unmanaged-api/profiling/icorprofilercallback6-getassemblyreferences-method.md) [GetEventMask2 方法](../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo5-geteventmask2-method.md) [SetEventMask2 方法](../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo5-seteventmask2-method.md) [AddAssemblyReference 方法](../../../docs/framework/unmanaged-api/profiling/icorprofilerassemblyreferenceprovider-addassemblyreference-method.md)
 
      之前的 `ICorProfiler` 实现支持依赖程序集的延迟加载。 新的分析 API 需要立即加载由探查器注入的依赖程序集，而不是在应用完全初始化后加载。 此更改不会影响现有 `ICorProfiler` API 的用户。
 
 - **调试改进。** 以下新的未托管调试 API 提供与探查器更好的集成。 你现在可以访问由探查器插入的元数据，以及转储调试时编译器 ReJIT 请求所生成的本地变量和代码。
 
-     [SetWriteableMetadataUpdateMode 方法](../../../docs/framework/unmanaged-api/debugging/icordebugprocess7-setwriteablemetadataupdatemode-method.md) 
-     [EnumerateLocalVariablesEx 方法](../../../docs/framework/unmanaged-api/debugging/icordebugilframe4-enumeratelocalvariablesex-method.md) 
-     [GetLocalVariableEx 方法](../../../docs/framework/unmanaged-api/debugging/icordebugilframe4-getlocalvariableex-method.md) 
-     [GetCodeEx 方法](../../../docs/framework/unmanaged-api/debugging/icordebugilframe4-getcodeex-method.md) 
-     [GetActiveReJitRequestILCode 方法](../../../docs/framework/unmanaged-api/debugging/icordebugfunction3-getactiverejitrequestilcode-method.md) 
-     [GetInstrumentedILMap 方法](../../../docs/framework/unmanaged-api/debugging/icordebugilcode2-getinstrumentedilmap-method.md)
+     [SetWriteableMetadataUpdateMode 方法](../../../docs/framework/unmanaged-api/debugging/icordebugprocess7-setwriteablemetadataupdatemode-method.md) [EnumerateLocalVariablesEx 方法](../../../docs/framework/unmanaged-api/debugging/icordebugilframe4-enumeratelocalvariablesex-method.md) [GetLocalVariableEx 方法](../../../docs/framework/unmanaged-api/debugging/icordebugilframe4-getlocalvariableex-method.md) [GetCodeEx 方法](../../../docs/framework/unmanaged-api/debugging/icordebugilframe4-getcodeex-method.md) [GetActiveReJitRequestILCode 方法](../../../docs/framework/unmanaged-api/debugging/icordebugfunction3-getactiverejitrequestilcode-method.md) [GetInstrumentedILMap 方法](../../../docs/framework/unmanaged-api/debugging/icordebugilcode2-getinstrumentedilmap-method.md)
 
 - **事件跟踪更改。** .NET Framework 4.5.2 为较大的表面区域启用进程外的基于 Windows 事件跟踪 (ETW) 的活动跟踪。 这将使高级电源管理 (APM) 供应商提供轻型工具，这些工具可精确跟踪跨线程单个请求和活动的成本。  仅当 ETW 控制器启用它们时，才会引发这些事件；因此，这些更改不会影响之前编写的 ETW 代码或在禁用 ETW 的情况下运行的代码。
 

@@ -1,5 +1,5 @@
 ---
-title: "abstract（C# 参考）| Microsoft Docs"
+title: "abstract（C# 参考）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -30,11 +30,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: acb9c5748addd75f741e97688fca707910b042a0
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: a109a8e37f84a2e91229bfce789a69cdc26adba9
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="abstract-c-reference"></a>abstract（C# 参考）
@@ -103,10 +103,11 @@ BaseClass bc = new BaseClass();   // Error
 ## <a name="c-language-specification"></a>C# 语言规范  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [C# 参考](../../../csharp/language-reference/index.md)   
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [修饰符](../../../csharp/language-reference/keywords/modifiers.md)   
  [virtual](../../../csharp/language-reference/keywords/virtual.md)   
  [override](../../../csharp/language-reference/keywords/override.md)   
  [C# 关键字](../../../csharp/language-reference/keywords/index.md)
+

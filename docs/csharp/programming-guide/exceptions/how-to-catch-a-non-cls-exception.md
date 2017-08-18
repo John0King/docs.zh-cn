@@ -1,5 +1,5 @@
 ---
-title: "如何：捕捉非 CLS 异常 | Microsoft Docs"
+title: "如何：捕捉非 CLS 异常"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -27,18 +27,19 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 3515ecab379a0e910cdd5ba82a4a39b085cc816f
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 18a19fe34b8ec13bd9fc6d25335d0931a22ce4a3
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-catch-a-non-cls-exception"></a>如何：捕捉非 CLS 异常
-包括 C++/CLI 在内的某些 .NET 语言允许对象引发并非派生自 <xref:System.Exception> 的异常。 这类异常被称为非 CLS 异常或非异常。**** 无法在 [!INCLUDE[csprcs](../../../csharp/includes/csprcs_md.md)] 中引发非 CLS 异常，但有两种方式可以捕获它们：  
+包括 C++/CLI 在内的某些 .NET 语言允许对象引发并非派生自 <xref:System.Exception> 的异常。 这类异常被称为非 CLS 异常或非异常。 无法在 [!INCLUDE[csprcs](~/includes/csprcs-md.md)] 中引发非 CLS 异常，但有两种方式可以捕获它们：  
   
--   在作为 <xref:System.Runtime.CompilerServices.RuntimeWrappedException> 的 `catch (Exception e)` 块内。  
+-   在 `catch (Exception e)` 块内作为 <xref:System.Runtime.CompilerServices.RuntimeWrappedException>。  
   
-     默认情况下，[!INCLUDE[csprcs](../../../csharp/includes/csprcs_md.md)] 程序集将非 CLS 异常作为包装的异常捕获。 如果需要访问原始异常，请使用此方法，可通过 <xref:System.Runtime.CompilerServices.RuntimeWrappedException.WrappedException%2A> 属性访问它。 本主题的后续过程将解释如何通过此方式捕获异常。  
+     默认情况下，[!INCLUDE[csprcs](~/includes/csprcs-md.md)] 程序集将非 CLS 异常作为包装的异常捕获。 如需访问原始异常（可通过 <xref:System.Runtime.CompilerServices.RuntimeWrappedException.WrappedException%2A> 属性访问），请使用此方法。 本主题的后续过程将解释如何通过此方式捕获异常。  
   
 -   在位于 `catch (Exception)` 或 `catch (Exception e)` 块之后的常规 catch 块（未指定异常类型的 catch 块）之中。  
   
@@ -46,12 +47,12 @@ ms.lasthandoff: 03/13/2017
   
 ### <a name="to-catch-a-non-cls-exception"></a>要捕捉非 CLS 异常  
   
-1.  在 `catch(Exception e) block` 中使用 `as` 关键字测试 `e` 是否可被强制转换为 <xref:System.Runtime.CompilerServices.RuntimeWrappedException>。  
+1.  在 `catch(Exception e) block` 内，使用 `as` 关键字测试 `e` 是否可转换为 <xref:System.Runtime.CompilerServices.RuntimeWrappedException>。  
   
 2.  通过 <xref:System.Runtime.CompilerServices.RuntimeWrappedException.WrappedException%2A> 属性访问原始异常。  
   
 ## <a name="example"></a>示例  
- 下面示例显示如何捕捉以 C++/CLR 编写的类库所引发的非 CLS 异常。 请注意，在此示例中，[!INCLUDE[csprcs](../../../csharp/includes/csprcs_md.md)] 客户端代码预先已知道被引发的异常类型是 <xref:System.String?displayProperty=fullName>。 可以将 <xref:System.Runtime.CompilerServices.RuntimeWrappedException.WrappedException%2A> 属性强制转换回原始类型，只要可以从你的代码访问该类型。  
+ 下面示例显示如何捕捉以 C++/CLR 编写的类库所引发的非 CLS 异常。 请注意，在此示例中，[!INCLUDE[csprcs](~/includes/csprcs-md.md)] 客户端代码预先已知道被引发的异常类型是 <xref:System.String?displayProperty=fullName>。 可将 <xref:System.Runtime.CompilerServices.RuntimeWrappedException.WrappedException%2A> 属性转换回其原始类型，前提是可从代码访问该类型。  
   
 ```  
 // Class library written in C++/CLR.  
@@ -85,3 +86,4 @@ ms.lasthandoff: 03/13/2017
 ## <a name="see-also"></a>另请参阅  
  <xref:System.Runtime.CompilerServices.RuntimeWrappedException>   
  [异常和异常处理](../../../csharp/programming-guide/exceptions/index.md)
+

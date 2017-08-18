@@ -1,5 +1,5 @@
 ---
-title: "/target:winexe（C# 编译器选项）| Microsoft Docs"
+title: "-target:winexe（C# 编译器选项）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -31,11 +31,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: e9a640c0cfa1d0494457f8ffe94bf15877b24919
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: afb49fc6d45cc904c97988ab1b569f37a4e44a51
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="targetwinexe-c-compiler-options"></a>/target:winexe（C# 编译器选项）
@@ -60,11 +60,11 @@ ms.lasthandoff: 03/13/2017
   
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>在 Visual Studio 开发环境中设置此编译器选项  
   
-1.  打开项目的“属性”****页。  
+1.  打开项目的“属性”页。  
   
-2.  单击“应用程序”****属性页。  
+2.  单击“应用程序”属性页。  
   
-3.  修改“输出类型”****属性。  
+3.  修改“输出类型”属性。  
   
  有关如何以编程方式设置此编译器选项的信息，请参阅 <xref:VSLangProj80.ProjectProperties3.OutputType%2A>。  
   
@@ -78,3 +78,4 @@ csc /target:winexe in.cs
 ## <a name="see-also"></a>请参阅  
  [/target（C# 编译器选项）](../../../csharp/language-reference/compiler-options/target-compiler-option.md)   
  [C# 编译器选项](../../../csharp/language-reference/compiler-options/index.md)
+

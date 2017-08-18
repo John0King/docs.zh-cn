@@ -1,5 +1,5 @@
 ---
-title: "如何：读取和写入编码的文档 (C#) | Microsoft Docs"
+title: "如何：读取和写入编码的文档 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,20 +19,21 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 6f599d279e804372ef8779514939f14cee15c5e3
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: fc7c21c1aa6f4035bfaee509c7bc542542635313
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-read-and-write-an-encoded-document-c"></a>如何：读取和写入编码的文档 (C#)
-若要创建编码的 XML 文档，请向 XML 树中添加一个 <xref:System.Xml.Linq.XDeclaration>，并将编码设置为所需的代码页名称。  
+若要创建编码的 XML 文档，请向 XML 树中添加一个 <xref:System.Xml.Linq.XDeclaration>，将编码设置为需要的代码页名称。  
   
  由 <xref:System.Text.Encoding.WebName%2A> 返回的任何值都是有效值。  
   
- 如果读取编码的文档，则要将 <xref:System.Xml.Linq.XDeclaration.Encoding%2A> 属性设置为该代码页名称。  
+ 如果您读取编码的文档，则要将 <xref:System.Xml.Linq.XDeclaration.Encoding%2A> 属性设置为该代码页名称。  
   
- 如果将 <xref:System.Xml.Linq.XDeclaration.Encoding%2A> 设置为一个有效的代码页名称，则 [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] 将用指定的编码进行序列化。  
+ 如果将 <xref:System.Xml.Linq.XDeclaration.Encoding%2A> 设置为一个有效的代码页名称，则 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 将用指定的编码进行序列化。  
   
 ## <a name="example"></a>示例  
  下面的示例创建两个文档，一个文档使用 utf-8 编码，另一个使用 utf-16 编码。 然后，该示例加载这两个文档并将编码输出到控制台。  
@@ -92,6 +93,7 @@ Encoded document:
 Encoding of loaded document is:utf-16  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.Xml.Linq.XDeclaration.Encoding%2A?displayProperty=fullName>   
  [高级 LINQ to XML 编程 (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)
+

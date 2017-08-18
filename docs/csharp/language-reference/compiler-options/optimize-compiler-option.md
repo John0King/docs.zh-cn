@@ -1,65 +1,85 @@
 ---
-title: "/optimize (C# Compiler Options) | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-f1_keywords: 
-  - "/optimize"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "/optimize compiler option [C#]"
-  - "-o compiler option [C#]"
-  - "optimize compiler option [C#]"
-  - "/o compiler option [C#]"
-  - "-optimize compiler option [C#]"
-  - "compiler optimization [C#]"
-  - "o compiler option [C#]"
+title: "-optimize（C# 编译器选项）"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+f1_keywords:
+- /optimize
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- /optimize compiler option [C#]
+- -o compiler option [C#]
+- optimize compiler option [C#]
+- /o compiler option [C#]
+- -optimize compiler option [C#]
+- compiler optimization [C#]
+- o compiler option [C#]
 ms.assetid: 6dd5b6f2-cd1d-4593-a9f4-1c2ed9404ca0
 caps.latest.revision: 15
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 15
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 75a2b65c159e9adb0103765468182919ed6b0a23
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
+
 ---
-# /optimize (C# Compiler Options)
-**\/optimize** 选项启用或禁用由编译器执行以使输出文件更小、更快和更有效的优化。  
+# <a name="optimize-c-compiler-options"></a>/optimize（C# 编译器选项）
+/optimize 选项启用或禁用编译器执行的优化，使输出文件更小、更快、更有效。  
   
-## 语法  
+## <a name="syntax"></a>语法  
   
-```  
+```console  
 /optimize[+ | -]  
 ```  
   
-## 备注  
- **\/optimize** 选项还通知公共语言运行时在运行时优化代码。  
+## <a name="remarks"></a>备注  
+ /optimize 还指示公共语言运行时在运行时优化代码。  
   
- 默认情况下，将禁用优化。  指定 **\/optimize\+** 以启用优化。  
+ 默认情况下，禁用优化。 指定 /optimize+ 可启用优化。  
   
- 在生成要由程序集使用的模块时，请使用与该程序集的设置相同的 **\/optimize** 设置。  
+ 生成程序集使用的模块时，请使用与程序集相同的 /optimize 设置。  
   
- **\/o** 是 **\/optimize** 的缩写形式。  
+ /o 是 /optimize 的缩写形式。  
   
- 可以组合 **\/optimize** 和 [\/debug](../../../csharp/language-reference/compiler-options/debug-compiler-option.md) 选项。  
+ 可以将 /optimize 和 [/debug](../../../csharp/language-reference/compiler-options/debug-compiler-option.md) 选项组合使用。  
   
-### 在 Visual Studio 开发环境中设置此编译器选项  
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>在 Visual Studio 开发环境中设置此编译器选项  
   
-1.  打开项目的**“属性”**页。  
+1.  打开项目的“属性”页。  
   
-2.  单击**“生成”**属性页。  
+2.  单击“生成”属性页。  
   
-3.  修改**“优化代码”**属性。  
+3.  修改“优化代码”属性。  
   
- 有关如何以编程方式设置此编译器选项的信息，请参见 <xref:VSLangProj80.CSharpProjectConfigurationProperties3.Optimize%2A>。  
+ 有关如何以编程方式设置此编译器选项的信息，请参阅 <xref:VSLangProj80.CSharpProjectConfigurationProperties3.Optimize%2A>。  
   
-## 示例  
- 生成 `t2.cs`并允许编译器优化：  
+## <a name="example"></a>示例  
+ 编译 `t2.cs` 并启用编译器优化：  
   
-```  
+```console  
 csc t2.cs /optimize  
 ```  
   
-## 请参阅  
- [C\# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
- [如何：修改项目属性和配置设置](http://msdn.microsoft.com/zh-cn/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+## <a name="see-also"></a>另请参阅  
+ [（C# 编译器选项）](../../../csharp/language-reference/compiler-options/index.md)   
+ [管理项目和解决方案属性](/visualstudio/ide/managing-project-and-solution-properties)
+

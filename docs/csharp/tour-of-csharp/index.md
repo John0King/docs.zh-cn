@@ -1,5 +1,5 @@
 ---
-title: "C# 介绍 - C# 指南 | Microsoft Docs"
+title: "C# 介绍 - C# 指南"
 description: "刚开始接触 C#？ 了解 C# 语言的基础知识。"
 keywords: ".NET, .NET Core, C#, C# Primer, C# 指南"
 author: BillWagner
@@ -10,11 +10,11 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: ebc727cd-8112-42e7-b59c-3c2873ad661c
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 4437ce5d344cf06d30e31911def6287999fc6ffc
-ms.openlocfilehash: f122f59dd6f194facd98f4c6fa7f84c658c02a90
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 0fa7f9f906ba72b114fc59c8026b4b6c79586dd2
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -81,7 +81,7 @@ Hello, World
 * [委托](delegates.md)
     - ***委托类型***表示对具有特定参数列表和返回类型的方法的引用。 通过委托，可以将方法视为可分配给变量并可作为参数传递的实体。 委托类似于其他一些语言中的函数指针概念，但与函数指针不同的是，委托不仅面向对象，还类型安全。
 * [特性](attributes.md)
-     * 使用***特性***，程序可以指定关于类型、成员和其他实体的附加声明性信息。
+    * 使用***特性***，程序可以指定关于类型、成员和其他实体的附加声明性信息。
 
 >[!div class="step-by-step"]
 [下一页](program-structure.md)

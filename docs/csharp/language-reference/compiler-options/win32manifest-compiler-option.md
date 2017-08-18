@@ -1,5 +1,5 @@
 ---
-title: "-win32manifest（C# 编译器选项）| Microsoft Docs"
+title: "-win32manifest（C# 编译器选项）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -31,10 +31,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: b9a5c7c994644d512d4049dbc5aab3fbea70d6ae
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 938317fdf0c56469b85b1231a47f83e9c2a7d0f2
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="win32manifest-c-compiler-options"></a>/win32manifest（C# 编译器选项）
@@ -42,7 +43,7 @@ ms.lasthandoff: 03/13/2017
   
 ## <a name="syntax"></a>语法  
   
-```  
+```console  
 /win32manifest: filename  
 ```  
   
@@ -51,7 +52,7 @@ ms.lasthandoff: 03/13/2017
  自定义清单文件的名称和位置。  
   
 ## <a name="remarks"></a>备注  
- 默认情况下，[!INCLUDE[csharp_current_short](../../../csharp/language-reference/compiler-options/includes/csharp_current_short_md.md)] 编译器嵌入指定“asInvoker”的请求执行级别的应用程序清单。 它在生成该可执行文件的同一文件夹中创建清单，如果使用 Visual Studio，该文件夹通常为 bin\Debug 或 bin\Release。 如果要提供自定义清单（例如，指定“highestAvailable”或“requireAdministrator”的请求执行级别的清单），请使用此选项指定文件名。  
+ 默认情况下，[!INCLUDE[csharp_current_short](~/includes/csharp-current-short-md.md)] 编译器嵌入指定“asInvoker”的请求执行级别的应用程序清单。 它在生成该可执行文件的同一文件夹中创建清单，如果使用 Visual Studio，该文件夹通常为 bin\Debug 或 bin\Release。 如果要提供自定义清单（例如，指定“highestAvailable”或“requireAdministrator”的请求执行级别的清单），请使用此选项指定文件名。  
   
 > [!NOTE]
 >  此选项和 [/win32res（C# 编译器选项）](../../../csharp/language-reference/compiler-options/win32res-compiler-option.md)选项是互斥的。 如果尝试在同一命令行中同时使用这两个选项，将收到一个生成错误。  
@@ -64,7 +65,7 @@ ms.lasthandoff: 03/13/2017
   
 -   提供的自定义清单未指定请求执行级别。  
   
- [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)] 创建默认的 .manifest 文件，并将该文件与可执行文件一起存储在 debug 和 release 目录中。 可以用任意文本编辑器创建一个清单，然后将该文件添加到项目中，从而添加自定义清单。 或者，也可以右键单击“解决方案资源管理器”****中的“项目”****图标，单击“添加新项”****，然后单击“应用程序清单文件”****。 添加完新的或现有清单文件后，该文件将显示在“清单”****下拉列表中。 有关详细信息，请参阅[“项目设计器”->“应用程序”页 (C#)](https://docs.microsoft.com/visualstudio/ide/reference/application-page-project-designer-csharp)。  
+ [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] 创建默认的 .manifest 文件，并将该文件与可执行文件一起存储在 debug 和 release 目录中。 可以用任意文本编辑器创建一个清单，然后将该文件添加到项目中，从而添加自定义清单。 或者，也可以右键单击“解决方案资源管理器”中的“项目”图标，单击“添加新项”，然后单击“应用程序清单文件”。 添加完新的或现有清单文件后，该文件将显示在“清单”下拉列表中。 有关详细信息，请参阅[“项目设计器”->“应用程序”页 (C#)](/visualstudio/ide/reference/application-page-project-designer-csharp)。  
   
  提供应用程序清单的操作，可以作为自定义后期生成步骤，也可以通过使用 [/nowin32manifest（C# 编译器选项）](../../../csharp/language-reference/compiler-options/nowin32manifest-compiler-option.md)选项作为 Win32 资源文件的组成部分。 如果希望应用程序受到 Windows Vista 的文件或注册表虚拟化的影响，请使用该选项。 这将阻止编译器在可迁移可执行 (PE) 文件中创建和嵌入默认清单。  
   
@@ -74,7 +75,7 @@ ms.lasthandoff: 03/13/2017
 > [!NOTE]
 >  编译器将一个标准应用程序名称“MyApplication.app”插入到 xml 中。 这是一种使应用程序可以在 Windows Server 2003 Service Pack 3 上运行的解决方法。  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
 <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">  
   <assemblyIdentity version="1.0.0.0" name="MyApplication.app"/>  
@@ -91,4 +92,5 @@ ms.lasthandoff: 03/13/2017
 ## <a name="see-also"></a>请参阅  
  [（C# 编译器选项）](../../../csharp/language-reference/compiler-options/index.md)   
  [/nowin32manifest（C# 编译器选项）](../../../csharp/language-reference/compiler-options/nowin32manifest-compiler-option.md)   
- [NIB 如何：修改项目属性和配置设置](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [管理项目和解决方案属性](/visualstudio/ide/managing-project-and-solution-properties)
+

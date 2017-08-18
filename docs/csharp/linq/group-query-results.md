@@ -11,10 +11,11 @@ ms.prod: .net-core
 ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: 2e4ec27f-06fb-4de7-8973-0189906d4520
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: ee1ad2d65fda8a524b42f44f893e0b6f5f81eea5
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 1c1639651699afbe5fb768db26b98a9b2d734315
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="group-query-results"></a>对查询结果进行分组
@@ -75,7 +76,7 @@ ms.lasthandoff: 03/13/2017
   
  [!code-cs[csProgGuideLINQ#21](../../../samples/snippets/csharp/concepts/linq/how-to-group-query-results_7.cs)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.Linq.Enumerable.GroupBy%2A>   
  <xref:System.Linq.IGrouping%602>   
  [LINQ 查询表达式](index.md)   
@@ -84,3 +85,4 @@ ms.lasthandoff: 03/13/2017
  [对分组操作执行子查询](perform-a-subquery-on-a-grouping-operation.md)   
  [创建嵌套组](create-a-nested-group.md)   
  [数据分组](../programming-guide/concepts/linq/grouping-data.md)
+

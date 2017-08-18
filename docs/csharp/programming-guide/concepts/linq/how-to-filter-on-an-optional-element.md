@@ -1,5 +1,5 @@
 ---
-title: "如何：筛选可选元素 (C#) | Microsoft 文档"
+title: "如何：筛选可选元素 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,11 +14,11 @@ ms.assetid: f99e2f93-fca5-403f-8a0c-770761d4905a
 caps.latest.revision: 4
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: bc732e029b1548a551128b7f8daca5f10dc19c03
-ms.lasthandoff: 03/13/2017
-
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: d0d849bb8c6174408810f2d2192faea6db6afd5b
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-filter-on-an-optional-element-c"></a>如何：筛选可选元素 (C#)
@@ -107,10 +107,11 @@ Child Two Text
 Child Four Text  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.Xml.Linq.XElement.Attribute%2A?displayProperty=fullName>   
  <xref:System.Xml.Linq.XContainer.Elements%2A?displayProperty=fullName>   
  <xref:System.Xml.Linq.Extensions.Elements%2A?displayProperty=fullName>   
  [基本查询 (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)   
  [标准查询运算符概述 (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)   
  [投影运算 (C#)](../../../../csharp/programming-guide/concepts/linq/projection-operations.md)
+

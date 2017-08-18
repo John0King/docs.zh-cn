@@ -1,5 +1,5 @@
 ---
-title: "如何：使用 Descendants 方法查找单个子代 (C#) | Microsoft Docs"
+title: "如何：使用 Descendants 方法查找单个子代 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,18 +14,18 @@ ms.assetid: 6f735be9-0293-4680-8007-ca9d96bfebed
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 9fbce5524a214f96b0d44b281e18d43675bfe0b4
-ms.lasthandoff: 03/13/2017
-
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 89e20ede65caf65e91a37cbee69c80146a1443f0
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-find-a-single-descendant-using-the-descendants-method-c"></a>如何：使用 Descendants 方法查找单个子代 (C#)
-可以使用 <xref:System.Xml.Linq.XContainer.Descendants%2A> 轴方法快速编写代码，以查找单个具有唯一名称的元素。 如果想要查找具有特定名称的特定后代，则此技术特别有用。 虽然可以编写代码以导航到需要的元素，但使用 <xref:System.Xml.Linq.XContainer.Descendants%2A> 轴编写代码通常更快更容易。  
+可以使用 <xref:System.Xml.Linq.XContainer.Descendants%2A> 轴方法快速编写代码来查找名称唯一的单个元素。 如果想要查找具有特定名称的特定后代，则此技术特别有用。 虽然可以编写代码以导航到需要的元素，但使用 <xref:System.Xml.Linq.XContainer.Descendants%2A> 轴编写代码通常更快更容易。  
   
 ## <a name="example"></a>示例  
- 此示例使用 <xref:System.Linq.Enumerable.First%2A> 标准查询运算符。  
+ 本示例使用 <xref:System.Linq.Enumerable.First%2A> 标准查询运算符。  
   
 ```csharp  
 XElement root = XElement.Parse(@"<Root>  
@@ -85,5 +85,6 @@ Console.WriteLine(grandChild3);
 GC3 Value  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [基本查询 (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)
+

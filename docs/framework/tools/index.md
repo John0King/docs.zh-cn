@@ -1,5 +1,5 @@
 ---
-title: ".NET Framework 工具 | Microsoft Docs"
+title: ".NET Framework 工具"
 ms.custom: 
 ms.date: 03/30/2017
 ms.prod: .net-framework
@@ -24,11 +24,11 @@ caps.latest.revision: 65
 author: mairaw
 ms.author: mairaw
 manager: wpickett
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: baaf365a21661b377f8151e5d97ac16542aa2c36
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: bee585074a444e8df5d67e035d5e0b65d292f8ac
 ms.contentlocale: zh-cn
-ms.lasthandoff: 06/02/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="net-framework-tools"></a>.NET Framework 工具
@@ -149,3 +149,4 @@ ms.lasthandoff: 06/02/2017
   
  [Windows Communication Foundation 工具](../../../docs/framework/wcf/tools.md)  
  包括多种工具，可使创建、部署和管理 Windows Communication Foundation (WCF) 应用程序更加容易。
+

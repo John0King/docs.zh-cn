@@ -1,5 +1,5 @@
 ---
-title: "如何：在 Visual Basic 中上传文件 | Microsoft Docs"
+title: "如何：在 Visual Basic 中上传文件"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -34,15 +34,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: 1663cc6ad0a6e5f2a940c050c75d403cffd1f53f
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 29baf1f420cece6e0b05f9638b30a326178a013d
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-upload-a-file-in-visual-basic"></a>如何：在 Visual Basic 中上传文件
-可使用 <xref:Microsoft.VisualBasic.Devices.Network.UploadFile%2A> 方法上传文件并将文件存储到远程位置。 如果 `ShowUI` 参数设置为 `True`，则显示一个对话框，该对话框显示下载进度并允许用户取消该操作。  
+可使用 <xref:Microsoft.VisualBasic.Devices.Network.UploadFile%2A> 方法上传文件并将文件存储到远程位置。 如果 `ShowUI` 参数设置为 `True`，则显示一个对话框，该对话框显示上传进度并允许用户取消该操作。  
   
 ### <a name="to-upload-a-file"></a>上传文件  
   
@@ -76,3 +76,4 @@ ms.lasthandoff: 05/22/2017
  <xref:Microsoft.VisualBasic.Devices.Network.UploadFile%2A>   
  [如何：下载文件](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-download-a-file.md)   
  [如何：分析文件路径](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)
+

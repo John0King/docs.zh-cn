@@ -1,18 +1,19 @@
 ---
-title: "借助 Visual Studio for Mac 在 macOS 上开始使用 .NET Core | Microsoft Docs"
+title: "借助 Visual Studio for Mac 在 macOS 上开始使用.NET Core"
 description: "本主题将指导你使用 Visual Studio for Mac 和 .NET Core 来构建简单的控制台应用程序。"
 keywords: .NET, .NET Core, macOS, Mac
 author: guardrex
 ms.author: mairaw
-ms.date: 03/16/2017
+ms.date: 06/12/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 8902e849-dd17-42c0-8264-cc7ae3927a0c
-translationtype: Human Translation
-ms.sourcegitcommit: ff143583ba62fc1d82561e739a75107e50ebee88
-ms.openlocfilehash: ed8787d72647f18544bde8ed721cf37f31fbb5fe
-ms.lasthandoff: 03/20/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: e11515031716a66ead866e52504137cb4e1df137
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -21,23 +22,19 @@ ms.lasthandoff: 03/20/2017
 Visual Studio for Mac 提供用于开发 .NET Core 应用程序的功能全面的集成开发环境 (IDE)。 本主题将指导你使用 Visual Studio for Mac 和 .NET Core 来构建简单的控制台应用程序。
 
 > [!NOTE]
-> Visual Studio for Mac 是预览版软件。 与 Microsoft 产品的所有预览版一样，我们十分重视你的反馈。 有两种方法可以向开发团队提供有关 Visual Studio for Mac 的反馈：
-> * 在 Visual Studio for Mac 中，从菜单中选择“帮助”>“报告问题”，或从欢迎屏幕中选择“报告问题”，将打开一个窗口，以供填写 bug 报告。
-> * 若要提出建议，从菜单中选择“帮助 > 提供建议”，或从欢迎屏幕中选择“提供建议”，将转到 [Visual Studio for Mac UserVoice 网页](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac)。
+> 你的反馈非常有价值。 有两种方法可以向开发团队提供有关 Visual Studio for Mac 的反馈：
+> * 在 Visual Studio for Mac 中，从菜单中选择“帮助” > “报告问题”，或从欢迎屏幕中选择“报告问题”，将打开一个窗口，以供填写 bug 报告。 可在[开发人员社区](https://developercommunity.visualstudio.com/spaces/8/index.html)门户中跟踪自己的反馈。
+> * 若要提出建议，从菜单中选择“帮助” > “提供建议”，或从欢迎屏幕中选择“提供建议”，转到 [Visual Studio for Mac UserVoice 网页](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac)。
 
 ## <a name="prerequisites"></a>先决条件
 
-[.NET Core 和 OpenSSL](https://www.microsoft.com/net/core#macos)
-
-有关先决条件的详细信息，请参阅 [Mac 上的 .NET Core 的先决条件](../../core/macos-prerequisites.md)。
+请参阅 [Mac 上 .NET Core 的先决条件](../../core/macos-prerequisites.md)主题。
 
 ## <a name="getting-started"></a>入门
 
 如果已安装先决条件和 Visual Studio for Mac，请跳过此部分，并继续[创建项目](#creating-a-project)。 请按照以下步骤安装先决条件和 Visual Studio for Mac：
 
-1. 下载并安装 [.NET Core 和 OpenSSL](https://www.microsoft.com/net/core#macos)。
-
-1. 下载 [Visual Studio for Mac 安装程序](https://www.visualstudio.com/vs/visual-studio-mac/)。 运行安装程序。 阅读并同意许可协议。 在安装过程中，为你提供安装 Xamarin（一个跨平台移动应用开发技术）的机会。 安装 Xamarin 及其相关组件对于 .NET Core 开发而言是可选项。 有关 Visual Studio for Mac 安装过程的分步介绍，请参阅 [Visual Studio for Mac 简介](https://developer.xamarin.com/guides/cross-platform/visual-studio-mac/)。 安装完成后，启动 Visual Studio for Mac IDE。
+下载 [Visual Studio for Mac 安装程序](https://www.visualstudio.com/vs/visual-studio-mac/)。 运行安装程序。 阅读并同意许可协议。 在安装过程中，为你提供安装 Xamarin（一个跨平台移动应用开发技术）的机会。 安装 Xamarin 及其相关组件对于 .NET Core 开发而言是可选项。 有关 Visual Studio for Mac 安装过程的分步介绍，请参阅 [Visual Studio for Mac 简介](https://developer.xamarin.com/guides/cross-platform/visual-studio-mac/)。 安装完成后，启动 Visual Studio for Mac IDE。
 
 ## <a name="creating-a-project"></a>创建项目
 

@@ -1,7 +1,7 @@
 ---
 title: "委托和事件"
-description: "委托和事件"
-keywords: ".NET、.NET Core"
+description: "了解委托和事件的相关信息在 .NET Core 文档中的位置。"
+keywords: .NET, .NET Core
 author: BillWagner
 ms.author: wiwagn
 ms.date: 06/20/2016
@@ -10,10 +10,11 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 4e80e053-8022-4987-a8a0-209caec0315d
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: c9a2d44ae73208543380c52547473a572ba45d04
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: e511b5057cb83119819a1403d56f23f738488a3f
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -21,10 +22,9 @@ ms.lasthandoff: 03/13/2017
 
 以下文章涵盖了本主题：
 
-<style type="text/css"> ol { list-style-type: upper-roman; } </style>
 1. [委托概述](delegates-overview.md)
 
-    This article covers an overview of delegates.
+    本文对委托进行概述。
 
 2. [System.Delegate 和 `delegate` 关键字](delegate-class.md)
 
@@ -42,7 +42,7 @@ ms.lasthandoff: 03/13/2017
 
     这篇文章概述 .NET 中的事件。
 
-6. [.NET 事件模式](event-pattern.md)
+6. [标准 .NET 事件模式](event-pattern.md)
 
     这篇文章介绍 .NET 中的标准事件模式。
 

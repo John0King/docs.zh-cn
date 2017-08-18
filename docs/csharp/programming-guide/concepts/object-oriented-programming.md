@@ -1,5 +1,5 @@
 ---
-title: "面向对象的编程 (C#) | Microsoft Docs"
+title: "面向对象的编程 (C#)"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -16,11 +16,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a5ed524a1b17f7be8903f998cbd732594faab831
-ms.openlocfilehash: 3f3e6aa047e0de279d15298408c4593c5fb17666
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: de06921840f06f36d8600b9567986644f58c6ad5
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/15/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="object-oriented-programming-c"></a>面向对象的编程 (C#)
@@ -406,7 +406,7 @@ sampleObject.Field = "Sample string";
   
  有关详细信息，请参见:  
   
--   [泛型](https://msdn.microsoft.com/library/ms172192)  
+-   [泛型](~/docs/standard/generics/index.md)  
   
 -   [泛型](../../../csharp/programming-guide/generics/index.md)  
   
@@ -449,3 +449,4 @@ class SampleClass
   
 ## <a name="see-also"></a>请参阅  
  [C# 编程指南](../../../csharp/programming-guide/index.md)
+

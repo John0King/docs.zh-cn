@@ -1,5 +1,5 @@
 ---
-title: "如何：对元素进行排序 (C#) | Microsoft Docs"
+title: "如何：对元素进行排序 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,11 +14,11 @@ ms.assetid: aee6fbbc-81fd-4b3e-b40f-6ed7b3bd3fee
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: aaada38cd0d8858989f808c42fcdc8853433d1f6
-ms.lasthandoff: 03/13/2017
-
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: a5c17b13f6f637559e2f99426b71947e795e0516
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-sort-elements-c"></a>如何：对元素进行排序 (C#)
@@ -82,3 +82,4 @@ foreach (decimal el in prices)
 ## <a name="see-also"></a>请参阅  
  [对数据进行排序 (C#)](../../../../csharp/programming-guide/concepts/linq/sorting-data.md)   
  [基本查询 (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)
+

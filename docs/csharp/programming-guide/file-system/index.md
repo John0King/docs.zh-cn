@@ -1,5 +1,5 @@
 ---
-title: "文件系统和注册表（C# 编程指南）| Microsoft 文档"
+title: "文件系统和注册表（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -29,10 +29,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: df97127bb3c018cd361217505dbc88e2268cfac9
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 6a9130fa666f8b2bce7762c5bd4a8b263d619aba
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="file-system-and-the-registry-c-programming-guide"></a>文件系统和注册表（C# 编程指南）
@@ -62,3 +63,4 @@ ms.lasthandoff: 03/13/2017
  [文件、文件夹和驱动器](../../../csharp/programming-guide/file-system/index.md)  
   
  <xref:System.IO?displayProperty=fullName>
+

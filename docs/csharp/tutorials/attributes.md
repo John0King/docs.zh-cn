@@ -1,5 +1,5 @@
 ---
-title: "特性 | C#"
+title: "属性 - C#"
 description: "了解特性在 C# 中的工作方式。"
 keywords: ".NET, .NET Core, C#, 特性"
 author: mgroves
@@ -10,14 +10,15 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: b152cf36-76e4-43a5-b805-1a1952e53b79
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: f03e8ac38bc0f3b0d527c0cdcb5f01b40bbb9682
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: cc8f38d96f7f1c41f04d64c2acc2f53805b6b012
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 
-# <a name="using-attributes-in-c"></a>在 C 中使用特性# #
+# <a name="using-attributes-in-c"></a>在 C# 中使用属性 #
 
 使用特性，可以声明的方式将信息与代码相关联。 特性还可以提供能够应用于各种目标的可重用元素。
 

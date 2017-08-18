@@ -1,5 +1,5 @@
 ---
-title: "可访问性级别（C# 参考）| Microsoft Docs"
+title: "可访问性级别（C# 参考）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -28,11 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 30220e92e55ac6101cf8fedd8920755cd25978bd
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 796802a407c486c1df5332d5b4920467f3a1171b
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="accessibility-levels-c-reference"></a>可访问性级别（C# 参考）
@@ -43,10 +43,10 @@ ms.lasthandoff: 03/13/2017
 |`public`|访问不受限制。|  
 |`protected`|访问限于包含类或派生自包含类的类型。|  
 |`internal`|访问限于当前程序集。|  
-|`protected` `internal`|访问限于当前程序集或派生自包含类的类型。|  
+|`protected internal`|访问限于当前程序集或派生自包含类的类型。|  
 |`private`|访问限于包含类。|  
   
- 除使用 `protected` `internal` 组合的情况外，一个成员或类型仅允许一个访问修饰符。  
+ 除使用 `protected internal` 组合的情况外，一个成员或类型仅允许一个访问修饰符。  
   
  命名空间中不允许出现访问修饰符。 命名空间没有任何访问限制。  
   
@@ -59,7 +59,7 @@ ms.lasthandoff: 03/13/2017
 |成员|默认成员可访问性|允许的成员的声明的可访问性|  
 |----------------|----------------------------------|--------------------------------------------------|  
 |`enum`|`public`|无|  
-|`class`|`private`|`public`<br /><br /> `protected`<br /><br /> `internal`<br /><br /> `private`<br /><br /> `protected` `internal`|  
+|`class`|`private`|`public`<br /><br /> `protected`<br /><br /> `internal`<br /><br /> `private`<br /><br /> `protected internal`|  
 |`interface`|`public`|无|  
 |`struct`|`private`|`public`<br /><br /> `internal`<br /><br /> `private`|  
   
@@ -68,7 +68,7 @@ ms.lasthandoff: 03/13/2017
 ## <a name="c-language-specification"></a>C# 语言规范  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [C# 参考](../../../csharp/language-reference/index.md)   
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [C# 关键字](../../../csharp/language-reference/keywords/index.md)   
@@ -79,4 +79,5 @@ ms.lasthandoff: 03/13/2017
  [public](../../../csharp/language-reference/keywords/public.md)   
  [private](../../../csharp/language-reference/keywords/private.md)   
  [protected](../../../csharp/language-reference/keywords/protected.md)   
- [internal](../../../csharp/language-reference/keywords/internal.md)
+ [内部](../../../csharp/language-reference/keywords/internal.md)
+

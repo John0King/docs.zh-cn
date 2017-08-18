@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic 的新增功能 | Microsoft Docs"
+title: "Visual Basic 的新增功能"
 ms.date: 2017-04-27
 ms.prod: .net
 ms.technology:
@@ -31,11 +31,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d3f21e32c162133e70a124da125c30afc7303738
-ms.openlocfilehash: 18544a0311e24cf427111e364421db6e9fc27326
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 0a9379d5dd2d1c6b3ed6820e350c19fb346ac84c
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/15/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="whats-new-for-visual-basic"></a>Visual Basic 的新增功能
@@ -105,7 +105,7 @@ Visual Basic.NET 的首次发布
 
 例如，用 C# 编写的以下 `Sentence` 类包括 `FindNext` 方法，该方法查找句子中以指定的子字符串开头的下一个单词。 该字符串作为引用返回值返回，方法引用传递的 `Boolean` 变量指示搜索是否成功。 这意味着调用方不仅可以读取返回的值；还可以修改此值，此修改在 `Sentence` 类中反映。
 
-[!code-vb[Ref-Return](../../../samples/snippets/visualbasic/getting-started/ref-returns.cs)]
+[!code-csharp[Ref-Return](../../../samples/snippets/visualbasic/getting-started/ref-returns.cs)]
 
 在最简单的形式中，可以使用如下所示的代码修改句子中找到的单词。 请注意，不是将值分配到方法，而是将值分配到方法返回的表达式（即引用返回值）。
 
@@ -191,5 +191,5 @@ End Interface
  现在，编译器会使用正常的重载决策规则来选择最合适的 `GetDetails` 进行调用，你可以在 Visual Basic 中声明接口关系（如示例中所示的这些关系）。  
   
 ## <a name="see-also"></a>请参阅  
- [Visual Studio 2017 中的新增功能](https://docs.microsoft.com/en-us/visualstudio/ide/whats-new-in-visual-studio)
+ [Visual Studio 2017 中的新增功能](/visualstudio/ide/whats-new-in-visual-studio)
 

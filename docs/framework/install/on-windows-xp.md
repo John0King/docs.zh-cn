@@ -1,34 +1,33 @@
 ---
 title: "在 Windows XP 上安装 .NET Framework"
-description: "了解如何在 Windows XP 上安装 .NET Framework"
+description: "了解如何在 Windows XP 上安装 .NET Framework。"
 author: rlander
+ms.author: mairaw
 keywords: ".NET Framework, 安装"
-ms.date: 03/28/2017
+ms.date: 08/03/2017
 ms.topic: article
-ms.prod: .net-framework-4.6
-ms.technology: vs-ide-deployment
+ms.prod: .net-framework
 ms.devlang: dotnet
-ms.assetid: 87cda1d5-c8g5-5eb5-93e8-5f478de07ff7
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: bea5aa270cef5105a685f5141362b439c12af340
-ms.openlocfilehash: 1355f8d70d9b256e3b0b9bf00ef80889aa35fb69
+ms.translationtype: HT
+ms.sourcegitcommit: 21c6a1485f3d0c38bde065d6ecc7b07d5e424c1d
+ms.openlocfilehash: fe9d044efae87f212c620b9fa8c02221ca475d71
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/11/2017
+ms.lasthandoff: 08/05/2017
 
 ---
 
-# <a name="installing-the-net-framework-on-windows-xp"></a>在 Windows XP 上安装 .NET Framework
+# <a name="install-the-net-framework-on-windows-xp"></a>在 Windows XP 上安装 .NET Framework
 
-> [!NOTE] 
-> Microsoft 不再支持 Windows XP。 建议升级到受支持的 Windows 10，其支持最新版 .NET Framework。 本文档仅作为疑难解答实用指南提供。 
+> [!NOTE]
+> Microsoft 不再支持 Windows XP。 建议升级到受支持的 Windows 10，其支持最新版 .NET Framework。 本文档仅作为疑难解答实用指南提供。
 
-必须安装 .NET Framework，才能在 Windows XP 上运行应用程序。 可以按照以下说明操作，这些说明可能会对你有所帮助。 这些说明因需要安装的 .NET Framework 版本而异。
+可能需要安装 .NET Framework，才能在 Windows XP 上运行应用。 可以按照以下说明操作，这些说明可能会对你有所帮助。 这些说明因需要安装的 .NET Framework 版本而异。
 
 ## <a name="net-framework-45-and-later"></a>.NET Framework 4.5 及更高版本
 
 无法在 Windows XP 上安装 .NET Framework 4.5 或更高版本。 相反，必须升级到更高版本的 Windows，才能使用更高版本的 .NET Framework。
 
-.NET Framework 4.6.2 包含在 [Windows 10 周年更新](https://www.microsoft.com/software-download/windows10)中。
+.NET Framework 4.7 包含在 [Windows 10 创意者更新](https://www.microsoft.com/software-download/windows10)中。
 
 ## <a name="net-framework-403"></a>.NET Framework 4.0.3
 

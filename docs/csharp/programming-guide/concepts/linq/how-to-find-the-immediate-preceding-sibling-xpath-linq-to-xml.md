@@ -1,5 +1,5 @@
 ---
-title: "如何：查找前面紧邻的同级 (XPath-LINQ to XML) (C#) | Microsoft 文档"
+title: "如何：查找前面紧邻的同级 (XPath-LINQ to XML) (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,18 +14,18 @@ ms.assetid: 74c06201-0b1b-4b5e-b3ac-0092980614e6
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: c2ea2b6b5c473bd61695e81ead7bcd1f758bfaa4
-ms.lasthandoff: 03/13/2017
-
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 033cadcf8d2e87301c8eef9c77b6fcf691c4e040
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-find-the-immediate-preceding-sibling-xpath-linq-to-xml-c"></a>如何：查找前面紧邻的同级 (XPath-LINQ to XML) (C#)
-有时，您需要查找某一节点的前面紧邻同级。 由于与 [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] 相比，XPath 中前面紧邻轴的位置谓词的语义同，因此这是一个更值得关注的比较。  
+有时，您需要查找某一节点的前面紧邻同级。 由于与 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 相比，XPath 中前面紧邻轴的位置谓词的语义同，因此这是一个更值得关注的比较。  
   
 ## <a name="example"></a>示例  
- 在此示例中，[!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] 查询使用 <xref:System.Linq.Enumerable.Last%2A> 运算符查找集合中 <xref:System.Xml.Linq.XNode.ElementsBeforeSelf%2A> 返回的最新节点。 相比之下，XPath 表达式使用值为 1 的谓词来查找前面紧邻的元素。  
+ 在本示例中，[!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 查询使用 <xref:System.Linq.Enumerable.Last%2A> 运算符查找由 <xref:System.Xml.Linq.XNode.ElementsBeforeSelf%2A> 返回的集合中的最后一个节点。 相比之下，XPath 表达式使用值为 1 的谓词来查找前面紧邻的元素。  
   
 ```csharp  
 XElement root = XElement.Parse(  
@@ -66,3 +66,4 @@ Results are identical
   
 ## <a name="see-also"></a>请参阅  
  [针对 XPath 用户的 LINQ to XML (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)
+

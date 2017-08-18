@@ -1,5 +1,5 @@
 ---
-title: "LINQ to XML 事件 (C#) | Microsoft Docs"
+title: "LINQ to XML 事件 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,26 +19,27 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: f19439004a9551f5e13588201ca3aaf201620681
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 5ccc3928795f188b7cf7b23d88a1f35ff043b889
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="linq-to-xml-events-c"></a>LINQ to XML 事件 (C#)
-[!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] 事件使你可以在 XML 树发生改变时得到通知。  
+[!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 事件使你可以在 XML 树发生改变时得到通知。  
   
- 可以将事件添加到任何<xref:System.Xml.Linq.XObject> 的实例中。 然后事件处理程序将接收对该 <xref:System.Xml.Linq.XObject> 及其所有子代进行修改的事件。 例如，可以将事件处理程序添加到树根，然后从该事件处理程序中处理对树进行的所有修改。  
+ 可以将事件添加到任何 <xref:System.Xml.Linq.XObject> 的实例。 事件处理程序然后将接收对该 <xref:System.Xml.Linq.XObject> 及其所有子代进行修改的事件。 例如，可以将事件处理程序添加到树根，然后从该事件处理程序中处理对树进行的所有修改。  
   
- 有关 [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] 事件的示例，请参阅 <xref:System.Xml.Linq.XObject.Changing> 和 <xref:System.Xml.Linq.XObject.Changed>。  
+ 有关 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 事件的示例，请参阅 <xref:System.Xml.Linq.XObject.Changing> 和 <xref:System.Xml.Linq.XObject.Changed>。  
   
 ## <a name="types-and-events"></a>类型和事件  
  在处理事件时使用下面的类型：  
   
 |类型|描述|  
 |----------|-----------------|  
-|<xref:System.Xml.Linq.XObjectChange>|指定 <xref:System.Xml.Linq.XObject> 发生事件时的事件类型。|  
-|<xref:System.Xml.Linq.XObjectChangeEventArgs>|将数据提供给 <xref:System.Xml.Linq.XObject.Changing> 和 <xref:System.Xml.Linq.XObject.Changed> 事件。|  
+|<xref:System.Xml.Linq.XObjectChange>|当 <xref:System.Xml.Linq.XObject> 发生事件时指定事件类型。|  
+|<xref:System.Xml.Linq.XObjectChangeEventArgs>|提供有关 <xref:System.Xml.Linq.XObject.Changing> 和 <xref:System.Xml.Linq.XObject.Changed> 事件的数据。|  
   
  修改 XML 树时将引发以下事件：  
   
@@ -115,3 +116,4 @@ Total:308
   
 ## <a name="see-also"></a>请参阅  
  [高级 LINQ to XML 编程 (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)
+

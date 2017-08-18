@@ -1,5 +1,5 @@
 ---
-title: "ulong（C# 参考）| Microsoft Docs"
+title: "ulong（C# 参考）"
 ms.date: 2017-03-14
 ms.prod: .net
 ms.technology:
@@ -30,11 +30,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 400dfda51d978f35c3995f90840643aaff1b9c13
-ms.openlocfilehash: a0889086fbc986a37d052917469fbdb5442df44f
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: c2da253e4da7a5d6cfa71116e4fcba7816441e92
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/24/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="ulong-c-reference"></a>ulong（C# 参考）
@@ -47,7 +47,7 @@ ms.lasthandoff: 03/24/2017
   
 ## <a name="literals"></a>文本  
 
-可以通过为其分配十进制文本、十六进制文本或（从 C# 7 开始）二进制文本来声明和初始化 `ulong` 变量。  如果整数文本超出 `ulong` 的范围（即，如果该值小于 <xref:System.UInt64.MinValue?displayProperty=fullName> 或大于 <xref:System.UInt64.MaxValue?displayProperty=fullName>，将出现编译错误。 
+可以通过为其分配十进制文本、十六进制文本或（从 C# 7 开始）二进制文本来声明和初始化 `ulong` 变量。  如果整数文本在 `ulong` 范围之外（即，如果它小于 <xref:System.UInt64.MinValue?displayProperty=fullName> 或大于 <xref:System.UInt64.MaxValue?displayProperty=fullName>），会发生编译错误。 
 
 在以下示例中，表示为十进制、十六进制和二进制文本且等于 7,934,076,125 的整数被分配给 `ulong` 值。  
   
@@ -60,7 +60,7 @@ ms.lasthandoff: 03/24/2017
 
 [!code-cs[long](../../../../samples/snippets/csharp/language-reference/keywords/numeric-literals.cs#LongS)]  
  
- 整数文本还可包含表示类型的后缀。 后缀 `UL` 或 `ul` 将数字文本明确标识为 `ulong` 值。 如果文本值超出 <xref:System.Int64.MaxValue?displayProperty=fullName>，则 `L` 后缀表示 `ulong`。 如果文本值超出 <xref:System.UInt32.MaxValue?displayProperty=fullName>，则 `U` 或 `u` 后缀表示 `ulong`。 以下示例使用 `ul` 后缀来表示长整型：
+ 整数文本还可包含表示类型的后缀。 后缀 `UL` 或 `ul` 将数字文本明确标识为 `ulong` 值。 如果文本值超过 <xref:System.Int64.MaxValue?displayProperty=fullName>，则 `L` 后缀表示 `ulong`。 如果文本值超过 <xref:System.UInt32.MaxValue?displayProperty=fullName>，则 `U` 或 `u` 后缀表示 `ulong`。 以下示例使用 `ul` 后缀来表示长整型：
  
 [!code-cs[ulsuffix](../../../../samples/snippets/csharp/language-reference/keywords/numeric-suffixes.cs#2)]
 
@@ -112,9 +112,9 @@ ulong y = (ulong)3.0;
  有关隐式数值转换规则的详细信息，请参阅[隐式数值转换表](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)。  
   
 ## <a name="c-language-specification"></a>C# 语言规范  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.UInt64>   
  [C# 参考](../../../csharp/language-reference/index.md)   
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
@@ -123,3 +123,4 @@ ulong y = (ulong)3.0;
  [内置类型表](../../../csharp/language-reference/keywords/built-in-types-table.md)   
  [隐式数值转换表](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)   
  [显式数值转换表](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)
+

@@ -1,5 +1,5 @@
 ---
-title: "如何：在 Visual Basic 中读取具有多种格式的文本文件 | Microsoft Docs"
+title: "如何：在 Visual Basic 中读取具有多种格式的文本文件"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -37,11 +37,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: 6df284f7204b0731063db10cf026aed863f99fa9
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: be085e5a0f7a57890893ba310db3c66480b300da
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-read-from-text-files-with-multiple-formats-in-visual-basic"></a>如何：在 Visual Basic 中读取具有多种格式的文本文件
@@ -104,3 +104,4 @@ ms.lasthandoff: 05/22/2017
  [如何：读取逗号分隔的文本文件](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md)   
  [如何：读取固定宽度的文本文件](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md)   
  [使用 TextFieldParser 对象分析文本文件](../../../../visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md)
+

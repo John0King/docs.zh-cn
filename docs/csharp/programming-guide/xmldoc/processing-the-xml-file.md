@@ -1,5 +1,5 @@
 ---
-title: "处理 XML 文件（C# 编程指南）| Microsoft 文档"
+title: "处理 XML 文件（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -28,15 +28,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a780a11d8dd238187eb82933359bbb151bb3c333
-ms.openlocfilehash: 3a585025063847f93dc2c3b3747bd3406f89eae4
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 610f3ac5c88fb41a4b55f2990fecdc4c13074e19
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="processing-the-xml-file-c-programming-guide"></a>处理 XML 文件（C# 编程指南）
-编译器为代码（已标记以生成文档）中的每个构造生成一个 ID 字符串。 （有关如何标记代码的信息，请参阅 [文档注释的建议标记](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)。）ID 字符串唯一标识构造。 处理 XML 文件的程序可以使用 ID 字符串来标识文档应用于的相应 .NET Framework 元数据/反射项目。  
+编译器为代码（已标记以生成文档）中的每个构造生成一个 ID 字符串。 （有关如何标记代码的信息，请参阅[文档注释的建议标记](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)。）ID 字符串唯一标识构造。 处理 XML 文件的程序可以使用 ID 字符串来标识文档应用于的相应 .NET Framework 元数据/反射项目。  
   
  XML 文件不是代码的分层表示形式；它是具有每个元素生成的 ID 的简单列表。  
   
@@ -56,9 +56,9 @@ ms.lasthandoff: 05/22/2017
     |E|Event — 事件|  
     |!|错误字符串<br /><br /> 字符串的其余部分提供有关错误的信息。 C# 编译器将生成无法解析的链接的错误信息。|  
   
--   该字符串的第二部分是项目的完全限定名称，从命名空间的根开始。 用句点分隔项目名称、其封闭类型和命名空间。 如果项目名称本身包含句点，会将其替换为哈希符号 ('#')。 假定项目名称中直接没有哈希符号。 例如，String 构造函数的完全限定名称将是“System.String.#ctor”。  
+-   该字符串的第二部分是项目的完全限定名称，从命名空间的根开始。 用句点分隔项目名称、其封闭类型和命名空间。 如果项目名称本身包含句点，会将其替换为哈希符号 ('#')。 假定没有名称中恰好包含哈希符号的项目。 例如，String 构造函数的完全限定名称将是“System.String.#ctor”。  
   
--   对于属性和方法，如果方法具有自变量，则自变量列表将括在括号中。 如果不有任何自变量，则没有括号。 确保自变量之间用逗号分隔。 每个自变量的编码直接遵循它在 .NET Framework 签名中的编码方式：  
+-   对于属性和方法，如果方法带有自变量，则后跟用括号括起来的自变量列表。 如果没有任何自变量，则不会出现括号。 确保自变量之间用逗号分隔。 每个自变量的编码直接遵循它在 .NET Framework 签名中的编码方式：  
   
     -   基类型。 常规的类型（ELEMENT_TYPE_CLASS 或 ELEMENT_TYPE_VALUETYPE）表示为该类型的完全限定名称。  
   
@@ -68,19 +68,19 @@ ms.lasthandoff: 05/22/2017
   
     -   ELEMENT_TYPE_BYREF 表示为修改类型之后的“@”。  
   
-    -   ELEMENT_TYPE_PINNED 表示为修改类型之后的“^”。 C# 编译器绝不生成它。  
+    -   ELEMENT_TYPE_PINNED 表示为修改类型之后的“^”。 C# 编译器不会生成此类型。  
   
-    -   ELEMENT_TYPE_CMOD_REQ 表示为“&#124;”和修饰符类的完全限定名称，前面是修改类型。 C# 编译器绝不生成它。  
+    -   ELEMENT_TYPE_CMOD_REQ 表示为“&#124;”和修饰符类的完全限定名称，前面是修改类型。 C# 编译器不会生成此类型。  
   
     -   ELEMENT_TYPE_CMOD_OPT 表示为“!”和修饰符类的完全限定名称，前面是修改类型。  
   
     -   ELEMENT_TYPE_SZARRAY 表示为“[]”，前面是数组的元素类型。  
   
-    -   ELEMENT_TYPE_GENERICARRAY 表示为“[?]”，前面是数组的元素类型。 C# 编译器绝不生成它。  
+    -   ELEMENT_TYPE_GENERICARRAY 表示为“[?]”，前面是数组的元素类型。 C# 编译器不会生成此类型。  
   
-    -   ELEMENT_TYPE_ARRAY 表示为 [*lowerbound*:`size`,*lowerbound*:`size`]，其中逗号的数量是秩 - 1，下限和每个维度的大小（如果已知）以十进制形式表示。 如果未指定下限或大小，则只需将其省略。 如果省略下限和一个特定维度的大小，也会省略“:”。 例如，以 1 作为下限并且未指定大小的二维数组是 [1:,1:]。  
+    -   ELEMENT_TYPE_ARRAY 表示为 [*lowerbound*:`size`,*lowerbound*:`size`]，其中逗号的数量是秩 - 1，每个维度的下限和大小（如果已知）以十进制形式表示。 如果未指定下限或大小，则只需将其省略。 如果省略某个特定维度的下限和大小，也会省略“:”。 例如，以 1 作为下限并且未指定大小的二维数组是 [1:,1:]。  
   
-    -   ELEMENT_TYPE_FNPTR 表示为“=FUNC:`type`(*signature*)”，其中 `type` 是返回类型，*signature* 是方法的自变量。 如果没有任何自变量，则省略括号。 C# 编译器绝不生成它。  
+    -   ELEMENT_TYPE_FNPTR 表示为“=FUNC:`type`(*signature*)”，其中 `type` 是返回类型，*signature* 是方法的自变量。 如果没有任何自变量，则省略括号。 C# 编译器不会生成此类型。  
   
      不表示下列签名组件，因为它们永远不会用于区分重载方法：  
   
@@ -107,3 +107,4 @@ ms.lasthandoff: 05/22/2017
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [/doc（C# 编译器选项）](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)   
  [XML 文档注释](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)
+

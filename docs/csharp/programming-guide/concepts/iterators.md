@@ -1,5 +1,5 @@
 ---
-title: "迭代器 (C#) | Microsoft Docs"
+title: "迭代器 (C#)"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -16,11 +16,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a5ed524a1b17f7be8903f998cbd732594faab831
-ms.openlocfilehash: 11a606ef18bc497630c0a417488e533a0880056f
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 5d5543a48d0c835f5270067d1e5ad514c28842b2
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/15/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="iterators-c"></a>迭代器 (C#)
@@ -368,7 +368,7 @@ public class Stack<T> : IEnumerable<T>
   
  迭代器不支持 <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> 方法。 若要从头开始重新迭代，必须获取新的迭代器。  
   
- 有关其他信息，请参阅 [C# 语言规范](../../../csharp/language-reference/language-specification.md)。  
+ 有关其他信息，请参阅 [C# 语言规范](../../../csharp/language-reference/language-specification/index.md)。  
   
 ##  <a name="BKMK_UseOfIterators"></a>迭代器的使用  
  需要使用复杂代码填充列表序列时，使用迭代器可保持 `foreach` 循环的简单性。 需执行以下操作时，这可能很有用：  
@@ -386,3 +386,4 @@ public class Stack<T> : IEnumerable<T>
  [yield](../../../csharp/language-reference/keywords/yield.md)   
  [对数组使用 foreach](../../../csharp/programming-guide/arrays/using-foreach-with-arrays.md)   
  [泛型](../../../csharp/programming-guide/generics/index.md)
+

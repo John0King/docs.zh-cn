@@ -1,5 +1,5 @@
 ---
-title: "互操作性（C# 编程指南）| Microsoft 文档"
+title: "互操作性（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -30,16 +30,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 7e33ed084c560470a486ebbb25035a59ddc18565
-ms.openlocfilehash: c29504e18aa716cbe106dbbe00c608fd465d9ac2
-ms.lasthandoff: 03/31/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: df2f33c4599baef6d606738cbe5766fdd88e4ef3
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="interoperability-c-programming-guide"></a>互操作性（C# 编程指南）
 借助互操作性，可以保留和利用对非托管代码的现有投资工作。 在公共语言运行时 (CLR) 控制下运行的代码称为*托管代码*，不在 CLR 控制下运行的代码称为*非托管代码*。 例如，COM、COM+、C++ 组件、ActiveX 组件和 Microsoft Win32 API 都是非托管代码。  
   
- 使用 [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)]，可以通过平台调用服务、<xref:System.Runtime.InteropServices> 命名空间、C++ 互操作性和 COM 互操作性（COM 互操作），实现与非托管代码的互操作性。  
+ 使用 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]，可以通过平台调用服务、<xref:System.Runtime.InteropServices> 命名空间、C++ 互操作性和 COM 互操作性（COM 互操作），实现与非托管代码的互操作性。  
   
 ## <a name="in-this-section"></a>本节内容  
  [互操作性概述](../../../csharp/programming-guide/interop/interoperability-overview.md)  
@@ -61,10 +62,11 @@ ms.lasthandoff: 03/31/2017
  展示了如何将 C# 类公开为 COM 对象。  
   
 ## <a name="c-language-specification"></a>C# 语言规范  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## <a name="see-also"></a>另请参阅  
  <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A?displayProperty=fullName>   
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [与非托管代码的互操作性](https://msdn.microsoft.com/library/sd10k43k)   
  [演练：Office 编程](../../../csharp/programming-guide/interop/walkthrough-office-programming.md)
+

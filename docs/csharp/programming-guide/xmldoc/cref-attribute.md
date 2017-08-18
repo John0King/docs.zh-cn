@@ -1,5 +1,5 @@
 ---
-title: "cref 属性（C# 编程指南）| Microsoft Docs"
+title: "cref 特性（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -27,15 +27,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: dc1c456c71efb3cc6e60a8fdc77384e65975f110
-ms.openlocfilehash: 781efb81acab79dfbcd72c24761aa3dfdd79940c
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 7861d6696b7a40b8a665d489b92a3b196a7dd0ce
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/15/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="cref-attribute-c-programming-guide"></a>cref 特性（C# 编程指南）
-XML 文档标记中的 `cref` 属性是指“代码引用”。 它指定标记的内部文本是一个代码元素，例如类型、方法或属性。 文档工具（例如 [Sandcastle](http://go.microsoft.com/fwlink/?LinkId=124061)）使用 `cref` 属性自动生成指向记录类型或成员的页面的超链接。  
+XML 文档标记中的 `cref` 属性是指“代码引用”。 它指定标记的内部文本是一个代码元素，例如类型、方法或属性。 文档工具（例如 [Sandcastle](https://github.com/EWSoftware/SHFB)）使用 `cref` 属性自动生成指向记录类型或成员的页面的超链接。  
   
 ## <a name="example"></a>示例  
  下面的示例演示了在 [\<see>](../../../csharp/programming-guide/xmldoc/see.md) 标记中使用的 `cref` 属性。  
@@ -44,7 +44,7 @@ XML 文档标记中的 `cref` 属性是指“代码引用”。 它指定标记�
   
  在编译时，该程序生成以下 XML 文件。 请注意，例如 `GetZero` 方法的 `cref` 属性已被编译器转换为 `"M:TestNamespace.TestClass.GetZero"`。 “M:”前缀表示“方法”，并且是一种由文档工具（例如 Sandcastle）识别的约定。 有关前缀的完整列表，请参阅[处理 XML 文件](../../../csharp/programming-guide/xmldoc/processing-the-xml-file.md)。  
   
-```  
+```xml  
 <?xml version="1.0"?>  
 <doc>  
     <assembly>  

@@ -1,5 +1,5 @@
 ---
-title: "out 参数修饰符（C# 参考）| Microsoft Docs"
+title: "out 参数修饰符（C# 参考）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -28,11 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 400dfda51d978f35c3995f90840643aaff1b9c13
-ms.openlocfilehash: a2f2e9b9239836b051820bda66523822e95cdf52
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 227241d1b290dde2e9de66e6c0e3c904b432bae0
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="out-parameter-modifier-c-reference"></a>out 参数修饰符（C# 参考）
@@ -77,7 +77,7 @@ class CS0663_Example
   
  [!code-cs[csrefKeywordsMethodParams#4](../../../../samples/snippets/csharp/language-reference/keywords/out/out-4.cs)]  
 
- [重试模式](https://docs.microsoft.com/visualstudio/code-quality/ca1021-avoid-out-parameters#try-pattern-methods.md)会返回一个 `bool`，指示某个操作是成功还是失败，并在 `out` 参数中返回该操作生成的值。 许多分析方法（例如 @System.DateTime.TryParse(System.String,@System.DateTime) 方法）采用此模式。
+ [重试模式](/visualstudio/code-quality/ca1021-avoid-out-parameters#try-pattern-methods.md)会返回一个 `bool`，指示某个操作是成功还是失败，并在 `out` 参数中返回该操作生成的值。 许多分析方法（例如 @System.DateTime.TryParse(System.String,@System.DateTime) 方法）采用此模式。
    
 ## <a name="calling-a-method-with-an-out-argument"></a>调用具有 `out` 参数的方法
 
@@ -101,3 +101,4 @@ class CS0663_Example
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [C# 关键字](../../../csharp/language-reference/keywords/index.md)   
  [方法参数](../../../csharp/language-reference/keywords/method-parameters.md)
+

@@ -1,5 +1,5 @@
 ---
-title: "缓解：WCF 服务和证书身份验证 | Microsoft Docs"
+title: "缓解：WCF 服务和证书身份验证"
 ms.custom: 
 ms.date: 03/30/2017
 ms.prod: .net-framework
@@ -15,11 +15,11 @@ caps.latest.revision: 3
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: 4c2156087ca168bafb1b7333310066cef73f3334
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 1d6f78d24fc6411fca81fbbb8eb886d6d0a7fe9c
 ms.contentlocale: zh-cn
-ms.lasthandoff: 04/18/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="mitigation-wcf-services-and-certificate-authentication"></a>缓解：WCF 服务和证书身份验证
@@ -59,7 +59,7 @@ ms.lasthandoff: 04/18/2017
     </configuration>  
     ```  
   
--   如果在源代码中动态配置了绑定，将 <xref:System.ServiceModel.TcpTransportSecurity.SslProtocols%2A?displayProperty=fullName> 属性更新为在源代码中使用 TLS 1.1 (<xref:System.Security.Authentication.SslProtocols?displayProperty=fullName>) 或更低版本的协议。  
+-   如果在源代码中动态配置了绑定，将 <xref:System.ServiceModel.TcpTransportSecurity.SslProtocols%2A?displayProperty=fullName> 属性更新为使用 TLS 1.1 (<xref:System.Security.Authentication.SslProtocols.Tls11?displayProperty=fullName>) 或源代码中的早期版本协议。  
   
     > [!CAUTION]
     >  不建议采用此解决方法，因为使用 MD5 哈希算法的证书被视为不安全。  

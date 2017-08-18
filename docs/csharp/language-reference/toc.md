@@ -6,4 +6,4 @@
 ## [C# 预处理器指令](preprocessor-directives/)
 ## [C# 编译器选项](compiler-options/)
 ## [C# 编译器错误](compiler-messages/)
-## [C# 语言规范](language-specification.md)
+## [C# 6.0 草稿语言规范](language-specification/)

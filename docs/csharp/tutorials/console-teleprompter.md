@@ -11,10 +11,10 @@ ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 883cd93d-50ce-4144-b7c9-2df28d9c11a0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: be7974018ce3195dc7344192d647fe64fb2ebcc4
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
 ms.openlocfilehash: 360e93af03e00547116d1af1816c2b9b29524881
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -22,11 +22,11 @@ ms.lasthandoff: 05/22/2017
 
 ## <a name="introduction"></a>介绍
 此教程将介绍 .NET Core 和 C# 语言的许多功能。 你将了解：
-*    .NET Core 命令行接口 (CLI) 的基础知识
-*    C# 控制台应用程序的结构
-*    控制台 I/O
-*    .NET Core 中文件 I/O API 的基础知识
-*    .NET Core 中任务异步编程模型的基础知识
+*   .NET Core 命令行接口 (CLI) 的基础知识
+*   C# 控制台应用程序的结构
+*   控制台 I/O
+*   .NET Core 中文件 I/O API 的基础知识
+*   .NET Core 中任务异步编程模型的基础知识
 
 你将生成一个应用程序，用于读取文本文件，然后将文本文件的内容回显到控制台。 将按配速大声朗读控制台输出。 可以按“<”或“>”键加速或减速显示。
 

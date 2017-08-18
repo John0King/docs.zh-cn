@@ -1,5 +1,5 @@
 ---
-title: "检索段落的文本 (C#) | Microsoft Docs"
+title: "检索段落的文本 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,17 +14,17 @@ ms.assetid: 127d635e-e559-408f-90c8-2bb621ca50ac
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: f21a48aa5bf61485a45c3c76225463c47184f786
-ms.lasthandoff: 03/13/2017
-
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: b0a6e842359ae42be9e00ba35f6878d3a2a4aac4
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="retrieving-the-text-of-the-paragraphs-c"></a>检索段落的文本 (C#)
 此示例以上一个示例[检索段落及其样式 (C#)](../../../../csharp/programming-guide/concepts/linq/retrieving-the-paragraphs-and-their-styles.md) 为基础。 这个新示例将每个段落的文本作为字符串进行检索。  
   
- 为检索文本，此示例另外添加了一个查询，该查询循环访问匿名类型的集合，并通过添加新成员 `Text` 对一个匿名类型的新集合进行投影。 它使用 <xref:System.Linq.Enumerable.Aggregate%2A> 标准查询运算符将多个字符串串联为一个字符串。  
+ 为检索文本，此示例另外添加了一个查询，该查询循环访问匿名类型的集合，并通过添加新成员 `Text` 对一个匿名类型的新集合进行投影。 该示例使用 <xref:System.Linq.Enumerable.Aggregate%2A> 标准查询运算符将多个字符串串联为一个字符串。  
   
  这种方法（即首先投影到一个匿名类型集合，然后使用该集合投影到一个新的匿名类型集合）是一种既常用又有效的方法。 此查询在编写时本来可以不投影到第一个匿名类型。 但是因为使用迟缓计算，即使这样做也并不会过多占用额外的处理能力。 此方法在堆上创建更多生存时间很短的对象，但这并不会显著降低性能。  
   
@@ -157,3 +157,4 @@ StyleName:Code >Hello World<
 ## <a name="see-also"></a>请参阅  
  [教程：操作 WordprocessingML 文档中的内容 (C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)   
  [LINQ to XML 中的延迟执行和迟缓计算 (C#)](../../../../csharp/programming-guide/concepts/linq/deferred-execution-and-lazy-evaluation-in-linq-to-xml.md)
+

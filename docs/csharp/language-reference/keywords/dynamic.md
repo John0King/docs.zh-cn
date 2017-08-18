@@ -1,5 +1,5 @@
 ---
-title: "dynamic（C# 参考）| Microsoft Docs"
+title: "dynamic（C# 参考）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -30,11 +30,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 400dfda51d978f35c3995f90840643aaff1b9c13
-ms.openlocfilehash: 7cec26e59a865e78bf02a84cfe2d3b5177fa55af
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: b68a6ef4dc3dda01638b9bb84db58ba77214f490
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/24/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="dynamic-c-reference"></a>dynamic（C# 参考）
@@ -93,3 +93,4 @@ obj = obj + 3;
  [typeof](../../../csharp/language-reference/keywords/typeof.md)   
  [如何：使用 as 和 is 运算符安全地进行强制转换](../../../csharp/programming-guide/types/how-to-safely-cast-by-using-as-and-is-operators.md)   
  [演练：创建和使用动态对象](../../../csharp/programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md)
+

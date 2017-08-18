@@ -1,5 +1,5 @@
 ---
-title: "如何：在 Visual Basic 中将具有特定模式的文件复制到目录中 | Microsoft Docs"
+title: "如何：在 Visual Basic 中将具有特定模式的文件复制到目录中"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -34,11 +34,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: 86422f931585629bd34553a777ccec8a6f33fc8a
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 812fd59769da386f8d0b81eb80a4cd93c9764534
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-copy-files-with-a-specific-pattern-to-a-directory-in-visual-basic"></a>如何：在 Visual Basic 中将具有特定模式的文件复制到目录中
@@ -46,7 +46,7 @@ ms.lasthandoff: 05/22/2017
   
  如果找不到匹配的文件，则返回空集合。  
   
- 可以使用 <xref:Microsoft.VisualBasic.FileIO.FileSystem.CopyFile%2A> 方法将文件复制到某目录。  
+ 可以使用 <xref:Microsoft.VisualBasic.FileIO.FileSystem.CopyFile%2A> 方法将文件复制到目录。  
   
 ### <a name="to-copy-files-with-a-specific-pattern-to-a-directory"></a>将具有特定模式的文件复制到目录中  
   
@@ -70,13 +70,13 @@ ms.lasthandoff: 05/22/2017
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
  以下情况可能会导致异常：  
   
--   路径由于以下原因之一而无效：是零长度字符串；仅为空白；包含无效字符；是一个设备路径（开头字符为 \\\\.\\）(<xref:System.ArgumentException>)。  
+-   路径由于以下原因之一无效：是零长度字符串；仅包含空白；包含无效字符；是一个设备路径（开头字符为 \\\\.\\）(<xref:System.ArgumentException>)。  
   
 -   路径无效，因为它是 `Nothing` (<xref:System.ArgumentNullException>)。  
   
 -   目录不存在 (<xref:System.IO.DirectoryNotFoundException>)。  
   
--   目录指向现有文件 (<xref:System.IO.IOException>)。  
+-   指向某个现有文件的目录 (<xref:System.IO.IOException>)。  
   
 -   路径超过了系统定义的最大长度 (<xref:System.IO.PathTooLongException>)。  
   
@@ -90,3 +90,4 @@ ms.lasthandoff: 05/22/2017
  [如何：查找具有特定模式的子目录](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-find-subdirectories-with-a-specific-pattern.md)   
  [疑难解答：读取和写入文本文件](../../../../visual-basic/developing-apps/programming/drives-directories-files/troubleshooting-reading-from-and-writing-to-text-files.md)   
  [如何：获取目录中的文件集合](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-get-the-collection-of-files-in-a-directory.md)
+

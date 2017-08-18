@@ -1,5 +1,5 @@
 ---
-title: "委托中的变体 (C#) | Microsoft Docs"
+title: "委托中的变体 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,11 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 400dfda51d978f35c3995f90840643aaff1b9c13
-ms.openlocfilehash: cd1b765faa734973bf5e184cee2ac934ebdf9241
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 79de8218f3fcdf52dad84bb0bacffde01a222066
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/24/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="variance-in-delegates-c"></a>委托中的变体 (C#)
@@ -129,9 +129,9 @@ public static void Test()
 ### <a name="generic-delegates-that-have-variant-type-parameters-in-the-net-framework"></a>.NET Framework 中具有变体类型参数的泛型委托  
  .NET Framework 4 在几个现有泛型委托中引入了泛型类型参数的变体支持：  
   
--   来自 <xref:System> 命名空间的 `Action` 委托，例如，<xref:System.Action%601> 和 <xref:System.Action%602>  
+-   <xref:System> 命名空间的 `Action` 委托，例如 <xref:System.Action%601> 和 <xref:System.Action%602>  
   
--   来自 <xref:System> 命名空间的 `Func` 委托，例如，<xref:System.Func%601> 和 <xref:System.Func%602>  
+-   <xref:System> 命名空间的 `Func` 委托，例如 <xref:System.Func%601> 和 <xref:System.Func%602>  
   
 -   <xref:System.Predicate%601> 委托  
   
@@ -157,7 +157,7 @@ public delegate void DContravariant<in A>(A a);
 ```  
   
 > [!IMPORTANT]
-> C# 中的  `ref` 和 `out` 参数不能标记为变体。  
+>  C# 中的 `ref` 和 `out` 参数不能标记为变体。  
   
  可以在同一个委托中支持变体和协变，但这只适用于不同类型的参数。 这在下面的示例中显示。  
   
@@ -214,6 +214,7 @@ public static void Test()
 ```  
   
 ## <a name="see-also"></a>请参阅  
- [泛型](https://msdn.microsoft.com/library/ms172192)   
+ [泛型](~/docs/standard/generics/index.md)   
  [对 Func 和 Action 泛型委托使用变体 (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)   
  [如何：合并委托（多播委托）](../../../../csharp/programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md)
+

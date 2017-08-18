@@ -1,7 +1,7 @@
 ---
 title: "从 DNX 迁移到 .NET Core CLI"
-description: "从 DNX 迁移到 .NET Core CLI"
-keywords: ".NET、.NET Core"
+description: "从使用 DNX 工具迁移到 .NET Core CLI 工具。"
+keywords: .NET, .NET Core
 author: blackdwarf
 ms.author: mairaw
 ms.date: 06/20/2016
@@ -9,11 +9,11 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: c0d70120-78c8-4d26-bb3c-801f42fc2366
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d97a1501ad25b683cbb5d7fbd8bd1b137f7f4046
-ms.openlocfilehash: e30573a60e27314466822935249e2b1b119a9259
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: e94ab83bb6638438e0a98020a5b42755322af5da
 ms.contentlocale: zh-cn
-ms.lasthandoff: 04/10/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -55,17 +55,17 @@ DNVM 现已停用，因为其功能集可能由于 .NET Core CLI 即将推出的
 下表显示了 DNX/DNU 命令及其 CLI 对应项之间的映射。
 
 
-| DNX 命令                        | CLI 命令        | 描述                                                                                                         |
-|--------------------------------    |----------------    |-----------------------------------------------------------------------------------------------------------------    |
-| dnx 运行                            | dotnet 运行         | 从源运行代码。                                                                                               |
-| dnu 生成                          | dotnet 生成       | 生成代码的 IL 二进制。                                                                                    |
-| dnu 包                           | dotnet 包        | 打包代码的 NuGet 包。                                                                            |
-| dnx \[command]（例如，“dnx web”）     | 不适用\*              | 在 DNX 领域中，按照 project.json 中的定义运行命令。                                                         |
-| dnu 安装                        | 不适用\*              | 在 DNX 领域中，将包安装为一个依赖项。                                                                |
-| dnu 还原                        | dotnet 还原     | 还原 project.json 中指定的依赖项。                                                                |
-| dnu 发布                        | dotnet 发布     | 使用三种形式（可移植、本机可移植和独立形式）之一发布应用程序以进行部署。     |
-| dnu 包装                           | 不适用\*              | 在 DNX 领域中，包装 csproj 中的 project.json。                                                                        |
-| dnu 命令                       | 不适用\*              | 在 DNX 领域中，管理全局安装的命令。                                                               |
+| DNX 命令                       | CLI 命令       | 描述                                                                                                       |
+|--------------------------------   |----------------   |-----------------------------------------------------------------------------------------------------------------  |
+| dnx 运行                           | dotnet 运行        | 从源运行代码。                                                                                             |
+| dnu 生成                         | dotnet 生成      | 生成代码的 IL 二进制。                                                                                  |
+| dnu 包                          | dotnet 包       | 打包代码的 NuGet 包。                                                                          |
+| dnx \[command]（例如，“dnx web”）   | 不适用\*             | 在 DNX 领域中，按照 project.json 中的定义运行命令。                                                       |
+| dnu 安装                       | 不适用\*             | 在 DNX 领域中，将包安装为一个依赖项。                                                              |
+| dnu 还原                       | dotnet 还原    | 还原 project.json 中指定的依赖项。                                                              |
+| dnu 发布                       | dotnet 发布    | 使用三种形式（可移植、本机可移植和独立形式）之一发布应用程序以进行部署。    |
+| dnu 包装                          | 不适用\*             | 在 DNX 领域中，包装 csproj 中的 project.json。                                                                      |
+| dnu 命令                      | 不适用\*             | 在 DNX 领域中，管理全局安装的命令。                                                             |
 
 (\*) - 按照设计，CLI 中不支持这些功能。 
 
@@ -120,14 +120,14 @@ CLI 和 DNX 都使用基于 `project.json` 文件的相同基本项目系统。 
 
 如果 `project.json` 中有“命令”部分，可将其删除。 过去作为 DNU 命令（例如，实体框架 CLI 命令）存在的某些命令，将作为每个项目的扩展移植到 CLI。 如果生成了自己正在项目中使用的命令，需要使用 CLI 扩展将其替换。 在这种情况下，`project.json` 中的 `commands` 节点需要替换为 `tools` 节点，并且需要列出工具依赖项。 
 
-完成这些操作后，需要决定希望应用使用的可移植性类型。 借助 .NET Core，我们在提供一系列可从中进行选择的可移植性选项方面投入了大量工作。 例如，可能想要一个完全可移植的应用程序或者想要一个独立的应用程序。 可移植应用程序选项工作原理更像 .NET Framework 应用程序的工作原理：它需要共享组件才能在目标计算机 (.NET Core) 上执行。 独立应用程序不需要在目标上安装 .NET Core，但需要为每个要支持的 OS 生成一个应用程序。 有关这些可移植性类型等内容，请参阅 [应用程序可移植性类型](../deploying/index.md)文档。 
+完成这些操作后，需要决定希望应用使用的可移植性类型。 借助 .NET Core，我们在提供一系列可从中进行选择的可移植性选项方面投入了大量工作。 例如，可能想要一个完全可移植的应用程序或者想要一个独立的应用程序。 可移植应用程序选项工作原理更像 .NET Framework 应用程序的工作原理：它需要共享组件才能在目标计算机 (.NET Core) 上执行。 独立应用程序不需要在目标上安装 .NET Core，但需要为每个要支持的 OS 生成一个应用程序。 有关这些可移植性类型等内容，请参阅[应用程序可移植性类型](../deploying/index.md)文档。 
 
-调用想要的可移植性类型后，需要更改目标框架。 如果是为 .NET Core 编写应用程序，很可能要使用 `dnxcore50` 作为目标框架。 借助 CLI 和新的 [.NET 标准库](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/net-platform-standard.md)带来的更改，框架需要为以下其中一种：
+调用想要的可移植性类型后，需要更改目标框架。 如果是为 .NET Core 编写应用程序，很可能要使用 `dnxcore50` 作为目标框架。 鉴于 CLI 和全新 [.NET Standard](../../standard/net-standard.md) 引入的变化，框架需要为下列之一：
 
 1. `netcoreapp1.0` - 如果要在 .NET Core 上编写应用程序（包括 ASP.NET Core 应用程序）
 2. `netstandard1.6` - 如果要为 .NET Core 编写类库
 
-如果要使用其他 `dnx` 目标，如 `dnx451`，则还需要更改这些内容。 `dnx451` 应更改为 `net451`。 有关详细信息，请参阅 [.NET 标准库文档](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/net-platform-standard.md)。 
+如果要使用其他 `dnx` 目标，如 `dnx451`，则还需要更改这些内容。 `dnx451` 应更改为 `net451`。 有关详细信息，请参阅 [.NET Standard](../../standard/net-standard.md) 主题。 
 
 `project.json` 现已差不多准备就绪。 需要浏览依赖项列表并将依赖项更新至最新版本，尤其在使用 ASP.NET Core 依赖项时。 如果使用的是 BCL API 的单独包，可使用运行时包，如[应用程序可移植性类型](../deploying/index.md)文档中所述。 
 
@@ -142,3 +142,4 @@ CLI 和 DNX 都使用基于 `project.json` 文件的相同基本项目系统。 
 ```
 
 运行 `dotnet build` 会显示任何最终的生成错误，但应该不会有很多。 生成代码并正常运行后，可以使用运行程序测试它。 执行 `dotnet <path-to-your-assembly>` 并查看其运行状况。
+

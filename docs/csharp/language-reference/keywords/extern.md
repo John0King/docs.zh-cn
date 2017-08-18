@@ -1,5 +1,5 @@
 ---
-title: "extern（C# 参考）| Microsoft Docs"
+title: "extern（C# 参考）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -31,11 +31,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 61cde8c8f6b3d255be5f6040141542e3e8d1e8c7
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: e499ade5ec8a9339b0d425c59809cf7c177466fb
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="extern-c-reference"></a>extern（C# 参考）
@@ -116,3 +116,4 @@ SampleMethod() returns 50.
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [C# 关键字](../../../csharp/language-reference/keywords/index.md)   
  [修饰符](../../../csharp/language-reference/keywords/modifiers.md)
+

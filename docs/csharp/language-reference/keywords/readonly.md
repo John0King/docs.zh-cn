@@ -1,5 +1,5 @@
 ---
-title: "readonly（C# 参考）| Microsoft Docs"
+title: "readonly（C# 参考）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -30,11 +30,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: e915ac4621d2514e1efcaa8bdb4df698e6a66a72
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 2660aa56721815cbbeb668328863956473cce8f1
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="readonly-c-reference"></a>readonly（C# 参考）
@@ -56,7 +56,10 @@ ms.lasthandoff: 03/13/2017
 -   对于实例字段，在包含字段声明的类的实例构造函数中；或者，对于静态字段，在包含字段声明的类的静态构造函数中。 也只有在这些上下文中，将 `readonly` 字段作为 [out](../../../csharp/language-reference/keywords/out.md) 或 [ref](../../../csharp/language-reference/keywords/ref.md) 参数传递才有效。  
   
 > [!NOTE]
->  `readonly` 关键字不同于 [const](../../../csharp/language-reference/keywords/const.md) 关键字。 `const` 字段只能在该字段的声明中初始化。 `readonly` 字段可以在声明或构造函数中初始化。 因此，根据所使用的构造函数，`readonly` 字段可能具有不同的值。 另外，虽然 `const` 字段是编译时常量，但 `readonly` 字段可用于运行时常量，如下面的示例所示：  
+>  `readonly` 关键字不同于 [const](../../../csharp/language-reference/keywords/const.md) 关键字。 `const` 字段只能在该字段的声明中初始化。 
+          
+          
+          `readonly` 字段可以在声明或构造函数中初始化。 因此，根据所使用的构造函数，`readonly` 字段可能具有不同的值。 另外，虽然 `const` 字段是编译时常量，但 `readonly` 字段可用于运行时常量，如下面的示例所示：  
   
 ```  
 public static readonly uint timeStamp = (uint)DateTime.Now.Ticks;  
@@ -85,3 +88,4 @@ public static readonly uint timeStamp = (uint)DateTime.Now.Ticks;
  [修饰符](../../../csharp/language-reference/keywords/modifiers.md)   
  [const](../../../csharp/language-reference/keywords/const.md)   
  [字段](../../../csharp/programming-guide/classes-and-structs/fields.md)
+

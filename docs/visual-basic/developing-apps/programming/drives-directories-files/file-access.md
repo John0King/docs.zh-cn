@@ -1,5 +1,5 @@
 ---
-title: "使用 Visual Basic 访问文件 | Microsoft Docs"
+title: "使用 Visual Basic 访问文件"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -40,14 +40,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 2a2a60f9033d6bdec0b9a0d5905adb2b1953bf66
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 71e941bf33c3b1051c22c8170b327df9fae7d4b9
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="file-access-with-visual-basic"></a>使用 Visual Basic 访问文件
-`My.Computer.FileSystem` 对象提供用于处理文件和文件夹的工具。 它的属性、方法和事件使你可以创建、复制、移动、调查以及删除文件和文件夹。 `My.Computer.FileSystem` 提供的性能比 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] 为后向兼容性提供的旧版功能（`FileOpen`、`FileClose`、`Input`、`InputString`、`LineInput` 等）的性能更好。  
+`My.Computer.FileSystem` 对象提供用于处理文件和文件夹的工具。 它的属性、方法和事件使你可以创建、复制、移动、调查以及删除文件和文件夹。 `My.Computer.FileSystem` 提供的性能比 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 为后向兼容性提供的旧版功能（`FileOpen`、`FileClose`、`Input`、`InputString`、`LineInput` 等）的性能更好。  
   
 ## <a name="in-this-section"></a>本节内容  
  [从文件读取](../../../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)  
@@ -70,3 +71,4 @@ ms.lasthandoff: 03/13/2017
   
  [疑难解答：读取和写入文本文件](../../../../visual-basic/developing-apps/programming/drives-directories-files/troubleshooting-reading-from-and-writing-to-text-files.md)  
  列出读取和写入文本文件时遇到的常见问题，并为每个问题提供补救措施。
+

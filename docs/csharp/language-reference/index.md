@@ -1,5 +1,5 @@
 ---
-title: "C# 参考 | Microsoft 文档"
+title: "C# 参考"
 ms.date: 2017-02-14
 ms.prod: .net
 ms.technology:
@@ -32,11 +32,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 87497d48c04a00e09c82550d49dc85d7be719edf
-ms.openlocfilehash: 7ca43aa68edc89420dd320f92b50311d7279ac06
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 4a988a8a2c5999351061254da2b7877bdffd8a32
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/19/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="c-reference"></a>C# 参考
@@ -61,7 +61,7 @@ ms.lasthandoff: 05/19/2017
  [C# 编译器错误](../../csharp/language-reference/compiler-messages/index.md)  
  包括演示原因和更正 C# 编译器错误和警告的代码片段。  
   
- [C# 语言规范](../../csharp/language-reference/language-specification.md)  
+ [C# 语言规范](../../csharp/language-reference/language-specification/index.md)  
  提供指向 Microsoft Word 格式中的 C# 语言规范的最新版本的指针。  
   
 ## <a name="related-sections"></a>相关章节  
@@ -75,7 +75,7 @@ ms.lasthandoff: 05/19/2017
  [C#](../../csharp/csharp.md)  
  提供 Visual C# 文档的入口。  
   
- [使用 Visual Studio C# 开发环境](https://docs.microsoft.com/visualstudio/csharp-ide/using-the-visual-studio-development-environment-for-csharp)  
+ [使用 Visual Studio C# 开发环境](/visualstudio/csharp-ide/using-the-visual-studio-development-environment-for-csharp)  
  提供指向介绍 IDE 和编辑器的概念性和任务主题的链接。  
   
  [C# 编程指南](../../csharp/programming-guide/index.md)  

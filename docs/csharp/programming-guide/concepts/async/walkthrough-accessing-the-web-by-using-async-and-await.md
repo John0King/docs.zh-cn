@@ -1,5 +1,5 @@
 ---
-title: "演练：使用 Async 和 Await 访问 Web (C#) | Microsoft Docs"
+title: "演练：使用 Async 和 Await 访问 Web (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,11 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 0832ee88bba58579eea001335be9cb8c2130834d
-ms.openlocfilehash: 2874eaadd23fdfdc1baf9337169ad5a52c05905f
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 7c03cad060e2ba459277c28f929df88be70e4044
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/28/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="walkthrough-accessing-the-web-by-using-async-and-await-c"></a>演练：使用 Async 和 Await 访问 Web (C#)
@@ -105,7 +105,7 @@ ms.lasthandoff: 03/28/2017
   
 6.  确定文本框和按钮的位置，以便它们都在“MainWindow”窗口中显示。  
   
-     有关 WPF XAML 设计器的详细信息，请参阅[使用 XAML 设计器创建 UI](https://docs.microsoft.com/visualstudio/designers/creating-a-ui-by-using-xaml-designer-in-visual-studio)。  
+     有关 WPF XAML 设计器的详细信息，请参阅[使用 XAML 设计器创建 UI](/visualstudio/designers/creating-a-ui-by-using-xaml-designer-in-visual-studio)。  
   
 ##  <a name="BKMK_AddReference"></a>   
 ###  <a name="AddRef"></a>添加引用  
@@ -271,7 +271,7 @@ ms.lasthandoff: 03/28/2017
 ##  <a name="BKMK_ConvertGtBtArr"></a>   
 ###  <a name="GetURLContents"></a> 将 GetURLContents 转换为异步方法  
   
-1.  若要将同步解决方案转换成异步解决方案，最佳的开始位置为 `GetURLContents` 中，因为对 <xref:System.Net.HttpWebRequest> 方法 <xref:System.Net.HttpWebRequest.GetResponse%2A> 和 <xref:System.IO.Stream> 方法 <xref:System.IO.Stream.CopyTo%2A> 的调用是应用程序访问 Web 的位置。 .NET Framework 提供两种方法的异步版本，这让转换变得轻松。  
+1.  要将同步解决方案转换为异步解决方案，最佳着手点在 `GetURLContents` 中，因为对 <xref:System.Net.HttpWebRequest> 方法 <xref:System.Net.HttpWebRequest.GetResponse%2A> 的调用以及对 <xref:System.IO.Stream> 方法 <xref:System.IO.Stream.CopyTo%2A> 的调用是应用程序访问 Web 的位置。 .NET Framework 提供两种方法的异步版本，这让转换变得轻松。  
   
      有关 `GetURLContents` 中使用的方法的详细信息，请参阅 <xref:System.Net.WebRequest>。  
   
@@ -284,7 +284,7 @@ ms.lasthandoff: 03/28/2017
     using (WebResponse response = webReq.GetResponseAsync())  
     ```  
   
-2.  `GetResponseAsync` 返回 <xref:System.Threading.Tasks.Task%601>。 在这种情况下，*任务返回变量* `TResult` 的类型为 <xref:System.Net.WebResponse>。 该任务是在请求的任务已下载且任务已完成运行后，生成实际 `WebResponse` 对象的承诺。  
+2.  `GetResponseAsync` 返回 <xref:System.Threading.Tasks.Task%601>。 在这种情况下，任务返回变量 `TResult` 具有类型 <xref:System.Net.WebResponse>。 该任务是在请求的任务已下载且任务已完成运行后，生成实际 `WebResponse` 对象的承诺。  
   
      要从任务检索 `WebResponse` 值，请将 [await](../../../../csharp/language-reference/keywords/await.md) 运算符应用到对 `GetResponseAsync` 的调用，如下列代码所示。  
   
@@ -307,7 +307,7 @@ ms.lasthandoff: 03/28/2017
   
 3.  因为在上一步中添加了 `await` 运算符，所以会发生编译器错误。 该运算符仅可在使用 [async](../../../../csharp/language-reference/keywords/async.md) 修饰符标记的方法中使用。 当你重复转换步骤以使用对 `CopyToAsync` 的调用替换对 `CopyTo` 的调用时，请忽略该错误。  
   
-    -   将调用的方法的名称更改为 <xref:System.IO.Stream.CopyToAsync%2A>。  
+    -   更改被调用到 <xref:System.IO.Stream.CopyToAsync%2A> 的方法的名称。  
   
     -   `CopyTo` 或 `CopyToAsync` 方法复制字节到其参数 `content`，并且不返回有意义的值。 在同步版本中，对 `CopyTo` 的调用是不返回值的简单语句。 异步版本 `CopyToAsync` 返回 <xref:System.Threading.Tasks.Task>。 任务函数类似“Task(void)”，并让该方法能够等待。 应用 `Await` 或 `await` 到对 `CopyToAsync` 的调用，如下列代码所示。  
   
@@ -332,7 +332,7 @@ ms.lasthandoff: 03/28/2017
     private async byte[] GetURLContents(string url)  
     ```  
   
-5.  在 C# 中，异步方法的返回类型只能是 <xref:System.Threading.Tasks.Task>、<xref:System.Threading.Tasks.Task%601> 或 `void`。 通常情况下，`void` 的返回类型仅可在异步事件处理程序中使用，其中需要 `void`。 在其他情况下，如果完成的方法具有返回 T 类型的值的 [return](../../../../csharp/language-reference/keywords/return.md) 语句，则使用 `Task(T)`；如果完成的方法不返回有意义的值，则使用 `Task`。 可以将 `Task` 返回类型视为表示“Task(void)”。  
+5.  异步方法的返回类型在 C# 中只能为 <xref:System.Threading.Tasks.Task>、<xref:System.Threading.Tasks.Task%601> 或 `void`。 通常情况下，`void` 的返回类型仅可在异步事件处理程序中使用，其中需要 `void`。 在其他情况下，如果完成的方法具有返回 T 类型的值的 [return](../../../../csharp/language-reference/keywords/return.md) 语句，则使用 `Task(T)`；如果完成的方法不返回有意义的值，则使用 `Task`。 可以将 `Task` 返回类型视为表示“Task(void)”。  
   
      有关详细信息，请参阅[异步返回类型 (C#)](../../../../csharp/programming-guide/concepts/async/async-return-types.md)。  
   
@@ -450,7 +450,7 @@ ms.lasthandoff: 03/28/2017
 ##  <a name="BKMK_ReplaceGetByteArrayAsync"></a>   
 ###  <a name="GetURLContentsAsync"></a> 使用 .NET Framework 方法替换方法 GetURLContentsAsync  
   
-1.  .NET Framework 4.5 提供可供你使用的许多异步方法。 其中一种方法 <xref:System.Net.Http.HttpClient> 方法 <xref:System.Net.Http.HttpClient.GetByteArrayAsync%28System.String%29> 可以满足本演练的需要。 你可以使用它来替代你在早前过程中创建的 `GetURLContentsAsync` 方法。  
+1.  .NET Framework 4.5 提供可供你使用的许多异步方法。 其中一个是 <xref:System.Net.Http.HttpClient> 方法 <xref:System.Net.Http.HttpClient.GetByteArrayAsync%28System.String%29>，它可以执行本演练所需的操作。 你可以使用它来替代你在早前过程中创建的 `GetURLContentsAsync` 方法。  
   
      第一步是在方法 `SumPageSizesAsync` 中创建 `HttpClient` 对象。 在方法的开头添加下列声明。  
   

@@ -1,60 +1,66 @@
 ---
-title: "动态源代码生成和编译 | Microsoft Docs"
-ms.custom: ""
-ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "代码文档对象模型"
-  - "CodeDOM"
-  - "与语言无关的源代码建模"
-  - "语言, CodeDOM 提供的多种语言支持"
-  - "CodeDOM 支持的多种语言"
-  - "多种语言的源代码"
-  - "System.CodeDom 命名空间"
+title: "动态源代码生成和编译"
+ms.custom: 
+ms.date: 03/30/2017
+ms.prod: .net-framework
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- dotnet-clr
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Code Document Object Model
+- System.CodeDom namespace
+- language-independent source code modeling
+- CodeDOM
+- multiple languages supported by CodeDOM
+- source code in multiple languages
+- languages, multiple language support by CodeDOM
 ms.assetid: d077a3e8-bd81-4bdf-b6a3-323857ea30fb
 caps.latest.revision: 15
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
-caps.handback.revision: 12
+author: rpetrusha
+ms.author: ronpet
+manager: wpickett
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: f1eb17af8fef96f42973e65859bd17b1e835fa98
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
+
 ---
-# 动态源代码生成和编译
-.NET Framework 中包含一个名为“代码文档对象模型”\(CodeDOM\) 的机制，该机制使编写源代码的程序的开发人员可以在运行时，根据表示所呈现代码的单一模型，用多种编程语言生成源代码。  
+# <a name="dynamic-source-code-generation-and-compilation"></a>动态源代码生成和编译
+.NET Framework 包括一个名为代码文档对象模型 (CodeDOM) 的机制。通过该机制，发出源代码的程序开发者可基于一种表示要呈现的代码的单一模型，在运行时以多种编程语言生成源代码。  
   
- 为表示源代码，CodeDOM 元素相互链接以形成一个数据结构（称为 CodeDOM 图），它以某种源代码的结构为模型。  
+ 为表示源代码，CodeDOM 元素相互链接，构成一个名为 CodeDOM 图的数据结构。该数据结构对某些源代码的结构建模。  
   
- `System.CodeDom` 命名空间定义可表示源代码逻辑结构（与具体的编程语言无关）的类型。  `System.CodeDom.Compiler` 命名空间定义从 CodeDOM 图生成源代码的类型，以及在受支持的语言中管理源代码编译的类型。  编译器供应商或开发人员可以扩展受支持语言的集合。  
+ `System.CodeDom` 命名空间定义某些类型，这些类型可以表示源代码的逻辑结构，且不依赖特定编程语言。 `System.CodeDom.Compiler` 命名空间定义某些类型，用于从 CodeDOM 图中生成源代码，并管理使用支持语言的源代码的编译工作。 编译器供应商或开发人员可以扩展支持语言。  
   
- 当程序需要用多种语言为程序模型或者为不确定的目标语言生成源代码时，与语言无关的源代码建模很有价值。  例如，如果语言的 CodeDOM 支持可用，则一些设计器将 CodeDOM 用作语言抽象接口，以用正确的编程语言生成源代码。  
+ 当程序需要为多种语言的程序模型或为某个不确定的目标语言生成源代码时，不依赖语言的源代码建模非常有用。 例如，某些设计器使用 CodeDOM 作为语言抽象接口生成使用正确编程语言的源代码，前提是 CodeDOM 支持该语言。  
   
- .NET Framework 中包含 [C\#](frlrfMicrosoftCSharpCSharpCodeProviderClassTopic)、[JScript](frlrfMicrosoftJScriptJScriptCodeProviderClassTopic) 和 [Visual Basic](frlrfMicrosoftVisualBasicVBCodeProviderClassTopic) 的代码生成器和代码编译器。  
+ .NET Framework 包括适用于 <xref:Microsoft.CSharp.CSharpCodeProvider>、<xref:Microsoft.JScript.JScriptCodeProvider> 和 <xref:Microsoft.VisualBasic.VBCodeProvider> 的代码生成器和代码编译器。  
   
-## 本节内容  
+## <a name="in-this-section"></a>本节内容  
  [使用 CodeDOM](../../../docs/framework/reflection-and-codedom/using-the-codedom.md)  
- 介绍一般用途并演示如何使用 CodeDOM 生成简单的对象图。  
+ 介绍 CodeDOM 的常见用途，并演示如何使用 CodeDOM 构建一个简单的对象图。  
   
- [生成源代码和在 CodeDOM 图中编译程序](../../../docs/framework/reflection-and-codedom/generating-and-compiling-source-code-from-a-codedom-graph.md)  
- 介绍如何使用 `System.CodeDom.Compiler` 命名空间中定义的类来生成源代码并使用外部编译器编译所生成的代码。  
+ [从 CodeDOM 图中生成源代码并编译程序](../../../docs/framework/reflection-and-codedom/generating-and-compiling-source-code-from-a-codedom-graph.md)  
+ 介绍如何使用 `System.CodeDom.Compiler` 命名空间中定义的类，通过外部编译器生成源代码并编译生成的代码。  
   
  [如何：使用 CodeDOM 创建 XML 文档文件](../../../docs/framework/reflection-and-codedom/how-to-create-an-xml-documentation-file-using-codedom.md)  
- 描述了如何使用 CodeDOM 生成包含 XML 文档注释的代码，以及如何编译生成的代码，方可创建 XML 文档输出。  
+ 介绍如何使用 CodeDOM 生成带有 XML 文档注释的代码，以及如何编译生成的代码以使其创建 XML 文档输出。  
   
  [如何：使用 CodeDOM 创建类](../../../docs/framework/reflection-and-codedom/how-to-create-a-class-using-codedom.md)  
- 描述了如何使用 CodeDOM 生成包含字段、属性、方法、构造函数和入口点的类。  
+ 介绍如何使用 CodeDOM 生成包含字段、属性、方法、构造函数和入口点的类。  
   
-## 参考  
+## <a name="reference"></a>参考  
  <xref:System.CodeDom>  
- 定义在面向公共语言运行时的编程语言中表示代码元素的元素。  
+ 定义采用面向公共语言运行时的编程语言表示代码元素的元素。  
   
  <xref:System.CodeDom.Compiler>  
- 定义在运行时生成和编译代码的接口。  
+ 定义用于在运行时生成和编译代码的接口。  
   
-## 相关章节  
- [CodeDOM Quick Reference](http://msdn.microsoft.com/zh-cn/c77b8bfd-0a32-4e36-b59a-4f687f32c524)  
- 为开发人员提供查找表示源代码元素的 CodeDOM 元素的快捷方法。
+## <a name="related-sections"></a>相关章节  
+ [CodeDOM 快速参考](http://msdn.microsoft.com/en-us/c77b8bfd-0a32-4e36-b59a-4f687f32c524)  
+ 为开发人员提供了一种方法，使其可以快速查找表示源代码元素的 CodeDOM 元素。
+

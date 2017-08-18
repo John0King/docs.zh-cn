@@ -1,7 +1,7 @@
 ---
 title: "执行表达式树"
-description: "执行表达式树"
-keywords: ".NET、.NET Core"
+description: "介绍通过将表达式树转换为可执行的中间语言 (IL) 指令，执行表达式树。"
+keywords: .NET, .NET Core
 author: BillWagner
 ms.author: wiwagn
 ms.date: 06/20/2016
@@ -10,11 +10,11 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 109e0ac5-2a9c-48b4-ac68-9b6219cdbccf
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 400dfda51d978f35c3995f90840643aaff1b9c13
-ms.openlocfilehash: 8423e19047d3c967a69566ebd863f677d11a0898
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 4ca87c8410a04e9198e9dd6c379760e7b6596585
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 

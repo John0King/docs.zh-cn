@@ -1,5 +1,5 @@
 ---
-title: "如何：使用 LINQ 查询 ArrayList (C#) | Microsoft 文档"
+title: "如何：使用 LINQ 查询 ArrayList (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,15 +19,15 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 09489e2dabd34da0446a623e91cd85de35c3c70b
+ms.translationtype: HT
+ms.sourcegitcommit: 77d7bbaa99f7b8becf53244211ad480736d9ffab
+ms.openlocfilehash: 3ef12d014715237fe752038466be85c4b47437eb
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 08/08/2017
 
 ---
 # <a name="how-to-query-an-arraylist-with-linq-c"></a>如何：使用 LINQ 查询 ArrayList (C#)
-当使用 LINQ 来查询非泛型 <xref:System.Collections.IEnumerable> 集合时（例如 <xref:System.Collections.ArrayList>），必须显式声明范围变量的类型，以反映集合中对象的特定类型。 例如，如果有 `Student` 对象的 <xref:System.Collections.ArrayList>，那么 [from 子句](../../../../csharp/language-reference/keywords/from-clause.md)应如下所示：  
+如果使用 LINQ 来查询非泛型 <xref:System.Collections.IEnumerable> 集合（例如 <xref:System.Collections.ArrayList>），必须显式声明范围变量的类型，以反映集合中对象的特定类型。 例如，如果有 `Student` 对象的 <xref:System.Collections.ArrayList>，那么 [from 子句](../../../../csharp/language-reference/keywords/from-clause.md)应如下所示：  
   
 ```  
 var query = from Student s in arrList  
@@ -36,10 +36,10 @@ var query = from Student s in arrList
   
  通过指定范围变量的类型，可将 <xref:System.Collections.ArrayList> 中的每项强制转换为 `Student`。  
   
- 在查询表达式中使用显式类型范围变量等效于调用 <xref:System.Linq.Enumerable.Cast%2A> 方法。 如果无法执行指定的强制转换，那么 <xref:System.Linq.Enumerable.Cast%2A> 引发异常。 <xref:System.Linq.Enumerable.Cast%2A> 和 <xref:System.Linq.Enumerable.OfType%2A> 是对非泛型 <xref:System.Collections.IEnumerable> 类型进行操作的两个标准查询运算符方法。 有关详细信息，请参阅 [LINQ 查询操作中的类型关系](../../../../csharp/programming-guide/concepts/linq/type-relationships-in-linq-query-operations.md)。  
+ 在查询表达式中使用显式类型范围变量等效于调用 <xref:System.Linq.Enumerable.Cast%2A> 方法。 如果无法执行指定的强制转换，<xref:System.Linq.Enumerable.Cast%2A> 将引发异常。 <xref:System.Linq.Enumerable.Cast%2A> 和 <xref:System.Linq.Enumerable.OfType%2A> 是两个标准查询运算符方法，可对非泛型 <xref:System.Collections.IEnumerable> 类型执行操作。 有关详细信息，请参阅 [LINQ 查询操作中的类型关系](../../../../csharp/programming-guide/concepts/linq/type-relationships-in-linq-query-operations.md)。  
   
 ## <a name="example"></a>示例  
- 以下示例演示 <xref:System.Collections.ArrayList> 的一个简单查询。 请注意，本示例在代码调用 <xref:System.Collections.ArrayList.Add%2A> 方法时使用对象初始值设定项，但这不是必需的。  
+ 下面的示例演示对 <xref:System.Collections.ArrayList> 的简单查询。 请注意，本示例在代码调用 <xref:System.Collections.ArrayList.Add%2A> 方法时使用对象初始值设定项，但这不是必需的。  
   
 ```csharp  
 using System;  
@@ -100,6 +100,6 @@ namespace NonGenericLINQ
 */  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [LINQ to Objects (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)
 

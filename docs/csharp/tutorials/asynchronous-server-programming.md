@@ -1,5 +1,5 @@
 ---
-title: "异步服务器编程 | C# 指南"
+title: "异步服务器编程 - C# 指南"
 description: "了解如何使用异步编程技术卸载服务器工作负载"
 keywords: "C#, 异步, 占用大量 CPU, 网络倾向"
 ms.date: 08/24/2016
@@ -8,11 +8,12 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 7402b29b-1093-456d-be4c-f60ecb8926bb
-redirect_url: /dotnet/articles/csharp/tutorials/index
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: eed659373cb3aeb965e363d13fdf025c7dcfb955
-ms.lasthandoff: 03/13/2017
+redirect_url: /dotnet/csharp/tutorials/index
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 390d0eb2c8416165984ffe6c80ed6977e61a2845
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 

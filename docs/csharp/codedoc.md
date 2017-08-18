@@ -1,8 +1,8 @@
 ---
 title: "使用 XML 注释来记录代码"
-description: "记录代码"
-keywords: ".NET、.NET Core"
-author: tsolarin
+description: "了解如何使用 XML 文档注释来记录代码和在编译时生成 XML 文档文件。"
+keywords: .NET, .NET Core
+author: BillWagner
 ms.author: wiwagn
 ms.date: 02/14/2017
 ms.topic: article
@@ -10,11 +10,11 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 8e75e317-4a55-45f2-a866-e76124171838
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d91daf2005998d81609803982f5fc2c231fe7ad3
-ms.openlocfilehash: 4e873d15ae2b2e7a475ea758678423f6ec3b14b3
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 0cb5725a70d94173c8596f818dcaa6eb2de13bcc
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/16/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 

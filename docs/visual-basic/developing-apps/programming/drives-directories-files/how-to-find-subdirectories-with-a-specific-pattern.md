@@ -1,5 +1,5 @@
 ---
-title: "如何：在 Visual Basic 中查找具有特定模式的子目录 | Microsoft Docs"
+title: "如何：在 Visual Basic 中查找具有特定模式的子目录"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -31,11 +31,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: 3fc7683c6629e2d94f3acb670810c6632efec094
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 3719c13c74b873927382d2ff3ca733e3fd8fe945
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-find-subdirectories-with-a-specific-pattern-in-visual-basic"></a>如何：在 Visual Basic 中查找具有特定模式的子目录
@@ -52,7 +52,7 @@ ms.lasthandoff: 05/22/2017
 ## <a name="robust-programming"></a>可靠编程  
  以下情况可能会导致异常：  
   
--   路径由于以下原因之一而无效：是零长度字符串；仅为空白；包含无效字符；是一个设备路径（开头字符为 \\\\.\\）(<xref:System.ArgumentException>)。  
+-   路径由于以下原因之一无效：是零长度字符串；仅包含空白；包含无效字符；是一个设备路径（开头字符为 \\\\.\\）(<xref:System.ArgumentException>)。  
   
 -   路径无效，因为它是 `Nothing` (<xref:System.ArgumentNullException>)。  
   
@@ -73,3 +73,4 @@ ms.lasthandoff: 05/22/2017
 ## <a name="see-also"></a>另请参阅  
  <xref:Microsoft.VisualBasic.FileIO.FileSystem.GetDirectories%2A>   
  [如何：查找具有特定模式的文件](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-find-files-with-a-specific-pattern.md)
+

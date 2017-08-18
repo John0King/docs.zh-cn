@@ -1,5 +1,5 @@
 ---
-title: "join 子句（C# 参考）| Microsoft Docs"
+title: "join 子句（C# 参考）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -31,11 +31,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
-ms.openlocfilehash: 26027418b70d211dcadf6ace58b24927d94e427a
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 3368ba14101eda38ed8e3ee2bdc81bcab74a9b82
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="join-clause-c-reference"></a>join 子句（C# 参考）
@@ -74,7 +74,7 @@ ms.lasthandoff: 05/10/2017
  有关详细信息，请参阅[如何：执行分组联接](../../../csharp/programming-guide/linq-query-expressions/how-to-perform-grouped-joins.md)。  
   
 ## <a name="left-outer-join"></a>左外部联接  
- 在左外部联接中，将返回左侧源序列中的所有元素，即使右侧序列中没有其匹配元素也是如此。 若要在 [!INCLUDE[vbteclinq](../../../csharp/includes/vbteclinq_md.md)] 中执行左外部联接，请结合使用 `DefaultIfEmpty` 方法与分组联接，指定要在某个左侧元素不具有匹配元素时生成的默认右侧元素。 可以使用 `null` 作为任何引用类型的默认值，也可以指定用户定义的默认类型。 以下示例演示了用户定义的默认类型：  
+ 在左外部联接中，将返回左侧源序列中的所有元素，即使右侧序列中没有其匹配元素也是如此。 若要在 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 中执行左外部联接，请结合使用 `DefaultIfEmpty` 方法与分组联接，指定要在某个左侧元素不具有匹配元素时生成的默认右侧元素。 可以使用 `null` 作为任何引用类型的默认值，也可以指定用户定义的默认类型。 以下示例演示了用户定义的默认类型：  
   
  [!code-cs[cscsrefQueryKeywords#27](../../../csharp/language-reference/keywords/codesnippet/CSharp/join-clause_4.cs)]  
   
@@ -87,9 +87,9 @@ ms.lasthandoff: 05/10/2017
  通过使用多个 `from` 子句将新序列单独引入查询，可以执行非同等联接、交叉联接和其他自定义联接操作。 有关详细信息，请参阅[如何：执行自定义联接操作](../../../csharp/programming-guide/linq-query-expressions/how-to-perform-custom-join-operations.md)。  
   
 ## <a name="joins-on-object-collections-vs-relational-tables"></a>对象集合联接与关系表  
- 在[!INCLUDE[vbteclinq](../../../csharp/includes/vbteclinq_md.md)] 查询表达式中，联接操作是在对象集合上执行的。 不能使用与 2 个关系表完全相同的方式“联接”对象集合。 在 [!INCLUDE[vbteclinq](../../../csharp/includes/vbteclinq_md.md)] 中，仅当 2 个源序列没有通过任何关系相互联系时，才需要使用显式 `join` 子句。 使用 [!INCLUDE[vbtecdlinq](../../../csharp/includes/vbtecdlinq_md.md)] 时，外键表在对象模型中表示为主表的属性。 例如，在 Northwind 数据库中，Customer 表与 Orders 表之间具有外键关系。 将这两个表映射到对象模型时，Customer 类具有一个 Orders 属性，其中包含与该 Customer 相关联的 Orders 集合。 实际上，已经为你执行了联接。  
+ 在[!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 查询表达式中，联接操作是在对象集合上执行的。 不能使用与 2 个关系表完全相同的方式“联接”对象集合。 在 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 中，仅当 2 个源序列没有通过任何关系相互联系时，才需要使用显式 `join` 子句。 使用 [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] 时，外键表在对象模型中表示为主表的属性。 例如，在 Northwind 数据库中，Customer 表与 Orders 表之间具有外键关系。 将这两个表映射到对象模型时，Customer 类具有一个 Orders 属性，其中包含与该 Customer 相关联的 Orders 集合。 实际上，已经为你执行了联接。  
   
- 若要深入了解如何在 [!INCLUDE[vbtecdlinq](../../../csharp/includes/vbtecdlinq_md.md)] 的上下文中跨相关表执行查询，请参阅[如何：映射数据库关系](../../../framework/data/adonet/sql/linq/how-to-map-database-relationships.md)。  
+ 若要深入了解如何在 [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] 的上下文中跨相关表执行查询，请参阅[如何：映射数据库关系](../../../framework/data/adonet/sql/linq/how-to-map-database-relationships.md)。  
   
 ## <a name="composite-keys"></a>组合键  
  可通过使用组合键测试多个值是否相等。 有关详细信息，请参阅[如何：使用组合键进行联接](../../../csharp/programming-guide/linq-query-expressions/how-to-join-by-using-composite-keys.md)。 还可以在 `group` 子句中使用组合键。  
@@ -113,3 +113,4 @@ ms.lasthandoff: 05/10/2017
  [如何：对 Join 子句的结果进行排序](../../../csharp/programming-guide/linq-query-expressions/how-to-order-the-results-of-a-join-clause.md)   
  [如何：使用组合键进行联接](../../../csharp/programming-guide/linq-query-expressions/how-to-join-by-using-composite-keys.md)   
  [如何：安装示例数据库](http://msdn.microsoft.com/library/ed1291f6-604c-4972-ae22-0345c6dea12e)
+

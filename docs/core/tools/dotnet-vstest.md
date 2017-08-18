@@ -1,5 +1,5 @@
 ---
-title: "dotnet-vstest 命令 | Microsoft Docs"
+title: "dotnet-vstest 命令"
 description: "dotnet-vstest 命令可生成项目及其所有依赖项。"
 keywords: "dotnet-vstest, CLI, CLI 命令, .NET Core"
 author: guardrex
@@ -10,10 +10,11 @@ ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 0e36c070-2242-41d3-96f1-aea0aca48d4d
-translationtype: Human Translation
-ms.sourcegitcommit: 4a1f0c88fb1ccd6694f8d4f5687431646adbe000
-ms.openlocfilehash: 27b96e74ae1abc83ba527cb799db33bec7af35bf
-ms.lasthandoff: 03/22/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 740e0e002b8fde1c5bfd1eb8e53be54b4113c74d
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 

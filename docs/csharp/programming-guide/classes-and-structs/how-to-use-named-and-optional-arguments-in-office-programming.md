@@ -1,5 +1,5 @@
 ---
-title: "如何：在 Office 编程中使用命名参数和可选参数（C# 编程指南）| Microsoft Docs"
+title: "如何：在 Office 编程中使用命名自变量和可选自变量（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -29,20 +29,21 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: c6a591108b1ae225ecd311dcc04cd744acb48712
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: c773e7a6d902b9e61e724a69c9fdf5d61606de50
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-use-named-and-optional-arguments-in-office-programming-c-programming-guide"></a>如何：在 Office 编程中使用命名自变量和可选自变量（C# 编程指南）
-在 [!INCLUDE[csharp_dev10_long](../../../csharp/programming-guide/classes-and-structs/includes/csharp_dev10_long_md.md)] 中引入的命名参数和可选参数增强了 C# 编程中的便利性、灵活性和可读性。 另外，这些功能显著方便了对 COM 接口（如 Microsoft Office 自动化 API）的访问。  
+在 [!INCLUDE[csharp_dev10_long](~/includes/csharp-dev10-long-md.md)] 中引入的命名参数和可选参数增强了 C# 编程中的便利性、灵活性和可读性。 另外，这些功能显著方便了对 COM 接口（如 Microsoft Office 自动化 API）的访问。  
   
  在下面的示例中，方法 [ConvertToTable](http://go.microsoft.com/fwlink/?LinkId=145378) 具有十六个参数，用于表示表的各种特性，例如列数和行数、格式设置、边框、字体以及颜色。 由于大多数时候都不需要为所有十六个参数指定特定值，因此所有这些参数都是可选的。 但是，如果没有命名实参和可选实参，则必须为每个形参提供值或占位符值。 有了命名实参和可选实参，则只需为项目所需的形参指定值。  
   
  必须在计算机上安装 Microsoft Office Word 才能完成这些过程。  
   
-[!INCLUDE[note_settings_general](../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
 ### <a name="to-create-a-new-console-application"></a>创建新的控制台应用程序  
   
@@ -50,29 +51,29 @@ ms.lasthandoff: 03/13/2017
   
 2.  在 **“文件”** 菜单上，指向 **“新建”**，然后单击 **“项目”**。  
   
-3.  在“模板类别”****窗格中，展开“Visual C#”****，然后单击“Windows”****。  
+3.  在“模板类别”窗格中，展开“Visual C#”，然后单击“Windows”。  
   
-4.  查看“模板”****窗格的顶部，确保“.NET Framework 4”****出现在“目标框架”****框中。  
+4.  查看“模板”窗格的顶部，确保“.NET Framework 4”出现在“目标框架”框中。  
   
-5.  在“模板”****窗格中，单击“控制台应用程序”****。  
+5.  在“模板”窗格中，单击“控制台应用程序”。  
   
-6.  在“名称”****字段中键入项目的名称。  
+6.  在“名称”字段中键入项目的名称。  
   
-7.  单击“确定”****。  
+7.  单击 **“确定”**。  
   
-     新项目将出现在“解决方案资源管理器”****中。  
+     新项目将出现在“解决方案资源管理器”中。  
   
 ### <a name="to-add-a-reference"></a>添加引用  
   
-1.  在“解决方案资源管理器”****中，右键单击你的项目名称，然后单击“添加引用”****。 此时会显示“添加引用”****对话框。  
+1.  在“解决方案资源管理器”中，右键单击你的项目名称，然后单击“添加引用”。 此时会显示“添加引用”对话框。  
   
-2.  在“.NET”页上的“组件名称”列表中，选择“Microsoft.Office.Interop.Word”************。  
+2.  在“.NET”页上的“组件名称”列表中，选择“Microsoft.Office.Interop.Word”。  
   
-3.  单击“确定”****。  
+3.  单击“确定”。  
   
 ### <a name="to-add-necessary-using-directives"></a>添加必要的 using 指令  
   
-1.  在“解决方案资源管理器”****中，右键单击“Program.cs”****文件，然后单击“查看代码”****。  
+1.  在“解决方案资源管理器”中，右键单击“Program.cs”文件，然后单击“查看代码”。  
   
 2.  将以下 `using` 指令添加到代码文件的顶部。  
   
@@ -130,3 +131,4 @@ ConvertToTable 参数
   
 ## <a name="see-also"></a>请参阅  
  [命名参数和可选参数](../../../csharp/programming-guide/classes-and-structs/named-and-optional-arguments.md)
+

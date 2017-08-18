@@ -1,5 +1,5 @@
 ---
-title: "如何：异步调用 Web 服务 (Visual Basic) | Microsoft Docs"
+title: "如何：异步调用 Web 服务 (Visual Basic)"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.suite: 
@@ -29,16 +29,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: a88c7250ba844603bcbc33d0768a45c40f18f53e
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: f191ccb5f42f9cfc5dc4e44e58d2338422207aa1
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-call-a-web-service-asynchronously-visual-basic"></a>如何：异步调用 Web 服务 (Visual Basic)
 此示例在 Web 服务的异步处理程序事件中附加了一个处理程序，以便它能检索异步方法调用的结果。 此示例使用了 DemoTemperatureService Web 服务（位于 http://www.xmethods.net。  
   
- 当你在 [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)] 集成开发环境 (IDE) 中引用项目中的 Web 服务时，该服务将添加到 `My.WebServices` 对象中，并且 IDE 将生成一个客户端代理类来访问指定的 Web 服务  
+ 当你在 [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] 集成开发环境 (IDE) 中引用项目中的 Web 服务时，该服务将添加到 `My.WebServices` 对象中，并且 IDE 将生成一个客户端代理类来访问指定的 Web 服务  
   
  使用此代理类可以同步调用 Web 服务方法，而应用程序则在 Web 服务方法内等待函数执行完成。 另外，代理还创建其他成员来协助异步调用方法。 对于每一个 Web 服务函数（*NameOfWebServiceFunction*），代理都会创建一个 *NameOfWebServiceFunction*`Async` 子例程、一个 *NameOfWebServiceFunction*`Completed` 事件和一个 *NameOfWebServiceFunction*`CompletedEventArgs` 类。 此示例演示如何使用异步成员访问 DemoTemperatureService Web 服务的 `getTemp` 函数。  
   
@@ -91,3 +92,4 @@ ms.lasthandoff: 03/13/2017
 ## <a name="see-also"></a>请参阅  
  [访问应用程序 Web 服务](../../../visual-basic/developing-apps/programming/accessing-application-web-services.md)   
  [My.WebServices 对象](../../../visual-basic/language-reference/objects/my-webservices-object.md)
+

@@ -1,5 +1,5 @@
 ---
-title: "如何：筛选元素名称 (LINQ to XML) (C#) | Microsoft Docs"
+title: "如何：筛选元素名称 (LINQ to XML) (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,16 +14,15 @@ ms.assetid: 1849fb03-f075-421f-863c-e8fb32773cdf
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 400dfda51d978f35c3995f90840643aaff1b9c13
-ms.openlocfilehash: 5c11af47434ec00e812f966d5937c138a5ac3640
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 03f1be79322882e49b7cb619ff4578fda94450a7
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/24/2017
-
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-filter-on-element-names-linq-to-xml-c"></a>如何：筛选元素名称 (LINQ to XML) (C#)
-调用返回 <xref:System.Xml.Linq.XElement> 的 <xref:System.Collections.Generic.IEnumerable%601> 的方法之一时，可以筛选元素名称。  
+当调用返回 <xref:System.Collections.Generic.IEnumerable%601> 的 <xref:System.Xml.Linq.XElement> 的方法之一时，可以根据元素名称进行筛选。  
   
 ## <a name="example"></a>示例  
  本示例说明如何检索经过筛选仅包含具有指定名称的子代的集合。  
@@ -46,7 +45,7 @@ ProductName:Lawnmower
 ProductName:Baby Monitor  
 ```  
   
- 返回 <xref:System.Xml.Linq.XElement> 集合的 <xref:System.Collections.Generic.IEnumerable%601> 的其他方法遵循相同模式。 其签名类似于 <xref:System.Xml.Linq.XContainer.Elements%2A> 和 <xref:System.Xml.Linq.XContainer.Descendants%2A>。 以下是具有相似方法签名的完整方法列表：  
+ 其他返回 <xref:System.Collections.Generic.IEnumerable%601> 集合的 <xref:System.Xml.Linq.XElement> 的方法都遵循相同的模式。 它们的签名类似于 <xref:System.Xml.Linq.XContainer.Elements%2A> 和 <xref:System.Xml.Linq.XContainer.Descendants%2A>。 以下是具有相似方法签名的完整方法列表：  
   
 -   <xref:System.Xml.Linq.XNode.Ancestors%2A>  
   
@@ -86,3 +85,4 @@ foreach (XElement prdName in items)
   
 ## <a name="see-also"></a>请参阅  
  [LINQ to XML 轴 (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-axes.md)
+

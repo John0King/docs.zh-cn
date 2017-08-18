@@ -1,5 +1,5 @@
 ---
-title: "创建和引发异常（C# 编程指南）| Microsoft Docs"
+title: "创建和引发异常（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -30,15 +30,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: c3eab50a6a785676dd397498fbe95348187e2b7e
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 5f49b0911aa94480988987f209bc73d187451620
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="creating-and-throwing-exceptions-c-programming-guide"></a>创建和引发异常（C# 编程指南）
-异常用于指示在运行程序时发生了错误。 此时将创建一个描述错误的异常对象，然后使用 [throw](../../../csharp/language-reference/keywords/throw.md) 关键字引发**。 然后，运行时搜索最兼容的异常处理程序。  
+异常用于指示在运行程序时发生了错误。 此时将创建一个描述错误的异常对象，然后使用 [throw](../../../csharp/language-reference/keywords/throw.md) 关键字引发。 然后，运行时搜索最兼容的异常处理程序。  
   
  当存在下列一种或多种情况时，程序员应引发异常：  
   
@@ -50,19 +50,19 @@ ms.lasthandoff: 03/13/2017
   
 -   根据对象的状态，对某个对象进行不适当的调用。  
   
-     一个示例可能是尝试写入只读文件。 在对象状态不允许操作的情况下，引发 <xref:System.InvalidOperationException> 的一个实例或基于此类的派生的对象。 以下为引发 <xref:System.InvalidOperationException> 对象的方法的示例：  
+     一个示例可能是尝试写入只读文件。 在对象状态不允许操作的情况下，引发 <xref:System.InvalidOperationException> 的实例或基于此类的派生的对象。 这是引发 <xref:System.InvalidOperationException> 对象的方法示例：  
   
      [!code-cs[csProgGuideExceptions#13](../../../csharp/programming-guide/exceptions/codesnippet/CSharp/creating-and-throwing-exceptions_2.cs)]  
   
 -   方法的参数引发了异常。  
   
-     在这种情况下，应该捕获原始异常，并创建一个 <xref:System.ArgumentException> 实例。 应将原始异常传递给 <xref:System.ArgumentException> 的构造函数作为 <xref:System.Exception.InnerException%2A> 参数：  
+     在这种情况下，应捕获原始异常，并创建 <xref:System.ArgumentException> 实例。 应将原始异常作为 <xref:System.Exception.InnerException%2A> 参数传递给 <xref:System.ArgumentException> 的构造函数：  
   
      [!code-cs[csProgGuideExceptions#14](../../../csharp/programming-guide/exceptions/codesnippet/CSharp/creating-and-throwing-exceptions_3.cs)]  
   
  异常包含一个名为 <xref:System.Exception.StackTrace%2A> 的属性。 此字符串包含当前调用堆栈上的方法的名称，以及为每个方法引发异常的位置（文件名和行号）。 <xref:System.Exception.StackTrace%2A> 对象由公共语言运行时 (CLR) 从 `throw` 语句的位置点自动创建，因此必须从堆栈跟踪的开始点引发异常。  
   
- 所有异常都包含名为 <xref:System.Exception.Message%2A> 的属性。 应设置此字符串来解释发生异常的原因。 请注意，不应将安全敏感的信息放在消息文本中。 除 <xref:System.Exception.Message%2A> 以外，<xref:System.ArgumentException> 也包含一个名为 <xref:System.ArgumentException.ParamName%2A> 的属性，应将该属性设置为导致引发异常的参数的名称。 对于属性资源库，<xref:System.ArgumentException.ParamName%2A> 应设置为 `value`。  
+ 所有异常都包含一个名为 <xref:System.Exception.Message%2A> 的属性。 应设置此字符串来解释发生异常的原因。 请注意，不应将安全敏感的信息放在消息文本中。 除 <xref:System.Exception.Message%2A> 以外，<xref:System.ArgumentException> 也包含一个名为 <xref:System.ArgumentException.ParamName%2A> 的属性，应将该属性设置为导致引发异常的参数的名称。 对于属性资源库，<xref:System.ArgumentException.ParamName%2A> 应设置为 `value`。  
   
  公共的受保护方法成员在无法完成其预期功能时应引发异常。 引发的异常类应是符合错误条件的最具体的可用异常。 这些异常应编写为类功能的一部分，并且原始类的派生类或更新应保留相同的行为以实现后向兼容性。  
   
@@ -73,7 +73,7 @@ ms.lasthandoff: 03/13/2017
   
 -   只能引发异常，而不能作为返回值或参数返回异常。  
   
--   请勿有意从你自己的源代码中引发 <xref:System.Exception?displayProperty=fullName>、<xref:System.SystemException?displayProperty=fullName>、<xref:System.NullReferenceException?displayProperty=fullName> 或 <xref:System.IndexOutOfRangeException?displayProperty=fullName>。  
+-   请勿有意从自己的源代码中引发 <xref:System.Exception?displayProperty=fullName>、<xref:System.SystemException?displayProperty=fullName>、<xref:System.NullReferenceException?displayProperty=fullName> 或 <xref:System.IndexOutOfRangeException?displayProperty=fullName>。  
   
 -   不要创建可在调试模式下引发，但不会在发布模式下引发的异常。 若要在开发阶段确定运行时错误，请改用调试断言。  
   
@@ -87,8 +87,9 @@ ms.lasthandoff: 03/13/2017
 ## <a name="c-language-specification"></a>C# 语言规范  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [异常和异常处理](../../../csharp/programming-guide/exceptions/index.md)   
  [异常层次结构](http://msdn.microsoft.com/library/f7d68675-be06-40fb-a555-05f0c5a6f66b)   
  [异常处理](../../../csharp/programming-guide/exceptions/exception-handling.md)
+

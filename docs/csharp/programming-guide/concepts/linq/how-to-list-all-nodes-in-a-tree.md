@@ -1,5 +1,5 @@
 ---
-title: "如何：列出树中的所有节点 (C#) | Microsoft 文档"
+title: "如何：列出树中的所有节点 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,17 +14,17 @@ ms.assetid: 3e934371-f4c6-458b-9f6b-f9061b596f5b
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 0d91ec6807a533a504c643bc1303d1a42953f942
-ms.lasthandoff: 03/13/2017
-
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: ae2f34e085b0084d5cb589cfdd14562ca6f50bc1
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-list-all-nodes-in-a-tree-c"></a>如何：列出树中的所有节点 (C#)
 有时，列出树中的所有节点会有帮助。 它可帮助准确了解方法或属性是如何影响树的。 以文本形式列出所有节点的一种方法是生成准确逐一地标识树中所有节点的 XPath 表达式。  
   
- 使用 [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] 执行 XPath 表达式不特别有用。 XPath 表达式的性能不如 [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] 查询，并且 [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] 查询的功能更强大。 但作为标识 XML 树中节点的一种方式，XPath 可以有效地工作。  
+ 使用 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 执行 XPath 表达式不特别有用。 XPath 表达式的性能不如 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 查询，并且 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 查询的功能更强大。 但作为标识 XML 树中节点的一种方式，XPath 可以有效地工作。  
   
 ## <a name="example"></a>示例  
  本示例演示一个名为 `GetXPath` 的函数，该函数为 XML 树中的每个节点生成一个特定的 XPath 表达式。 即使节点位于命名空间中，此示例也可生成相应的 XPath 表达式。 这些 XPath 表达式通过使用命名空间前缀生成。  
@@ -362,3 +362,4 @@ class Program
   
 ## <a name="see-also"></a>请参阅  
  [高级查询技术 (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)
+

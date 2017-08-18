@@ -1,5 +1,5 @@
 ---
-title: "使用 Override 和 New 关键字进行版本控制（C# 编程指南）| Microsoft Docs"
+title: "使用 Override 和 New 关键字进行版本控制（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -28,10 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: b464b4c395af093bb9124bb671c5c212c750f497
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 167262f7b2423fffec61b1e903f849d2ab387ed2
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="versioning-with-the-override-and-new-keywords-c-programming-guide"></a>使用 Override 和 New 关键字进行版本控制（C# 编程指南）
@@ -77,7 +78,7 @@ C# 语言经过专门设计，以便不同库中的[基类](../../../csharp/lang
   
  [!code-cs[csProgGuideInheritance#44](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/versioning-with-the-override-and-new-keywords_5.cs)]  
   
- 如果不需要自己的方法替代新的基类方法，则需要注意以下事项。 为了避免这两个方法之间发生混淆，可以重命名你的方法。 这可能很耗费时间且容易出错，而且在某些情况下并不可行。 但是，如果项目相对较小，则可以使用 Visual Studio 的重构选项来重命名方法。 有关详细信息，请参阅[重构类和类型（类设计器）](https://docs.microsoft.com/visualstudio/ide/refactoring-classes-and-types-class-designer)。  
+ 如果不需要自己的方法替代新的基类方法，则需要注意以下事项。 为了避免这两个方法之间发生混淆，可以重命名你的方法。 这可能很耗费时间且容易出错，而且在某些情况下并不可行。 但是，如果项目相对较小，则可以使用 Visual Studio 的重构选项来重命名方法。 有关详细信息，请参阅[重构类和类型（类设计器）](/visualstudio/ide/refactoring-classes-and-types-class-designer)。  
   
  或者，也可以通过在派生类定义中使用关键字 `new` 来防止出现该警告：  
   
@@ -105,3 +106,4 @@ C# 语言经过专门设计，以便不同库中的[基类](../../../csharp/lang
  [类和结构](../../../csharp/programming-guide/classes-and-structs/index.md)   
  [方法](../../../csharp/programming-guide/classes-and-structs/methods.md)   
  [继承](../../../csharp/programming-guide/classes-and-structs/inheritance.md)
+

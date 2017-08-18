@@ -1,5 +1,5 @@
 ---
-title: "缓解：EventSource.WriteEvent 方法调用 | Microsoft Docs"
+title: "迁移：EventSource.WriteEvent 方法调用"
 ms.custom: 
 ms.date: 03/30/2017
 ms.prod: .net-framework
@@ -14,15 +14,15 @@ caps.latest.revision: 6
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: cde809989d89c10caeb97ec853c8649a108cd72d
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 270f89183bced5d07598b1731f18acf90ec9715a
 ms.contentlocale: zh-cn
-ms.lasthandoff: 04/18/2017
+ms.lasthandoff: 07/28/2017
 
 ---
-# <a name="mitigation-eventsourcewriteevent-method-calls"></a>缓解：EventSource.WriteEvent 方法调用
-[!INCLUDE[net_v451](../../../includes/net-v451-md.md)] 在派生自 <xref:System.Diagnostics.Tracing.EventSource?displayProperty=fullName> 的类中的 ETW 事件方法和基类的 <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> 方法之间强制实施协定。 ETW 事件方法必须向 <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> 方法传递事件 ID，后跟传递给事件方法的相同自变量。  
+# <a name="mitigation-eventsourcewriteevent-method-calls"></a>迁移：EventSource.WriteEvent 方法调用
+[!INCLUDE[net_v451](../../../includes/net-v451-md.md)] 强制在从 <xref:System.Diagnostics.Tracing.EventSource?displayProperty=fullName> 派生的类中的 ETW 事件方法与其基类的 <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> 方法之间实施协定。 ETW 事件方法必须向 <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> 方法传递事件 ID，后跟传递给该事件方法的相同参数。  
   
 ## <a name="impact"></a>影响  
  按以下方式定义的 ETW 事件方法会使协定中断：  
@@ -35,7 +35,7 @@ public void Info2(string message)
 }  
 ```  
   
- 如果违反此协定，在 <xref:System.Diagnostics.Tracing.EventListener> 对象读取进程中的 <xref:System.Diagnostics.Tracing.EventSource> 数据时，<xref:System.IndexOutOfRangeException> 异常会在运行时抛出。  
+ 如果 <xref:System.IndexOutOfRangeException> 对象正在读取 <xref:System.Diagnostics.Tracing.EventListener> 数据，则违反此协定时，会引发 <xref:System.Diagnostics.Tracing.EventSource> 异常。  
   
  此 ETW 事件方法的定义应遵循以下模式：  
   
@@ -50,7 +50,7 @@ public void Info2(string message)
 ## <a name="mitigation"></a>缓解操作  
  必须修改现有代码以符合所需模式。  
   
- 可以定义两个方法来调用 <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> 方法，从而最大限度地减少需要更改的代码量，如下所示：  
+ 可以通过定义两个方法来调用 <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> 方法，来最大程度减少必须更改的代码量，如下所示：  
   
 ```  
 [NonEvent]  

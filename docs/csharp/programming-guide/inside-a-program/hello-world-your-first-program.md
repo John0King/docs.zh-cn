@@ -1,5 +1,5 @@
 ---
-title: "Hello World -- 你的第一个程序（C# 编程指南） | Microsoft Docs"
+title: "Hello World -- 您的第一个程序（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -31,17 +31,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 7e33ed084c560470a486ebbb25035a59ddc18565
-ms.openlocfilehash: 21abcf70cce2d6c9052629ce60d08e9ec6ac16e7
+ms.translationtype: HT
+ms.sourcegitcommit: b7cb84362c96dac50ae5136334138b55ed1ce00b
+ms.openlocfilehash: 03891f83885cf41ab157ebd78ef7e72767b4b163
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/31/2017
 
 ---
 # <a name="hello-world----your-first-program-c-programming-guide"></a>Hello World -- 您的第一个程序（C# 编程指南）
 以下过程创建传统“Hello World!”程序的 C# 版本。 该程序显示字符串 `Hello World!`  
   
- 有关介绍性概念的更多示例，请参阅 [Visual C# 和 Visual Basic 入门](https://docs.microsoft.com/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)。  
+ 有关介绍性概念的更多示例，请参阅 [Visual C# 和 Visual Basic 入门](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)。  
   
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
@@ -123,11 +123,11 @@ ms.lasthandoff: 05/22/2017
   
 2.  执行以下任一步骤以打开命令提示符窗口：  
   
-    -   在 Windows 8 的“开始”屏幕上，搜索 `Developer Command Prompt`，然后点击或选择“VS2012 开发人员命令提示”。  
+    -   在 Windows 10 的“开始”菜单上，搜索 `Developer Command Prompt`，然后点击或选择“VS 2017 开发人员命令提示”。  
   
          将出现“开发人员命令提示”窗口。  
   
-    -   在 Windows 7 中，打开“启动”菜单，展开当前版本的 Visual Studio 的文件夹，打开“Visual Studio Tools”快捷菜单，然后选择“VS2012 开发人员命令提示”。  
+    -   在 Windows 7 中，打开“启动”菜单，展开当前版本的 Visual Studio 的文件夹，打开“Visual Studio Tools”快捷菜单，然后选择“VS 2017 开发人员命令提示”。  
   
          将出现“开发人员命令提示”窗口。  
   
@@ -156,4 +156,5 @@ ms.lasthandoff: 05/22/2017
  [\<paveover>C# 示例应用程序](http://msdn.microsoft.com/en-us/9a9d7aaa-51d3-4224-b564-95409b0f3e15)   
  [C# 参考](../../../csharp/language-reference/index.md)   
  [Main() 和命令行自变量](../../../csharp/programming-guide/main-and-command-args/index.md)   
- [Visual C# 和 Visual Basic 入门](https://docs.microsoft.com/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)
+ [Visual C# 和 Visual Basic 入门](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)
+

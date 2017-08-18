@@ -1,5 +1,5 @@
 ---
-title: "如何：在 Visual Basic 中将字符串发送到串行端口 | Microsoft Docs"
+title: "如何：在 Visual Basic 中将字符串发送到串行端口"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -33,15 +33,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: 14c5de8d0fa8195129b7ae65c1d373834307488a
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 602b249d01252bbb1853ed02d9af86697d54b0a5
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-send-strings-to-serial-ports-in-visual-basic"></a>如何：在 Visual Basic 中将字符串发送到串行端口
-本主题介绍在 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] 中如何使用 `My.Computer.Ports` 将字符串发送到计算机的串行端口。  
+本主题介绍在 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 中如何使用 `My.Computer.Ports` 将字符串发送到计算机的串行端口。  
   
 ## <a name="example"></a>示例  
  本示例将字符串发送到 COM1 串行端口。 你可能需要使用计算机上的其他串行端口。  
@@ -68,3 +68,4 @@ ms.lasthandoff: 05/22/2017
  <xref:System.IO.Ports.SerialPort?displayProperty=fullName>   
  [如何：使用连接到串行端口的调制解调器拨号](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-dial-modems-attached-to-serial-ports.md)   
  [如何：显示可用的串行端口](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-show-available-serial-ports.md)
+

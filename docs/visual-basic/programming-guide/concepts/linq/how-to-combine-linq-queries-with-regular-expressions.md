@@ -1,5 +1,5 @@
 ---
-title: "如何︰ 将 LINQ 查询与正则表达式 (Visual Basic 中) |Microsoft 文档"
+title: "如何：将 LINQ 查询与正则表达式合并 (Visual Basic) | Microsoft Docs"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -20,14 +20,15 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Machine Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 283b5e844c91da22aadd7bcf88ea327ccc080be7
-ms.lasthandoff: 03/13/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 1cd1761d630f61a58f29d88e9342551d48cbc6a8
+ms.openlocfilehash: d9d63a729a31394b96a78479bc115125a1a7baeb
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/26/2017
 
 ---
-# <a name="how-to-combine-linq-queries-with-regular-expressions-visual-basic"></a>如何︰ 将 LINQ 查询与正则表达式 (Visual Basic)
-此示例演示如何使用<xref:System.Text.RegularExpressions.Regex>类来创建更复杂的文本字符串中匹配的正则表达式。</xref:System.Text.RegularExpressions.Regex> LINQ 查询轻松设置筛选器的完全您要搜索的正则表达式，并对结果进行加工的文件。  
+# <a name="how-to-combine-linq-queries-with-regular-expressions-visual-basic"></a>如何：将 LINQ 查询与正则表达式合并 (Visual Basic)
+此示例演示如何使用 <xref:System.Text.RegularExpressions.Regex> 类在文本字符串中为更复杂的匹配创建正则表达式。 通过 LINQ 查询可以轻松地准确筛选要用正则表达式搜索的文件，并对结果进行改良。  
   
 ## <a name="example"></a>示例  
   
@@ -38,18 +39,16 @@ Class LinqRegExVB
   
         ' Root folder to query, along with all subfolders.  
         ' Modify this path as necessary so that it accesses your Visual Studio folder.  
-        Dim startFolder As String = "C:\program files\Microsoft Visual Studio 9.0\"  
+        Dim startFolder As String = "C:\Program Files (x86)\Microsoft Visual Studio 14.0\"
         ' One of the following paths may be more appropriate on your computer.  
-        'string startFolder = @"c:\program files (x86)\Microsoft Visual Studio 9.0\";  
-        'string startFolder = @"c:\program files\Microsoft Visual Studio 10.0\";  
-        'string startFolder = @"c:\program files (x86)\Microsoft Visual Studio 10.0\";  
+        'Dim startFolder As String = "C:\Program Files (x86)\Microsoft Visual Studio\2017\"
   
         ' Take a snapshot of the file system.  
         Dim fileList As IEnumerable(Of System.IO.FileInfo) = GetFiles(startFolder)  
   
         ' Create a regular expression to find all things "Visual".  
         Dim searchTerm As System.Text.RegularExpressions.Regex =   
-            New System.Text.RegularExpressions.Regex("Visual (Basic|C#|C\+\+|J#|SourceSafe|Studio)")  
+            New System.Text.RegularExpressions.Regex("Visual (Basic|C#|C\+\+|Studio)")  
   
         ' Search the contents of each .htm file.  
         ' Remove the where clause to find even more matches!  
@@ -98,11 +97,12 @@ Class LinqRegExVB
 End Class  
 ```  
   
- 请注意，您还可以查询<xref:System.Text.RegularExpressions.MatchCollection>所返回的对象`RegEx`搜索。</xref:System.Text.RegularExpressions.MatchCollection> 在此示例中只有每个匹配项的值在结果中生成。 但是，还有可能要使用 LINQ 来执行所有类型的筛选、 排序和分组所依据该集合。 因为<xref:System.Text.RegularExpressions.MatchCollection>是非泛型<xref:System.Collections.IEnumerable>集合中，您必须显式声明在查询中的范围变量的类型。</xref:System.Collections.IEnumerable> </xref:System.Text.RegularExpressions.MatchCollection>  
+ 请注意，还可以查询 `RegEx` 搜索返回的 <xref:System.Text.RegularExpressions.MatchCollection> 对象。 在本例中，只在结果中生成每个匹配项的值。 但是，也可以使用 LINQ 对集合执行筛选、排序和分组等各种操作。 由于 <xref:System.Text.RegularExpressions.MatchCollection> 为非泛型 <xref:System.Collections.IEnumerable> 集合，所以必须显式声明查询中范围变量的类型。  
   
 ## <a name="compiling-the-code"></a>编译代码  
- 创建一个面向.NET Framework 版本 3.5 或更高版本对 System.Core.dll 的引用与项目和一个`Imports`System.Linq 命名空间的语句。  
+ 创建面向 .NET Framework 3.5 或更高版本的项目，此项目包含对 System.Core.dll 的引用和用于 System.Linq 命名空间的 `Imports` 语句。  
   
 ## <a name="see-also"></a>另请参阅  
  [LINQ 和字符串 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-strings.md)   
  [LINQ 和文件目录 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-file-directories.md)
+

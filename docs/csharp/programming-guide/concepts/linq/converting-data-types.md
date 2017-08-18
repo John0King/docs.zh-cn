@@ -1,5 +1,5 @@
 ---
-title: "转换数据类型 (C#) | Microsoft Docs"
+title: "转换数据类型 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,10 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 922e2f26c5f8ded260644e8effa043b03b721020
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 454fb0ce937d7d20dfce26d92dbf49de24f062f0
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="converting-data-types-c"></a>转换数据类型 (C#)
@@ -30,11 +31,11 @@ ms.lasthandoff: 03/13/2017
   
  LINQ 查询中的转换运算可用于各种应用程序。 以下是一些示例：  
   
--   <xref:System.Linq.Enumerable.AsEnumerable%2A?displayProperty=fullName> 方法可用于隐藏标准查询运算符类型的自定义实现。  
+-   <xref:System.Linq.Enumerable.AsEnumerable%2A?displayProperty=fullName> 方法可用于隐藏类型的标准查询运算符自定义实现。  
   
 -   <xref:System.Linq.Enumerable.OfType%2A?displayProperty=fullName> 方法可用于为 LINQ 查询启用非参数化集合。  
   
--   <xref:System.Linq.Enumerable.ToArray%2A?displayProperty=fullName>、<xref:System.Linq.Enumerable.ToDictionary%2A?displayProperty=fullName>、<xref:System.Linq.Enumerable.ToList%2A?displayProperty=fullName> 和 <xref:System.Linq.Enumerable.ToLookup%2A?displayProperty=fullName> 方法可用于强制执行即时的查询，而不是推迟查询，直至枚举该查询。  
+-   <xref:System.Linq.Enumerable.ToArray%2A?displayProperty=fullName>、<xref:System.Linq.Enumerable.ToDictionary%2A?displayProperty=fullName>、<xref:System.Linq.Enumerable.ToList%2A?displayProperty=fullName> 和 <xref:System.Linq.Enumerable.ToLookup%2A?displayProperty=fullName> 方法可用于强制执行即时的查询，而不是将其推迟到枚举该查询时。  
   
 ## <a name="methods"></a>方法  
  下表列出了执行数据类型转换的标准查询运算符方法。  
@@ -43,9 +44,9 @@ ms.lasthandoff: 03/13/2017
   
 |方法名|描述|C# 查询表达式语法|更多信息|  
 |-----------------|-----------------|---------------------------------|----------------------|  
-|AsEnumerable|返回类型为 <xref:System.Collections.Generic.IEnumerable%601> 的输入。|不适用。|<xref:System.Linq.Enumerable.AsEnumerable%2A?displayProperty=fullName>|  
+|AsEnumerable|返回类型化为 <xref:System.Collections.Generic.IEnumerable%601> 的输入。|不适用。|<xref:System.Linq.Enumerable.AsEnumerable%2A?displayProperty=fullName>|  
 |AsQueryable|将（泛型）<xref:System.Collections.IEnumerable> 转换为（泛型）<xref:System.Linq.IQueryable>。|不适用。|<xref:System.Linq.Queryable.AsQueryable%2A?displayProperty=fullName>|  
-|Cast|将集合中的元素转换为指定类型。|使用显式类型化的范围变量。 例如：<br /><br /> `from string str in words`|<xref:System.Linq.Enumerable.Cast%2A?displayProperty=fullName><br /><br /> <xref:System.Linq.Queryable.Cast%2A?displayProperty=fullName>|  
+|Cast|将集合中的元素转换为指定类型。|使用显式类型化的范围变量。 例如: <br /><br /> `from string str in words`|<xref:System.Linq.Enumerable.Cast%2A?displayProperty=fullName><br /><br /> <xref:System.Linq.Queryable.Cast%2A?displayProperty=fullName>|  
 |OfType|根据其转换为指定类型的能力筛选值。|不适用。|<xref:System.Linq.Enumerable.OfType%2A?displayProperty=fullName><br /><br /> <xref:System.Linq.Queryable.OfType%2A?displayProperty=fullName>|  
 |ToArray|将集合转换为数组。 此方法强制执行查询。|不适用。|<xref:System.Linq.Enumerable.ToArray%2A?displayProperty=fullName>|  
 |ToDictionary|根据键选择器函数将元素放入 <xref:System.Collections.Generic.Dictionary%602>。 此方法强制执行查询。|不适用。|<xref:System.Linq.Enumerable.ToDictionary%2A?displayProperty=fullName>|  
@@ -96,3 +97,4 @@ static void Cast()
  [from 子句](../../../../csharp/language-reference/keywords/from-clause.md)   
  [LINQ 查询表达式](../../../../csharp/programming-guide/linq-query-expressions/index.md)   
  [如何：使用 LINQ 查询 ArrayList (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq.md)
+

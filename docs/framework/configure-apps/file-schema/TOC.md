@@ -1,6 +1,0 @@
-# [<linkedConfiguration> 元素](linkedconfiguration-element.md)
-# [配置节架构](configuration-sections-schema.md)
-# [<assemblyBinding> 元素](assemblybinding-element-for-configuration.md)
-# [配置文件架构](index.md)
-# [应用程序设置架构](application-settings-schema.md)
-# [<configuration> 元素](configuration-element.md)

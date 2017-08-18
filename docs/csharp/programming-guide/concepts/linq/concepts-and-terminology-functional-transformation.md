@@ -1,5 +1,5 @@
 ---
-title: "概念和术语（函数转换）(C#) | Microsoft Docs"
+title: "概念和术语（函数转换）(C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,12 +14,11 @@ ms.assetid: 03defb3a-7e17-4ab1-8efa-4dd66621e860
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
-ms.openlocfilehash: 87a8efd8e8631ac200a95069f889d6756cbd5a4a
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: ba05385b4cf686ac7bf8a203140338d31da80680
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/10/2017
-
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="concepts-and-terminology-functional-transformation-c"></a>概念和术语（函数转换）(C#)
@@ -87,3 +86,4 @@ ms.lasthandoff: 05/10/2017
 ## <a name="see-also"></a>另请参阅  
  [纯函数转换简介 (C#)](../../../../csharp/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md)   
  [函数编程与命令式编程 (C#)](../../../../csharp/programming-guide/concepts/linq/functional-programming-vs-imperative-programming.md)
+

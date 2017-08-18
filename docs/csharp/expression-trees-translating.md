@@ -1,7 +1,7 @@
 ---
 title: "转换表达式树"
-description: "转换表达式树"
-keywords: ".NET、.NET Core"
+description: "介绍如何访问表达式树中的每个节点，同时生成该表达式树的已修改副本。"
+keywords: .NET, .NET Core
 author: BillWagner
 ms.author: wiwagn
 ms.date: 06/20/2016
@@ -10,11 +10,11 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: b453c591-acc6-4e08-8175-97e5bc65958e
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 01cc83bc46d2cbe6beaaa5c3212b18bb8608ec82
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 602a17591d27ebfd098516453b9028bca37ad5e3
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 

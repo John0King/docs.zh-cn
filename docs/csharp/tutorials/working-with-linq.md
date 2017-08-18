@@ -11,10 +11,10 @@ ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 0db12548-82cb-4903-ac88-13103d70aa77
 ms.translationtype: Human Translation
-ms.sourcegitcommit: be7974018ce3195dc7344192d647fe64fb2ebcc4
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
 ms.openlocfilehash: ec86c558b9aa9c6269fcf9890978f61a934c081f
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -24,7 +24,7 @@ ms.lasthandoff: 05/22/2017
 
 此教程将介绍 .NET Core 和 C# 语言的许多功能。 你将了解：
 
-*    如何使用 LINQ 生成序列
+*   如何使用 LINQ 生成序列
 *   如何编写可轻松用于 LINQ 查询的方法。
 *   如何区分及早计算和惰性计算。
 

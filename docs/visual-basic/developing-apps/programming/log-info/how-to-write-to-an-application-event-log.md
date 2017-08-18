@@ -1,5 +1,5 @@
 ---
-title: "如何：写入应用程序事件日志 (Visual Basic) | Microsoft Docs"
+title: "如何：写入应用程序事件日志 (Visual Basic)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -34,11 +34,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: ea527f0161a3bff759a8d33e4c5fa1c6c6e1df29
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 7cc73b0644003f8231a7792b0b62d143159da075
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-write-to-an-application-event-log-visual-basic"></a>如何：写入应用程序事件日志 (Visual Basic)
@@ -61,7 +61,7 @@ ms.lasthandoff: 05/22/2017
   
     1.  在 **“项目”** 菜单上选择 **“添加新项”**。  
   
-    2.  在“添加新项” 对话框中，选择“应用程序配置文件”。  
+    2.  在“添加新项”  对话框中，选择“应用程序配置文件” 。  
   
     3.  单击 **“添加”**。  
   
@@ -103,3 +103,4 @@ ms.lasthandoff: 05/22/2017
  [使用应用程序日志](../../../../visual-basic/developing-apps/programming/log-info/working-with-application-logs.md)   
  [如何：记录异常](../../../../visual-basic/developing-apps/programming/log-info/how-to-log-exceptions.md)   
  [演练：确定 My.Application.Log 写入信息的位置](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md)
+

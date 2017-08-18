@@ -1,5 +1,5 @@
 ---
-title: "对 Func 和 Action 泛型委托使用变体 (C#) | Microsoft Docs"
+title: "对 Func 和 Action 泛型委托使用变体 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,10 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 8e14432158ac10a236a157efc5d2872a1a239598
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 976057252a6cfa378008e9508145be7bc330fdc8
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="using-variance-for-func-and-action-generic-delegates-c"></a>对 Func 和 Action 泛型委托使用变体 (C#)
@@ -99,4 +100,5 @@ class Program
   
 ## <a name="see-also"></a>请参阅  
  [协变和逆变 (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/index.md)   
- [泛型](https://msdn.microsoft.com/library/ms172192)
+ [泛型](~/docs/standard/generics/index.md)
+

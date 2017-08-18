@@ -1,5 +1,5 @@
 ---
-title: "使用异常（C# 编程指南）| Microsoft Docs"
+title: "使用异常（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -28,11 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a5ed524a1b17f7be8903f998cbd732594faab831
-ms.openlocfilehash: a8c29002ae2287df60996ed2b23068eec1e2739b
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 96fc082d135d38f521429de7b4e9a668773982ea
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/15/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="using-exceptions-c-programming-guide"></a>使用异常（C# 编程指南）
@@ -69,3 +69,4 @@ ms.lasthandoff: 05/15/2017
 ## <a name="see-also"></a>请参阅  
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [异常和异常处理](../../../csharp/programming-guide/exceptions/index.md)
+

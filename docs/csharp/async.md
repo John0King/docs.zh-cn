@@ -1,7 +1,7 @@
 ---
 title: "异步编程"
-description: "异步编程"
-keywords: ".NET、.NET Core"
+description: "了解 .NET Core 提供的 C# 语言级别异步编程模式。"
+keywords: .NET, .NET Core
 author: cartermp
 ms.author: wiwagn
 ms.date: 06/20/2016
@@ -10,11 +10,11 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: b878c34c-a78f-419e-a594-a2b44fa521a4
-ms.translationtype: Human Translation
-ms.sourcegitcommit: be7974018ce3195dc7344192d647fe64fb2ebcc4
-ms.openlocfilehash: 2983dccc63c38884a24f4183d41b406797d5d10f
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 2ddaa82e6f8492142523e9d240b0d337cfccffd8
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/14/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -32,7 +32,7 @@ C# 拥有语言级别的异步编程模型，它使你能轻松编写异步代�
 
 对于 CPU 绑定代码，当你 `await` 一个操作，它将在后台线程通过 `Task.Run` 方法启动。
 
-`await` 关键字是点睛之笔，因为它暂停对执行 `await` 的方法的调用方的控制权。  这正是 UI 具有响应性或服务具有灵活性的原因。
+`await` 关键字有这奇妙的作用。 它控制执行 `await` 的方法的调用方，且它最终允许 UI 具有响应性或服务具有灵活性。
 
 除上方链接的 TAP 文章中介绍的 `async` 和 `await` 之外，还有其他处理异步代码的方法，但本文档将在下文中重点介绍语言级别的构造。
 
@@ -74,7 +74,7 @@ private DamageResult CalculateDamageDone()
 
 calculateButton.Clicked += async (o, e) =>
 {
-    // This line will yield control to the UI CalculateDamageDone()
+    // This line will yield control to the UI while CalculateDamageDone()
     // performs its work.  The UI thread is free to perform other work.
     var damageResult = await Task.Run(() => CalculateDamageDone());
     DisplayDamage(damageResult);
@@ -180,7 +180,6 @@ private async void SeeTheDotNets_Click(object sender, RoutedEventArgs e)
 此示例演示如何为一组 `User` 捕捉 `userId` 数据。
 
 ```csharp
-
 public async Task<User> GetUser(int userId)
 {
     // Code omitted:
@@ -205,7 +204,6 @@ public static Task<IEnumerable<User>> GetUsers(IEnumerable<int> userIds)
 以下是使用 LINQ 进行更简洁编写的另一种方法：
 
 ```csharp
-
 public async Task<User> GetUser(int userId)
 {
     // Code omitted:

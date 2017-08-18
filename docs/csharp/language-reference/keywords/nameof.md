@@ -1,6 +1,6 @@
 ---
-title: "nameof（C# 和 Visual Basic 参考）| Microsoft Docs"
-ms.date: 2017-03-03
+title: "nameof（C# 参考）"
+ms.date: 2017-06-16
 ms.prod: .net
 ms.technology:
 - devlang-csharp
@@ -28,14 +28,14 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: dc1c456c71efb3cc6e60a8fdc77384e65975f110
-ms.openlocfilehash: da3fef282ac71de07057131069bf58d4f761ad2d
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: db79af5f38439b881863cf3e03aa0e684ec5cd39
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/15/2017
+ms.lasthandoff: 07/28/2017
 
 ---
-# <a name="nameof-c-and-visual-basic-reference"></a>nameof（C# 和 Visual Basic 引用）
+# <a name="nameof-c-reference"></a>nameof（C# 参考）
 
 用于获取变量、类型或成员的简单（非限定）字符串名称。  
 
@@ -122,19 +122,6 @@ nameof(f<>) -> syntax error
 nameof(Method2()) -> error "This expression does not have a name"  
 ```  
   
- 上面的很多示例都适用于 Visual Basic。  下面是一些特定的 Visual Basic 示例：  
-  
-```vb  
-NameOf(a!Foo) -> ' error  "This expression does not have a name"  
-NameOf(dict("Foo")) -> ' error  "This expression does not have a name": default property access  
-NameOf(dict.Item("Foo")) -> ' error  "This expression does not have a name"  
-NameOf(arr(2)) -> ' error  "This expression does not have a name": array element index  
-Dim x = Nothing   
-NameOf(x.ToString(2)) -> ' error  "This expression does not have a name"  
-Dim o = Nothing  
-NameOf(o.Equals) -> ' result "Equals".  Warning: "Access of static member of instance; instance will not be evaluated"  
-```  
-  
 ## <a name="remarks"></a>备注  
  `nameof` 的参数必须是简单名称、限定名称、成员访问、指定成员的基访问或指定成员的此类访问。  参数表达式标识代码定义，但从不进行计算。  
   
@@ -165,12 +152,9 @@ class C {
 ## <a name="language-specifications"></a>语言规范  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
- 有关详细信息，请参阅 [Visual Basic 语言参考](../../../visual-basic/language-reference/index.md)。  
-  
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [C# 参考](../../../csharp/language-reference/index.md)   
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [typeof](../../../csharp/language-reference/keywords/typeof.md)   
- [Visual Basic 语言参考](../../../visual-basic/language-reference/index.md)   
- [Visual Basic 编程指南](../../../visual-basic/programming-guide/index.md)
+ 
 

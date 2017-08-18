@@ -1,5 +1,5 @@
 ---
-title: "序列化为文件、TextWriter 和 XmlWriter1 | Microsoft Docs"
+title: "序列化为文件、TextWriter 和 XmlWriter1"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,18 +19,19 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: f61324395e81509e5800e99b654a8c669d4397f0
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 94a2b3e16703496d2e59b08677395db30d944d56
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="serializing-to-files-textwriters-and-xmlwriters"></a>序列化为文件、TextWriter 和 XmlWriter
-可将 XML 树序列化为 <xref:System.IO.File>、<xref:System.IO.TextWriter> 或 <xref:System.Xml.XmlWriter>。  
+可以将 XML 树序列化为 <xref:System.IO.File>、<xref:System.IO.TextWriter> 或 <xref:System.Xml.XmlWriter>。  
   
- 使用 `ToString` 方法，可将任何 XML 组件（包括 <xref:System.Xml.Linq.XDocument> 和 <xref:System.Xml.Linq.XElement>）序列化为字符串。  
+ 可以使用 <xref:System.Xml.Linq.XDocument> 方法，将任何 XML 组件（包括 <xref:System.Xml.Linq.XElement> 和 `ToString`）序列化为一个字符串。  
   
- 若要在序列化为字符串时禁止格式化，可使用 <xref:System.Xml.Linq.XNode.ToString%2A?displayProperty=fullName> 方法。  
+ 在序列化为字符串时，如果要禁止格式化，可以使用 <xref:System.Xml.Linq.XNode.ToString%2A?displayProperty=fullName> 方法。  
   
  序列化为文件时，默认行为是格式化（缩进）生成的 XML 文档。 缩进时，不会保留 XML 树中无意义的空白。 若要使用格式化方式进行序列化，请使用不将 <xref:System.Xml.Linq.SaveOptions> 作为参数的以下方法的重载之一：  
   
@@ -48,3 +49,4 @@ ms.lasthandoff: 03/13/2017
   
 ## <a name="see-also"></a>请参阅  
  [序列化 XML 树 (C#)](../../../../csharp/programming-guide/concepts/linq/serializing-xml-trees.md)
+

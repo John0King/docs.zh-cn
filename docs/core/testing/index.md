@@ -1,6 +1,6 @@
 ---
-title: ".NET Core 中的单元测试 | Microsoft Docs"
-description: ".NET Core 中的单元测试"
+title: ".NET Core 中的单元测试"
+description: "单元测试从未如此简单。 了解如何在 .NET Core 项目中使用单元测试。"
 keywords: .NET, .NET Core
 author: ardalis
 ms.author: wiwagn
@@ -9,11 +9,11 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 815ac74c-4bd9-4a94-a87c-78288b27c0e2
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 4437ce5d344cf06d30e31911def6287999fc6ffc
-ms.openlocfilehash: 4983af5386efc6b713f10f200687535b7dc36a11
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 22647a9ad7723bbfcf0d54530b3c0538198e7c35
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -28,12 +28,12 @@ ms.lasthandoff: 05/23/2017
 > [!NOTE]
 > 开发人员经常要想方设法地为测试类和方法提供合适的名称。 作为起点，ASP.NET 产品团队会遵循[这些约定](https://github.com/aspnet/Home/wiki/Engineering-guidelines#unit-tests-and-functional-tests)。
 
-编写单元测试时，注意不要在基础结构上意外引入了依赖项。 这些依赖项往往会降低测试速度，使测试更加脆弱，因此应将其保留供集成测试使用。 可以通过遵循 [Explicit Dependencies Principle](http://deviq.com/explicit-dependencies-principle/)（显示依赖项原则）和使用 [Dependency Injection](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection)（依赖项注入）从框架中请求依赖项，以此避免应用程序代码中的这些隐藏依赖项。 还可以将单元测试保留在单独的项目中，与集成测试相分隔，并确保单元测试项目没有引用或依赖于基础结构包。
+编写单元测试时，注意不要在基础结构上意外引入了依赖项。 这些依赖项往往会降低测试速度，使测试更加脆弱，因此应将其保留供集成测试使用。 可以通过遵循 [Explicit Dependencies Principle](http://deviq.com/explicit-dependencies-principle/)（显示依赖项原则）和使用 [Dependency Injection](/aspnet/core/fundamentals/dependency-injection)（依赖项注入）从框架中请求依赖项，以此避免应用程序代码中的这些隐藏依赖项。 还可以将单元测试保留在单独的项目中，与集成测试相分隔，并确保单元测试项目没有引用或依赖于基础结构包。
 
 了解有关 .NET Core 项目中的单元测试的详细信息：
 
-* 请尝试[使用 xUnit 和 .NET CLI 创建单元测试的演练](unit-testing-with-dotnet-test.md)。 
+* 请尝试此[使用 xUnit 和 .NET Core CLI 创建单元测试的演练](unit-testing-with-dotnet-test.md)。 
 * XUnit 团队编写了一个教程，介绍[如何通过 .NET Core 和 Visual Studio 使用 xUnit](http://xunit.github.io/docs/getting-started-dotnet-core.html)。
-* 如果想使用 MSTest，请尝试[演练：使用 MSTest 和 .NET CLI 创建单元测试](unit-testing-with-mstest.md)。
+* 如果要使用 MSTest，请尝试[使用 MSTest 和 .NET Core CLI 创建单元测试 的演练](unit-testing-with-mstest.md)。
 * 有关如何使用选择性单元测试筛选的其他信息和示例，请参阅[运行选择性单元测试](../testing/selective-unit-tests.md)。
 

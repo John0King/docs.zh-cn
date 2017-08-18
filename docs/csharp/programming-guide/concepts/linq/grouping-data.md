@@ -1,5 +1,5 @@
 ---
-title: "对数据分组 (C#) | Microsoft Docs"
+title: "对数据分组 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,10 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 2ef56a843117bb8b7409b10ef33ca83175849b9f
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 2cf1b228a5ff4120bdf3b97a7ec9308f11d7b8ee
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="grouping-data-c"></a>对数据分组 (C#)
@@ -38,7 +39,7 @@ ms.lasthandoff: 03/13/2017
   
 |方法名|描述|C# 查询表达式语法|更多信息|  
 |-----------------|-----------------|---------------------------------|----------------------|  
-|GroupBy|对共享通用属性的元素进行分组。 每个组由 <xref:System.Linq.IGrouping%602> 对象表示。|`group … by`<br /><br /> - 或 -<br /><br /> `group … by … into …`|<xref:System.Linq.Enumerable.GroupBy%2A?displayProperty=fullName><br /><br /> <xref:System.Linq.Queryable.GroupBy%2A?displayProperty=fullName>|  
+|GroupBy|对共享通用属性的元素进行分组。 每组由一个 <xref:System.Linq.IGrouping%602> 对象表示。|`group … by`<br /><br /> - 或 -<br /><br /> `group … by … into …`|<xref:System.Linq.Enumerable.GroupBy%2A?displayProperty=fullName><br /><br /> <xref:System.Linq.Queryable.GroupBy%2A?displayProperty=fullName>|  
 |ToLookup|将元素插入基于键选择器函数的 <xref:System.Linq.Lookup%602>（一种一对多字典）。|不适用。|<xref:System.Linq.Enumerable.ToLookup%2A?displayProperty=fullName>|  
   
 ## <a name="query-expression-syntax-example"></a>查询表达式语法示例  
@@ -84,3 +85,4 @@ foreach (var group in query)
  [如何：对查询结果进行分组](../../../../csharp/programming-guide/linq-query-expressions/how-to-group-query-results.md)   
  [如何：对分组操作执行子查询](../../../../csharp/programming-guide/linq-query-expressions/how-to-perform-a-subquery-on-a-grouping-operation.md)   
  [如何：使用组将一个文件拆分成多个文件 (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-split-a-file-into-many-files-by-using-groups-linq.md)
+

@@ -1,5 +1,5 @@
 ---
-title: "Null 条件运算符（C# 和 Visual Basic）| Microsoft Docs"
+title: "NULL 条件运算符（C# 和 Visual Basic）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -25,11 +25,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 61a093677354ba3a960fb5714963a1205d24ed06
-ms.openlocfilehash: 876b7c99ca9249e0a2b9cbd036c38e368228ac9f
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 3a396280e1095497b86e4792f4debb9cf0435f50
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/25/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="null-conditional-operators-c-and-visual-basic"></a>NULL 条件运算符（C# 和 Visual Basic）

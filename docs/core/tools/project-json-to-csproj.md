@@ -1,5 +1,5 @@
 ---
-title: "比较 project.json 和 csproj - .NET Core | Microsoft Docs"
+title: "比较 project.json 和 csproj - .NET Core"
 description: "查看 project.json 和 csproj 元素之间的映射。"
 keywords: project.json, csproj, .NET Core, MSBuild
 author: natemcmaster
@@ -10,11 +10,11 @@ ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 79c50621-a24a-4e64-bbb9-b953113e841c
-ms.translationtype: Human Translation
-ms.sourcegitcommit: deb760878391856cf07bab04563d0ec19a1511e7
-ms.openlocfilehash: 7062102ff17c13b7cf25a1cfbb266c696221151b
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 0f82e82c6a11220e24c85cef19bc131e12c77bf0
 ms.contentlocale: zh-cn
-ms.lasthandoff: 04/30/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -494,7 +494,7 @@ MSBuild 中没有 `owners` 元素的等效项。 对于 `summary`，可使用 MS
 }
 ```
 
-它们在 MSBuild 中的等效项是[目标](https://docs.microsoft.com/visualstudio/msbuild/msbuild-targets)：
+它们在 MSBuild 中的等效项是[目标](/visualstudio/msbuild/msbuild-targets)：
 
 ```xml
 <Target Name="MyPreCompileTarget" BeforeTargets="Build">
@@ -562,12 +562,12 @@ MSBuild 中没有 `owners` 元素的等效项。 对于 `summary`，可使用 MS
 }
 ```
 
-在 csproj 中不支持。 而必须在 *.nuspec* 文件中创建要包含的内容文件。 有关详细信息，请参阅[包含内容文件](https://docs.microsoft.com/nuget/schema/nuspec#including-content-files)。
+在 csproj 中不支持。 而必须在 *.nuspec* 文件中创建要包含的内容文件。 有关详细信息，请参阅[包含内容文件](/nuget/schema/nuspec#including-content-files)。
 
 ## <a name="files"></a>文件
 
 在 *project.json* 中，可将生成和打包操作扩展为从不同的文件夹进行编译和嵌入。
-在 MSBuild 中，使用[项](https://docs.microsoft.com/visualstudio/msbuild/common-msbuild-project-items)实现此操作。 以下示例是一个常见转换：
+在 MSBuild 中，使用[项](/visualstudio/msbuild/common-msbuild-project-items)实现此操作。 以下示例是一个常见转换：
 
 ```json
 {
@@ -620,7 +620,7 @@ MSBuild 中没有 `owners` 元素的等效项。 对于 `summary`，可使用 MS
 
 可使用 `PackagePath="path"` 修改 .nupkg 内的包布局。
 
-除 `Content` 外，大多数项组需要显式添加要包括在包中的 `Pack="true"`。 `Content` 将被置于包中的 *content* 文件夹，因为 `<IncludeContentInPack>` 属性默认设置为 `true`。 有关详细信息，请参阅[在包中包含内容](https://docs.microsoft.com/nuget/schema/msbuild-targets#including-content-in-a-package)。
+除 `Content` 外，大多数项组需要显式添加要包括在包中的 `Pack="true"`。 `Content` 将被置于包中的 *content* 文件夹，因为 `<IncludeContentInPack>` 属性默认设置为 `true`。 有关详细信息，请参阅[在包中包含内容](/nuget/schema/msbuild-targets#including-content-in-a-package)。
 
 `PackagePath="%(Identity)"` 是一种将包路径设置为项目相对文件路径的快捷方法。
 

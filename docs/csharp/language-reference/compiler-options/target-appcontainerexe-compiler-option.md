@@ -1,5 +1,5 @@
 ---
-title: "/target:appcontainerexe（C# 编译器选项） | Microsoft Docs"
+title: "-target:appcontainerexe（C# 编译器选项）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -26,18 +26,19 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 168771506692308bc9b031df5c059e58e8d190b1
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 77016d094ec7e82729a46208c17e2a77fe733103
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="targetappcontainerexe-c-compiler-options"></a>/target:appcontainerexe（C# 编译器选项）
-如果使用 **/target:appcontainerexe** 编译器选项，则编译器会创建一个 Windows 可执行 (.exe) 文件，该文件必须在应用容器中运行。 此选项与 [/target:winexe](../../../csharp/language-reference/compiler-options/target-winexe-compiler-option.md) 等效，但专门用于 [!INCLUDE[win8_appname_long](../../../csharp/includes/win8_appname_long_md.md)] 应用。  
+如果使用 **/target:appcontainerexe** 编译器选项，则编译器会创建一个 Windows 可执行 (.exe) 文件，该文件必须在应用容器中运行。 此选项与 [/target:winexe](../../../csharp/language-reference/compiler-options/target-winexe-compiler-option.md) 等效，但专门用于 [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] 应用。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```console  
 /target:appcontainerexe  
 ```  
   
@@ -50,18 +51,18 @@ ms.lasthandoff: 03/13/2017
   
 ### <a name="to-set-this-compiler-option-in-the-ide"></a>在 IDE 中设置此编译器选项  
   
-1.  在“解决方案资源管理器”****中，打开项目的快捷菜单，然后选择“属性”****。  
+1.  在“解决方案资源管理器”中，打开项目的快捷菜单，然后选择“属性”。  
   
-2.  在“应用程序”****选项卡上，在“输出类型”****列表中选择“Windows 应用商店应用”****。  
+2.  在“应用程序”选项卡上，在“输出类型”列表中选择“Windows 应用商店应用”。  
   
-     此选项仅可用于 [!INCLUDE[win8_appname_long](../../../csharp/includes/win8_appname_long_md.md)] 应用模板。  
+     此选项仅可用于 [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] 应用模板。  
   
  有关如何以编程方式设置此编译器选项的信息，请参阅 <xref:VSLangProj80.ProjectProperties3.OutputType%2A>。  
   
 ## <a name="example"></a>示例  
  以下命令将 `filename.cs` 编译为一个只能在应用容器中运行的 Windows 可执行文件。  
   
-```  
+```console  
 csc /target:appcontainerexe filename.cs  
 ```  
   
@@ -69,3 +70,4 @@ csc /target:appcontainerexe filename.cs
  [/target（C# 编译器选项）](../../../csharp/language-reference/compiler-options/target-compiler-option.md)   
  [/target:winexe（C# 编译器选项）](../../../csharp/language-reference/compiler-options/target-winexe-compiler-option.md)   
  [C# 编译器选项](../../../csharp/language-reference/compiler-options/index.md)
+

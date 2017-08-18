@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic 语言功能 | Microsoft 文档"
+title: "Visual Basic 语言功能"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -31,18 +31,19 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 31cf21a3db5f5fc7ad980765cb54041c0e99c24b
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 3594e6622e8bc76839a15739a31ad27d17de8455
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="visual-basic-language-features"></a>Visual Basic 语言功能
-下面各主题介绍并讨论了 [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]（面向对象的编程语言）的基本组成部分。 使用窗体和控件创建应用程序的用户界面后，需要编写代码来定义应用程序的行为。 与所有新式编程语言一样，[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] 支持许多常见的编程构造和语言元素。  
+下面各主题介绍并讨论了 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]（面向对象的编程语言）的基本组成部分。 使用窗体和控件创建应用程序的用户界面后，需要编写代码来定义应用程序的行为。 与所有新式编程语言一样，[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 支持许多常见的编程构造和语言元素。  
   
- 如果你已使用其他语言进行过编程，可能会对此部分中介绍的大部分资料感到熟悉。 虽然大多数构造与其他语言的构造类似，但 [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] 的事件驱动本质却造成了细微差异。  
+ 如果你已使用其他语言进行过编程，可能会对此部分中介绍的大部分资料感到熟悉。 虽然大多数构造与其他语言的构造类似，但 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 的事件驱动本质却造成了细微差异。  
   
- 如果是刚开始接触编程，可通过此部分中的资料，了解用于编写代码的基本构建基块的入门知识。 掌握基础知识后，便能使用 [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] 创建强大的应用程序。  
+ 如果是刚开始接触编程，可通过此部分中的资料，了解用于编写代码的基本构建基块的入门知识。 掌握基础知识后，便能使用 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 创建强大的应用程序。  
   
 ## <a name="in-this-section"></a>本节内容  
  [阵列](../../../visual-basic/programming-guide/language-features/arrays/index.md)  
@@ -79,7 +80,7 @@ ms.lasthandoff: 03/13/2017
  介绍了什么是接口，以及如何在应用程序中使用接口。  
   
  [LINQ](../../../visual-basic/programming-guide/language-features/linq/index.md)  
- 收录了主题链接，有助于你了解[!INCLUDE[vbteclinqext](../../../csharp/getting-started/includes/vbteclinqext_md.md)] 功能和编程。  
+ 收录了主题链接，有助于你了解[!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] 功能和编程。  
   
  [对象和类](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)  
  概述了对象和类及其使用方式、相互之间的关系，以及它们公开的属性、方法和事件。  
@@ -107,4 +108,5 @@ ms.lasthandoff: 03/13/2017
  介绍了 .NET Framework 提供的一些类型集合。 展示了如何使用简单的集合和键/值对集合。  
   
  [Visual Basic 语言参考](../../../visual-basic/language-reference/index.md)  
- 收录了有关 [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] 编程的各方面参考信息。
+ 收录了有关 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 编程的各方面参考信息。
+

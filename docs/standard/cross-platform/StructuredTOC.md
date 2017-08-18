@@ -1,7 +1,0 @@
-# [针对多个平台开发](index.md)
-## [可移植类库](cross-platform-development-with-the-portable-class-library.md)
-## [将可移植类库与 MVVM 配合使用](using-portable-class-library-with-model-view-view-model.md)
-## [面向多个平台的库的应用程序资源](app-resources-for-libraries-that-target-multiple-platforms.md)
-## [.NET Framework 对 Windows 应用商店应用程序和 Windows 运行时的支持情况](support-for-windows-store-apps-and-windows-runtime.md)
-## [向 Windows 运行时传递 URI](passing-a-uri-to-the-windows-runtime.md)
-## [WindowsRuntimeStreamExtensions.AsRandomAccessStream(System.IO.Stream) 方法](windowsruntimestreamextensions-asrandomaccessstream-method.md)

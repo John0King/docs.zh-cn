@@ -1,6 +1,6 @@
 ---
-title: ".NET Core 工具遥测 | Microsoft Docs"
-description: ".NET 核心"
+title: ".NET Core 工具遥测"
+description: "了解可收集使用情况信息以供分析使用的 .NET Core 工具遥测功能。"
 keywords: .NET, .NET Core
 author: richlander
 ms.author: mairaw
@@ -10,11 +10,11 @@ ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 480df976-7568-4df4-9d26-9911357b5a31
-ms.translationtype: Human Translation
-ms.sourcegitcommit: be7974018ce3195dc7344192d647fe64fb2ebcc4
-ms.openlocfilehash: eda9e6f30defb93737aa67563aa6e606a8a2fb91
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 1816b9fbad1f671820c9f970674c8af2147a230e
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/14/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -64,38 +64,26 @@ ms.lasthandoff: 05/14/2017
 
 [.NET NuGet 包](https://www.nuget.org/profiles/dotnetframework)使用此相同的许可证，但不启用遥测（请参阅上方的[范围](#scope)）。
 
-```text
-2.      DATA.  The software may collect information about you and your use of
-the software, and send that to Microsoft. Microsoft may use this information
-to improve our products and services. You can learn more about data collection
-and use in the help documentation and the privacy statement at
-http://go.microsoft.com/fwlink/?LinkId=528096 . Your use of the software
-operates as your consent to these practices.
-```
+> 2. DATA。 此软件可能会收集并向 Microsoft 发送你的信息和软件使用信息。 Microsoft 可能会使用此类信息来改进我们的产品和服务。 可以参阅帮助文档和隐私声明 (http://go.microsoft.com/fwlink/?LinkId=528096)，详细了解数据收集和使用。 使用此软件即表示同意接受这些做法。
 
 ## <a name="disclosure"></a>公开
 
 首次运行其中一个命令（例如 `dotnet restore`）时，.NET Core 工具显示以下文本。 此“首次运行”体验是 Microsoft 通知用户有关数据收集信息的方式。 此相同体验最初也使用 .NET Core SDK 中的库填充 NuGet 缓存，从而避免针对这些库的对 NuGet.org（或其他 NuGet 源）的请求。
 
-```text
+```console
 Welcome to .NET Core!
 ---------------------
-Learn more about .NET Core @ https://aka.ms/dotnet-docs. Use dotnet --help to 
-see available commands or go to https://aka.ms/dotnet-cli-docs.
+Learn more about .NET Core @ https://aka.ms/dotnet-docs. Use dotnet --help to see available commands or go to https://aka.ms/dotnet-cli-docs.
 
 Telemetry
 --------------
-The .NET Core tools collect usage data in order to improve your experience. 
-The data is anonymous and does not include command-line arguments. The data is 
-collected by Microsoft and shared with the community.
-You can opt out of telemetry by setting a DOTNET_CLI_TELEMETRY_OPTOUT 
-environment variable to 1 using your favorite shell.
+The .NET Core tools collect usage data in order to improve your experience.
+The data is anonymous and does not include command-line arguments. The data is collected by Microsoft and shared with the community.
+You can opt out of telemetry by setting a DOTNET_CLI_TELEMETRY_OPTOUT environment variable to 1 using your favorite shell.
 You can read more about .NET Core tools telemetry @ https://aka.ms/dotnet-cli-telemetry.
 
 Configuring...
 -------------------
-A command is running to initially populate your local package cache, to 
-improve restore speed and enable offline access. This command will take up to 
-a minute to complete and will only happen once. 
+A command is running to initially populate your local package cache, to improve restore speed and enable offline access. This command will take up to a minute to complete and will only happen once.
 ```
 

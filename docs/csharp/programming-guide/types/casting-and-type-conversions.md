@@ -1,5 +1,5 @@
 ---
-title: "强制转换和类型转换（C# 编程指南）| Microsoft Docs"
+title: "强制转换和类型转换（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -32,11 +32,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 7e33ed084c560470a486ebbb25035a59ddc18565
-ms.openlocfilehash: d421f0115642efa73dbeb893dba912b96d5f4dc6
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 20743c07c8e9c6b7ec24cf52a28bb9f451ba9df5
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/31/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="casting-and-type-conversions-c-programming-guide"></a>强制转换和类型转换（C# 编程指南）
@@ -55,7 +55,7 @@ i = "Hello"; // Error: "Cannot implicitly convert type 'string' to 'int'"
   
 -   **用户定义的转换**：可以定义一些特殊的方法来执行用户定义的转换，使不具有基类和派生类关系的自定义类型之间可以显式和隐式转换。 有关详细信息，请参阅[转换运算符](../../../csharp/programming-guide/statements-expressions-operators/conversion-operators.md)。  
   
--   **使用帮助程序类的转换**：若要在不兼容的类型之间进行转换（例如在整数与 <xref:System.DateTime?displayProperty=fullName> 对象之间转换，或者在十六进制字符串与字节数组之间转换），则可以使用 <xref:System.BitConverter?displayProperty=fullName> 类、<xref:System.Convert?displayProperty=fullName> 类和内置数值类型的 `Parse` 方法（例如 <xref:System.Int32.Parse%2A?displayProperty=fullName>）。 有关详细信息，请参见[如何：将字节数组转换为 int](../../../csharp/programming-guide/types/how-to-convert-a-byte-array-to-an-int.md)、[如何：将字符串转换为数字](../../../csharp/programming-guide/types/how-to-convert-a-string-to-a-number.md)和[如何：在十六进制字符串与数值类型之间转换](../../../csharp/programming-guide/types/how-to-convert-between-hexadecimal-strings-and-numeric-types.md)。  
+-   **使用帮助程序类进行转换**：若要在非兼容类型之间转换（例如整数和 <xref:System.DateTime?displayProperty=fullName> 对象之间，或十六进制字符串和字节数组之间），可使用 <xref:System.BitConverter?displayProperty=fullName> 类、<xref:System.Convert?displayProperty=fullName> 类和内置数值类型的 `Parse` 方法（例如 <xref:System.Int32.Parse%2A?displayProperty=fullName>）。 有关详细信息，请参见[如何：将字节数组转换为 int](../../../csharp/programming-guide/types/how-to-convert-a-byte-array-to-an-int.md)、[如何：将字符串转换为数字](../../../csharp/programming-guide/types/how-to-convert-a-string-to-a-number.md)和[如何：在十六进制字符串与数值类型之间转换](../../../csharp/programming-guide/types/how-to-convert-between-hexadecimal-strings-and-numeric-types.md)。  
   
 ## <a name="implicit-conversions"></a>隐式转换  
  对于内置数值类型，如果要存储的值无需截断或四舍五入即可适应变量，则可以进行隐式转换。 例如，[long](../../../csharp/language-reference/keywords/long.md) 类型的变量（8 字节整数）能够存储 [int](../../../csharp/language-reference/keywords/int.md)（在 32 位计算机上为 4 字节）可存储的任何值。 在下面的示例中，编译器先将右侧的值隐式转换为 `long` 类型，再将它赋给 `bigNum`。  
@@ -97,7 +97,7 @@ Giraffe g2 = (Giraffe) a;
  引用类型之间的强制转换操作不会更改基础对象的运行时类型；它只更改用作对该对象引用的值的类型。 有关详细信息，请参阅[多形性](../../../csharp/programming-guide/classes-and-structs/polymorphism.md)。  
   
 ## <a name="type-conversion-exceptions-at-run-time"></a>运行时的类型转换异常  
- 在某些引用类型转换中，编译器无法确定强制转换是否会有效。 正确进行编译的强制转换操作有可能在运行时失败。 如下面的示例所示，类型强制转换在运行时失败将导致引发 <xref:System.InvalidCastException>。  
+ 在某些引用类型转换中，编译器无法确定强制转换是否会有效。 正确进行编译的强制转换操作有可能在运行时失败。 如下面的示例所示，类型转换在运行时失败将导致引发 <xref:System.InvalidCastException>。  
   
  [!code-cs[csProgGuideTypes#41](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/casting-and-type-conversions_3.cs)]  
   
@@ -116,3 +116,4 @@ Giraffe g2 = (Giraffe) a;
  [通用类型转换](http://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada)   
  [导出类型转换](http://msdn.microsoft.com/en-us/1dfe55f4-07a2-4b61-aabf-a8cf65783a6b)   
  [如何：将字符串转换为数字](../../../csharp/programming-guide/types/how-to-convert-a-string-to-a-number.md)
+

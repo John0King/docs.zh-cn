@@ -1,5 +1,5 @@
 ---
-title: "缓解：使用 DataContractJsonSerializer 对控制字符进行序列化 | Microsoft Docs"
+title: "缓解：使用 DataContractJsonSerializer 对控制字符进行序列化"
 ms.custom: 
 ms.date: 04/07/2017
 ms.prod: .net-framework
@@ -17,11 +17,11 @@ caps.latest.revision: 3
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 39e8e757a446b30ab18914465853138e1c239e40
-ms.openlocfilehash: 596d7ea858e40a558767fa76bb717dbbba97d4ed
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 6da580d208736a64e2094f701fb4c1241a488322
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="mitigation-serialization-of-control-characters-with-the-datacontractjsonserializer"></a>缓解：使用 DataContractJsonSerializer 对控制字符进行序列化

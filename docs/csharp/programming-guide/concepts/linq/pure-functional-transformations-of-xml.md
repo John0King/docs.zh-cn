@@ -1,5 +1,5 @@
 ---
-title: "XML 的纯功能转换 (C#) | Microsoft Docs"
+title: "XML 的纯功能转换 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,11 +14,11 @@ ms.assetid: 97e8e582-eb3d-4756-bbfb-0899eb688ae4
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 94666a6047366960fe1ddc250a82de5392d2372a
-ms.lasthandoff: 03/13/2017
-
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: ee60c400bb9bff719f818ab5a5a0a3c667a1b412
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="pure-functional-transformations-of-xml-c"></a>XML 的纯功能转换 (C#)
@@ -40,3 +40,4 @@ ms.lasthandoff: 03/13/2017
   
 ## <a name="see-also"></a>请参阅  
  [查询 XML 树 (C#)](../../../../csharp/programming-guide/concepts/linq/querying-xml-trees.md)
+

@@ -1,5 +1,5 @@
 ---
-title: "疑难解答：读取和写入文本文件 (Visual Basic) | Microsoft Docs"
+title: "疑难解答：读取和写入文本文件 (Visual Basic)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -35,11 +35,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: 739f14a7cb5c559720bfac1a78b5fc50001052cb
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 7f1d26df53445ee9711ebb2840071d2560c5380d
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="troubleshooting-reading-from-and-writing-to-text-files-visual-basic"></a>疑难解答：读取和写入文本文件 (Visual Basic)
@@ -57,8 +57,9 @@ ms.lasthandoff: 05/22/2017
 ### <a name="incorrect-paths"></a>错误路径  
  分析文件路径尤其是相对路径时，很容易提供错误的数据。 请确保提供正确的路径，这样可以纠正许多问题。 有关详细信息，请参阅[如何：分析文件路径](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualBasic.FileIO.FileSystem>   
  [从文件读取](../../../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)   
  [写入文件](../../../../visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md)   
  [使用 TextFieldParser 对象分析文本文件](../../../../visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md)
+

@@ -1,5 +1,5 @@
 ---
-title: "如何：使用 foreach 访问集合类（C# 编程指南）| Microsoft Docs"
+title: "如何：使用 foreach 访问集合类（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -27,11 +27,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 400dfda51d978f35c3995f90840643aaff1b9c13
-ms.openlocfilehash: 841132b5181c5e17d1eabae11d3550811aa959ec
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 2ad81ab699b079f4aabb04a886211e94a937335d
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/24/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-access-a-collection-class-with-foreach-c-programming-guide"></a>如何：使用 foreach 访问集合类（C# 编程指南）
@@ -45,16 +45,15 @@ ms.lasthandoff: 03/24/2017
  [!code-cs[csProgGuideCollections#3](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-access-a-collection-class-with-foreach_1.cs)]  
   
 ## <a name="example"></a>示例  
- 在内部，`Tokens` 类使用数组存储这些标记。 因为数组可实现 <xref:System.Collections.IEnumerator> 和 <xref:System.Collections.IEnumerable>，所以代码示例使用了数组的枚举方法（<xref:System.Collections.IEnumerable.GetEnumerator%2A>、<xref:System.Collections.IEnumerator.MoveNext%2A>、<xref:System.Collections.IEnumerator.Reset%2A> 和 <xref:System.Collections.IEnumerator.Current%2A>），而不是在 `Tokens` 类中定义这些方法。 方法定义包括在该示例中，用于明确如何定义它们以及每个定义的内容。  
+ 在内部，`Tokens` 类使用数组存储这些标记。 数组实现 <xref:System.Collections.IEnumerator> 和 <xref:System.Collections.IEnumerable>，因此，此代码示例本可以使用数组的枚举方法（<xref:System.Collections.IEnumerable.GetEnumerator%2A>、<xref:System.Collections.IEnumerator.MoveNext%2A>、<xref:System.Collections.IEnumerator.Reset%2A> 和 <xref:System.Collections.IEnumerator.Current%2A>），而不是在 `Tokens` 类中对其进行定义。 方法定义包括在该示例中，用于明确如何定义它们以及每个定义的内容。  
   
  [!code-cs[csProgGuideCollections#2](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-access-a-collection-class-with-foreach_2.cs)]  
   
- 在 C# 中，集合类不必通过实现 <xref:System.Collections.IEnumerable> 和 <xref:System.Collections.IEnumerator> 来与 `foreach` 兼容。 如果此类具有所需的 <xref:System.Collections.IEnumerable.GetEnumerator%2A>、<xref:System.Collections.IEnumerator.MoveNext%2A>、<xref:System.Collections.IEnumerator.Reset%2A> 和 <xref:System.Collections.IEnumerator.Current%2A> 成员，则可与 `foreach` 结合使用。 省略接口有一个好处：可以比 <xref:System.Object> 更为具体地定义 `Current` 的返回类型。 这提供类型安全性。  
+ 在 C# 中，为兼容 <xref:System.Collections.IEnumerable>，集合类并非一定要实现 <xref:System.Collections.IEnumerator> 和 `foreach`。 如果类具有所需的 <xref:System.Collections.IEnumerable.GetEnumerator%2A>、<xref:System.Collections.IEnumerator.MoveNext%2A><xref:System.Collections.IEnumerator.Reset%2A> 和 <xref:System.Collections.IEnumerator.Current%2A> 成员，则它将适用于 `foreach`。 省略接口有一个好处：可以比 <xref:System.Object> 更为具体地定义 `Current` 的返回类型。 这提供类型安全性。  
   
  例如，可更改上述示例中的以下行。  
   
 ```csharp  
-  
 // Change the Tokens class so that it no longer implements IEnumerable.  
 public class Tokens  
 {  
@@ -74,13 +73,11 @@ public class Tokens
         {   }  
     }  
  }  
-  
 ```  
   
  由于 `Current` 返回字符串，因此编译器可检测何时在 `foreach` 语句中使用了不兼容的类型，如以下代码所示。  
   
 ```csharp  
-  
 // Error: Cannot convert type string to int.  
 foreach (int item in f)    
 ```  
@@ -93,3 +90,4 @@ foreach (int item in f)
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [数组](../../../csharp/programming-guide/arrays/index.md)   
  [集合](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b)
+

@@ -1,5 +1,5 @@
 ---
-title: "结合使用 C# Interactive 和 MacOS 或 Linux 终端 | C# Guide"
+title: "结合使用 C# Interactive 和 MacOS 或 Linux 终端 - C# Guide"
 description: "探索 MacOS 或 Linux 命令行中的 C# Interactive Shell"
 keywords: ".NET, .NET Core, C#, REPL, 跨平台"
 ms.date: 06/25/2016
@@ -8,11 +8,12 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 6312a76a-a298-49a0-9116-b9d9e6b3c7c3
-redirect_url: /dotnet/articles/csharp/index
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 5ca4591fb1bb5143251c9e05af27392bd3fdc40d
-ms.lasthandoff: 03/13/2017
+redirect_url: /dotnet/csharp/index
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 5dc499d168b09f7911f0255d1d5c653676786911
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 

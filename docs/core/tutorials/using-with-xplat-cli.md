@@ -1,5 +1,5 @@
 ---
-title: "使用 CLI 实现 .NET Core 入门 | Microsoft Docs"
+title: "使用 CLI 实现 .NET Core 入门"
 description: "一个分步教程，演示如何使用 .NET Core 命令行接口 (CLI) 开始在 Windows、Linux 或 macOS 上使用 .NET Core。"
 keywords: .NET Core, CLI
 author: cartermp
@@ -10,11 +10,11 @@ ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 41632e63-d5c6-4427-a09e-51dc1116d45f
-ms.translationtype: Human Translation
-ms.sourcegitcommit: deb760878391856cf07bab04563d0ec19a1511e7
-ms.openlocfilehash: b1ff9218932d5ef49941ca427d9ee38503a9c103
+ms.translationtype: HT
+ms.sourcegitcommit: 2762cdc983465979a530192716c33de7044dd1ed
+ms.openlocfilehash: 53894b7548b7bedfe3a980efd53a076c0e4efc7f
 ms.contentlocale: zh-cn
-ms.lasthandoff: 04/30/2017
+ms.lasthandoff: 08/04/2017
 
 ---
 
@@ -54,7 +54,7 @@ $ dotnet run
    项目文件指定还原依赖项和生成程序所需的一切。
 
    * `OutputType` 标记指定我们要生成的可执行文件，即控制台应用程序。
-   * `TargetFramework` 标记指定我们面向的 .NET 运行时。 在高级方案中，可以指定多个目标框架，并在单个操作中生成所有目标框架。 在本教程中，我们将仅针对 .NET Core 1.0 进行生成。
+   * `TargetFramework` 标记指定要定位的 .NET 实现代码。 在高级方案中，可以指定多个目标框架，并在单个操作中生成所有目标框架。 在本教程中，我们将仅针对 .NET Core 1.0 进行生成。
 
    `Program.cs`：
 

@@ -1,5 +1,5 @@
 ---
-title: "自动实现的属性（C# 编程指南）| Microsoft Docs"
+title: "自动实现的属性（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -28,11 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 400dfda51d978f35c3995f90840643aaff1b9c13
-ms.openlocfilehash: db4871f8f9b1333f6dcfd21ac04a2efb5c5719cd
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 92e0037b73f1054673ea8060b71af5bd4db13ca3
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/24/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="auto-implemented-properties-c-programming-guide"></a>自动实现的属性（C# 编程指南）
@@ -56,3 +56,4 @@ public string FirstName { get; set; } = "Jane";
 ## <a name="see-also"></a>另请参阅  
  [属性](../../../csharp/programming-guide/classes-and-structs/properties.md)   
  [修饰符](../../../csharp/language-reference/keywords/modifiers.md)
+

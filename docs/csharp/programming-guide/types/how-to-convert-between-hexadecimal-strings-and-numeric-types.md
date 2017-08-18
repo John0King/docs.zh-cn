@@ -1,5 +1,5 @@
 ---
-title: "如何：在十六进制字符串与数值类型之间转换（C# 编程指南）| Microsoft Docs"
+title: "如何：在十六进制字符串与数值类型之间转换（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -30,11 +30,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
-ms.openlocfilehash: bbc5a3aebfd0086388a4a5b020ad8679395cb74b
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 312b18e6bf30ace166435e51b1b83937b5c6bf38
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-convert-between-hexadecimal-strings-and-numeric-types-c-programming-guide"></a>如何：在十六进制字符串与数值类型之间转换（C# 编程指南）

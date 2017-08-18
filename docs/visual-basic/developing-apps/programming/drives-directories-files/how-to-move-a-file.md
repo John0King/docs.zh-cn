@@ -1,5 +1,5 @@
 ---
-title: "如何：在 Visual Basic 中移动文件 | Microsoft Docs"
+title: "如何：在 Visual Basic 中移动文件"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -31,11 +31,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: 44e0e81a28d1475a3f3cf6bcb7372b05eb8037bf
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 5a2623ec7e440e8fdf85138cd0b3de9ab18b773c
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-move-a-file-in-visual-basic"></a>如何：在 Visual Basic 中移动文件
@@ -56,7 +56,7 @@ ms.lasthandoff: 05/22/2017
 ## <a name="robust-programming"></a>可靠编程  
  以下情况可能会导致异常：  
   
--   路径由于以下原因之一而无效：是零长度字符串；仅为空白；包含无效字符；是一个设备路径（开头字符为 \\\\.\\）(<xref:System.ArgumentException>)。  
+-   路径由于以下原因之一无效：是零长度字符串；仅包含空白；包含无效字符；是一个设备路径（开头字符为 \\\\.\\）(<xref:System.ArgumentException>)。  
   
 -   路径无效，因为它是 `Nothing` (<xref:System.ArgumentNullException>)。  
   
@@ -68,7 +68,7 @@ ms.lasthandoff: 05/22/2017
   
 -   路径中的文件名或目录名包含冒号 (:)，或格式无效 (<xref:System.NotSupportedException>)。  
   
--   `showUI` 已设置为 `True`、`onUserCancel` 已设置为 `ThrowException`，并且用户已取消该操作或发生了未指定的 I/O 错误 (<xref:System.OperationCanceledException>)。  
+-   `showUI` 已设置为 `True`、 `onUserCancel` 已设置为 `ThrowException`，并且用户已取消该操作或发生了未指定的 I/O 错误 (<xref:System.OperationCanceledException>)。  
   
 -   路径超过了系统定义的最大长度 (<xref:System.IO.PathTooLongException>)。  
   
@@ -81,3 +81,4 @@ ms.lasthandoff: 05/22/2017
  [如何：重命名文件](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-rename-a-file.md)   
  [如何：在不同的目录中创建文件的副本](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-create-a-copy-of-a-file-in-a-different-directory.md)   
  [如何：分析文件路径](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)
+

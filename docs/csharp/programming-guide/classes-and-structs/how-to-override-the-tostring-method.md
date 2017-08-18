@@ -1,5 +1,5 @@
 ---
-title: "如何：替代 ToString 方法（C# 编程指南）| Microsoft Docs"
+title: "如何：重写 ToString 方法（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -28,11 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 400dfda51d978f35c3995f90840643aaff1b9c13
-ms.openlocfilehash: 2dde281d439a07d7736949294772a57e926eb587
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 60cec855286a3bb572a0bacd08c0f7920a1fc912
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/24/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-override-the-tostring-method-c-programming-guide"></a>如何：重写 ToString 方法（C# 编程指南）
@@ -75,3 +75,4 @@ C# 中的每个类或结构都可隐式继承 <xref:System.Object> 类。 因此
  [override](../../../csharp/language-reference/keywords/override.md)   
  [virtual](../../../csharp/language-reference/keywords/virtual.md)   
  [格式设置类型](../../../standard/base-types/formatting-types.md)
+

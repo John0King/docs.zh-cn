@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic 示例应用程序 | Microsoft Docs"
+title: "Visual Basic 示例应用程序"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -28,11 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: 5a7bb4ca354fb8b67b3d3987e8d0c9ea563ec1ae
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: b73a87d962993577740019df4e4233a4ad0f31b7
 ms.contentlocale: zh-cn
-ms.lasthandoff: 04/12/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="visual-basic-sample-applications"></a>Visual Basic 示例应用程序
@@ -44,3 +44,4 @@ ms.lasthandoff: 04/12/2017
  [Visual Studio 示例](http://go.microsoft.com/fwlink/?LinkId=150928)   
  [Visual Basic 编程指南](../visual-basic/programming-guide/index.md)   
  [Visual Basic](../visual-basic/index.md)
+

@@ -1,5 +1,5 @@
 ---
-title: "使用 My 开发 (Visual Basic)| Microsoft 文档"
+title: "使用 My 开发 (Visual Basic)"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.suite: 
@@ -33,10 +33,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 815f459a651adf98dfb78a8444f4b873dece8283
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 3dae5e12baeb82c238381fb9e144c434816dcfb4
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="development-with-my-visual-basic"></a>使用 My 开发 (Visual Basic)
@@ -59,7 +60,7 @@ Visual Basic 提供了支持快速应用程序开发的新功能，不仅功能�
  介绍了 `My.Resources` 和 `My.Settings` 对象，这些对象提供对应用程序资源和设置的访问权限。  
   
  [Visual Basic 应用程序模型概述](../../../visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md)  
- 介绍了 [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] 应用程序启动/关闭模型。  
+ 介绍了 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 应用程序启动/关闭模型。  
   
  [My 对项目类型的依赖方式](../../../visual-basic/developing-apps/development-with-my/how-my-depends-on-project-type.md)  
  详细介绍了不同项目类型中可用的 `My` 功能。  
@@ -71,3 +72,4 @@ Visual Basic 提供了支持快速应用程序开发的新功能，不仅功能�
  [My.Forms 对象](../../../visual-basic/language-reference/objects/my-forms-object.md)   
  [My.WebServices 对象](../../../visual-basic/language-reference/objects/my-webservices-object.md)   
  [My 对项目类型的依赖方式](../../../visual-basic/developing-apps/development-with-my/how-my-depends-on-project-type.md)
+

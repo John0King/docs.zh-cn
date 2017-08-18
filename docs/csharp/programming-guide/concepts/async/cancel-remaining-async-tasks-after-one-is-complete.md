@@ -1,5 +1,5 @@
 ---
-title: "在完成一个异步任务后取消剩余任务 (C#) | Microsoft Docs"
+title: "在完成一个异步任务后取消剩余任务 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,15 +19,15 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 400dfda51d978f35c3995f90840643aaff1b9c13
-ms.openlocfilehash: fa0a35df3c2038859a8c2861780fd8dfa98d4429
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 23e68327cfc52845b203acdf5f69253de746d566
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/24/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="cancel-remaining-async-tasks-after-one-is-complete-c"></a>在完成一个异步任务后取消剩余任务 (C#)
-通过配合使用 <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=fullName> 方法和 <xref:System.Threading.CancellationToken>，可以在完成一个任务后取消所有剩余任务。 `WhenAny` 方法采用任务集合中的一个参数。 该方法启动所有任务，并返回单个任务。 当集合中任意任务完成时，完成单个任务。  
+通过结合使用 <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=fullName> 方法和 <xref:System.Threading.CancellationToken>，可在一个任务完成时取消所有剩余任务。 `WhenAny` 方法采用任务集合中的一个参数。 该方法启动所有任务，并返回单个任务。 当集合中任意任务完成时，完成单个任务。  
   
  此示例演示如何结合使用取消标记与 `WhenAny` 保留任务集合中第一个要完成的任务，并取消剩余任务。 每个任务都下载网站内容。 本示例显示第一个完成的下载的内容长度，并取消其他下载。  
   
@@ -74,13 +74,13 @@ async Task<int> ProcessURLAsync(string url, HttpClient client, CancellationToken
 }  
 ```  
   
- 在 `AccessTheWebAsync` 中，此示例使用查询 <xref:System.Linq.Enumerable.ToArray%2A> 方法和 `WhenAny` 方法来创建和启动任务数组。 将 `WhenAny` 应用到数组将返回单个任务，该任务在等待时对任务数组中首先完成的任务进行评估。  
+ 在 `AccessTheWebAsync` 中，此示例使用查询、<xref:System.Linq.Enumerable.ToArray%2A> 方法和 `WhenAny` 方法创建并启动任务数组。 将 `WhenAny` 应用到数组将返回单个任务，该任务在等待时对任务数组中首先完成的任务进行评估。  
   
  在 `AccessTheWebAsync` 中，进行下列更改。 星号标记了代码文件中的更改。  
   
 1.  注释禁止或删除循环。  
   
-2.  创建一个查询，它在执行时将生成常规任务的集合。 每次调用 `ProcessURLAsync` 都将返回一个 <xref:System.Threading.Tasks.Task%601>，其中 `TResult` 是整数。  
+2.  创建一个查询，它在执行时将生成常规任务的集合。 每次调用 `ProcessURLAsync` 均在 `TResult` 为整数时返回 <xref:System.Threading.Tasks.Task%601>。  
   
     ```csharp  
     // ***Create a query that, when executed, returns a collection of tasks.  
@@ -103,7 +103,7 @@ async Task<int> ProcessURLAsync(string url, HttpClient client, CancellationToken
     Task<int> firstFinishedTask = await Task.WhenAny(downloadTasks);  
     ```  
   
-5.  在此示例中，你只对首先完成的任务感兴趣。 因此，使用 <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=fullName> 来取消剩余任务。  
+5.  在此示例中，你只对首先完成的任务感兴趣。 因此，使用 <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=fullName> 取消剩余任务。  
   
     ```csharp  
     // ***Cancel the rest of the downloads. You just want the first one.  
@@ -279,3 +279,4 @@ namespace CancelAfterOneTask
  [微调异步应用程序 (C#)](../../../../csharp/programming-guide/concepts/async/fine-tuning-your-async-application.md)   
  [使用 Async 和 Await 的异步编程 (C#)](../../../../csharp/programming-guide/concepts/async/index.md)   
  [Async Sample: Fine Tuning Your Application](http://go.microsoft.com/fwlink/?LinkId=255046)（异步示例：微调应用程序）
+

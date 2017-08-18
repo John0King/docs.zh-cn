@@ -1,5 +1,5 @@
 ---
-title: "XAttribute 类概述 (C#) | Microsoft Docs"
+title: "XAttribute 类概述 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,22 +19,23 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: e1b461158fed20ea5824d89ec455abb667d3fef2
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: fdac066fbd467768cedcf93f6258cbde0b6dd847
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="xattribute-class-overview-c"></a>XAttribute 类概述 (C#)
 属性是与元素关联的名称/值对。 <xref:System.Xml.Linq.XAttribute> 类表示 XML 属性。  
   
 ## <a name="overview"></a>概述  
- 使用 [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] 中的属性，与使用元素非常相似。 它们的构造函数相似。 用于检索它们的集合的方法相似。 属性集合的 [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] 查询表达式与元素集合的 [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] 查询表达式看起来非常相似。  
+ 使用 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 中的属性，与使用元素非常相似。 它们的构造函数相似。 用于检索它们的集合的方法相似。 属性集合的 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 查询表达式与元素集合的 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 查询表达式看起来非常相似。  
   
  将属性添加到元素中的顺序会保留下来。 也就是说，当循环访问属性时，所见到的属性顺序与它们的添加顺序相同。  
   
 ## <a name="the-xattribute-constructor"></a>XAttribute 构造函数  
- 下面的 <xref:System.Xml.Linq.XAttribute> 类构造函数是最常使用的构造函数之一：  
+ 下面的 <xref:System.Xml.Linq.XAttribute> 类构造函数是您将最常使用的构造函数之一：  
   
 |构造函数|描述|  
 |-----------------|-----------------|  
@@ -57,7 +58,7 @@ Console.WriteLine(phone);
 ```  
   
 ### <a name="functional-construction-of-attributes"></a>属性的函数构造  
- 可以构造与 <xref:System.Xml.Linq.XElement> 对象的构造一致的 <xref:System.Xml.Linq.XAttribute> 对象，如下所示：  
+ 可以构造与 <xref:System.Xml.Linq.XAttribute> 对象的构造一致的 <xref:System.Xml.Linq.XElement> 对象，如下所示：  
   
 ```csharp  
 XElement c = new XElement("Customers",  
@@ -97,3 +98,4 @@ Console.WriteLine(c);
   
 ## <a name="see-also"></a>请参阅  
  [LINQ to XML 编程概述 (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-programming-overview.md)
+

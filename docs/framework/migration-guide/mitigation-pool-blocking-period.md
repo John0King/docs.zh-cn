@@ -1,5 +1,5 @@
 ---
-title: "缓解：池阻止时间段 | Microsoft Docs"
+title: "缓解：池阻止时间段"
 ms.custom: 
 ms.date: 03/30/2017
 ms.prod: .net-framework
@@ -15,11 +15,11 @@ caps.latest.revision: 4
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: 2569e6a07ba1456d8bba9b27bf16190e634d6b47
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: caaaafaff44f2a679b16fe3f1aae59bcf717388e
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="mitigation-pool-blocking-period"></a>缓解：池阻止时间段
@@ -46,3 +46,4 @@ ms.lasthandoff: 05/22/2017
   
 ## <a name="see-also"></a>另请参阅  
  [运行时更改](../../../docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6-2.md)
+

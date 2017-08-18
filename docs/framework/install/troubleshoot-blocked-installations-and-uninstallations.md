@@ -1,7 +1,7 @@
 ---
-title: "阻止安装和卸载 .NET Framework 疑难解答 | Microsoft Docs"
+title: "安装和卸载 .NET Framework 受阻疑难解答"
 ms.custom: 
-ms.date: 03/30/2017
+ms.date: 05/26/2017
 ms.prod: .net-framework
 ms.reviewer: 
 ms.suite: 
@@ -17,25 +17,27 @@ caps.latest.revision: 57
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: ddcefb2b35f8cbf06a3abcc16158eee850f799ff
-ms.openlocfilehash: 55228928d5d3d95cf28384e5179a43bfb0f598e9
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: c0d2d657a44c813fc94f8342ba1e6c33b330dfdb
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/11/2017
+ms.lasthandoff: 07/28/2017
 
 ---
-# <a name="troubleshooting-blocked-net-framework-installations-and-uninstallations"></a>阻止安装和卸载 .NET Framework 疑难解答
-运行 .NET Framework 4.5、4.5.1、4.5.2、4.6、4.6.1、4.6.2 或 4.7 的 [Web 或脱机安装程序](../../../docs/framework/install/guide-for-developers.md)时，可能会遇到防止或阻止安装 .NET Framework 的问题。 下表列出了可能产生的阻碍问题，并提供了指向疑难解答信息的链接。  
-  
- 在 Windows 8 和更高版本的操作系统上，.NET Framework 是一个操作系统组件，不能单独卸载。 .NET Framework 的更新会出现在控制面板中“程序和功能”应用的“已安装的更新”选项卡上。 对于其他没有预安装 .NET Framework 的操作系统，.NET Framework 会出现在控制面板中“程序和功能”应用的“卸载或更改程序”选项卡（或“添加/删除程序”选项卡）上。 有关预安装了 .NET Framework 的 Windows 版本的信息，请参阅[系统需求](../../../docs/framework/get-started/system-requirements.md)。  
+
+# <a name="troubleshoot-blocked-net-framework-installations-and-uninstallations"></a>安装和卸载 .NET Framework 受阻疑难解答
+
+运行 .NET Framework 4.5、4.5.1、4.5.2、4.6、4.6.1、4.6.2 或 4.7 的 [Web 或脱机安装程序](../../../docs/framework/install/guide-for-developers.md)时，可能会遇到防止或阻止安装 .NET Framework 的问题。 下表列出了可能产生的阻碍问题，并提供了指向疑难解答信息的链接。
+
+在 Windows 8 和更高版本的操作系统上，.NET Framework 是一个操作系统组件，不能单独卸载。 .NET Framework 的更新会出现在控制面板中“程序和功能”应用的“已安装的更新”选项卡上。 对于其他没有预安装 .NET Framework 的操作系统，.NET Framework 会出现在控制面板中“程序和功能”应用的“卸载或更改程序”选项卡（或“添加/删除程序”选项卡）上。 有关预安装了 .NET Framework 的 Windows 版本的信息，请参阅[系统需求](../../../docs/framework/get-started/system-requirements.md)。
 
 > [!IMPORTANT]
-> 由于 .NET Framework 4.x 版本是就地更新，不能在已装有更高版本 .NET Framework 4.x 的系统上安装其早期版本。 例如，在使用 Windows 10 创意者更新的系统上无法安装 .NET Framework 4.6.2，因为 .NET Framework 4.7 已随操作系统预安装。  
-  
- 可以确定系统上安装了哪些版本的 .NET Framework。 请参阅[如何：确定安装了哪些 .NET Framework 版本](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md)获取详细信息。  
-  
- 在此表中，4.5.*x* 指 .NET Framework 4.5 及其单点版本 4.5.1 和 4.5.2，4.6.*x* 指 .NET Framework 4.6 及其单点版本 4.6.1 和 4.6.2，4.7 指 .NET Framework 4.7。  
-  
+> 由于 .NET Framework 4.x 版本是就地更新，不能在已装有更高版本 .NET Framework 4.x 的系统上安装其早期版本。 例如，在使用 Windows 10 创意者更新的系统上无法安装 .NET Framework 4.6.2，因为 .NET Framework 4.7 已随操作系统预安装。
+
+可以确定系统上安装了哪些版本的 .NET Framework。 请参阅[如何：确定安装了哪些 .NET Framework 版本](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md)获取详细信息。
+
+在此表中，4.5.*x* 指 .NET Framework 4.5 及其单点版本 4.5.1 和 4.5.2，4.6.*x* 指 .NET Framework 4.6 及其单点版本 4.6.1 和 4.6.2，4.7 指 .NET Framework 4.7。
+
 |阻止消息|了解更多信息或解决此问题|  
 |----------------------|--------------------------------------------------|  
 |卸载 Microsoft .NET Framework 可能会导致某些应用程序无法正常工作。|通常，你不应卸载计算机上安装的 .NET Framework 的任何版本，因为你使用的应用程序可能取决于 .NET Framework 的特定版本。 有关详细信息，请参阅*入门*指南中的[面向用户的 .NET Framework](../../../docs/framework/get-started/index.md#ForUsers)。|  
@@ -61,28 +63,31 @@ ms.lasthandoff: 05/11/2017
 |.NET Framework 4.5.*x* 已是此操作系统的一部分，但当前处于关闭状态（仅限 [!INCLUDE[winserver8](../../../includes/winserver8-md.md)]）。|请参阅 Windows 网站上的[打开或关闭 Windows 功能](http://go.microsoft.com/fwlink/p/?LinkId=248438)。|  
 |此安装程序要求使用 x86 计算机。 不能在 x64 或 IA64 计算机上安装此程序。|请参阅 MSDN 库中的[系统需求](../../../docs/framework/get-started/system-requirements.md)。|  
 |此安装程序要求使用 x64 或 x86 计算机。 不能在 IA64 计算机上安装此程序。|请参阅 MSDN 库中的[系统需求](../../../docs/framework/get-started/system-requirements.md)。|  
-  
-<a name="compat"></a>   
-### <a name="program-compatibility-issues"></a>程序兼容性问题  
- .NET Framework 4.5 及其单点版本的安装失败并显示 1603 错误，或在 Windows 程序兼容性模式下运行时受到阻止。 **程序兼容性助手**指示可能未正确安装 .NET Framework，并提示使用建议的设置（程序兼容性模式）重新安装它。 以前，在运行 .NET Framework 安装程序失败或取消尝试时，程序兼容性模式还可能已由“程序兼容性助手”进行了设置。  
-  
- .NET Framework 安装程序无法在程序兼容性模式下运行。 若要解决此阻碍问题，你必须确保未在注册表编辑器的系统范围内启用兼容性模式设置：  
-  
-1.  选择“开始”按钮，然后再选择“运行”。  
-  
-2.  在“运行”对话框中键入 `regedit`，然后选择“确定”。  
-  
-3.  在注册表编辑器中，浏览到以下子项：  
-  
-    -   HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Compatibility Assistant\Persisted  
-  
-    -   HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers  
-  
-4.  在“名称”列中查找 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]、4.5.1、4.5.2、4.6、4.6.1 或 4.6.2 下载名称（具体取决于要安装的版本），然后删除这些项。 有关下载名称，请参阅文章[安装指南](../../../docs/framework/install/guide-for-developers.md)。  
-  
-5.  重新运行版本 4.5、4.5.1、4.5.2、4.6、4.6.1、4.6.2 或 4.7 的 .NET Framework 安装程序。  
-  
-## <a name="see-also"></a>另请参阅  
- [安装指南](../../../docs/framework/install/guide-for-developers.md)   
- [如何：确定安装了哪些 .NET Framework 版本](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md)   
- [版本和依赖关系](../../../docs/framework/migration-guide/versions-and-dependencies.md)
+
+<a name="compat"></a>
+### <a name="program-compatibility-issues"></a>程序兼容性问题
+
+.NET Framework 4.5 及其单点版本的安装失败并显示错误代码 1603，或在 Windows 程序兼容性模式下运行时受到阻止。 程序兼容性助手指示可能未正确安装 .NET Framework，并提示使用建议的设置（程序兼容性模式）重新安装它。 以前，在运行 .NET Framework 安装程序失败或取消尝试时，程序兼容性模式还可能已由“程序兼容性助手”进行了设置。
+
+.NET Framework 安装程序无法在程序兼容性模式下运行。 若要解决此阻碍问题，你必须确保未在注册表编辑器的系统范围内启用兼容性模式设置：
+
+1. 选择“开始”按钮，然后再选择“运行”。
+
+1. 在“运行”对话框中，键入“regedit”，然后选择“确定”。
+
+1. 在注册表编辑器中，浏览到以下子项：
+
+   - HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Compatibility Assistant\Persisted
+
+   - HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers
+
+1. 在“名称”列中查找 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]、4.5.1、4.5.2、4.6、4.6.1 或 4.6.2 下载名称（具体取决于要安装的版本），然后删除这些项。 有关下载名称，请参阅[安装面向开发人员的 .NET Framework](../../../docs/framework/install/guide-for-developers.md) 一文。
+
+1. 重新运行版本 4.5、4.5.1、4.5.2、4.6、4.6.1、4.6.2 或 4.7 的 .NET Framework 安装程序。
+
+## <a name="see-also"></a>请参阅
+
+[安装面向开发人员的 .NET Framework](../../../docs/framework/install/guide-for-developers.md)   
+[如何：确定安装了哪些 .NET Framework 版本](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md)   
+[版本和依赖关系](../../../docs/framework/migration-guide/versions-and-dependencies.md)
+

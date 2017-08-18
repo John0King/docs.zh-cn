@@ -1,5 +1,5 @@
 ---
-title: "COM 类示例（C# 编程指南）| Microsoft Docs"
+title: "COM 类示例（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -28,14 +28,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 2525d322bf3284c82356253d1383edbcd3928084
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: a759a7dcd211207c8740dd99d592daa509ddec47
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="example-com-class-c-programming-guide"></a>COM 类示例（C# 编程指南）
-下面是将公开为 COM 对象的类的示例。 在将此代码放置在 .cs 文件中并添加到项目后，将“注册 COM 互操作”****属性设置为“True”****。 有关详细信息，请参阅 [NIB：如何：为 COM 互操作注册组件](http://msdn.microsoft.com/en-us/4de7d474-56e8-4027-994d-d47ca4725c5e)。  
+下面是将公开为 COM 对象的类的示例。 在将此代码放置在 .cs 文件中并添加到项目后，将“注册 COM 互操作”属性设置为“True”。 有关详细信息，请参阅 [NIB：如何：为 COM 互操作注册组件](http://msdn.microsoft.com/en-us/4de7d474-56e8-4027-994d-d47ca4725c5e)。  
   
  对 COM 公开 Visual C# 对象需要声明类接口、事件接口（如有必要）和类本身。 类成员必须遵循这些规则才能显示在 COM 中：  
   
@@ -61,4 +62,5 @@ ms.lasthandoff: 03/13/2017
 ## <a name="see-also"></a>另请参阅  
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [互操作性](../../../csharp/programming-guide/interop/index.md)   
- [“项目设计器”->“生成”页 (C#)](https://docs.microsoft.com/visualstudio/ide/reference/build-page-project-designer-csharp)
+ [“项目设计器”->“生成”页 (C#)](/visualstudio/ide/reference/build-page-project-designer-csharp)
+

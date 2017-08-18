@@ -1,5 +1,5 @@
 ---
-title: "LINQ 和字符串 (C#) | Microsoft Docs"
+title: "LINQ 和字符串 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,21 +19,22 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 39c181bbf3c865b3c3a7f840b600be3ed6f56a7a
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 49c51595ffff45df503308b9eba55fc67b4da2e8
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="linq-and-strings-c"></a>LINQ 和字符串 (C#)
-LINQ 可用于查询和转换字符串和字符串集合。 这在处理文本文件中的半结构化数据时尤其有用。 LINQ 查询可以与传统的字符串函数和正则表达式合并。 例如，可以使用 <xref:System.String.Split%2A> 或 <xref:System.Text.RegularExpressions.Regex.Split%2A> 方法来创建一个字符串数组，之后可以使用 LINQ 来查询或修改这些字符串。 可以使用 LINQ 查询的 `where` 子句中的 <xref:System.Text.RegularExpressions.Regex.IsMatch%2A> 方法。 也可以使用 LINQ 来查询或修改正则表达式返回的 <xref:System.Text.RegularExpressions.MatchCollection> 结果。  
+LINQ 可用于查询和转换字符串和字符串集合。 这在处理文本文件中的半结构化数据时尤其有用。 LINQ 查询可以与传统的字符串函数和正则表达式合并。 例如，可以使用 <xref:System.String.Split%2A> 或 <xref:System.Text.RegularExpressions.Regex.Split%2A> 方法来创建可稍后使用 LINQ 查询或修改的字符串数组。 可以使用 LINQ 查询的 `where` 子句中的 <xref:System.Text.RegularExpressions.Regex.IsMatch%2A> 方法。 并且可以使用 LINQ 查询或修改正则表达式返回的 <xref:System.Text.RegularExpressions.MatchCollection> 结果。  
   
  还可以使用本节介绍的技术将半结构化的文本数据转换为 XML。 有关详细信息，请参阅[如何：从 CSV 文件生成 XML](http://msdn.microsoft.com/library/dd7bab8c-96fa-4343-94d0-9739dd6a74fd)。  
   
  本节中的示例分为两类：  
   
 ## <a name="querying-a-block-of-text"></a>查询文本块  
- 可以使用 <xref:System.String.Split%2A> 方法或 <xref:System.Text.RegularExpressions.Regex.Split%2A> 方法将文本块拆分成较小字符串的可查询数组，从而对其进行查询、分析和修改。 可以先将源文本拆分为词语、句、段落、页或任何其他条件，然后根据查询的需要执行其他拆分。  
+ 可以使用 <xref:System.String.Split%2A> 方法或 <xref:System.Text.RegularExpressions.Regex.Split%2A> 方法将文本块拆分为可查询的较小字符串数组，从而对其进行查询、分析和修改。 可以先将源文本拆分为词语、句、段落、页或任何其他条件，然后根据查询的需要执行其他拆分。  
   
  [如何：对某个词在字符串中出现的次数进行计数 (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-count-occurrences-of-a-word-in-a-string-linq.md)  
  演示如何使用 LINQ 进行简单文本查询。  
@@ -77,3 +78,4 @@ LINQ 可用于查询和转换字符串和字符串集合。 这在处理文本�
 ## <a name="see-also"></a>请参阅  
  [语言集成查询 (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/index.md)   
  [如何：从 CSV 文件生成 XML](http://msdn.microsoft.com/library/dd7bab8c-96fa-4343-94d0-9739dd6a74fd)
+

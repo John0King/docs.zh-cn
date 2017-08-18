@@ -1,5 +1,5 @@
 ---
-title: "命名空间（C# 参考）| Microsoft Docs"
+title: "命名空间（C# 参考）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -31,11 +31,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: cc90fe67f7c65d53980786c39f2a6f9869eec321
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: d2cef3949d9a41db36406db059218f7a204172ea
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="namespace-c-reference"></a>命名空间（C# 参考）
@@ -89,3 +89,4 @@ ms.lasthandoff: 03/13/2017
  [C# 关键字](../../../csharp/language-reference/keywords/index.md)   
  [命名空间关键字](../../../csharp/language-reference/keywords/namespace-keywords.md)   
  [using](../../../csharp/language-reference/keywords/using.md)
+

@@ -1,5 +1,5 @@
 ---
-title: "如何：显示命令行参数（C# 编程指南）| Microsoft Docs"
+title: "如何：显示命令行自变量（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -27,10 +27,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: e46860ecc2f5062abb440a764443ecee19c5153d
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: cf8a57cce252b3596f0a19c9df643427615467c6
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-display-command-line-arguments-c-programming-guide"></a>如何：显示命令行自变量（C# 编程指南）
@@ -43,7 +44,7 @@ ms.lasthandoff: 03/13/2017
 |**executable.exe "one two" three**|"one two"<br /><br /> "three"|  
   
 > [!NOTE]
->  在 Visual Studio 中运行应用程序时，可在[“项目设计器”->“调试”页](https://docs.microsoft.com/visualstudio/ide/reference/debug-page-project-designer)中指定命令行参数。  
+>  在 Visual Studio 中运行应用程序时，可在[“项目设计器”->“调试”页](/visualstudio/ide/reference/debug-page-project-designer)中指定命令行参数。  
   
 ## <a name="example"></a>示例  
  本示例显示了传递给命令行应用程序的命令行参数。 显示的输出对应于上表中的第一项。  
@@ -56,3 +57,4 @@ ms.lasthandoff: 03/13/2017
  [Main() 和命令行自变量](../../../csharp/programming-guide/main-and-command-args/index.md)   
  [如何：使用 foreach 访问命令行参数](../../../csharp/programming-guide/main-and-command-args/how-to-access-command-line-arguments-using-foreach.md)   
  [Main() 返回值](../../../csharp/programming-guide/main-and-command-args/main-return-values.md)
+

@@ -1,5 +1,5 @@
 ---
-title: "异常处理（C# 编程指南）| Microsoft Docs"
+title: "异常处理（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -28,11 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 481621ab8c3d6e1c98c9ad38590ac030827c26c5
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: ab03e00a6b62d0c737c90fdb489be2a78f7ab6af
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="exception-handling-c-programming-guide"></a>异常处理（C# 编程指南）
@@ -49,13 +49,13 @@ C# 程序员使用 [try](../../../csharp/language-reference/keywords/try-catch.m
  一个不具有 `catch` 或 `finally` 块的 `try` 块会导致编译器错误。  
   
 ## <a name="catch-blocks"></a>catch 块  
- `catch` 块可以指定要捕获的异常的类型。 该类型规范称为异常筛选器**。 异常类型应派生自 <xref:System.Exception>。 一般情况下，不要将 <xref:System.Exception> 指定为异常筛选器，除非你了解如何处理可能在 `try` 块中引发的所有异常，或者已在 `catch` 块的末尾处包括了 [throw](../../../csharp/language-reference/keywords/throw.md) 语句。  
+ `catch` 块可以指定要捕获的异常的类型。 该类型规范称为异常筛选器。 异常类型应派生自 <xref:System.Exception>。 一般情况下，不要将 <xref:System.Exception> 指定为异常筛选器，除非了解如何处理可能在 `try` 块中引发的所有异常，或者已在 `catch` 块的末尾处包括了 [throw](../../../csharp/language-reference/keywords/throw.md) 语句。  
   
  可将具有不同异常筛选器的多个 `catch` 块链接在一起。 代码中 `catch` 块的计算顺序为从上到下，但针对引发的每个异常，仅执行一个 `catch` 块。 将执行指定所引发的异常的确切类型或基类的第一个 `catch` 块。 如果没有 `catch` 块指定匹配的异常筛选器，则将选择不具有筛选器的 `catch` 块（如果语句中存在）。 务必首先定位具有最具体的（即，最底层派生的）异常类型的 `catch` 块。  
   
  应当会在下列条件为 true 时捕获到异常：  
   
--   你能够很好地理解可能会引发异常的原因，并且可以实现特定的恢复，例如当捕获到 <xref:System.IO.FileNotFoundException> 对象时提示用户输入新的文件名。  
+-   能够很好地理解可能会引发异常的原因，并且可以实现特定的恢复，例如捕获 <xref:System.IO.FileNotFoundException> 对象时提示用户输入新文件名。  
   
 -   可以创建和引发一个新的、更具体的异常。  
   
@@ -77,7 +77,7 @@ C# 程序员使用 [try](../../../csharp/language-reference/keywords/try-catch.m
 ## <a name="c-language-specification"></a>C# 语言规范  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [C# 参考](../../../csharp/language-reference/index.md)   
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [异常和异常处理](../../../csharp/programming-guide/exceptions/index.md)   
@@ -85,3 +85,4 @@ C# 程序员使用 [try](../../../csharp/language-reference/keywords/try-catch.m
  [try-finally](../../../csharp/language-reference/keywords/try-finally.md)   
  [try-catch-finally](../../../csharp/language-reference/keywords/try-catch-finally.md)   
  [using 语句](../../../csharp/language-reference/keywords/using-statement.md)
+

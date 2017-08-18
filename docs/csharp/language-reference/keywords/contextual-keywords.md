@@ -1,5 +1,5 @@
 ---
-title: "上下文关键字（C# 参考）| Microsoft Docs"
+title: "上下文关键字（C# 参考）"
 ms.date: 2017-03-07
 ms.prod: .net
 ms.technology:
@@ -27,10 +27,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: b279c0a1ae5882884b259534d257cc5c08bd9745
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 57209c7554e7fb53ef946ad9a78a088a3dd49453
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="contextual-keywords-c-reference"></a>上下文关键字（C# 参考）
@@ -59,3 +60,4 @@ ms.lasthandoff: 03/13/2017
  [C# 参考](../../../csharp/language-reference/index.md)   
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [C# 关键字](../../../csharp/language-reference/keywords/index.md)
+

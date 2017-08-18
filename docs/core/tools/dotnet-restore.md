@@ -1,5 +1,5 @@
 ---
-title: "dotnet-restore 命令 - .NET Core CLI | Microsoft Docs"
+title: "dotnet-restore 命令 - .NET Core CLI"
 description: "了解如何使用 dotnet-restore 命令还原依赖项和特定于项目的工具。"
 keywords: "dotnet-restore, CLI, CLI 命令, .NET Core"
 author: blackdwarf
@@ -10,11 +10,11 @@ ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: fd7a5769-afbe-4838-bbaf-3ae0cfcbb914
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 602c173ff8d114a76c5598cd0826485ac32a2e72
-ms.openlocfilehash: fd4fd6ef2e8482a2b961ccbca1f5227d80c8be53
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: a9e471bd1d66d68703b025cd3eaa009cb296a9fb
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/29/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 03/29/2017
 
 对于特定于项目的工具，`dotnet restore` 首先还原打包工具所在的包，然后继续还原 project 文件中指定的工具依赖项。
 
-`dotnet restore` 命令的行为会受 Nuget.Config 文件（如果有）中某些设置的影响。 例如，在 NuGet.Config 中设置 `globalPackagesFolder` 会将还原的 NuGet 包置于指定的文件夹中。 这是在 `dotnet restore` 命令中指定 `--packages` 选项的替代方法。 有关详细信息，请参阅 [NuGet.Config reference](https://docs.microsoft.com/nuget/schema/nuget-config-file)（NuGet.Config 引用）。
+`dotnet restore` 命令的行为会受 Nuget.Config 文件（如果有）中某些设置的影响。 例如，在 NuGet.Config 中设置 `globalPackagesFolder` 会将还原的 NuGet 包置于指定的文件夹中。 这是在 `dotnet restore` 命令中指定 `--packages` 选项的替代方法。 有关详细信息，请参阅 [NuGet.Config reference](/nuget/schema/nuget-config-file)（NuGet.Config 引用）。
 
 ## <a name="arguments"></a>参数
 

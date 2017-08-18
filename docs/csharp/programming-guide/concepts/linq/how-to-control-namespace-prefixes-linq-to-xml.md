@@ -1,5 +1,5 @@
 ---
-title: "如何：控制命名空间前缀 (C#) (LINQ to XML) | Microsoft Docs"
+title: "如何：控制命名空间前缀 (C#) (LINQ to XML)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,10 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 96bc6d1187aa72f8653cd01b2027306009634fd5
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 1e56dcf74725940019cda1bf340b2f3ac4e1f6c4
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-control-namespace-prefixes-c-linq-to-xml"></a>如何：控制命名空间前缀 (C#) (LINQ to XML)
@@ -36,9 +37,9 @@ ms.lasthandoff: 03/13/2017
   
  需要控制命名空间前缀的另一个常见原因是：您希望用户手动编辑 XML 文档，而且您希望创建方便用户键入的命名空间前缀。 例如，您可能正在生成 XSD 文档。 架构约定建议您使用 `xs` 或 `xsd` 作为架构命名空间的前缀。  
   
- 若要控制命名空间前缀，请插入声明命名空间的属性。 如果使用特定前缀声明命名空间，[!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] 将在序列化时尝试接受此命名空间前缀。  
+ 若要控制命名空间前缀，请插入声明命名空间的属性。 如果使用特定前缀声明命名空间，[!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 将在序列化时尝试接受此命名空间前缀。  
   
- 若要创建一个声明具有前缀的命名空间的属性，请创建一个属性，该属性名称的命名空间为 <xref:System.Xml.Linq.XNamespace.Xmlns%2A>，该属性的名称为命名空间前缀。 该属性的值即是命名空间的 URI。  
+ 若要创建一个声明具有前缀的命名空间的属性，请创建一个属性，该属性的名称的命名空间为 <xref:System.Xml.Linq.XNamespace.Xmlns%2A>，该属性的名称为命名空间前缀。 该属性的值即是命名空间的 URI。  
   
 ## <a name="example"></a>示例  
  本示例声明两个命名空间。 它指定 `http://www.adventure-works.com` 命名空间具有 `aw` 前缀，`www.fourthcoffee.com` 命名空间具有 `fc` 前缀。  
@@ -72,3 +73,4 @@ Console.WriteLine(root);
   
 ## <a name="see-also"></a>另请参阅  
  [使用 XML 命名空间 (C#)](../../../../csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md)
+

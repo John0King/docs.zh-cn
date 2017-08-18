@@ -1,5 +1,5 @@
 ---
-title: "纯功能转换简介 (C#) | Microsoft Docs"
+title: "纯功能转换简介 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,11 +14,11 @@ ms.assetid: 8495c9d9-2d02-4aa0-8a10-9e8794b985fe
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 248aff45ca2acd9022f23b2541f274801f6f3546
-ms.lasthandoff: 03/13/2017
-
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 34c4b94577291f300dd2a14ffc33a5ec04b31782
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="introduction-to-pure-functional-transformations-c"></a>纯功能转换简介 (C#)
@@ -36,3 +36,4 @@ ms.lasthandoff: 03/13/2017
   
 ## <a name="see-also"></a>请参阅  
  [XML 的纯功能转换 (C#)](../../../../csharp/programming-guide/concepts/linq/pure-functional-transformations-of-xml.md)
+

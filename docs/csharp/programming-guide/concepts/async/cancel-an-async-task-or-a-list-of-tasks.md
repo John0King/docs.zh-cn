@@ -1,5 +1,5 @@
 ---
-title: "取消一个异步任务或一组任务 (C#) | Microsoft Docs"
+title: "取消一个异步任务或一组任务 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,11 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 400dfda51d978f35c3995f90840643aaff1b9c13
-ms.openlocfilehash: 9fbfa3602766b51c4be5078b793139501802a90c
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 2e34344c9cdf0717291c4c7375bab703679515a7
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/24/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="cancel-an-async-task-or-a-list-of-tasks-c"></a>取消一个异步任务或一组任务 (C#)
@@ -70,7 +70,7 @@ ms.lasthandoff: 03/24/2017
         CancellationTokenSource cts;  
     ```  
   
-2.  为“取消”按钮添加以下事件处理程序。 当用户请求取消时，事件处理程序使用 <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=fullName> 方法通知 `cts`。  
+2.  为“取消”按钮添加以下事件处理程序。 用户请求取消时，事件处理程序使用 <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=fullName> 方法通知 `cts`。  
   
     ```csharp  
     // ***Add an event handler for the Cancel button.  
@@ -92,7 +92,7 @@ ms.lasthandoff: 03/24/2017
         cts = new CancellationTokenSource();  
         ```  
   
-    -   在调用下载指定网站的内容的 `AccessTheWebAsync` 时，将 `cts` 的 <xref:System.Threading.CancellationTokenSource.Token%2A?displayProperty=fullName> 属性作为参数发送。 如果请求取消，则 `Token` 属性传播消息。 如果用户选择取消下载操作，请添加显示消息的 catch 块。 下列代码显示这些更改。  
+    -   在 `AccessTheWebAsync` 调用中（该操作下载指定网站的内容），将 `cts` 的 <xref:System.Threading.CancellationTokenSource.Token%2A?displayProperty=fullName> 属性作为参数发送。 如果请求取消，则 `Token` 属性传播消息。 如果用户选择取消下载操作，请添加显示消息的 catch 块。 下列代码显示这些更改。  
   
         ```csharp  
         try  
@@ -113,7 +113,7 @@ ms.lasthandoff: 03/24/2017
         }  
         ```  
   
-4.  在 `AccessTheWebAsync` 中，使用 <xref:System.Net.Http.HttpClient> 类型中 `GetAsync` 方法的 <xref:System.Net.Http.HttpClient.GetAsync%28System.String%2CSystem.Threading.CancellationToken%29?displayProperty=fullName> 重载来下载网站的内容。 将 `ct`（即 `AccessTheWebAsync` 的 <xref:System.Threading.CancellationToken> 参数）作为第二个参数来传递。 如果用户选择“取消”按钮，则令牌携带消息。  
+4.  在 `AccessTheWebAsync` 中，使用 <xref:System.Net.Http.HttpClient> 类型中 `GetAsync` 方法的 <xref:System.Net.Http.HttpClient.GetAsync%28System.String%2CSystem.Threading.CancellationToken%29?displayProperty=fullName> 重载来下载网站内容。 将 `ct`（`AccessTheWebAsync` 的 <xref:System.Threading.CancellationToken> 参数）作为第二个参数传递。 如果用户选择“取消”按钮，则令牌携带消息。  
   
      下列代码显示 `AccessTheWebAsync` 中的更改。  
   
@@ -224,7 +224,7 @@ ms.lasthandoff: 03/24/2017
     }  
     ```  
   
-4.  由于 `AccessTheWebAsync` 显示了长度，因此该方法无需返回任何内容。 删除返回语句，并将方法的返回类型更改为 <xref:System.Threading.Tasks.Task> 而不是 <xref:System.Threading.Tasks.Task%601>。  
+4.  由于 `AccessTheWebAsync` 显示了长度，因此该方法无需返回任何内容。 删除返回语句，并将方法的返回类型更改为 <xref:System.Threading.Tasks.Task>，而不是 <xref:System.Threading.Tasks.Task%601>。  
   
     ```csharp  
     async Task AccessTheWebAsync(CancellationToken ct)  
@@ -239,7 +239,6 @@ ms.lasthandoff: 03/24/2017
 5.  如果不取消该程序，它将生成以下输出。  
   
     ```  
-  
     Length of the downloaded string: 35939.  
   
     Length of the downloaded string: 237682.  
@@ -255,7 +254,6 @@ ms.lasthandoff: 03/24/2017
     Length of the downloaded string: 145790.  
   
     Downloads complete.  
-  
     ```  
   
      如果在下载完成之前选择“取消”按钮，则输出将包含取消前已完成下载的长度。  
@@ -268,7 +266,6 @@ ms.lasthandoff: 03/24/2017
     Length of the downloaded string: 128607.  
   
     Downloads canceled.  
-  
     ```  
   
 ##  <a name="BKMK_CompleteExamples"></a>完成示例  
@@ -538,3 +535,4 @@ namespace CancelAListOfTasks
  [使用 Async 和 Await 的异步编程 (C#)](../../../../csharp/programming-guide/concepts/async/index.md)   
  [微调异步应用程序 (C#)](../../../../csharp/programming-guide/concepts/async/fine-tuning-your-async-application.md)   
  [Async Sample: Fine Tuning Your Application](http://go.microsoft.com/fwlink/?LinkId=255046)（异步示例：微调应用程序）
+

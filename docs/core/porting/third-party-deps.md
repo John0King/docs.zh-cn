@@ -9,10 +9,11 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: b446e9e0-72f6-48f6-92c6-70ad0ce3f86a
-translationtype: Human Translation
-ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
-ms.openlocfilehash: 5b7bbc0718817365df63db4d8ca7e4cf8871abae
-ms.lasthandoff: 03/02/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: a074978f2817abafa7b8a9fefe7c67c9c52195b3
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -54,7 +55,7 @@ portable-net451-win81
 portable-net45-win8-wpa8-wpa81
 ```
 
-这些是映射到 [.NET 标准库](../../standard/library.md)版本的目标框架名字对象 (TFM) 以及与 .NET Core 兼容的传统可移植类库 (PCL) 配置文件。  请注意，兼容的 `netcoreapp1.0` 适用于应用程序，而非库。  尽管使用基于 `netcoreapp1.0` 的库没有任何不妥，但该库可能不适用于*不是*由其他 `netcoreapp1.0` 应用程序所使用的任何内容。
+这些是映射到 [.NET Standard](../../standard/net-standard.md) 版本的目标框架名字对象 (TFM) 以及与 .NET Core 兼容的传统可移植类库 (PCL) 配置文件。  请注意，兼容的 `netcoreapp1.0` 适用于应用程序，而非库。  尽管使用基于 `netcoreapp1.0` 的库没有任何不妥，但该库可能不适用于*不是*由其他 `netcoreapp1.0` 应用程序所使用的任何内容。
 
 .NET Core 预发行版本中使用的某些旧 TFM 也可能兼容：
 

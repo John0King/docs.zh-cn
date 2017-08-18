@@ -1,5 +1,5 @@
 ---
-title: "使用 Visual Studio 部署 .NET Core 应用 | Microsoft Docs"
+title: "使用 Visual Studio 部署 .NET Core 应用"
 description: "了解如何使用 Visual Studio 部署 .NET Core 应用"
 keywords: ".NET、.NET Core、.NET Core 部署"
 author: rpetrusha
@@ -9,11 +9,11 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 01049a21-fd50-4419-9ab2-0e4a2e091050
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3ffe3909902659a22cb25bac6dc5aaa4f5b9fde2
-ms.openlocfilehash: c6fe1813f0d09207c6730fc5dce682647e25eb03
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 5cc9de1371ba90532e20c11c9f82002ad5a5fa92
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 

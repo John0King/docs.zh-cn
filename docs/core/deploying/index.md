@@ -1,5 +1,5 @@
 ---
-title: ".NET Core 应用程序部署 | Microsoft Docs"
+title: ".NET Core 应用程序部署"
 description: "部署 .NET Core 应用程序。"
 keywords: ".NET、.NET Core、.NET Core 部署"
 author: rpetrusha
@@ -9,11 +9,11 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: da7a31a0-8072-4f23-82aa-8a19184cb701
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3ffe3909902659a22cb25bac6dc5aaa4f5b9fde2
-ms.openlocfilehash: 31503e39d8a96092dbce03c17397e1adfec6421e
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 199bb132df201175dbdbdd19634de5c3551b5f3b
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -47,7 +47,9 @@ ms.lasthandoff: 05/13/2017
 
 ## <a name="self-contained-deployments-scd"></a>独立部署 (SCD)
 
-对于独立部署，可以部署应用和所需的第三方依赖项以及生成应用所使用的 .NET Core 版本。 创建 SCD 不包括各种平台上的 [.NET Core 的本机依赖项](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md)（例如，macOS 上的 OpenSSL），因此运行应用前这些依赖项必须已存在。
+对于独立部署，可以部署应用和所需的第三方依赖项以及生成应用所使用的 .NET Core 版本。 创建 SCD 不包括各种平台上的 [.NET Core 本机依赖项](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md)，因此运行应用前这些依赖项必须已存在。
+
+FDD 和 SCD 部署使用单独的主机可执行文件，使你可以使用发布者签名为 SCD 签署主机可执行文件。
 
 ### <a name="why-deploy-a-self-contained-deployment"></a>为什么要部署独立部署？
 

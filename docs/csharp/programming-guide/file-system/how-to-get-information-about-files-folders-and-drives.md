@@ -1,5 +1,5 @@
 ---
-title: "如何：获取有关文件、文件夹和驱动器的信息（C# 编程指南）| Microsoft Docs"
+title: "如何：获取有关文件、文件夹和驱动器的信息（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -27,10 +27,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 16950f835938846804ade1a8ad23d907aa69b9c3
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 6067ea9d51c31c9398c7b1fcd83ca8fa3a4fec76
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-get-information-about-files-folders-and-drives--c-programming-guide"></a>如何：获取有关文件、文件夹和驱动器的信息（C# 编程指南）
@@ -52,9 +53,9 @@ ms.lasthandoff: 03/13/2017
 System.IO.DriveInfo di = new System.IO.DriveInfo(@"C:\");  
 ```  
   
- 还可以使用对 <xref:System.IO.DirectoryInfo.GetDirectories%2A?displayProperty=fullName>、<xref:System.IO.DirectoryInfo.GetFiles%2A?displayProperty=fullName> 和 <xref:System.IO.DriveInfo.RootDirectory%2A?displayProperty=fullName> 的调用来获取文件、文件夹或驱动器的名称。  
+ 还可以使用对 <xref:System.IO.DirectoryInfo.GetDirectories%2A?displayProperty=fullName><xref:System.IO.DirectoryInfo.GetFiles%2A?displayProperty=fullName> 和 <xref:System.IO.DriveInfo.RootDirectory%2A?displayProperty=fullName> 的调用来获取文件、文件夹或驱动器的名称。  
   
- <xref:System.IO.Directory?displayProperty=fullName> 和 <xref:System.IO.File?displayProperty=fullName> 类提供用于检索有关目录和文件的信息的静态方法。  
+ <xref:System.IO.Directory?displayProperty=fullName> 和 <xref:System.IO.File?displayProperty=fullName> 类提供相关静态方法，用于检索有关目录和文件的信息。  
   
 ## <a name="example"></a>示例  
  下面的示例演示用于访问有关文件和文件夹的信息的各种方法。  
@@ -74,7 +75,8 @@ System.IO.DriveInfo di = new System.IO.DriveInfo(@"C:\");
   
  如果应用程序没有足够权限来读取指定文件，`Exists` 方法会返回 `false`（无论路径是否存在）；该方法不会引发异常。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.IO?displayProperty=fullName>   
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [文件系统和注册表（C# 编程指南）](../../../csharp/programming-guide/file-system/index.md)
+

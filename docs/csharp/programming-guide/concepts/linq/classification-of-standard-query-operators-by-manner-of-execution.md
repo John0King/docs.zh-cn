@@ -1,5 +1,5 @@
 ---
-title: "标准查询运算符按执行方式的分类 (C#) | Microsoft Docs"
+title: "标准查询运算符按执行方式的分类 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,10 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: cb79fe22bd551599eef7f20bd34492a2930d5609
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 4217cbce36bc055cf8c6dde446df4d7b7394430d
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="classification-of-standard-query-operators-by-manner-of-execution-c"></a>标准查询运算符按执行方式的分类 (C#)
@@ -34,7 +35,7 @@ ms.lasthandoff: 03/13/2017
  立即执行指的是在代码中声明查询的位置读取数据源并执行运算。 返回单个不可枚举的结果的所有标准查询运算符都立即执行。  
   
 ### <a name="deferred"></a>推迟  
- 延迟执行指的是不在代码中声明查询的位置执行运算。 仅当对查询变量进行枚举时才执行运算，例如通过使用 `foreach` 语句执行。 这意味着，查询的执行结果取决于执行查询而非定义查询时的数据源内容。 如果多次枚举查询变量，则每次结果可能都不同。 几乎所有返回类型为 <xref:System.Collections.Generic.IEnumerable%601> 或 <xref:System.Linq.IOrderedEnumerable%601> 的标准查询运算符均以延迟方式执行。  
+ 延迟执行指的是不在代码中声明查询的位置执行运算。 仅当对查询变量进行枚举时才执行运算，例如通过使用 `foreach` 语句执行。 这意味着，查询的执行结果取决于执行查询而非定义查询时的数据源内容。 如果多次枚举查询变量，则每次结果可能都不同。 几乎所有返回类型为 <xref:System.Collections.Generic.IEnumerable%601> 或 <xref:System.Linq.IOrderedEnumerable%601> 的标准查询运算符皆以延迟方式执行。  
   
  使用延迟执行的查询运算符可以另外分类为流式处理和非流式处理。  
   
@@ -103,8 +104,9 @@ ms.lasthandoff: 03/13/2017
 |<xref:System.Linq.Enumerable.Union%2A>|<xref:System.Collections.Generic.IEnumerable%601>||X||  
 |<xref:System.Linq.Enumerable.Where%2A>|<xref:System.Collections.Generic.IEnumerable%601>||X||  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.Linq.Enumerable>   
  [标准查询运算符概述 (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)   
  [标准查询运算符的查询表达式语法 (C#)](../../../../csharp/programming-guide/concepts/linq/query-expression-syntax-for-standard-query-operators.md)   
  [LINQ to Objects (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)
+

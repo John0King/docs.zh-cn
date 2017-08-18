@@ -1,5 +1,5 @@
 ---
-title: "演练：利用 BackgroundWorker 组件进行多线程处理 (C#) | Microsoft Docs"
+title: "演练：利用 BackgroundWorker 组件进行多线程处理 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,10 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 1a27591c62e55295b3cf2b9716776b25d984865a
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 541a1ec788c337eea9965b8a46155e5c6606ea2f
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="walkthrough-multithreading-with-the-backgroundworker-component-c"></a>演练：利用 BackgroundWorker 组件进行多线程处理 (C#)
@@ -32,7 +33,7 @@ ms.lasthandoff: 03/13/2017
   
 -   处理 <xref:System.ComponentModel.BackgroundWorker> 组件引发的事件。  
   
--   启动 <xref:System.ComponentModel.BackgroundWorker> 组件以运行方法。  
+-   启动 <xref:System.ComponentModel.BackgroundWorker> 组件运行方法。  
   
 -   实现停止 <xref:System.ComponentModel.BackgroundWorker> 组件的 `Cancel` 按钮。  
   
@@ -64,7 +65,7 @@ ms.lasthandoff: 03/13/2017
   
 ### <a name="to-create-a-backgroundworker-component-and-subscribe-to-its-events"></a>创建 BackgroundWorker 组件并订阅其事件  
   
-1.  将“工具箱”****的“组件”****部分中的 <xref:System.ComponentModel.BackgroundWorker> 组件添加到窗体。 它将出现在窗体的组件栏中。  
+1.  从“工具箱”的“组件”部分，将 <xref:System.ComponentModel.BackgroundWorker> 组件添加到窗体。 它将出现在窗体的组件栏中。  
   
 2.  为 backgroundWorker1 对象设置以下属性。  
   
@@ -73,13 +74,13 @@ ms.lasthandoff: 03/13/2017
     |`WorkerReportsProgress`|True|  
     |`WorkerSupportsCancellation`|True|  
   
-3.  订阅 backgroundWorker1 对象的事件。 在“属性”****窗口的顶部，单击“事件”****图标。 双击 `RunWorkerCompleted` 事件，创建一个事件处理程序方法。 对 `ProgressChanged` 和 `DoWork` 事件执行相同操作。  
+3.  订阅 backgroundWorker1 对象的事件。 在“属性”窗口的顶部，单击“事件”图标。 双击 `RunWorkerCompleted` 事件，创建一个事件处理程序方法。 对 `ProgressChanged` 和 `DoWork` 事件执行相同操作。  
   
 ### <a name="to-define-the-method-that-will-run-on-a-separate-thread"></a>定义将在单独线程上运行的方法  
   
-1.  在“项目”****菜单中，选择“添加类”****以将类添加到项目。 随即出现“添加新项”****对话框。  
+1.  在“项目”菜单中，选择“添加类”以将类添加到项目。 随即出现“添加新项”对话框。  
   
-2.  从模板窗口选择“类”****，然后在名称字段中输入 `Words.cs`。  
+2.  从模板窗口选择“类”，然后在名称字段中输入 `Words.cs`。  
   
 3.  单击 **“添加”**。 随即出现 `Words` 类。  
   
@@ -293,3 +294,4 @@ ms.lasthandoff: 03/13/2017
 ## <a name="see-also"></a>请参阅  
  [线程处理 (C#)](../../../../csharp/programming-guide/concepts/threading/index.md)   
  [如何：订阅和取消订阅事件](../../../../csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md)
+

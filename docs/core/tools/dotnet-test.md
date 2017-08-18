@@ -1,6 +1,6 @@
 ---
-title: "dotnet-test 命令 - .NET Core CLI | Microsoft Docs"
-description: "`dotnet test` 命令用于执行给定项目中的单元测试。"
+title: "dotnet-test 命令 - .NET Core CLI"
+description: "“dotnet test”命令用于执行给定项目中的单元测试。"
 keywords: "dotnet-test, CLI, CLI 命令, .NET Core"
 author: blackdwarf
 ms.author: mairaw
@@ -10,11 +10,11 @@ ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 4bf0aef4-148a-41c6-bb95-0a9e1af8762e
-ms.translationtype: Human Translation
-ms.sourcegitcommit: ae036cfcad341ffc859336a7ab2a49feec145715
-ms.openlocfilehash: 734cf337fdd0d33f6c2b6d929b795b2307135550
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 3308488672df2621c04de40f642c732f81284019
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/18/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -129,7 +129,7 @@ ms.lasthandoff: 05/18/2017
 
 | 运算符 | 函数 |
 | :------: | :------: |
-| `|`      | 或       |
+| <code>&#124;</code>      | 或       |
 | `&`      | AND      |
 
 使用条件运算符时，可以用括号将表达式括起来（例如，`(Name~TestMethod1) | (Name~TestMethod2)`）。

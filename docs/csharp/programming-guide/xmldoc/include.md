@@ -1,57 +1,76 @@
 ---
-title: "&lt;include&gt;（C# 编程指南） | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-f1_keywords: 
-  - "include"
-  - "<include>"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "<include> C# XML 标记"
-  - "include C# XML 标记"
+title: "&lt;include&gt;（C# 编程指南）"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+f1_keywords:
+- include
+- <include>
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- <include> C# XML tag
+- include C# XML tag
 ms.assetid: a8a70302-6196-4643-bd09-ef33f411f18f
 caps.latest.revision: 19
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 19
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 1788a51d1bc61ba5e69774d65c14001851924472
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
+
 ---
-# &lt;include&gt;（C# 编程指南）
-## 语法  
+# <a name="ltincludegt-c-programming-guide"></a>&lt;include&gt;（C# 编程指南）
+## <a name="syntax"></a>语法  
   
-```  
+```xml  
 <include file='filename' path='tagpath[@name="id"]' />  
 ```  
   
-#### 参数  
+#### <a name="parameters"></a>参数  
  `filename`  
- 包含文档的 XML 文件的名称。  该文件名可用路径加以限定。  将 `filename` 括在单引号 \(' '\) 中。  
+ 包含文档的 XML 文件的名称。 可使用路径来限定文件名。 使用单引号 (' ') 将 `filename` 括起来。  
   
  `tagpath`  
- `filename` 中指向标记 `name` 的标记路径。  将此路径括在单引号中 \(' '\)。  
+ `filename` 中标记的路径，它指向标记 `name`。 使用单引号 (' ') 将路径括起来。  
   
  `name`  
- 注释前边的标记中的名称说明符；`name` 具有一个 `id`。  
+ 标记中的名称说明符（位于注释之前）；`name` 将有 `id`。  
   
  `id`  
- 位于注释之前的标记的 ID。  将此 ID 括在双引号中 \(" "\)。  
+ 标记的 ID（位于注释之前）。 用双引号 (" ") 将 ID 括起来。  
   
-## 备注  
- \<include\> 标记使您得以引用描述源代码中类型和成员的另一文件中的注释。  这是除了将文档注释直接置于源代码文件中之外的另一种可选方法。  通过将文档放在单独文件中，您可以独立于源代码将源控件应用至文档。  其中一人可以签出源代码文件，而其他人则可以签出文档文件。  
+## <a name="remarks"></a>备注  
+ 通过 \<include> 标记，可在其他文件中引用描述源代码中类型和成员的注释。 这是对直接在源代码文件中放入文档注释的替代方法。 通过将文档放入不同文件，可以单独从源代码对文档应用源控件。 一人可以签出源代码文件，而其他人可以签出文档文件。  
   
- \<include\> 标记使用 XML XPath 语法。  有关自定义 \<include\> 使用的方法，请参见 XPath 文档。  
+ \<include> 标记使用 XML XPath 语法。 有关如何自定义 \<include> 的用法，请参阅 XPath 文档。  
   
-## 示例  
- 以下是一个多文件示例。  第一个文件使用 \<include\>，如下所列：  
+## <a name="example"></a>示例  
+ 这是多文件示例。 第一个文件使用 \<include>，列在下面：  
   
  [!code-cs[csProgGuideDocComments#5](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/include_1.cs)]  
   
- 第二个文件 xml\_include\_tag.doc 包含下列文档注释：  
+ 第二个文件是 xml_include_tag.doc，包含下列文档注释：  
   
-```  
+```xml  
 <MyDocs>  
   
 <MyMembers name="test">  
@@ -69,10 +88,10 @@ The summary for this other type.
 </MyDocs>  
 ```  
   
-## 程序输出  
- 以下输出在使用命令行 `/doc:DocFileName.xml.` 编译 Test 和 Test2 类时生成。在 Visual Studio 中，可以在项目设计器的“生成”窗格中指定 XML 文档注释选项。  C\# 编译器找到 \<inclue\> 标记时，将在 xml\_include\_tag.doc 中搜索文档注释，而不是在当前源文件中搜索。  然后，编译器生成 DocFileName.xml，这是由文档工具（如 [Sandcastle](http://go.microsoft.com/fwlink/?LinkId=124061)）使用以生成最终文档的文件。  
+## <a name="program-output"></a>程序输出  
+ 使用以下命令行编译 Test 和 Test2 类时，将生成下列输出：`/doc:DocFileName.xml.`。在 Visual Studio 的项目设计器的“生成”窗格中，指定 XML 文档注释选项。 当 C# 编译器发现 \<inclue> 标记时，它将在 xml_include_tag.doc（而不是当前源文件）中搜索文档注释。 然后编译器生成 DocFileName.xml，这是由文档工具（如 [Sandcastle](https://github.com/EWSoftware/SHFB)）所使用的文件，用于生成最终文档。  
   
-```  
+```xml  
 <?xml version="1.0"?>   
 <doc>   
     <assembly>   
@@ -93,6 +112,7 @@ The summary for this other type.
 </doc>   
 ```  
   
-## 请参阅  
- [C\# 编程指南](../../../csharp/programming-guide/index.md)   
+## <a name="see-also"></a>另请参阅  
+ [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [建议的文档注释标记](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)
+

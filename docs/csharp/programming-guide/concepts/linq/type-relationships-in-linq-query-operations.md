@@ -1,5 +1,5 @@
 ---
-title: "LINQ 查询操作中的类型关系 (C#) | Microsoft Docs"
+title: "LINQ 查询操作中的类型关系 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -39,21 +39,22 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: ad52663fb54ee1adc06a084d26abb3e6ce46e2af
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: e33936ce2398cea782ec1f4272f22d9c3fc049e8
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="type-relationships-in-linq-query-operations-c"></a>LINQ 查询操作中的类型关系 (C#)
-若要有效编写查询，应了解完整的查询操作中的变量类型是如何全部彼此关联的。 如果了解这些关系，就能够更容易地理解文档中的 [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] 示例和代码示例。 另外，还能了解在使用 `var` 隐式对变量进行类型化时的后台操作。  
+若要有效编写查询，应了解完整的查询操作中的变量类型是如何全部彼此关联的。 如果了解这些关系，就能够更容易地理解文档中的 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 示例和代码示例。 另外，还能了解在使用 `var` 隐式对变量进行类型化时的后台操作。  
   
- [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] 查询操作在数据源、查询本身及查询执行中是强类型化的。 查询中变量的类型必须与数据源中元素的类型和 `foreach` 语句中迭代变量的类型兼容。 此强类型保证在编译时捕获类型错误，以便可以在用户遇到这些错误之前更正它们。  
+ [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 查询操作在数据源、查询本身及查询执行中是强类型化的。 查询中变量的类型必须与数据源中元素的类型和 `foreach` 语句中迭代变量的类型兼容。 此强类型保证在编译时捕获类型错误，以便可以在用户遇到这些错误之前更正它们。  
   
  为了演示这些类型关系，下面的大多数示例对所有变量使用显式类型。 最后一个示例演示在利用使用 [var](../../../../csharp/language-reference/keywords/var.md) 的隐式类型时，如何应用相同的原则。  
   
 ## <a name="queries-that-do-not-transform-the-source-data"></a>不转换源数据的查询  
- 下图演示不对数据执行转换的 [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] to Objects 查询操作。 源包含一个字符串序列，查询输出也是一个字符串序列。  
+ 下图演示不对数据执行转换的 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] to Objects 查询操作。 源包含一个字符串序列，查询输出也是一个字符串序列。  
   
  ![LINQ 查询中的数据类型关系](../../../../csharp/programming-guide/concepts/linq/media/linq_flow1.png "LINQ_flow1")  
   
@@ -64,7 +65,7 @@ ms.lasthandoff: 03/13/2017
 3.  在 `foreach` 语句中循环访问查询变量。 因为查询变量是一个字符串序列，所以迭代变量也是一个字符串。  
   
 ## <a name="queries-that-transform-the-source-data"></a>转换源数据的查询  
- 下图演示对数据执行简单转换的 [!INCLUDE[vbtecdlinq](../../../../csharp/includes/vbtecdlinq_md.md)] 查询操作。 查询将一个 `Customer` 对象序列用作输入，并只选择结果中的 `Name` 属性。 因为 `Name` 是一个字符串，所以查询生成一个字符串序列作为输出。  
+ 下图演示对数据执行简单转换的 [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] 查询操作。 查询将一个 `Customer` 对象序列用作输入，并只选择结果中的 `Name` 属性。 因为 `Name` 是一个字符串，所以查询生成一个字符串序列作为输出。  
   
  ![转换数据类型的查询](../../../../csharp/programming-guide/concepts/linq/media/linq_flow2.png "LINQ_flow2")  
   
@@ -93,3 +94,4 @@ ms.lasthandoff: 03/13/2017
   
 ## <a name="see-also"></a>请参阅  
  [C# 中的 LINQ 入门](../../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)
+

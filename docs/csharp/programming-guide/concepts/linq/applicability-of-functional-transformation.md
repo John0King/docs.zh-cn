@@ -1,5 +1,5 @@
 ---
-title: "功能转换的适用性 (C#) | Microsoft Docs"
+title: "功能转换的适用性 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,12 +14,11 @@ ms.assetid: c78107bd-b006-4574-a3d4-bbf808388ff3
 caps.latest.revision: 4
 author: BillWagner
 ms.author: wiwagn
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 0f79ec1e5975a1197464785182a7e6d4af4ba61c
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: b008bdef820b979e2aabd480e08a3bfa5ee5afa2
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
-
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="applicability-of-functional-transformation-c"></a>功能转换的适用性 (C#)
@@ -49,3 +48,4 @@ ms.lasthandoff: 05/22/2017
  [纯函数转换简介 (C#)](../../../../csharp/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md)   
  [XML 的功能转换 (C#)](../../../../csharp/programming-guide/concepts/linq/functional-transformation-of-xml.md)   
  [重构为纯函数 (C#)](../../../../csharp/programming-guide/concepts/linq/refactoring-into-pure-functions.md)
+

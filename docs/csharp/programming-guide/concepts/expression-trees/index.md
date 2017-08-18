@@ -1,5 +1,5 @@
 ---
-title: "表达式树 (C#) | Microsoft Docs"
+title: "表达式树 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,10 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 7e33ed084c560470a486ebbb25035a59ddc18565
-ms.openlocfilehash: 87195c8936aba485919d6c717fcbfaa1b282bddc
-ms.lasthandoff: 03/31/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: be37183163a3747f861cbda7fd7867640ba382a2
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="expression-trees-c"></a>表达式树 (C#)
@@ -32,10 +33,10 @@ ms.lasthandoff: 03/31/2017
   
  表达式树还能用于动态语言运行时 (DLR) 以提供动态语言和 .NET Framework 之间的互操作性，同时保证编译器编写员能够发射表达式树而非 Microsoft 中间语言 (MSIL)。 有关 DLR 的详细信息，请参阅[动态语言运行时概述](https://msdn.microsoft.com/library/dd233052)。  
   
- 可基于匿名 Lambda 表达式通过 C# 或 Visual Basic 编译器创建表达式树，也可通过 <xref:System.Linq.Expressions> 命名空间手动创建。  
+ 你可以基于匿名 lambda 表达式通过 C# 或者 Visual Basic 编译器创建表达式树，或者通过 <xref:System.Linq.Expressions> 名称空间手动创建。  
   
 ## <a name="creating-expression-trees-from-lambda-expressions"></a>根据 Lambda 表达式创建表达式树  
- 如果 Lambda 表达式被分配给 <xref:System.Linq.Expressions.Expression%601> 类型的变量，编译器可发出代码，以创建表示该 Lambda 表达式的表达式树。  
+ 若 lambda 表达式被分配给 <xref:System.Linq.Expressions.Expression%601> 类型的变量，则编译器可以发射代码以创建表示该 lambda 表达式的表达式树。  
   
  C# 编译器只能从表达式 Lambda（或单行 Lambda）生成表达式树。 它无法解析语句 lambda （或多行 lambda）。 有关 C# 中 Lambda 表达式的详细信息，请参阅 [Lambda 表达式](../../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)。  
   
@@ -46,7 +47,7 @@ Expression<Func<int, bool>> lambda = num => num < 5;
 ```  
   
 ## <a name="creating-expression-trees-by-using-the-api"></a>通过 API 创建表达式树  
- 若要使用 API 创建表达式树，请使用 <xref:System.Linq.Expressions.Expression> 类。 此类包含用于创建特定类型表达式树节点的静态工厂方法，例如表示变量或参数的 <xref:System.Linq.Expressions.ParameterExpression>，或者表示方法调用的 <xref:System.Linq.Expressions.MethodCallExpression>。 <xref:System.Linq.Expressions.ParameterExpression>、<xref:System.Linq.Expressions.MethodCallExpression> 以及表达式特定的其他类型也在 <xref:System.Linq.Expressions> 命名空间中进行定义。 这些类型派生自抽象类型 <xref:System.Linq.Expressions.Expression>。  
+ 通过 API 创建表达式树需要使用 <xref:System.Linq.Expressions.Expression> 类。 类包含创建特定类型表达式树节点的静态工厂方法，比如表示参数变量的 <xref:System.Linq.Expressions.ParameterExpression>，或者是表示方法调用的 <xref:System.Linq.Expressions.MethodCallExpression>。 <xref:System.Linq.Expressions.ParameterExpression> 名称空间还解释了 <xref:System.Linq.Expressions.MethodCallExpression>、<xref:System.Linq.Expressions>和另一种具体表达式类型。 这些类型来源于抽象类型 <xref:System.Linq.Expressions.Expression>。  
   
  下列代码示例展示如何使用 API 创建表示 Lambda 表达式 `num => num < 5` 的表达式树。  
   
@@ -137,7 +138,7 @@ Console.WriteLine("Decomposed expression: {0} => {1} {2} {3}",
  表达式树应具有永久性。 这意味着如果你想修改某个表达式树，则必须复制该表达式树然后替换其中的节点来创建一个新的表达式树。 你可以使用表达式树访问者遍历现有表达式树。 有关详细信息，请参阅[如何：修改表达式树 (C#)](../../../../csharp/programming-guide/concepts/expression-trees/how-to-modify-expression-trees.md)。  
   
 ## <a name="compiling-expression-trees"></a>编译表达式树  
- <xref:System.Linq.Expressions.Expression%601> 类型提供了 <xref:System.Linq.Expressions.Expression%601.Compile%2A> 方法，该方法可将表达式树表示的代码编译为可执行委托。  
+ <xref:System.Linq.Expressions.Expression%601> 类型提供了 <xref:System.Linq.Expressions.Expression%601.Compile%2A> 方法以将表达式树表示的代码编译成可执行委托。  
   
  下列代码示例展示如何编译表达式树并运行结果代码。  
   
@@ -170,3 +171,4 @@ Console.WriteLine(expr.Compile()(4));
  [Lambda 表达式](../../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)   
  [动态语言运行时概述](https://msdn.microsoft.com/library/dd233052)   
  [编程概念 (C#)](../../../../csharp/programming-guide/concepts/index.md)
+

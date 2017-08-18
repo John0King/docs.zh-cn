@@ -1,5 +1,5 @@
 ---
-title: "double（C# 参考） | Microsoft Docs"
+title: "double（C# 参考）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -30,10 +30,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: ccdd29c78a3cdc9d32fa08b1be94eecd717418fc
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: d5588f8391157fb56a5e5067bb8e11f9269fe733
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="double-c-reference"></a>double（C# 参考）
@@ -47,7 +48,6 @@ ms.lasthandoff: 03/13/2017
  默认情况下，赋值运算符右侧的实数被视为 `double`。 但是，如果希望整数被视为 `double`，可使用后缀 d 或 D，例如：  
   
 ```  
-  
 double x = 3D;  
 ```  
   
@@ -76,7 +76,7 @@ double x = 3D;
  [!code-cs[csrefKeywordsTypes#9](../../../csharp/language-reference/keywords/codesnippet/CSharp/double_1.cs)]  
   
 ## <a name="c-language-specification"></a>C# 语言规范  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## <a name="see-also"></a>请参阅  
  [C# 参考](../../../csharp/language-reference/index.md)   
@@ -87,3 +87,4 @@ double x = 3D;
  [浮点型表](../../../csharp/language-reference/keywords/floating-point-types-table.md)   
  [隐式数值转换表](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)   
  [显式数值转换表](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)
+

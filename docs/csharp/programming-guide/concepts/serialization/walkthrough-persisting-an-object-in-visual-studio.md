@@ -1,5 +1,5 @@
 ---
-title: "演练：在 Visual Studio (C#) 中保持对象 | Microsoft Docs"
+title: "演练：在 Visual Studio (C#) 中保持对象"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,10 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: f76e40e2503bf857922490d728c3a9f3432aa31f
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 4c8dce64c470f01f540a83f68e3861df56913e4c
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="walkthrough-persisting-an-object-in-visual-studio-c"></a>演练：在 Visual Studio (C#) 中保持对象
@@ -44,9 +45,9 @@ ms.lasthandoff: 03/13/2017
   
 ### <a name="to-create-the-loan-class"></a>创建 Loan 类  
   
-1.  新建“类库”项目，并将其命名为“LoanClass”。 有关详细信息，请参阅[创建解决方案和项目](https://docs.microsoft.com/visualstudio/ide/creating-solutions-and-projects)。  
+1.  新建“类库”项目，并将其命名为“LoanClass”。 有关详细信息，请参阅[创建解决方案和项目](/visualstudio/ide/creating-solutions-and-projects)。  
   
-2.  在“解决方案资源管理器”****中，打开 Class1 文件的快捷菜单，选择“重命名”****。 将文件重命名为 `Loan`，然后按 Enter。 重命名文件也会将类重命名为 `Loan`。  
+2.  在“解决方案资源管理器”中，打开 Class1 文件的快捷菜单，选择“重命名”。 将文件重命名为 `Loan`，然后按 Enter。 重命名文件也会将类重命名为 `Loan`。  
   
 3.  将以下公共成员添加到该类中：  
   
@@ -88,19 +89,19 @@ ms.lasthandoff: 03/13/2017
   
 ### <a name="to-create-a-test-application"></a>创建测试应用程序  
   
-1.  若要将 Windows 窗体应用程序项目添加到解决方案，请在“文件”****菜单上依次选择“添加”****、“新建项目”****。  
+1.  若要将 Windows 窗体应用程序项目添加到解决方案，请在“文件”菜单上依次选择“添加”、“新建项目”。  
   
-2.  在“添加新项目”****对话框中，选择“Windows 窗体应用程序”****，然后输入 `LoanApp` 作为项目名称，然后单击“确定”****关闭对话框。  
+2.  在“添加新项目”对话框中，选择“Windows 窗体应用程序”，然后输入 `LoanApp` 作为项目名称，然后单击“确定”关闭对话框。  
   
-3.  在“解决方案资源管理器”****中，选择 LoanApp 项目。  
+3.  在“解决方案资源管理器”中，选择 LoanApp 项目。  
   
-4.  在“项目”****菜单上，选择“设为启动项目”****。  
+4.  在“项目”菜单上，选择“设为启动项目”。  
   
-5.  在“项目” **** 菜单上，选择“添加引用” ****。  
+5.  在“项目”菜单上，选择“添加引用” 。  
   
-6.  在“添加引用”****对话框中，选择“项目”****选项卡，然后选择 LoanClass 项目。  
+6.  在“添加引用”对话框中，选择“项目”选项卡，然后选择 LoanClass 项目。  
   
-7.  单击“确定” **** 关闭对话框。  
+7.  单击“确定”关闭对话框。  
   
 8.  在设计器中，向窗体添加四个 <xref:System.Windows.Forms.TextBox> 控件。  
   
@@ -156,7 +157,7 @@ ms.lasthandoff: 03/13/2017
     public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;  
     ```  
   
- 下一步是向 LoanApp 应用程序添加序列化代码。 为了对类进行序列化并将其写入文件，需使用 <xref:System.IO> 和 <xref:System.Xml.Serialization> 命名空间。 为了避免键入完全限定的名称，可以添加对必要类库的引用。  
+ 下一步是向 LoanApp 应用程序添加序列化代码。 为了将该类序列化并将其写入到文件，将使用 <xref:System.IO> 和 <xref:System.Xml.Serialization> 命名空间。 为了避免键入完全限定的名称，可以添加对必要类库的引用。  
   
 ### <a name="to-add-references-to-namespaces"></a>添加对命名空间的引用  
   
@@ -203,7 +204,7 @@ ms.lasthandoff: 03/13/2017
     }  
     ```  
   
-     请注意，首先必须检查该文件是否存在。 如果存在，则创建用于读取二进制文件的 <xref:System.IO.Stream> 类和用于翻译该文件的 <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> 类。 还需将流类型转换为 Loan 对象类型。  
+     请注意，首先必须检查该文件是否存在。 如果存在，则创建 <xref:System.IO.Stream> 类来读取二进制文件和 <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> 类，以转换该文件。 还需将流类型转换为 Loan 对象类型。  
   
  接下来，必须添加代码以将本文框中输入的数据保存到 `Loan` 类，然后必须将类序列化到文件中。  
   

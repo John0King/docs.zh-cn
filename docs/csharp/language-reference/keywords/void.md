@@ -1,5 +1,5 @@
 ---
-title: "void（C# 参考）| Microsoft Docs"
+title: "void（C# 参考）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -30,33 +30,33 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: b4aa3c7c54e5e4d53975262adbbd9b54c701a69e
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: d1bd7ece5ce3b558c616a4eb3a4668c3c13eb1cb
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="void-c-reference"></a>void（C# 参考）
-当用作一种方法的返回类型时，`void` 将指定该方法不返回值。  
-  
- 方法的参数列表中不允许有 `void`。 无参数且不返回值的方法的声明方式如下：  
-  
-```  
-public void SampleMethod()  
-{  
-    // Body of the method.  
-}  
-```  
-  
- `void` 还可用于在不安全的上下文中将指针声明为未知类型。 有关详细信息，请参阅[指针类型](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)。  
-  
- `void` 是 .NET Framework <xref:System.Void?displayProperty=fullName> 类型的一个别名。  
-  
-## <a name="c-language-specification"></a>C# 语言规范  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
-  
-## <a name="see-also"></a>请参阅  
+当用作一种方法的返回类型时，`void` 将指定该方法不返回值。
+
+方法的参数列表中不允许有 `void`。 无参数且不返回值的方法的声明方式如下：
+
+```csharp
+public void SampleMethod()
+{
+    // Body of the method.
+}
+```
+
+`void` 还可用于在不安全的上下文中将指针声明为未知类型。 有关详细信息，请参阅[指针类型](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)。
+
+`void` 是 .NET Framework <xref:System.Void?displayProperty=fullName> 类型的别名。
+
+## <a name="c-language-specification"></a>C# 语言规范
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
+
+## <a name="see-also"></a>请参阅
  [C# 参考](../../../csharp/language-reference/index.md)   
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [C# 关键字](../../../csharp/language-reference/keywords/index.md)   

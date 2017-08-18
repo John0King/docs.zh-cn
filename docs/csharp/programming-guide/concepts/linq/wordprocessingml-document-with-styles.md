@@ -1,5 +1,5 @@
 ---
-title: "具有样式的 WordprocessingML 文档3 | Microsoft Docs"
+title: "具有样式3 的 WordprocessingML 文档"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,11 +14,11 @@ ms.assetid: 40e35de6-ac93-4bba-88ab-a018cbe93873
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 6c8c59f80c3eaf507c2690e2b3c0cf188df9cc1c
-ms.lasthandoff: 03/13/2017
-
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 476f6cbd7b29f77ffad6d5a072297f94452ffff4
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="wordprocessingml-document-with-styles"></a>具有样式的 WordprocessingML 文档
@@ -151,3 +151,4 @@ ms.lasthandoff: 03/13/2017
   
 ## <a name="see-also"></a>请参阅  
  [Office Open XML WordprocessingML 文档的详细信息 (C#)](../../../../csharp/programming-guide/concepts/linq/details-of-office-open-xml-wordprocessingml-documents.md)
+

@@ -1,19 +1,20 @@
 ---
-title: "dotnet-install 脚本 | Microsoft Docs"
+title: "dotnet-install 脚本"
 description: "了解用于安装 .NET Core CLI 工具和共享运行时的 dotnet-install 脚本。"
 keywords: "dotnet-install, dotnet-install 脚本, .NET Core"
 author: blackdwarf
 ms.author: mairaw
-ms.date: 03/15/2017
+ms.date: 07/10/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: b64e7e6f-ffb4-4fc8-b43b-5731c89479c2
-translationtype: Human Translation
-ms.sourcegitcommit: 4a1f0c88fb1ccd6694f8d4f5687431646adbe000
-ms.openlocfilehash: fbc1ce8d864a5c2150c61f4b8bf7cb8544921634
-ms.lasthandoff: 03/22/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 8af168e96f8f5b57626b126135d8b5e509fbb059
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -57,15 +58,28 @@ macOS/Linux：
 
 `-Channel <CHANNEL>`
 
-指定安装的源通道。 值为 `future`、`preview` 和 `production`。 默认值为 `production`。
+指定安装的源通道。 可能的值为：
+
+- `Current` - 当前版本
+- `LTS` - 长期支持频道（当前支持版本）
+- 表示特定版本的由两部分构成的 X.Y 格式的版本（例如 `2.0` 或 `1.0`）
+- 分支名称 [例如 `release/2.0.0`、`release/2.0.0-preview2` 或 `master` 分支中的最新版 `master`（“最前沿”的每日构建）]
+
+默认值为 `LTS`。 有关 .NET 支持频道的详细信息，请参阅 [.NET Core 支持生命周期](https://www.microsoft.com/net/core/support)主题。
 
 `-Version <VERSION>`
 
-指定要安装的 CLI 版本。 必须将版本指定为一个 3 个部分构成的版本（例如，1.0.0-13232）。 如果省略，则默认为包含 `version` 属性的第一个 [global.json](global-json.md)。 如果该版本不存在，则使用最新的版本。
+表示源频道上的内部版本（请参阅“`-Channel`”选项）。 可能的值为：
+
+- `latest` - 频道上的最新内部版本
+- `coherent` - 频道上最新的连贯内部版本；使用最新的稳定包组合
+- 表示特定版本的由三部分构成的 X.Y.Z 格式的版本（例如 `1.0.x`，其中 `x` 表示修补程序版本；或特定内部版本，例如 `2.0.0-preview2-006120`）
+
+如果省略，则 `-Version` 默认为是包含 `version` 成员的第一个 [global.json](global-json.md)。 如果它不存在，则 `-Version` 默认为是 `latest`。
 
 `-InstallDir <DIRECTORY>`
 
-指定安装路径。 如果不存在，则会创建该目录。 默认值为 *%LocalAppData%\.dotnet*。
+指定安装路径。 如果不存在，则会创建该目录。 默认值为 *%LocalAppData%\.dotnet*。 请注意，会将二进制文件直接放入目录中。
 
 `-Architecture <ARCHITECTURE>`
 
@@ -84,7 +98,7 @@ macOS/Linux：
 
 `-DryRun`
 
-如果设置，该脚本不会执行安装，而会显示要使用哪个命令行来持续安装当前请求的 .NET CLI 版本。 例如，如果指定版本 `latest`，它将显示特定版本的链接，以便可在生成脚本中明确地使用此命令。 如果想要自行安装或下载，它还会显示二进制文件位置。
+如果设置，该脚本不会执行安装，而会显示要使用哪个命令行来持续安装当前请求的 .NET Core CLI 版本。 例如，如果指定版本 `latest`，它将显示特定版本的链接，以便可在生成脚本中明确地使用此命令。 如果想要自行安装或下载，它还会显示二进制文件位置。
 
 `-NoPath`
 
@@ -102,13 +116,26 @@ macOS/Linux：
 
 `dotnet-install.sh [--channel] [--version] [--install-dir] [--architecture] [--shared-runtime] [--debug-symbols] [--dry-run] [--no-path] [--verbose] [--azure-feed] [--help]`
 
-`--channel <CHANNEL>`
+`-Channel <CHANNEL>`
 
-指定安装的源通道。 值为 `future`、`dev` 和 `production`。 默认值为 `production`。
+指定安装的源通道。 可能的值为：
 
-`--version <VERSION>`
+- `Current` - 当前版本
+- `LTS` - 长期支持频道（当前支持版本）
+- 表示特定版本的由两部分构成的 X.Y 格式的版本（例如 `2.0` 或 `1.0`）
+- 分支名称 [例如 `release/2.0.0`、`release/2.0.0-preview2` 或 `master` 分支中的最新版 `master`（“最前沿”的每日构建）]
 
-指定要安装的 CLI 版本。 必须将版本指定为一个 3 个部分构成的版本（例如，1.0.0-13232）。 如果省略，则默认为包含 `version` 属性的第一个 [global.json](global-json.md)。 如果该版本不存在，则使用最新的版本。
+默认值为 `LTS`。 有关 .NET 支持频道的详细信息，请参阅 [.NET Core 支持生命周期](https://www.microsoft.com/net/core/support)主题。
+
+`-Version <VERSION>`
+
+表示源频道上的内部版本（请参阅“`-Channel`”选项）。 可能的值为：
+
+- `latest` - 频道上的最新内部版本
+- `coherent` - 频道上最新的连贯内部版本；使用最新的稳定包组合
+- 表示特定版本的由三部分构成的 X.Y.Z 格式的版本（例如 `1.0.x`，其中 `x` 表示修补程序版本；或特定内部版本，例如 `2.0.0-preview2-006120`）
+
+如果省略，则 `-Version` 默认为是包含 `version` 成员的第一个 [global.json](global-json.md)。 如果它不存在，则 `-Version` 默认为是 `latest`。
 
 `--install-dir <DIRECTORY>`
 
@@ -131,7 +158,7 @@ macOS/Linux：
 
 `--dry-run`
 
-如果设置，该脚本不会执行安装，而会显示要使用哪个命令行来持续安装当前请求的 .NET CLI 版本。 例如，如果指定版本 `latest`，它将显示特定版本的链接，以便可在生成脚本中明确地使用此命令。 如果想要自行安装或下载，它还会显示二进制文件位置。
+如果设置，该脚本不会执行安装，而会显示要使用哪个命令行来持续安装当前请求的 .NET Core CLI 版本。 例如，如果指定版本 `latest`，它将显示特定版本的链接，以便可在生成脚本中明确地使用此命令。 如果想要自行安装或下载，它还会显示二进制文件位置。
 
 `--no-path`
 
@@ -170,3 +197,9 @@ Windows：
 macOS/Linux：
 
 `./dotnet-install.sh --channel preview --install-dir ~/cli`
+
+## <a name="see-also"></a>请参阅
+
+[.NET Core 版本](https://github.com/dotnet/core/releases)   
+[.NET Core 运行时和 SDK 下载存档](https://github.com/dotnet/core/blob/master/release-notes/download-archive.md)
+

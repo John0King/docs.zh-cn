@@ -1,5 +1,5 @@
 ---
-title: "函数编程与命令式编程 (C#) | Microsoft Docs"
+title: "函数编程与命令式编程 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,12 +14,11 @@ ms.assetid: 5e35c5a0-c949-422a-873b-fca6b2254f57
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
-ms.openlocfilehash: 9e16daec1c830f4541229beaa10b079e683914fe
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: e26cf7946a2ee8d83683a31666b13c6685fbc045
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/10/2017
-
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="functional-programming-vs-imperative-programming-c"></a>函数编程与命令式编程 (C#)
@@ -67,3 +66,4 @@ ms.lasthandoff: 05/10/2017
  [纯函数转换简介 (C#)](../../../../csharp/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md)   
  [XSLT 转换](../../../../standard/data/xml/xslt-transformations.md)   
  [重构为纯函数 (C#)](../../../../csharp/programming-guide/concepts/linq/refactoring-into-pure-functions.md)
+

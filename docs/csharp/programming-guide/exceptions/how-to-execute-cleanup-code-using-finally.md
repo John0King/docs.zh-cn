@@ -1,5 +1,5 @@
 ---
-title: "如何：使用 finally 执行清理代码（C# 编程指南）| Microsoft Docs"
+title: "如何：使用 finally 执行清理代码（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -29,10 +29,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: b9c22ca8ee9c83e6f1808520530c6d1912d8f4f1
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: b1f7bccacf20a9322f4de75740cdc34b4a97fa4c
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-execute-cleanup-code-using-finally-c-programming-guide"></a>如何：使用 finally 执行清理代码（C# 编程指南）
@@ -57,3 +58,4 @@ ms.lasthandoff: 03/13/2017
  [try-catch](../../../csharp/language-reference/keywords/try-catch.md)   
  [try-finally](../../../csharp/language-reference/keywords/try-finally.md)   
  [try-catch-finally](../../../csharp/language-reference/keywords/try-catch-finally.md)
+

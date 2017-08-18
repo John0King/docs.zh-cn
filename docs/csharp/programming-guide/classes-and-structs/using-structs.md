@@ -1,5 +1,5 @@
 ---
-title: "使用结构（C# 编程指南） | Microsoft Docs"
+title: "使用结构（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -28,14 +28,15 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 8cb5fa79de38294add5cebdd38537636591de126
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 67fa4f764e6e40041e4b8e37eccbd1adb2b509d3
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="using-structs-c-programming-guide"></a>使用结构（C# 编程指南）
-`struct` 类型适用于表示轻量级对象，如 `Point`、 `Rectangle`和 `Color`。 尽管用它来表示一个点就如同具有 [Auto-Implemented Properties（自动实现的属性）](../../../csharp/programming-guide/classes-and-structs/auto-implemented-properties.md)的[类](../../../csharp/language-reference/keywords/class.md)那样方便，但在某些情况下，使用[结构](../../../csharp/language-reference/keywords/struct.md)可能更高效。 例如，如果你声明具有 1000 个 `Point` 对象的数组，那么你将分配额外的内存用于引用每个对象；在这种情况下，使用结构将更为便宜。 因为 [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] 包含一个称为 <xref:System.Drawing.Point> 的对象，因此在此示例中的结构改名为“CoOrds”。  
+`struct` 类型适用于表示轻量级对象，如 `Point`、 `Rectangle`和 `Color`。 尽管用它来表示一个点就如同具有 [Auto-Implemented Properties（自动实现的属性）](../../../csharp/language-reference/keywords/class.md) 的 [类](../../../csharp/programming-guide/classes-and-structs/auto-implemented-properties.md)那样方便，但在某些情况下，使用 [结构](../../../csharp/language-reference/keywords/struct.md) 可能更高效。 例如，如果你声明具有 1000 个 `Point` 对象的数组，那么你将分配额外的内存用于引用每个对象；在这种情况下，使用结构将更为便宜。 因为 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 包含一个称为 <xref:System.Drawing.Point>的对象，因此在此示例中的结构改名为“CoOrds”。  
   
  [!code-cs[csProgGuideObjects#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/using-structs_1.cs)]  
   
@@ -45,9 +46,9 @@ ms.lasthandoff: 03/13/2017
   
  当结构包含引用类型作为成员时，必须显式调用该成员的默认构造函数，否则成员会保持为未分配状态，且不能使用结构。 （这会导致编译器错误 CS0171。）  
   
- 由于全都是用于类的继承，因此没有用于结构的继承。 一个结构无法继承自另一个结构或类，并且它不能为类的基类。 但是，结构可从基类 <xref:System.Object> 继承。 结构也可以实现接口，且实现方法与类相同。  
+ 由于全都是用于类的继承，因此没有用于结构的继承。 一个结构无法继承自另一个结构或类，并且它不能为类的基类。 但是，它可以从基类 <xref:System.Object>继承。 结构也可以实现接口，且实现方法与类相同。  
   
- 不能使用关键字 `struct`声明一个类。 在 C# 中，类和结构在语义上是不同的。 结构是值类型，而类是引用类型。 有关详细信息，请参阅[值类型](../../../csharp/language-reference/keywords/value-types.md)。  
+ 不能使用关键字 `struct`声明一个类。 在 C# 中，类和结构在语义上是不同的。 结构是值类型，而类是引用类型。 有关更多信息，请参阅 [值类型](../../../csharp/language-reference/keywords/value-types.md)。  
   
  除非需要引用类型语义，将较小的类声明为结构，可以提高系统的处理效率。  
   
@@ -75,3 +76,4 @@ ms.lasthandoff: 03/13/2017
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [类和结构](../../../csharp/programming-guide/classes-and-structs/index.md)   
  [结构](../../../csharp/programming-guide/classes-and-structs/structs.md)
+

@@ -1,5 +1,5 @@
 ---
-title: "属性（C# 编程指南）| Microsoft Docs"
+title: "属性（C# 编程指南）"
 ms.date: 2017-03-10
 ms.prod: .net
 ms.technology:
@@ -30,11 +30,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 6f4d2bf3ad04fedafb44f8fed63f7234d48af63b
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 127299a617cacee15f87964a12bb3877a2586204
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="properties-c-programming-guide"></a>属性（C# 编程指南）

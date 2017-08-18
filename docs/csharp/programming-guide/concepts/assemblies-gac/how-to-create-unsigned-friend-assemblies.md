@@ -1,5 +1,5 @@
 ---
-title: "如何：创建未签名的友元程序集 (C#) | Microsoft Docs"
+title: "如何：创建未签名的友元程序集 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,10 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: c7d2924f0a619c234871232e155bb6f23e43aee4
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 967436204ab0824a510c12dc4c6e288d91d7dfa0
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-create-unsigned-friend-assemblies-c"></a>如何：创建未签名的友元程序集 (C#)
@@ -104,11 +105,12 @@ ms.lasthandoff: 03/13/2017
      此程序将输出两个字符串：“Class1.Test”和“Class2.Test”。  
   
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
- <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 属性和 <xref:System.Security.Permissions.StrongNameIdentityPermission> 类之间存在相似性。 主要的差异在于：<xref:System.Security.Permissions.StrongNameIdentityPermission> 可以要求具有安全权限才能运行特定的一段代码，而 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 属性则控制 `internal` 类型和成员的可见性。  
+ <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 属性和 <xref:System.Security.Permissions.StrongNameIdentityPermission> 类之间具有相似之处。 主要区别是，<xref:System.Security.Permissions.StrongNameIdentityPermission> 可以要求安全权限来运行一段特定代码，而 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 属性控制 `internal` 类型和成员的可见性。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>   
  [程序集和全局程序集缓存 (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/index.md)   
  [友元程序集 (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/friend-assemblies.md)   
  [如何：创建签名的友元程序集 (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/how-to-create-signed-friend-assemblies.md)   
  [C# 编程指南](../../../../csharp/programming-guide/index.md)
+

@@ -1,6 +1,6 @@
 ---
-title: "元组 | C# 指南"
-description: "了解 C 中的未命名元组类型和命名元组类型#"
+title: "元组 - C# 指南"
+description: "了解 C# 中的未命名元组类型和命名元组类型"
 keywords: .NET, .NET Core, C#
 author: BillWagner
 ms-author: wiwagn
@@ -10,11 +10,11 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: ee8bf7c3-aa3e-4c9e-a5c6-e05cc6138baa
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 6b30f41e3fb07a962542a09a41c698efee7ebb5a
-ms.openlocfilehash: 0ea7299d87dc69784e3bed93e48d83e4a0076a20
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 0efb478491ab4c226ec56519c9a957b19ce0478f
 ms.contentlocale: zh-cn
-ms.lasthandoff: 04/26/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -25,8 +25,10 @@ C# 元组是使用轻量语法定义的类型。 其优点包括：更简单的�
 在本主题中，将了解用于控制 C# 7 中的元组的语言规则、这些规则的各种用法，以及有关如何使用元组的初步指导。
 
 > [!NOTE]
-> 新的元组功能需要 `System.ValueTuple` 类型。 在 Visual Studio 2017 中，必须添加 NuGet 库提供的 NuGet 包 [System.ValueTuple](https://www.nuget.org/packages/System.ValueTuple/)。
-> 若无此包，可能会收到类似于 `error CS8179: Predefined type 'System.ValueTuple``2' is not defined or imported` 或 `error CS8137: Cannot define a class or member that utilizes tuples because the compiler required type 'System.Runtime.CompilerServices.TupleElementNamesAttribute' cannot be found.` 的编译错误
+> 新的元组功能需要 @System.ValueTuple 类型。
+> 为在不包括该类型的平台上使用它，必须添加 NuGet 包 [`System.ValueTuple`](https://www.nuget.org/packages/System.ValueTuple/)。
+>
+> 这类似于依赖框架提供的类型的其他语言功能。 例如，依赖 `INotifyCompletion` 接口的 `async` 和 `await`，依赖 `IEnumerable<T>` 的 LINQ。 但是，随着 .NET 越来越不依赖平台，交付机制也在发生改变。 .NET Framework 交付频率可能不会与语言编译器的始终相同。 新语言功能依赖于新类型时，这些类型将在交付语言功能时以 NuGet 包的形式提供。 这些新类型添加到 .NET 标准 API 并作为框架的一部分交付后，将删除 NuGet 包要求。
 
 我们先解释一下为什么要添加新的元组支持。 方法返回单个对象。 借助元组，可以更轻松地对该单个对象中的多个值打包。 
 
@@ -107,7 +109,7 @@ named = differentShape;
 
 [!code-csharp[SumOfSquaresFormula](../../samples/snippets/csharp/tuples/tuples/statistics.cs#06_SumOfSquaresFormula "使用平方和计算标准差")]
 
-此版本虽然只对数列进行一次计算， 但其代码不可重复使用。 到后面，你会发现许多不同的统计计算会用到数列项数、数列总和以及数列平方和。 让我们重构此方法，编写一个可生成这三个值的实用方法。
+此版本虽然只对序列进行一次枚举。 但其代码不可重复使用。 到后面，你会发现许多不同的统计计算会用到数列项数、数列总和以及数列平方和。 让我们重构此方法，编写一个可生成这三个值的实用方法。
 
 元组发挥作用的时候到了。 
 
@@ -167,7 +169,7 @@ private static (double, double, int) ComputeSumAndSumOfSquares(IEnumerable<doubl
 
 ## <a name="deconstruction"></a>析构
 
-通过对方法返回的元组进行*析构*，可以解封元组中的所有项。 有两种元组析构方法。  首先，可以在括号内显式声明每个字段的类型，以便为元组中的每个字段创建离散变量：
+通过对方法返回的元组进行析构，可以解封元组中的所有项。 有两种元组析构方法。  首先，可以在括号内显式声明每个字段的类型，以便为元组中的每个字段创建离散变量：
 
 [!code-csharp[析构](../../samples/snippets/csharp/tuples/tuples/statistics.cs#10_Deconstruct "析构")]
 

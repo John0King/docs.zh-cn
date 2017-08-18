@@ -1,5 +1,5 @@
 ---
-title: "标准查询运算符的查询表达式语法 (C#) | Microsoft Docs"
+title: "标准查询运算符的查询表达式语法 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,14 +19,15 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 115f97eec99d5f22a659532ccf4ed7b20a089014
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 30e994329234b8bd455f739694e50121bac63d5d
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="query-expression-syntax-for-standard-query-operators-c"></a>标准查询运算符的查询表达式语法 (C#)
-某些使用更频繁的标准查询运算符具有专用的 C# 语言关键字语法，使用这些语法可以在查询表达式**中调用这些运算符。 查询表达式是比基于方法**的等效项更具可读性的另一种查询表示形式。 查询表达式子句在编译时被转换为对查询方法的调用。  
+某些使用更频繁的标准查询运算符具有专用的 C# 语言关键字语法，使用这些语法可以在查询表达式中调用这些运算符。 查询表达式是比基于方法的等效项更具可读性的另一种查询表示形式。 查询表达式子句在编译时被转换为对查询方法的调用。  
   
 ## <a name="query-expression-syntax-table"></a>查询表达式语法表  
  下表列出包含等效查询表达式子句的标准查询运算符。  
@@ -45,8 +46,9 @@ ms.lasthandoff: 03/13/2017
 |<xref:System.Linq.Enumerable.ThenByDescending%60%602%28System.Linq.IOrderedEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%29>|`orderby …, … descending`<br /><br /> （有关详细信息，请参阅 [orderby 子句](../../../../csharp/language-reference/keywords/orderby-clause.md)。）|  
 |<xref:System.Linq.Enumerable.Where%2A>|`where`<br /><br /> （有关详细信息，请参阅 [where 子句](../../../../csharp/language-reference/keywords/where-clause.md)。）|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.Linq.Enumerable>   
  <xref:System.Linq.Queryable>   
  [标准查询运算符概述 (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)   
  [标准查询运算符按执行方式的分类 (C#)](../../../../csharp/programming-guide/concepts/linq/classification-of-standard-query-operators-by-manner-of-execution.md)
+

@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic 中的 LINQ | Microsoft 文档"
+title: "Visual Basic 中的 LINQ"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -31,18 +31,19 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 26d2ceac051905f5ac46b59f6fd2598e924355c7
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 33327e5baa9c17613f35d0007ed156c07b3e1814
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="linq-in-visual-basic"></a>Visual Basic 中的 LINQ
-此部分收录了有助于你了解和使用 Visual Basic 和 [!INCLUDE[vbteclinqext](../../../../csharp/getting-started/includes/vbteclinqext_md.md)] 的概述、示例和背景信息。  
+此部分收录了有助于你了解和使用 Visual Basic 和 [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] 的概述、示例和背景信息。  
   
 ## <a name="in-this-section"></a>本节内容  
  [Visual Basic 中的 LINQ 简介](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- 介绍了 [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] 提供程序、运算符、查询结构和语言功能。  
+ 介绍了 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 提供程序、运算符、查询结构和语言功能。  
   
  [如何：查询数据库](../../../../visual-basic/programming-guide/language-features/linq/how-to-query-a-database-by-using-linq.md)  
  通过示例展示了如何连接 SQL Server 数据库，并使用 LINQ 执行查询。  
@@ -76,3 +77,4 @@ ms.lasthandoff: 03/13/2017
  [Visual Basic 中的 LINQ to XML 概述](../../../../visual-basic/programming-guide/language-features/xml/overview-of-linq-to-xml.md)   
  [LINQ to DataSet 概述](https://msdn.microsoft.com/library/bb399399)   
  [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)
+

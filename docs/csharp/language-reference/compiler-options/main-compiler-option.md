@@ -1,5 +1,5 @@
 ---
-title: "/main（C# 编译器选项）| Microsoft Docs"
+title: "-main（C# 编译器选项）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -31,11 +31,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: fa8c02a6521b65e2cc4f7c8d779c1091ce399fba
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: eee7ef4698f4b6bf7c90ff8e22a1a3ae106bec35
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="main-c-compiler-options"></a>/main（C# 编译器选项）
@@ -58,11 +58,11 @@ ms.lasthandoff: 03/13/2017
   
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>在 Visual Studio 开发环境中设置此编译器选项  
   
-1.  打开项目的“属性”****页。  
+1.  打开项目的“属性”页。  
   
-2.  单击“应用程序”****属性页。  
+2.  单击“应用程序”属性页。  
   
-3.  修改“启动对象”****属性。  
+3.  修改“启动对象”属性。  
   
      若要以编程方式设置此编译器选项，请参阅 <xref:VSLangProj80.ProjectProperties3.StartupObject%2A>。  
   
@@ -75,4 +75,5 @@ csc t2.cs t3.cs /main:Test2
   
 ## <a name="see-also"></a>请参阅  
  [（C# 编译器选项）](../../../csharp/language-reference/compiler-options/index.md)   
- [NIB 如何：修改项目属性和配置设置](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [管理项目和解决方案属性](/visualstudio/ide/managing-project-and-solution-properties)
+

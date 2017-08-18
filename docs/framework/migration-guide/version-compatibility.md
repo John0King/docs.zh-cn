@@ -1,5 +1,5 @@
 ---
-title: ".NET Framework 中的版本兼容性 | Microsoft Docs"
+title: ".NET Framework 的版本兼容性"
 ms.custom: 
 ms.date: 03/30/2017
 ms.prod: .net-framework
@@ -18,11 +18,11 @@ caps.latest.revision: 35
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: 09f682d9c3a1cf5d42bba878676d84b9328a1a81
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 741c2d1c49f44a6a7b299845cdc37cc8425c326b
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="version-compatibility-in-the-net-framework"></a>.NET Framework 的版本兼容性
@@ -59,7 +59,7 @@ ms.lasthandoff: 05/22/2017
   
 -   检查这些主题以了解可能影响应用程序的任何更改并采用描述的解决方法：  
   
-    -   [.NET Framework 4 迁移问题](http://go.microsoft.com/fwlink/p/?LinkId=248212)  
+    -   [.NET Framework 4 迁移问题](../../../docs/framework/migration-guide/net-framework-4-migration-issues.md)  
   
     -   [4.5 中的应用程序兼容性](../../../docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-5.md)  
   
@@ -95,5 +95,5 @@ ms.lasthandoff: 05/22/2017
  [类库中过时的内容](../../../docs/framework/whats-new/whats-obsolete.md)   
  [应用程序兼容性](../../../docs/framework/migration-guide/application-compatibility.md)   
  [Microsoft .NET Framework 支持生命周期策略](http://go.microsoft.com/fwlink/p/?LinkId=248212)   
- [.NET Framework 4 迁移问题](http://go.microsoft.com/fwlink/p/?LinkId=248212)
+ [.NET Framework 4 迁移问题](../../../docs/framework/migration-guide/net-framework-4-migration-issues.md)
 

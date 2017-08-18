@@ -1,5 +1,5 @@
 ---
-title: "微调异步应用程序 (C#) | Microsoft Docs"
+title: "微调异步应用程序 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,14 +19,15 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 74cab732debe2381cbd3b9106b2431e2490ef57e
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 7afcdb28fbe10d5aa33dd2704d264ffd716af5d6
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="fine-tuning-your-async-application-c"></a>微调异步应用程序 (C#)
-可以使用由 <xref:System.Threading.Tasks.Task> 类型提供的方法和属性将精度和灵活性添加到异步应用程序。 本部分中的主题介绍了使用 <xref:System.Threading.CancellationToken> 和 <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=fullName> 和 <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=fullName> 等重要的 `Task` 方法的示例。  
+可以使用由 <xref:System.Threading.Tasks.Task> 类型提供的方法和属性将精度和灵活性添加到异步应用程序。 本部分中的主题介绍使用 <xref:System.Threading.CancellationToken> 的示例和一些重要的 `Task` 方法，例如 <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=fullName> 和 <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=fullName>。  
   
  使用 `WhenAny` 和 `WhenAll` 可以更轻松地启动多个任务并通过监视单个任务待其完成。  
   
@@ -59,3 +60,4 @@ ms.lasthandoff: 03/13/2017
   
 ## <a name="see-also"></a>请参阅  
  [使用 Async 和 Await 的异步编程 (C#)](../../../../csharp/programming-guide/concepts/async/index.md)
+

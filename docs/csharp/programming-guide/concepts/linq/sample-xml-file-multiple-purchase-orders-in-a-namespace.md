@@ -1,5 +1,5 @@
 ---
-title: "示例 XML 文件：命名空间中的多个采购订单 | Microsoft 文档"
+title: "示例 XML 文件：命名空间 2 中的多个采购订单"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,14 +19,15 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: b7397a191d015bff2abcdd176bcc1b34e7539a00
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 22e79b3b56bf9963518cfbd93dcf4e1f2d2842e0
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="sample-xml-file-multiple-purchase-orders-in-a-namespace"></a>示例 XML 文件：命名空间中的多个采购订单
-下面的 XML 文件用在 [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] 文档的很多示例中。 此文件包含多个采购订单。 该 XML 在某个命名空间中。  
+下面的 XML 文件用在 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 文档的很多示例中。 此文件包含多个采购订单。 该 XML 在某个命名空间中。  
   
 ## <a name="purchaseordersinnamespacexml"></a>PurchaseOrdersInNamespace.xml  
   
@@ -127,3 +128,4 @@ ms.lasthandoff: 03/13/2017
   
 ## <a name="see-also"></a>请参阅  
  [示例 XML 文档 (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-documents-linq-to-xml.md)
+

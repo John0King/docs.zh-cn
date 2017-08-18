@@ -1,5 +1,5 @@
 ---
-title: "-reference（C# 编译器选项）| Microsoft Docs"
+title: "-reference（C# 编译器选项）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -36,11 +36,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 7e33ed084c560470a486ebbb25035a59ddc18565
-ms.openlocfilehash: 11bb7fc9490879714542bfbd77a81d58e7d8e8ed
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: f057da85202dc5b677af7b9106468b3bc1af6d3f
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/31/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="reference-c-compiler-options"></a>/reference（C# 编译器选项）
@@ -84,7 +84,7 @@ ms.lasthandoff: 03/31/2017
  默认情况下使用 csc 响应 (.rsp) 文件，该文件引用常用的 .NET Framework 程序集。 如果希望编译器不要使用 csc.rsp，请使用 [/noconfig](../../../csharp/language-reference/compiler-options/noconfig-compiler-option.md)。  
   
 > [!NOTE]
-> 在 Visual Studio 中，请使用“添加引用”对话框。 有关详细信息，请参阅[如何：使用引用管理器添加或删除引用](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager)。 若要确保通过使用 `/reference` 添加引用与通过使用“添加引用”对话框添加引用之间的行为等效，请将要添加的程序集的“嵌入互操作类型”属性设置为“False”。 “True”是该属性的默认值。  
+> 在 Visual Studio 中，请使用“添加引用”对话框。 有关详细信息，请参阅[如何：使用引用管理器添加或删除引用](/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager)。 若要确保通过使用 `/reference` 添加引用与通过使用“添加引用”对话框添加引用之间的行为等效，请将要添加的程序集的“嵌入互操作类型”属性设置为“False”。 “True”是该属性的默认值。  
   
 ## <a name="example"></a>示例  
  本示例演示如何使用[外部别名](../../../csharp/language-reference/keywords/extern-alias.md)功能。  
@@ -115,4 +115,5 @@ GridV2::Grid
   
 ## <a name="see-also"></a>另请参阅  
  [（C# 编译器选项）](../../../csharp/language-reference/compiler-options/index.md)   
- [NIB 如何：修改项目属性和配置设置](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [管理项目和解决方案属性](/visualstudio/ide/managing-project-and-solution-properties)
+

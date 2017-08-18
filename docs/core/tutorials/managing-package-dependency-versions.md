@@ -1,6 +1,6 @@
 ---
 title: "如何管理 .NET Core 1.0 的包依赖项版本"
-description: "如何管理 .NET Core 1.0 的包依赖项版本"
+description: "了解 .NET Core 库和应用的包依赖项版本管理。"
 keywords: .NET, .NET Core
 author: cartermp
 ms.author: mairaw
@@ -9,10 +9,11 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 4424a947-bdf9-4775-8d48-dc350a4e0aee
-translationtype: Human Translation
-ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
-ms.openlocfilehash: cf6c9757ab451f88c80fedb2dfebf7f5e320f365
-ms.lasthandoff: 03/02/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 7f31aeb3c07a75059a4f8cd9392dcea31eb5bf41
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -80,7 +81,7 @@ ms.lasthandoff: 03/02/2017
 
 ## <a name="packages-and-version-numbers-organized-by-metapackage"></a>由元包组织的包和版本号
 
-[所有 .NET 标准库包及其针对 1.0 的版本列表](https://github.com/dotnet/versions/blob/master/build-info/dotnet/corefx/release/1.0.0/Latest_Packages.txt)。
+[所有 .NET Standard 包及其针对 1.0 的版本列表](https://github.com/dotnet/versions/blob/master/build-info/dotnet/corefx/release/1.0.0/Latest_Packages.txt)。
 
 [所有运行时包及其针对 1.0 的版本列表](https://github.com/dotnet/versions/blob/master/build-info/dotnet/coreclr/release/1.0.0/LKG_Packages.txt)。
 

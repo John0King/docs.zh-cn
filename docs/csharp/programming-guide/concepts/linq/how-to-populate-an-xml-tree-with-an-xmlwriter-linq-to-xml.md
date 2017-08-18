@@ -1,5 +1,5 @@
 ---
-title: "如何：使用 XmlWriter 填充 XML 树 (LINQ to XML) (C#) | Microsoft 文档"
+title: "如何：使用 XmlWriter 填充 XML 树 (LINQ to XML) (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,19 +19,20 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 225aa8a39a973ba8d4f199ccfce68e2dc16d8aa2
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 9d74e6bd3d8454f5ed37fa8d190beb0c44399fa7
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-populate-an-xml-tree-with-an-xmlwriter-linq-to-xml-c"></a>如何：使用 XmlWriter 填充 XML 树 (LINQ to XML) (C#)
-填充 XML 树的一种方法是使用 <xref:System.Xml.Linq.XContainer.CreateWriter%2A> 创建 <xref:System.Xml.XmlWriter>，然后写入 <xref:System.Xml.XmlWriter>。 XML 树由写入到 <xref:System.Xml.XmlWriter> 的所有节点进行填充。  
+填充 XML 树的一种方式是使用 <xref:System.Xml.Linq.XContainer.CreateWriter%2A> 创建一个 <xref:System.Xml.XmlWriter>，然后写入 <xref:System.Xml.XmlWriter>。 XML 树将用写入到 <xref:System.Xml.XmlWriter> 的所有节点进行填充。  
   
- 当使用具有预期要写入 <xref:System.Xml.XmlWriter> 的其他类（如 <xref:System.Xml.Xsl.XslCompiledTransform>）的 [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] 时，通常使用此方法。  
+ 在与预期会向 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 写入数据的另一个类（如 <xref:System.Xml.XmlWriter>）一起使用 <xref:System.Xml.Xsl.XslCompiledTransform> 时，通常应使用此方法。  
   
 ## <a name="example"></a>示例  
- 使用 <xref:System.Xml.Linq.XContainer.CreateWriter%2A> 的一种可能情况是在调用 XSLT 转换时。 本示例创建 XML 树，从此 XML 树创建 <xref:System.Xml.XmlReader>，创建新文档，然后创建要写入此新文档的 <xref:System.Xml.XmlWriter>。 之后本示例调用 XSLT 转换，传递 <xref:System.Xml.XmlReader> 和 <xref:System.Xml.XmlWriter>。 在转换成功完成后，使用转换的结果，填充新的 XML 树。  
+ <xref:System.Xml.Linq.XContainer.CreateWriter%2A> 可能在调用 XSLT 转换时使用。 本示例创建一个 XML 树，从该 XML 树创建一个 <xref:System.Xml.XmlReader>，创建一个新文档，然后创建要写入到新文档的 <xref:System.Xml.XmlWriter>。 示例然后调用 XSLT 转换，传入 <xref:System.Xml.XmlReader> 和 <xref:System.Xml.XmlWriter>。 在转换成功完成后，使用转换的结果，填充新的 XML 树。  
   
 ```csharp  
 string xslMarkup = @"<?xml version='1.0'?>  
@@ -78,8 +79,9 @@ Console.WriteLine(newTree);
 </Root>  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.Xml.Linq.XContainer.CreateWriter%2A>   
  <xref:System.Xml.XmlWriter>   
  <xref:System.Xml.Xsl.XslCompiledTransform>   
  [创建 XML 树 (C#)](../../../../csharp/programming-guide/concepts/linq/creating-xml-trees.md)
+

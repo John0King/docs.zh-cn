@@ -1,5 +1,5 @@
 ---
-title: "对象（C# 编程指南）| Microsoft Docs"
+title: "对象（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -28,11 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a5ed524a1b17f7be8903f998cbd732594faab831
-ms.openlocfilehash: fe548eb5d520945e3f0d52750bbf89935947116e
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: a2a23d02e4ea95e908f97bc7264ee64d6899aee8
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/15/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="objects-c-programming-guide"></a>对象（C# 编程指南）
@@ -52,7 +52,7 @@ ms.lasthandoff: 05/15/2017
   
  [!code-cs[csProgGuideStatements#31](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/objects_2.cs)]  
   
- `p1` 和 `p2` 的内存在线程堆栈上进行分配。 该内存随声明它的类型或方法一起回收。 这就是在赋值时复制结构的一个原因。 相比之下，当对类实例对象的所有引用都超出范围时，为该类实例分配的内存将由公共语言运行时自动回收（垃圾回收）。 无法像在 C++ 中那样明确地销毁类对象。 有关 [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] 中的垃圾回收的详细信息，请参阅[垃圾回收](../../../standard/garbage-collection/index.md)。  
+ `p1` 和 `p2` 的内存在线程堆栈上进行分配。 该内存随声明它的类型或方法一起回收。 这就是在赋值时复制结构的一个原因。 相比之下，当对类实例对象的所有引用都超出范围时，为该类实例分配的内存将由公共语言运行时自动回收（垃圾回收）。 无法像在 C++ 中那样明确地销毁类对象。 有关 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 中的垃圾回收的详细信息，请参阅[垃圾回收](../../../standard/garbage-collection/index.md)。  
   
 > [!NOTE]
 >  公共语言运行时中高度优化了托管堆上内存的分配和释放。 在大多数情况下，在堆上分配类实例与在堆栈上分配结构实例在性能成本上没有显著的差别。  
@@ -91,3 +91,4 @@ ms.lasthandoff: 05/15/2017
  [结构](../../../csharp/language-reference/keywords/struct.md)   
  [new 运算符](../../../csharp/language-reference/keywords/new-operator.md)   
  [常规类型系统](../../../standard/base-types/common-type-system.md)
+

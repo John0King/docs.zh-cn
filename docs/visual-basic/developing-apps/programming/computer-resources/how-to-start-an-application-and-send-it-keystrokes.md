@@ -1,5 +1,5 @@
 ---
-title: "如何：启动应用程序并向其发送击键 (Visual Basic) | Microsoft Docs"
+title: "如何：启动应用程序并向其发送击键 (Visual Basic)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -33,11 +33,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: 314d62ae0699e63aab2dff25cce2ce37552e2a20
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 142db417b6b61724ad80bd3f8e5083dd420b3aeb
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-start-an-application-and-send-it-keystrokes-visual-basic"></a>如何：启动应用程序并向其发送击键 (Visual Basic)
@@ -56,3 +56,4 @@ ms.lasthandoff: 05/22/2017
  <xref:Microsoft.VisualBasic.Devices.Keyboard.SendKeys%2A>   
  <xref:Microsoft.VisualBasic.Interaction.Shell%2A>   
  <xref:Microsoft.VisualBasic.Interaction.AppActivate%2A>
+

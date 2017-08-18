@@ -1,5 +1,5 @@
 ---
-title: "链接的查询的性能 (LINQ to XML) (C#) | Microsoft Docs"
+title: "链接的查询的性能 (LINQ to XML) (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,11 +14,11 @@ ms.assetid: b2f1d715-8946-4dc0-8d56-fb3d1bba54a6
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 3429da268df07900ebe59ed206b927d209b1cf7f
-ms.lasthandoff: 03/13/2017
-
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 7c72c4eebd29152ed4fb95f2ee42075797c60b8a
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="performance-of-chained-queries-linq-to-xml-c"></a>链接的查询的性能 (LINQ to XML) (C#)
@@ -56,9 +56,9 @@ foreach (var i in query2)
   
 -   <xref:System.Xml.Linq.XContainer.Elements%2A> 轴具有与循环访问链接列表基本相同的性能。 <xref:System.Xml.Linq.XContainer.Elements%2A> 作为具有延迟执行功能的迭代器实现。 这意味着它除了循环访问链接列表外还执行一些操作，例如分配迭代器对象和跟踪执行状态。 此项工作可以分为两类：设置迭代器时完成的工作和每次迭代过程中完成的工作。 设置工作是固定的少量工作，而每次迭代过程中完成的工作与源集合中的项数成正比。  
   
--   在 `query1` 中，`where` 子句会使查询调用 <xref:System.Linq.Enumerable.Where%2A> 方法。 此方法也作为迭代器实现。 设置工作包括实例化将引用 lambda 表达式的委托和对迭代器的常规设置。 每次迭代时，都将调用该委托以执行谓词。 设置工作和每次迭代过程中完成的工作类似于循环访问轴期间完成的工作。  
+-   在 `query1` 中，`where` 子句将使查询调用 <xref:System.Linq.Enumerable.Where%2A> 方法。 此方法也作为迭代器实现。 设置工作包括实例化将引用 lambda 表达式的委托和对迭代器的常规设置。 每次迭代时，都将调用该委托以执行谓词。 设置工作和每次迭代过程中完成的工作类似于循环访问轴期间完成的工作。  
   
--   在 `query1` 中，select 子句会使查询调用 <xref:System.Linq.Enumerable.Select%2A> 方法。 此方法与 <xref:System.Linq.Enumerable.Where%2A> 方法具有相同的性能配置文件。  
+-   在 `query1` 中，select 子句将使查询调用 <xref:System.Linq.Enumerable.Select%2A> 方法。 此方法与 <xref:System.Linq.Enumerable.Where%2A> 方法具有相同的性能配置文件。  
   
 -   `query2` 中的 `where` 子句和 `select` 子句与 `query1` 中的相应语句具有相同的性能配置文件。  
   
@@ -70,3 +70,4 @@ foreach (var i in query2)
   
 ## <a name="see-also"></a>请参阅  
  [性能 (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/performance-linq-to-xml.md)
+

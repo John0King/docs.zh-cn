@@ -1,5 +1,5 @@
 ---
-title: "如何：一次一行地读取文本文件 (Visual C#) | Microsoft Docs"
+title: "如何：一次一行地读取文本文件 (Visual C#)"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -29,10 +29,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 957022bd4c6244321361e39cfbdf52cf4071e2d8
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: e9327181d82a97559c7be99bb76a2a93118d796b
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-read-a-text-file-one-line-at-a-time-visual-c"></a>如何：一次一行地读取文本文件 (Visual C#)
@@ -72,7 +73,8 @@ System.Console.ReadLine();
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
  不要根据文件的名称来判断文件的内容。 例如，文件 `myFile.cs` 可能不是 C# 源文件。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.IO?displayProperty=fullName>   
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [文件系统和注册表（C# 编程指南）](../../../csharp/programming-guide/file-system/index.md)
+

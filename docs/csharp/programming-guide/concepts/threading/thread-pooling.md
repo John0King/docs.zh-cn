@@ -1,5 +1,5 @@
 ---
-title: "线程池 (C#) | Microsoft Docs"
+title: "线程池 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,14 +19,15 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: da18d75f5d80cd7ad8a9a974bf0ffda196e7ea86
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: d2f8e5a2d7a83dc6fef72ef87b4003ae49656d8f
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="thread-pooling-c"></a>线程池 (C#)
-线程池**是可用于在后台执行多种任务的线程集合。 （有关背景信息，请参阅[线程处理 (C#)](../../../../csharp/programming-guide/concepts/threading/index.md)。）这使主线程可以自由地异步执行其他任务。  
+线程池是可用于在后台执行多种任务的线程集合。 （有关背景信息，请参阅[线程处理 (C#)](../../../../csharp/programming-guide/concepts/threading/index.md)。）这使主线程可以自由地异步执行其他任务。  
   
  线程池通常用于服务器应用程序。 每个传入请求都将分配给线程池中的一个线程，因此可以异步处理请求，而不会占用主线程，也不会延迟后续请求的处理。  
   
@@ -74,7 +75,7 @@ private void AnotherLongTask(Object state)
   
  不能使用结构在状态对象内部返回值。 由于结构属于值类型，异步进程所做的更改不会更改原始结构的成员。 如果不需要返回值，可以使用结构来提供参数。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A>   
  <xref:System.Threading>   
  <xref:System.Threading.ThreadPool>   
@@ -82,3 +83,4 @@ private void AnotherLongTask(Object state)
  [线程处理 (C#)](../../../../csharp/programming-guide/concepts/threading/index.md)   
  [多线程应用程序 (C#)](../../../../csharp/programming-guide/concepts/threading/multithreaded-applications.md)   
  [线程同步 (C#)](../../../../csharp/programming-guide/concepts/threading/thread-synchronization.md)
+

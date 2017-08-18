@@ -1,95 +1,113 @@
 ---
-title: "Visual Basic 语言参考 | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "语言参考, Visual Basic"
-  - "库, Visual Basic 运行时"
-  - "运行库, Visual Basic"
-  - "Visual Basic 代码, 语言参考"
-  - "Visual Basic 代码, 运行库"
-  - "Visual Basic 语言参考"
-  - "Visual Basic, 语言参考"
+title: "Visual Basic 语言参考"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- Visual Basic language reference
+- run-time libraries, Visual Basic
+- libraries, Visual Basic run-time
+- Visual Basic code, run-time libraries
+- Visual Basic code, language reference
+- language reference, Visual Basic
+- Visual Basic, language reference
 ms.assetid: 5c6bd31a-9542-4f3e-bfd5-e951af58f0f2
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 17
----
-# Visual Basic 语言参考
-[!INCLUDE[vs2017banner](../../visual-basic/includes/vs2017banner.md)]
+author: dotnet-bot
+ms.author: dotnetcontent
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 1ac47bde27397e80993a6bb5d2512715f44acfc1
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
-本节提供有关 [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 语言各方面的参考信息。  
+---
+# <a name="visual-basic-language-reference"></a>Visual Basic 语言参考
+此部分提供了 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 语言各方面的参考信息。  
   
-## 本节内容  
+## <a name="in-this-section"></a>本节内容  
  [版式和代码约定](../../visual-basic/language-reference/typographic-and-code-conventions.md)  
- 概述在 [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 文档中设置关键字、占位符以及其他语言元素的格式的方式。  
+ 概述了关键字、占位符和其他语言元素在 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 文档中的格式设置方式。  
   
  [Visual Basic 运行库成员](../../visual-basic/language-reference/runtime-library-members.md)  
- 列出 <xref:Microsoft.VisualBasic?displayProperty=fullName> 命名空间的类和模块，并提供指向其成员函数、方法、属性、常量和枚举的链接。  
+ 列出了 <xref:Microsoft.VisualBasic?displayProperty=fullName> 命名空间的类和模块，同时收录了它们的成员函数、方法、属性、常量和枚举链接。  
   
  [关键字](../../visual-basic/language-reference/keywords/index.md)  
- 列出所有 Visual Basic 关键字并提供指向更多信息的链接。  
+ 列出了所有 Visual Basic 关键字，并收录了详细信息链接。  
   
- [特性](../../visual-basic/language-reference/attributes.md)  
- 说明 [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 中可用的特性。  
+ [属性 (Visual Basic)](../../visual-basic/language-reference/attributes.md)  
+ 记录了 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 中的可用属性。  
   
  [常量和枚举](../../visual-basic/language-reference/constants-and-enumerations.md)  
- 说明 [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 中可用的常量和枚举。  
+ 记录了 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 中的可用常量和枚举。  
   
  [数据类型](../../visual-basic/language-reference/data-types/data-type-summary.md)  
- 说明 [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 中可用的数据类型。  
+ 记录了 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 中的可用数据类型。  
   
  [指令](../../visual-basic/language-reference/directives/directives.md)  
- 说明 [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 中可用的编译器指令。  
+ 记录了 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 中的可用编译器指令。  
   
  [函数](../../visual-basic/language-reference/functions/index.md)  
- 说明 [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 中可用的运行时函数。  
+ 记录了 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 中的可用运行时函数。  
   
  [修饰符](../../visual-basic/language-reference/modifiers/index.md)  
- 列出 Visual Basic 运行时修饰符并提供指向更多信息的链接。  
+ 列出了 Visual Basic 运行时修饰符，并收录了详细信息链接。  
   
  [模块](../../visual-basic/language-reference/modules.md)  
- 说明 [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 中可用的模块及其成员。  
+ 记录了 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 中的可用模块及其成员。  
   
  [Nothing](../../visual-basic/language-reference/nothing.md)  
- 描述任何数据类型的默认值。  
+ 介绍了任意数据类型的默认值。  
   
  [对象](../../visual-basic/language-reference/objects/index.md)  
- 说明 [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 中可用的对象及其成员。  
+ 记录了 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 中的可用对象及其成员。  
   
  [运算符](../../visual-basic/language-reference/operators/index.md)  
- 说明 [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 中可用的运算符。  
+ 记录了 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 中的可用运算符。  
   
  [属性](../../visual-basic/language-reference/properties.md)  
- 说明 [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 中可用的属性。  
+ 记录了 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 中的可用属性。  
   
  [查询](../../visual-basic/language-reference/queries/queries.md)  
- 提供有关在代码中使用[!INCLUDE[vbteclinqext](../../csharp/getting-started/includes/vbteclinqext-md.md)] 表达式的参考信息。  
+ 提供了有关如何在代码中使用 [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] 表达式的参考信息。  
   
  [语句](../../visual-basic/language-reference/statements/index.md)  
- 说明 [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 中可用的声明和可执行语句。  
+ 记录了 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 中的可用声明和可执行语句。  
   
  [XML 注释标记](../../visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments.md)  
- 介绍在 [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 代码编辑器中为其提供 IntelliSense 的文档注释。  
+ 介绍了在 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 代码编辑器中为其提供 IntelliSense 的文档注释。  
   
  [XML 轴属性](../../visual-basic/language-reference/xml-axis/xml-axis-properties.md)  
- 提供一些链接，这些链接指向与在代码中使用 XML 轴属性直接访问 XML 有关的信息。  
+ 收录了有关如何使用 XML 轴属性直接在代码中访问 XML 的信息链接。  
   
  [XML 文本](../../visual-basic/language-reference/xml-literals/index.md)  
- 提供一些链接，这些链接指向与在代码中使用 XML 文本直接合并 XML 有关的信息。  
+ 收录了有关如何使用 XML 文本直接在代码中合并 XML 的信息链接。  
   
  [错误消息](../../visual-basic/language-reference/error-messages/index.md)  
- 提供 [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 编译器和运行时错误消息的列表，以及如何处理它们的帮助。  
+ 提供了 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 编译器和运行时错误消息列表，以及如何处理这些错误消息的相关帮助。  
   
-## 相关章节  
+## <a name="related-sections"></a>相关章节  
  [Visual Basic](../../visual-basic/index.md)  
- 提供有关 [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 语言各个方面的全面帮助。  
+ 提供了 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 语言各方面的综合帮助。  
   
  [Visual Basic 命令行编译器](../../visual-basic/reference/command-line-compiler/index.md)  
- 介绍如何使用命令行编译器来编译程序，这是除了从 [!INCLUDE[vsprvs](../../csharp/includes/vsprvs-md.md)] 集成开发环境 \(IDE\) 进行编译之外的另一种编译方法。
+ 介绍了如何将命令行编译器用作一种替代方法，从而在 [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] 集成开发环境 (IDE) 中编译程序。
+

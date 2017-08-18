@@ -1,5 +1,5 @@
 ---
-title: "如何：当应用程序启动或关闭时记录消息 (Visual Basic) | Microsoft 文档"
+title: "如何：当应用程序启动或关闭时记录消息 (Visual Basic)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -36,11 +36,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: 94842349ae1c0fa3ccbdb2279b05a0faeb2f5d30
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: fa5bf57ac5245e9363089b85607b7e6d1a00ba14
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-log-messages-when-the-application-starts-or-shuts-down-visual-basic"></a>如何：当应用程序启动或关闭时记录消息 (Visual Basic)
@@ -48,19 +48,19 @@ ms.lasthandoff: 05/22/2017
   
 ### <a name="to-access-the-applications-event-handler-code"></a>访问应用程序的事件处理程序代码  
   
-1.  在 **“解决方案资源管理器”**中选择一个项目。 在 “项目” 菜单上，选择 “属性”。  
+1.  在 **“解决方案资源管理器”**中选择一个项目。 在 **“项目”** 菜单上，选择 **“属性”**。  
   
-2.  单击“应用程序” 选项卡。  
+2.  单击“应用程序”  选项卡。  
   
-3.  单击“查看应用程序事件” 按钮，打开“代码编辑器”。  
+3.  单击“查看应用程序事件”  按钮，打开“代码编辑器”。  
   
      此时将打开 ApplicationEvents.vb 文件。  
   
 ### <a name="to-log-messages-when-the-application-starts"></a>在应用程序启动时记录消息  
   
-1.  在“代码编辑器”中打开 ApplicationEvents.vb 文件。 在“常规”  菜单上，选择“MyApplication 事件”。  
+1.  在“代码编辑器”中打开 ApplicationEvents.vb 文件。 在“常规”  菜单上，选择“MyApplication 事件” 。  
   
-2.  在“声明” 菜单上，选择“启动”。  
+2.  在“声明”  菜单上，选择“启动” 。  
   
      在主应用程序运行之前，应用程序将引发 <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Startup> 事件。  
   
@@ -70,18 +70,18 @@ ms.lasthandoff: 05/22/2017
   
 ### <a name="to-log-messages-when-the-application-shuts-down"></a>在应用程序关闭时记录消息  
   
-1.  在“代码编辑器”中打开 ApplicationEvents.vb 文件。 在“常规” 菜单上，选择“MyApplication 事件”。  
+1.  在“代码编辑器”中打开 ApplicationEvents.vb 文件。 在“常规”  菜单上，选择“MyApplication 事件” 。  
   
-2.  在“声明”菜单上，选择“关闭” 。  
+2.  在“声明”  菜单上，选择“关闭” 。  
   
-     在主应用程序运行之后、在其关闭之前，应用程序将引发 <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Shutdown> 事件。  
+     在主应用程序运行之后、关闭之前，应用程序将引发 <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Shutdown> 事件。  
   
 3.  将 `My.Application.Log.WriteEntry` 方法添加到 `Shutdown` 事件处理程序。  
   
      [!code-vb[VbVbalrMyApplicationLog#2](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/VisualBasic/how-to-log-messages-when-the-application-starts-or-shuts-down_2.vb)]  
   
 ## <a name="example"></a>示例  
- 可以通过“项目设计器” 访问“代码编辑器”中的应用程序事件。 有关详细信息，请参阅 [Application Page, Project Designer (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/application-page-project-designer-visual-basic)（应用程序页、项目设计器 (Visual Basic)。  
+ 可以通过“项目设计器” 访问“代码编辑器”中的应用程序事件。 有关详细信息，请参阅 [Application Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/application-page-project-designer-visual-basic)（应用程序页、项目设计器 (Visual Basic)。  
   
  [!code-vb[VbVbalrMyApplicationLog#3](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/VisualBasic/how-to-log-messages-when-the-application-starts-or-shuts-down_3.vb)]  
   
@@ -89,5 +89,6 @@ ms.lasthandoff: 05/22/2017
  <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=fullName>   
  <xref:Microsoft.VisualBasic.Logging.Log.WriteEntry%2A>   
  <xref:Microsoft.VisualBasic.Logging.Log.WriteException%2A>   
- [应用程序页、项目设计器 (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/application-page-project-designer-visual-basic)   
+ [应用程序页、项目设计器 (Visual Basic)](/visualstudio/ide/reference/application-page-project-designer-visual-basic)   
  [使用应用程序日志](../../../../visual-basic/developing-apps/programming/log-info/working-with-application-logs.md)
+

@@ -11,10 +11,11 @@ ms.prod: .net-core
 ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: 56a2a4a5-7299-497d-b3c3-23c848678911
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 6b7e8170d4fc43db9140abe7ad3dc481f07e79c6
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 51bdae75346022a7564fdb50e582c143e7762a1f
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="perform-custom-join-operations"></a>执行自定义联接操作
@@ -50,3 +51,4 @@ ms.lasthandoff: 03/13/2017
  [LINQ 查询表达式](index.md)   
  [join 子句](../language-reference/keywords/join-clause.md)   
  [对 Join 子句的结果进行排序](order-the-results-of-a-join-clause.md)
+

@@ -1,5 +1,5 @@
 ---
-title: "$（C# 参考）| Microsoft Docs"
+title: "$（C# 参考）"
 ms.date: 2017-02-09
 ms.prod: .net
 ms.technology:
@@ -30,15 +30,16 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 8b6afd7d9839f6d86f7fcfa3f097053ba4f418ff
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 65dfc7b28059c4d41dd9113fd60c6a64987bfc2b
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="-c-reference"></a>$（C# 参考）
 
-将字符串文本标识为[内插字符串](../keywords/interpolated-strings.md)。 内插字符串是一个类似于模板的字符串，其中包含文本和内插表达式**。 例如，在赋值语句或方法调用中解析内插字符串时，其内插表达式在结果字符串中会替换为字符串表示形式。 内插字符串是 .NET Framework 支持的[复合格式字符串](../../../standard/base-types/composite-format.md)的替代项。
+将字符串文本标识为[内插字符串](../keywords/interpolated-strings.md)。 内插字符串是一个类似于模板的字符串，其中包含文本和内插表达式。 例如，在赋值语句或方法调用中解析内插字符串时，其内插表达式在结果字符串中会替换为字符串表示形式。 内插字符串是 .NET Framework 支持的[复合格式字符串](../../../standard/base-types/composite-format.md)的替代项。
 
 以下示例使用 `$` 字符来定义内插字符串。
 

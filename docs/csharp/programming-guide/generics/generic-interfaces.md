@@ -1,29 +1,48 @@
 ---
-title: "泛型接口（C# 编程指南） | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "C# 语言, 泛型接口"
-  - "泛型 [C#], 接口"
+title: "泛型接口（C# 编程指南）"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- C# language, generic interfaces
+- generics [C#], interfaces
 ms.assetid: a8fa49a1-6e78-4a09-87e5-84a0b9f5ffbe
 caps.latest.revision: 28
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 28
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 2a9a994c339553b923b930660c0e129dd930de96
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
+
 ---
-# 泛型接口（C# 编程指南）
-为泛型集合类或表示集合中项的泛型类定义接口通常很有用。  对于泛型类，使用泛型接口十分可取，例如使用 <xref:System.IComparable%601> 而不使用 <xref:System.IComparable>，这样可以避免值类型的装箱和取消装箱操作。  .NET Framework 类库定义了若干泛型接口，以用于 <xref:System.Collections.Generic> 命名空间中的集合类。  
+# <a name="generic-interfaces-c-programming-guide"></a>泛型接口（C# 编程指南）
+为泛型集合类或表示集合中的项的泛型类定义接口通常很有用处。 为避免对值类型的装箱和取消装箱操作，泛型类的首选项使用泛型接口，例如 <xref:System.IComparable%601>而不是 <xref:System.IComparable>。 .NET Framework 类库定义多个泛型接口，以将其用于 <xref:System.Collections.Generic> 命名空间中的集合类。  
   
- 将接口指定为类型参数的约束时，只能使用实现此接口的类型。  下面的代码示例显示从 `SortedList<T>` 类派生的 `GenericList<T>` 类。  有关更多信息，请参见 [泛型介绍](../../../csharp/programming-guide/generics/introduction-to-generics.md)。  `SortedList<T>` 添加约束 `where T : IComparable<T>`。  这将使 `SortedList<T>` 中的 `BubbleSort` 方法能够对列表元素使用泛型 <xref:System.IComparable%601.CompareTo%2A> 方法。  在此示例中，列表元素为简单类，即实现 `Person` 的 `IComparable<Person>`。  
+ 接口被指定为类型参数上的约束时，仅可使用实现接口的类型。 如下代码示例演示一个派生自 `GenericList<T>` 类的 `SortedList<T>` 类。 有关详细信息，请参阅[泛型介绍](../../../csharp/programming-guide/generics/introduction-to-generics.md)。 `SortedList<T>` 添加约束 `where T : IComparable<T>`。 这可使 `SortedList<T>` 中的 `BubbleSort` 方法在列表元素上使用泛型 <xref:System.IComparable%601.CompareTo%2A> 方法。 在此示例中，列表元素是一个实现 `IComparable<Person>` 的简单类 `Person`。  
   
  [!code-cs[csProgGuideGenerics#29](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-interfaces_1.cs)]  
   
- 可将多重接口指定为单个类型上的约束，如下所示：  
+ 可将多个接口指定为单个类型上的约束，如下所示：  
   
  [!code-cs[csProgGuideGenerics#30](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-interfaces_2.cs)]  
   
@@ -31,24 +50,25 @@ caps.handback.revision: 28
   
  [!code-cs[csProgGuideGenerics#31](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-interfaces_3.cs)]  
   
- 适用于类的继承规则同样适用于接口：  
+ 适用于类的继承规则也适用于接口：  
   
  [!code-cs[csProgGuideGenerics#32](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-interfaces_4.cs)]  
   
- 如果泛型接口为逆变的，即仅使用其类型参数作为返回值，则此泛型接口可以从非泛型接口继承。  在 .NET Framework 类库中，<xref:System.Collections.Generic.IEnumerable%601> 从 <xref:System.Collections.IEnumerable> 继承，因为 <xref:System.Collections.Generic.IEnumerable%601> 只在 <xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A> 的返回值和 <xref:System.Collections.Generic.IEnumerator%601.Current%2A> 属性 getter 中使用 `T`。  
+ 泛型接口如为逆变（即，仅使用自身的类型参数作为返回值），则可继承自非泛型接口。 在 .NET Framework 类库中，<xref:System.Collections.Generic.IEnumerable%601> 继承自 <xref:System.Collections.IEnumerable>，因为 <xref:System.Collections.Generic.IEnumerable%601> 在 <xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A> 的返回值和 <xref:System.Collections.Generic.IEnumerator%601.Current%2A> 属性 Getter 中仅使用 `T`。  
   
- 具体类可以实现已关闭的构造接口，如下所示：  
+ 具体类可实现封闭式构造接口，如下所示：  
   
  [!code-cs[csProgGuideGenerics#33](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-interfaces_5.cs)]  
   
- 只要类参数列表提供了接口必需的所有参数，泛型类便可以实现泛型接口或已关闭的构造接口，如下所示：  
+ 只要类形参列表提供接口所需的所有实参，泛型类即可实现泛型接口或封闭式构造接口，如下所示：  
   
  [!code-cs[csProgGuideGenerics#34](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-interfaces_6.cs)]  
   
- 对于泛型类、泛型结构或泛型接口中的方法，控制方法重载的规则相同。  有关更多信息，请参见 [泛型方法](../../../csharp/programming-guide/generics/generic-methods.md)。  
+ 控制方法重载的规则对泛型类、泛型结构或泛型接口内的方法一样。 有关详细信息，请参阅[泛型方法](../../../csharp/programming-guide/generics/generic-methods.md)。  
   
-## 请参阅  
- [C\# 编程指南](../../../csharp/programming-guide/index.md)   
- [泛型介绍](../../../csharp/programming-guide/generics/introduction-to-generics.md)   
- [interface](../../../csharp/language-reference/keywords/interface.md)   
- [泛型](../Topic/Generics%20in%20the%20.NET%20Framework.md)
+## <a name="see-also"></a>另请参阅  
+ [C# 编程指南](../../../csharp/programming-guide/index.md)   
+ [泛型简介](../../../csharp/programming-guide/generics/introduction-to-generics.md)   
+ [接口](../../../csharp/language-reference/keywords/interface.md)   
+ [泛型](~/docs/standard/generics/index.md)
+

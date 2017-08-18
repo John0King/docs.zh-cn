@@ -1,5 +1,5 @@
 ---
-title: "如何：投影新类型 (LINQ to XML) (C#) | Microsoft 文档"
+title: "如何：投影新类型 (LINQ to XML) (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,15 +14,15 @@ ms.assetid: 48145cf9-1e0b-4e73-bbfd-28fc04800dc4
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 1aa8c4676890dcc25108d919a501bde44299db04
-ms.lasthandoff: 03/13/2017
-
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: b772326b3b8827351ffbfbb1888b105bd6e537df
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-project-a-new-type-linq-to-xml-c"></a>如何：投影新类型 (LINQ to XML) (C#)
-本节中的其他示例已显示返回如下结果的查询：<xref:System.Xml.Linq.XElement> 类型的 <xref:System.Collections.Generic.IEnumerable%601>、`string` 类型的 <xref:System.Collections.Generic.IEnumerable%601> 和 `int` 类型的 <xref:System.Collections.Generic.IEnumerable%601>。 这些是常见结果类型，但它们不是对所有情况都适用。 在许多情况下，你会希望查询返回某些其他类型的 <xref:System.Collections.Generic.IEnumerable%601>。  
+本节中的其他示例已演示了一些查询，这些查询以 <xref:System.Collections.Generic.IEnumerable%601> 的 <xref:System.Xml.Linq.XElement>、<xref:System.Collections.Generic.IEnumerable%601> 的 `string` 和 <xref:System.Collections.Generic.IEnumerable%601> 的 `int` 的形式返回结果。 这些是常见结果类型，但它们不是对所有情况都适用。 在很多情况下，会希望查询返回其他类型的 <xref:System.Collections.Generic.IEnumerable%601>。  
   
 ## <a name="example"></a>示例  
  此示例演示如何在 `select` 子句中实例化对象。 代码首先定义一个具有一个构造函数的新类，然后修改 `select` 语句，使该表达式成为新类的新实例。  
@@ -68,3 +68,4 @@ Baby Monitor:2
   
 ## <a name="see-also"></a>请参阅  
  [投影和转换 (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/projections-and-transformations-linq-to-xml.md)
+

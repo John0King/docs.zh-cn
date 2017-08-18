@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic 中的编程 | Microsoft 文档"
+title: "Visual Basic 编程"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.suite: 
@@ -29,10 +29,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 1aed5aa95d9c7177ea52c28b2a169fdde8dc5ec4
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: cabdb8b0b297f92f3ff323a989a812cc822c2ad5
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="programming-in-visual-basic"></a>Visual Basic 编程
@@ -65,3 +66,4 @@ ms.lasthandoff: 03/13/2017
  [编程概念](../../../visual-basic/programming-guide/concepts/index.md)   
  [集合](../../../visual-basic/programming-guide/concepts/collections.md)   
  [使用 Visual Basic 开发应用程序](../../../visual-basic/developing-apps/index.md)
+

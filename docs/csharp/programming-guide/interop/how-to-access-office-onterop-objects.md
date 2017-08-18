@@ -1,5 +1,5 @@
 ---
-title: "如何：通过使用 Visual C# 功能访问 Office 互操作对象（C# 编程指南）| Microsoft Docs"
+title: "如何：通过使用 Visual C# 功能访问 Office 互操作对象（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -32,11 +32,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
-ms.openlocfilehash: e793e0b7f21948d16da4dcb618d73c4c3114adcb
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 5ed3716e5c0d8cd143148522a2fb3aed5ec433ab
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-access-office-interop-objects-by-using-visual-c-features-c-programming-guide"></a>如何：通过使用 Visual C# 功能访问 Office 互操作对象（C# 编程指南）
@@ -46,9 +46,9 @@ Visual C# 具有一些功能，可简化对 Office API 对象的访问。 这些
   
  若要完成本演练，你的计算机上必须安装 Microsoft Office Excel 2007 和 Microsoft Office Word 2007 或更高版本。  
   
- 如果你使用的操作系统早于 [!INCLUDE[windowsver](../../../csharp/programming-guide/interop/includes/windowsver_md.md)]，请确保安装 [!INCLUDE[dnprdnlong](../../../csharp/programming-guide/events/includes/dnprdnlong_md.md)]。  
+ 如果你使用的操作系统早于 [!INCLUDE[windowsver](~/includes/windowsver-md.md)]，请确保安装 [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)]。  
   
-[!INCLUDE[note_settings_general](../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
 ### <a name="to-create-a-new-console-application"></a>创建新的控制台应用程序  
   
@@ -98,7 +98,7 @@ Visual C# 具有一些功能，可简化对 Office API 对象的访问。 这些
   
 1.  将以下方法添加到 `Program` 类以设置 Excel 工作表。  
   
-     方法 [Add](http://go.microsoft.com/fwlink/?LinkId=210910) 有一个可选参数，用于指定特定的模板。 如果希望使用形参的默认值，你可以借助可选形参（[!INCLUDE[csharp_dev10_long](../../../csharp/programming-guide/classes-and-structs/includes/csharp_dev10_long_md.md)] 中新增）忽略该形参的实参。 由于以下代码中未发送任何参数，`Add` 将使用默认模板并创建新的工作簿。 C# 早期版本中的等效语句要求提供一个占位符参数：`ExcelApp.Workbooks.Add(Type.Missing)`。  
+     方法 [Add](http://go.microsoft.com/fwlink/?LinkId=210910) 有一个可选参数，用于指定特定的模板。 如果希望使用形参的默认值，你可以借助可选形参（[!INCLUDE[csharp_dev10_long](~/includes/csharp-dev10-long-md.md)] 中新增）忽略该形参的实参。 由于以下代码中未发送任何参数，`Add` 将使用默认模板并创建新的工作簿。 C# 早期版本中的等效语句要求提供一个占位符参数：`ExcelApp.Workbooks.Add(Type.Missing)`。  
   
      [!code-cs[csProgGuideOfficeHowTo#4](../../../csharp/programming-guide/interop/codesnippet/CSharp/how-to-access-office-onterop-objects_4.cs)]  
   
@@ -118,7 +118,7 @@ Visual C# 具有一些功能，可简化对 Office API 对象的访问。 这些
   
      [!code-cs[csProgGuideOfficeHowTo#14](../../../csharp/programming-guide/interop/codesnippet/CSharp/how-to-access-office-onterop-objects_8.cs)]  
   
-     如果程序集由 [/link](../../../csharp/language-reference/compiler-options/link-compiler-option.md) 编译器选项引用或者如果 Excel 的“嵌入互操作类型”属性设置为 true，则 [!INCLUDE[csharp_dev10_long](../../../csharp/programming-guide/classes-and-structs/includes/csharp_dev10_long_md.md)] 及更高版本会自动将返回的 `Object` 转换为 `dynamic`。 True 是此属性的默认值。  
+     如果程序集由 [/link](../../../csharp/language-reference/compiler-options/link-compiler-option.md) 编译器选项引用或者如果 Excel 的“嵌入互操作类型”属性设置为 true，则 [!INCLUDE[csharp_dev10_long](~/includes/csharp-dev10-long-md.md)] 及更高版本会自动将返回的 `Object` 转换为 `dynamic`。 True 是此属性的默认值。  
   
 ### <a name="to-run-the-project"></a>运行项目  
   
@@ -132,17 +132,17 @@ Visual C# 具有一些功能，可简化对 Office API 对象的访问。 这些
   
 ### <a name="to-add-a-word-document"></a>添加 Word 文档  
   
-1.  若要说明 [!INCLUDE[csharp_dev10_long](../../../csharp/programming-guide/classes-and-structs/includes/csharp_dev10_long_md.md)] 以及更高版本在其他哪些方面增强了 Office 编程，可以使用以下代码打开 Word 应用程序并创建链接到 Excel 工作表的图标。  
+1.  若要说明 [!INCLUDE[csharp_dev10_long](~/includes/csharp-dev10-long-md.md)] 以及更高版本在其他哪些方面增强了 Office 编程，可以使用以下代码打开 Word 应用程序并创建链接到 Excel 工作表的图标。  
   
-     将方法 `CreateIconInWordDoc`（在此步骤后面提供）粘贴到 `Program` 类中。 `CreateIconInWordDoc` 使用命名参数和可选参数来降低对 [Add](http://go.microsoft.com/fwlink/?LinkId=210937) 和 [PasteSpecial](http://go.microsoft.com/fwlink/?LinkId=147099) 方法调用的复杂性。 这些调用合并了其他两项新功能，这两项新功能在简化对具有引用参数的 COM 方法的调用的 [!INCLUDE[csharp_dev10_long](../../../csharp/programming-guide/classes-and-structs/includes/csharp_dev10_long_md.md)] 中引入。 首先，你可以将实参发送到引用形参，就像它们是值形参一样。 即，你可以直接发送值，而无需为每个引用参数创建变量。 编译器会生成临时变量以保存参数值，并将在你从调用返回时丢弃变量。 其次，你可以忽略参数列表中的 `ref` 关键字。  
+     将方法 `CreateIconInWordDoc`（在此步骤后面提供）粘贴到 `Program` 类中。 `CreateIconInWordDoc` 使用命名参数和可选参数来降低对 [Add](http://go.microsoft.com/fwlink/?LinkId=210937) 和 [PasteSpecial](http://go.microsoft.com/fwlink/?LinkId=147099) 方法调用的复杂性。 这些调用合并了其他两项新功能，这两项新功能在简化对具有引用参数的 COM 方法的调用的 [!INCLUDE[csharp_dev10_long](~/includes/csharp-dev10-long-md.md)] 中引入。 首先，你可以将实参发送到引用形参，就像它们是值形参一样。 即，你可以直接发送值，而无需为每个引用参数创建变量。 编译器会生成临时变量以保存参数值，并将在你从调用返回时丢弃变量。 其次，你可以忽略参数列表中的 `ref` 关键字。  
   
-     `Add` 方法有四个引用参数，所有引用参数都是可选的。 在 [!INCLUDE[csharp_dev10_long](../../../csharp/programming-guide/classes-and-structs/includes/csharp_dev10_long_md.md)] 或更高版本中，如果希望使用其默认值，可以忽略任何或所有形参的实参。 在 [!INCLUDE[csharp_orcas_long](../../../csharp/programming-guide/interop/includes/csharp_orcas_long_md.md)] 以及更早版本中，由于形参是引用形参，因此必须为每个形参提供实参且实参必须是变量。  
+     `Add` 方法有四个引用参数，所有引用参数都是可选的。 在 [!INCLUDE[csharp_dev10_long](~/includes/csharp-dev10-long-md.md)] 或更高版本中，如果希望使用其默认值，可以忽略任何或所有形参的实参。 在 [!INCLUDE[csharp_orcas_long](~/includes/csharp-orcas-long-md.md)] 以及更早版本中，由于形参是引用形参，因此必须为每个形参提供实参且实参必须是变量。  
   
-     `PasteSpecial` 方法可插入剪贴板的内容。 该方法有七个引用参数，所有引用参数都是可选的。 以下代码为其中两个形参指定实参：`Link` 用于创建指向剪贴板内容源的链接，`DisplayAsIcon` 用于将链接显示为图标。 在 [!INCLUDE[csharp_dev10_long](../../../csharp/programming-guide/classes-and-structs/includes/csharp_dev10_long_md.md)] 中，你可以对其中两个形参使用命名实参而忽略其他形参。 尽管这些是引用形参，你也不必使用 `ref` 关键字，或者创建变量以实参形式发送。 你可以直接发送值。 在 [!INCLUDE[csharp_orcas_long](../../../csharp/programming-guide/interop/includes/csharp_orcas_long_md.md)] 以及早期版本中，你必须为每个引用形参发送变量实参。  
+     `PasteSpecial` 方法可插入剪贴板的内容。 该方法有七个引用参数，所有引用参数都是可选的。 以下代码为其中两个形参指定实参：`Link` 用于创建指向剪贴板内容源的链接，`DisplayAsIcon` 用于将链接显示为图标。 在 [!INCLUDE[csharp_dev10_long](~/includes/csharp-dev10-long-md.md)] 中，你可以对其中两个形参使用命名实参而忽略其他形参。 尽管这些是引用形参，你也不必使用 `ref` 关键字，或者创建变量以实参形式发送。 你可以直接发送值。 在 [!INCLUDE[csharp_orcas_long](~/includes/csharp-orcas-long-md.md)] 以及早期版本中，你必须为每个引用形参发送变量实参。  
   
      [!code-cs[csProgGuideOfficeHowTo#9](../../../csharp/programming-guide/interop/codesnippet/CSharp/how-to-access-office-onterop-objects_10.cs)]  
   
-     在 [!INCLUDE[csharp_orcas_long](../../../csharp/programming-guide/interop/includes/csharp_orcas_long_md.md)] 或早期版本的语言中，需要以下更复杂的代码。  
+     在 [!INCLUDE[csharp_orcas_long](~/includes/csharp-orcas-long-md.md)] 或早期版本的语言中，需要以下更复杂的代码。  
   
      [!code-cs[csProgGuideOfficeHowTo#10](../../../csharp/programming-guide/interop/codesnippet/CSharp/how-to-access-office-onterop-objects_11.cs)]  
   
@@ -164,7 +164,7 @@ Visual C# 具有一些功能，可简化对 Office API 对象的访问。 这些
   
      此外，由于可以通过使用类型 `dynamic`（而非 `Object`）表示 COM 方法必需并返回的类型，因此更易于编程。 具有类型 `dynamic` 的变量在运行时以前均不会计算，从而消除了显式强制转换的需要。 有关更多信息，请参见[使用类型 dynamic](../../../csharp/programming-guide/types/using-type-dynamic.md)。  
   
-     在 [!INCLUDE[csharp_dev10_long](../../../csharp/programming-guide/classes-and-structs/includes/csharp_dev10_long_md.md)] 中，默认行为是嵌入类型信息，而不是使用 PIA。 由于该默认行为，因此不需要显式强制转换，之前的几个示例也得到简化。 例如，`worksheet` 中 `DisplayInExcel` 的声明会写为 `Excel._Worksheet workSheet = excelApp.ActiveSheet` 而非 `Excel._Worksheet workSheet = (Excel.Worksheet)excelApp.ActiveSheet`。 在相同方法中对 `AutoFit` 的调用还将要求在不进行默认行为的情况下显式强制转换，因为 `ExcelApp.Columns[1]` 返回 `Object`，并且 `AutoFit` 为 Excel 方法。 以下代码显示强制转换。  
+     在 [!INCLUDE[csharp_dev10_long](~/includes/csharp-dev10-long-md.md)] 中，默认行为是嵌入类型信息，而不是使用 PIA。 由于该默认行为，因此不需要显式强制转换，之前的几个示例也得到简化。 例如，`worksheet` 中 `DisplayInExcel` 的声明会写为 `Excel._Worksheet workSheet = excelApp.ActiveSheet` 而非 `Excel._Worksheet workSheet = (Excel.Worksheet)excelApp.ActiveSheet`。 在相同方法中对 `AutoFit` 的调用还将要求在不进行默认行为的情况下显式强制转换，因为 `ExcelApp.Columns[1]` 返回 `Object`，并且 `AutoFit` 为 Excel 方法。 以下代码显示强制转换。  
   
      [!code-cs[csProgGuideOfficeHowTo#14](../../../csharp/programming-guide/interop/codesnippet/CSharp/how-to-access-office-onterop-objects_8.cs)]  
   
@@ -186,7 +186,7 @@ Visual C# 具有一些功能，可简化对 Office API 对象的访问。 这些
   
 2.  按 Ctrl+F5 查看结果。 其他格式在 [XlRangeAutoFormat](http://go.microsoft.com/fwlink/?LinkId=210967) 枚举中列出。  
   
-3.  将步骤 1 中的语句与以下代码比较（以下代码显示 [!INCLUDE[csharp_orcas_long](../../../csharp/programming-guide/interop/includes/csharp_orcas_long_md.md)] 或早期版本中要求的参数）。  
+3.  将步骤 1 中的语句与以下代码比较（以下代码显示 [!INCLUDE[csharp_orcas_long](~/includes/csharp-orcas-long-md.md)] 或早期版本中要求的参数）。  
   
      [!code-cs[csProgGuideOfficeHowTo#17](../../../csharp/programming-guide/interop/codesnippet/CSharp/how-to-access-office-onterop-objects_16.cs)]  
   
@@ -201,3 +201,4 @@ Visual C# 具有一些功能，可简化对 Office API 对象的访问。 这些
  [使用类型 dynamic](../../../csharp/programming-guide/types/using-type-dynamic.md)   
  [命名参数和可选参数](../../../csharp/programming-guide/classes-and-structs/named-and-optional-arguments.md)   
  [如何：在 Office 编程中使用命名参数和可选参数](../../../csharp/programming-guide/classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md)
+

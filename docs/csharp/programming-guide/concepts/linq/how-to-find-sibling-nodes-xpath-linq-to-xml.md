@@ -1,5 +1,5 @@
 ---
-title: "如何：查找同级节点 (XPath-LINQ to XML) (C#) | Microsoft 文档"
+title: "如何：查找同级节点 (XPath-LINQ to XML) (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,11 +14,11 @@ ms.assetid: e2c73d10-a8ca-4e11-b5aa-d055de285874
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: dfe933b9f4d9da05535a3af95c8f2c5ab197d6ed
-ms.lasthandoff: 03/13/2017
-
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 1e40a04b1e4359b2455442b2589b9d036562d70a
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-find-sibling-nodes-xpath-linq-to-xml-c"></a>如何：查找同级节点 (XPath-LINQ to XML) (C#)
@@ -88,3 +88,4 @@ Results are identical
   
 ## <a name="see-also"></a>请参阅  
  [针对 XPath 用户的 LINQ to XML (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)
+

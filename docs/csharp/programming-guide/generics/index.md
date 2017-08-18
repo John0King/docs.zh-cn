@@ -1,42 +1,61 @@
 ---
-title: "泛型（C# 编程指南） | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "C# 语言, Generics — 泛型"
-  - "泛型 [C#]"
+title: "泛型（C# 编程指南）"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- C# language, generics
+- generics [C#]
 ms.assetid: 75ea8509-a4ea-4e7a-a2b3-cf72482e9282
 caps.latest.revision: 23
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 23
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 4899b3604343925e7e4e0535929d041b1a1f1081
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
+
 ---
-# 泛型（C# 编程指南）
-2.0 版 C\# 语言和公共语言运行时 \(CLR\) 中增加了泛型。  泛型将类型参数的概念引入 .NET Framework，类型参数使得设计如下类和方法成为可能：这些类和方法将一个或多个类型的指定推迟到客户端代码声明并实例化该类或方法的时候。  例如，通过使用泛型类型参数 T，您可以编写其他客户端代码能够使用的单个类，而不致引入运行时强制转换或装箱操作的成本或风险，如下所示：  
+# <a name="generics-c-programming-guide"></a>泛型（C# 编程指南）
+C# 语言和公共语言运行时 (CLR) 的 2.0 版本中添加了泛型。 泛型将类型参数的概念引入 .NET Framework，这样就可以设计具有以下特征的类和方法：在客户端代码声明并初始化这些类和方法之前，这些类和方法会延迟指定一个或多个类型。 例如，通过使用泛型类型参数 T，可以编写其他客户端代码能够使用的单个类，而不会产生运行时转换或装箱操作的成本或风险，如下所示：  
   
  [!code-cs[csProgGuideGenerics#1](../../../csharp/programming-guide/generics/codesnippet/CSharp/index_1.cs)]  
   
-## 泛型概述  
+## <a name="generics-overview"></a>泛型概述  
   
--   使用泛型类型可以最大限度地重用代码、保护类型的安全以及提高性能。  
+-   使用泛型类型可以最大限度地重用代码、保护类型安全性以及提高性能。  
   
 -   泛型最常见的用途是创建集合类。  
   
--   .NET Framework 类库在 <xref:System.Collections.Generic> 命名空间中包含几个新的泛型集合类。  应尽可能地使用这些类来代替普通的类，如 <xref:System.Collections> 命名空间中的 <xref:System.Collections.ArrayList>。  
+-   .NET Framework 类库在 <xref:System.Collections.Generic> 命名空间中包含几个新的泛型集合类。 应尽可能使用这些类来代替某些类，如 <xref:System.Collections> 命名空间中的 <xref:System.Collections.ArrayList>。  
   
--   您可以创建自己的泛型接口、泛型类、泛型方法、泛型事件和泛型委托。  
+-   可以创建自己的泛型接口、泛型类、泛型方法、泛型事件和泛型委托。  
   
 -   可以对泛型类进行约束以访问特定数据类型的方法。  
   
--   关于泛型数据类型中使用的类型的信息可在运行时通过使用反射获取。  
+-   在泛型数据类型中所用类型的信息可在运行时通过使用反射来获取。  
   
-## 相关章节  
- 有关更多信息：  
+## <a name="related-sections"></a>相关章节  
+ 更多相关信息：  
   
 -   [泛型介绍](../../../csharp/programming-guide/generics/introduction-to-generics.md)  
   
@@ -56,7 +75,7 @@ caps.handback.revision: 23
   
 -   [default 关键字](../../../csharp/programming-guide/generics/default-keyword-in-generic-code.md)  
   
--   [C\+\+ 模板和 C\# 泛型之间的区别](../../../csharp/programming-guide/generics/differences-between-cpp-templates-and-csharp-generics.md)  
+-   [C++ 模板和 C# 泛型之间的区别](../../../csharp/programming-guide/generics/differences-between-cpp-templates-and-csharp-generics.md)  
   
 -   [泛型和反射](../../../csharp/programming-guide/generics/generics-and-reflection.md)  
   
@@ -64,12 +83,13 @@ caps.handback.revision: 23
   
 -   [.NET Framework 类库中的泛型](../../../csharp/programming-guide/generics/generics-in-the-net-framework-class-library.md)  
   
-## C\# 语言规范  
- 有关更多信息，请参见 [C\# 语言规范](../../../csharp/language-reference/language-specification.md)。  
+## <a name="c-language-specification"></a>C# 语言规范  
+ 有关详细信息，请参阅 [C# 语言规范](../../../csharp/language-reference/language-specification/index.md)。  
   
-## 请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.Collections.Generic>   
- [C\# 编程指南](../../../csharp/programming-guide/index.md)   
+ [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [类型](../../../csharp/programming-guide/types/index.md)   
- [\<typeparam\>](../../../csharp/programming-guide/xmldoc/typeparam.md)   
- [\<typeparamref\>](../../../csharp/programming-guide/xmldoc/typeparamref.md)
+ [\<typeparam>](../../../csharp/programming-guide/xmldoc/typeparam.md)   
+ [\<typeparamref>](../../../csharp/programming-guide/xmldoc/typeparamref.md)
+

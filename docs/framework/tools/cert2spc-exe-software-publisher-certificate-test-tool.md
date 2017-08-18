@@ -1,5 +1,5 @@
 ---
-title: "Cert2spc.exe（软件发行者证书测试工具）| Microsoft Docs"
+title: "Cert2spc.exe（软件发行者证书测试工具）"
 ms.custom: 
 ms.date: 03/30/2017
 ms.prod: .net-framework
@@ -25,11 +25,11 @@ caps.latest.revision: 21
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: 14abadaf548e228244a1ff7ca72fa3896ef4eb5d
-ms.openlocfilehash: 4d78c7d33061cb60acf494097c2bc642526a562a
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 7109f96b6997670afa6ef7c362b9e1a142014fbe
 ms.contentlocale: zh-cn
-ms.lasthandoff: 06/02/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="cert2spcexe-software-publisher-certificate-test-tool"></a>Cert2spc.exe（软件发行者证书测试工具）

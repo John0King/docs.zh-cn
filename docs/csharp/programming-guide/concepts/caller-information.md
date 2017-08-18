@@ -1,5 +1,5 @@
 ---
-title: "调用方信息 (C#) | Microsoft Docs"
+title: "调用方信息 (C#)"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -16,16 +16,17 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 087b547cfc558fb4c82026e9af6ac621809e0ca0
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 8c514266b474f6d4cd3f02e6f9008bef053c407a
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="caller-information-c"></a>调用方信息 (C#)
 通过使用调用方信息特性，可获取有关方法的调用方的信息。 可以获取源代码的文件路径、源代码中的行号和调用方的成员名称。 此信息有助于跟踪、调试和创建诊断工具。  
   
- 若要获取此信息，可以使用应用于可选参数的特性，每个特性都具有默认值。 下表列出了在 <xref:System.Runtime.CompilerServices?displayProperty=fullName> 命名空间中定义的调用方信息特性：  
+ 若要获取此信息，可以使用应用于可选参数的特性，每个特性都具有默认值。 下表列出在 <xref:System.Runtime.CompilerServices?displayProperty=fullName> 命名空间中定义的调用方信息特性：  
   
 |特性|描述|类型|  
 |---|---|---|  
@@ -65,12 +66,12 @@ public void TraceMessage(string message,
   
  调用方信息特性不会使参数成为可选参数。 相反，它们会在忽略此参数时影响传入的默认值。  
   
- 在编译时，调用方信息值将作为文本传入中间语言 (IL)。 与异常的 <xref:System.Exception.StackTrace%2A> 属性的结果不同，这些结果不受混淆处理的影响。  
+ 在编译时，调用方信息值将作为文本传入中间语言 (IL)。 与异常的 <xref:System.Exception.StackTrace%2A> 属性的结果不同，这些结果不受模糊处理的影响。  
   
  你可显式提供可选参数来控制调用方信息或隐藏调用方信息。  
   
 ###  <a name="MEMBERNAMES"></a>成员名称  
- 可以使用 `CallerMemberName` 特性来避免将成员名称指定为所调用的方法的 `String` 参数。 通过使用这种技术，可以避免“重命名重构”****不更改 `String` 值的问题。 此好处对于以下任务特别有用：  
+ 可以使用 `CallerMemberName` 特性来避免将成员名称指定为所调用的方法的 `String` 参数。 通过使用这种技术，可以避免“重命名重构”不更改 `String` 值的问题。 此好处对于以下任务特别有用：  
   
 -   使用跟踪和诊断例程。  
   
@@ -93,3 +94,4 @@ public void TraceMessage(string message,
  [通用特性 (C#)](../../../csharp/programming-guide/concepts/attributes/common-attributes.md)   
  [命名参数和可选参数](../../../csharp/programming-guide/classes-and-structs/named-and-optional-arguments.md)   
  [编程概念 (C#)](../../../csharp/programming-guide/concepts/index.md)
+

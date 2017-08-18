@@ -1,5 +1,5 @@
 ---
-title: "/target（C# 编译器选项）| Microsoft Docs"
+title: "-target（C# 编译器选项）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -32,17 +32,18 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 615a0e2993dc78919008e8f9245504a486e2fb77
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 22dc86ce0c0a24681d05e54e5f1ba4f36295659a
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="target-c-compiler-options"></a>/target（C# 编译器选项）
 **/target** 编译器选项可指定为以下四种形式之一：  
   
  [/target:appcontainerexe](../../../csharp/language-reference/compiler-options/target-appcontainerexe-compiler-option.md)  
- 创建 [!INCLUDE[win8_appname_long](../../../csharp/includes/win8_appname_long_md.md)]应用的 .exe 文件。  
+ 创建 [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)]应用的 .exe 文件。  
   
  [/target:exe](../../../csharp/language-reference/compiler-options/target-exe-compiler-option.md)  
  创建 .exe 文件。  
@@ -63,7 +64,7 @@ ms.lasthandoff: 03/13/2017
   
  程序集清单放置在编译中的第一个 .exe 输出文件中，如果没有 .exe 输出文件，会放置在第一个 DLL 中。 例如，在以下的命令行中，清单将放置在 `1.exe` 中：  
   
-```  
+```console  
 csc /out:1.exe t1.cs /out:2.netmodule t2.cs  
 ```  
   
@@ -71,7 +72,7 @@ csc /out:1.exe t1.cs /out:2.netmodule t2.cs
   
  如果创建了一个程序集，则可以用 <xref:System.CLSCompliantAttribute> 属性指示全部或部分代码是符合 CLS 的。  
   
-```  
+```csharp  
 // target_clscompliant.cs  
 [assembly:System.CLSCompliant(true)]   // specify assembly compliance  
   
@@ -82,9 +83,10 @@ public class TestClass
 }  
 ```  
   
- 有关以编程方式设置此编译器选项的详细信息，请参阅 <xref:VSLangProj80.ProjectProperties3.OutputType%2A>。  
+ 有关如何以编程方式设置此编译器选项的详细信息，请参阅 <xref:VSLangProj80.ProjectProperties3.OutputType%2A>。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [（C# 编译器选项）](../../../csharp/language-reference/compiler-options/index.md)   
- [NIB 如何：修改项目属性和配置设置](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)   
+ [管理项目和解决方案属性](/visualstudio/ide/managing-project-and-solution-properties)   
  [/subsystemversion（C# 编译器选项）](../../../csharp/language-reference/compiler-options/subsystemversion-compiler-option.md)
+

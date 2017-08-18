@@ -1,5 +1,5 @@
 ---
-title: "构造函数（C# 编程指南）| Microsoft Docs"
+title: "构造函数（C# 编程指南）"
 ms.date: 2017-05-05
 ms.prod: .net
 ms.technology:
@@ -30,11 +30,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a5ed524a1b17f7be8903f998cbd732594faab831
-ms.openlocfilehash: 064d8f8b3068596cd1d4fc2dd073f165f0ebadcb
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 400afcda2fe30bf0e3621ee4c4247486e01d3ee4
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/15/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="constructors-c-programming-guide"></a>构造函数（C# 编程指南）
@@ -42,7 +42,7 @@ ms.lasthandoff: 05/15/2017
 
 ## <a name="default-constructors"></a>默认构造函数
   
-如果没有为类提供构造函数，默认情况下，C# 将创建一个会实例化对象并将成员变量设置为默认值的构造函数，如[默认值表](../../../csharp/language-reference/keywords/default-values-table.md)中所列。 如果没有为结构提供构造函数，C# 将在隐式默认构造函数上答复，以自动将值类型的每个字段初始化为其默认值，如[默认值表](../../../csharp/language-reference/keywords/default-values-table.md)中所列。 有关详细信息和示例，请参阅[实例构造函数](../../../csharp/programming-guide/classes-and-structs/instance-constructors.md)。  
+如果没有为类提供构造函数，默认情况下，C# 将创建一个会实例化对象并将成员变量设置为默认值的构造函数，如[默认值表](../../../csharp/language-reference/keywords/default-values-table.md)中所列。 如果没有为结构提供构造函数，C# 将依赖于隐式默认构造函数，自动将值类型的每个字段初始化为其默认值，如[默认值表](../../../csharp/language-reference/keywords/default-values-table.md)中所列。 有关详细信息和示例，请参阅[实例构造函数](../../../csharp/programming-guide/classes-and-structs/instance-constructors.md)。  
 
 ## <a name="constructor-syntax"></a>构造函数语法
 
@@ -50,13 +50,13 @@ ms.lasthandoff: 05/15/2017
 
 [!code-cs[constructors](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/constructors1.cs#1)]  
 
-如果某个构造函数可以作为单个语句实现，则可以使用[表达式主体定义](../statements-expressions-operators/expression-bodied-members.md)。 以下示例定义 `Location` 类，其构造函数具有一个名为“name”的字符串参数。 表达式主体定义向 `Name` 属性分配参数。
+如果某个构造函数可以作为单个语句实现，则可以使用[表达式主体定义](../statements-expressions-operators/expression-bodied-members.md)。 以下示例定义 `Location` 类，其构造函数具有一个名为“name”的字符串参数。 表达式主体定义给 `locationName` 字段分配参数。
 
 [!code-cs[expression-bodied-constructor](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-ctor.cs#1)]  
 
 ## <a name="static-constructors"></a>静态构造函数
 
-前面的示例具有所有已展示的实例构造函数，这些构造函数创建一个新对象。 类或结构也可以具有静态构造函数，该静态构造函数初始化类型的静态成员。  静态构造函数是无参数构造函数。 如果未提供静态构造函数用于初始化静态字段，C# 编译器将提供会将字段初始化为其默认值的默认静态构造函数，如[默认值表](../../../csharp/language-reference/keywords/default-values-table.md)中所列。 
+前面的示例具有所有已展示的实例构造函数，这些构造函数创建一个新对象。 类或结构也可以具有静态构造函数，该静态构造函数初始化类型的静态成员。  静态构造函数是无参数构造函数。 如果未提供静态构造函数来初始化静态字段，C# 编译器将提供默认静态构造函数，该静态构造函数会将静态字段初始化为其默认值，如[默认值表](../../../csharp/language-reference/keywords/default-values-table.md)中所列。 
 
 以下示例使用静态构造函数来初始化静态字段。
 
@@ -85,3 +85,4 @@ ms.lasthandoff: 05/15/2017
  [终结器](../../../csharp/programming-guide/classes-and-structs/destructors.md)   
  [static](../../../csharp/language-reference/keywords/static.md)   
  [Why Do Initializers Run In The Opposite Order As Constructors?Part One](http://go.microsoft.com/fwlink/?LinkId=112374)（为何初始值设定项作为构造函数以相反顺序运行？第一部分）
+

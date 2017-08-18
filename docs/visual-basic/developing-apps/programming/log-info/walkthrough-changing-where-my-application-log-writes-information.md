@@ -1,5 +1,5 @@
 ---
-title: "更改 My.Application.Log 写入信息的位置 (Visual Basic) | Microsoft Docs"
+title: "更改 My.Application.Log 写入信息的位置 (Visual Basic)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -32,11 +32,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 5e3d68e6a64ec9f8e9cd8bfd13fa8174da568299
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: a02307c55283c359ae069170e8038cd1983d495b
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="walkthrough-changing-where-myapplicationlog-writes-information-visual-basic"></a>演练：更改 My.Application.Log 写入信息的位置 (Visual Basic)
@@ -49,7 +49,7 @@ ms.lasthandoff: 03/13/2017
   
 ### <a name="to-add-listeners"></a>添加侦听器  
   
-1.  在“解决方案资源管理器” **** 中右键单击 app.config，然后选择“打开” ****。  
+1.  在“解决方案资源管理器” 中右键单击 app.config，然后选择“打开”。  
   
      \- 或 -  
   
@@ -57,7 +57,7 @@ ms.lasthandoff: 03/13/2017
   
     1.  在 **“项目”** 菜单上选择 **“添加新项”**。  
   
-    2.  在“添加新项” **** 对话框中，选择“应用程序配置文件” ****。  
+    2.  在“添加新项”  对话框中，选择“应用程序配置文件” 。  
   
     3.  单击 **“添加”**。  
   
@@ -176,17 +176,17 @@ ms.lasthandoff: 03/13/2017
   
 1.  在 `<add>` 部分找到侦听器的 `<sharedListeners>` 元素。  
   
-2.  `type` 特性提供了侦听器类型的名称。 此类型必须从 <xref:System.Diagnostics.TraceListener> 类继承。 请使用强名称类型名称以确保使用正确的类型。 有关详细信息，请参阅下面的“引用强名称类型”部分。  
+2.  `type` 特性提供了侦听器类型的名称。 此类型必须继承自 <xref:System.Diagnostics.TraceListener> 类。 请使用强名称类型名称以确保使用正确的类型。 有关详细信息，请参阅下面的“引用强名称类型”部分。  
   
      可以使用的类型有：  
   
-    -   <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener?displayProperty=fullName> 侦听器，用于写入文件日志。  
+    -   <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener?displayProperty=fullName> 侦听器，它将信息写入文件日志。  
   
-    -   <xref:System.Diagnostics.EventLogTraceListener?displayProperty=fullName> 侦听器，用于将信息写入 `initializeData` 参数所指定的计算机事件日志。  
+    -   <xref:System.Diagnostics.EventLogTraceListener?displayProperty=fullName> 侦听器，它将信息写入 `initializeData` 参数指定的计算机事件日志。  
   
-    -   <xref:System.Diagnostics.DelimitedListTraceListener?displayProperty=fullName> 和 <xref:System.Diagnostics.XmlWriterTraceListener?displayProperty=fullName> 侦听器，用于写入 `initializeData` 参数中指定的文件。  
+    -   <xref:System.Diagnostics.DelimitedListTraceListener?displayProperty=fullName> 和 <xref:System.Diagnostics.XmlWriterTraceListener?displayProperty=fullName> 侦听器，它们将信息写入 `initializeData` 参数指定的文件。  
   
-    -   <xref:System.Diagnostics.ConsoleTraceListener?displayProperty=fullName> 侦听器，用于写入命令行控制台。  
+    -   <xref:System.Diagnostics.ConsoleTraceListener?displayProperty=fullName> 侦听器，它将信息写入命令行控制台。  
   
      有关其他类型的日志侦听器写入信息的位置的信息，请参阅该类型的文档。  
   
@@ -208,10 +208,11 @@ ms.lasthandoff: 03/13/2017
   
      `Microsoft.VisualBasic.Logging.FileLogTraceListener, Microsoft.VisualBasic, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=fullName>   
  <xref:System.Diagnostics.TraceListener>   
  <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener?displayProperty=fullName>   
  <xref:System.Diagnostics.EventLogTraceListener?displayProperty=fullName>   
- [如何：将事件信息写入文本文件](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-event-information-to-a-text-file.md)   
+ [How to: Write Event Information to a Text File](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-event-information-to-a-text-file.md)   
  [如何：写入应用程序事件日志](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-to-an-application-event-log.md)
+

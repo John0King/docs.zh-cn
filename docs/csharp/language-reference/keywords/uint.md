@@ -1,5 +1,5 @@
 ---
-title: "uint（C# 参考）| Microsoft Docs"
+title: "uint（C# 参考）"
 ms.date: 2017-03-14
 ms.prod: .net
 ms.technology:
@@ -30,11 +30,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 400dfda51d978f35c3995f90840643aaff1b9c13
-ms.openlocfilehash: 24a47d83f9f8a778b6df53b5e1e5444eda819680
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 4342c08ab536f45a2e3b5fa6fe94839436600a4a
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/24/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="uint-c-reference"></a>uint（C# 参考）
@@ -49,7 +49,7 @@ ms.lasthandoff: 03/24/2017
   
 ## <a name="literals"></a>文本  
 
-可以通过为其分配十进制文本、十六进制文本或（从 C# 7 开始）二进制文本来声明和初始化 `uint` 变量。 如果整数文本超出范围 `uint`（即，如果该值小于 <xref:System.UInt32.MinValue?displayProperty=fullName> 或大于 <xref:System.UInt32.MaxValue?displayProperty=fullName>，将出现编译错误。
+可以通过为其分配十进制文本、十六进制文本或（从 C# 7 开始）二进制文本来声明和初始化 `uint` 变量。 如果整数文本在 `uint` 范围之外（即，如果它小于 <xref:System.UInt32.MinValue?displayProperty=fullName> 或大于 <xref:System.UInt32.MaxValue?displayProperty=fullName>），会发生编译错误。
 
 在以下示例中，表示为十进制、十六进制和二进制文本且等于 3,000,000,000 的整数被分配给 `uint` 值。  
   
@@ -62,7 +62,7 @@ ms.lasthandoff: 03/24/2017
 
 [!code-cs[uint](../../../../samples/snippets/csharp/language-reference/keywords/numeric-literals.cs#UIntS)]  
  
- 整数文本还可包含表示类型的后缀。 后缀 `U` 或“u”表示 `uint` 或 `ulong`，具体取决于文本的数字值。 以下示例使用 `u` 后缀来表示这两种类型的无符号整数。 请注意，第一个文本是 `uint`，因为其值小于 <xref:System.UInt32.MaxValue?displayProperty=fullName>，而第二个文本是 `ulong`，因为其值大于 <xref:System.UInt32.MaxValue?displayProperty=fullName>。
+ 整数文本还可包含表示类型的后缀。 后缀 `U` 或“u”表示 `uint` 或 `ulong`，具体取决于文本的数字值。 以下示例使用 `u` 后缀来表示这两种类型的无符号整数。 请注意第一个文本为 `uint`，因为其值小于 <xref:System.UInt32.MaxValue?displayProperty=fullName>，而第二个文本为 `ulong`，因为其值大于 <xref:System.UInt32.MaxValue?displayProperty=fullName>。
 
 [!code-cs[usuffix](../../../../samples/snippets/csharp/language-reference/keywords/numeric-suffixes.cs#1)]  
  
@@ -104,9 +104,9 @@ uint y = (uint)3.0;
  有关隐式数值转换规则的详细信息，请参阅[隐式数值转换表](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)。  
   
 ## <a name="c-language-specification"></a>C# 语言规范  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.UInt32>   
  [C# 参考](../../../csharp/language-reference/index.md)   
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
@@ -115,3 +115,4 @@ uint y = (uint)3.0;
  [内置类型表](../../../csharp/language-reference/keywords/built-in-types-table.md)   
  [隐式数值转换表](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)   
  [显式数值转换表](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)
+

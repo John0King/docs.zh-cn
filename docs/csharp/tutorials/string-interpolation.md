@@ -1,5 +1,5 @@
 ---
-title: "字符串内插 | C#"
+title: "字符串内插 - C#"
 description: "了解 C# 6 中的字符串内插的工作方式"
 keywords: ".NET, .NET Core, C#, 字符串"
 author: mgroves
@@ -10,14 +10,15 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: f8806f6b-3ac7-4ee6-9b3e-c524d5301ae9
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 41afad1c1148319eb8d7d1c3066424eea431649d
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: de8f77e44319731f87f00d227a5373a78bf40e32
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 
-# <a name="string-interpolation-in-c"></a>C 中的字符串内插# #
+# <a name="string-interpolation-in-c"></a>C# 中的字符串内插 #
 
 借助字符串内插，可以将字符串中的占位符替换成字符串变量的值。 在低于 C# 6 的版本中，使用 `System.String.Format` 实现字符串内插。 虽然这样做是可行的，但由于要用到编号占位符，因此加大了读取难度且过程更为冗长。
 

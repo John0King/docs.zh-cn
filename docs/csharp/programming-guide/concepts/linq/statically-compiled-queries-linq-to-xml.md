@@ -1,5 +1,5 @@
 ---
-title: "静态编译的查询 (LINQ to XML) (C#) | Microsoft Docs"
+title: "静态编译的查询 (LINQ to XML) (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,11 +14,11 @@ ms.assetid: 3bf558fe-0705-479d-86d4-00188f5fcf9c
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 10e4df75be88dc5609e0ca15666042a0354824bc
-ms.lasthandoff: 03/13/2017
-
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 8e9986524756c979226919d37318a9ca2562213a
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="statically-compiled-queries-linq-to-xml-c"></a>静态编译的查询 (LINQ to XML) (C#)
@@ -59,7 +59,7 @@ foreach (XElement el in list1)
     Console.WriteLine(el);  
 ```  
   
- <xref:System.Linq.Enumerable.Where%2A> 方法是一种扩展方法。 有关详细信息，请参阅[扩展方法](../../../../csharp/programming-guide/classes-and-structs/extension-methods.md)。 由于 <xref:System.Linq.Enumerable.Where%2A> 是一个扩展方法，因此会将上面的查询视为按以下形式编写的查询进行编译：  
+ <xref:System.Linq.Enumerable.Where%2A> 方法为扩展方法。 有关详细信息，请参阅[扩展方法](../../../../csharp/programming-guide/classes-and-structs/extension-methods.md) 由于 <xref:System.Linq.Enumerable.Where%2A> 是一个扩展方法，因此会将上面的查询视为按以下形式编写的查询进行编译：  
   
 ```csharp  
 XDocument po = XDocument.Load("PurchaseOrders.xml");  
@@ -79,7 +79,7 @@ foreach (XElement el in list1)
 >  这些示例代表了编译器可能编写的代码。 这些示例的实际实现可能会略有不同，但对于这些示例来说，执行的性能是相同或类似的。  
   
 ## <a name="executing-xpath-expressions-with-xmldocument"></a>使用 XmlDocument 执行 XPath 表达式  
- 下例使用 <xref:System.Xml.XmlDocument> 达到与前面的示例相同的结果：  
+ 下面的示例使用 <xref:System.Xml.XmlDocument> 来完成与前面的示例相同的结果：  
   
 ```csharp  
 XmlReader reader = XmlReader.Create("PurchaseOrders.xml");  
@@ -105,5 +105,6 @@ reader.Close();
   
  与相应的 LINQ to XML 查询完成的工作相比，这需要执行非常多的工作。 特定的性能差异将因不同的查询类型而异，但一般来说，与使用 <xref:System.Xml.XmlDocument> 计算 XPath 表达式相比，LINQ to XML 查询执行的工作较少，因此会获得更好的性能。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [性能 (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/performance-linq-to-xml.md)
+

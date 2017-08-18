@@ -1,5 +1,5 @@
 ---
-title: "-filealign（C# 编译器选项）| Microsoft Docs"
+title: "-filealign（C# 编译器选项）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -39,11 +39,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 83569fa264ba3ed6e271281885940a70a5354840
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 1b13dee0a221bc0b97349be5897a04188304ff16
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="filealign-c-compiler-options"></a>/filealign（C# 编译器选项）
@@ -64,7 +64,7 @@ ms.lasthandoff: 05/22/2017
   
  通过指定节的大小，可以影响输出文件的大小。 修改节的大小可能对将在较小设备上运行的程序有用。  
   
- 使用 [DUMPBIN](https://docs.microsoft.com/cpp/build/reference/dumpbin-options) 可查看有关输出文件中各节的信息。  
+ 使用 [DUMPBIN](/cpp/build/reference/dumpbin-options) 可查看有关输出文件中各节的信息。  
   
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>在 Visual Studio 开发环境中设置此编译器选项  
   
@@ -80,4 +80,5 @@ ms.lasthandoff: 05/22/2017
   
 ## <a name="see-also"></a>另请参阅  
  [（C# 编译器选项）](../../../csharp/language-reference/compiler-options/index.md)   
- [NIB 如何：修改项目属性和配置设置](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [管理项目和解决方案属性](/visualstudio/ide/managing-project-and-solution-properties)
+

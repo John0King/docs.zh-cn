@@ -1,5 +1,5 @@
 ---
-title: "筛选 My.Application.Log 输出 (Visual Basic) | Microsoft Docs"
+title: "筛选 My.Application.Log 输出 (Visual Basic)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -33,11 +33,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
-ms.openlocfilehash: c0b8b0a4174527d1fc512b461355d2508e34e152
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: a19bd71f1346be292dcc7b143a0080ac1cf11ec0
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="walkthrough-filtering-myapplicationlog-output-visual-basic"></a>演练：筛选 My.Application.Log 输出 (Visual Basic)
@@ -48,7 +48,7 @@ ms.lasthandoff: 05/22/2017
   
 #### <a name="to-build-the-sample-application"></a>生成示例应用程序  
   
-1.  打开一个新的 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] Windows 应用程序项目。  
+1.  打开一个新的 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Windows 应用程序项目。  
   
 2.  向 Form1 添加一个名为 Button1 的按钮。  
   
@@ -68,7 +68,7 @@ ms.lasthandoff: 05/22/2017
   
 6.  关闭该应用程序。  
   
-     有关如何查看应用程序的调试输出窗口的信息，请参阅[输出窗口](https://docs.microsoft.com/visualstudio/ide/reference/output-window)。 有关应用程序日志文件的位置的信息，请参阅[演练：确定 My.Application.Log 写入信息的位置](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md)。  
+     有关如何查看应用程序的调试输出窗口的信息，请参阅[输出窗口](/visualstudio/ide/reference/output-window)。 有关应用程序日志文件的位置的信息，请参阅[演练：确定 My.Application.Log 写入信息的位置](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md)。  
   
     > [!NOTE]
     >  默认情况下，应用程序关闭时将刷新日志文件输出。  
@@ -106,7 +106,7 @@ ms.lasthandoff: 05/22/2017
   
     1.  在 **“项目”** 菜单上选择 **“添加新项”**。  
   
-    2.  在“添加新项” 对话框中，选择“应用程序配置文件”。  
+    2.  在“添加新项”  对话框中，选择“应用程序配置文件” 。  
   
     3.  单击 **“添加”**。  
   
@@ -162,7 +162,7 @@ ms.lasthandoff: 05/22/2017
 9. 将 `value` 属性的值改回“信息”。  
   
     > [!NOTE]
-    >  `DefaultSwitch` 开关设置仅控制 `My.Application.Log`。 它不会更改 [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)]<xref:System.Diagnostics.Trace?displayProperty=fullName> 和 <xref:System.Diagnostics.Debug?displayProperty=fullName> 类的行为方式。  
+    >  `DefaultSwitch` 开关设置仅控制 `My.Application.Log`。 它不会更改 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]<xref:System.Diagnostics.Trace?displayProperty=fullName> 和 <xref:System.Diagnostics.Debug?displayProperty=fullName> 类的行为方式。  
   
 ## <a name="individual-filtering-for-myapplicationlog-listeners"></a>对 My.Application.Log 侦听器的单独筛选  
  上面的示例演示如何更改对所有 `My.Application.Log` 输出的筛选。 此示例演示如何筛选单个日志侦听器。 默认情况下，应用程序有两个可写入应用程序的调试输出和日志文件的侦听器。  
@@ -181,7 +181,7 @@ ms.lasthandoff: 05/22/2017
   
     1.  在 **“项目”** 菜单上选择 **“添加新项”**。  
   
-    2.  在“添加新项” 对话框中，选择“应用程序配置文件”。  
+    2.  在“添加新项”  对话框中，选择“应用程序配置文件” 。  
   
     3.  单击 **“添加”**。  
   
@@ -281,3 +281,4 @@ ms.lasthandoff: 05/22/2017
  [如何：编写日志消息](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-log-messages.md)   
  [跟踪开关](../../../../framework/debug-trace-profile/trace-switches.md)   
  [记录来自应用程序的信息](../../../../visual-basic/developing-apps/programming/log-info/logging-information-from-the-application.md)
+

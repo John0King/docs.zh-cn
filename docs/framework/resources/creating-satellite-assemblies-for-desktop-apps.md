@@ -1,321 +1,320 @@
 ---
-title: "创建桌面应用程序的附属程序集 | Microsoft Docs"
-ms.custom: ""
-ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "部署应用程序 [.NET Framework]，资源"
-  - "资源文件，部署"
-  - "轮毂和辐条资源部署模型"
-  - "资源文件，打包"
-  - "应用程序资源，打包"
-  - "公钥，获取"
-  - "附属程序集"
-  - "程序集 [.NET Framework]，签名"
-  - "应用程序资源，部署"
-  - "Al.exe"
-  - "GAC（全局程序集缓存），附属程序集"
-  - "程序集链接器"
-  - "附属程序集的目录位置"
-  - "全局程序集缓存，附属程序集"
-  - "打包应用程序资源"
-  - "编译附属程序集"
-  - "重新签名程序集"
+title: "创建桌面应用的附属程序集| Microsoft Docs"
+ms.custom: 
+ms.date: 03/30/2017
+ms.prod: .net-framework
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- dotnet-bcl
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- deploying applications [.NET Framework], resources
+- resource files, deploying
+- hub-and-spoke resource deployment model
+- resource files, packaging
+- application resources, packaging
+- public keys, obtaining
+- satellite assemblies
+- assemblies [.NET Framework], signing
+- application resources, deploying
+- Al.exe
+- GAC (global assembly cache), satellite assemblies
+- Assembly Linker
+- directory locations for satellite assemblies
+- global assembly cache, satellite assemblies
+- packaging application resources
+- compiling satellite assemblies
+- re-signing assemblies
 ms.assetid: 8d5c6044-2919-41d2-8321-274706b295ac
 caps.latest.revision: 11
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
-caps.handback.revision: 11
+author: rpetrusha
+ms.author: ronpet
+manager: wpickett
+ms.translationtype: Machine Translation
+ms.sourcegitcommit: 6f3dc4235c75d7438f019838cb22192f4dc7c41a
+ms.openlocfilehash: b4ae5474ebf910389148745105adbe9a0ae608bb
+ms.contentlocale: zh-cn
+ms.lasthandoff: 06/02/2017
+
 ---
-# 创建桌面应用程序的附属程序集
-在本地化应用程序中，资源文件扮演一个中心角色。  如果资源是用户自己的语言或区域性的不可用，它们在用户的语言和区域性中使应用程序显示字符串、图像和其他数据来提供替换的数据。  .NET Framework 使用轮辐式模型来定位和巡回本地化资源。  集中式模型是主程序集，它包含不可本地化的可执行代码以及用于单个区域性（称作非特定区域性或默认区域性）的资源。  默认区域性是应用程序的后备区域性；在本地化的资源不可用时，请使用。  您使用 <xref:System.Resources.NeutralResourcesLanguageAttribute>特性指定您的应用程序的默认区域性的区域性。  每一辐条均连接到一个附属程序集，该附属程序集包含单个本地化区域性的资源，但不包含任何代码。  因为附属程序集不是主程序集的一部分，所以您可以轻松地更新或替换与特定区域性对应的资源，而不必替换应用程序的主程序集。  
+# <a name="creating-satellite-assemblies-for-desktop-apps"></a>创建桌面应用程序的附属程序集
+资源文件在本地化的应用程序中具有核心作用。 通过资源文件，应用程序可以使用用户自己的语言和区域性显示字符串、图像及其他数据，并且在用户自己的语言或区域性资源不可用时，提供备用数据。 .NET Framework 使用中心辐射型模型来查找和检索已本地化的资源。 中心即主程序集，包含不可本地化的可执行代码和单个区域性（称作非特定区域性或默认区域性）的资源。 默认区域性是应用程序的回退区域性；没有任何已本地化的资源可用时，则使用默认区域性。 使用 <xref:System.Resources.NeutralResourcesLanguageAttribute> 属性来指定应用程序默认区域性的区域性。 每条轮辐均连接到一个附属程序集，该附属程序集包含单个本地化区域性的资源，但不包含任何代码。 因为附属程序集不是主程序集的一部分，所以不必替换该应用程序的主程序集即可轻松更新或替换与特定区域性相对应的资源。  
   
 > [!NOTE]
->  应用程序默认区域性的资源在附属程序集中也存储。  为此，将<xref:System.Resources.UltimateResourceFallbackLocation?displayProperty=fullName>的<xref:System.Resources.NeutralResourcesLanguageAttribute>特性值 。  
+>  应用程序默认区域性的资源也可以存储在附属程序集中。 为此，可为 <xref:System.Resources.NeutralResourcesLanguageAttribute> 属性分配一个 <xref:System.Resources.UltimateResourceFallbackLocation.Satellite?displayProperty=fullName> 值。  
   
-## 附属程序集名称和位置  
- 轮辐式模型要求您将资源放置在特定位置，以便可以很容易地定位并使用这些资源。  如果您没有按照预期编译和命名资源，或者如果您没有将资源放置在正确的位置，则公共语言运行时将不能定位它们，反而会使用默认区域性的资源。  .NET Framework 资源管理器，由用于自动访问本地化的资源的<xref:System.Resources.ResourceManager> 对象表示。  资源管理器需要如下：  
+## <a name="satellite-assembly-name-and-location"></a>附属程序集名称和位置  
+ 中心辐射型模型要求将资源放在特定位置，以便轻松查找和使用资源。 如果未按预期编译和命名资源，或未将其放在正确的位置，则公共语言运行时将无法定位它们，并改为使用默认区域性的资源。 .NET Framework 资源管理器由 <xref:System.Resources.ResourceManager> 对象表示，用于自动访问本地化的资源。 该资源管理器的相关要求如下：  
   
--   单个附属程序集必须包含特定区域性的任何资源。  换言之，您应编译多个 .txt 或 .resx 文件为一个二进制 .resources 文件中。  
+-   单个附属程序集必须包含特定区域性的所有资源。 换言之，应该将多个 .txt 或 .resx 文件编译成单个二进制 .resources 文件。  
   
--   应用程序目录中为存储该区域性资源的每个本地化区域性必须是单独的子目录。  子目录的名称必须与区域性名称相同。  或者，也可以在全局程序集缓存中存储附属程序集。  在这种情况下，程序集的强名称的区域性信息组件必须指示其区域性。\(参见 [Installing Satellite Assemblies in the Global Assembly Cache](#SN) 本主题后面部分。\)  
+-   存储区域性资源的每个本地化区域性的应用程序目录中必须有一个单独的子目录。 该子目录名称必须与区域性名称相同。 或者，也可以将附属程序集存储在全局程序集缓存中。 在这种情况下，程序集强名称的区域性信息组件必须指明其区域性。 （请参阅本主题后面的[在全局程序集缓存中安装附属程序集](#SN)部分。）  
   
     > [!NOTE]
-    >  如果您的应用程序包括子区域性的资源，请将每一子区域性放置在一个应用程序目录下的单独的子目录。  不要将子区域性放置在其主区域性的目录的子目录中。  
+    >  如果应用程序中包含了子区域性的资源，则将每个子区域性放在应用程序目录下的单独子目录中。 不要将子区域性放在其主区域性目录下的子目录中。  
   
--   附属程序集必须与应用程序同名，必须改用 .resources.dll 文件扩展名“”。  例如，如果应用程序名为 Example.exe，每个附属程序集名称应为 Example.resources.dll。  注意附属程序集名称不指示其资源文件的区域性。  但是，附属程序集出现在指定的目录。  
+-   附属程序集的名称必须与应用程序相同，并且必须使用文件扩展名“.resources.dll”。 例如，如果应用程序名为 Example.exe，则每个附属程序集的名称应该为 Example.resources.dll。 请注意附属程序集名称不指示其资源文件的区域性。 但是，附属程序集会显示在不指定区域性的目录中。  
   
--   将程序集中的元数据必须包括有关附属程序集的区域性信息。  使用[Assembly Linker](../../../docs/framework/tools/al-exe-assembly-linker.md)嵌入附属程序集时，要存储的资源在附属程序集中的元数据的名称，可指定 `/culture` 选项。  
+-   附属程序集的区域性的相关信息必须包括在程序集的元数据中。 若要将区域性名称存储在附属程序集的元数据中，则在使用[程序集链接器](../../../docs/framework/tools/al-exe-assembly-linker.md)将资源嵌入附属程序集时指定 `/culture` 选项。  
   
- 下图显示了您未安装在[全局程序集缓存](../../../docs/framework/app-domains/gac.md)中的应用程序的示例目录结构和位置要求。  具有 .txt 和 .resources 扩展名的项将不随最终应用程序一起提供。  这些项是用于创建最终附属资源程序集的中间资源文件。  在此示例中，您可以用 .resx 文件代替 .txt 文件。  有关更多信息，请参见[Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)。  
+ 下图显示未安装在[全局程序集缓存](../../../docs/framework/app-domains/gac.md)中的应用程序的示例目录结构和位置要求。 具有 .txt 和 .resources 扩展名的项不会随附在最终应用程序中。 这些是用于创建最终附属资源程序集的中间资源文件。 在此示例中，可以将 .txt 文件替换为 .resx 文件。 有关详细信息，请参阅[打包和部署资源](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)。  
   
- ![附属程序集](../../../docs/framework/resources/media/satelliteassemblydir.gif "satelliteassemblydir")  
+ ![Satellite assemblies](../../../docs/framework/resources/media/satelliteassemblydir.gif "satelliteassemblydir")  
 附属程序集目录  
   
-## 编译附属程序集  
- 使用[Resource File Generator \(Resgen.exe\)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md)编译包含资源为二进制 .resources 文件的文本文件或 XML \(.resx\) 文件。  然后可以使用 [Assembly Linker \(Al.exe\)](../../../docs/framework/tools/al-exe-assembly-linker.md)来编译.resources 文件到附属程序集。  Al.exe 根据您指定的 .resources 文件创建程序集。  附属程序集只能包含资源；它们不能包含任何可执行代码。  
+## <a name="compiling-satellite-assemblies"></a>编译附属程序集  
+ 使用[资源文件生成器 (Resgen.exe)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md) 将包含资源的文本文件或 XML (.resx) 文件编译为二进制 .resources 文件。 然后使用[程序集链接器 (Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md) 将 .resources 文件编译到附属程序集中。 Al.exe 从指定的 .resources 文件创建程序集。 附属程序集只能包含资源，而不能包含任何可执行代码。  
   
- 以下 Al.exe 命令根据德国资源文件strings.de.resources为应用程序`Example`创建附属程序集。  
+ 下面的 Al.exe 命令从德语资源文件 strings.de.resources 为 `Example` 应用程序创建了一个附属程序集。  
   
 ```  
 al /target:lib /embed:strings.de.resources /culture:de /out:Example.resources.dll  
 ```  
   
- 以下 Al.exe 命令也根据文件strings.de.resources.为应用程序`Example`创建附属程序集。  **\/template**选项使附属程序集继承所有程序集元数据，除从父级程序集 \(Example.dll\) 的区域性信息。  
+ 下面的 Al.exe 命令也从文件 strings.de.resources 为 `Example` 应用程序创建了一个附属程序集。 /Template 选项会导致附属程序集从父程序集 (Example.dll) 继承除区域性信息之外的所有程序集元数据。  
   
 ```  
 al /target:lib /embed:strings.de.resources /culture:de /out:Example.resources.dll /template:Example.dll  
 ```  
   
- 下表更为详细地描述在这些命令中使用的 Al.exe 选项。  
+ 下表详细展示了这些命令中使用的 Al.exe 选项。  
   
-|选项|说明|  
-|--------|--------|  
-|**\/target:**lib|指定您的附属程序集被编译成库 \(.dll \) 文件。  因为附属程序集不包含可执行代码并且不是应用程序的主程序集，您必须将附属程序集另存为 DLL。|  
-|**\/embed:**strings.de.resources|指定在 Al.exe 编译程序集时使用的源文件的名称。  可以在附属程序集中嵌入多份.resources 文件，但是如果您正采用轮辐式模型，则必须为每一区域性编译一个附属程序集。  不过，您可以为字符串和对象创建单独的 .resources 文件。|  
-|**\/culture:**de|指定要编译的资源的区域性。  公共语言运行时在搜索指定的区域性的资源时将使用此信息。  如果您省略了这一选项，Al.exe 仍将编译资源，但在用户请求该资源时运行时将不能找到它。|  
-|**\/out:**Example.resources.dll|指定输出文件的名称。  名称必须遵守命名标准*baseName*.resources.*extension*，其中 *baseName*是主程序集的名称，而*extension*是有效地文件扩展名（例如 .dll）。  注意运行时无法基于其输出文件名称确定附属程序集的区域性时；必须使用 **\/culture** 选项指定它。|  
-|**\/template:**Example.dll|指定附属程序集从其继承所有程序集元数据的程序集，区域性字段除外。  此选项影响附属程序集，才指定安装 [强名称](../../../docs/framework/app-domains/strong-named-assemblies.md)的程序集。|  
+|选项|描述|  
+|------------|-----------------|  
+|/target:lib|指定将附属程序集编译成库 (.dll) 文件。 因为附属程序集不包含可执行代码，并且不是应用程序的主程序集，所以必须将附属程序集另存为 DLL。|  
+|/embed:strings.de.resources|指定在 Al.exe 编译程序集时要嵌入的资源文件名。 可在附属程序集中嵌入多个 .resources 文件，但如果依循中心辐射模型，则必须为每个区域性编译一个附属程序集。 但是，可以为字符串和对象创建单独的 .resources 文件。|  
+|/culture:de|指定要编译的资源的区域性。 公共语言运行时搜索特定区域性的资源时会使用此信息。 如果省略此选项，Al.ex e 仍然会编译资源，但当用户请求资源时，运行时将无法找到该资源。|  
+|/out:Example.resources.dll|指定输出文件的名称。 名称必须遵循命名标准 baseName.resources.extension，其中 baseName 是主程序集的名称，extension 是有效的文件扩展名（例如 .dll）。 请注意，运行时无法根据输出文件名确定附属程序集的区域性，必须使用 /culture 选项指定。|  
+|/template:Example.dll|指定程序集，附属程序集将从该程序集继承除区域性字段之外的所有程序集元数据。 仅当指定了具有[强名称](../../../docs/framework/app-domains/strong-named-assemblies.md)的程序集时，此选项才会影响附属程序集。|  
   
- 有关可用于 Al.exe 的选项的完整列表，请参见[程序集链接器 \(Al.exe\)](../../../docs/framework/tools/al-exe-assembly-linker.md)。  
+ 有关 Al.exe 可用选项的完整列表，请参阅[程序集链接器 (Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md)。  
   
-## 附属程序集：一个示例  
- 以下是说明包含本地化的问候的消息对话框的一个简单的“Hello World”示例。  示例包括英语 \(美国\) \(法国\)，法语 \(法国\) 和俄语（俄国）区域性的资源，并且，其后备区域性是英语。  若要创建此示例，请执行以下步骤：  
+## <a name="satellite-assemblies-an-example"></a>附属程序集：示例  
+ 下面是一个简单的“Hello world”示例，该示例展示了一个包含本地化的问候语的消息框。 此示例包含了英语（美国）、法语（法国）和俄语（俄罗斯）区域性的资源，并且其回退区域性为英语。 要创建示例，请执行以下操作：  
   
-1.  创建名为 Greeting.resx 或 Greeting.txt 的资源文件来包含用于默认区域性的资源。  在此文件中存储名为值为“Hello world“的 `HelloString` 的单个字符串。  
+1.  创建一个名为 Greeting.resx 或 Greeting.txt 的资源文件，使其包含默认区域性的资源。 在此文件中存储一个名为 `HelloString`，并且值为“Hello world!”的 单个字符串。  
   
-2.  若要指示English \(en\)为应用程序的默认区域性，则您还必须将以下<xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName> 特性添加到应用程序的 AssemblyInfo 文件或某个将编译为应用程序的主程序集的源代码文件。  
+2.  为指示英语 (en) 是该应用程序的默认区域性，请将以下 <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName> 属性添加到应用程序的 AssemblyInfo 文件或主源代码文件中，该文件之后会编译到应用程序的主程序集中。  
   
-     [!code-csharp[Conceptual.Resources.Locating#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.locating/cs/assemblyinfo.cs#2)]
-     [!code-vb[Conceptual.Resources.Locating#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.locating/vb/assemblyinfo.vb#2)]  
+     [!code-csharp[Conceptual.Resources.Locating#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.locating/cs/assemblyinfo.cs#2)][!code-vb[Conceptual.Resources.Locating#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.locating/vb/assemblyinfo.vb#2)]  
   
-3.  按如下方式支持“en\-US”、“fr\-FR”和“ru\-RU”区域性：  
+3.  向应用程序添加对其他区域性的支持（en-US、fr-FR 和 ru-RU），如下所示：  
   
-    -   若要支持“en\-US”或“英语\(美国\)”区域性，请创建一个名为 Greeting.en\-US.resx或Greeting.en\-US.tx的资源文件，并在该文件中存储一个其值为"Hi world\!"的名为 `HelloString` 的字符串。  
+    -   若要支持 en-US 或英语（美国）区域性，创建一个名为 Greeting.en-US.resx 或 Greeting.en-US.txt 的资源文件，并在其中存储一个名为 `HelloString` 且值为“Hi world!”的单个字符串  
   
-    -   若要支持“fr\-FR”或“法语\(法国\)”区域性，请创建一个名为 Greeting.fr\-FR.resx或Greeting.fr\-FR.txt的资源文件，并在该文件中存储一个其值为“Salut tout le monde\!”的名为 `HelloString` 的字符串。  
+    -   若要支持 fr-FR 或法语（法国）区域性，创建一个名为 Greeting.fr-FR.resx 或 Greeting.fr-FR.txt 的资源文件，并在其中存储一个名为 `HelloString` 且值为“Salut tout le monde!”的单字符串  
   
-    -   若要支持“ru\-RU”或“俄语\(俄罗斯\)”区域性，请创建一个名为 Greeting.ru\-RU.resx或Greeting.ru\-RU.txt的资源文件，并在该文件中存储一个其值为"Всем привет\!"的名为 `HelloString` 的字符串。  
+    -   若要支持 ru-RU 或俄语（俄罗斯）区域性，创建一个名为 Greeting.ru-RU.resx 或 Greeting.ru-RU.txt 的资源文件，并在其中存储一个名为 `HelloString` 且值为“Всем привет!”的单字符串  
   
-4.  使用 [Resgen.exe](../../../docs/framework/tools/resgen-exe-resource-file-generator.md) 编译所有文本或 XML 资源文件转换为二进制 .resources 文件。  输出是有着和.resx或.txt文件一样的根文件的文件集合，但是.resources的扩展。  如果使用 Visual Studio 创建示例，请编译进程自动处理。  如果不使用" Visual Studio，请运行以下命令编译 .resx 文件为 .resources 文件：  
+4.  使用 [Resgen.exe](../../../docs/framework/tools/resgen-exe-resource-file-generator.md) 将每个文本文件或 XML 资源文件编译为二进制 .resources 文件。 其输出是一组与 .resx 或 .txt 文件具有相同根文件名的文件，这些文件的扩展名为 .resources。 如果使用 Visual Studio 创建该示例，将自动处理编译过程。 如果不使用 Visual Studio，则运行以下命令将 .resx 文件编译为 .resources 文件：  
   
     ```  
-  
     resgen Greeting.resx  
     resgen Greeting.en-us.resx  
     resgen Greeting.fr-FR.resx  
     resgen Greeting.ru-RU.resx  
-  
     ```  
   
-     如果资源是文本文件而非 XML 文件，用 .txt 替换 .resx 扩展名。  
+     如果资源位于文本文件而非 XML 文件中，则将 .resx 扩展名替换为 .txt。  
   
-5.  与默认区域性的资源一起编译下面的源代码放入应用程序的主程序集：  
+5.  将以下源代码和默认区域性的资源编译到应用程序的主程序集中：  
   
     > [!IMPORTANT]
-    >  如果您使用命令行而不是 Visual Studio 创建了示例，您应当修改调用像 <xref:System.Resources.ResourceManager> 类构造函数以下面：`ResourceManager rm = new ResourceManager("Greetings",``typeof(Example).Assembly);`  
+    >  如果使用的是命令行而不是 Visual Studio 来创建此示例，则应将对 <xref:System.Resources.ResourceManager> 类构造函数的调用修改为后列内容：`ResourceManager rm = new ResourceManager("Greetings",``typeof(Example).Assembly);`  
   
-     [!code-csharp[Conceptual.Resources.Locating#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.locating/cs/program.cs#1)]
-     [!code-vb[Conceptual.Resources.Locating#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.locating/vb/module1.vb#1)]  
+     [!code-csharp[Conceptual.Resources.Locating#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.locating/cs/program.cs#1)][!code-vb[Conceptual.Resources.Locating#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.locating/vb/module1.vb#1)]  
   
-     如果应用程序名为Example，而您从命令行编译，C\# 编译器的命令是：  
+     如果应用程序名为 Example，并从命令行进行编译，则适用于 C# 编译器的命令为：  
   
     ```  
     csc Example.cs /res:Greeting.resources  
     ```  
   
-     对应的 Visual Basic 编译器命令是：  
+     相应的 Visual Basic 编译器命令为：  
   
     ```  
     vbc Example.vb /res:Greeting.resources  
     ```  
   
-6.  为每个被该应用程序支持的本地化区域性在主应用程序目录中创建子目录。  应该创建en\-US、fr\-FR 和ru\-RU子目录。  作为编译过程一部分，Visual Studio 会自动创建以下子目录。  
+6.  在主应用程序目录中为应用程序支持的每个本地化的区域性创建一个子目录。 应该创建一个 en-US、fr-FR 和 ru-RU 子目录。 Visual Studio 将在编译过程中自动创建这些子目录。  
   
-7.  各个区域性特定的 .resources 文件嵌入附属程序集并将其分别保存到相应的目录。  此命令.为每个resources 文件执行的命令：  
+7.  将某个区域性特定的 .resources 文件嵌入附属程序集，并将其保存到相应的目录。 用于为每个 .resources 文件执行此操作的命令是：  
   
     ```  
     al /target:lib /embed:Greeting.culture.resources /culture:culture /out:culture\Example.resources.dll  
     ```  
   
-     其中 *culture* 是您的资源附属程序集将包含区域性的名称。  Visual Studio 自动处理此过程。  
+     其中 culture 是由附属程序集包含了资源的区域性的名称。 Visual Studio 会自动处理这一过程。  
   
- 然后您可以运行此示例。  将随机使某个支持的区域性为当前区域性并显示一句问候语。  
+ 然后便可运行该示例。 它会随机将某种支持的区域性设为当前区域性，并显示本地化的问候语。  
   
 <a name="SN"></a>   
-## 将附属程序集安装在全局程序集缓存中  
- 除了在本地的应用程序子目录安装程序集，可以将其安装在全局程序集缓存中。  这尤其有用，如果您有多个应用程序使用的类库和类库资源程序集。  
+## <a name="installing-satellite-assemblies-in-the-global-assembly-cache"></a>在全局程序集缓存中安装附属程序集  
+ 可以在全局程序集缓存（而不是本地应用程序子目录）中安装程序集。 当具有供多个应用程序使用的类库和类库资源程序集时，这种方式非常有用。  
   
- 安装程序集在全局程序集缓存中需要其具有强名称。  通过有效的公钥\/私钥对签发具有强名称的程序集。  包含版本信息，运行时将使用该信息来确定哪一程序集将用于满足绑定请求。  有关强名称的更多信息，请参见[程序集版本控制](../../../docs/framework/app-domains/assembly-versioning.md)。  有关强名称的更多信息，请参见[具有强名称的程序集](../../../docs/framework/app-domains/strong-named-assemblies.md)。  
+ 在全局程序集缓存中安装程序集要求程序集具有强名称。 具有强名称的程序集使用有效公钥/私钥对进行签名。 它们包含版本信息，运行时会使用这些版本信息来确定使用哪个程序集来满足绑定要求。 有关强名称和版本控制的详细信息，请参阅[程序集版本控制](../../../docs/framework/app-domains/assembly-versioning.md)。 有关强名称的详细信息，请参阅[具有强名称的程序集](../../../docs/framework/app-domains/strong-named-assemblies.md)。  
   
- 在您开发一个应用程序时，您不见得具有对最终公钥\/私钥对的访问权限。  为了将附属程序集安装在全局程序集缓存中并确保它能够按预期要求工作，您可以采用称作延迟签名的技术。  当延迟签发一个程序集时，生成时在文件中留出空间，以用于的强名称签名。  实际签名将被延迟到以后，即最终公钥\/私钥对可用的时候。  有关延迟签名的更多信息，请参见[延迟为程序集签名](../../../docs/framework/app-domains/delay-sign-assembly.md)。  
+ 开发应用程序时，不可能具有对最终公钥/私钥对的访问权限。 为在全局程序集缓存中安装附属程序集，并确保附属程序集工作正常，可使用延迟签名技术。 延迟为程序集签名时，生成时可在文件中保留用于强名称签名的空间。 实际签名将延迟到以后的某个时间进行，即当最后的公钥/私钥对可用时。 有关延迟签名的详细信息，请参阅[延迟为程序集签名](../../../docs/framework/app-domains/delay-sign-assembly.md)。  
   
-### 获取公钥  
- 若要延迟签发一个程序集，您必须具有对公钥的访问权。  您可以从将进行最终签名的公司的组织中获取真实的公钥，或者使用[强名称工具 \(Sn.exe\)](../../../docs/framework/tools/sn-exe-strong-name-tool.md) 创建公钥。  
+### <a name="obtaining-the-public-key"></a>获取公钥  
+ 若要延迟程序集签名，必须具有公钥访问权限。 可以从公司中将进行最终签名的组织处获取真正的公钥，也可以使用[强名称工具 (Sn.exe)](../../../docs/framework/tools/sn-exe-strong-name-tool.md) 创建一个公钥。  
   
- 下面的 Sn.exe 命令创建一个测试公钥\/私钥对。  **–k** 选项指定 Sn.exe 应创建新的密钥对并将它保存在名为 TestKeyPair.snk 的文件。  
+ 下面的 Sn.exe 命令创建一个测试公钥/私钥对。 –k 选项指定 Sn.exe 应新建一个密钥对，并将其保存在 TestKeyPair.snk 文件中。  
   
 ```  
 sn –k TestKeyPair.snk   
 ```  
   
- 您可以从包含测试密钥对的文件中提取公钥。  以下命令从 TestKeyPair.snk 的公钥并将其保存在 PublicKey.snk:  
+ 可以从包含测试密钥对的文件中提取公钥。 以下命令从 TestKeyPair.snk 中提取公钥，并将其保存在 PublicKey.snk 中：  
   
 ```  
 sn –p TestKeyPair.snk PublicKey.snk  
 ```  
   
-### 延迟为程序集签名  
- 当您已获取或创建了公钥后，可使用[程序集链接器 \(Al.exe\)](../../../docs/framework/tools/al-exe-assembly-linker.md) 来编译程序集并指定延迟签名。  
+### <a name="delay-signing-an-assembly"></a>延迟为程序集签名  
+ 获取或创建公钥后，使用[程序集链接器 (Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md) 编译程序集，并指定延迟签名。  
   
- 以下Al.exe 命令根据strings.ja.resources文件为应用程序StringLibrary 创建具有强名称的附属程序集。  
+ 下面的 Al.exe 命令从 strings.ja.resources 文件为应用程序 StringLibrary 创建了一个强名称附属程序集：  
   
 ```  
 al /target:lib /embed:strings.ja.resources /culture:ja /out:StringLibrary.resources.dll /delay+ /keyfile:PublicKey.snk  
 ```  
   
- **\/delay\+** 选项指定程序集链接器应延迟签发该程序集。  **\/keyfile:** 选项指定包含用来延迟签发程序集的公钥的密钥文件的名称。  
+ /delay+ 选项指定程序集链接器应延迟对程序集签名。 /keyfile 选项指定密钥文件的名称，该文件包含用以延迟程序集签名的公钥。  
   
-### 重新签发程序集  
- 在部署应用程序之前，必须重新签名延迟签发的附属程序集的实际密钥对。  您可以使用 Sn.exe 来执行此类的重新签发。  
+### <a name="re-signing-an-assembly"></a>对程序集重新签名  
+ 部署应用程序之前，必须使用真正的密钥对对延迟签名的附属程序集重新签名。 可以使用 Sn.exe 执行此操作。  
   
- 下面的 Sn.exe 命令使用存储在 RealKeyPair.snk文件中的实际密钥对签名StringLibrary.resources.dl 。  **–R** 选项指定先前已签名的程序集或延迟签名的程序集重新签名。  
+ 下面的 Sn.exe 命令使用 RealKeyPair.snk 文件中存储的密钥对对 StringLibrary.resources.dll 进行签名。 – R 选项指定对之前已签名或延迟签名的程序集进行重新签名。  
   
 ```  
 sn –R StringLibrary.resources.dll RealKeyPair.snk   
 ```  
   
-### 将附属程序集安装在全局程序集缓存中  
- 当运行时在资源回退进程中搜索资源是，它将会首先在[global assembly cache](../../../docs/framework/app-domains/gac.md)搜索。有关更多信息，请参见[打包和部署资源](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)主题中的“资源回退进程”一节。只要附属程序集是用强名称签名，可以使用 [全局程序集缓存工具 \(Gacutil.exe\)](../../../docs/framework/tools/gacutil-exe-gac-tool.md)，可以安装在全局程序集缓存中。  
+### <a name="installing-a-satellite-assembly-in-the-global-assembly-cache"></a>在全局程序集缓存中安装附属程序集  
+ 运行时在资源回退进程中搜索资源时，首先会在[全局程序集缓存](../../../docs/framework/app-domains/gac.md)中查找。 （有关详细信息，请参阅[打包和部署资源](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)主题中的“资源回退进程”部分。）只要使用强名称对附属程序集签名，就可以使用[全局程序集缓存工具 (Gacutil.exe)](../../../docs/framework/tools/gacutil-exe-gac-tool.md) 在全局程序集缓存中安装该程序集。  
   
- 以下 Gacutil.exe 命令安装在全局程序集缓存 StringLibrary.resources.dll:  
+ 下面的 Gacutil.exe 命令在全局程序集缓存中安装了 StringLibrary.resources.dll：  
   
 ```  
 gacutil /i:StringLibrary.resources.dll  
 ```  
   
- **\/i** 选项指定 Gacutil.exe 应该将指定的程序集安装到全局程序集缓存中。  附属程序集被安装到缓存之后，它包含的资源对所有被设计来使用附属程序集的应用程序可用。  
+ /I 选项指定 Gacutil.exe 应将指定的程序集安装到全局程序集缓存中。 在缓存中安装了附属程序集之后，要使用附属程序集的应用程序便能够使用该附属程序集所包含的资源。  
   
-### 全局程序集缓存中的资源：一个示例  
- 以下示例在 .NET Framework 类库使用方法从资源文件提取并返回本地化的问候。  在全局程序集缓存中库及其资源被注册。  下面的示例包括英语（美国），法语（法国）和俄语（俄罗斯）和英语区域性的资源。  英语是默认区域性；其资源被存储在主程序集中。  示例使用公钥最初延迟库和附属程序集，然后重新签名其一个公钥\/私钥对。  若要创建此示例，请执行以下步骤：  
+### <a name="resources-in-the-global-assembly-cache-an-example"></a>全局程序集缓存中的资源：示例  
+ 以下示例使用 .NET Framework 类库中的方法从资源文件中提取和返回本地化的问候语。 在全局程序集缓存中注册库及其资源。 示例包括了英语（美国）、法语（法国）、俄语（俄罗斯）和英语区域性的资源。 英语是默认区域性；其资源存储在主程序集中。 此示例最初使用公钥延迟对库及其附属程序集签名，然后使用公钥/私钥对为其重新签名。 要创建示例，请执行以下操作：  
   
-1.  如果不使用" Visual Studio，请使用以下 [强名称工具 \(Sn.exe\)](../../../docs/framework/tools/sn-exe-strong-name-tool.md) 命令创建公钥\/私钥对名为 ResKey.snk:  
+1.  如果不是使用 Visual Studio，则使用以下[强名称工具 (Sn.exe)](../../../docs/framework/tools/sn-exe-strong-name-tool.md) 命令创建名为 ResKey.snk 的公钥/私钥对：  
   
     ```  
     sn –k ResKey.snk  
     ```  
   
-     如果您使用 Visual Studio 中，使用 **签名** 选项卡 **属性** 项目对话框生成密钥文件。  
+     如果使用的是 Visual Studio，则使用项目“属性”对话框中的“签名”选项卡生成密钥文件。  
   
-2.  使用以下 [强名称工具 \(Sn.exe\)](../../../docs/framework/tools/sn-exe-strong-name-tool.md) 命令创建一个名为 PublicKey.snk 的公钥文件：  
+2.  使用以下[强名称工具 (Sn.exe)](../../../docs/framework/tools/sn-exe-strong-name-tool.md) 命令创建名为 PublicKey.snk 的公钥文件：  
   
     ```  
     sn –p ResKey.snk PublicKey.snk  
     ```  
   
-3.  创建名为 Strings.resx 的资源文件来包含用于默认区域性的资源。  存储名为值为“`Greeting` 的单个字符串" Hello "?”该文件。  
+3.  创建一个名为 Strings.resx 的资源文件，使其包含默认区域性的资源。 在此文件中存储一个名为 `Greeting`，并且值为“How do you do?”的 单个字符串。  
   
-4.  若要指示“en”为应用程序的默认区域性，则您还必须将以下 <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName> 特性添加到应用程序的 AssemblyInfo 文件或某个将编译为应用程序的主程序集的源代码文件。  
+4.  为指示 "en" 是该应用程序的默认区域性，请将以下 <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName> 属性添加到应用程序的 AssemblyInfo 文件或主源代码文件中，该文件之后会编译到应用程序的主程序集中：  
   
-     [!code-csharp[Conceptual.Resources.Satellites#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.satellites/cs/stringlibrary.cs#2)]
-     [!code-vb[Conceptual.Resources.Satellites#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.satellites/vb/stringlibrary.vb#2)]  
+     [!code-csharp[Conceptual.Resources.Satellites#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.satellites/cs/stringlibrary.cs#2)][!code-vb[Conceptual.Resources.Satellites#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.satellites/vb/stringlibrary.vb#2)]  
   
-5.  可以按如下方式支持额外的区域性\(en\-US, fr\-FR, 和ru\-RU区域性\)：  
+5.  向应用程序添加对其他区域性的支持（en-US、fr-FR 和 ru-RU 区域性），如下所示：  
   
-    -   若要支持“en\-US”或“英语\(美国\)”区域性，请创建一个名为Strings.en\-US.resx或Strings.en\-US.txt的资源文件，并在该文件中存储一个其值为"Hello\!"的名为 `Greeting` 的字符串。  
+    -   若要支持“en-US”或英语（美国）区域性，则创建一个名为 Strings.en-US.resx 或 Strings.en-US.txt 的资源文件，并在其中存储一个名为 `Greeting` 且值为“Hello”的单个字符串。  
   
-    -   若要支持“fr\-FR”或“法语\(法国\)”区域性，请创建一个名为Strings.fr\-FR.resx 或Strings.fr\-FR.txt的资源文件，并在该文件中存储一个其值为"Bon jour\!"的名为 `Greeting` 的字符串。  
+    -   若要支持“fr-FR”或法语（法国）区域性，创建一个名为 Strings.fr-FR.resx 或 Strings.fr-FR.txt 的资源文件，并在其中存储一个值为“Bon jour!”的 `Greeting` 单字符串  
   
-    -   若要支持“ru\-RU”或“俄语\(俄罗斯\)”区域性，请创建一个名为 Strings.ru\-RU.resx或Strings.ru\-RU.txt的资源文件，并在该文件中存储一个其值为"Привет\!"的名为 `Greeting` 的字符串。  
+    -   若要支持“ru-RU”或俄语（俄罗斯）区域性，创建一个名为 Strings.ru-RU.resx 或 Strings.ru-RU.txt 的资源文件，并在其中存储一个值为“Привет”的 `Greeting` 单字符串  
   
-6.  使用 [Resgen.exe](../../../docs/framework/tools/resgen-exe-resource-file-generator.md) 编译所有文本或 XML 资源文件转换为二进制 .resources 文件。  输出是有着和.resx或.txt文件一样的根文件的文件集合，但是.resources的扩展。  如果使用 Visual Studio 创建示例，请编译进程自动处理。  如果不使用" Visual Studio，请运行以下命令编译 .resx 文件为 .resources 文件：  
+6.  使用 [Resgen.exe](../../../docs/framework/tools/resgen-exe-resource-file-generator.md) 将每个文本文件或 XML 资源文件编译为二进制 .resources 文件。 其输出是一组与 .resx 或 .txt 文件具有相同根文件名的文件，这些文件的扩展名为 .resources。 如果使用 Visual Studio 创建该示例，将自动处理编译过程。 如果不使用 Visual Studio，则运行以下命令将 .resx 文件编译进 .resources 文件：  
   
     ```  
     resgen filename  
     ```  
   
-     其中 *filename* 是选项路径，文件名，和resx 或文本文件的扩展名。  
+     其中 filename 是 .resx 或文本文件的可选路径、文件名和扩展名。  
   
-7.  与默认区域性的资源一块，编译StringLibrary.vb 或 StringLibrary.cs 的以下源代码到名为 StringLibrary.dll:的延迟签发的库程序集中。  
+7.  将以下 StringLibrary.vb 或 StringLibrary.cs 的源代码连同默认区域性的资源编译到名为 StringLibrary.dll 的延迟签名库程序集中：  
   
     > [!IMPORTANT]
-    >  如果您使用命令行而不是 Visual Studio 创建了示例，您应当修改<xref:System.Resources.ResourceManager>类构造函数的调用为`ResourceManager rm = new ResourceManager("Strings",` `typeof(Example).Assembly);`  
+    >  如果使用的是命令行而不是 Visual Studio 来创建此示例，则将对 <xref:System.Resources.ResourceManager> 类构造函数的调用修改为 `ResourceManager rm = new ResourceManager("Strings",` `typeof(Example).Assembly);`。  
   
-     [!code-csharp[Conceptual.Resources.Satellites#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.satellites/cs/stringlibrary.cs#1)]
-     [!code-vb[Conceptual.Resources.Satellites#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.satellites/vb/stringlibrary.vb#1)]  
+     [!code-csharp[Conceptual.Resources.Satellites#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.satellites/cs/stringlibrary.cs#1)][!code-vb[Conceptual.Resources.Satellites#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.satellites/vb/stringlibrary.vb#1)]  
   
-     对于 C\# 编译器，命令是：  
+     适用于 C# 编译器的命令：  
   
     ```  
     csc /t:library /resource:Strings.resources /delaysign+ /keyfile:publickey.snk StringLibrary.cs  
     ```  
   
-     对应的 Visual Basic 编译器命令是：  
+     相应的 Visual Basic 编译器命令为：  
   
     ```  
     vbc /t:library /resource:Strings.resources /delaysign+ /keyfile:publickey.snk StringLibrary.vb  
     ```  
   
-8.  为每个被该应用程序支持的本地化区域性在主应用程序目录中创建子目录。  应该创建en\-US、fr\-FR 和ru\-RU子目录。  作为编译过程一部分，Visual Studio 会自动创建以下子目录。  由于所有附属程序集具有相同文件名，子目录用于存储各个区域性的附属程序集，直至签名一个公钥\/私钥对。  
+8.  在主应用程序目录中为应用程序支持的每个本地化的区域性创建一个子目录。 应该创建一个 en-US、fr-FR 和 ru-RU 子目录。 Visual Studio 将在编译过程中自动创建这些子目录。 由于所有附属程序集都具有相同的文件名，所以使用子目录存储单个区域性特定的附属程序集，直到使用公钥/私钥对为附属程序集签名为止。  
   
-9. 各个区域性特定的 .resources 文件嵌入推迟签名的附属程序集并将其分别保存到相应的目录。  此命令.为每个resources 文件执行的命令：  
+9. 将某个特定区域性的 .resources 文件嵌入延迟签名的附属程序集，并将其保存到相应的目录。 用于为每个 .resources 文件执行此操作的命令是：  
   
     ```  
     al /target:lib /embed:Strings.culture.resources /culture:culture /out:culture\StringLibrary.resources.dll /delay+ /keyfile:publickey.snk  
     ```  
   
-     其中 *culture* 是区域性的名称。  在本例中，为 en\-U、fr\-FR 和 ru\-RUS的区域性名称。  
+     其中 culture 是区域性的名称。 在此示例中，区域性名称是 en-US、fr-FR 和 ru-RU。  
   
-10. 使用 [强名称工具 \(Sn.exe\)](../../../docs/framework/tools/sn-exe-strong-name-tool.md)重新签名 StringLibrary.dll，如下：  
+10. 使用[强名称工具 (Sn.exe)](../../../docs/framework/tools/sn-exe-strong-name-tool.md) 对 StringLibrary.dll 重新签名，如下所示：  
   
     ```  
     sn –R StringLibrary.dll RealKeyPair.snk  
     ```  
   
-11. 重新签名各个附属程序集。  为此，请为每个附属程序集使用 [强名称工具 \(Sn.exe\)](../../../docs/framework/tools/sn-exe-strong-name-tool.md) 如下：  
+11. 对单个附属程序集重新签名。 要执行此操作，请按如下所示对每个附属程序集使用[强名称工具 (Sn.exe)](../../../docs/framework/tools/sn-exe-strong-name-tool.md)：  
   
     ```  
     sn –R StringLibrary.resources.dll RealKeyPair.snk  
     ```  
   
-12. 通过使用以下命令，在全局程序集缓存中注册StringLibrary.dll和它的附属程序集：  
+12. 使用以下命令在全局程序集缓存中注册 StringLibrary.dll 及其每个附属程序集：  
   
     ```  
     gacutil /i filename  
     ```  
   
-     其中 *filename* 是要执行的文件的名称。  
+     其中 filename 是要注册的文件的名称。  
   
-13. 如果您使用 Visual Studio 中，创建一个名为 `Example`的 **控制台应用程序** 新项目，添加对 StringLibrary.dll 的引用以及下面的源代码添加到它，并且编译。  
+13. 如果使用的是 Visual Studio，则新建一个名为 `Example` 的控制台应用程序项目，向其添加对 StringLibrary.dll 的引用和以下源代码，然后进行编译。  
   
-     [!code-csharp[Conceptual.Resources.Satellites#3](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.satellites/cs/example.cs#3)]
-     [!code-vb[Conceptual.Resources.Satellites#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.satellites/vb/example.vb#3)]  
+     [!code-csharp[Conceptual.Resources.Satellites#3](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.satellites/cs/example.cs#3)][!code-vb[Conceptual.Resources.Satellites#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.satellites/vb/example.vb#3)]  
   
-     若要从命令行编译对于 C\# 编译器，请使用以下命令：  
+     若要通过命令行进行编译，请在 C# 编译器中使用以下命令：  
   
     ```  
     csc Example.cs /r:StringLibrary.dll   
     ```  
   
-     Visual Basic 编译器命令行选项：  
+     适用于 Visual Basic 编译器的命令行为：  
   
     ```  
     vbc Example.vb /r:StringLibrary.dll   
     ```  
   
-14. 运行Example.exe  
+14. 运行 Example.exe。  
   
-## 请参阅  
+## <a name="see-also"></a>另请参阅  
  [打包和部署资源](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)   
  [延迟为程序集签名](../../../docs/framework/app-domains/delay-sign-assembly.md)   
  [Al.exe（程序集链接器）](../../../docs/framework/tools/al-exe-assembly-linker.md)   
  [Sn.exe（强名称工具）](../../../docs/framework/tools/sn-exe-strong-name-tool.md)   
  [Gacutil.exe（全局程序集缓存工具）](../../../docs/framework/tools/gacutil-exe-gac-tool.md)   
- [桌面应用程序中的资源](../../../docs/framework/resources/index.md)
+ [桌面应用中的资源](../../../docs/framework/resources/index.md)
+

@@ -1,5 +1,5 @@
 ---
-title: "如何：在 Visual Basic 中创建目录 | Microsoft Docs"
+title: "如何：在 Visual Basic 中创建目录"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -31,11 +31,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: 81afe64204fda468f452f86171b15080f9c3d948
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 1a45a785916b480dcee6e36fd295390266eaa0a0
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-create-a-directory-in-visual-basic"></a>如何：在 Visual Basic 中创建目录
@@ -69,3 +69,4 @@ ms.lasthandoff: 05/22/2017
 ## <a name="see-also"></a>另请参阅  
  <xref:Microsoft.VisualBasic.FileIO.FileSystem.CreateDirectory%2A>   
  [创建、删除和移动文件和目录](../../../../visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md)
+

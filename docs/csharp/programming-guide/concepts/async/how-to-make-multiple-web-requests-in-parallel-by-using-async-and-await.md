@@ -1,5 +1,5 @@
 ---
-title: "如何：使用 Async 和 Await 并行发起多个 Web 请求 (C#) | Microsoft 文档"
+title: "如何：使用 Async 和 Await 并行发起多个 Web 请求 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,11 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: eb358daf212b171acd998a1aa74fe2ecd82a239a
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: bfa7781241b837f353fe34d43b8cc6ab82f15564
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await-c"></a>如何：使用 Async 和 Await 并行发起多个 Web 请求 (C#)
@@ -64,7 +64,7 @@ var result = await myTask;
   
     -   创建包含一个文本框和一个按钮的 WPF 应用程序。 将按钮命名为 `startButton`，将文本框命名为 `resultsTextBox`。  
   
-    -   添加 <xref:System.Net.Http> 的引用。  
+    -   对 <xref:System.Net.Http> 添加引用。  
   
     -   在 MainWindow.xaml.cs 文件中添加用于 `System.Net.Http` 的 `using` 指令。  
   
@@ -112,7 +112,7 @@ var result = await myTask;
   
 4.  最后，定义方法 `CreateMultipleTasksAsync`，用于执行以下步骤。  
   
-    -   此方法声明 `HttpClient` 对象，需要使用此对象访问 `ProcessURLAsync` 中的方法 <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A>。  
+    -   该方法声明 `HttpClient` 对象，这需要你访问 `ProcessURLAsync` 中的 <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A> 方法。  
   
     -   此方法创建并启动三个类型为 <xref:System.Threading.Tasks.Task%601> 的任务，其中 `TResult` 是一个整数。 每个任务完成后，`DisplayResults` 显示任务的 URL 和下载内容的长度。 由于任务是异步运行的，因此显示结果的顺序可能与声明任务的顺序不同。  
   

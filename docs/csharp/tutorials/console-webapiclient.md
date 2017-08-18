@@ -11,10 +11,10 @@ ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 51033ce2-7a53-4cdd-966d-9da15c8204d2
 ms.translationtype: Human Translation
-ms.sourcegitcommit: be7974018ce3195dc7344192d647fe64fb2ebcc4
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
 ms.openlocfilehash: 3dcf0204d57861543743fee4de9523231465d24c
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/14/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -22,9 +22,9 @@ ms.lasthandoff: 05/14/2017
 
 ## <a name="introduction"></a>介绍
 此教程将介绍 .NET Core 和 C# 语言的许多功能。 你将了解：
-*    .NET Core 命令行接口 (CLI) 的基础知识。
+*   .NET Core 命令行接口 (CLI) 的基础知识。
 *   C# 语言功能概述。
-*    如何使用 NuGet 管理依赖项
+*   如何使用 NuGet 管理依赖项
 *   HTTP 通信
 *   如何处理 JSON 信息
 *   如何管理含特性的配置。 
@@ -172,7 +172,7 @@ var streamTask = client.GetStreamAsync("https://api.github.com/orgs/dotnet/repos
 var repositories = serializer.ReadObject(await streamTask) as List<repo>;
 ```
 
-请注意，现在使用的是 @System.Net.Http.HttpClient.GetStreamAsync(System.String)，而不是 @System.Net.Http.HttpClient.GetStringAsync(System.String)。 序列化程序使用流（而不是字符串）作为其源。 让我们来看看上面第二行代码所使用的两项 C# 语言功能。 @System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(System.IO.Stream) 的自变量是 `await` 表达式。 Await 表达式可以出现在代码中的几乎任何位置，尽管到目前为止，你只在赋值语句中看到过它们。
+请注意，现在使用的是 @System.Net.Http.HttpClient.GetStreamAsync (System.String)，而不是 @System.Net.Http.HttpClient.GetStringAsync (System.String)。 序列化程序使用流（而不是字符串）作为其源。 让我们来看看上面第二行代码所使用的两项 C# 语言功能。 @System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(System.IO.Stream) 的自变量是 `await` 表达式。 Await 表达式可以出现在代码中的几乎任何位置，尽管到目前为止，你只在赋值语句中看到过它们。
 
 其次，`as` 运算符将编译时类型 `object` 转换成 `List<repo>`。 声明 @System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(System.IO.Stream) 即声明其返回 <xref:System.Object?displayProperty=fullName> 类型的对象。 @System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(System.IO.Stream) 将返回你在构造它时指定的类型（在此教程中，为 `List<repo>`）。 如果转换失败，那么 `as` 运算符的计算结果为 `null`，而不是抛出异常。
 

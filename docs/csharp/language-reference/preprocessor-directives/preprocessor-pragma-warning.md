@@ -1,5 +1,5 @@
 ---
-title: "#杂注警告（C# 参考）| Microsoft Docs"
+title: "#<a name=\"pragma-warning-c-reference\"></a>杂注警告（C# 参考）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -30,18 +30,19 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 820b6de93a2a739d97084250601e41a5eb4a89f8
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 75c11acfd096d36c96ceb9e9c5c0d16e47e58fa1
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
-# <a name="pragma-warning-c-reference"></a>#杂注警告（C# 参考）
+# <a name="pragma-warning-c-reference"></a>#pragma warning（C# 参考）
 `#pragma warning` 可以启用或禁用特定警告。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```csharp
 #pragma warning disable warning-list  
 #pragma warning restore warning-list  
 ```  
@@ -53,11 +54,11 @@ ms.lasthandoff: 03/13/2017
  未指定警告编号时，`disable` 会禁用所有警告，`restore` 会启用所有警告。  
   
 > [!NOTE]
->  若要在 Visual Studio 中查找警告编号，请生成项目，然后在“输出”****窗口中查找警告编号。  
+>  若要在 Visual Studio 中查找警告编号，请生成项目，然后在“输出”窗口中查找警告编号。  
   
 ## <a name="example"></a>示例  
   
-```  
+```csharp
 // pragma_warning.cs  
 using System;  
   
@@ -86,3 +87,4 @@ public class D
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [C# 预处理器指令](../../../csharp/language-reference/preprocessor-directives/index.md)   
  [C# 编译器错误](../../../csharp/language-reference/compiler-messages/index.md)
+

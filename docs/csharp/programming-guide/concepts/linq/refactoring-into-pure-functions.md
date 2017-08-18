@@ -1,5 +1,5 @@
 ---
-title: "重构为纯函数 (C#) | Microsoft Docs"
+title: "重构为纯函数 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,11 +14,11 @@ ms.assetid: 2944a0d4-fd33-4e2e-badd-abb0f9be2fcc
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: d0243dbc1a884cb48eeebd71079c3b17bc520553
-ms.lasthandoff: 03/13/2017
-
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 9e3bb704cab77d4ad9895624bf7f721920000378
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="refactoring-into-pure-functions-c"></a>重构为纯函数 (C#)
@@ -89,7 +89,7 @@ public class Program
 }  
 ```  
   
- 此版本的程序生成的输出与第一个版本相同，因为 `HypenatedConcat` 函数已通过调用 <xref:System.Text.StringBuilder.Append%2A> 成员函数更改了其第一个参数的值（状态）。 请注意，即使 `HypenatedConcat` 实际上使用了按值调用参数传递，也会发生此更改。  
+ 此版本的程序生成的输出与第一个版本相同，因为 `HypenatedConcat` 函数已通过调用 <xref:System.Text.StringBuilder.Append%2A> 成员函数而更改了其第一个参数的值（状态）。 请注意，即使 `HypenatedConcat` 实际上使用了按值调用参数传递，也会发生此更改。  
   
 > [!IMPORTANT]
 >  对于引用类型，按值传递参数会得到对所传递对象的引用的副本。 此副本与原始引用一样，仍与同一个实例数据关联（除非为引用变量分配新对象）。 函数修改参数不一定需要按引用调用。  
@@ -126,3 +126,4 @@ class Program
 ## <a name="see-also"></a>请参阅  
  [纯函数转换简介 (C#)](../../../../csharp/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md)   
  [函数编程与命令式编程 (C#)](../../../../csharp/programming-guide/concepts/linq/functional-programming-vs-imperative-programming.md)
+

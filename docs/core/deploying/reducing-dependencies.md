@@ -1,6 +1,6 @@
 ---
 title: "使用 project.json 减少包依赖项"
-description: "使用 project.json 减少包依赖项"
+description: "创建基于 project.json 的库时减少包依赖项。"
 keywords: .NET, .NET Core
 author: cartermp
 ms.author: mairaw
@@ -9,10 +9,11 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 916251e3-87f9-4eee-81ec-94076215e6fa
-translationtype: Human Translation
-ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
-ms.openlocfilehash: aaa29f82cc89593fd29d469d5633bc60fa434ad7
-ms.lasthandoff: 03/02/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 23d83f0402e35bc4bed31ef59a6fff0e28e01d35
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -22,7 +23,7 @@ ms.lasthandoff: 03/02/2017
 
 ## <a name="why-its-important"></a>为什么这十分重要
 
-.NET Core 是由 NuGet 包组成的产品。  基本包为 [.NET 标准库元包](https://www.nuget.org/packages/NETStandard.Library)，它是由其他包组成的 NuGet 包。  它提供保证可在多个 .NET 实现（例如，.NET Framework、.NET Core 和 Xamarin/Mono）上正常工作的包集。
+.NET Core 是由 NuGet 包组成的产品。  基本包为 [.NETStandard.Library 元包](https://www.nuget.org/packages/NETStandard.Library)，它是由其他包组成的 NuGet 包。  它提供保证可在多个 .NET 实现（例如，.NET Framework、.NET Core 和 Xamarin/Mono）上正常工作的包集。
 
 但是，很有可能库将不会使用它所包含的每个包。  当创作库并通过 NuGet 进行分发时，最佳做法是将依赖项“修剪”为仅实际使用的包。  这会使 NuGet 包的总体内存占用变小。
 

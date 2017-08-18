@@ -1,6 +1,6 @@
 ---
 title: "包、元包和框架"
-description: "包、元包和框架"
+description: "了解包、元包和框架的术语。"
 keywords: .NET, .NET Core
 author: richlander
 ms.author: mairaw
@@ -9,11 +9,11 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 609b0845-49e7-4864-957b-21ffe1b93bf2
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d97a1501ad25b683cbb5d7fbd8bd1b137f7f4046
-ms.openlocfilehash: e0ba4886bd954c8e772a85a677775167e7c4bc53
+ms.translationtype: HT
+ms.sourcegitcommit: 2762cdc983465979a530192716c33de7044dd1ed
+ms.openlocfilehash: 6e614986dc91310dea40971987969e7433cb79e8
 ms.contentlocale: zh-cn
-ms.lasthandoff: 04/10/2017
+ms.lasthandoff: 08/04/2017
 
 ---
 
@@ -21,7 +21,7 @@ ms.lasthandoff: 04/10/2017
 
 .NET Core 是一种由 NuGet 包组成的平台。 有些产品体验受益于包的细粒度定义，而另一些受益于粗粒度的定义。 为了适应这种二元定义，一款好的产品应该作为一组细粒度的包发布，然后在更粗的粒度组块中进行描述，单个包的正式的名字叫做“元包”。
 
-每个 .Net Core 包都支持运行于多种 .Net 运行时中，这些运行时被称为“框架”。 其中有些框架是传统框架，例如表示 .NET Framework 的 `net46`。 而另一些则是新框架，可视为是“基于包的框架”，这种是框架的另外一种新的定义模型。 这些基于包的框架整个都是由包组成的，它们自身也被定义成包，这就在包与框架之间形成了一种比较密切的关系。
+每个 .Net Core 包都支持以框架形式通过多个 .Net 实现代码运行。 其中有些框架是传统框架，例如表示 .NET Framework 的 `net46`。 而另一些则是新框架，可视为是“基于包的框架”，这种是框架的另外一种新的定义模型。 这些基于包的框架整个都是由包组成的，它们自身也被定义成包，这就在包与框架之间形成了一种比较密切的关系。
 
 ## <a name="packages"></a>包
 
@@ -40,10 +40,10 @@ ms.lasthandoff: 04/10/2017
 
 - [System.Runtime](https://www.nuget.org/packages/System.Runtime) - 最基础的 .NET Core 包，包括 <xref:System.Object>、<xref:System.String>、<xref:System.Array>、<xref:System.Action> 和 <xref:System.Collections.Generic.IList%601>。
 - [System.Collections](https://www.nuget.org/packages/System.Collections) - 一组（主要）泛型集合，包括 <xref:System.Collections.Generic.List%601> 和 <xref:System.Collections.Generic.Dictionary%602>。
-- [System.Net.Http](https://www.nuget.org/packages/System.Net.Http) - 一组 HTTP 网络通信类型，包括 <xref:System.Net.Http.HttpClient> 和 <xref:System.Net.Http.HttpResponseMessage>。
+- [System.Net.Http](https://www.nuget.org/packages/System.Net.Http) - 一组用于 HTTP 网络通信的类型，包括 <xref:System.Net.Http.HttpClient> 和 <xref:System.Net.Http.HttpResponseMessage>。
 - [System.IO.FileSystem](https://www.nuget.org/packages/System.IO.FileSystem) - 一组用于读写到本地或网络磁盘存储的类型，包括 <xref:System.IO.File> 和 <xref:System.IO.Directory>。
-- [System.Linq](https://www.nuget.org/packages/System.Linq) - 一组对象查询类型，包括 `Enumerable` 和 <xref:System.Linq.ILookup%602>。
-- [System.Reflection](https://www.nuget.org/packages/System.Reflection) - 一组用于类型加载、检查和激活的类型，包括 <xref:System.Reflection.Assembly>、<xref:System.Reflection.TypeInfo> 和 <xref:System.Reflection.MethodInfo>。
+- [System.Linq](https://www.nuget.org/packages/System.Linq) - 一组用于查询对象的类型，包括 `Enumerable` 和 <xref:System.Linq.ILookup%602>。
+- [System.Reflection](https://www.nuget.org/packages/System.Reflection) - 一组用于加载、检查和激活类型的类型，包括 <xref:System.Reflection.Assembly>、<xref:System.Reflection.TypeInfo> 和 <xref:System.Reflection.MethodInfo>。
 
 通常情况下，相较于逐个地将包包含在项目中，包含*元包*会简单得多，元包是指通常配合在一起使用的一组包。 （有关元包的更多信息，请参见下一部分。）但是当需要单个包时，可以按以下示例所示的那样来包含它，此示例引用 [System.Runtime](https://www.nuget.org/packages/System.Runtime/) 包。 
 
@@ -71,9 +71,9 @@ ms.lasthandoff: 04/10/2017
 - 在引用大量细粒度包方面，提供了一种方便的用户体验。 
 - 定义了一组经过充分测试且运行良好的包（包括指定的各种版本）。
 
-.NET 标准库元包为：
+.NET Standard 元包为：
 
-- [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) - 描述了属于“.Net 标准库”一部分的各种库。 适用于所有支持 .NET 标准库的 .NET 实现（例如，.NET Framework、.NET Core 和 Mono）。 也就是“netstandard”框架。
+- [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) - 描述了属于“.NET Standard”一部分的各种库。 适用于所有支持 .NET Standard 的 .NET 实现（例如，.NET Framework、.NET Core 和 Mono）。 也就是“netstandard”框架。
 
 重要的 .NET Core 元包有：
 
@@ -113,9 +113,9 @@ ms.lasthandoff: 04/10/2017
 
 ### <a name="net-standard"></a>.NET Standard
 
-.NET Standard（目标框架名字对象：`netstandard`）框架表示基于 [.NET Standard 库](../standard/library.md)所构建并由其定义的 API。 如果构建的库将用于在多个运行时上运行，就应将此框架作为目标。 这样便可在任何一种兼容 .NET 标准的运行时上受支持，例如 .NET Core、.NET Framework 和 Mono/Xamarin。 每个运行时都支持一组 .NET Standard 版本，具体取决于实现的 API。 
+.NET Standard（目标框架名字对象：`netstandard`）框架表示在 [.NET Standard](../standard/net-standard.md) 基础之上生成并由其定义的 API。 如果构建的库将用于在多个运行时上运行，就应将此框架作为目标。 这样便可在任何一种兼容 .NET 标准的运行时上受支持，例如 .NET Core、.NET Framework 和 Mono/Xamarin。 每个运行时都支持一组 .NET Standard 版本，具体取决于实现的 API。
 
-`netstandard` 框架隐式引用 `NETStandard.Library` 元包。 例如，以下 MSBuild 项目文件指示项目以 `netstandard1.6` 为目标，`netstandard1.6` 引用 .NET Standard 库 1.6 版元包。 
+`netstandard` 框架隐式引用 [`NETStandard.Library`](https://www.nuget.org/packages/NETStandard.Library) 元包。 例如，以下 MSBuild 项目文件指示项目以 `netstandard1.6` 为目标，其引用 [`NETStandard.Library` 1.6 版](https://www.nuget.org/packages/NETStandard.Library/1.6.0)元包。
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

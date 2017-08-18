@@ -1,5 +1,5 @@
 ---
-title: "-addmodule（C# 编译器选项）| Microsoft Docs"
+title: "-addmodule（C# 编译器选项）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -31,11 +31,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
-ms.openlocfilehash: 614dbefbb472ef2cd03fcb1ba7a44f08c450bf4a
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 79fdad111b1f059e6a3b00e393ea2474f71db947
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="addmodule-c-compiler-options"></a>/addmodule（C# 编译器选项）
@@ -69,6 +69,7 @@ csc /addmodule:metad1.netmodule;metad2.netmodule /out:out.exe input.cs
   
 ## <a name="see-also"></a>另请参阅  
  [（C# 编译器选项）](../../../csharp/language-reference/compiler-options/index.md)   
- [NIB 如何：修改项目属性和配置设置](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)   
+ [管理项目和解决方案属性](/visualstudio/ide/managing-project-and-solution-properties)   
  [多文件程序集](../../../framework/app-domains/multifile-assemblies.md)   
  [如何：生成多文件程序集](../../../framework/app-domains/how-to-build-a-multifile-assembly.md)
+

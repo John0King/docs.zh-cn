@@ -1,5 +1,5 @@
 ---
-title: "如何：链接轴方法调用 (LINQ to XML) (C#) | Microsoft Docs"
+title: "如何：链接轴方法调用 (LINQ to XML) (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,12 +14,11 @@ ms.assetid: 067e6da2-ee32-486d-803c-e611b328e39a
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 400dfda51d978f35c3995f90840643aaff1b9c13
-ms.openlocfilehash: bcd325d72ac14f2b33860fbc9e2662c33ca2703d
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 17793e0620969125de202de7edea89d748b98ee7
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
-
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-chain-axis-method-calls-linq-to-xml-c"></a>如何：链接轴方法调用 (LINQ to XML) (C#)
@@ -131,3 +130,4 @@ foreach (XElement e in names)
   
 ## <a name="see-also"></a>另请参阅  
  [LINQ to XML 轴 (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-axes.md)
+

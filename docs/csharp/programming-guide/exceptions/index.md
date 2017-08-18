@@ -1,5 +1,5 @@
 ---
-title: "异常和异常处理（C# 编程指南）| Microsoft 文档"
+title: "异常和异常处理（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -29,11 +29,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
-ms.openlocfilehash: 561113241f7433d8e0f7f1f1f96f0338ebe81ae3
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: e372cfa3239c39af86a29cda06b5817f0aeff0a2
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="exceptions-and-exception-handling-c-programming-guide"></a>异常和异常处理（C# 编程指南）
@@ -66,7 +66,7 @@ C# 语言的异常处理功能有助于处理在程序运行期间发生的任�
   
 -   即使有异常抛出，`finally` 代码块中的代码仍会执行。 使用 `finally` 代码块可释放资源。例如，关闭在 `try` 代码块中打开的任何流或文件。  
   
--   .NET Framework 中的托管异常在 Win32 结构化异常处理机制的基础之上实现。 有关详细信息，请参阅[结构化异常处理 (C/C++)](https://docs.microsoft.com/cpp/cpp/structured-exception-handling-c-cpp) 和[速成教程：深入了解 Win32 结构化异常处理](http://go.microsoft.com/fwlink/?LinkId=119654)。  
+-   .NET Framework 中的托管异常在 Win32 结构化异常处理机制的基础之上实现。 有关详细信息，请参阅[结构化异常处理 (C/C++)](/cpp/cpp/structured-exception-handling-c-cpp) 和[速成教程：深入了解 Win32 结构化异常处理](http://go.microsoft.com/fwlink/?LinkId=119654)。  
   
 ## <a name="related-sections"></a>相关章节  
  若要详细了解异常和异常处理，请参阅以下主题：  
@@ -84,9 +84,9 @@ C# 语言的异常处理功能有助于处理在程序运行期间发生的任�
 -   [如何：使用 finally 执行清理代码](../../../csharp/programming-guide/exceptions/how-to-execute-cleanup-code-using-finally.md)  
   
 ## <a name="c-language-specification"></a>C# 语言规范  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.SystemException>   
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [C 关键字](../../../csharp/language-reference/keywords/index.md)   
@@ -98,3 +98,4 @@ C# 语言的异常处理功能有助于处理在程序运行期间发生的任�
  [异常层次结构](http://msdn.microsoft.com/library/f7d68675-be06-40fb-a555-05f0c5a6f66b)   
  [编写可靠的 .NET 代码](http://go.microsoft.com/fwlink/?LinkId=112400)   
  [用于特定异常的小型转储](http://go.microsoft.com/fwlink/?LinkId=112408)
+

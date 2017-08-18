@@ -1,5 +1,5 @@
 ---
-title: "string（C# 参考）| Microsoft Docs"
+title: "string（C# 参考）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -34,11 +34,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
-ms.openlocfilehash: 737a0902a0cb010a74b59560abe43f5cfb6550db
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 56847aad4cb8b0427594a299df2306d21675506b
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="string-c-reference"></a>string（C# 参考）
@@ -93,7 +93,7 @@ Console.WriteLine(a);
 ```  
   
 > [!NOTE]
->  转义码 `\`u`dddd`（其中 `dddd` 是一个四位数字）表示 Unicode 字符 U+`dddd`。 另外，还可识别八位 Unicode 转义码：`\Udddddddd`。  
+>  转义码 `\udddd`（其中 `dddd` 是一个四位数字）表示 Unicode 字符 U+`dddd`。 另外，还可识别八位 Unicode 转义码：`\Udddddddd`。  
   
  逐字字符串文本以 @ 开头，并且也括在双引号内。 例如:   
   

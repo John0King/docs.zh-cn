@@ -10,11 +10,11 @@ ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.devlang: dotnet
 ms.assetid: 03c28597-7e73-46d6-a9c3-f9cb55642739
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 890c058bd09893c2adb185e1d8107246eef2e20a
-ms.openlocfilehash: 007d96cf7d174e7849a2b9c8439cfac893c7aa5c
+ms.translationtype: HT
+ms.sourcegitcommit: 2762cdc983465979a530192716c33de7044dd1ed
+ms.openlocfilehash: 252b67a528b9cc666a5353b7c4a4c7e2c488e7af
 ms.contentlocale: zh-cn
-ms.lasthandoff: 04/12/2017
+ms.lasthandoff: 08/04/2017
 
 ---
  
@@ -33,7 +33,7 @@ ms.lasthandoff: 04/12/2017
 
 为什么是三个映像？
 因为在开发、生成和运行容器化应用程序时，具有不同的优先级。
-- **开发：**决定循环访问更改的速度以及调试更改的能力。 与更改代码并且快速查看相比，映像的大小则不是那么重要。 我们在 VS Code 中使用的一些工具（如 [yo docker](https://aka.ms/yodocker)）在开发期间会使用此映像。 
+- **开发：**决定循环访问更改的速度以及调试更改的能力。 与更改代码并且快速查看相比，映像的大小则不是那么重要。 一些用于 Visual Studio Code 的工具（如 [yo docker](https://aka.ms/yodocker)）在开发期间使用此映像。 
 - **生成：**编译应用所需的内容。 这包括编译器和任何优化二进制文件的其他依赖项。 此映像不是部署的映像，而是用于生成放置在生产映像中的内容的映像。 此映像将用于持续集成或者生成环境中。 例如，生成代理会以生成映像为实例，使用生成包含在映像内的应用所需的全部依赖项来编译应用程序，而不是直接在生成代理上安装所有的依赖项。 生成代理只需要了解如何运行此 Docker 映像即可。 
 - **生产：**决定部署和启动映像的速度。 此映像很小，因此可以快速地通过网络从 Docker 注册表传输到 Docker 主机。 已准备运行内容，以此实现从 Docker 运行到处理结果的最快时间。 在不可变 Docker 模型中，不需要动态编译代码。 放置在此映像中的内容将限制为运行应用程序所需的二进制文件和内容。 例如，使用 `dotnet publish` 的已发布输出，其中包含已编译的二进制文件、映像、.js 和 .css 文件。 随着时间的推移，用户将看到包含预实时编译的包。  
 
@@ -53,7 +53,7 @@ ms.lasthandoff: 04/12/2017
 
 - `microsoft/dotnet:<version>-onbuild`：即 **microsoft/dotnet:1.0.0-preview2-onbuild**，其中包含 [ONBUILD](https://docs.docker.com/engine/reference/builder/#/onbuild) 触发器。 生成将 [COPY](https://docs.docker.com/engine/reference/builder/#/copy)（复制）应用程序，运行 `dotnet restore` 并创建 [ENTRYPOINT](https://docs.docker.com/engine/reference/builder/#/entrypoint) `dotnet run` 指令，以在运行 Docker 映像时运行该应用程序。 在使用未针对生产进行优化的映像时，某些用户可能发现只将源代码复制到映像中并运行它会很有帮助。 
 
-- `microsoft/dotnet:<version>-core-deps`：即 **microsoft/dotnet:1.0.0-core-deps**，请在希望运行独立应用程序时使用此映像。 它包括具有 .NET Core 所需的所有本机依赖项的操作系统。 此映像也可用作自己自定义 CoreFX 或 CoreCLR 版本的基本映像。 虽然 **onbuild** 变体已优化为只需将代码放置在映像中并运行它，但此映像已优化为只有运行 .NET Core 应用所需的操作系统依赖项，并打包了 .NET 运行时和应用程序。 通常，优化此映像不是为了在同一主机上运行多个 .NET Core 容器，因为每个映像在应用程序内都具有 .NET Core 运行时，映像分层则不会带来益处。   
+- `microsoft/dotnet:<version>-core-deps`：即 **microsoft/dotnet:1.0.0-core-deps**，请在希望运行独立应用程序时使用此映像。 它包括具有 .NET Core 所需的所有本机依赖项的操作系统。 此映像也可用作自己自定义 CoreFX 或 CoreCLR 版本的基本映像。 虽然 onbuild 变量已优化为只将代码放入映像并运行它，但此映像已优化为只包含运行 .NET Core 应用程序（将 .NET 运行时与应用程序一起打包）所需的操作系统依赖项。 通常，优化此映像不是为了在同一主机上运行多个 .NET Core 容器，因为每个映像在应用程序内都具有 .NET Core 运行时，映像分层则不会带来益处。   
 
 每个变体的最新版本：
 
@@ -62,7 +62,7 @@ ms.lasthandoff: 04/12/2017
 - `microsoft/dotnet:core`
 - `microsoft/dotnet:core-deps`
 
-以下是开发计算机上使用 `docker pull <imagename>` 命令后出现的映像列表，其中显示多个映像的大小。 请注意，其中开发/生成变体 `microsoft/dotnet:1.0.0-preview2-sdk` 较大，因为它包含用于开发和生成应用程序的 SDK。 生产变体 `microsoft/dotnet:core` 较小，因为它仅包含 .NET Core 运行时。 能够在 Linux 上使用的最小映像 `core-deps` 相比之下则小多了，但是应用程序仍需使用它复制 .NET 运行时的私有副本。 由于容器已是私有的隔离屏障，因此运行多个基于 dotnet 的容器时优化会失效。 
+以下是开发计算机上使用 `docker pull <imagename>` 命令后出现的映像列表，其中显示多个映像的大小。 请注意，其中开发/生成变体 `microsoft/dotnet:1.0.0-preview2-sdk` 较大，因为它包含用于开发和生成应用程序的 SDK。 生产变体 `microsoft/dotnet:core` 较小，因为它仅包含 .NET Core 运行时。 虽然能够在 Linux 上使用的最小映像 `core-deps` 较小，但应用程序仍需要使用它复制 .NET 运行时的私有副本。 由于容器已是私有的隔离屏障，因此运行多个基于 dotnet 的容器时优化会失效。 
 
 ```
 REPOSITORY          TAG                     IMAGE ID            SIZE
@@ -81,7 +81,8 @@ microsoft/dotnet    1.0.0-core              b8da4a1fd280        253.2 MB
 若要生成和运行，需要安装以下几个程序：
 
 - [.NET Core](http://dot.net)
-- [Docker](https://www.docker.com/products/docker)：能够在本地运行 Docker 容器 
+- [Docker](https://www.docker.com/products/docker)：能够在本地运行 Docker 容器
+- [Node.js](https://nodejs.org/)
 - [适用于 ASP.NET 的 Yeoman 生成器](https://github.com/omnisharp/generator-aspnet)：用于创建 Web API 应用程序
 - 来自 Microsoft 的[适用于 Docker 的 Yeoman 生成器](http://aka.ms/yodocker)
 
@@ -192,7 +193,7 @@ api                 debug                70e89fbc5dbe        a few seconds ago  
 
 生成映像并在 Docker 容器内运行应用程序的另一种方法是在 Visual Studio Code 中打开该应用程序，然后使用调试工具。 
 
-在 VS Code 左侧的“视图栏”中选择“调试”图标。
+在 Visual Studio Code 左侧的“视图栏”中，选择“调试”图标。
 
 ![vscode 调试图标](./media/building-net-docker-images/debugging_debugicon.png)
 

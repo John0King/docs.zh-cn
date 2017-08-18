@@ -1,5 +1,5 @@
 ---
-title: "匿名类型（C# 编程指南）| Microsoft Docs"
+title: "匿名类型（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -28,11 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 400dfda51d978f35c3995f90840643aaff1b9c13
-ms.openlocfilehash: 6a6950680a733b3d99edd54fc9a9cfd0338e513c
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 80a0d3c99f7765dba1166fd9c5ecc3e7fbadc7a1
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/24/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="anonymous-types-c-programming-guide"></a>匿名类型（C# 编程指南）
@@ -75,7 +75,7 @@ var anonArray = new[] { new { name = "apple", diam = 4 }, new { name = "grape", 
   
  无法将字段、属性、时间或方法的返回类型声明为具有匿名类型。 同样，你不能将方法、属性、构造函数或索引器的形参声明为具有匿名类型。 要将匿名类型或包含匿名类型的集合作为参数传递给某一方法，可将参数作为类型对象进行声明。 但是，这样做会使强类型化作用无效。 如果必须存储查询结果或者必须将查询结果传递到方法边界外部，请考虑使用普通的命名结构或类而不是匿名类型。  
   
- 由于匿名类型上的 <xref:System.Object.Equals%2A> 和 <xref:System.Object.GetHashCode%2A> 方法是根据方法属性的 `Equals` 和 `GetHashCode` 定义的，因此仅当同一匿名类型的两个实例的所有属性都相等时，这两个实例才相等。  
+ 由于匿名类型上的 <xref:System.Object.GetHashCode%2A><xref:System.Object.Equals%2A> 和 `GetHashCode``Equals` 方法是根据方法属性的  和  定义的，因此仅当同一匿名类型的两个实例的所有属性都相等时，这两个实例才相等。  
   
 ## <a name="see-also"></a>另请参阅  
  [C# 编程指南](../../../csharp/programming-guide/index.md)   

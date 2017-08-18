@@ -1,5 +1,5 @@
 ---
-title: "缓解：ZipArchiveEntry.FullName 路径分隔符 | Microsoft Docs"
+title: "缓解：ZipArchiveEntry.FullName 路径分隔符"
 ms.custom: 
 ms.date: 03/30/2017
 ms.prod: .net-framework
@@ -21,11 +21,11 @@ caps.latest.revision: 9
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: 747c98e0fd9db95c52531b398aa33161decac294
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: c9f271e10014d2f6fb04eb4279b068b7a191639f
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="mitigation-ziparchiveentryfullname-path-separator"></a>缓解：ZipArchiveEntry.FullName 路径分隔符

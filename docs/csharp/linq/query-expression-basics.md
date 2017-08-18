@@ -11,21 +11,22 @@ ms.prod: .net-core
 ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: 027db1f8-346f-44d2-a16e-043fcea3a4e0
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 9fd0ef3c71d66ceca28d3ae7025058df469655c2
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: be8e2374f89366c6a98df900674a957bd2f531cc
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="query-expression-basics"></a>查询表达式基础
 
 ## <a name="what-is-a-query-and-what-does-it-do"></a>查询是什么及其作用是什么？ 
 
- 查询**是一组指令，描述要从给定数据源（或源）检索的数据以及返回的数据应具有的形状和组织。 查询与它生成的结果不同。  
+ 查询是一组指令，描述要从给定数据源（或源）检索的数据以及返回的数据应具有的形状和组织。 查询与它生成的结果不同。  
   
  通常情况下，源数据按逻辑方式组织为相同类型的元素的序列。 例如，SQL 数据库表包含行的序列。 在 XML 文件中，存在 XML 元素的“序列”（尽管这些元素在树结构按层次结构进行组织）。 内存中集合包含对象的序列。 
   
- 从应用程序的角度来看，原始源数据的特定类型和结构并不重要。 应用程序始终将源数据视为 <xref:System.Collections.Generic.IEnumerable%601> 或 <xref:System.Linq.IQueryable%601> 集合。 例如，在 LINQ to XML 中，源数据显示为 `IEnumerable`\<<xref:System.Xml.Linq.XElement>>。  
+ 从应用程序的角度来看，原始源数据的特定类型和结构并不重要。 应用程序始终将源数据视为 <xref:System.Collections.Generic.IEnumerable%601> 或 <xref:System.Linq.IQueryable%601> 集合。 例如在 LINQ to XML 中，源数据显示为 `IEnumerable`\<<xref:System.Xml.Linq.XElement>>。  
   
  对于此源序列，查询可能会执行三种操作之一：  
   
@@ -55,19 +56,19 @@ ms.lasthandoff: 03/13/2017
   
 ## <a name="what-is-a-query-expression"></a>查询表达式是什么？  
 
- 查询表达式**是以查询语法表示的查询。 查询表达式是一流的语言构造。 它如同任何其他表达式一样，可以在 C# 表达式有效的任何上下文中使用。 查询表达式由一组用类似于 SQL 或 XQuery 的声明性语法所编写的子句组成。 每个子句进而包含一个或多个 C# 表达式，而这些表达式可能本身是查询表达式或包含查询表达式。  
+ 查询表达式是以查询语法表示的查询。 查询表达式是一流的语言构造。 它如同任何其他表达式一样，可以在 C# 表达式有效的任何上下文中使用。 查询表达式由一组用类似于 SQL 或 XQuery 的声明性语法所编写的子句组成。 每个子句进而包含一个或多个 C# 表达式，而这些表达式可能本身是查询表达式或包含查询表达式。  
   
  查询表达式必须以 [from](../language-reference/keywords/from-clause.md) 子句开头，且必须以 [select](../language-reference/keywords/select-clause.md) 或 [group](../language-reference/keywords/group-clause.md) 子句结尾。 在第一个 `from` 子句与最后一个 `select` 或 `group` 子句之间，可以包含以下这些可选子句中的一个或多个：[where](../language-reference/keywords/where-clause.md)、[orderby](../language-reference/keywords/orderby-clause.md)、[join](../language-reference/keywords/join-clause.md)、[let](../language-reference/keywords/let-clause.md)，甚至是其他 [from](../language-reference/keywords/from-clause.md) 子句。 还可以使用 [into](../language-reference/keywords/into.md) 关键字，使 `join` 或 `group` 子句的结果可以充当相同查询表达式中的其他查询子句的源。  
   
 ### <a name="query-variable"></a>查询变量  
  
- 在 LINQ 中，查询变量是存储查询**而不是查询结果**的任何变量。 更具体地说，查询变量始终是可枚举类型，在 `foreach` 语句或对其 `IEnumerator.MoveNext` 方法的直接调用中循环访问时会生成元素序列。  
+ 在 LINQ 中，查询变量是存储查询而不是查询结果的任何变量。 更具体地说，查询变量始终是可枚举类型，在 `foreach` 语句或对其 `IEnumerator.MoveNext` 方法的直接调用中循环访问时会生成元素序列。  
   
  下面的代码示例演示一个简单查询表达式，它具有一个数据源、一个筛选子句、一个排序子句并且不转换源元素。 该查询以 `select` 子句结尾。  
   
  [!code-cs[csrefQueryExpBasics#49](../../../samples/snippets/csharp/concepts/linq/query-expression-basics_5.cs)]  
   
- 在上面的示例中，`scoreQuery` 是查询变量**，它有时仅仅称为查询**。 查询变量不存储在 `foreach` 循环生成中的任何实际结果数据。 并且当 `foreach` 语句执行时，查询结果不会通过查询变量 `scoreQuery` 返回。 而是通过迭代变量 `testScore` 返回。 `scoreQuery` 变量可以在另一个 `foreach` 循环中进行循环访问。 只要既没有修改它，也没有修改数据源，便会生成相同结果。  
+ 在上面的示例中，`scoreQuery` 是查询变量，它有时仅仅称为查询。 查询变量不存储在 `foreach` 循环生成中的任何实际结果数据。 并且当 `foreach` 语句执行时，查询结果不会通过查询变量 `scoreQuery` 返回。 而是通过迭代变量 `testScore` 返回。 `scoreQuery` 变量可以在另一个 `foreach` 循环中进行循环访问。 只要既没有修改它，也没有修改数据源，便会生成相同结果。  
   
  查询变量可以存储采用查询语法、方法语法或是两者的组合进行表示的查询。 在以下示例中，`queryMajorCities` 和 `queryMajorCities2` 都是查询变量：  
   
@@ -93,7 +94,7 @@ ms.lasthandoff: 03/13/2017
   
  [!code-cs[csrefQueryExpBasics#53](../../../samples/snippets/csharp/concepts/linq/query-expression-basics_9.cs)]  
   
- 范围变量一直处于范围中，直到查询使用分号或 continuation** 子句退出。  
+ 范围变量一直处于范围中，直到查询使用分号或 continuation 子句退出。  
   
  查询表达式可能会包含多个 `from` 子句。 在源序列中的每个元素本身是集合或包含集合时，可使用其他 `from` 子句。 例如，假设具有 `Country` 对象的集合，其中每个对象都包含名为 `Cities` 的 `City` 对象集合。 若要查询每个 `Country` 中的 `City` 对象，请使用两个 `from` 子句，如下所示：  
   
@@ -118,7 +119,7 @@ ms.lasthandoff: 03/13/2017
   
  [!code-cs[csrefQueryExpBasics#56](../../../samples/snippets/csharp/concepts/linq/query-expression-basics_12.cs)]  
   
- `select` 子句可以用于将源数据转换为新类型的序列。 此转换也称为投影**。 在下面的示例中，`select` 子句对只包含原始元素中的字段子集的匿名类型序列进行投影**。 请注意，新对象使用对象初始值设定项进行初始化。  
+ `select` 子句可以用于将源数据转换为新类型的序列。 此转换也称为投影。 在下面的示例中，`select` 子句对只包含原始元素中的字段子集的匿名类型序列进行投影。 请注意，新对象使用对象初始值设定项进行初始化。  
   
  [!code-cs[csrefQueryExpBasics#57](../../../samples/snippets/csharp/concepts/linq/query-expression-basics_13.cs)]  
   
@@ -170,7 +171,7 @@ ms.lasthandoff: 03/13/2017
   
 ### <a name="subqueries-in-a-query-expression"></a>查询表达式中的子查询  
 
- 查询子句本身可能包含查询表达式，这有时称为子查询**。 每个子查询都以自己的 `from` 子句开头，该子句不一定指向第一个 `from` 子句中的相同数据源。 例如，下面的查询演示在 select 语句用于检索分组操作结果的查询表达式。  
+ 查询子句本身可能包含查询表达式，这有时称为子查询。 每个子查询都以自己的 `from` 子句开头，该子句不一定指向第一个 `from` 子句中的相同数据源。 例如，下面的查询演示在 select 语句用于检索分组操作结果的查询表达式。  
   
  [!code-cs[csrefQueryExpBasics#63](../../../samples/snippets/csharp/concepts/linq/query-expression-basics_19.cs)]  
   

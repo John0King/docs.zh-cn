@@ -1,5 +1,5 @@
 ---
-title: "如何：使用命名空间创建文档 (C#) (LINQ to XML) | Microsoft Docs"
+title: "如何：使用命名空间创建文档 (C#) (LINQ to XML)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,19 +19,20 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 23cc762b1dcd5e39b923c1a57b6f171c7885f0ad
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: cecd2012012ba789ad2c2935b6b69c282718a066
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-create-a-document-with-namespaces-c-linq-to-xml"></a>如何：使用命名空间创建文档 (C#) (LINQ to XML)
 本主题演示如何创建包含命名空间的文档。  
   
 ## <a name="example"></a>示例  
- 若要创建一个属于命名空间的元素或属性，请首先声明并初始化一个 <xref:System.Xml.Linq.XNamespace> 对象。 然后使用加法运算符重载来组合命名空间和本地名称（以字符串表示）。  
+ 若要创建一个属于命名空间的元素或属性，请首先声明和初始化一个 <xref:System.Xml.Linq.XNamespace> 对象。 然后使用加法运算符重载来组合命名空间和本地名称（以字符串表示）。  
   
- 下面的示例创建一个包含一个命名空间的文档。 默认情况下，[!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] 使用默认命名空间序列化此文档。  
+ 下面的示例创建一个包含一个命名空间的文档。 默认情况下，[!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 使用默认命名空间序列化此文档。  
   
 ```csharp  
 // Create an XML tree in a namespace.  
@@ -137,7 +138,7 @@ Console.WriteLine(root);
 ## <a name="example"></a>示例  
  另一种可获得相同结果的方法是使用扩展名，而不是声明和创建一个 <xref:System.Xml.Linq.XNamespace> 对象。  
   
- 这种方法的性能较低。 每次将包含扩展名的字符串传递给 [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] 时，[!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] 都必须分析名称，查找原子化命名空间，再查找原子化名称。 这个过程会占用 CPU 时间。 如果性能很重要，建议显式声明和使用 <xref:System.Xml.Linq.XNamespace> 对象。  
+ 这种方法的性能较低。 每次将包含扩展名的字符串传递给 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 时，[!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 都必须分析名称，查找原子化命名空间，再查找原子化名称。 这个过程会占用 CPU 时间。 如果性能很重要，则您可能希望显式声明和使用 <xref:System.Xml.Linq.XNamespace> 对象。  
   
  如果性能是重要问题，请参阅 [XName 对象的预先原子化 (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/pre-atomization-of-xname-objects-linq-to-xml.md) 了解详细信息  
   
@@ -158,5 +159,6 @@ Console.WriteLine(root);
 </aw:Root>  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [使用 XML 命名空间 (C#)](../../../../csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md)
+

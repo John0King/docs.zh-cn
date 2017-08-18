@@ -1,5 +1,5 @@
 ---
-title: "在 .NET Core 工具中管理依赖项 | Microsoft 文档"
+title: "在 .NET Core 工具中管理依赖项"
 description: "介绍如何使用 .NET Core 工具管理依赖项。"
 keywords: "CLI, 扩展性, 自定义命令, .NET Core"
 author: blackdwarf
@@ -10,11 +10,11 @@ ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 74b87cdb-a244-4c13-908c-539118bfeef9
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 25847dd6921e547074f4501d34d865dfb1b98b59
-ms.openlocfilehash: de496d96120df1ec275bb4a69f01b6266b0b5a89
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: b982d72b92cefb015c584ea6827dc60999ca9a00
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -31,10 +31,10 @@ ms.lasthandoff: 05/17/2017
 <PackageReference Include="PACKAGE_ID" Version="PACKAGE_VERSION" />
 ```
 
-如果你熟悉 MSBuild，则它看起来和已有的引用类型很相似。 关键是 `Include` 语句，它指定要添加到项目的包 ID。 `<Version>` 子元素指定要获取的版本。 根据 [NuGet 版本规则](https://docs.microsoft.com/nuget/create-packages/dependency-versions#version-ranges)指定版本。
+如果你熟悉 MSBuild，则它看起来和已有的引用类型很相似。 关键是 `Include` 语句，它指定要添加到项目的包 ID。 `<Version>` 子元素指定要获取的版本。 根据 [NuGet 版本规则](/nuget/create-packages/dependency-versions#version-ranges)指定版本。
 
 > [!NOTE]
-> 如果不熟悉整体 `csproj` 语法，可参阅 [MSBuild 项目参考](https://docs.microsoft.com/visualstudio/msbuild/msbuild-project-file-schema-reference)文档了解详细信息。  
+> 如果不熟悉整体 `csproj` 语法，可参阅 [MSBuild 项目参考](/visualstudio/msbuild/msbuild-project-file-schema-reference)文档了解详细信息。  
 
 使用类似以下示例中的条件添加仅在特定目标中可用的依赖项：
 

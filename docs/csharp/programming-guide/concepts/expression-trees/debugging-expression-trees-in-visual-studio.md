@@ -1,5 +1,5 @@
 ---
-title: "在 Visual Studio 中调试表达式树 (C#) | Microsoft Docs"
+title: "在 Visual Studio 中调试表达式树 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,20 +19,21 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 14ab67e78a3b4c4819ddca36a406526e78f5485e
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 0cf40b38ca9a6f743aca2894506e1d0ea80c9d57
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="debugging-expression-trees-in-visual-studio-c"></a>在 Visual Studio 中调试表达式树 (C#)
-可以在调试应用程序时分析表达式树的结构和内容。 若要快速了解表达式树结构，可以使用 `DebugView` 属性，该属性仅在调试模式下可用。 有关调试的详细信息，请参阅[在 Visual Studio 中进行调试](https://docs.microsoft.com/visualstudio/debugger/debugging-in-visual-studio)。  
+可以在调试应用程序时分析表达式树的结构和内容。 若要快速了解表达式树结构，可以使用 `DebugView` 属性，该属性仅在调试模式下可用。 有关调试的详细信息，请参阅[在 Visual Studio 中进行调试](/visualstudio/debugger/debugging-in-visual-studio)。  
   
- 为了更好地表示表达式树的内容，`DebugView` 属性使用 Visual Studio 可视化工具。 有关详细信息，请参阅[创建自定义可视化工具](https://docs.microsoft.com/visualstudio/debugger/create-custom-visualizers-of-data)。  
+ 为了更好地表示表达式树的内容，`DebugView` 属性使用 Visual Studio 可视化工具。 有关详细信息，请参阅[创建自定义可视化工具](/visualstudio/debugger/create-custom-visualizers-of-data)。  
   
 ### <a name="to-open-a-visualizer-for-an-expression-tree"></a>打开表达式树的可视化工具  
   
-1.  单击“数据提示”****、“监视”****窗口、“自动”****或“局部变量”****窗口中表达式树的 `DebugView` 属性旁边显示的放大镜图标。  
+1.  单击“数据提示”、“监视”窗口、“自动”或“局部变量”窗口中表达式树的 `DebugView` 属性旁边显示的放大镜图标。  
   
      将会显示可视化工具列表。  
   
@@ -41,7 +42,7 @@ ms.lasthandoff: 03/13/2017
  每个表达式类型如以下各节所述显示在可视化工具中。  
   
 ## <a name="parameterexpressions"></a>ParameterExpressions  
- <xref:System.Linq.Expressions.ParameterExpression> 变量名称的开头带有 “$” 符号。  
+ <xref:System.Linq.Expressions.ParameterExpression> 变量名称的开头显示有“$”符号。  
   
  如果参数没有名称，则会为其分配一个自动生成的名称，例如 `$var1` 或 `$var2`。  
   
@@ -53,7 +54,7 @@ ms.lasthandoff: 03/13/2017
 |`ParameterExpression numParam =  Expression.Parameter(typeof(int));`|`$var1`|  
   
 ## <a name="constantexpressions"></a>ConstantExpressions  
- 对于表示整数值、字符串和 `null` 的 <xref:System.Linq.Expressions.ConstantExpression> 对象，将显示常量的值。  
+ 对于表示整数值、字符串和 `null` 的 <xref:System.Linq.Expressions.ConstantExpression> 对象，将显示常数的值。  
   
  对于使用标准后缀作为 C# 原义字符的数值类型，将后缀添加到值。 下表显示与各种数值类型关联的后缀。  
   
@@ -84,7 +85,7 @@ ms.lasthandoff: 03/13/2017
 |`BlockExpression block =  Expression.Block(typeof(Object), Expression.Constant("test"));`|`.Block<System.Object>() {`<br /><br /> `"test"`<br /><br /> `}`|  
   
 ## <a name="lambdaexpression"></a>LambdaExpression  
- <xref:System.Linq.Expressions.LambdaExpression> 对象与其委托类型一起显示。  
+ 显示 <xref:System.Linq.Expressions.LambdaExpression> 对象及其委托类型。  
   
  如果 lambda 表达式没有名称，则会为其分配一个自动生成的名称，例如 `#Lambda1` 或 `#Lambda2`。  
   
@@ -96,7 +97,7 @@ ms.lasthandoff: 03/13/2017
 |`LambdaExpression lambda =  Expression.Lambda<Func<int>>(Expression.Constant(1), "SampleLambda", null);`|`.Lambda SampleLambda<System.Func'1[System.Int32]>() {`<br /><br /> `1`<br /><br /> `}`|  
   
 ## <a name="labelexpression"></a>LabelExpression  
- 如果指定 <xref:System.Linq.Expressions.LabelExpression> 对象的默认值，则此值将显示在 <xref:System.Linq.Expressions.LabelTarget> 对象之前。  
+ 如果指定 <xref:System.Linq.Expressions.LabelExpression> 对象的默认值，则在 <xref:System.Linq.Expressions.LabelTarget> 对象之前显示此值。  
   
  `.Label` 令牌指示标签的开头。 `.LabelTarget` 令牌指示要跳转到的目标的目的地。  
   
@@ -121,5 +122,6 @@ ms.lasthandoff: 03/13/2017
   
 ## <a name="see-also"></a>另请参阅  
  [表达式树 (C#)](../../../../csharp/programming-guide/concepts/expression-trees/index.md)   
- [在 Visual Studio 中进行调试](https://docs.microsoft.com/visualstudio/debugger/debugging-in-visual-studio)   
- [创建自定义可视化工具](https://docs.microsoft.com/visualstudio/debugger/create-custom-visualizers-of-data)
+ [在 Visual Studio 中进行调试](/visualstudio/debugger/debugging-in-visual-studio)   
+ [创建自定义可视化工具](/visualstudio/debugger/create-custom-visualizers-of-data)
+

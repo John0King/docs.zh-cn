@@ -1,5 +1,5 @@
 ---
-title: "如何：将事件信息写入文本文件 (Visual Basic) | Microsoft Docs"
+title: "如何：将事件信息写入文本文件 (Visual Basic)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -32,11 +32,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: 2701f634332acdfaa81a6bf4e1d1309968366d7f
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: a8008f25198928e0bf2bd7e1c0caee8118b8fec9
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-write-event-information-to-a-text-file-visual-basic"></a>如何：将事件信息写入文本文件 (Visual Basic)
@@ -52,7 +52,7 @@ ms.lasthandoff: 05/22/2017
   
     1.  在 **“项目”** 菜单上选择 **“添加新项”**。  
   
-    2.  在“添加新项” 对话框中，选择“应用程序配置文件”。  
+    2.  在“添加新项”  对话框中，选择“应用程序配置文件” 。  
   
     3.  单击 **“添加”**。  
   
@@ -83,7 +83,7 @@ ms.lasthandoff: 05/22/2017
      将 `customlocation` 属性的值更改为日志目录。  
   
     > [!NOTE]
-    >  若要设置侦听器属性的值，请使用与该属性具有相同名称的特性，名称中的所有字母都为小写。 例如，`location` 和 `customlocation` 特性设置 <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.Location%2A> 和 <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.CustomLocation%2A> 属性的值。  
+    >  若要设置侦听器属性的值，请使用与该属性具有相同名称的特性，名称中的所有字母都为小写。 例如，`location` 和 `customlocation` 属性设置 <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.Location%2A> 和 <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.CustomLocation%2A> 属性的值。  
   
 ### <a name="to-write-event-information-to-the-file-log"></a>将事件信息写入文件日志  
   
@@ -97,3 +97,4 @@ ms.lasthandoff: 05/22/2017
  <xref:Microsoft.VisualBasic.Logging.Log.WriteException%2A>   
  [使用应用程序日志](../../../../visual-basic/developing-apps/programming/log-info/working-with-application-logs.md)   
  [如何：日志异常](../../../../visual-basic/developing-apps/programming/log-info/how-to-log-exceptions.md)
+

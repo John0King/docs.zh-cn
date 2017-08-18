@@ -1,5 +1,5 @@
 ---
-title: "将标准查询运算符链接在一起 (C#) | Microsoft Docs"
+title: "将标准查询运算符链接在一起 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,20 +14,20 @@ ms.assetid: 66f2b0a9-2c23-4735-988e-bbc9dfb55c7b
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 8e9da047fcc224176d028f8caef8b57bc134dc21
-ms.lasthandoff: 03/13/2017
-
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 40c65c80c08caa310cb72a194534ad63fcea890a
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="chaining-standard-query-operators-together-c"></a>将标准查询运算符链接在一起 (C#)
 这是[教程：将查询链接在一起 (C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-chaining-queries-together.md) 教程中的最后一个主题。  
   
- 标准查询运算符也可以链接在一起。 例如，可以插入 <xref:System.Linq.Enumerable.Where%2A?displayProperty=fullName> 运算符，它也可以延迟方式运行。 它不会具体化任何中间结果。  
+ 标准查询运算符也可以链接在一起。 例如，您可以插入 <xref:System.Linq.Enumerable.Where%2A?displayProperty=fullName> 运算符，并且该运算符也可以以迟缓方式操作。 它不会具体化任何中间结果。  
   
 ## <a name="example"></a>示例  
- 在此示例中，调用 `ConvertCollectionToUpperCase` 之前先调用 <xref:System.Linq.Enumerable.Where%2A> 方法。 <xref:System.Linq.Enumerable.Where%2A> 方法的操作方式与本教程前面示例中使用的迟缓方法 `ConvertCollectionToUpperCase` 和 `AppendString` 几乎完全相同。  
+ 在此示例中，调用 <xref:System.Linq.Enumerable.Where%2A> 之前将调用 `ConvertCollectionToUpperCase` 方法。 <xref:System.Linq.Enumerable.Where%2A> 方法的操作方式与本教程前面示例中使用的迟缓方法 `ConvertCollectionToUpperCase` 和 `AppendString` 几乎完全相同。  
   
  区别之一是在本例中，<xref:System.Linq.Enumerable.Where%2A> 方法循环访问其源集合，确定第一项不传递谓词，然后获取传递谓词的下一项。 示例然后生成第二项。  
   
@@ -100,3 +100,4 @@ Main: str >GHI!!!<
   
 ## <a name="see-also"></a>另请参阅  
  [教程：将查询链接在一起 (C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-chaining-queries-together.md)
+

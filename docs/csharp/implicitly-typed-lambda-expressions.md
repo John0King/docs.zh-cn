@@ -1,7 +1,7 @@
 ---
 title: "隐式类型化 lambda 表达式"
-description: "隐式类型化 lambda 表达式"
-keywords: ".NET、.NET Core"
+description: "了解为什么不能使用隐式类型化变量声明来声明 lambda 表达式。"
+keywords: .NET, .NET Core
 author: BillWagner
 ms.author: wiwagn
 ms.date: 06/20/2016
@@ -10,10 +10,11 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: a3851da9-e018-4389-9922-233db7d0f841
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: c3621f6feb29929d3681b6ed66cc12c5d8018ba1
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 663613af001f9727c48bd48553540305e47a6bab
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 

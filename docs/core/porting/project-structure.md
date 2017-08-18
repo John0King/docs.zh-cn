@@ -9,11 +9,11 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 3af62252-1dfa-4336-8d2f-5cfdb57d7724
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9fd4e033a5f33d4f560b12e23950abd62c7825c5
-ms.openlocfilehash: d83378b094fbae16c788c04269b833a4ecae3608
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 93bec65e3bbee93855d6f5bce5e2d6cea8bb9f3d
 ms.contentlocale: zh-cn
-ms.lasthandoff: 04/07/2017
+ms.lasthandoff: 08/11/2017
 
 ---
 
@@ -88,3 +88,4 @@ ms.lasthandoff: 04/07/2017
 
 [option-csproj]: #replace-existing-projects-with-a-multi-targeted-net-core-project
 [option-csproj-folder]: #keep-existing-projects-and-create-a-net-core-project
+

@@ -8,11 +8,12 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: b6a0539a-8ce5-4da7-adcf-44be345a2714
-redirect_url: /dotnet/articles/csharp/index
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: a8510201536962235265463ee4771989656a22f4
-ms.lasthandoff: 03/13/2017
+redirect_url: /dotnet/csharp/index
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 056eb71bb688ac79f89dfe9fc65740ea1124bda7
+ms.contentlocale: zh-cn
+ms.lasthandoff: 08/11/2017
 
 ---
 

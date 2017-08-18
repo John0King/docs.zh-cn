@@ -1,6 +1,6 @@
 ---
 title: ".NET Core SDK 概述"
-description: ".NET Core SDK 概述"
+description: "查看有关 .NET Core SDK 的信息，其是一组用于创建 .NET Core 项目的库和工具。"
 keywords: .NET, .NET Core
 author: blackdwarf
 ms.author: mairaw
@@ -10,11 +10,11 @@ ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 26bc9822-e42b-48ec-b0d6-499dc604add7
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d97a1501ad25b683cbb5d7fbd8bd1b137f7f4046
-ms.openlocfilehash: 5ecc2dd249ab0e1e25e2fcaa4f7548f91085e54a
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 8f3d0f5b3bccdd1ca25fa1202c2c727e402fe668
 ms.contentlocale: zh-cn
-ms.lasthandoff: 04/10/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -38,3 +38,4 @@ ms.lasthandoff: 04/10/2017
 另一方面，安装脚本不需要管理权限。 但是，它们也不会在计算机上安装任何系统必备组件；需要手动安装所有系统必备组件。 这些脚本主要用于设置生成服务器或希望安装工具但没有管理权限的情况（请务必注意上述系统必备组件注意事项）。 可以在[安装脚本引用主题](tools/dotnet-install-script.md)中找到详细信息。 如果对如何在 CI 生成服务器上设置 SDK 感兴趣，可以看一看 [CI 服务器的 SDK](tools/using-ci-with-cli.md) 文档。 
 
 默认情况下，SDK 将以“并行”(SxS) 方式安装。 这意味着多个版本的 CLI 工具在任何给定时间内可在一台计算机上共存。 有关如何使用正确版本的详细信息，请参阅 .NET Core 命令行工具主题中的[驱动程序部分](tools/index.md#driver)。
+

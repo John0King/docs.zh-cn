@@ -1,5 +1,5 @@
 ---
-title: ".NET Framework 类库中过时的内容 | Microsoft Docs"
+title: ".NET Framework 类库中过时的内容"
 ms.custom: 
 ms.date: 03/30/2017
 ms.prod: .net-framework
@@ -18,11 +18,11 @@ caps.latest.revision: 19
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: 68c71e26ac5e5a1872ac006d02adec84c1fb63da
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 7afe9496ca116ed0c330c4ff9e7c3a855249cf14
 ms.contentlocale: zh-cn
-ms.lasthandoff: 04/18/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="what39s-obsolete-in-the-net-framework-class-library"></a>.NET Framework 类库中过时的内容
@@ -34,7 +34,7 @@ ms.lasthandoff: 04/18/2017
 >  术语*“已过时”*和*“已弃用”*在应用于 .NET Framework 的类型和成员时含义相同。  
   
 ## <a name="the-obsoleteattribute-attribute"></a>ObsoleteAttribute 特性  
- .NET Framework 通过使用 <xref:System.ObsoleteAttribute> 属性标记类型或类型成员来指示它已过时。 将该特性应用于某个类型或成员指示该类型或成员会在将来某个版本的 .NET Framework 中删除，但不会破坏使用该成员的已编译代码。  
+ .NET Framework 通过使用 <xref:System.ObsoleteAttribute> 特性标记类型或类型成员来指示它已过时。 将该特性应用于某个类型或成员指示该类型或成员会在将来某个版本的 .NET Framework 中删除，但不会破坏使用该成员的已编译代码。  
   
  除了指示类型或类型成员已过时之外，<xref:System.ObsoleteAttribute> 还定义编译器如何处理包含该类型或成员的源代码。 编译器可以编译代码但发出警告消息，也可以将该类型或成员的使用视为错误。 在第一种情况下，代码可以成功编译，但警告消息会指示类型或成员已过时。 在第二种情况下，编译会失败。  
   
@@ -92,3 +92,4 @@ ms.lasthandoff: 04/18/2017
   
 ## <a name="see-also"></a>另请参阅  
  [\<supportedRuntime> 元素](../../../docs/framework/configure-apps/file-schema/startup/supportedruntime-element.md)
+

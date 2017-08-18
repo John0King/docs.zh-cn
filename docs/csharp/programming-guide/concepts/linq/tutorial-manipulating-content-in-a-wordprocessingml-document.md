@@ -1,5 +1,5 @@
 ---
-title: "教程：操作 WordprocessingML 文档中的内容 (C#) | Microsoft Docs"
+title: "教程：操作 WordprocessingML 文档中的内容 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,11 +14,11 @@ ms.assetid: bc9815f8-13d2-4f50-a4d1-b1c0d50d37b3
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: e36db410781765c6861f60942782bbd6259d5de8
-ms.lasthandoff: 03/13/2017
-
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 293e8de848f83517211e3f3ed640102a2c534764
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="tutorial-manipulating-content-in-a-wordprocessingml-document-c"></a>教程：操作 WordprocessingML 文档中的内容 (C#)
@@ -44,3 +44,4 @@ ms.lasthandoff: 03/13/2017
 ## <a name="see-also"></a>请参阅  
  [XML 的纯功能转换 (C#)](../../../../csharp/programming-guide/concepts/linq/pure-functional-transformations-of-xml.md)   
  [纯函数转换简介 (C#)](../../../../csharp/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md)
+

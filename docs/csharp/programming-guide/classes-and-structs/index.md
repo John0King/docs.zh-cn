@@ -1,5 +1,5 @@
 ---
-title: "类和结构（C# 编程指南）| Microsoft 文档"
+title: "类和结构（C# 编程指南）"
 description: "介绍了如何在 C# 中使用类和结构。"
 keywords: "类 (C#), 结构 (C#), 结构 (C#), 引用类型 (C#), 值类型 (C#)"
 ms.date: 2016-01-17
@@ -34,11 +34,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a5ed524a1b17f7be8903f998cbd732594faab831
-ms.openlocfilehash: d855989586fdee8b98bd994125ebb5c59776040a
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 2076de96c58fb89813495cb59adacb8a0082d93c
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/15/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="classes-and-structs-c-programming-guide"></a>类和结构（C# 编程指南）
@@ -127,3 +127,4 @@ ms.lasthandoff: 05/15/2017
   
 ## <a name="see-also"></a>另请参阅  
  [C# 编程指南](../../../csharp/programming-guide/index.md)
+

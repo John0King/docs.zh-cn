@@ -1,5 +1,5 @@
 ---
-title: "程序集和全局程序集缓存 (Visual Basic) | Microsoft 文档"
+title: "程序集和全局程序集缓存 (Visual Basic)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -20,10 +20,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 0b712132becfe47d50d1c06c0e8fd9940b8035e9
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: c5a1a3a651fc7d2b42f8ac55ab6f2d832f258bb0
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="assemblies-and-the-global-assembly-cache-visual-basic"></a>程序集和全局程序集缓存 (Visual Basic)
@@ -41,7 +42,7 @@ ms.lasthandoff: 03/13/2017
   
 -   可以使用反射，以编程方式获取程序集的相关信息。 有关详细信息，请参阅[反射 (Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md)。  
   
--   如果仅出于检查目的加载程序集，请使用诸如 <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom%2A> 之类的方法。  
+-   如果想加载一个程序集以仅对其进行检查，请使用如 <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom%2A> 之类的方法。  
   
 ## <a name="assembly-manifest"></a>程序集清单  
  每个程序集中都有*程序集清单*。 与目录类似，程序集清单包含以下内容：  
@@ -50,7 +51,7 @@ ms.lasthandoff: 03/13/2017
   
 -   文件表，描述构成程序集的其他所有文件（例如，.exe 或 .dll 文件依赖的其他任何程序集、位图或自述文件）。  
   
--   *程序集引用列表*，列出了应用程序需要的可能由其他人创建的所有外部依赖项（.dll 或其他文件）。 程序集既可以引用全局对象，也可以引用私有对象。 全局对象驻留在全局程序集缓存中，此区域对其他应用程序也可用，类似于 System32 目录。 例如，<xref:Microsoft.VisualBasic?displayProperty=fullName> 命名空间就是全局程序集缓存中的一个程序集。 私有对象必须位于级别不高于应用程序安装目录的目录中。  
+-   *程序集引用列表*，列出了应用程序需要的可能由其他人创建的所有外部依赖项（.dll 或其他文件）。 程序集既可以引用全局对象，也可以引用私有对象。 全局对象驻留在全局程序集缓存中，此区域对其他应用程序也可用，类似于 System32 目录。 <xref:Microsoft.VisualBasic?displayProperty=fullName> 命名空间是全局程序集缓存中的程序集示例。 私有对象必须位于级别不高于应用程序安装目录的目录中。  
   
  由于程序集包含内容、版本控制和依赖项的相关信息，因此使用 Visual Basic 创建的应用程序并不依赖 Windows 注册表值才能正常运行。 程序集减少了 .dll 冲突，让应用程序变得更可靠、更易于部署。 在许多情况下，只需将 .NET 应用程序的文件复制到目标计算机，即可进行安装。  
   
@@ -74,3 +75,4 @@ ms.lasthandoff: 03/13/2017
  [如何：使用命令行创建和使用程序集 (Visual Basic)](how-to-create-and-use-assemblies-using-the-command-line.md)   
  [演练：在 Visual Studio 中嵌入托管程序集中的类型 (Visual Basic)](walkthrough-embedding-types-from-managed-assemblies-in-vs.md)   
  [演练：在 Visual Studio 中嵌入 Microsoft Office 程序集中的类型信息 (Visual Basic)](walkthrough-embedding-type-information-from-microsoft-office-assemblies-in-vs.md)
+

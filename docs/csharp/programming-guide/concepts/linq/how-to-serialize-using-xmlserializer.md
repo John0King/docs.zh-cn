@@ -1,5 +1,5 @@
 ---
-title: "如何：使用 XmlSerializer 进行序列化 (C#) | Microsoft Docs"
+title: "如何：使用 XmlSerializer 进行序列化 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,14 +19,15 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 6721edf0a533d89e8987f4bf231142f3a236d0c7
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 826c10835da385a0fd7b052db4d6981b706fc6ed
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-serialize-using-xmlserializer-c"></a>如何：使用 XmlSerializer 进行序列化 (C#)
-本主题介绍一个使用 <xref:System.Xml.Serialization.XmlSerializer> 进行序列化和反序列化的示例。  
+本主题显示一个使用 <xref:System.Xml.Serialization.XmlSerializer> 进行序列化和反序列化的示例。  
   
 ## <a name="example"></a>示例  
  下面的示例创建多个包含 <xref:System.Xml.Linq.XElement> 对象的对象。 然后将它们序列化为内存流，接着从内存流对它们进行反序列化。  
@@ -107,3 +108,4 @@ Testing for type: XElementContainer
   
 ## <a name="see-also"></a>请参阅  
  [序列化包含 XElement 对象的对象图 (C#)](../../../../csharp/programming-guide/concepts/linq/serializing-object-graphs-that-contain-xelement-objects.md)
+

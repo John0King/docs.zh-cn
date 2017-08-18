@@ -1,5 +1,5 @@
 ---
-title: "使用 CLI 工具部署 .NET Core 应用 | Microsoft Docs"
+title: "使用 CLI 工具部署 .NET Core 应用"
 description: "了解如何使用命令行接口 (CLI) 工具部署 .NET Core 应用"
 keywords: ".NET、.NET Core、.NET Core 部署"
 author: rpetrusha
@@ -9,11 +9,11 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 82ebe16d-5e1c-46cc-91e8-71974296429c
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3ffe3909902659a22cb25bac6dc5aaa4f5b9fde2
-ms.openlocfilehash: e3736d44c05e8740451ff72b28cd01c384ecd34d
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 005355868eefdbf21e3107f6db5230d7952276b2
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -85,7 +85,7 @@ ms.lasthandoff: 05/13/2017
 
 1. 如果尚未安装，请下载包含第三方依赖项的 NuGet 包。 若要下载该包，请在添加依赖项后执行 `dotnet restore` 命令。 因为依赖项在发布时已从本地 NuGet 缓存解析出来，因此它一定适用于你的系统。
 
-请注意，如果依赖框架的部署具有第三方依赖项，则其可移植性只与第三方依赖项相同。 例如，如果某个第三方库只支持 macOS，该应用将无法移植到 Windows 系统。 当第三方依赖项本身取决于本机代码时，也可能发生此情况。 [Kestrel 服务器](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel)就是一个很好的示例，它需要 [libuv](https://github.com/libuv/libuv) 的本机依赖项。 当为具有此类第三方依赖项的应用程序创建 FDD 时，已发布的输出会针对每个本机依赖项支持（存在于 NuGet 包中）的[运行时标识符 (RID)](../rid-catalog.md#what-are-rids) 包含一个文件夹。
+请注意，如果依赖框架的部署具有第三方依赖项，则其可移植性只与第三方依赖项相同。 例如，如果某个第三方库只支持 macOS，该应用将无法移植到 Windows 系统。 当第三方依赖项本身取决于本机代码时，也可能发生此情况。 [Kestrel 服务器](/aspnet/core/fundamentals/servers/kestrel)就是一个很好的示例，它需要 [libuv](https://github.com/libuv/libuv) 的本机依赖项。 当为具有此类第三方依赖项的应用程序创建 FDD 时，已发布的输出会针对每个本机依赖项支持（存在于 NuGet 包中）的[运行时标识符 (RID)](../rid-catalog.md#what-are-rids) 包含一个文件夹。
 
 ## <a name="simpleSelf"></a>不包含第三方依赖项的独立部署
 

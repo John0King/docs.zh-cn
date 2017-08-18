@@ -1,5 +1,5 @@
 ---
-title: "示例 XML 文档 (LINQ to XML) | Microsoft Docs"
+title: "示例 XML 文档 (LINQ to XML)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,14 +19,15 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: f84017dc60724191b7516937622fd2fb5d03c5c5
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 4fb20e2c40e6059c6bbf99b7bce5b6dd363df7a3
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="sample-xml-documents-linq-to-xml"></a>示例 XML 文档 (LINQ to XML)
-整个 [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] 文档的代码示例和代码段中均使用下面的示例文件。  
+整个 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 文档的代码示例和代码段中均使用下面的示例文件。  
   
 > [!NOTE]
 >  此处描述的示例公司、组织、产品、域名、电子邮件地址、徽标、人员、地点和事件均属虚构。 我们无意将它们与任何真实的公司、单位、产品、域名、电子邮件地址、徽标、人员、地点或事件挂钩，请勿“对号入座”。  
@@ -51,3 +52,4 @@ ms.lasthandoff: 03/13/2017
   
 ## <a name="see-also"></a>请参阅  
  [编程指南 (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)
+

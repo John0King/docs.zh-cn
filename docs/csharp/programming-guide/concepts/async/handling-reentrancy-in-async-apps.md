@@ -1,5 +1,5 @@
 ---
-title: "处理异步应用中的重新进入 (C#) | Microsoft Docs"
+title: "处理异步应用中的重新进入 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,11 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 7be76ad572be522071d9e8c2ae9cf8c770fd1fd0
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: bd51c81c9589831146942ad9f0eae3642d4678e9
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="handling-reentrancy-in-async-apps-c"></a>处理异步应用中的重新进入 (C#)
@@ -47,9 +47,9 @@ ms.lasthandoff: 03/13/2017
 >  若要运行该示例，计算机上必须安装 Visual Studio 2012 或更高版本和 .NET Framework 4.5 或更高版本。  
   
 ##  <a name="BKMK_RecognizingReentrancy"></a>识别重新进入  
- 在本主题中的示例中，用户选择“开始”****按钮以启动一个异步应用，该应用下载一系列网站并计算下载的总字节数。 该示例的同步版本以相同方式进行响应（无论用户选择该按钮多少次），因为在第一次选择之后，UI 线程会忽略这些事件，直到应用完成运行。 但是，在异步应用中，UI 线程会继续响应，你可能会在它完成之前重新进入异步操作。  
+ 在本主题中的示例中，用户选择“开始”按钮以启动一个异步应用，该应用下载一系列网站并计算下载的总字节数。 该示例的同步版本以相同方式进行响应（无论用户选择该按钮多少次），因为在第一次选择之后，UI 线程会忽略这些事件，直到应用完成运行。 但是，在异步应用中，UI 线程会继续响应，你可能会在它完成之前重新进入异步操作。  
   
- 下面的示例显示用户仅选择“开始”****按钮一次时的预期输出。 下载网站的列表会出现，其中包含每个站点的大小（以字节为单位）。 总字节数会在结尾处显示。  
+ 下面的示例显示用户仅选择“开始”按钮一次时的预期输出。 下载网站的列表会出现，其中包含每个站点的大小（以字节为单位）。 总字节数会在结尾处显示。  
   
 ```  
 1. msdn.microsoft.com/library/hh191443.aspx                83732  
@@ -108,18 +108,18 @@ TOTAL bytes returned:  890591
   
 -   [禁用“开始”按钮](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)  
   
-     在操作运行期间禁用“开始”****按钮，以便用户无法中断它。  
+     在操作运行期间禁用“开始”按钮，以便用户无法中断它。  
   
 -   [取消和重启操作](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)  
   
-     当用户再次选择“开始”****按钮时取消仍在运行的任何操作，然后让最近请求的操作继续运行。  
+     当用户再次选择“开始”按钮时取消仍在运行的任何操作，然后让最近请求的操作继续运行。  
   
 -   [运行多个操作并将输出排入队列](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)  
   
      允许所有请求的操作异步运行，但是会协调输出的显示，以便每个操作的结果按顺序一起显示。  
   
 ###  <a name="BKMK_DisableTheStartButton"></a>禁用“开始”按钮  
- 可以通过在 `StartButton_Click` 事件处理程序顶部禁用“开始”****按钮，在操作运行期间阻止该按钮。 随后可以在操作完成时从 `finally` 块中重新启用中该按钮，以便用户可以再次运行应用。  
+ 可以通过在 `StartButton_Click` 事件处理程序顶部禁用“开始”按钮，在操作运行期间阻止该按钮。 随后可以在操作完成时从 `finally` 块中重新启用中该按钮，以便用户可以再次运行应用。  
   
  下面的代码演示了这些更改（使用星号标记）。 可以将更改添加到本主题末尾的代码中，或从[异步示例：.NET 桌面应用中的重新进入](http://go.microsoft.com/fwlink/?LinkId=266571)下载已完成的应用。 项目名是 DisableStartButton。  
   
@@ -151,13 +151,13 @@ private async void StartButton_Click(object sender, RoutedEventArgs e)
  由于进行了这些更改，所以该按钮在 `AccessTheWebAsync` 下载网站期间不会进行响应，因此无法重新进入该进程。  
   
 ###  <a name="BKMK_CancelAndRestart"></a>取消和重启操作  
- 可以使“开始”****按钮保持活动状态而不是禁用该按钮，但是如果用户再次选择该按钮，则取消已在运行的操作，让最近开始的操作继续运行。  
+ 可以使“开始”按钮保持活动状态而不是禁用该按钮，但是如果用户再次选择该按钮，则取消已在运行的操作，让最近开始的操作继续运行。  
   
  有关取消的详细信息，请参阅[微调异步应用程序 (C#)](../../../../csharp/programming-guide/concepts/async/fine-tuning-your-async-application.md)。  
   
  若要设置此方案，请对[检查并运行示例应用](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)中提供的基本代码进行以下更改。 还可以从[异步示例：.NET 桌面应用中的重新进入](http://go.microsoft.com/fwlink/?LinkId=266571)下载已完成的应用。 此项目的名称是 CancelAndRestart。  
   
-1.  声明 <xref:System.Threading.CancellationTokenSource> 变量 `cts`，对于所有方法均适用。  
+1.  声明 <xref:System.Threading.CancellationTokenSource> 变量 `cts`，它处于所有方法的范围内。  
   
     ```csharp  
     public partial class MainWindow : Window   // Or class MainPage  
@@ -280,7 +280,7 @@ async Task AccessTheWebAsync(CancellationToken ct)
 }     
 ```  
   
- 如果在此应用运行期间多次选择“开始”****按钮，则它应生成类似于以下输出的结果。  
+ 如果在此应用运行期间多次选择“开始”按钮，则它应生成类似于以下输出的结果。  
   
 ```  
 1. msdn.microsoft.com/library/hh191443.aspx                83732  
@@ -311,13 +311,13 @@ TOTAL bytes returned:  890591
  若要消除部分列表，请对 `StartButton_Click` 中的第一行代码取消注释以在用户每次重新启动操作时清除文本框。  
   
 ###  <a name="BKMK_RunMultipleOperations"></a>运行多个操作并将输出排入队列  
- 此第三个示例最复杂，因为应用会在用户每次选择“开始”****按钮时启动另一个异步操作，并且所有操作都会运行到完成。 所有请求的操作以异步方式从列表中下载网站，但是操作的输出会按顺序呈现。 也就是说，实际下载活动是交错进行的（如[识别重新进入](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)中的输出所示），但是每个组的结果列表会分开呈现。  
+ 此第三个示例最复杂，因为应用会在用户每次选择“开始”按钮时启动另一个异步操作，并且所有操作都会运行到完成。 所有请求的操作以异步方式从列表中下载网站，但是操作的输出会按顺序呈现。 也就是说，实际下载活动是交错进行的（如[识别重新进入](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)中的输出所示），但是每个组的结果列表会分开呈现。  
   
- 操作会共享一个全局 <xref:System.Threading.Tasks.Task> `pendingWork`，它用作显示进程的守卫。  
+ 操作会共享一个全局 <xref:System.Threading.Tasks.Task> (`pendingWork`)，它用作显示进程的守卫。  
   
  可以通过将更改粘贴到[生成应用](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)中的代码来运行此示例，也可以按照[下载应用](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)中的说明下载示例，然后运行 QueueResults 项目。  
   
- 下面的输出显示用户仅选择“开始”****按钮一次时的结果。 字母标签 A 指示结果来自首次选择“开始”****按钮。 编号显示下载目标列表中 URL 的顺序。  
+ 下面的输出显示用户仅选择“开始”按钮一次时的结果。 字母标签 A 指示结果来自首次选择“开始”按钮。 编号显示下载目标列表中 URL 的顺序。  
   
 ```  
 #Starting group A.  
@@ -337,7 +337,7 @@ TOTAL bytes returned:  918876
 #Group A is complete.  
 ```  
   
- 如果用户选择“开始”****按钮三次，则应用会生成类似于以下各行的输出。 以井号 (#) 开头的信息行会跟踪应用程序的进度。  
+ 如果用户选择“开始”按钮三次，则应用会生成类似于以下各行的输出。 以井号 (#) 开头的信息行会跟踪应用程序的进度。  
   
 ```  
 #Starting group A.  
@@ -411,7 +411,7 @@ public partial class MainWindow : Window  // Class MainPage in Windows Store app
  `Task` 变量 `pendingWork` 会监视显示进程并防止任何组中断另一个组的显示操作。 字符变量 `group` 标记来自不同组的输出以验证结果是否按预期顺序出现。  
   
 #### <a name="the-click-event-handler"></a>单击事件处理程序  
- 事件处理程序 `StartButton_Click` 会在用户每次选择“开始”****按钮时增加组号。 随后处理程序会调用 `AccessTheWebAsync` 以运行下载操作。  
+ 事件处理程序 `StartButton_Click` 会在用户每次选择“开始”按钮时增加组号。 随后处理程序会调用 `AccessTheWebAsync` 以运行下载操作。  
   
 ```csharp  
 private async void StartButton_Click(object sender, RoutedEventArgs e)  
@@ -568,7 +568,7 @@ private async Task FinishOneGroupAsync(List<string> urls, Task<byte[]>[] content
   
 4.  导航到保存解压缩的示例代码的文件夹，然后打开解决方案 (.sln) 文件。  
   
-5.  在“解决方案资源管理器”****中，打开要运行的项目的快捷菜单，然后选择“设置为 StartUpProject”****。  
+5.  在“解决方案资源管理器”中，打开要运行的项目的快捷菜单，然后选择“设置为 StartUpProject”。  
   
 6.  选择 CTRL+F5 键以生成并运行项目。  
   
@@ -579,23 +579,23 @@ private async Task FinishOneGroupAsync(List<string> urls, Task<byte[]>[] content
   
 1.  启动 Visual Studio。  
   
-2.  在菜单栏上，依次选择“文件” ****、“新建” ****、“项目” ****。  
+2.  在菜单栏上，依次选择“文件” 、“新建” 、“项目” 。  
   
      **“新建项目”** 对话框随即打开。  
   
-3.  在“已安装的模板”****窗格中，展开“Visual C#”****，然后展开“Windows”****。  
+3.  在“已安装的模板”窗格中，展开“Visual C#”，然后展开“Windows”。  
   
-4.  在项目类型列表中，选择“WPF 应用程序”****。  
+4.  在项目类型列表中，选择“WPF 应用程序”。  
   
-5.  将项目命名为 `WebsiteDownloadWPF`，然后选择“确定”****按钮。  
+5.  将项目命名为 `WebsiteDownloadWPF`，然后选择“确定”按钮。  
   
-     新项目将出现在“解决方案资源管理器”****中。  
+     新项目将出现在“解决方案资源管理器”中。  
   
 6.  在 Visual Studio 代码编辑器中，选择 **“MainWindow.xaml”** 选项卡。  
   
-     如果此选项卡不可见，则在“解决方案资源管理器”****中，打开 MainWindow.xaml 的快捷菜单，然后选择“查看代码”****。  
+     如果此选项卡不可见，则在“解决方案资源管理器”中，打开 MainWindow.xaml 的快捷菜单，然后选择“查看代码”。  
   
-7.  在 MainWindow.xaml 的“XAML”****视图中，将代码替换为以下代码。  
+7.  在 MainWindow.xaml 的“XAML”视图中，将代码替换为以下代码。  
   
     ```csharp  
     <Window x:Class="WebsiteDownloadWPF.MainWindow"  
@@ -613,11 +613,11 @@ private async Task FinishOneGroupAsync(List<string> urls, Task<byte[]>[] content
     </Window>  
     ```  
   
-     MainWindow.xaml 的“设计”****视图中将显示一个简单的窗口，其中包含一个文本框和一个按钮。  
+     MainWindow.xaml 的“设计”视图中将显示一个简单的窗口，其中包含一个文本框和一个按钮。  
   
-8.  添加 <xref:System.Net.Http> 的引用。  
+8.  对 <xref:System.Net.Http> 添加引用。  
   
-9. 在“解决方案资源管理器”****中，打开 MainWindow.xaml.cs 的快捷菜单，然后选择“查看代码”****。  
+9. 在“解决方案资源管理器”中，打开 MainWindow.xaml.cs 的快捷菜单，然后选择“查看代码”。  
   
 10. 在 MainWindow.xaml.cs 中，将代码替换为以下代码。  
   
@@ -724,7 +724,7 @@ private async Task FinishOneGroupAsync(List<string> urls, Task<byte[]>[] content
     }  
     ```  
   
-11. 选择 CTRL+F5 键以运行程序，然后多次选择“开始”****按钮。  
+11. 选择 CTRL+F5 键以运行程序，然后多次选择“开始”按钮。  
   
 12. 从[禁用“开始”按钮](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)、[取消并重启操作](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)或[运行多个操作并将输出排入队列](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)中进行更改以处理重新进入。  
   

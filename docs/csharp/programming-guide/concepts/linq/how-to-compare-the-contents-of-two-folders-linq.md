@@ -1,5 +1,5 @@
 ---
-title: "如何：比较两个文件夹的内容 (LINQ) (C#) | Microsoft Docs"
+title: "如何：比较两个文件夹的内容 (LINQ) (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,10 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: a4738ae0c6bd4e29ca21cee51459c83e311a3ad7
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 4c53e79b02df5135daaf8e92fae6681d64d3b5df
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-compare-the-contents-of-two-folders-linq-c"></a>如何：比较两个文件夹的内容 (LINQ) (C#)
@@ -147,3 +148,4 @@ namespace QueryCompareTwoDirs
 ## <a name="see-also"></a>请参阅  
  [LINQ to Objects (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)   
  [LINQ 和文件目录 (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-file-directories.md)
+

@@ -1,153 +1,132 @@
 {
-  "metadata": [
-    {
-      "src": [
-        {
-          "files": [
-            "corefx/src/**/ref/**/*.csproj",
-            "wcf/src/**/ref/**/*.csproj"
-          ],
-          "exclude": [ "**/bin/**", "**/obj/**"],
-          "cwd": ".."
-        }
-      ],
-      "dest": "api"
-    },
-    {
-      "src": [
-        {
-          "files": [
-            "corefx/src/**/src/**/*.csproj",
-            "wcf/src/**/src/**/*.csproj",
-            "coreclr/src/mscorlib/System.Private.CoreLib.csproj"
-          ],
-          "exclude": [ "**/bin/**", "**/obj/**"],
-          "cwd": ".."
-        }
-      ],
-      "dest": "api_src"
-    }
-  ],
   "build": {
-    "content":
-      [
-        {
-          "files": ["*.yml"],
-          "src": "api_ref",
-          "dest": "core/api"
-        },
-        {
-          "files": ["**/*.md"],
-          "src": "docs",
-          "dest": ".",
-          "exclude": [
-	"**/includes/**", 
-	"***/contributing.md",
-	"framework/add-ins/**",
-	"framework/additional-apis/**",
-	"framework/app-domains/**",
-	"framework/common-client-technologies/**",
-	"framework/configure-apps/**",
-	"framework/data/**",
-	"framework/debug-trace-profile/**",
-	"framework/deployment/**",
-	"framework/install/**",
-	"framework/interop/**",
-	"framework/mef/**",
-	"framework/misc/**",
-	"framework/net-native/**",
-	"framework/network-programming/**",
-	"framework/performance/**",
-	"framework/reflection-and-codedom/**",
-	"framework/resources/**",
-	"framework/security/**",
-	"framework/serialization/**",
-	"framework/tools/**",
-	"framework/ui-automation/**",
-	"framework/unmanaged-api/**",
-	"framework/wcf/diagnostics/**",
-	"framework/windows-services/**",
-	"framework/windows-workflow-foundation/**",
-	"framework/winforms/**",
-	"framework/wpf/**",
-	"framework/xaml-services/**",
-	"standard/asynchronous-programming-patterns/**",
-	"standard/attributes/**",
-	"standard/base-types/**",
-	"standard/cross-platform/**",
-	"standard/data/**",
-	"standard/datetime/**",
-	"standard/design-guidelines/**",
-	"standard/events/**",
-	"standard/exceptions/**",
-	"standard/garbage-collection/**",
-	"standard/generics/**",
-	"standard/globalization-localization/**",
-	"standard/io/**",
-	"standard/parallel-programming/**",
-	"standard/security/**",
-	"standard/threading/**",
-	"csharp/misc/**",
-	"visual-basic/developing-apps/customizing-extending-my/**",
-	"visual-basic/developing-apps/development-with-my/**",
-	"visual-basic/developing-apps/includes/**",
-	"visual-basic/developing-apps/printing/**",
-	"visual-basic/developing-apps/using-ide/**",
-	"visual-basic/developing-apps/windows-forms/**",
-	"visual-basic/language-reference/**",
-	"visual-basic/misc/**",
-	"visual-basic/programming-guide/**",
-	"visual-basic/reference/**"
-	] 
-        },
-        {
-          "files": ["*.md"],
-          "src": "api",
-          "dest": "core/api"
-        },
-        {
-          "files": ["toc.yml", "index.md"]
-        }
-      ],
-    "resource":
-      [
-        {
-          "files": [
-            "images/**", 
-            "**/*.png",
-            "**/*.svg",            
-            "**/*.jpg",
-            "**/*.gif",
-            "**/*.bmp"
-          ],
-          "src": "docs",
-          "dest": ".",
-          "exclude": [
-            "**/obj/**",
-            "_themes/DocPacker/**"
-          ]
-        }
-      ],
-    "overwrite": "apidoc/*.md",
+    "markdownEngineName": "dfm-latest",
+    "content": [
+      {
+        "files": [
+          "api/**/*.yml",
+          "api/**/*.md"
+        ],
+        "exclude": [
+          "api/overwrites/**",
+          "samples/**/*.*",
+          "**/includes/**",
+          "***/contributing.md"
+        ]
+      },
+      {
+        "files": [ 
+          "**/*.md" 
+        ],
+        "src": "docs",
+        "dest": ".",
+        "exclude": [
+          "toc.md",
+          "**/includes/**",
+          "***/contributing.md",
+          "framework/add-ins/**",
+          "framework/additional-apis/**",
+          "framework/app-domains/**",
+          "framework/common-client-technologies/**",
+          "framework/configure-apps/**",
+          "framework/data/**",
+          "framework/debug-trace-profile/**",
+          "framework/deployment/**",
+          "framework/install/**",
+          "framework/interop/**",
+          "framework/mef/**",
+          "framework/misc/**",
+          "framework/net-native/**",
+          "framework/network-programming/**",
+          "framework/performance/**",
+          "framework/reflection-and-codedom/**",
+          "framework/resources/**",
+          "framework/security/**",
+          "framework/serialization/**",
+          "framework/tools/**",
+          "framework/ui-automation/**",
+          "framework/unmanaged-api/**",
+          "framework/wcf/diagnostics/**",
+          "framework/windows-services/**",
+          "framework/windows-workflow-foundation/**",
+          "framework/winforms/**",
+          "framework/wpf/**",
+          "framework/xaml-services/**",
+          "standard/asynchronous-programming-patterns/**",
+          "standard/attributes/**",
+          "standard/base-types/**",
+          "standard/cross-platform/**",
+          "standard/data/**",
+          "standard/datetime/**",
+          "standard/design-guidelines/**",
+          "standard/events/**",
+          "standard/exceptions/**",
+          "standard/garbage-collection/**",
+          "standard/generics/**",
+          "standard/globalization-localization/**",
+          "standard/io/**",
+          "standard/parallel-programming/**",
+          "standard/security/**",
+          "standard/threading/**",
+          "csharp/misc/**",
+          "visual-basic/developing-apps/customizing-extending-my/**",
+          "visual-basic/developing-apps/development-with-my/**",
+          "visual-basic/developing-apps/includes/**",
+          "visual-basic/developing-apps/printing/**",
+          "visual-basic/developing-apps/using-ide/**",
+          "visual-basic/developing-apps/windows-forms/**",
+          "visual-basic/language-reference/**",
+          "visual-basic/misc/**",
+          "visual-basic/programming-guide/**",
+          "visual-basic/reference/**"
+        ]
+      },
+      {
+        "files": ["docs/toc.md",  "toc.yml", "index.md" ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**",
+          "**/*.png",
+          "**/*.svg",
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.bmp"
+        ],
+        "src": "docs",
+        "dest": ".",
+        "exclude": [
+          "**/obj/**",
+          "_themes/DocPacker/**"
+        ]
+      }
+    ],
+    "overwrite": {
+      "files": [
+        "api/overwrites/**/*.md",
+        "apidoc/*.md"
+      ]
+    },
     "externalReference": [
     ],
     "globalMetadata": {
       "breadcrumb_path": "/dotnet/toc.json",
-      "_displayLangs": ["csharp"],
+      "_displayLangs": [ "csharp" ],
       "author": "dotnet-bot",
       "ms.author": "dotnetcontent",
       "manager": "wpickett",
-      "searchScope": [".NET"],
-      "uhfHeaderId": "MSDocsHeader-DotNet"
+      "searchScope": [ ".NET" ],
+      "uhfHeaderId": "MSDocsHeader-DotNet",
+      "apiPlatform": "dotnet"
     },
     "fileMetadata": {
-      "ms.prod":
-      {
-        "api_ref/**.yml": ".net"
+      "ms.prod": {
+        "api/**.yml": ".net"
       },
-      "ms.topic":
-      {
-        "api_ref/**.yml": "managed-reference"
+      "ms.topic": {
+        "api/**.yml": "managed-reference"
       }
     },
     "dest": "_site",

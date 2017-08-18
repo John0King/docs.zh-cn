@@ -1,5 +1,5 @@
 ---
-title: "如何：在 Visual Basic 中创建注册表项并设置其值 | Microsoft Docs"
+title: "如何：在 Visual Basic 中创建注册表项并设置其值"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -37,11 +37,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: 28a01911dc715483aee8191972387781a6f1933e
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 106a98a1b15c37eb2cac05e1a681bf7dfed3543d
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-create-a-registry-key-and-set-its-value-in-visual-basic"></a>如何：在 Visual Basic 中创建注册表项并设置其值
@@ -102,3 +102,4 @@ ms.lasthandoff: 05/22/2017
  <xref:Microsoft.Win32.RegistryKey.CreateSubKey%2A>   
  [读取和写入注册表](../../../../visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md)   
  [代码访问安全性基础知识](https://msdn.microsoft.com/library/33tceax8)
+

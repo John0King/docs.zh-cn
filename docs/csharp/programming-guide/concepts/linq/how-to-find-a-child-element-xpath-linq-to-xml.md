@@ -1,5 +1,5 @@
 ---
-title: "如何：查找子元素 (XPath-LINQ to XML) (C#) | Microsoft 文档"
+title: "如何：查找子元素 (XPath-LINQ to XML) (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,15 +14,15 @@ ms.assetid: 4fa6182d-6196-4ed1-9c9e-82949ff89c71
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: b788d6dbd44f8ed01fe65a18fb25d8e3a0592220
-ms.lasthandoff: 03/13/2017
-
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 8950b74ff05b7a5383a570c971161f88a261d7ea
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-find-a-child-element-xpath-linq-to-xml-c"></a>如何：查找子元素 (XPath-LINQ to XML) (C#)
-本主题比较 XPath 子元素轴与 [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] <xref:System.Xml.Linq.XContainer.Element%2A> 方法。  
+本主题将 XPath 子元素轴与 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] <xref:System.Xml.Linq.XContainer.Element%2A> 方法进行比较。  
   
  XPath 表达式为 `DeliveryNotes`。  
   
@@ -59,3 +59,4 @@ Results are identical
   
 ## <a name="see-also"></a>请参阅  
  [针对 XPath 用户的 LINQ to XML (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)
+

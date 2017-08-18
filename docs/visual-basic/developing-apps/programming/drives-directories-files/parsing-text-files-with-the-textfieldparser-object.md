@@ -1,5 +1,5 @@
 ---
-title: "使用 TextFieldParser 对象分析文本文件 (Visual Basic) | Microsoft 文档"
+title: "使用 TextFieldParser 对象分析文本文件 (Visual Basic)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -32,11 +32,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: a686058d97d499b3baf32b20b56834162200f346
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: ad7407ca1928f9b4a2405bc5831777fbf965b61f
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="parsing-text-files-with-the-textfieldparser-object-visual-basic"></a>使用 TextFieldParser 对象分析文本文件 (Visual Basic)
@@ -74,3 +74,4 @@ ms.lasthandoff: 05/22/2017
  <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.TrimWhiteSpace%2A>   
  <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.SetDelimiters%2A>   
  <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.SetFieldWidths%2A>
+

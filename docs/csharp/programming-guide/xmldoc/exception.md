@@ -1,5 +1,5 @@
 ---
-title: "&lt;exception&gt;（C# 编程指南）| Microsoft Docs"
+title: "&lt;exception&gt;（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -31,11 +31,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 2ab14da86cd85eabda58aa2e1177f9f8136e3ee2
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: bdcbe116db4ed0f63ea73c524c482266b4ac1a38
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="ltexceptiongt-c-programming-guide"></a>&lt;exception&gt;（C# 编程指南）
@@ -67,3 +67,4 @@ ms.lasthandoff: 03/13/2017
 ## <a name="see-also"></a>另请参阅  
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [建议的文档注释标记](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)
+

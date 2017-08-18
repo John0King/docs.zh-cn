@@ -1,5 +1,5 @@
 ---
-title: "char（C# 参考）| Microsoft Docs"
+title: "char（C# 参考）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -31,10 +31,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: bf4c71d6f33d66e5ca917f2cfeb6c882b19b9d22
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: c6601a58804d6ecfcbedbc19da09560884e54e7f
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="char-c-reference"></a>char（C# 参考）
@@ -54,10 +55,10 @@ ms.lasthandoff: 03/13/2017
 ## <a name="conversions"></a>转换  
  `char` 可隐式转换为 [ushort](../../../csharp/language-reference/keywords/ushort.md)、[int](../../../csharp/language-reference/keywords/int.md)、[uint](../../../csharp/language-reference/keywords/uint.md)、[long](../../../csharp/language-reference/keywords/long.md)、[ulong](../../../csharp/language-reference/keywords/ulong.md)、[float](../../../csharp/language-reference/keywords/float.md)、[double](../../../csharp/language-reference/keywords/double.md) 或 [decimal](../../../csharp/language-reference/keywords/decimal.md)。 但是无法将其他类型隐式转换为 `char` 类型。  
   
- <xref:System.Char?displayProperty=fullName> 类型提供几种静态方法，用于处理 `char` 值。  
+ <xref:System.Char?displayProperty=fullName> 类型提供多种适用于 `char` 值的静态方法。  
   
 ## <a name="c-language-specification"></a>C# 语言规范  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## <a name="see-also"></a>另请参阅  
  <xref:System.Char>   
@@ -70,3 +71,4 @@ ms.lasthandoff: 03/13/2017
  [显式数值转换表](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)   
  [可以为 null 的类型](../../../csharp/programming-guide/nullable-types/index.md)   
  [字符串](../../../csharp/programming-guide/strings/index.md)
+

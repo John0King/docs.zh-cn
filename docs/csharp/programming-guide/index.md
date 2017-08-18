@@ -1,6 +1,6 @@
 ---
-title: "C# 编程指南 | Microsoft 文档"
-ms.date: 2015-07-20
+title: "C# 编程指南"
+ms.date: 2017-05-02
 ms.prod: .net
 ms.technology:
 - devlang-csharp
@@ -32,43 +32,46 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 4a4c3f5dbe375f723b70f62ccee1a91d577f4949
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 073c0600840ccc802b0481bf0023a6099821bec3
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="c-programming-guide"></a>C# 编程指南
 此部分详细介绍了 C# 语言主要功能，以及通过 .NET Framework 可以在 C# 中使用的功能。  
   
- 阅读此部分的大部分内容的前提是，你已对 C# 和一般编程概念有一定的了解。 如果是完完全全的编程或 C# 初学者，不妨访问 [C# 开发者中心](http://go.microsoft.com/fwlink/?linkid=95125)，其中收录了许多教程、示例和视频，可帮助你入门。  
+ 阅读此部分的大部分内容的前提是，你已对 C# 和一般编程概念有一定的了解。 如果你完全是编程或 C# 的初学者，请先参阅 [C# 入门](https://www.microsoft.com/net/tutorials/csharp/getting-started)互动教程，此教程不需要具备任何编程知识。  
   
- 若要了解特定的关键字、运算符和预处理器指令，请参阅 [C# 参考](../../csharp/language-reference/index.md)。 若要了解 C# 语言规范，请参阅 [C# 语言规范](../../csharp/language-reference/language-specification.md)。  
+ 若要了解特定的关键字、运算符和预处理器指令，请参阅 [C# 参考](../../csharp/language-reference/index.md)。 若要了解 C# 语言规范，请参阅 [C# 语言规范](../../csharp/language-reference/language-specification/index.md)。  
   
+## <a name="program-sections"></a>程序部分
+
+[在 C# 程序内部](../../csharp/programming-guide/inside-a-program/index.md)  
+  
+[Main() 和命令行参数](../../csharp/programming-guide/main-and-command-args/index.md)  
+ 
 ## <a name="language-sections"></a>语言部分  
- [在 C# 程序内部](../../csharp/programming-guide/inside-a-program/index.md)  
-  
- [Main() 和命令行参数](../../csharp/programming-guide/main-and-command-args/index.md)  
-  
+[语句、表达式和运算符](../../csharp/programming-guide/statements-expressions-operators/index.md)  
+
  [类型](../../csharp/programming-guide/types/index.md)  
+
+ [类和结构](../../csharp/programming-guide/classes-and-structs/index.md)  
   
+ [接口](../../csharp/programming-guide/interfaces/index.md)  
+
+ [枚举类型](../../csharp/programming-guide/enumeration-types.md)  
+  
+ [委托](../../csharp/programming-guide/delegates/index.md)  
+ 
  [阵列](../../csharp/programming-guide/arrays/index.md)  
   
  [字符串](../../csharp/programming-guide/strings/index.md)  
   
- [语句、表达式和运算符](../../csharp/programming-guide/statements-expressions-operators/index.md)  
-  
- [类和结构](../../csharp/programming-guide/classes-and-structs/index.md)  
-  
  [属性](../../csharp/programming-guide/classes-and-structs/properties.md)  
   
- [接口](../../csharp/programming-guide/interfaces/index.md)  
-  
  [索引器](../../csharp/programming-guide/indexers/index.md)  
-  
- [枚举类型](../../csharp/programming-guide/enumeration-types.md)  
-  
- [委托](../../csharp/programming-guide/delegates/index.md)  
   
  [事件](../../csharp/programming-guide/events/index.md)  
   
@@ -105,9 +108,7 @@ ms.lasthandoff: 03/13/2017
   
  [反射](../../csharp/programming-guide/concepts/reflection.md)  
   
-## <a name="featured-book-chapter"></a>重要章节  
- [C# 3.0 概述（第三版）：桌面快速参考](http://go.microsoft.com/fwlink/?LinkId=195406)中的[高级 C#](http://go.microsoft.com/fwlink/?LinkId=195407)  
-  
 ## <a name="see-also"></a>另请参阅  
  [C# 参考](../../csharp/language-reference/index.md)   
  [C#](../../csharp/csharp.md)
+

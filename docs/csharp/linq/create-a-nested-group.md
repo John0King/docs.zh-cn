@@ -11,10 +11,11 @@ ms.prod: .net-core
 ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: e9f00708-362e-4d13-98c5-d77549347ba0
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: ff2c0c00ab23346cbaa3ba7c36a0cba25e03b89b
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 361ac1f224c6eef292fcf8434c7e465c9448b19c
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="create-a-nested-group"></a>创建嵌套组
@@ -32,3 +33,4 @@ ms.lasthandoff: 03/13/2017
   
 ## <a name="see-also"></a>另请参阅  
  [LINQ 查询表达式](index.md)
+

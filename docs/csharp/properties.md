@@ -1,7 +1,7 @@
 ---
 title: "属性"
-description: "属性"
-keywords: ".NET、.NET Core"
+description: "了解 C# 属性，包括验证功能、计算值、迟缓计算及属性更改通知。"
+keywords: .NET, .NET Core
 author: BillWagner
 ms.author: wiwagn
 ms.date: 04/03/2017
@@ -10,11 +10,11 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 6950d25a-bba1-4744-b7c7-a3cc90438c55
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f9eab74a3b259037aff30320753191eee95aa974
-ms.openlocfilehash: 763a76a8ea0e48fd6935c951ce584efad50dabb9
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: e5d2d5d7074678383243e687d4b469606007e585
 ms.contentlocale: zh-cn
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 

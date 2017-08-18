@@ -1,5 +1,5 @@
 ---
-title: "事件 (Visual Basic) | Microsoft 文档"
+title: "事件 (Visual Basic)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -31,20 +31,20 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
-ms.openlocfilehash: 59851175865939243260702470955fe0dea38495
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 84f8385e1b2f16c4bcfa53ef2c77e1f0cf61e5e3
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="events-visual-basic"></a>事件 (Visual Basic)
-虽然可以将 [!INCLUDE[vsprvs](../../../../csharp/includes/vsprvs_md.md)] 项目可视化为按序列执行的一系列过程，但实际上大多数程序都是事件驱动型。也就是说，外部发生的*事件*决定了执行流。  
+虽然可以将 [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] 项目可视化为按序列执行的一系列过程，但实际上大多数程序都是事件驱动型。也就是说，外部发生的*事件*决定了执行流。  
   
  事件是一种信号，可指示应用程序某重要事件已发生。 例如，当用户单击窗体控件时，窗体会引发 `Click` 事件，并调用可处理此事件的过程。 借助事件，各个不同的任务还可以相互通信。 例如，应用程序执行的排序任务与主应用程序是分开的。 如果用户取消排序，应用程序便会发送 cancel 事件，指示停止排序过程。  
   
 ## <a name="event-terms-and-concepts"></a>事件术语和概念  
- 此部分介绍了 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] 中的事件术语和概念。  
+ 此部分介绍了 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 中的事件术语和概念。  
   
 ### <a name="declaring-events"></a>声明事件  
  可以使用 `Event` 关键字在类、结构、模块和接口中声明事件，如以下示例所示：  
@@ -52,7 +52,7 @@ ms.lasthandoff: 05/10/2017
  [!code-vb[VbVbalrEvents#24](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/events_1.vb)]  
   
 ### <a name="raising-events"></a>引发事件  
- 事件类似于消息，指示某重要事件已发生。 广播消息的行为称为*引发*事件。 在 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] 中，使用 `RaiseEvent` 语句引发事件，如以下示例所示：  
+ 事件类似于消息，指示某重要事件已发生。 广播消息的行为称为*引发*事件。 在 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 中，使用 `RaiseEvent` 语句引发事件，如以下示例所示：  
   
  [!code-vb[VbVbalrEvents#25](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/events_2.vb)]  
   
@@ -64,7 +64,7 @@ ms.lasthandoff: 05/10/2017
 ### <a name="event-handlers"></a>事件处理程序  
  *事件处理程序*是在相应事件发生时调用的过程。 可以将签名一致的任意有效子例程用作事件处理程序。 不过，不能将函数用作事件处理程序，因为它不能向事件源返回值。  
   
- [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] 对事件处理程序采用标准命名约定，即名称中包含事件发送方的名称、下划线和事件名称。 例如，`button1` 按钮的 `Click` 事件将命名为 `Sub button1_Click`。  
+ [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 对事件处理程序采用标准命名约定，即名称中包含事件发送方的名称、下划线和事件名称。 例如，`button1` 按钮的 `Click` 事件将命名为 `Sub button1_Click`。  
   
 > [!NOTE]
 >  我们建议在为你自己的事件定义事件处理程序时采用此命名约定，但这不是一项强制性要求；可以命名任意有效的子例程名称。  
@@ -89,7 +89,7 @@ ms.lasthandoff: 05/10/2017
   
  虽然 `Handles` 子句是关联事件与事件处理程序的标准方法，但只能在编译时关联事件与事件处理程序。  
   
- 在某些情况下（如事件与窗体或控件相关联），[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] 会自动存根空事件处理程序，并将其与事件相关联。 例如，在设计模式下双击窗体上的命令按钮时，[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] 会为命令按钮创建空事件处理程序和 `WithEvents` 变量，如以下代码所示：  
+ 在某些情况下（如事件与窗体或控件相关联），[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 会自动存根空事件处理程序，并将其与事件相关联。 例如，在设计模式下双击窗体上的命令按钮时，[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 会为命令按钮创建空事件处理程序和 `WithEvents` 变量，如以下代码所示：  
   
  [!code-vb[VbVbalrEvents#26](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/events_4.vb)]  
   
@@ -130,6 +130,7 @@ ms.lasthandoff: 05/10/2017
 |[如何：声明自定义事件以避免阻止](../../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-avoid-blocking.md)|介绍了如何定义允许异步调用事件处理程序的自定义事件。|  
 |[如何：声明自定义事件以节省内存](../../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-conserve-memory.md)|介绍了如何定义仅在事件处理时占用内存的自定义事件。|  
 |[Visual Basic 中继承的事件处理程序疑难解答](../../../../visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers.md)|列出了在继承的组件中使用事件处理程序时遇到的常见问题。|  
-|[事件](../../../../standard/events/index.md)|概述了 [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)] 中的事件模型。|  
+|[事件](../../../../standard/events/index.md)|概述了 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 中的事件模型。|  
 |[在 Windows 窗体中创建事件处理程序](https://msdn.microsoft.com/library/dacysss4.aspx)|介绍了如何处理与 Windows 窗体对象关联的事件。|  
 |[委托](../../../../visual-basic/programming-guide/language-features/delegates/index.md)|概述了 Visual Basic 中的委托。|
+

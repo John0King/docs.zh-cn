@@ -1,5 +1,5 @@
 ---
-title: "64 位应用程序 | Microsoft Docs"
+title: "64 位应用程序"
 ms.custom: 
 ms.date: 03/30/2017
 ms.prod: .net-framework
@@ -18,11 +18,11 @@ caps.latest.revision: 53
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
-ms.openlocfilehash: 987c7063c5e6dce10233761b6e37ed102d5878a9
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 9930b44e8ab711f319140e43ad0a36d5d78a7ffb
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="64-bit-applications"></a>64 位应用程序
@@ -74,3 +74,4 @@ ms.lasthandoff: 05/10/2017
  若要确定 .exe 文件或 .dll 文件是只能在特定平台上运行还是可在 WOW64 下运行，请使用不带任何选项的 [CorFlags.exe（CorFlags 转换工具）](../../docs/framework/tools/corflags-exe-corflags-conversion-tool.md)。 您也可以使用 CorFlags.exe 更改 .exe 文件或 .dll 文件的平台状态。 Visual Studio 程序集的 CLR 头的主运行时版本号设置为 2，次运行时版本号设置为 5。 将次运行时版本设置为 0 的应用程序会被视为旧版应用程序，且始终在 WOW64 下执行。  
   
  若要以编程方式查询 .exe 或 .dll，以查看其是只能在特定平台上运行还是在 WOW64 下运行，请使用 <xref:System.Reflection.Module.GetPEKind%2A?displayProperty=fullName> 方法。
+

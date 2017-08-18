@@ -1,5 +1,5 @@
 ---
-title: "如何：调试空查询结果集 (C#) | Microsoft Docs"
+title: "如何：调试空查询结果集 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,11 +14,11 @@ ms.assetid: b569f0dc-425e-45a6-acbf-770fb761c981
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: afa7e63f4224a91c072c99d04a4851d2548166e5
-ms.lasthandoff: 03/13/2017
-
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 78c6d612e11f50bedf8f1c2e9826775494faa465
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-debug-empty-query-results-sets-c"></a>如何：调试空查询结果集 (C#)
@@ -62,7 +62,7 @@ End of result set
 ## <a name="example"></a>示例  
  本示例演示如何在命名空间中创建 XML 和一个正确编码的查询。  
   
- 解决方案是声明并初始化一个 <xref:System.Xml.Linq.XNamespace> 对象，并在指定 <xref:System.Xml.Linq.XName> 对象时使用此对象。 此时，<xref:System.Xml.Linq.XElement.Elements%2A> 方法的自变量是 <xref:System.Xml.Linq.XName> 对象。  
+ 解决方案为声明和初始化一个 <xref:System.Xml.Linq.XNamespace> 对象，并在指定 <xref:System.Xml.Linq.XName> 对象时使用该对象。 在这种情况下，<xref:System.Xml.Linq.XElement.Elements%2A> 方法的参数是一个 <xref:System.Xml.Linq.XName> 对象。  
   
 ```csharp  
 XElement root = XElement.Parse(  
@@ -96,3 +96,4 @@ End of result set
   
 ## <a name="see-also"></a>请参阅  
  [基本查询 (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)
+

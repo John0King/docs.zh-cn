@@ -1,5 +1,5 @@
 ---
-title: "如何：从 Office Open XML 文档中检索段落 (C#) | Microsoft Docs"
+title: "如何：从 Office Open XML 文档中检索段落 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,11 +14,11 @@ ms.assetid: cc2687cf-d648-451e-88ac-3847c6c967c8
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 87932173a74053aec1547ee9ebbe0e5f6187085c
-ms.lasthandoff: 03/13/2017
-
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 945fc1e2cc3d7ae57239fdc5113e87c0a1512ff8
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-retrieve-paragraphs-from-an-office-open-xml-document-c"></a>如何：从 Office Open XML 文档中检索段落 (C#)
@@ -197,3 +197,4 @@ StyleName:Code >Hello World<
   
 ## <a name="see-also"></a>请参阅  
  [高级查询技术 (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)
+

@@ -1,5 +1,5 @@
 ---
-title: "bool（C# 参考）| Microsoft Docs"
+title: "bool（C# 参考）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -30,11 +30,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: ef8cc9a0584829eeed06e7fc3c2227f0683ef413
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: f3b7455ab6b0ec780afe7d81b2ff990d47a31d20
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="bool-c-reference"></a>bool（C# 参考）
@@ -60,7 +60,7 @@ ms.lasthandoff: 03/13/2017
  [!code-cs[csrefKeywordsTypes#3](../../../csharp/language-reference/keywords/codesnippet/CSharp/bool_3.cs)]  
   
 ## <a name="example"></a>示例  
- 在此例中，你通过键盘输入一个字符，然后程序检查输入的字符是否是一个字母。 如果字符是一个字母，则程序检查它是大写还是小写。 这些检查是使用 <xref:System.Char.IsLetter%2A> 和 <xref:System.Char.IsLower%2A>（两者均返回 `bool` 类型）来执行的：  
+ 在此例中，你通过键盘输入一个字符，然后程序检查输入的字符是否是一个字母。 如果字符是一个字母，则程序检查它是大写还是小写。 执行这些检查使用的是 <xref:System.Char.IsLetter%2A> 和 <xref:System.Char.IsLower%2A>，二者均返回 `bool` 类型：  
   
  [!code-cs[csrefKeywordsTypes#4](../../../csharp/language-reference/keywords/codesnippet/CSharp/bool_4.cs)]  
   
@@ -75,3 +75,4 @@ ms.lasthandoff: 03/13/2017
  [内置类型表](../../../csharp/language-reference/keywords/built-in-types-table.md)   
  [隐式数值转换表](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)   
  [显式数值转换表](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)
+

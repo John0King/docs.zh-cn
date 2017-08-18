@@ -1,5 +1,5 @@
 ---
-title: "通用属性 (C#) | Microsoft Docs"
+title: "通用属性 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,10 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: bafcb0a9a81d97e060acca38b7c0bfca23efdaad
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 98bb21ef0b5582202578b72fd6eaf459801747cc
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="common-attributes-c"></a>通用属性 (C#)
@@ -37,7 +38,7 @@ ms.lasthandoff: 03/13/2017
 -   [调用方信息特性](#CallerInfo)  
   
 ##  <a name="Global"></a> 全局特性  
- 大多数特性应用于特定语言元素，如类或方法；但是，一些特性是全局特性 - 它们应用于整个程序集或模块。 例如，<xref:System.Reflection.AssemblyVersionAttribute> 特性可用于将版本信息嵌入程序集，如下所示：  
+ 大多数特性应用于特定语言元素，如类或方法；但是，一些特性是全局特性 - 它们应用于整个程序集或模块。 例如，<xref:System.Reflection.AssemblyVersionAttribute> 属性可用于将版本信息嵌入程序集，如下所示：  
   
 ```csharp  
 [assembly: AssemblyVersion("1.0.0.0")]  
@@ -54,7 +55,7 @@ ms.lasthandoff: 03/13/2017
 -   程序集清单特性  
   
 ### <a name="assembly-identity-attributes"></a>程序集标识特性。  
- 三个特性（与强名称（如果适用））组合起来可以确定程序集的标识：名称、版本和区域性。 这些特性构成程序集的全名，在代码中引用程序集时必需使用。 可使用特性设置程序集的版本和区域性。 但是，创建程序集时，根据包含程序集清单的文件，由编译器、[程序集信息对话框](https://docs.microsoft.com/visualstudio/ide/reference/assembly-information-dialog-box)中的 Visual Studio IDE 或程序集链接器 (Al.exe) 设置名称值。 <xref:System.Reflection.AssemblyFlagsAttribute> 特性指定程序集的多个副本是否可以共存。  
+ 三个特性（与强名称（如果适用））组合起来可以确定程序集的标识：名称、版本和区域性。 这些特性构成程序集的全名，在代码中引用程序集时必需使用。 可使用特性设置程序集的版本和区域性。 但是，创建程序集时，根据包含程序集清单的文件，由编译器、[程序集信息对话框](/visualstudio/ide/reference/assembly-information-dialog-box)中的 Visual Studio IDE 或程序集链接器 (Al.exe) 设置名称值。 <xref:System.Reflection.AssemblyFlagsAttribute> 属性指定程序集的多个副本是否可以共存。  
   
  下表显示标识特性。  
   
@@ -66,7 +67,7 @@ ms.lasthandoff: 03/13/2017
 |<xref:System.Reflection.AssemblyFlagsAttribute>|指定程序集是否支持在同一计算机上、同一进程中或同一应用程序域中并行执行。|  
   
 ### <a name="informational-attributes"></a>信息性特性  
- 信息性特性可用于提供程序集的其他公司或产品信息。 下表显示了在 <xref:System.Reflection?displayProperty=fullName> 命名空间中定义的信息性特性。  
+ 信息性特性可用于提供程序集的其他公司或产品信息。 下表显示 <xref:System.Reflection?displayProperty=fullName> 命名空间中定义的信息性属性。  
   
 |特性|目标|  
 |---------------|-------------|  
@@ -79,7 +80,7 @@ ms.lasthandoff: 03/13/2017
 |<xref:System.CLSCompliantAttribute>|指示程序集是否符合公共语言规范 (CLS)。|  
   
 ### <a name="assembly-manifest-attributes"></a>程序集清单特性  
- 程序集清单特性可用于提供程序集清单中的信息。 这些信息包括标题、说明、默认别名和配置。 下表显示了在 <xref:System.Reflection?displayProperty=fullName> 命名空间中定义的程序集清单特性。  
+ 程序集清单特性可用于提供程序集清单中的信息。 这些信息包括标题、说明、默认别名和配置。 下表显示 <xref:System.Reflection?displayProperty=fullName> 命名空间中定义的程序集清单属性。  
   
 |特性|目标|  
 |---------------|-------------|  
@@ -128,7 +129,7 @@ b.NewMethod();
  `Obsolete` 特性是一次性特性，可以应用于任何允许特性的实体。 `Obsolete` 是 <xref:System.ObsoleteAttribute> 的别名。  
   
 ##  <a name="Conditional"></a> Conditional 特性  
- `Conditional` 特性使得方法执行依赖于预处理标识符。 `Conditional` 特性是 <xref:System.Diagnostics.ConditionalAttribute> 的别名，可以应用于方法或特性类。  
+ `Conditional` 特性使得方法执行依赖于预处理标识符。 `Conditional` 属性是 <xref:System.Diagnostics.ConditionalAttribute> 的别名，可以应用于方法或特性类。  
   
  在此示例中，`Conditional` 应用于启用或禁用显示特定于程序的诊断信息的方法：  
   
@@ -233,7 +234,7 @@ class SampleClass
 ##  <a name="CallerInfo"></a>调用方信息特性  
  通过使用调用方信息特性，可获取有关方法的调用方的信息。 可以获取源代码的文件路径、源代码中的行号和调用方的成员名称。  
   
- 若要获取成员调用方信息，可以使用应用于可选参数的特性。 每个可选参数指定一个默认值。 下表列出了在 <xref:System.Runtime.CompilerServices?displayProperty=fullName> 命名空间中定义的调用方信息特性：  
+ 若要获取成员调用方信息，可以使用应用于可选参数的特性。 每个可选参数指定一个默认值。 下表列出在 <xref:System.Runtime.CompilerServices?displayProperty=fullName> 命名空间中定义的调用方信息特性：  
   
 |特性|描述|类型|  
 |---|---|---|  
@@ -250,3 +251,4 @@ class SampleClass
  [特性](https://msdn.microsoft.com/library/5x6cd29c)   
  [反射 (C#)](../../../../csharp/programming-guide/concepts/reflection.md)   
  [使用反射访问特性 (C#)](../../../../csharp/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)
+

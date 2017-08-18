@@ -1,5 +1,5 @@
 ---
-title: "MageUI.exe（图形化客户端中的清单生成和编辑工具）| Microsoft Docs"
+title: "MageUI.exe（图形化客户端中的清单生成和编辑工具）"
 ms.custom: 
 ms.date: 03/30/2017
 ms.prod: .net-framework
@@ -22,11 +22,11 @@ caps.latest.revision: 38
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: wpickett
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
-ms.openlocfilehash: acd994c4b36200a924c537750f7e8b14a24d06c8
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: f6daa65c15a35bc84d8d7c07a86f42ffd251274d
 ms.contentlocale: zh-cn
-ms.lasthandoff: 06/02/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="mageuiexe-manifest-generation-and-editing-tool-graphical-client"></a>MageUI.exe（图形化客户端中的清单生成和编辑工具）
@@ -210,3 +210,4 @@ ms.lasthandoff: 06/02/2017
  [ClickOnce 安全和部署](/visualstudio/deployment/clickonce-security-and-deployment)   
  [演练：手动部署 ClickOnce 应用程序](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application)   
  [Mage.exe（清单生成和编辑工具）](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md)
+

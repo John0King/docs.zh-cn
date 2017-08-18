@@ -1,5 +1,5 @@
 ---
-title: "接口（C# 参考）| Microsoft Docs"
+title: "接口（C# 参考）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -29,11 +29,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 84759153ebfc77ba6d39e1b3c47a00a083f267c0
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 126e674a2c56f04f54f35a011c24ebf0f713ee8d
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="interface-c-reference"></a>接口（C# 参考）
@@ -81,3 +81,4 @@ ms.lasthandoff: 03/13/2017
  [类](../../../csharp/language-reference/keywords/class.md)   
  [结构](../../../csharp/language-reference/keywords/struct.md)   
  [接口](../../../csharp/programming-guide/interfaces/index.md)
+

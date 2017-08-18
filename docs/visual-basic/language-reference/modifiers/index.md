@@ -1,25 +1,42 @@
 ---
-title: "修饰符 (Visual Basic) | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
+title: "修饰符 (Visual Basic)"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
 ms.assetid: a49a0e51-d700-4705-9196-3e0eb582dda6
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 12
----
-# 修饰符 (Visual Basic)
-[!INCLUDE[vs2017banner](../../../visual-basic/includes/vs2017banner.md)]
+author: dotnet-bot
+ms.author: dotnetcontent
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 99618381c1267647e07d9acc64693dcc5def6f3a
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
+---
+# <a name="modifiers-visual-basic"></a>修饰符 (Visual Basic)
 本节中的主题介绍 Visual Basic 运行时修饰符。  
   
-## 本节内容  
+## <a name="in-this-section"></a>本节内容  
  [Ansi](../../../visual-basic/language-reference/modifiers/ansi.md)  
   
  [Assembly](../../../visual-basic/language-reference/modifiers/assembly.md)  
@@ -32,17 +49,17 @@ caps.handback.revision: 12
   
  [ByVal](../../../visual-basic/language-reference/modifiers/byval.md)  
   
- [Default](../../../visual-basic/language-reference/modifiers/default.md)  
+ [默认](../../../visual-basic/language-reference/modifiers/default.md)  
   
  [Friend](../../../visual-basic/language-reference/modifiers/friend.md)  
   
  [In](../../../visual-basic/language-reference/modifiers/in-generic-modifier.md)  
   
- [迭代器](../../../visual-basic/language-reference/modifiers/iterator.md)  
+ [Iterator](../../../visual-basic/language-reference/modifiers/iterator.md)  
   
  [Key](../../../visual-basic/language-reference/modifiers/key.md)  
   
- [Module \<keyword\>](../../../visual-basic/language-reference/modifiers/module-keyword.md)  
+ [Module \<关键字>](../../../visual-basic/language-reference/modifiers/module-keyword.md)  
   
  [MustInherit](../../../visual-basic/language-reference/modifiers/mustinherit.md)  
   
@@ -58,7 +75,7 @@ caps.handback.revision: 12
   
  [Out](../../../visual-basic/language-reference/modifiers/out-generic-modifier.md)  
   
- [Overloads](../../../visual-basic/language-reference/modifiers/overloads.md)  
+ [重载](../../../visual-basic/language-reference/modifiers/overloads.md)  
   
  [Overridable](../../../visual-basic/language-reference/modifiers/overridable.md)  
   
@@ -66,7 +83,7 @@ caps.handback.revision: 12
   
  [ParamArray](../../../visual-basic/language-reference/modifiers/paramarray.md)  
   
- [分部](../../../visual-basic/language-reference/modifiers/partial.md)  
+ [Partial](../../../visual-basic/language-reference/modifiers/partial.md)  
   
  [Private](../../../visual-basic/language-reference/modifiers/private.md)  
   
@@ -90,7 +107,8 @@ caps.handback.revision: 12
   
  [WriteOnly](../../../visual-basic/language-reference/modifiers/writeonly.md)  
   
-## 相关章节  
+## <a name="related-sections"></a>相关章节  
  [Visual Basic 语言参考](../../../visual-basic/language-reference/index.md)  
   
  [Visual Basic](../../../visual-basic/index.md)
+

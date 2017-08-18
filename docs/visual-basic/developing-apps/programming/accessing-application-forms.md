@@ -1,5 +1,5 @@
 ---
-title: "访问应用程序窗体 (Visual Basic) | Microsoft Docs"
+title: "访问应用程序窗体 (Visual Basic)"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.suite: 
@@ -32,11 +32,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: 956811fce552d28f0c74360ea2796f07b8cd94e0
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 37c8aa78d945a4d13ce00239d6b0707977f2571e
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="accessing-application-forms-visual-basic"></a>访问应用程序窗体 (Visual Basic)
@@ -55,3 +55,4 @@ ms.lasthandoff: 05/22/2017
  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OpenForms%2A>   
  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.SplashScreen%2A>   
  [My.Forms 对象](../../../visual-basic/language-reference/objects/my-forms-object.md)
+

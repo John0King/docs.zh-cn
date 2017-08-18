@@ -1,5 +1,5 @@
 ---
-title: "is（C# 参考）| Microsoft Docs"
+title: "is（C# 参考）"
 keywords: "is 关键字 (C#), is (C#)"
 ms.date: 2017-02-17
 ms.prod: .net
@@ -31,11 +31,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: c0d300dbb47e64d2425f8af3bc6a819b145786fa
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 58b18284b12ca0c636ed3fa923c43d94f202597f
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="is-c-reference"></a>is（C# 参考） #
@@ -62,7 +62,7 @@ ms.lasthandoff: 03/13/2017
 
 - *expr* 是派生自 *type* 的类型的一个实例。 换言之，*expr* 结果可以向上转换为 *type* 的一个实例。
 
-- *expr* 具有属于 *type* 的一个基类的编译时类型，*expr* 还具有属于 *type* 或派生自 *type* 的运行时类型。 变量的编译时类型**是其声明中定义的变量类型。 变量的运行时类型**是分配给该变量的实例类型。
+- *expr* 具有属于 *type* 的一个基类的编译时类型，*expr* 还具有属于 *type* 或派生自 *type* 的运行时类型。 变量的编译时类型是其声明中定义的变量类型。 变量的运行时类型是分配给该变量的实例类型。
 
 - *expr* 是实现 *type* 接口的类型的一个实例。
 
@@ -105,13 +105,13 @@ ms.lasthandoff: 03/13/2017
 
 - *expr* 是派生自 *type* 的类型的一个实例。 换言之，*expr* 结果可以向上转换为 *type* 的一个实例。
 
-- *expr* 具有属于 *type* 的一个基类的编译时类型，*expr* 还具有属于 *type* 或派生自 *type* 的运行时类型。 变量的编译时类型**是其声明中定义的变量类型。 变量的运行时类型**是分配给该变量的实例类型。
+- *expr* 具有属于 *type* 的一个基类的编译时类型，*expr* 还具有属于 *type* 或派生自 *type* 的运行时类型。 变量的编译时类型是其声明中定义的变量类型。 变量的运行时类型是分配给该变量的实例类型。
 
 - *expr* 是实现 *type* 接口的类型的一个实例。
 
 如果 *exp* 为 `true`，且 `is` 与 `if` 语句一起使用，则会分配 *varname*，并且其仅在 `if` 语句中具有局部范围。
 
-下例使用 `is` 类型模式提供类型的 <xref:System.IComparable.CompareTo(System.Object)?displayProperty=fullName> 方法的实现。
+下列示例使用 `is` 类型模式为类型的 <xref:System.IComparable.CompareTo(System.Object)?displayProperty=fullName> 方法提供实现。
 
 [!code-cs[is#5](../../../../samples/snippets/csharp/language-reference/keywords/is/is-type-pattern5.cs#5)]
 

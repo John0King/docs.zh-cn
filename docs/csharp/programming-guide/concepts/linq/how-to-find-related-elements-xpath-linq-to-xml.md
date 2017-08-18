@@ -1,5 +1,5 @@
 ---
-title: "如何：查找相关元素 (XPath-LINQ to XML) (C#) | Microsoft Docs"
+title: "如何：查找相关元素 (XPath-LINQ to XML) (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,11 +14,11 @@ ms.assetid: 41b386ee-562d-4841-bd6b-e44a7eb69f26
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: dab5d995920728450d0d318af8c5bbb157b11397
-ms.lasthandoff: 03/13/2017
-
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 3cc73ab69adb66fd1158637a8a3c67008d8e8663
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-find-related-elements-xpath-linq-to-xml-c"></a>如何：查找相关元素 (XPath-LINQ to XML) (C#)
@@ -98,3 +98,4 @@ Results are identical
   
 ## <a name="see-also"></a>请参阅  
  [针对 XPath 用户的 LINQ to XML (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)
+

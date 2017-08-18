@@ -1,5 +1,5 @@
 ---
-title: "using 指令（C# 参考）| Microsoft Docs"
+title: "using 指令（C# 参考）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -27,11 +27,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: e91cc4fea9fbe57b257e17915cd28b3b82f12f6e
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 1129efd8a1c4058a9648eab61f98cdcef7e9f2f7
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="using-directive-c-reference"></a>using 指令（C# 参考）
@@ -57,7 +57,7 @@ ms.lasthandoff: 03/13/2017
     using Project = PC.MyCompany.Project;  
     ```  
   
- `using` 关键字还用于创建 *using 语句*，此语句有助于确保正确处理 <xref:System.IDisposable> 对象（如文件和字体）。 有关详细信息，请参阅 [using 语句](../../../csharp/language-reference/keywords/using-statement.md)。  
+ `using` 关键字还用于创建 using 语句，此类语句有助于确保正确处理 <xref:System.IDisposable> 对象（如文件和字体）。 有关详细信息，请参阅 [using 语句](../../../csharp/language-reference/keywords/using-statement.md)。  
   
 ## <a name="using-static-type"></a>Using Static 类型  
  你可以访问类型的静态成员，而无需限定使用类型名称进行访问：  

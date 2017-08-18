@@ -1,5 +1,5 @@
 ---
-title: "基本 LINQ 查询操作 (C#) | Microsoft Docs"
+title: "基本 LINQ 查询操作 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -44,14 +44,15 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 48624d608c3eb8d1118a2492454595d46025cb3e
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: e5dbebb7950678a0f40ec774d23b42dfe89cff49
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="basic-linq-query-operations-c"></a>基本 LINQ 查询操作 (C#)
-本主题简要介绍了 [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] 查询表达式和一些在查询中执行的典型操作。 下面各主题中提供了更具体的信息：  
+本主题简要介绍了 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 查询表达式和一些在查询中执行的典型操作。 下面各主题中提供了更具体的信息：  
   
  [LINQ 查询表达式](../../../../csharp/programming-guide/linq-query-expressions/index.md)  
   
@@ -60,10 +61,10 @@ ms.lasthandoff: 03/13/2017
  [演练：用 C# 编写查询](../../../../csharp/programming-guide/concepts/linq/walkthrough-writing-queries-linq.md)  
   
 > [!NOTE]
->  如果你已熟悉查询语言（如 SQL 或 XQuery），则可以跳过本主题的大部分内容。 请参阅下一节中的“`from` 子句”部分，了解 [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] 查询表达式中的子句顺序。  
+>  如果你已熟悉查询语言（如 SQL 或 XQuery），则可以跳过本主题的大部分内容。 请参阅下一节中的“`from` 子句”部分，了解 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 查询表达式中的子句顺序。  
   
 ## <a name="obtaining-a-data-source"></a>获取数据源  
- 在 [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] 查询中，第一步是指定数据源。 和大多数编程语言相同，在使用 C# 时也必须先声明变量，然后才能使用它。 在 [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] 查询中，先使用 `from` 子句引入数据源 (`customers`) 和范围变量 (`cust`)**。  
+ 在 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 查询中，第一步是指定数据源。 和大多数编程语言相同，在使用 C# 时也必须先声明变量，然后才能使用它。 在 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 查询中，先使用 `from` 子句引入数据源 (`customers`) 和范围变量 (`cust`)。  
   
  [!code-cs[csLINQGettingStarted#23](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/basic-linq-query-operations_1.cs)]  
   
@@ -110,11 +111,11 @@ ms.lasthandoff: 03/13/2017
  有关详细信息，请参阅 [group 子句](../../../../csharp/language-reference/keywords/group-clause.md)。  
   
 ## <a name="joining"></a>联接  
- 联接操作在不同序列间创建关联，这些序列在数据源中未被显式模块化。 例如，可通过执行联接来查找所有位置相同的客户和分销商。 在 [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] 中，`join` 子句始终作用于对象集合，而非直接作用于数据库表。  
+ 联接操作在不同序列间创建关联，这些序列在数据源中未被显式模块化。 例如，可通过执行联接来查找所有位置相同的客户和分销商。 在 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 中，`join` 子句始终作用于对象集合，而非直接作用于数据库表。  
   
  [!code-cs[csLINQGettingStarted#36](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/basic-linq-query-operations_8.cs)]  
   
- 在 [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] 中，不必像在 SQL 中那样频繁使用 `join`，因为 [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] 中的外键在对象模型中表示为包含项集合的属性。 例如 `Customer` 对象包含 `Order` 对象的集合。 不必执行联接，只需使用点表示法访问订单：  
+ 在 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 中，不必像在 SQL 中那样频繁使用 `join`，因为 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 中的外键在对象模型中表示为包含项集合的属性。 例如 `Customer` 对象包含 `Order` 对象的集合。 不必执行联接，只需使用点表示法访问订单：  
   
 ```  
 from order in Customer.Orders...  
@@ -123,7 +124,7 @@ from order in Customer.Orders...
  有关详细信息，请参阅 [join 子句](../../../../csharp/language-reference/keywords/join-clause.md)。  
   
 ## <a name="selecting-projections"></a>选择（投影）  
- `select` 子句生成查询结果并指定每个返回的元素的“形状”或类型。 例如，可以指定结果包含的是整个 `Customer` 对象、仅一个成员、成员的子集，还是某个基于计算或新对象创建的完全不同的结果类型。 当 `select` 子句生成除源元素副本以外的内容时，该操作称为投影**。 使用投影转换数据是 [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] 查询表达式的一种强大功能。 有关详细信息，请参阅[使用 LINQ (C#)](../../../../csharp/programming-guide/concepts/linq/data-transformations-with-linq.md) 和 [select 子句](../../../../csharp/language-reference/keywords/select-clause.md)进行数据转换。  
+ `select` 子句生成查询结果并指定每个返回的元素的“形状”或类型。 例如，可以指定结果包含的是整个 `Customer` 对象、仅一个成员、成员的子集，还是某个基于计算或新对象创建的完全不同的结果类型。 当 `select` 子句生成除源元素副本以外的内容时，该操作称为投影。 使用投影转换数据是 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 查询表达式的一种强大功能。 有关详细信息，请参阅[使用 LINQ (C#)](../../../../csharp/programming-guide/concepts/linq/data-transformations-with-linq.md) 和 [select 子句](../../../../csharp/language-reference/keywords/select-clause.md)进行数据转换。  
   
 ## <a name="see-also"></a>另请参阅  
  [C# 中的 LINQ 入门](../../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)   
@@ -131,3 +132,4 @@ from order in Customer.Orders...
  [演练：用 C# 编写查询](../../../../csharp/programming-guide/concepts/linq/walkthrough-writing-queries-linq.md)   
  [查询关键字 (LINQ)](../../../../csharp/language-reference/keywords/query-keywords.md)   
  [匿名类型](../../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)
+

@@ -1,5 +1,5 @@
 ---
-title: "使用 MSTest 和 .NET Core 的单元测试 | Microsoft Docs"
+title: "使用 MSTest 和 .NET Core 进行单元测试"
 description: "如何配合使用 MSTest 与 .NET Core"
 keywords: MSTest, .NET, .NET Core
 author: ncarandini
@@ -9,11 +9,11 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: ed447641-3e85-4e50-b7ed-004630048a3e
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
-ms.openlocfilehash: 5c6382ee0de3cba950b4585b05f10b4682f9a797
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: d1cb9f6667e1317e74d246988ef1257d0712c431
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 

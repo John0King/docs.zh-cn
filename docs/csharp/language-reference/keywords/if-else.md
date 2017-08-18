@@ -1,5 +1,5 @@
 ---
-title: "if-else（C# 参考）| Microsoft Docs"
+title: "if-else（C# 参考）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -34,11 +34,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: e4016ee35ed487fd2ca48074d2e483778719dff3
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 694761a9b03fadf2dff97e61e37c0af52658f9e4
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="if-else-c-reference"></a>if-else（C# 参考）
@@ -158,6 +158,6 @@ if (!(m >= n || m >= p))
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [C# 关键字](../../../csharp/language-reference/keywords/index.md)   
  [?: 运算符](../../../csharp/language-reference/operators/conditional-operator.md)   
- [if-else 语句 (C++)](https://docs.microsoft.com/cpp/cpp/if-else-statement-cpp)   
+ [if-else 语句 (C++)](/cpp/cpp/if-else-statement-cpp)   
  [switch](../../../csharp/language-reference/keywords/switch.md)
 

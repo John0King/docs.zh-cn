@@ -10,11 +10,11 @@ ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.devlang: dotnet
 ms.assetid: 1f3b9a68-4dea-4b60-8cb3-f46164eedbbf
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 50e128137fde445f64e10cf7c2a1ee5fdecb34e6
-ms.openlocfilehash: 283b9405000cba328c348fada81c70683b700a8b
+ms.translationtype: HT
+ms.sourcegitcommit: 318bf7a77748dfcee5f28243409d31e8d3e5c9ff
+ms.openlocfilehash: 8e0fd8db2810c36358a7bcf94f4bc5e7d2aa399e
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/01/2017
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 05/01/2017
 
 所需的配置是在 Docker for Windows 中安装 **[Shared Drives](https://docs.docker.com/docker-for-windows/#shared-drives)**。 卷映射和调试支持需要此设置。
 
-右键单击系统托盘中的 Docker 图标，然后单击“设置”并选择“Shared Drives”。
+右键单击系统托盘中的 Docker 图标，单击“设置”，再选择“共享驱动器”。 选择 Docker 用来存储文件并应用更改的驱动器。
 
 ![Shared Drives](./media/visual-studio-tools-for-docker/settings-shared-drives-win.png)
 
@@ -48,6 +48,8 @@ ms.lasthandoff: 05/01/2017
 项目上下文菜单
 
 ![右键单击“添加 Docker 支持”](./media/visual-studio-tools-for-docker/right-click-add-docker-support.png)
+
+向项目添加 Docker 支持后，可以选择 Windows 或 Linux 容器。 （Docker 主机必须运行类型相同的容器。 如果需要更改正在运行的 Docker 实例中的容器类型，请右键单击系统托盘中的“Docker”图标，再选择“切换到 Windows 容器”或“切换到 Linux 容器”。） 
 
 下列文件已添加到该项目中。
 

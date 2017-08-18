@@ -1,5 +1,5 @@
 ---
-title: ".NET Core 支持 | Microsoft 文档"
+title: ".NET Core 支持"
 description: "了解 .NET Core 不同版本系列（LTS 和当前版本）支持"
 keywords: ".NET, .NET Core, lts, 当前, fts, 支持, 支持系列, 支持跟踪, 生命周期, 版本系列"
 author: kendrahavens
@@ -9,9 +9,11 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: fedc7025-f320-4cba-957b-ef74885f66de
-translationtype: Human Translation
-ms.sourcegitcommit: 1ef17b16b85c81a0b96bb1712db3734dc67d801d
-ms.openlocfilehash: 582a521e6a30b740465890b6cb8c773061a98ea6
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 254611ef05af22eea616fcfe3288239a744e0ccc
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -41,8 +43,4 @@ LTS 版本
 ### <a name="further-reading"></a>其他阅读材料
 * [.NET Core 支持生命周期简报](https://www.microsoft.com/net/core/support)
 * [当前支持的操作系统和版本](https://github.com/dotnet/core/blob/master/roadmap.md)
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic 中的过程 | Microsoft Docs"
+title: "Visual Basic 中的过程"
 ms.custom: 
 ms.date: 2017-04-28
 ms.prod: .net
@@ -34,15 +34,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d3f21e32c162133e70a124da125c30afc7303738
-ms.openlocfilehash: 56f39e82e9295a9c1d9f862e3486373590a32e7f
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: fd1a369ecfc1fa23cba694941fa47ab872ca1368
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/15/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="procedures-in-visual-basic"></a>Visual Basic 中的过程
-过程是由声明语句（`Function`、`Sub`、`Operator`、`Get`、`Set`）和匹配的 `End` 声明所包围的 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] 语句块。 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] 中的所有可执行语句必须位于某一过程内。  
+过程是由声明语句（`Function`、`Sub`、`Operator`、`Get`、`Set`）和匹配的 `End` 声明所包围的 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 语句块。 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 中的所有可执行语句必须位于某一过程内。  
   
 ## <a name="calling-a-procedure"></a>调用过程  
  从代码中的其他位置调用过程。 这称为过程调用。 过程运行完毕后，会将控件返回到调用它的代码，称为调用代码。 调用代码是一个语句或语句中的一个表达式，它通过名称指定过程并将控件转移给该过程。  
@@ -60,7 +60,7 @@ ms.lasthandoff: 05/15/2017
  在大多数情况下，每次调用过程时，过程都需对不同数据进行操作。 可将此信息作为过程调用的一部分传递给该过程。 过程定义零个或多个形参，每个形参表示一个该过程希望你传递给它的值。 过程调用中，与过程定义中每个形参相对应的是的实参。 实参表示给定过程调用中传递给相应形参的值。  
   
 ## <a name="types-of-procedures"></a>过程类型  
- [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] 使用数种过程：  
+ [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 使用数种过程：  
   
 -   [Sub 过程](./sub-procedures.md)执行操作，但不向调用代码返回值。  
   
@@ -98,3 +98,4 @@ ms.lasthandoff: 05/15/2017
  [过程重载](./procedure-overloading.md)   
  [Visual Basic 中的泛型过程](../../../../visual-basic/programming-guide/language-features/data-types/generic-procedures.md)   
  [对象和类](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
+

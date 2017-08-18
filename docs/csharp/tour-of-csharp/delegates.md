@@ -1,5 +1,5 @@
 ---
-title: "C# 委托 | C# 语言介绍"
+title: "C# 委托 - C# 语言介绍"
 description: "了解包含 C# 委托的晚期绑定"
 keywords: ".NET, C#, 委托, lambda, 晚期绑定"
 author: BillWagner
@@ -10,11 +10,11 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 3cc27357-3ac2-43a1-aad0-86a77b88f884
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 19006cc5f24ffc66b92e53e8174c6bd33c249679
-ms.openlocfilehash: 9cfefa5f781944b41828ebb61004f960e6cf3d59
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: bb304b2e5c762a44aab931b5e8f7fe9c99805eba
 ms.contentlocale: zh-cn
-ms.lasthandoff: 04/14/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "投影运算 (C#) | Microsoft Docs"
+title: "投影运算 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,10 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 232afc23e180ab868bfa825d680b7fe4371b3805
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 2b95072bf6e53ef090a7a7b398fa873bb0bf5b46
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="projection-operations-c"></a>投影运算 (C#)
@@ -100,7 +101,7 @@ foreach (string s in query)
  ![显示 SelectMany() 的操作的图。](../../../../csharp/programming-guide/concepts/linq/media/selectmany.png "SelectMany")  
   
 ### <a name="code-example"></a>代码示例  
- 下面的示例比较 `Select()` 和 `SelectMany()` 的行为。 代码通过从源集合的每个花卉名称列表中提取前两项来创建一个“花束”。 在此示例中，转换函数 <xref:System.Linq.Enumerable.Select%60%602%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%29> 使用的“单一值”本身就是一个值集合。 这需要额外的 `foreach` 循环，以便枚举每个子序列中的每个字符串。  
+ 下面的示例比较 `Select()` 和 `SelectMany()` 的行为。 代码通过从源集合的每个花卉名称列表中提取前两项来创建一个“花束”。 此示例中，transform 函数 <xref:System.Linq.Enumerable.Select%60%602%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%29> 使用的“单值”本身即是值的集合。 这需要额外的 `foreach` 循环，以便枚举每个子序列中的每个字符串。  
   
 ```csharp  
 class Bouquet  
@@ -175,9 +176,10 @@ static void SelectVsSelectMany()
 }  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.Linq>   
  [标准查询运算符概述 (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)   
  [select 子句](../../../../csharp/language-reference/keywords/select-clause.md)   
  [如何：从多个源填充对象集合 (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-populate-object-collections-from-multiple-sources-linq.md)   
  [如何：使用组将一个文件拆分成多个文件 (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-split-a-file-into-many-files-by-using-groups-linq.md)
+

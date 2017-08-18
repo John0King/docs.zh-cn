@@ -1,5 +1,5 @@
 ---
-title: "Docker 中托管的微服务 | C#"
+title: "Docker 中托管的微服务 - C#"
 description: "了解如何创建在 Docker 容器中运行的 ASP.NET Core 服务"
 keywords: ".NET, .NET Core, Docker, C#, ASP.NET, 微服务"
 author: BillWagner
@@ -10,17 +10,17 @@ ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.devlang: csharp
 ms.assetid: 87e93838-a363-4813-b859-7356023d98ed
-ms.translationtype: Human Translation
-ms.sourcegitcommit: ed747cf589e1f4731d78af7cc206ff3674d666b2
-ms.openlocfilehash: b2ce10b3c079ff2c881f6dbe297ead33b8254476
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 5585db33fb5020ed18c26f32ce0b63f97353d20f
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 
 # <a name="microservices-hosted-in-docker"></a>Docker 中托管的微服务
 
-##<a name="introduction"></a>介绍
+## <a name="introduction"></a>介绍
 
 此教程将详细介绍在 Docker 容器中生成和部署 ASP.NET Core 微服务时必须完成的任务。 在此教程中，你将了解：
 
@@ -101,7 +101,7 @@ dotnet build
 dotnet run
 ```
 
-默认配置侦听的是 http://localhost:5000。 可以打开浏览器并转到相应页面，看到的是“Hello World!” 消息。
+默认配置侦听的是 http://localhost:5000 。 可以打开浏览器并转到相应页面，看到的是“Hello World!” 消息。
 
 ### <a name="anatomy-of-an-aspnet-core-application"></a>ASP.NET Core 应用程序剖析
 

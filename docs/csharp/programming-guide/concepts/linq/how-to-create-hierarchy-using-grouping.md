@@ -1,5 +1,5 @@
 ---
-title: "如何：使用分组创建层次结构 (C#) | Microsoft Docs"
+title: "如何：使用分组创建层次结构 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,11 +14,11 @@ ms.assetid: 0213d59e-5f76-438c-9cab-4bf11f7b971d
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: de5ba768a52fc7fd46177e1fd87bddb93ac941cf
-ms.lasthandoff: 03/13/2017
-
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 94b46f48698061368bba47bd7aa248610c0e8f30
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-create-hierarchy-using-grouping-c"></a>如何：使用分组创建层次结构 (C#)
@@ -88,3 +88,4 @@ Console.WriteLine(newData);
   
 ## <a name="see-also"></a>请参阅  
  [高级查询技术 (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)
+

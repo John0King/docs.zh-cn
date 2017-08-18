@@ -1,59 +1,65 @@
 ---
-title: "创建程序集 | Microsoft Docs"
-ms.custom: ""
-ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "程序集 [.NET Framework], 创建"
-  - "程序集 [.NET Framework], 多文件"
-  - "多文件程序集"
-  - "单文件程序集"
+title: "创建程序集"
+ms.custom: 
+ms.date: 03/30/2017
+ms.prod: .net-framework
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- dotnet-bcl
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- assemblies [.NET Framework], multifile
+- single-file assemblies
+- assemblies [.NET Framework], creating
+- multifile assemblies
 ms.assetid: 54832ee9-dca8-4c8b-913c-c0b9d265e9a4
 caps.latest.revision: 8
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
-caps.handback.revision: 8
+author: rpetrusha
+ms.author: ronpet
+manager: wpickett
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 583c448bd939cd4d1d16bff372afff4172dcf985
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
+
 ---
-# 创建程序集
-您可以使用 IDE（如 [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)]）或 [!INCLUDE[winsdklong](../../../includes/winsdklong-md.md)] 提供的编译器和工具来创建单文件程序集或多文件程序集。  最简单的程序集是具有简单名称并载入单个应用程序域的单个文件。  此程序集无法由应用程序目录以外的其他程序集引用，并且不接受版本检查。  要卸由载程序集组成的应用程序，只需删除应用程序所在的目录即可。  对于许多开发人员而言，部署应用程序只需使用具有这些功能的程序集。  
+# <a name="creating-assemblies"></a>创建程序集
+可以使用 [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)] 等 IDE 或 [!INCLUDE[winsdklong](../../../includes/winsdklong-md.md)] 提供的编译器和工具来创建单文件或多文件程序集。 最简单的程序集是具有简单名称并加载到单个应用程序域的单个文件。 此程序集不能被应用程序目录之外的其他程序集引用，并且不执行版本检查。 若要卸载该程序集组成的应用程序，只需删除它所在的目录即可。 对许多开发者来说，拥有这些功能的程序集能够满足他们部署应用程序的所有需要。  
   
- 您可以从几个代码模块和资源文件中创建多文件程序集。  也可以创建可由多个应用程序共享的程序集。  共享的程序集必须具有强名称，并且可以在全局程序集缓存中部署。  
+ 可以从多个代码模块和资源文件创建多文件程序集。 也可以创建可以由多个应用程序共享的程序集。 共享程序集必须具有强名称，并且可以部署在全局程序集缓存中。  
   
- 将代码模块和资源分组为程序集时会有多个选项，这取决于以下因素：  
+ 将代码模块和资源分组成程序集时有多个选项，具体取决于以下因素：  
   
--   版本控制  
+-   版本管理  
   
-     将应具有相同版本信息的模块分组。  
+     版本信息应相同的组模块。  
   
 -   部署  
   
-     将支持部署模型的代码模块和资源分组。  
+     支持你的部署模型的组代码模块和资源。  
   
--   重复使用  
+-   重用  
   
-     将可在逻辑上一起使用以达到某目的模块分组。  例如，程序维护时不经常使用的类型和类组成的程序集可以放在同一程序集中。  此外，计划要与多个应用程序共享的类型应分组为程序集，并且程序集应使用强名称签名。  
+     从逻辑上来说可以一起用于实现某个目的的组模块。 例如，不经常用于维护程序的类型和类构成的程序集可以放入同一程序集。 此外，要与多个应用程序共享的类型应归入一个程序集，并且此程序集必须使用强名称进行签名。  
   
 -   安全性  
   
-     将包含要求相同安全权限的类型的模块分组。  
+     包含需要相同安全权限的的类型的组模块。  
   
--   限定范围  
+-   范围  
   
-     将包含其可见性应限于相同程序集的类型的模块分组。  
+     所包含类型的可见性限为同一个程序集的组模块。  
   
- 当非托管 COM 应用程序可使用公共语言运行时程序集时，需要特殊考虑。  有关使用非托管代码的更多信息，请参见 [向 COM 公开 .NET Framework 组件](../../../docs/framework/interop/exposing-dotnet-components-to-com.md)。  
+ 公共语言运行时程序集可用于非托管 COM 应用程序时，必须考虑特殊注意事项。 有关使用非托管代码的详细信息，请参阅[向 COM 公开 .NET Framework 组件](../../../docs/framework/interop/exposing-dotnet-components-to-com.md)。  
   
-## 请参阅  
+## <a name="see-also"></a>另请参阅  
  [使用程序集编程](../../../docs/framework/app-domains/programming-with-assemblies.md)   
  [程序集版本控制](../../../docs/framework/app-domains/assembly-versioning.md)   
  [如何：生成单文件程序集](../../../docs/framework/app-domains/how-to-build-a-single-file-assembly.md)   
  [如何：生成多文件程序集](../../../docs/framework/app-domains/how-to-build-a-multifile-assembly.md)   
  [运行时如何定位程序集](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)   
  [多文件程序集](../../../docs/framework/app-domains/multifile-assemblies.md)
+

@@ -1,5 +1,5 @@
 ---
-title: "C# 类和对象| C# 语言介绍"
+title: "C# 类和对象 - C# 语言介绍"
 description: "刚开始接触 C#？ 请阅读这篇概述类、对象和继承的文章"
 keywords: ".NET, C#, 类, 实例, 对象, 继承, 多形性"
 author: BillWagner
@@ -10,11 +10,11 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 63a89bde-0f05-4bc4-b0cd-4f693854f0cd
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 68fbe2e9895825bbbb41cfe025bfdf1d4f9d3d04
-ms.openlocfilehash: 6fe6b83d4a2b50a5eb7c2f6b23d4bda367666ac9
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: c71aee3dbfb6544973e1527955ca03deb6b569f3
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/05/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="classes-and-objects"></a>类和对象

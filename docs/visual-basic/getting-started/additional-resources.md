@@ -1,5 +1,5 @@
 ---
-title: "为 Visual Basic 程序员提供的附加资源 | Microsoft Docs"
+title: "为 Visual Basic 程序员提供的附加资源"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -36,11 +36,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: 692e0a53391556c6327e493d3d45e811db4cfdb7
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 1ebc788f629e011dff88c1db119ce25a3829e009
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="additional-resources-for-visual-basic-programmers"></a>为 Visual Basic 程序员提供的附加资源
@@ -70,11 +70,11 @@ ms.lasthandoff: 05/22/2017
   
 |术语|定义|  
 |----------|----------------|  
-|[Visual Basic 语言](http://go.microsoft.com/fwlink/?LinkId=145963)|讨论 [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] 语言语法和编译器。|  
-|[Visual Basic 互操作和升级](http://go.microsoft.com/fwlink/?LinkId=145966)|讨论升级到 [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] 并使用互操作性功能。|  
-|[Visual Basic IDE](http://go.microsoft.com/fwlink/?LinkId=145971)|讨论在 [!INCLUDE[vsprvs](../../csharp/includes/vsprvs_md.md)] 集成的开发环境中工作。|  
+|[Visual Basic 语言](http://go.microsoft.com/fwlink/?LinkId=145963)|讨论 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 语言语法和编译器。|  
+|[Visual Basic 互操作和升级](http://go.microsoft.com/fwlink/?LinkId=145966)|讨论升级到 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 并使用互操作性功能。|  
+|[Visual Basic IDE](http://go.microsoft.com/fwlink/?LinkId=145971)|讨论在 [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] 集成的开发环境中工作。|  
 |[Visual Basic Power Packs](http://social.msdn.microsoft.com/Forums/vbpowerpacks/threads)|讨论作为 Visual Basic Power Packs 的一部分的外接程序、控件、组件、示例以及工具。|  
-|[Visual Basic 常规信息](http://go.microsoft.com/fwlink/?LinkId=145973)|讨论其他论坛中未涉及的 [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] 相关问题。|  
+|[Visual Basic 常规信息](http://go.microsoft.com/fwlink/?LinkId=145973)|讨论其他论坛中未涉及的 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 相关问题。|  
   
 ### <a name="chats-and-discussion-groups"></a>聊天和讨论组  
   
@@ -103,8 +103,9 @@ ms.lasthandoff: 05/22/2017
 |术语|定义|  
 |----------|----------------|  
 |[DevX Visual Basic 区域](http://go.microsoft.com/fwlink/?LinkId=145978)|为当今的 Visual Basic 开发人员提供深入的技术文章。|  
-|[vb.dotnet.technical](http://go.microsoft.com/fwlink/?LinkId=145986)|提供了一个论坛，供大家在 DevX 论坛中讨论 [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] 中的新功能。|  
+|[vb.dotnet.technical](http://go.microsoft.com/fwlink/?LinkId=145986)|提供了一个论坛，供大家在 DevX 论坛中讨论 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 中的新功能。|  
   
 ## <a name="see-also"></a>另请参阅  
  [入门](../../visual-basic/getting-started/index.md)   
- [与我们交流](https://docs.microsoft.com/visualstudio/ide/talk-to-us)
+ [与我们交流](/visualstudio/ide/talk-to-us)
+

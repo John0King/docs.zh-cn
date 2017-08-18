@@ -1,5 +1,5 @@
 ---
-title: "如何：读取文本文件（C# 编程指南）| Microsoft Docs"
+title: "如何：读取文本文件中的内容（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -32,14 +32,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: d545aa7f25da49b3ca0fc50b0c5a55c9c0d2b967
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: bd0ad3e062c4d4b32fb6140cacba9a4a32674759
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-read-from-a-text-file-c-programming-guide"></a>如何：读取文本文件中的内容（C# 编程指南）
-此示例通过使用 <xref:System.IO.File?displayProperty=fullName> 类中的静态方法 <xref:System.IO.File.ReadAllText%2A> 和 <xref:System.IO.File.ReadAllLines%2A> 来读取文本文件的内容。  
+此示例通过使用 <xref:System.IO.File?displayProperty=fullName> 类的 <xref:System.IO.File.ReadAllText%2A> 和 <xref:System.IO.File.ReadAllLines%2A> 静态方法来确定文本文件的内容。  
   
  有关使用 <xref:System.IO.StreamReader> 的示例，请参阅[如何：一次一行地读取文本文件](../../../csharp/programming-guide/file-system/how-to-read-a-text-file-one-line-at-a-time.md)。  
   
@@ -62,7 +63,8 @@ ms.lasthandoff: 03/13/2017
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
  不要依赖文件名来确定文件的内容。 例如，文件 `myFile.cs` 可能不是 C# 源文件。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.IO?displayProperty=fullName>   
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [文件系统和注册表（C# 编程指南）](../../../csharp/programming-guide/file-system/index.md)
+

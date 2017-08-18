@@ -1,5 +1,5 @@
 ---
-title: "unsafe（C# 参考）| Microsoft Docs"
+title: "unsafe（C# 参考）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -30,11 +30,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: afedd3d99aea9f73d175fd2957a7d586ebce6d72
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: ceba9e518caf6618cf2f457b930ce08f18273d8c
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="unsafe-c-reference"></a>unsafe（C# 参考）

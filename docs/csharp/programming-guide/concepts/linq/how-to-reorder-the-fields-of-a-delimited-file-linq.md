@@ -1,5 +1,5 @@
 ---
-title: "如何：重新排列带分隔符的文件的字段 (LINQ) (C#) | Microsoft Docs"
+title: "如何：重新排列带分隔符的文件的字段 (LINQ) (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,10 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: a7417143a1dbe2e07e7983fb12d6f3e55e70f461
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 83cc16d6f80b68d530b5daea67443e2e2b7dcf74
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-reorder-the-fields-of-a-delimited-file-linq-c"></a>如何：重新排列带分隔符的文件的字段 (LINQ) (C#)
@@ -98,3 +99,4 @@ class CSVFiles
  [LINQ 和字符串 (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-strings.md)   
  [LINQ 和文件目录 (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-file-directories.md)   
  [如何：从 CSV 文件生成 XML](http://msdn.microsoft.com/library/dd7bab8c-96fa-4343-94d0-9739dd6a74fd)
+

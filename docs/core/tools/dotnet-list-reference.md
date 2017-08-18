@@ -1,5 +1,5 @@
 ---
-title: "dotnet-list reference 命令 - .NET Core CLI | Microsoft Docs"
+title: "dotnet-list reference 命令- .NET Core CLI"
 description: "使用 dotnet-list reference 命令可方便地列出项目到项目的引用。"
 keywords: "dotnet-list, CLI, CLI 命令, .NET Core"
 author: spboyer
@@ -10,10 +10,11 @@ ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 8f954a0c-03f8-4fbc-a529-b313ab12c623
-translationtype: Human Translation
-ms.sourcegitcommit: dff752a9d31ec92b113dae9eed20cd72faf57c84
-ms.openlocfilehash: fdaf2a6f66801be68507ccabe7e0f2fea5433e65
-ms.lasthandoff: 03/22/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 701345e4db51d26b9eefe8f02b6c0526934de5c9
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 

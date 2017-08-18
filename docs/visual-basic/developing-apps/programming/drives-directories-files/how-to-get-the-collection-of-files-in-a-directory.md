@@ -1,5 +1,5 @@
 ---
-title: "如何：在 Visual Basic 中获取目录中的文件集合 | Microsoft 文档"
+title: "如何：在 Visual Basic 中获取目录中的文件集合"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -31,11 +31,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: 1884195983856b3331b0c40e5b3844b0731e75ac
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 023fb90622b45fe0067cd146f62bc3edb326b5ef
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-get-the-collection-of-files-in-a-directory-in-visual-basic"></a>如何：在 Visual Basic 中获取目录中的文件集合
@@ -43,7 +43,7 @@ ms.lasthandoff: 05/22/2017
   
 -   将 <xref:Microsoft.VisualBasic.FileIO.FileSystem.GetFiles%28System.String%29> 重载用于指定目录中的简单文件搜索，而无需搜索子目录。  
   
--   使用 <xref:Microsoft.VisualBasic.FileIO.FileSystem.GetFiles(System.String,Microsoft.VisualBasic.FileIO.SearchOption,System.String[])> 重载指定搜索的其他选项。 可以使用 `wildCards` 参数来指定搜索模式。 若要在搜索中包括子目录，请将 `searchType` 参数设置为 <xref:Microsoft.VisualBasic.FileIO.SearchOption?displayProperty=fullName>。  
+-   使用 <xref:Microsoft.VisualBasic.FileIO.FileSystem.GetFiles(System.String,Microsoft.VisualBasic.FileIO.SearchOption,System.String[])> 重载指定搜索的其他选项。 可以使用 `wildCards` 参数来指定搜索模式。 若要在搜索中包括子目录，请将 `searchType` 参数设置为 <xref:Microsoft.VisualBasic.FileIO.SearchOption.SearchAllSubDirectories?displayProperty=fullName>。  
   
  如果没有找到与指定模式匹配的文件，则返回一个空集合。  
   

@@ -1,5 +1,5 @@
 ---
-title: "XName 对象的预原子化 (LINQ to XML) | Microsoft Docs"
+title: "XName 对象的预原子化 (LINQ to XML) (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,12 +14,11 @@ ms.assetid: e84fbbe7-f072-4771-bfbb-059d18e1ad15
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 400dfda51d978f35c3995f90840643aaff1b9c13
-ms.openlocfilehash: 0b7cc79a10cc2c8288c048fdb98717e61a3f3463
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: bc71a1a5b6d8fe038a9eefaff1649df0ea81aa02
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/30/2017
-
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="pre-atomization-of-xname-objects-linq-to-xml-c"></a>XName 对象的预原子化 (LINQ to XML) (C#)
@@ -133,3 +132,4 @@ Console.WriteLine("Time to construct:{0}", t2 - t1);
 ## <a name="see-also"></a>请参阅  
  [性能 (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/performance-linq-to-xml.md)   
  [原子化的 XName 和 XNamespace 对象 (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/atomized-xname-and-xnamespace-objects-linq-to-xml.md)
+

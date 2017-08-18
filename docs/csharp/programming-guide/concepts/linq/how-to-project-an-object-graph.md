@@ -1,5 +1,5 @@
 ---
-title: "如何：投影对象图 (C#) | Microsoft 文档"
+title: "如何：投影对象图 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,11 +14,11 @@ ms.assetid: 293d15d5-3eaf-48de-9a02-3e13cb117b5b
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: abf16b36fa8b384c2685a29a1697cc7c3e53a7ec
-ms.lasthandoff: 03/13/2017
-
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 3f09d1ab23d027829a8b3ea94fa62455ddb95499
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-project-an-object-graph-c"></a>如何：投影对象图 (C#)
@@ -227,7 +227,7 @@ class Program {
 }  
 ```  
   
- 在本示例中，[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] 查询结果返回为 `PurchaseOrderItem` 类型的 <xref:System.Collections.Generic.IEnumerable%601>。 `PurchaseOrder` 类中的项的类型为 `PurchaseOrderItem` 的 <xref:System.Collections.Generic.IEnumerable%601>。 此代码使用 <xref:System.Linq.Enumerable.ToList%2A> 扩展方法从查询结果中创建 <xref:System.Collections.Generic.List%601> 集合。  
+ 在此示例中，[!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 查询的结果以 <xref:System.Collections.Generic.IEnumerable%601> 的 `PurchaseOrderItem` 形式返回。 `PurchaseOrder` 类中各项的类型都是 <xref:System.Collections.Generic.IEnumerable%601> 的 `PurchaseOrderItem`。 该代码使用 <xref:System.Linq.Enumerable.ToList%2A> 扩展方法，根据查询结果来创建 <xref:System.Collections.Generic.List%601> 集合。  
   
  此示例产生以下输出：  
   
@@ -268,7 +268,8 @@ USPrice: 39.98
 ShipDate: 5/21/1999  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.Linq.Enumerable.Select%2A>   
  <xref:System.Linq.Enumerable.ToList%2A>   
  [投影和转换 (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/projections-and-transformations-linq-to-xml.md)
+

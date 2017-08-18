@@ -1,1 +1,1 @@
-Microsoft Windows 权限管理 \(RM\)
+Microsoft Windows 权限管理 (RM)

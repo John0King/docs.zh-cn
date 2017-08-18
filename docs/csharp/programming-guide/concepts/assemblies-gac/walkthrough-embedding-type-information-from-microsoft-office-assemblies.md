@@ -1,5 +1,5 @@
 ---
-title: "演练：在 Visual Studio 中嵌入 Microsoft Office 程序集中的类型信息 (C#) | Microsoft Docs"
+title: "演练：在 Visual Studio 中嵌入 Microsoft Office 程序集中的类型信息 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,11 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: b698372d28198cfcd34aef69043334e3fc50ce6d
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: a9a901403f34f33639a3eb5c919c337fec594dfd
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="walkthrough-embedding-type-information-from-microsoft-office-assemblies-in-visual-studio-c"></a>演练：在 Visual Studio 中嵌入 Microsoft Office 程序集中的类型信息 (C#)
@@ -42,15 +42,15 @@ ms.lasthandoff: 03/13/2017
   
 1.  在安装有 Excel 的计算机上启动 Visual Studio。  
   
-2.  在“文件” **** 菜单上，选择“新建” ****、“项目” ****。  
+2.  在“文件”  菜单上，选择“新建” 、“项目” 。  
   
-3.  在“新建项目”****对话框的“项目类型”****窗格中，确保选中“Windows”****。 在“模板”****窗格中，选择“控制台应用程序”****。 在“新建项目”****框中，输入 `CreateExcelWorkbook`，然后选择“确定”****按钮。 新项目创建完成。  
+3.  在“新建项目”对话框的“项目类型”窗格中，确保选中“Windows”。 在“模板”窗格中，选择“控制台应用程序”。 在“新建项目”框中，输入 `CreateExcelWorkbook`，然后选择“确定”按钮。 新项目创建完成。  
   
-4.  在“解决方案资源管理器”****中，打开“引用”****文件夹的快捷菜单，然后选择“添加引用”****。  
+4.  在“解决方案资源管理器”中，打开“引用”文件夹的快捷菜单，然后选择“添加引用”。  
   
-5.  在“.NET”****选项卡上，选择最新版本的 `Microsoft.Office.Interop.Excel`。 例如 **Microsoft.Office.Interop.Excel 14.0.0.0**。 选择“确定” **** 按钮。  
+5.  在“.NET”选项卡上，选择最新版本的 `Microsoft.Office.Interop.Excel`。 例如 **Microsoft.Office.Interop.Excel 14.0.0.0**。 选择“确定”  按钮。  
   
-6.  在 **CreateExcelWorkbook** 项目的引用列表中，选择上一步添加的 `Microsoft.Office.Interop.Excel` 引用。 在“属性”****窗口中，确保 `Embed Interop Types` 属性已设置为 `True`。  
+6.  在 **CreateExcelWorkbook** 项目的引用列表中，选择上一步添加的 `Microsoft.Office.Interop.Excel` 引用。 在“属性”窗口中，确保 `Embed Interop Types` 属性已设置为 `True`。  
   
     > [!NOTE]
     >  由于嵌入的互操作类型信息，本演练中创建的应用程序可与不同的 Microsoft Office 版本一起运行。 如果 `Embed Interop Types` 属性设置为 `False`，则必须为与应用程序一起运行的每个 Microsoft Office 版本添加一个 PIA。  
@@ -133,7 +133,7 @@ ms.lasthandoff: 03/13/2017
   
 1.  在 Visual Studio 中打开本演练创建的项目。  
   
-2.  在“生成”****菜单上，选择“发布 CreateExcelWorkbook”****。 按照发布向导的步骤创建应用程序的可安装版本。 有关详细信息，请参阅[发布向导（Visual Studio 中的 Office 开发）](https://msdn.microsoft.com/library/bb625071)。  
+2.  在“生成”菜单上，选择“发布 CreateExcelWorkbook”。 按照发布向导的步骤创建应用程序的可安装版本。 有关详细信息，请参阅[发布向导（Visual Studio 中的 Office 开发）](https://msdn.microsoft.com/library/bb625071)。  
   
 3.  在安装有 .NET Framework 4 或更高版本和另一个 Excel 版本的计算机上，安装该应用程序。  
   

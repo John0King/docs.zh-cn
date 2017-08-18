@@ -1,5 +1,5 @@
 ---
-title: "可访问性级别的使用限制（C# 参考）| Microsoft Docs"
+title: "可访问性级别的使用限制（C# 参考）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -27,11 +27,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 51b399993008a1a3ce61679cdccc3e5e7bf25354
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 8e49afd38fd776593b87f065a079da0d546df4a6
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="restrictions-on-using-accessibility-levels-c-reference"></a>可访问性级别的使用限制（C# 参考）
@@ -139,3 +139,4 @@ public class A
  [private](../../../csharp/language-reference/keywords/private.md)   
  [protected](../../../csharp/language-reference/keywords/protected.md)   
  [内部](../../../csharp/language-reference/keywords/internal.md)
+

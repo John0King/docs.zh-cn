@@ -1,5 +1,5 @@
 ---
-title: "隐式数值转换表（C# 参考）| Microsoft Docs"
+title: "隐式数值转换表（C# 参考）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -30,11 +30,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: e4a0eca529b7c66cca527cfef3078a2c5bd24555
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 4c7aa29f9bdeb5f30918e6d7b990c5197e7fe1a1
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="implicit-numeric-conversions-table-c-reference"></a>隐式数值转换表（C# 参考）
@@ -73,3 +73,4 @@ ms.lasthandoff: 03/13/2017
  [内置类型表](../../../csharp/language-reference/keywords/built-in-types-table.md)   
  [显式数值转换表](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)   
  [强制转换和类型转换](../../../csharp/programming-guide/types/casting-and-type-conversions.md)
+

@@ -1,5 +1,5 @@
 ---
-title: "如何：在目录树中查询重复文件 (LINQ) | Microsoft Docs"
+title: "如何：在目录树中查询重复文件 (LINQ)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,10 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: edac4284967ec29502db44748647034d14666318
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: f3840bd4074c4afb526e7d0c756557ad4e259ce8
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-query-for-duplicate-files-in-a-directory-tree-linq-c"></a>如何：在目录树中查询重复文件 (LINQ)
@@ -191,3 +192,4 @@ class QueryDuplicateFileNames
 ## <a name="see-also"></a>请参阅  
  [LINQ to Objects (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)   
  [LINQ 和文件目录 (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-file-directories.md)
+

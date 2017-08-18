@@ -1,5 +1,5 @@
 ---
-title: "dotnet-publish 命令 - .NET Core CLI | Microsoft Docs"
+title: "dotnet-publish 命令 - .NET Core CLI"
 description: "dotnet-publish 命令可将 .NET Core 项目发布到目录。"
 keywords: "dotnet-publish, CLI, CLI 命令, .NET Core"
 author: blackdwarf
@@ -10,10 +10,11 @@ ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: f2ef275a-7c5e-430a-8c30-65f52af62771
-translationtype: Human Translation
-ms.sourcegitcommit: dff752a9d31ec92b113dae9eed20cd72faf57c84
-ms.openlocfilehash: 48bfe6c77ee6c5d905069f47da5512ac63a24b2a
-ms.lasthandoff: 03/22/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: a8a37b1eacab13682d4f4a2bea2f9ea248cdd9eb
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -36,7 +37,7 @@ ms.lasthandoff: 03/22/2017
 * *\*.runtime.config.json* 文件，指定应用程序所要求的共享运行时以及该运行时的其他配置选项（例如，垃圾回收类型）。
 * 应用程序的依赖项。 将这些依赖项从 NuGet 缓存复制到输出文件夹。
 
-`dotnet publish` 命令的输出已准备好部署到托管系统（例如，服务器、电脑、Mac 和笔记本电脑）以供执行，它还是准备应用程序以供部署的唯一受官方支持的方法。 根据项目指定的部署的类型，托管系统不一定已在其上安装 .NET Core 共享运行时。 有关详细信息，请参阅 [.NET Core 应用程序部署](../deploying/index.md)。 有关已发布应用程序的目录结构，请参阅[目录结构](https://docs.microsoft.com/en-us/aspnet/core/hosting/directory-structure)。
+`dotnet publish` 命令的输出已准备好部署到托管系统（例如，服务器、电脑、Mac 和笔记本电脑）以供执行，它还是准备应用程序以供部署的唯一受官方支持的方法。 根据项目指定的部署的类型，托管系统不一定已在其上安装 .NET Core 共享运行时。 有关详细信息，请参阅 [.NET Core 应用程序部署](../deploying/index.md)。 有关已发布应用程序的目录结构，请参阅[目录结构](/aspnet/core/hosting/directory-structure)。
 
 ## <a name="arguments"></a>参数
 
@@ -96,3 +97,4 @@ ms.lasthandoff: 03/22/2017
 
 * [目标框架](../../standard/frameworks.md)
 * [运行时标识符 (RID) 目录](../rid-catalog.md)
+

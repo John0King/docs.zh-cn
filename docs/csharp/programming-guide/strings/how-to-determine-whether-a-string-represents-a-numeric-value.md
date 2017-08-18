@@ -1,5 +1,5 @@
 ---
-title: "如何：确定字符串是否表示数值（C# 编程指南）| Microsoft Docs"
+title: "如何：确定字符串是否表示数值（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -29,11 +29,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
-ms.openlocfilehash: 343e7304a83f396b8bdcc9c92e9123eed206be56
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: d2f89f4a4771625389a04f5c92829c91d66eb207
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-determine-whether-a-string-represents-a-numeric-value-c-programming-guide"></a>如何：确定字符串是否表示数值（C# 编程指南）
@@ -67,3 +67,4 @@ bool result = int.TryParse(s, out i); //i now = 108
  [如何：在十六进制字符串与数值类型之间转换](../../../csharp/programming-guide/types/how-to-convert-between-hexadecimal-strings-and-numeric-types.md)   
  [分析数值字符串](../../../standard/base-types/parsing-numeric.md)   
  [格式设置类型](../../../standard/base-types/formatting-types.md)
+

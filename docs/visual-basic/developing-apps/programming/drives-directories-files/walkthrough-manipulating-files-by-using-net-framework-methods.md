@@ -1,5 +1,5 @@
 ---
-title: "使用 .NET Framework 方法操作文件 (Visual Basic) | Microsoft Docs"
+title: "使用 .NET Framework 方法操作文件 (Visual Basic)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -41,20 +41,20 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: a16d2168548dadf9210b653d90ce229d99469b64
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: eab8ebe0f1e6f3e86b9c4aa7c3b24a2763a27ffc
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="walkthrough-manipulating-files-by-using-net-framework-methods-visual-basic"></a>演练：使用 .NET Framework 方法操作文件 (Visual Basic)
 此演练演示了如何使用 <xref:System.IO.StreamReader> 类打开和读取文件，如何查看文件是否正被访问，如何在使用 <xref:System.IO.StreamReader> 类实例读取的文件中搜索字符串，以及如何使用 <xref:System.IO.StreamWriter> 类写入文件。  
   
-[!INCLUDE[note_settings_general](../../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
 ## <a name="creating-the-application"></a>创建应用程序  
- 启动 [!INCLUDE[vsprvs](../../../../csharp/includes/vsprvs_md.md)]，并创建一个用户可用于写入指定文件的窗体来开始项目。  
+ 启动 [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)]，并创建一个用户可用于写入指定文件的窗体来开始项目。  
   
 #### <a name="to-create-the-project"></a>创建项目  
   
@@ -64,7 +64,7 @@ ms.lasthandoff: 05/22/2017
   
 3.  在“名称”框中，键入 `MyDiary`，然后单击“确定”。  
   
-     [!INCLUDE[vsprvs](../../../../csharp/includes/vsprvs_md.md)] 就会将该项目添加到“解决方案资源管理器”中，“Windows 窗体设计器”也将随即打开。  
+     [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] 就会将该项目添加到“解决方案资源管理器”中，“Windows 窗体设计器”也将随即打开。  
   
 4.  将下表中的控件添加到窗体中，并为其属性设置相应的值。  
   

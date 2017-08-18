@@ -1,5 +1,5 @@
 ---
-title: "如何：使用平台调用播放波形文件（C# 编程指南）| Microsoft Docs"
+title: "如何：使用平台调用播放波形文件（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -30,11 +30,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
-ms.openlocfilehash: 67e9876bd232ec55bfb0cf8f6d8b509f8af18822
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 001236392d2b3d3c70dbd0faf2a899929dfe8625
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-use-platform-invoke-to-play-a-wave-file-c-programming-guide"></a>如何：使用平台调用播放波形文件（C# 编程指南）
@@ -72,3 +72,4 @@ ms.lasthandoff: 05/10/2017
  [互操作性概述](../../../csharp/programming-guide/interop/interoperability-overview.md)   
  [平台调用详解](http://msdn.microsoft.com/en-us/ba9dd55b-2eaa-45cd-8afd-75cb8d64d243)   
  [用平台调用封送数据](../../../framework/interop/marshaling-data-with-platform-invoke.md)
+

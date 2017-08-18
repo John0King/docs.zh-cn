@@ -1,5 +1,5 @@
 ---
-title: "缓解：网格控件向 *-列分配空间 | Microsoft Docs"
+title: "缓解：网格控件向 *-列分配空间"
 ms.custom: 
 ms.date: 04/07/2017
 ms.prod: .net-framework
@@ -17,11 +17,11 @@ caps.latest.revision: 4
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 39e8e757a446b30ab18914465853138e1c239e40
-ms.openlocfilehash: 75b3c39fa2739b58fdee5c2183d5dfaaeb2f6af5
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 54391538ac0b2daf307cba2f7ceff1984d26b0ce
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="mitigation-grid-control39s-space-allocation-to-star-columns"></a>缓解：网格控件向 *-列分配空间

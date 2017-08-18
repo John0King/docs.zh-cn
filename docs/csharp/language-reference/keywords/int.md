@@ -1,5 +1,5 @@
 ---
-title: "int（C# 参考）| Microsoft Docs"
+title: "int（C# 参考）"
 ms.date: 2017-03-14
 ms.prod: .net
 ms.technology:
@@ -30,11 +30,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 400dfda51d978f35c3995f90840643aaff1b9c13
-ms.openlocfilehash: 48283ce80bbbff4182362ea9ae6258d31e175e0d
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 2722ddad74023cb8c1be86d3a628313a45d35d8a
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/24/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="int-c-reference"></a>int（C# 参考）
@@ -47,7 +47,7 @@ ms.lasthandoff: 03/24/2017
   
 ## <a name="literals"></a>文本  
  
-可以通过为其分配十进制文本、十六进制文本或（从 C# 7 开始）二进制文本来声明和初始化 `int` 变量。  如果整数文本超出 `int` 的范围（即，如果该值小于 <xref:System.Int32.MinValue?displayProperty=fullName> 或大于 <xref:System.Int32.MaxValue?displayProperty=fullName>，将出现编译错误。 
+可以通过为其分配十进制文本、十六进制文本或（从 C# 7 开始）二进制文本来声明和初始化 `int` 变量。  如果整数文本在 `int` 范围之外（即，如果它小于 <xref:System.Int32.MinValue?displayProperty=fullName> 或大于 <xref:System.Int32.MaxValue?displayProperty=fullName>），会发生编译错误。 
 
 在下例中，等于 16,342（表示为十进制、十六进制和二进制文本）的整数被分配给 `int` 值。  
   
@@ -95,9 +95,9 @@ int y = (int)3.0;    // OK: explicit conversion.
  有关兼用浮点类型和整型类型的算术表达式的详细信息，请参阅 [float](../../../csharp/language-reference/keywords/float.md) 和 [double](../../../csharp/language-reference/keywords/double.md)。  
   
 ## <a name="c-language-specification"></a>C# 语言规范  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.Int32>   
  [C# 参考](../../../csharp/language-reference/index.md)   
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
@@ -106,3 +106,4 @@ int y = (int)3.0;    // OK: explicit conversion.
  [内置类型表](../../../csharp/language-reference/keywords/built-in-types-table.md)   
  [隐式数值转换表](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)   
  [显式数值转换表](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)
+

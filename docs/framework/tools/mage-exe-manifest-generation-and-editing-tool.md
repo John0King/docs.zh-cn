@@ -1,5 +1,5 @@
 ---
-title: "Mage.exe（清单生成和编辑工具）| Microsoft Docs"
+title: "Mage.exe（清单生成和编辑工具）"
 ms.custom: 
 ms.date: 03/30/2017
 ms.prod: .net-framework
@@ -22,11 +22,11 @@ caps.latest.revision: 68
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: wpickett
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: a32f50ce8a92fa22d9627a1510a4b3ec1087364e
-ms.openlocfilehash: caa06be840f0612e94742e7ea167f02b8b8d657d
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 67551eb207461d5ac68db9f23b48ff7266c39ae9
 ms.contentlocale: zh-cn
-ms.lasthandoff: 06/02/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="mageexe-manifest-generation-and-editing-tool"></a>Mage.exe（清单生成和编辑工具）
@@ -114,7 +114,7 @@ mage -Update c:\HelloWorldDeployment\HelloWorld.deploy -CertFile cert.pfx
   
  使用 **-AppManifest** 选项填充某个部署清单时，Mage.exe 会假定应用程序清单与部署清单位于同一个目录中（在一个用当前部署版本命名的子目录中），并对部署清单进行相应地配置。 如果应用程序清单驻留在其他位置，请使用 **-AppCodeBase** 选项设置替代位置。  
   
- 部署清单和应用程序清单必须在部署应用程序之前进行签名。 有关对清单进行签名的指南，请参阅[受信任的应用程序部署概述](/visualstudio/deployment/trusted-application-deployment-overview)。  
+ 部署清单和应用程序清单必须在部署应用程序之前进行签名。 有关清单签名的指导，请参见 [Trusted Application Deployment Overview](/visualstudio/deployment/trusted-application-deployment-overview)。  
   
  应用程序清单的 **-TrustLevel** 选项描述了应用程序在客户端计算机上运行时所需的权限集。 默认情况下，将根据应用程序的 URL 所在的 *区域* 指派应用程序的信任级别。 通过公司网络部署的应用程序一般放置在 Intranet 区域中，而那些通过 Internet 部署的应用程序放置在 Internet 区域中。 这两个安全区域都会限制应用程序对本地资源的访问，Intranet 区域比 Internet 区域的权限稍大。 FullTrust 区域授予应用程序对计算机本地资源的完全访问权限。 如果使用 **-TrustLevel** 选项将某个应用程序放置在此区域中，CLR 的信任关系管理器组件将会提示用户确定是否授予这种更高的信任级别。 如果通过公司网络部署应用程序，则可以使用“受信任的应用程序部署”提升该应用程序的信任级别，而无需对用户做出提示。  
   
@@ -215,3 +215,4 @@ mage -Sign deploy.application -CertFile cert.pfx -Password <passwd>
  [受信任的应用程序部署概述](/visualstudio/deployment/trusted-application-deployment-overview)   
  [MageUI.exe（图形化客户端中的清单生成和编辑工具）](../../../docs/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client.md)   
  [命令提示](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+

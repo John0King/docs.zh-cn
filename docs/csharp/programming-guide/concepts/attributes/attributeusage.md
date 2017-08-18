@@ -1,5 +1,5 @@
 ---
-title: AttributeUsage (C#) | Microsoft Docs
+title: AttributeUsage (C#)
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,10 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 6f6c72c8152cc0f76085efbaa99ec63e50d1b676
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: c008c1a696e93bc3b756a926a046aa5a6942bc10
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="attributeusage-c"></a>AttributeUsage (C#)
@@ -48,9 +49,7 @@ class NewAttribute : System.Attribute { }
   
 ```csharp  
 using System;  
-```  
-  
-```csharp  
+
 [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field)]  
 class NewPropertyOrFieldAttribute : Attribute { }  
 ```  
@@ -59,9 +58,7 @@ class NewPropertyOrFieldAttribute : Attribute { }
   
 ```csharp  
 using System;  
-```  
-  
-```csharp  
+
 [AttributeUsage(AttributeTargets.Class, AllowMultiple = true)]  
 class MultiUseAttr : Attribute { }  
   
@@ -79,9 +76,7 @@ class Class2 { }
   
 ```csharp  
 using System;  
-```  
-  
-```csharp  
+
 [AttributeUsage(AttributeTargets.Class, Inherited = false)]  
 class Attr1 : Attribute { }  
   
@@ -103,9 +98,7 @@ class DClass : BClass { }
   
 ```csharp  
 using System;  
-```  
-  
-```csharp  
+
 // Create some custom attributes:  
 [AttributeUsage(System.AttributeTargets.Class, Inherited = false)]  
 class A1 : System.Attribute { }  
@@ -169,3 +162,4 @@ A2
  [特性](../../../../csharp/programming-guide/concepts/attributes/index.md)   
  [创建自定义特性 (C#)](../../../../csharp/programming-guide/concepts/attributes/creating-custom-attributes.md)   
  [使用反射访问特性 (C#)](../../../../csharp/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)
+

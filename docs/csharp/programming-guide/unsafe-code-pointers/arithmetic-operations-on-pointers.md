@@ -1,5 +1,5 @@
 ---
-title: "指针的算术运算（C# 编程指南）| Microsoft Docs"
+title: "指针的算术运算（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -27,11 +27,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: fc675600526dcaa6afd488fdee57acdc577cf71f
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: d40d44f8be590a909ff059b0fa84efb598fcf263
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="arithmetic-operations-on-pointers-c-programming-guide"></a>指针的算术运算（C# 编程指南）
@@ -58,7 +58,7 @@ ms.lasthandoff: 03/13/2017
 ## <a name="c-language-specification"></a>C# 语言规范  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [不安全代码和指针](../../../csharp/programming-guide/unsafe-code-pointers/index.md)   
  [指针表达式](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)   
@@ -69,3 +69,4 @@ ms.lasthandoff: 03/13/2017
  [unsafe](../../../csharp/language-reference/keywords/unsafe.md)   
  [fixed 语句](../../../csharp/language-reference/keywords/fixed-statement.md)   
  [stackalloc](../../../csharp/language-reference/keywords/stackalloc.md)
+

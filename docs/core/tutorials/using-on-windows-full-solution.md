@@ -1,6 +1,6 @@
 ---
-title: "使用 Visual Studio 2017 在 Windows 上构建完整的 .NET Core 解决方案 | Microsoft Docs"
-description: "在 Windows 上，使用 Visual Studio 2017 生成完整的 .NET Core 解决方案"
+title: "在 Windows 上，使用 Visual Studio 2017 生成完整的 .NET Core 解决方案"
+description: "了解如何在 Windows 上的 Visual Studio 2017 中生成完整的 .NET Core 解决方案。"
 keywords: .NET, .NET Core
 author: bleroy
 ms.author: mairaw
@@ -9,10 +9,11 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: ba7e082c-a7c8-431e-a342-f67734b660f6
-translationtype: Human Translation
-ms.sourcegitcommit: 195664ae6409be02ca132900d9c513a7b412acd4
-ms.openlocfilehash: b8505f88b324fcdf3a51d75c455ec5869e058774
-ms.lasthandoff: 03/07/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 6b164198f5fbbae5ebc6164fc281dd7de8172b70
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 

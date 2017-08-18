@@ -1,5 +1,5 @@
 ---
-title: "?: 运算符（C# 参考）| Microsoft Docs"
+title: "?: 运算符（C# 参考）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -33,11 +33,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 3e60516d1f443528c357eb12612b6149f34c1f7e
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 794ff53fe471ef23163503f59599b528df127e2e
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="-operator-c-reference"></a>?: 运算符（C# 参考）

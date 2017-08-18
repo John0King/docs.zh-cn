@@ -1,5 +1,5 @@
 ---
-title: "enum（C# 参考）| Microsoft Docs"
+title: "enum（C# 参考）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -30,11 +30,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: f064ed0710a83e4bf0eaf5c35b962c29443f9d23
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: cf12724ec9e450a2bc237db614f235d7f03a4a7e
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="enum-c-reference"></a>enum（C# 参考）
@@ -56,13 +56,13 @@ enum Days {Sat=1, Sun, Mon, Tue, Wed, Thu, Fri};
   
  在此枚举中，强制元素的序列从 `1` 开始，而不是 `0`。 但建议包括一个值为 0 的常量。 有关详细信息，请参阅[枚举类型](../../../csharp/programming-guide/enumeration-types.md)。  
   
- 每个枚举类型都有一个基础类型，该基础类型可以是除 [char](../../../csharp/language-reference/keywords/char.md) 外的任何整型类型。 枚举元素的默认基础类型是 [int](../../../csharp/language-reference/keywords/int.md)。 若要声明另一整型类型的枚举（如 [byte](../../../csharp/language-reference/keywords/byte.md)），则请在后跟该类型的标识符后使用冒号，如以下示例所示。  
+ 每个枚举类型都有一个基础类型，该基础类型可以是除 [char](../../../csharp/language-reference/keywords/char.md) 外的任何整型类型。 枚举元素的默认基础类型是 [int](../../../csharp/language-reference/keywords/int.md)。 若要声明另一整型的枚举（如 [byte](../../../csharp/language-reference/keywords/byte.md)），则请在后跟该类型的标识符后使用冒号，如以下示例所示。  
   
 ```  
 enum Days : byte {Sat=1, Sun, Mon, Tue, Wed, Thu, Fri};  
 ```  
   
- 枚举的已批准类型有 `byte`、[sbyte](../../../csharp/language-reference/keywords/sbyte.md)、[short](../../../csharp/language-reference/keywords/short.md)、[ushort](../../../csharp/language-reference/keywords/ushort.md)、[int](../../../csharp/language-reference/keywords/int.md)、[uint](../../../csharp/language-reference/keywords/uint.md)、[long](../../../csharp/language-reference/keywords/long.md) 或 [ulong](../../../csharp/language-reference/keywords/ulong.md)。  
+ 枚举的已批准类型有 `byte`、 [sbyte](../../../csharp/language-reference/keywords/sbyte.md)、 [short](../../../csharp/language-reference/keywords/short.md)、 [ushort](../../../csharp/language-reference/keywords/ushort.md)、 [int](../../../csharp/language-reference/keywords/int.md)、 [uint](../../../csharp/language-reference/keywords/uint.md)、 [long](../../../csharp/language-reference/keywords/long.md)或 [ulong](../../../csharp/language-reference/keywords/ulong.md)。  
   
  类型 `Days` 的变量可在基本类型范围内分配到任何值；该值不限于已命名常数。  
   
@@ -71,13 +71,13 @@ enum Days : byte {Sat=1, Sun, Mon, Tue, Wed, Thu, Fri};
 > [!NOTE]
 >  枚举数名称中不能含有空格。  
   
- 基础类型指定为每个枚举数分配多少存储空间。 但要将 `enum` 类型转换为整型，则必须使用显示转换。 例如，以下语句通过使用转换将 `enum` 转换为 `int`，从而将枚举器 `Sun` 赋值为 [int](../../../csharp/language-reference/keywords/int.md) 类型的变量。  
+ 基础类型指定为每个枚举数分配多少存储空间。 但要将 `enum` 类型转换为整型，则必须使用显示转换。 例如，以下语句通过使用转换将 `Sun` 转换为 [，从而将枚举数](../../../csharp/language-reference/keywords/int.md) 赋值为 `enum` int `int`类型的变量。  
   
 ```  
 int x = (int)Days.Sun;  
 ```  
   
- 当你将 <xref:System.FlagsAttribute?displayProperty=fullName> 应用到包含可与按位 `OR` 运算组合的元素的枚举中时，该特性与某些工具一起使用时会影响 `enum` 的行为。 当使用工具（如 <xref:System.Console> 类方法和表达式计算器）时，你可以注意到这些更改。 （请参阅第三个示例。）  
+ 当你将 <xref:System.FlagsAttribute?displayProperty=fullName> 应用到包含可与按位 `OR` 运算组合的元素的枚举中时，该特性与某些工具一起使用时会影响 `enum` 的行为。 当你使用工具（如 <xref:System.Console> 类方法和表达式计算器）时，你可以注意到这些更改。 （请参阅第三个示例。）  
   
 ## <a name="robust-programming"></a>可靠编程  
  正如任何常量一样，对枚举的各项值的所有引用在编译时都会转换为数字参数。 这可能会造成如[常量](../../../csharp/programming-guide/classes-and-structs/constants.md)中所述的潜在版本问题。  
@@ -97,7 +97,7 @@ int x = (int)Days.Sun;
  [!code-cs[csrefKeywordsTypes#11](../../../csharp/language-reference/keywords/codesnippet/CSharp/enum_2.cs)]  
   
 ## <a name="example"></a>示例  
- 下面的代码示例说明了 `enum` 声明中 <xref:System.FlagsAttribute?displayProperty=fullName> 特性的使用和作用。  
+ 下面的代码示例说明了 <xref:System.FlagsAttribute?displayProperty=fullName> 声明中 `enum` 特性的使用和作用。  
   
  [!code-cs[csrefKeywordsTypes#12](../../../csharp/language-reference/keywords/codesnippet/CSharp/enum_3.cs)]  
   
@@ -111,7 +111,7 @@ int x = (int)Days.Sun;
 ## <a name="c-language-specification"></a>C# 语言规范  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [C# 参考](../../../csharp/language-reference/index.md)   
  [枚举类型](../../../csharp/programming-guide/enumeration-types.md)   
  [C# 关键字](../../../csharp/language-reference/keywords/index.md)   

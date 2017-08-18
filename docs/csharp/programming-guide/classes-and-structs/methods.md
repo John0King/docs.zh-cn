@@ -1,5 +1,5 @@
 ---
-title: "方法（C# 编程指南）| Microsoft Docs"
+title: "方法（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -29,11 +29,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a5ed524a1b17f7be8903f998cbd732594faab831
-ms.openlocfilehash: da1abda4faec540c115d93e14a757dae24c5ae78
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: cf320a26e697943416cd8f1065f1b4ca4afeac07
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/15/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="methods-c-programming-guide"></a>方法（C# 编程指南）
@@ -80,7 +80,18 @@ ms.lasthandoff: 05/15/2017
  有关如何通过引用和值传递引用类型的详细信息，请参阅[传递引用类型参数](../../../csharp/programming-guide/classes-and-structs/passing-reference-type-parameters.md)和[引用类型](../../../csharp/language-reference/keywords/reference-types.md)。  
   
 ## <a name="return-values"></a>返回值  
- 方法可以将值返回到调用方。 如果列在方法名之前的返回类型不是 `void`，则该方法可通过使用 `return` 关键字返回值。 带 `return` 关键字，后跟与返回类型匹配的值的语句将该值返回到方法调用方。 `return` 关键字还会停止执行该方法。 如果返回类型为 `void`，没有值的 `return` 语句仍可用于停止执行该方法。 没有 `return` 关键字，当方法到达代码块结尾时，将停止执行。 具有非空的返回类型的方法都需要使用 `return` 关键字来返回值。 例如，这两种方法都使用 `return` 关键字来返回整数：  
+方法可以将值返回到调用方。 如果列在方法名之前的返回类型不是 `void`，则该方法可通过使用 `return` 关键字返回值。 带 `return` 关键字，后跟与返回类型匹配的值的语句将该值返回到方法调用方。 
+
+值可以按值或[按引用](ref-returns.md)返回到调用方，以 C# 7 开头。 如果在方法签名中使用 `ref` 关键字且其跟随每个 `return` 关键字，值将按引用返回到调用方。 例如，以下方法签名和返回语句指示该方法按对调用方的引用返回变量名 `estDistance`。
+
+```csharp
+public ref double GetEstimatedDistance()
+{
+   return ref estDistance;
+}
+```
+
+`return` 关键字还会停止执行该方法。 如果返回类型为 `void`，没有值的 `return` 语句仍可用于停止执行该方法。 没有 `return` 关键字，当方法到达代码块结尾时，将停止执行。 具有非空的返回类型的方法都需要使用 `return` 关键字来返回值。 例如，这两种方法都使用 `return` 关键字来返回整数：  
   
  [!code-cs[csProgGuideObjects#44](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/methods_6.cs)]  
   
@@ -91,8 +102,14 @@ ms.lasthandoff: 05/15/2017
  [!code-cs[csProgGuideObjects#46](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/methods_8.cs)]  
   
  在这种情况下，使用本地变量 `result` 存储值是可选的。 此步骤可以帮助提高代码的可读性，或者如果需要存储该方法整个范围内参数的原始值，则此步骤可能很有必要。  
-  
- 如果调用函数将某个多维数组传递到方法 M 中，那么，即使 M 修改了该数组的内容，也无需从 M 返回该数组。你可能会从 M 返回生成的数组以获得良好的值样式或正常运行的值流，但此操作并无必要。  无需返回修改后的数组是因为，C# 会按值传递所有引用类型，而数组引用的值是指向该数组的指针。 在方法 M 中，引用该数组的任何代码都能观察到数组内容的任何更改，如下面的示例所示。  
+
+若要使用按引用从方法返回的值，必须声明 [ref local](ref-returns.md#ref-locals) 变量（如果想要修改其值）。 例如，如果 `Planet.GetEstimatedDistance` 方法按引用返回 <xref:System.Double> 值，则可以将其定义为具有如下所示代码的 ref local 变量：
+
+```csharp
+ref int distance = plant 
+```
+
+如果调用函数将数组传递到 `M`，则无需从修改数组内容的方法 `M` 返回多维数组。  你可能会从 `M` 返回生成的数组以获得值的良好样式或功能流，但这是不必要的，因为 C# 按值传递所有引用类型，且数组引用的值是指向数组的指针。 在方法 `M` 中，引用该数组的任何代码都能观察到数组内容的任何更改，如以下示例所示。  
   
 ```csharp  
 static void Main(string[] args)  
@@ -124,9 +141,9 @@ static void Main(string[] args)
 > [!NOTE]
 >  异步方法在遇到第一个尚未完成的 awaited 对象或到达异步方法的末尾时（以先发生者为准），将返回到调用方。  
   
- 异步方法可以具有 <xref:System.Threading.Tasks.Task%601>、<xref:System.Threading.Tasks.Task> 或 void 返回类型。 Void 返回类型主要用于定义需要 void 返回类型的事件处理程序。 无法等待返回 void 的异步方法，并且返回 void 方法的调用方无法捕获该方法引发的异常。  
+ 异步方法可以具有 <xref:System.Threading.Tasks.Task%601>、 <xref:System.Threading.Tasks.Task>或 void 返回类型。 Void 返回类型主要用于定义需要 void 返回类型的事件处理程序。 无法等待返回 void 的异步方法，并且返回 void 方法的调用方无法捕获该方法引发的异常。  
   
- 在以下示例中，`DelayAsync` 是具有 <xref:System.Threading.Tasks.Task%601> 返回类型的异步方法。 `DelayAsync` 具有返回整数的 `return` 语句。 因此， `DelayAsync` 的方法声明必须具有 `Task<int>`的返回类型。 因为返回类型是 `Task<int>`， `await` 中 `DoSomethingAsync` 表达式的计算如以下语句所示得出整数： `int result = await delayTask`。  
+ 在以下示例中， `DelayAsync` 是具有 <xref:System.Threading.Tasks.Task%601>返回类型的异步方法。 `DelayAsync` 具有返回整数的 `return` 语句。 因此， `DelayAsync` 的方法声明必须具有 `Task<int>`的返回类型。 因为返回类型是 `Task<int>`， `await` 中 `DoSomethingAsync` 表达式的计算如以下语句所示得出整数： `int result = await delayTask`。  
   
  `startButton_Click` 方法是具有 void 返回类型的异步方法的示例。 因为 `DoSomethingAsync` 是异步方法，调用 `DoSomethingAsync` 的任务必须等待，如以下语句所示： `await DoSomethingAsync();`。 `startButton_Click` 方法必须使用 `async` 修饰符进行定义，因为该方法具有 `await` 表达式。  
   
@@ -155,7 +172,7 @@ public Customer this[long id] => store.LookupCustomer(id);
   
  通过使用 [foreach](../../../csharp/language-reference/keywords/foreach-in.md) 语句从客户端代码调用迭代器。  
   
- 迭代器的返回类型可以是 <xref:System.Collections.IEnumerable>、<xref:System.Collections.Generic.IEnumerable%601>、<xref:System.Collections.IEnumerator> 或 <xref:System.Collections.Generic.IEnumerator%601>。  
+ 迭代器的返回类型可以是 <xref:System.Collections.IEnumerable>、 <xref:System.Collections.Generic.IEnumerable%601>、 <xref:System.Collections.IEnumerator>或 <xref:System.Collections.Generic.IEnumerator%601>。  
   
  有关更多信息，请参见 [迭代器](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7)。  
   

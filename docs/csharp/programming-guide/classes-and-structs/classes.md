@@ -1,5 +1,5 @@
 ---
-title: "类（C# 编程指南）| Microsoft Docs"
+title: "类（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -29,11 +29,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a5ed524a1b17f7be8903f998cbd732594faab831
-ms.openlocfilehash: 1f327e7171df8b91d4c5a787c879069a4e44f562
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: eedb087f177b1bff6f4d4177cd56ac4cca016490
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/15/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="classes-c-programming-guide"></a>类（C# 编程指南）
@@ -74,7 +74,7 @@ ms.lasthandoff: 05/15/2017
   
  与 C++ 不同，C# 中的类只能直接从基类继承。 但是，因为基类本身可能继承自其他类，因此类可能间接继承多个基类。 此外，类还可以直接实现多个接口。 有关详细信息，请参阅[接口](../../../csharp/programming-guide/interfaces/index.md)。  
   
- 类可以声明为 [abstract](../../../csharp/language-reference/keywords/abstract.md)（抽象）。 抽象类包含抽象方法，抽象方法包含签名定义但不包含实现。 抽象类不能实例化。 只能通过可实现抽象方法的派生类来使用该类。 与此相反，[密封](../../../csharp/language-reference/keywords/sealed.md)类不允许其他类继承。 有关详细信息，请参阅[抽象类、密封类和类成员](../../../csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md)。  
+ 类可以声明为 [abstract](../../../csharp/language-reference/keywords/abstract.md)（抽象）。 抽象类包含抽象方法，抽象方法包含签名定义但不包含实现。 抽象类不能实例化。 只能通过可实现抽象方法的派生类来使用该类。 与此相反，[sealed](../../../csharp/language-reference/keywords/sealed.md)（密封）类不允许其他类继承。 有关详细信息，请参阅[抽象类、密封类及类成员](../../../csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md)。  
   
  类定义可以在不同的源文件之间分割。 有关详细信息，请参阅[分部类和方法](../../../csharp/programming-guide/classes-and-structs/partial-classes-and-methods.md)。  
   
@@ -96,3 +96,4 @@ ms.lasthandoff: 05/15/2017
  [构造函数](../../../csharp/programming-guide/classes-and-structs/constructors.md)   
  [终结器](../../../csharp/programming-guide/classes-and-structs/destructors.md)   
  [对象](../../../csharp/programming-guide/classes-and-structs/objects.md)
+

@@ -1,5 +1,5 @@
 ---
-title: "从文件读取 (Visual Basic) | Microsoft 文档"
+title: "从文件读取 (Visual Basic)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -34,11 +34,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: 6e2dbabb7ad2141840fbfaed054494e5604e24c3
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 298f821cc2dd6e8152db71206669b243112b6a6a
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="reading-from-files-in-visual-basic"></a>从文件读取 (Visual Basic)
@@ -90,4 +90,5 @@ ms.lasthandoff: 05/22/2017
  演示如何将 `My` 功能用于文件和目录。  
   
  [演练：使用 .NET Framework 方法操作文件](../../../../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-by-using-net-framework-methods.md)  
- 演示如何将 [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)] 方法用于文件和目录。
+ 演示如何将 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 方法用于文件和目录。
+

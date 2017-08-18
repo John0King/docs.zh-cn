@@ -1,5 +1,5 @@
 ---
-title: "如何：创建签名的友元程序集 (C#) | Microsoft Docs"
+title: "如何：创建签名的友元程序集 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,10 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 890cead4b28b8532dd7bd7f571defe7e280e4cdc
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: e9d56602eaffe73ff301ade95aaebeabab663be6
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-create-signed-friend-assemblies-c"></a>如何：创建签名的友元程序集 (C#)
@@ -102,9 +103,9 @@ ms.lasthandoff: 03/13/2017
      程序将打印字符串“Class1.Test”。  
   
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
- <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 属性和 <xref:System.Security.Permissions.StrongNameIdentityPermission> 类之间存在相似性。 主要的差异在于：<xref:System.Security.Permissions.StrongNameIdentityPermission> 可以要求具有安全权限才能运行特定的一段代码，而 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 属性则控制 `internal` 类型和成员的可见性。  
+ <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 属性和 <xref:System.Security.Permissions.StrongNameIdentityPermission> 类之间具有相似之处。 主要区别是，<xref:System.Security.Permissions.StrongNameIdentityPermission> 可以要求安全权限来运行一段特定代码，而 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 属性控制 `internal` 类型和成员的可见性。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>   
  [程序集和全局程序集缓存 (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/index.md)   
  [友元程序集 (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/friend-assemblies.md)   
@@ -113,3 +114,4 @@ ms.lasthandoff: 03/13/2017
  [Sn.exe（强名称工具）](https://msdn.microsoft.com/library/k5b5tt23)   
  [创建和使用具有强名称的程序集](https://msdn.microsoft.com/library/xwb8f617)   
  [C# 编程指南](../../../../csharp/programming-guide/index.md)
+

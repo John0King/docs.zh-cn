@@ -1,5 +1,5 @@
 ---
-title: "C# 语句 | C# 语言介绍"
+title: "C# 语句 - C# 语言介绍"
 description: "使用语句创建 C# 程序操作"
 keywords: ".NET, C#, 语句, 语法"
 author: BillWagner
@@ -10,10 +10,11 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 5409c379-5622-4fae-88b5-1654276ea8d4
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: b5849264844a28ba02fb1f539de06b207be9cd26
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 99ec2489daf89926da9b8c4e148965412826a8a6
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 

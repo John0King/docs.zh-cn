@@ -1,5 +1,5 @@
 ---
-title: "var（C# 参考）| Microsoft Docs"
+title: "var（C# 参考）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -30,11 +30,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 1aaa231a807ec50b8bcb922bf0dd218ec72d24ff
-ms.openlocfilehash: 90373937c309dbe4d888b7a2ec1b8b94a038e036
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 2a96d1c8869edd96cec913f1a868bcc3253dd14f
 ms.contentlocale: zh-cn
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="var-c-reference"></a>var（C# 参考）

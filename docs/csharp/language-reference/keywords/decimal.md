@@ -1,5 +1,5 @@
 ---
-title: "decimal（C# 参考）| Microsoft 文档"
+title: "decimal（C# 参考）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -30,24 +30,24 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
-ms.openlocfilehash: 336a4a7bb485a48282dd740bafb81421e0cba693
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 4c06d14f01302a21427845d0269fc8181a380914
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="decimal-c-reference"></a>decimal（C# 参考）
-`decimal` 关键字指示 128 位数据类型。 与浮点型相比，`decimal` 类型具有更高的精度和更小的范围，这使它适合于财务和货币计算。 `decimal` 类型的大致范围和精度如下表所示。  
+`decimal` 关键字指示 128 位数据类型。 与其他浮点型相比，`decimal` 类型具有更高的精度和更小的范围，这使它适合于财务和货币计算。 `decimal` 类型的大致范围和精度如下表所示。  
   
 |类型|大致范围|精度|.NET Framework 类型|  
 |----------|-----------------------|---------------|-------------------------|  
-|`decimal`|(-7.9 x 10<sup>28</sup> - 7.9 x 10<sup>28</sup>)/(10<sup>0 - 28</sup>)|28-29 个有效位|<xref:System.Decimal?displayProperty=fullName>|  
+|`decimal`|(-7.9 x 10<sup>28</sup> - 7.9 x 10<sup>28</sup>) / (10<sup>0</sup> - 10<sup>28</sup>)|28-29 个有效位|<xref:System.Decimal?displayProperty=fullName>|  
   
 ## <a name="literals"></a>文本  
  如果希望实数被视为 `decimal` 类型，请使用后缀 m 或 M，例如：  
   
-```  
+```csharp
 decimal myMoney = 300.5m;  
 ```  
   
@@ -56,19 +56,19 @@ decimal myMoney = 300.5m;
 ## <a name="conversions"></a>转换  
  整型将被隐式转换为 `decimal` 类型，其计算结果为 `decimal`。 因此，你可以使用整数文本初始化十进制变量而不使用后缀，如下所示：  
   
-```  
+```csharp
 decimal myMoney = 300;  
 ```  
   
- 在浮点型和 `decimal` 类型之间不存在隐式转换；因此，必须使用强制转换以在这两个类型之间转换。 例如：  
+ 在其他浮点型和 `decimal` 类型之间不存在隐式转换；因此，必须使用强制转换在这两个类型之间转换。 例如:   
   
-```  
-      decimal myMoney = 99.9m;  
+```csharp
+decimal myMoney = 99.9m;  
 double x = (double)myMoney;  
 myMoney = (decimal)x;  
 ```  
   
- 你还可以在同一表达式中混合使用 `decimal` 和数值整型。 但是，不进行强制转换就混合使用 `decimal` 和浮点型将导致编译错误。  
+ 你还可以在同一表达式中混合使用 `decimal` 和数值整型。 但是，不进行强制转换就混合使用 `decimal` 和其他浮点型将导致编译错误。  
   
  有关隐式数值转换的详细信息，请参阅[隐式数值转换表](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)。  
   
@@ -105,9 +105,9 @@ Console.WriteLine((double)dec + dub);
  [!code-cs[csrefKeywordsTypes#7](../../../csharp/language-reference/keywords/codesnippet/CSharp/decimal_2.cs)]  
   
 ## <a name="c-language-specification"></a>C# 语言规范  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.Decimal>   
  [C# 参考](../../../csharp/language-reference/index.md)   
  [C# 编程指南](../../../csharp/programming-guide/index.md)   

@@ -1,5 +1,5 @@
 ---
-title: "终结器（C# 编程指南）| Microsoft Docs"
+title: "终结器（C# 编程指南）"
 ms.date: 2017-05-10
 ms.prod: .net
 ms.technology:
@@ -29,11 +29,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a5ed524a1b17f7be8903f998cbd732594faab831
-ms.openlocfilehash: b4221d37bd955da98c812dadef3b0dd4a69a21bf
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 43bb7e6488da5eda863e7ad70b25c9bf55bebb52
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/15/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="finalizers-c-programming-guide"></a>终结器（C# 编程指南）
@@ -104,10 +104,11 @@ protected override void Finalize()
  [!code-cs[csProgGuideObjects#85](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/destructors_2.cs)]  
   
 ## <a name="c-language-specification"></a>C# 语言规范  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.IDisposable>   
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [构造函数](../../../csharp/programming-guide/classes-and-structs/constructors.md)   
  [垃圾回收](../../../standard/garbage-collection/index.md)
+

@@ -1,5 +1,5 @@
 ---
-title: "如何：循环访问目录树（C# 编程指南）| Microsoft 文档"
+title: "如何：循环访问目录树（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -28,17 +28,18 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: c63e18bc7e23a9fda4a005745174bdd6c85b3f08
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 562431f525cc58b5d630671c9015e30a14ea06ee
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-iterate-through-a-directory-tree-c-programming-guide"></a>如何：循环访问目录树（C# 编程指南）
 短语“循环访问目录树”的意思是访问特定根文件夹下的每个嵌套子目录中的每个文件，可以是任意深度。 不需要打开每个文件。 可以以 `string` 的形式只检索文件或子目录的名称，也可以以 <xref:System.IO.FileInfo?displayProperty=fullName> 或 <xref:System.IO.DirectoryInfo?displayProperty=fullName> 对象的形式检索其他信息。  
   
 > [!NOTE]
->  在 Windows 中，术语“目录”和“文件夹”可以互换使用。 大多数文档和用户界面文本使用术语“文件夹”，但 [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] 类库使用术语“目录”。  
+>  在 Windows 中，术语“目录”和“文件夹”可以互换使用。 大多数文档和用户界面文本使用术语“文件夹”，但 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 类库使用术语“目录”。  
   
  在最简单的情况下，如果你确信拥有指定根目录下的所有目录的访问权限，则可以使用 `System.IO.SearchOption.AllDirectories` 标志。 此标志返回与指定的模式匹配的所有嵌套的子目录。 下面的示例演示如何使用此标志。  
   
@@ -46,16 +47,16 @@ ms.lasthandoff: 03/13/2017
 root.GetDirectories("*.*", System.IO.SearchOption.AllDirectories);  
 ```  
   
- 此方法的缺点是，如果指定的根目录下的任何子目录引发 <xref:System.IO.DirectoryNotFoundException> 或 <xref:System.UnauthorizedAccessException> 异常，则整个方法失败并不返回任何目录。 使用 <xref:System.IO.DirectoryInfo.GetFiles%2A> 方法时也是如此。 如果需要处理特定子文件夹中的异常，则必须手动遍历目录树，如以下示例所示。  
+ 此方法的缺点是，如果指定根目录下的任何子目录引发 <xref:System.IO.DirectoryNotFoundException> 或 <xref:System.UnauthorizedAccessException> 异常，则整个方法失败且不返回任何目录。 使用 <xref:System.IO.DirectoryInfo.GetFiles%2A> 方法时也是如此。 如果需要处理特定子文件夹中的异常，则必须手动遍历目录树，如以下示例所示。  
   
- 手动遍历目录树时，可以先处理子目录（**前序遍历），或者先处理文件（**后序遍历）。 如果执行前序遍历，那么在遍历直接位于当前文件夹中的文件之前，先遍历此文件夹下的整棵树。 本文档后面的示例执行的是后序遍历，但你可以轻松地修改它们以执行前序遍历。  
+ 手动遍历目录树时，可以先处理子目录（前序遍历），或者先处理文件（后序遍历）。 如果执行前序遍历，那么在遍历直接位于当前文件夹中的文件之前，先遍历此文件夹下的整棵树。 本文档后面的示例执行的是后序遍历，但你可以轻松地修改它们以执行前序遍历。  
   
  另一种选择是，是使用递归遍历还是基于堆栈的遍历。 本文档后面的示例演示了这两种方法。  
   
  如果需要对文件和文件夹执行各种操作，则可以模块化这些示例，方法是将操作重构为可使用单个委托进行调用的单独的函数。  
   
 > [!NOTE]
->  NTFS 文件系统可以包含交接点、符号链接和硬链接等形式的重解析点。******** 诸如 <xref:System.IO.DirectoryInfo.GetFiles%2A> 和 <xref:System.IO.DirectoryInfo.GetDirectories%2A> 的 .NET Framework 方法不会返回重解析点下面的任何子目录。 当两个重解析点相互引用时，此行为可防止进入无限循环。 通常，处理重解析点时应格外小心，以确保不会无意中修改或删除文件。 如果需要精确控制重解析点，请使用平台调用或本机代码直接调用相应的 Win32 文件系统方法。  
+>  NTFS 文件系统可以包含交接点、符号链接和硬链接等形式的重解析点。 诸如 <xref:System.IO.DirectoryInfo.GetFiles%2A> 和 <xref:System.IO.DirectoryInfo.GetDirectories%2A> 的 .NET Framework 方法不会返回重分析点下的任何子目录。 当两个重解析点相互引用时，此行为可防止进入无限循环。 通常，处理重解析点时应格外小心，以确保不会无意中修改或删除文件。 如果需要精确控制重解析点，请使用平台调用或本机代码直接调用相应的 Win32 文件系统方法。  
   
 ## <a name="example"></a>示例  
  下面的示例演示如何以递归方式遍历目录树。 递归方法是一种很好的方法，但是如果目录树较大且嵌套深度较深，则可能引起堆栈溢出异常。  
@@ -78,7 +79,8 @@ root.GetDirectories("*.*", System.IO.SearchOption.AllDirectories);
 ## <a name="robust-programming"></a>可靠编程  
  可靠的文件迭代代码必须考虑文件系统的诸多复杂性。 有关详细信息，请参阅 [NTFS 技术参考](http://go.microsoft.com/fwlink/?LinkId=79488)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.IO>   
  [LINQ 和文件目录](http://msdn.microsoft.com/library/5a5d516c-0279-4a84-ac84-b87f54caa808)   
  [文件系统和注册表（C# 编程指南）](../../../csharp/programming-guide/file-system/index.md)
+

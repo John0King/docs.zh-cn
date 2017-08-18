@@ -1,5 +1,5 @@
 ---
-title: "如何：确定安装了哪些 .NET Framework 版本 | Microsoft Docs"
+title: "如何：确定安装了哪些 .NET Framework 版本"
 ms.custom: 
 ms.date: 04/07/2017
 ms.prod: .net-framework
@@ -17,11 +17,11 @@ caps.latest.revision: 62
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fe9ab371ab8d3eee3778412e446b7aa30b42476b
-ms.openlocfilehash: 24a8d7b017160d5cb28b7478200b8623a1dc4818
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: cddee407d1245568054871d71f2840f463859535
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-determine-which-net-framework-versions-are-installed"></a>如何：确定安装了哪些 .NET Framework 版本
@@ -193,3 +193,4 @@ ms.lasthandoff: 05/22/2017
  [如何：确定安装了哪些 .NET Framework 更新](~/docs/framework/migration-guide/how-to-determine-which-net-framework-updates-are-installed.md)   
  [安装面向开发人员的 .NET Framework](../../../docs/framework/install/guide-for-developers.md)   
  [版本和依赖关系](~/docs/framework/migration-guide/versions-and-dependencies.md)
+

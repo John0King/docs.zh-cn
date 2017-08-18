@@ -1,5 +1,5 @@
 ---
-title: "如何：在 COM 互操作编程中使用索引属性（C# 编程指南）| Microsoft Docs"
+title: "如何：在 COM 互操作编程中使用索引属性（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -29,11 +29,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 7e33ed084c560470a486ebbb25035a59ddc18565
-ms.openlocfilehash: ae550ba7d3f2767cf7cc64a14bc177d15f426c36
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 19e620415adefd6190d3896377eaf6a7cf944f28
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-use-indexed-properties-in-com-interop-programming-c-programming-guide"></a>如何：在 COM 互操作编程中使用索引属性（C# 编程指南）
@@ -72,3 +72,4 @@ ms.lasthandoff: 05/22/2017
  [如何：在 Office 编程中使用命名实参和可选实参](../../../csharp/programming-guide/classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md)   
  [如何：使用 Visual C# 功能访问 Office 互操作对象](../../../csharp/programming-guide/interop/how-to-access-office-onterop-objects.md)   
  [演练：Office 编程](../../../csharp/programming-guide/interop/walkthrough-office-programming.md)
+

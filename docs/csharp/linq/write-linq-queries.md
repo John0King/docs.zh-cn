@@ -1,5 +1,5 @@
 ---
-title: "在 C# 中编写 LINQ 查询#"
+title: "在 C# 中编写 LINQ 查询"
 description: "如何编写查询。"
 keywords: .NET, .NET Core, C#
 author: BillWagner
@@ -11,14 +11,15 @@ ms.prod: .net-core
 ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: 30703f79-cf3a-4d02-b892-c95d58a1d9ed
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 2e08c8e3594bedeab763895c8b6f7d78a2bbf56d
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 7051e33a185b0ab898c4b9d7368f8f0e6883c119
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 
-# <a name="write-linq-queries-in-c"></a>在 C# 中编写 LINQ 查询#
+# <a name="write-linq-queries-in-c"></a>在 C# 中编写 LINQ 查询
 
 本主题介绍可以用于在 C# 中编写 LINQ 查询的三种方法：  
   
@@ -36,11 +37,11 @@ ms.lasthandoff: 03/13/2017
 ## <a name="example"></a>示例  
   
 ## <a name="query-syntax"></a>查询语法  
- 编写大多数查询的推荐方式是使用查询语法**创建查询表达式**。 下面的示例演示三个查询表达式。 第一个查询表达式演示如何通过应用包含 `where` 子句的条件来筛选或限制结果。 它返回源序列中值大于 7 或小于 3 的所有元素。 第二个表达式演示如何对返回的结果进行排序。 第三个表达式演示如何根据某个键对结果进行分组。 此查询基于单词的第一个字母返回两个组。  
+ 编写大多数查询的推荐方式是使用查询语法创建查询表达式。 下面的示例演示三个查询表达式。 第一个查询表达式演示如何通过应用包含 `where` 子句的条件来筛选或限制结果。 它返回源序列中值大于 7 或小于 3 的所有元素。 第二个表达式演示如何对返回的结果进行排序。 第三个表达式演示如何根据某个键对结果进行分组。 此查询基于单词的第一个字母返回两个组。  
   
  [!code-cs[csProgGuideLINQ#5](../../../samples/snippets/csharp/concepts/linq/how-to-write-linq-queries_1.cs)]  
   
- 请注意，这些查询的类型是 <xref:System.Collections.Generic.IEnumerable%601>。 可以使用 `var` 编写所有这些查询，如下面的示例所示：  
+ 注意，查询类型为 <xref:System.Collections.Generic.IEnumerable%601>。 可以使用 `var` 编写所有这些查询，如下面的示例所示：  
   
  `var query = from num in numbers...`  
   
@@ -49,7 +50,7 @@ ms.lasthandoff: 03/13/2017
 ## <a name="example"></a>示例  
   
 ## <a name="method-syntax"></a>方法语法  
- 某些查询操作必须表示为方法调用。 最常见的这类方法是返回单独数值的方法，如 <xref:System.Linq.Enumerable.Sum%2A>、<xref:System.Linq.Enumerable.Max%2A>、<xref:System.Linq.Enumerable.Min%2A>、<xref:System.Linq.Enumerable.Average%2A> 等等。 这些方法在任何查询中都必须始终最后一个调用，因为它们只表示单个值，不能用作其他查询操作的源。 下面的示例演示查询表达式中的方法调用：  
+ 某些查询操作必须表示为方法调用。 最常见的此类方法是可返回单一数值的方法，例如 <xref:System.Linq.Enumerable.Sum%2A>、<xref:System.Linq.Enumerable.Max%2A>、<xref:System.Linq.Enumerable.Min%2A>、<xref:System.Linq.Enumerable.Average%2A> 等。 这些方法在任何查询中都必须始终最后一个调用，因为它们只表示单个值，不能用作其他查询操作的源。 下面的示例演示查询表达式中的方法调用：  
   
  [!code-cs[csProgGuideLINQ#6](../../../samples/snippets/csharp/concepts/linq/how-to-write-linq-queries_2.cs)]  
   
@@ -58,7 +59,7 @@ ms.lasthandoff: 03/13/2017
   
  [!code-cs[csProgGuideLINQ#7](../../../samples/snippets/csharp/concepts/linq/how-to-write-linq-queries_3.cs)]  
   
- 在上面的查询中，只有查询 #4 立即执行。 这是因为它返回单个值，而不是泛型 <xref:System.Collections.Generic.IEnumerable%601> 集合。 该方法本身必须使用 `foreach` 才能计算其值。  
+ 在上面的查询中，只有查询 #4 立即执行。 这是因为它将返回单个值，而不是泛型 <xref:System.Collections.Generic.IEnumerable%601> 集合。 该方法本身必须使用 `foreach` 才能计算其值。  
   
  上面的每个查询可以通过 [var](../language-reference/keywords/var.md) 使用隐式类型化进行编写，如下面的示例所示：  
   
@@ -95,3 +96,4 @@ int numCount = numbers.Where(n => n < 3 || n > 7).Count();
   [演练：用 C# 编写查询](../programming-guide/concepts/linq/walkthrough-writing-queries-linq.md)   
  [LINQ 查询表达式](index.md)   
  [where 子句](../language-reference/keywords/where-clause.md)
+

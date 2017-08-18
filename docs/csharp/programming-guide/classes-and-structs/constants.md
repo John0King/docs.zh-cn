@@ -1,5 +1,5 @@
 ---
-title: "常量（C# 编程指南）| Microsoft Docs"
+title: "常量（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -28,15 +28,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: ad6c8119d74be0f178681b334f940ff5c38c05ed
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 85273420e9e0dbf4b8f24568d97be127c85d5f42
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="constants-c-programming-guide"></a>常量（C# 编程指南）
-常量是不可变的值，在编译时是已知的，在程序的生命周期内不会改变。 常量使用 [const](../../../csharp/language-reference/keywords/const.md) 修饰符声明。 只有 C# 内置类型（<xref:System.Object?displayProperty=fullName> 除外）可以声明为 `const`。 有关内置类型的列表，请参阅[内置类型表](../../../csharp/language-reference/keywords/built-in-types-table.md)。 用户定义的类型（包括类、结构和数组）不能为 `const`。 使用 [readonly](../../../csharp/language-reference/keywords/readonly.md) 修饰符创建在运行时一次性（例如在构造函数中）初始化的类、结构或数组，此后不能更改。  
+常量是不可变的值，在编译时是已知的，在程序的生命周期内不会改变。 常量使用 [const](../../../csharp/language-reference/keywords/const.md) 修饰符声明。 仅 C# 内置类型（不包括 <xref:System.Object?displayProperty=fullName>）可声明为 `const`。 有关内置类型的列表，请参阅[内置类型表](../../../csharp/language-reference/keywords/built-in-types-table.md)。 用户定义的类型（包括类、结构和数组）不能为 `const`。 使用 [readonly](../../../csharp/language-reference/keywords/readonly.md) 修饰符创建在运行时一次性（例如在构造函数中）初始化的类、结构或数组，此后不能更改。  
   
  C# 不支持 `const` 方法、属性或事件。  
   
@@ -59,7 +59,7 @@ ms.lasthandoff: 03/13/2017
   
  [!code-cs[csProgGuideObjects#66](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/constants_3.cs)]  
   
- 可以将常量标记为[公共](../../../csharp/language-reference/keywords/public.md)、[专用](../../../csharp/language-reference/keywords/private.md)、[受保护](../../../csharp/language-reference/keywords/protected.md)、[内部](../../../csharp/language-reference/keywords/internal.md)或 `protected``internal`。 这些访问修饰符定义该类的用户访问该常量的方式。 有关详细信息，请参阅[访问修饰符](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)。  
+ 可以将常量标记为[公共](../../../csharp/language-reference/keywords/public.md)、[专用](../../../csharp/language-reference/keywords/private.md)、[受保护](../../../csharp/language-reference/keywords/protected.md)、[内部](../../../csharp/language-reference/keywords/internal.md)或 `protected internal`。 这些访问修饰符定义该类的用户访问该常量的方式。 有关详细信息，请参阅[访问修饰符](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)。  
   
  常量是作为[静态](../../../csharp/language-reference/keywords/static.md)字段访问的，因为常量的值对于该类型的所有实例都是相同的。 不使用 `static` 关键字来声明这些常量。 不在定义常量的类中的表达式必须使用类名、句点和常量名称来访问该常量。 例如:   
   
@@ -68,10 +68,11 @@ ms.lasthandoff: 03/13/2017
 ## <a name="c-language-specification"></a>C# 语言规范  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [类和结构](../../../csharp/programming-guide/classes-and-structs/index.md)   
  [属性](../../../csharp/programming-guide/classes-and-structs/properties.md)   
  [类型](../../../csharp/programming-guide/types/index.md)   
  [readonly](../../../csharp/language-reference/keywords/readonly.md)   
  [C# 不变性第一部分：不变性类型](http://go.microsoft.com/fwlink/?LinkId=112379)
+

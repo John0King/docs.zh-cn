@@ -1,5 +1,5 @@
 ---
-title: "基本查询 (LINQ to XML) (C#) | Microsoft Docs"
+title: "基本查询 (LINQ to XML) (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,16 +14,15 @@ ms.assetid: d333bb7d-20c1-448a-95b7-e5ba07915744
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: e3879dfe92f158c545a1f4a42c6bfc35aae06f3c
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 272cfadeccb505960f7872274a2af8c18efc3679
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/24/2017
-
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="basic-queries-linq-to-xml-c"></a>基本查询 (LINQ to XML) (C#)
-本节提供基本 [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] 查询的示例。  
+本节提供基本 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 查询的示例。  
   
 ## <a name="in-this-section"></a>本节内容  
   
@@ -39,9 +38,10 @@ ms.lasthandoff: 05/24/2017
 |[如何：查找命名空间中的所有节点 (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-find-all-nodes-in-a-namespace.md)|演示如何查找特定命名空间中的所有节点。|  
 |[如何：对元素进行排序 (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-sort-elements.md)|演示如何编写对查询结果进行排序的查询。|  
 |[如何：对多个键上的元素进行排序 (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-sort-elements-on-multiple-keys.md)|演示如何对多个键进行排序。|  
-|[如何：计算中间值 (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-calculate-intermediate-values.md)|演示如何使用 `Let` 子句在 [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] 查询中计算中间值。|  
+|[如何：计算中间值 (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-calculate-intermediate-values.md)|演示如何使用 `Let` 子句在 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 查询中计算中间值。|  
 |[如何：编写基于上下文查找元素的查询 (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-write-a-query-that-finds-elements-based-on-context.md)|演示如何根据树中的其他元素来选择元素。|  
 |[如何：调试空查询结果集 (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-debug-empty-query-results-sets.md)|显示在对针对默认命名空间中 XML 的查询进行调试时相应的修补程序。|  
   
 ## <a name="see-also"></a>另请参阅  
  [查询 XML 树 (C#)](../../../../csharp/programming-guide/concepts/linq/querying-xml-trees.md)
+

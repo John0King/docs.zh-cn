@@ -1,5 +1,5 @@
 ---
-title: "dotnet-nuget-locals 命令 - .NET Core CLI | Microsoft Docs"
+title: "dotnet-nuget-locals 命令 - .NET Core CLI"
 description: "dotnet-nuget-locals 命令清除或列出本地 NuGet 资源，例如 http 请求缓存、临时缓存或计算机范围的全局包文件夹。"
 keywords: "dotnet-nuget-locals, CLI, CLI 命令, .NET Core"
 author: karann-msft
@@ -10,10 +10,11 @@ ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 8440229e-317e-4dc1-9463-cba5fdb12c3b
-translationtype: Human Translation
-ms.sourcegitcommit: dff752a9d31ec92b113dae9eed20cd72faf57c84
-ms.openlocfilehash: d0acfaa6ff1a11f49a0d3751b675ea94bd6ae3a3
-ms.lasthandoff: 03/22/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 2c9ea7b3b7c61b347cb7c56254773290f04a0cd6
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -95,5 +96,5 @@ ms.lasthandoff: 03/22/2017
 
 ## <a name="troubleshooting"></a>疑难解答
 
-有关使用 `dotnet nuget locals` 命令时的常见问题和错误的信息，请参阅[管理 NuGet 缓存](https://docs.microsoft.com/nuget/consume-packages/managing-the-nuget-cache)。
+有关使用 `dotnet nuget locals` 命令时的常见问题和错误的信息，请参阅[管理 NuGet 缓存](/nuget/consume-packages/managing-the-nuget-cache)。
 

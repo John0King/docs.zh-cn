@@ -1,5 +1,5 @@
 ---
-title: "如何：修改表达式树 (C#) | Microsoft 文档"
+title: "如何：修改表达式树 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,10 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 73d95a78673271fb8e458ed7f3c88e2e73eb3455
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: b665f3bfa1228e2e8834241f010792e9d5975c96
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-modify-expression-trees-c"></a>如何：修改表达式树 (C#)
@@ -89,3 +90,4 @@ ms.lasthandoff: 03/13/2017
 ## <a name="see-also"></a>请参阅  
  [如何：执行表达式树 (C#)](../../../../csharp/programming-guide/concepts/expression-trees/how-to-execute-expression-trees.md)   
  [表达式树 (C#)](../../../../csharp/programming-guide/concepts/expression-trees/index.md)
+

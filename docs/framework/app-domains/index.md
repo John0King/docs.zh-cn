@@ -1,5 +1,5 @@
 ---
-title: "使用应用程序域和程序集进行编程 | Microsoft Docs"
+title: "使用应用程序域和程序集编程"
 ms.custom: 
 ms.date: 03/30/2017
 ms.prod: .net-framework
@@ -19,11 +19,11 @@ caps.latest.revision: 11
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: 1cfd73bf6d8de9ea4ff9854e6882683514cb3c56
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 6dcf8e4c9bf2401309b1d80d2306bd619b96460d
 ms.contentlocale: zh-cn
-ms.lasthandoff: 06/02/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="programming-with-application-domains-and-assemblies"></a>使用应用程序域和程序集编程
@@ -53,3 +53,4 @@ Microsoft Internet Explorer、ASP.NET 和 Windows Shell 等主机将公共语言
   
  [反射概述](../../../docs/framework/reflection-and-codedom/reflection.md)  
  介绍了如何使用 **Reflection** 类获取程序集的信息。
+

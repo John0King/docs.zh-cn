@@ -1,5 +1,5 @@
 ---
-title: "如何：查询包含一组指定词语的句子 (LINQ) (C#) | Microsoft Docs"
+title: "如何：查询包含一组指定词语的句子 (LINQ) (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,10 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: c445a70d2f461ea60b575f58e6d57c1edcda922b
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 8bc90e9919d620127c305c9a2c857968e2c799af
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-query-for-sentences-that-contain-a-specified-set-of-words-linq-c"></a>如何：查询包含一组指定词语的句子 (LINQ) (C#)
@@ -78,7 +79,7 @@ Historically, the world of data and the world of objects have not been well inte
 */  
 ```  
   
- 查询运行时首先将文本拆分成句子，然后将句子拆分成包含每个单词的字符串数组。 对于每个这样的数组，<xref:System.Linq.Enumerable.Distinct%2A> 方法都将删除所有重复的单词，然后查询对单词数组和 `wordsToMatch` 数组执行<xref:System.Linq.Enumerable.Intersect%2A> 操作。 如果相交数与 `wordsToMatch` 数组的计数相同，将在单词中找到所有单词并返回原始句子。  
+ 查询运行时首先将文本拆分成句子，然后将句子拆分成包含每个单词的字符串数组。 对于每个数组，<xref:System.Linq.Enumerable.Distinct%2A> 方法将删除所有重复字词，然后查询将对字词数组和 `wordsToMatch` 数组执行 <xref:System.Linq.Enumerable.Intersect%2A> 操作。 如果相交数与 `wordsToMatch` 数组的计数相同，将在单词中找到所有单词并返回原始句子。  
   
  在对 <xref:System.String.Split%2A> 的调用中，使用标点符号作为分隔符，以从字符串中删除标点符号。 如果你没有不这样做，则假如你有一个字符串 “Historically,”，该字符串不会与 `wordsToMatch` 数组中的“Historically”匹配。 根据在源文本中找到的标点类型，可能需要使用其他分隔符。  
   
@@ -87,3 +88,4 @@ Historically, the world of data and the world of objects have not been well inte
   
 ## <a name="see-also"></a>请参阅  
  [LINQ 和字符串 (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-strings.md)
+

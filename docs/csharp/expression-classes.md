@@ -1,7 +1,7 @@
 ---
 title: "支持表达式树的框架类型"
-description: "支持表达式树的框架类型"
-keywords: ".NET、.NET Core"
+description: "了解支持表达式树的框架类型、创建表达式树和使用表达式树 API 的方法。"
+keywords: .NET, .NET Core
 author: BillWagner
 ms.author: wiwagn
 ms.date: 06/20/2016
@@ -10,10 +10,11 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: e9c85021-0d36-48af-91b7-aaaa66f22654
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 64b3b7999b6ff01bdf28cb7902ba50087d191cb4
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: ed89b286eee9b4c2e11bb27d18e50f777f94f33e
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -22,7 +23,7 @@ ms.lasthandoff: 03/13/2017
 [上一步 - 已解释的表达式树](expression-trees-explained.md)
 
 存在可与表达式树配合使用的 .NET Core framework 中的类的大型列表。
-可以在[此处](https://docs.microsoft.com/dotnet/core/api/System.Linq.Expressions)查看完整列表。
+可以在[此处](/dotnet/core/api/System.Linq.Expressions)查看完整列表。
 让我们来了解一下 framework 类的设计方式，而不是逐一查看完整列表。
 
 在语言设计中，表达式是可计算并返回值的代码主体。 表达式可能非常简单：常数表达式 `1` 返回常数值 1。 也可能较复杂：表达式 `(-B + Math.Sqrt(B*B + 4 * A * C)) / (2 * A)` 返回二次方程的一个根（若方程有解）。  

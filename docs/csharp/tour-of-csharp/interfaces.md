@@ -1,6 +1,6 @@
 ---
-title: "C# 接口 | C# 语言介绍"
-description: "接口定义 C 类型实现的协定#"
+title: "C# 接口 - C# 语言介绍"
+description: "接口定义 C# 类型实现的协定"
 keywords: ".NET, C#, 接口, 多重继承, 多形性"
 author: BillWagner
 ms.author: wiwagn
@@ -10,10 +10,11 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: a9bf82f4-efd1-4216-bd34-4ef0fa48c968
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 477db71cb3226247c7a13dbd9febd00c87f5c154
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 673ac56f3f5732fcda02d313b6f4273708ae365f
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 

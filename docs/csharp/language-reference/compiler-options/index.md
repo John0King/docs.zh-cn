@@ -1,5 +1,5 @@
 ---
-title: "C# 编译器选项 | Microsoft 文档"
+title: "C# 编译器选项"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -33,10 +33,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: c355f42106cfb7790591108b9b0f0938c34fdb32
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 12fd3210aeda6c260c91232baf99381a55b00cab
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="c-compiler-options"></a>C# 编译器选项
@@ -63,11 +64,12 @@ ms.lasthandoff: 03/13/2017
  按字母顺序列出了编译器选项。  
   
 ## <a name="related-sections"></a>相关章节  
- [“项目设计器”->“生成”页](https://docs.microsoft.com/visualstudio/ide/reference/build-page-project-designer-csharp)  
+ [“项目设计器”->“生成”页](/visualstudio/ide/reference/build-page-project-designer-csharp)  
  介绍了如何设置属性来控制项目的编译、生成和调试方式。 介绍了 Visual C# 项目的自定义生成步骤。  
   
- [默认和自定义生成](https://docs.microsoft.com/visualstudio/ide/compiling-and-building-in-visual-studio)  
+ [默认和自定义生成](/visualstudio/ide/compiling-and-building-in-visual-studio)  
  介绍了生成类型和配置。  
   
- [准备和管理生成](https://docs.microsoft.com/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio)  
+ [准备和管理生成](/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio)  
  介绍了 Visual Studio 开发环境中的生成过程。
+

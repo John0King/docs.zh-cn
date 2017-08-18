@@ -1,5 +1,5 @@
 ---
-title: "如何：使用批注以 XSLT 样式转换 LINQ to XML 树 (C#) | Microsoft Docs"
+title: "如何：使用批注以 XSLT 样式转换 LINQ to XML 树 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,10 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: aabc07212e46b98e86ec0050474a4c2e34449550
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 29cdf1ef54545bdbd96395dd4fe1d7c6b9f375e9
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-use-annotations-to-transform-linq-to-xml-trees-in-an-xslt-style-c"></a>如何：使用批注以 XSLT 样式转换 LINQ to XML 树 (C#)
@@ -54,7 +55,7 @@ ms.lasthandoff: 03/13/2017
   
 -   这有些类似于 XSL 中的转换规范。 用于选择一组节点的查询类似于用于模板的 XPath 表达式。 用于创建以批注形式保存的新 <xref:System.Xml.Linq.XElement> 的代码类似于 XSL 中的序列构造函数，`ApplyTransforms` 元素的功能类似于 XSL 中的 `xsl:apply-templates` 元素。  
   
--   采用此方法的优势之一是在用公式表述查询时，你始终是对未修改的源树编写查询。 您不必担心对树所做的修改如何影响要编写的查询。  
+-   采用此方法的优势之一是在用公式表述查询时，您始终是对未修改的源树编写查询。 您不必担心对树所做的修改如何影响要编写的查询。  
   
 ## <a name="transforming-a-tree"></a>转换一个树  
  下面的第一个示例将所有 `Paragraph` 节点重命名为 `para`。  
@@ -449,3 +450,4 @@ After Transform
   
 ## <a name="see-also"></a>请参阅  
  [高级 LINQ to XML 编程 (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)
+

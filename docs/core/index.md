@@ -1,6 +1,6 @@
 ---
-title: .NET Core | Microsoft Docs
-description: ".NET 核心"
+title: ".NET Core 指南"
+description: ".NET Core 是一种用于创建 Windows、Linux 和 Mac 应用的模块式高性能的 .NET 实现。 了解 .NET Core 以开始使用。"
 keywords: .NET, .NET Core
 author: richlander
 ms.author: mairaw
@@ -9,15 +9,15 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: f2b312cb-f80c-4b0d-9101-93908f06a6fa
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 4437ce5d344cf06d30e31911def6287999fc6ffc
-ms.openlocfilehash: cd99aa47233f855ac6da37ff93b981a941ee416a
+ms.translationtype: HT
+ms.sourcegitcommit: 9f2128080d34e78733cec926e59ee5dbe9b98a0d
+ms.openlocfilehash: 14e72dad71b8d99cea947e14f2ac77aedcfb5672
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 08/07/2017
 
 ---
 
-# <a name="net-core"></a>.NET Core
+# <a name="net-core-guide"></a>.NET Core 指南
 
 > 请查看[“入门”教程](get-started.md)，了解如何创建简单的 .NET Core 应用程序。 只需几分钟即可生成并运行第一个应用。
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 05/23/2017
 - **部署灵活：**可以包含在应用或已安装的并行用户或计算机范围中。
 - **跨平台：**可以在 Windows、macOS 和 Linux 上运行；也可移植到其他操作系统。 Microsoft、其他公司和个人提供的[支持的操作系统 (OS)](https://github.com/dotnet/core/blob/master/roadmap.md)、CPU 和应用程序方案会随着时间推移而增多。
 - **命令行工具：**可在命令行中执行所有产品方案。 
-- **兼容性：** .NET Core 通过 [.NET 标准库](../standard/library.md)与 .NET Framework、Xamarin 和 Mono 兼容。
+- **兼容性：**.NET Core 通过 [.NET 标准](../standard/net-standard.md)与 .NET Framework、Xamarin 和 Mono 兼容。
 - **开放源：**.NET Core 是一个开放源平台，使用 MIT 和 Apache 2 许可证。 文档由 [CC-BY](https://creativecommons.org/licenses/by/4.0/) 许可发行。 .NET Core 是一个 [.NET Foundation](https://dotnetfoundation.org/) 项目。
 - **由 Microsoft 支持：**.NET Core 由 Microsoft 依据 [.NET Core 支持](https://www.microsoft.com/net/core/support/)提供支持
 
@@ -49,23 +49,23 @@ C# 和 F# 编译器以及 .NET Core 工具已集成到或可以集成到多个�
 
 ### <a name="net-apis-and-compatibility"></a>.NET API 和兼容性
 
-可将 .NET Core 看作是 .NET Framework 在 .NET Framework 基类库 (BCL) 的跨平台版本。 它执行 [.NET 标准库](../standard/library.md)规范。 .NET Core 提供了一个可用于 .NET Framework 或 Mono/Xamarin 的 API 子集。 在某些情况下，类型未完全实现（某些成员不可用或已移动）。
+可将 .NET Core 看作是 .NET Framework 在 .NET Framework 基类库 (BCL) 的跨平台版本。 它实施 [.NET 标准](../standard/net-standard.md)规范。 .NET Core 提供了一个可用于 .NET Framework 或 Mono/Xamarin 的 API 子集。 在某些情况下，类型未完全实现（某些成员不可用或已移动）。
 
 有关 .NET Core API 的详细信息，请参阅 [.NET Core roadmap](https://github.com/dotnet/core/blob/master/roadmap.md)（.NET Core API 产品系列）。
 
-### <a name="relationship-to-the-net-standard-library"></a>与 .NET 标准库的关系
+### <a name="relationship-to-net-standard"></a>与 .NET Standard 的关系
 
-[.NET 标准库](../standard/library.md)是描述开发人员可以在每个 .NET 实现中看到的一组一致的 API 规范。 .NET 实现需要执行此规范才能被视为合规的 .NET 标准库以及才能支持面向 .NET 标准库的库。 
+[.NET 标准](../standard/net-standard.md)是一种 API 规范，用于描述开发者可以在每个 .NET 实现代码中使用的一组一致 .NET API。 .NET 实现需要实现此规范才能被视为符合 .NET Standard ，并且才能支持面向 .NET Standard 的库。 
 
-由于 .NET Core 可实现 .NET 标准库，因此也支持 .NET 标准库。
+由于 .NET Core 可实现 .NET Standard，因此也支持 .NET Standard 库。
 
 ### <a name="workloads"></a>工作负载
 
 就本身而言，.NET Core 包括单个应用程序模型（控制台应用），这对工具、本地服务和基于文本的游戏很有用。 除 .NET Core 外，还生成了其他应用程序模型以扩展其功能，例如：
 
-- [ASP.NET Core](https://docs.microsoft.com/aspnet/core/)
+- [ASP.NET Core](/aspnet/core/)
 - [Windows 10 通用 Windows 平台 (UWP)](https://developer.microsoft.com/windows)
-- [Xamarin.Forms](https://www.xamarin.com/forms)
+- [定位 UWP 时的 Xamarin.Forms](https://www.xamarin.com/forms)
 
 ### <a name="open-source"></a>开放源
 
@@ -111,7 +111,7 @@ C# 和 F# 编译器以及 .NET Core 工具已集成到或可以集成到多个�
 
 人们经常会问，为支持多个操作系统应如何实现 .NET Core。 他们还会问是否存在单独的实现，或是否使用 [conditional compilation](https://en.wikipedia.org/wiki/Conditional_compilation)（条件编译）。 这两者都在用，但强烈偏向条件编译。
 
-可以在下面的图表看出大多数 [CoreFX](https://github.com/dotnet/corefx) 都是与平台无关的代码，该代码可在所有平台共享。 与平台无关的代码可作为在所有平台上使用的单个可移植程序集使用。
+可以在下面的图表看出大多数 [CoreFX](https://github.com/dotnet/corefx) 都是与平台无关的代码，该代码可在所有平台共享。 不限平台的代码可实现为在所有平台上使用的单个可移植程序集。
 
 ![CoreFX：每个平台的代码行数](../images/corefx-platforms-loc.png)
 
@@ -124,23 +124,23 @@ Windows 和 Unix 实现大小相似。 Windows 具有较大的实现，因为 Co
 - 考虑到每个 OS 上的存储和加密 API 具有显著差异，[System.IO](https://github.com/dotnet/corefx/tree/master/src/System.IO) 和 [System.Security.Cryptography.Algorithms](https://github.com/dotnet/corefx/tree/master/src/System.Security.Cryptography.Algorithms) 是特定于平台的。 
 - 考虑到它们是通过数据结构创建和操作，[System.Collections](https://github.com/dotnet/corefx/tree/master/src/System.Collections) 和 [System.Linq](https://github.com/dotnet/corefx/tree/master/src/System.Linq) 是与平台无关的。
 
-## <a name="comparisons-to-other-net-platforms"></a>与其他 .NET 平台比较
+## <a name="comparisons-to-other-net-implementations"></a>与其他 .NET 实现比较
 
-将 .NET Core 与现有平台进行比较，这可能是了解其大小和形状最简单的方法了。 
+将 .NET Core 与现有的 .NET 实现进行比较，这可能是了解其大小和形状最简单的方法。 
 
 ### <a name="comparison-with-net-framework"></a>与 .NET Framework 比较
 
-.NET 平台由 Microsoft 于 2000 年首次发布，而后发展至今。 15 年多以来，.NET Framework 一直是 Microsoft 生产的主要 .NET 产品。 
+.NET 由 Microsoft 于 2000 年首次发布，而后发展至今。 15 年多以来，.NET Framework 一直是 Microsoft 出品的主要 .NET 实现。 
 
 .NET Core 和 .NET Framework 的主要差异在于： 
 
 - **应用模型** -- .NET Core 不支持所有 .NET Framework 应用模型，某种程序上是因为其中许多模型都是基于 Windows 技术，如 WPF（基于 DirectX 生成）。 但 .NET Core 和 .NET Framework 两者都支持控制台和 ASP.NET Core 应用模型。 
-- **API** -- .NET Core 包含很多与 .NET Framework 相同，但数量较少的 API，并且具有不同的组成要素（程序集名称不同；关键用例中的类型形状不同）。 目前，这些差异通常都需要更改，以将源移植到 .NET Core。 .NET Core 实现 [.NET 标准库](../standard/library.md) API，该 API 将随着时间推移而增长，以便包含更多 .NET Framework BCL API。
+- **API** -- .NET Core 包含很多与 .NET Framework 相同，但数量较少的 API，并且具有不同的组成要素（程序集名称不同；关键用例中的类型形状不同）。 目前，这些差异通常都需要更改，以将源移植到 .NET Core。 .NET Core 实现 [.NET 标准](../standard/net-standard.md) API，随着时间的推移，将包含更多 .NET Framework BCL API。
 - **子系统** -- .NET Core 实现 .NET Framework 中子系统的子级，目的是实现更简单的实现和编程模型。 例如，不支持代码访问安全性 (CAS)，但支持反射。
 - **平台** -- .NET Framework 支持 Windows 和 Windows Server，而 NET Core 还支持 macOS 和 Linux。
 - **开放源** -- .NET Core 属于开放源，而 [.NET Framework 的只读子集](https://github.com/microsoft/referencesource)属于开放源。
 
-虽然 .NET Core 是唯一的且与 .NET Framework 和其他 .NET 平台大不相同，但使用源或二进制共享技术分享代码仍很简单。 
+虽然 .NET Core 是唯一的且与 .NET Framework 和其他 .NET 实现大不相同，但使用源或二进制共享技术分享代码仍很简单。 
 
 ### <a name="comparison-with-mono"></a>与 Mono 比较
 
@@ -153,3 +153,4 @@ Windows 和 Unix 实现大小相似。 Windows 具有较大的实现，因为 Co
 - **平台** -- Mono 支持很多平台和 CPU。
 - **开放源** -- Mono 和 .NET Core 两者都使用 MIT 许可证，且都属于 .NET Foundation 项目。
 - **焦点** --最近几年，Mono 的主要焦点是移动平台，而 .NET Core 的焦点是云工作负荷。
+

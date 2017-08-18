@@ -1,5 +1,5 @@
 ---
-title: "using static 指令（C# 参考）| Microsoft Docs"
+title: "using static 指令（C# 参考）"
 ms.date: 2017-03-10
 ms.prod: .net
 ms.technology:
@@ -26,11 +26,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f111ba3db26f247cbc56ee296b652bc04efb837d
-ms.openlocfilehash: 66c68530f5684e4d75b9aaa21334e54dde5b64b6
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: b7d69d0262ba6f450e2cc0d5b30692bba181f9d9
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/02/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="using-static-directive-c-reference"></a>using static 指令（C# 参考）

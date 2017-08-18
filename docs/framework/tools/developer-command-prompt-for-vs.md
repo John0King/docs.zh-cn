@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio 开发人员命令提示 | Microsoft Docs"
+title: "Visual Studio 开发人员命令提示"
 ms.custom: 
 ms.date: 03/30/2017
 ms.prod: .net-framework
@@ -27,11 +27,11 @@ caps.latest.revision: 45
 author: mairaw
 ms.author: mairaw
 manager: wpickett
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
-ms.openlocfilehash: 6138fab11f30fdee646768ce807fbdba57fcabb3
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 0287c3f250a57f7a685191702be3ad5cc28fbec6
 ms.contentlocale: zh-cn
-ms.lasthandoff: 06/02/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="developer-command-prompt-for-visual-studio"></a>Visual Studio 开发人员命令提示
@@ -104,3 +104,4 @@ Visual Studio 开发人员命令提示会自动设置环境变量，这些变量
 ## <a name="see-also"></a>另请参阅  
  [工具](../../../docs/framework/tools/index.md)   
  [管理外部工具](/visualstudio/ide/managing-external-tools)
+

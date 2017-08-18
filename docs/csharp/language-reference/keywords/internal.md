@@ -1,5 +1,5 @@
 ---
-title: "internal（C# 参考）| Microsoft Docs"
+title: "internal（C# 参考）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -30,11 +30,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 6b50c4c2a6e545e0313beb0450d9ca5ff170ad05
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 5674a78e2c317357c31d9e2661a25ce86cbf4f6a
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="internal-c-reference"></a>internal（C# 参考）
@@ -59,7 +59,7 @@ public class BaseClass
  从定义具有内部访问权限的类型或成员的程序集外部引用该类型或成员是错误的。  
   
 ## <a name="example"></a>示例  
- 此示例包含 2 个文件，`Assembly1.cs` 和 `Assembly1`_`a.cs`。 第一个文件包含内部基类 `BaseClass`。 在第二个文件中，尝试实例化 `BaseClass` 会产生错误。  
+ 此示例包含两个文件，即 `Assembly1.cs` 和 `Assembly1_a.cs`。 第一个文件包含内部基类 `BaseClass`。 在第二个文件中，尝试实例化 `BaseClass` 会产生错误。  
   
 ```  
 // Assembly1.cs  
@@ -120,3 +120,4 @@ public class TestAccess
  [public](../../../csharp/language-reference/keywords/public.md)   
  [private](../../../csharp/language-reference/keywords/private.md)   
  [受保护](../../../csharp/language-reference/keywords/protected.md)
+

@@ -1,5 +1,5 @@
 ---
-title: "如何：使用 String.Split 分析字符串（C# 编程指南）| Microsoft Docs"
+title: "如何：使用 String.Split 分析字符串（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -31,15 +31,15 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 400dfda51d978f35c3995f90840643aaff1b9c13
-ms.openlocfilehash: 1f5f15c305619c538aa276396c31296f42c8f40a
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: c0ef96f1cb074c32208457c192d53c69d95a102d
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/24/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-parse-strings-using-stringsplit-c-programming-guide"></a>如何：使用 String.Split 分析字符串（C# 编程指南）
-以下代码示例演示如何使用 <xref:System.String.Split%2A?displayProperty=fullName> 方法分析字符串。 作为输入，<xref:System.String.Split%2A> 采用一个指示哪些字符分隔目标字符串的兴趣子字符串的字符数组。  函数返回子字符串数组。  
+以下代码示例说明如何使用 <xref:System.String.Split%2A?displayProperty=fullName> 方法分析字符串。 作为输入， <xref:System.String.Split%2A> 采用一个指示哪些字符分隔目标字符串的兴趣子字符串的字符数组。  函数返回子字符串数组。  
   
  此示例使用空格、逗号、句点、冒号和制表符，所有内容均在包含这些分隔字符的数组中传递到 <xref:System.String.Split%2A>。  目标字符串句子中每个单词均单独从所得字符串数组中显示。  
   

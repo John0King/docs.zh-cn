@@ -1,5 +1,5 @@
 ---
-title: "#region（C# 参考）| Microsoft Docs"
+title: "#<a name=\"region-c-reference\"></a>region（C# 参考）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -29,16 +29,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 2924daffcdc44c8f5ba5cf97c5b141c0dd07ca4a
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: f7685d23bc1d40a0d0b6c9ac9a644019e1186eb7
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="region-c-reference"></a>#region（C# 参考）
-利用 `#region`，可以指定在使用 Visual Studio Code 编辑器的[大纲功能](https://docs.microsoft.com/visualstudio/ide/outlining)时可展开或折叠的代码块。 在较长的代码文件中，能够折叠或隐藏一个或多个区域会十分便利，这样，可将精力集中于当前处理的文件部分。 下面的示例演示如何定义区域：  
+利用 `#region`，可以指定在使用 Visual Studio Code 编辑器的[大纲功能](/visualstudio/ide/outlining)时可展开或折叠的代码块。 在较长的代码文件中，能够折叠或隐藏一个或多个区域会十分便利，这样，可将精力集中于当前处理的文件部分。 下面的示例演示如何定义区域：  
   
-```  
+```csharp
 #region MyClass definition  
 public class MyClass   
 {  

@@ -1,5 +1,5 @@
 ---
-title: "如何：将对象数据写入 XML 文件 (C#) | Microsoft Docs"
+title: "如何：将对象数据写入 XML 文件 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,14 +19,15 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 197e91be6d3785e437cb33541b2b4c9b4a2cbb84
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: a4b2fde8f823e6b945d074327559013f4e748909
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-write-object-data-to-an-xml-file-c"></a>如何：将对象数据写入 XML 文件 (C#)
-此示例使用 <xref:System.Xml.Serialization.XmlSerializer> 类将来自某个类的对象写入到 XML 文件。  
+本示例使用 <xref:System.Xml.Serialization.XmlSerializer> 类从某个类将对象写入 XML 文件。  
   
 ## <a name="example"></a>示例  
   
@@ -68,16 +69,17 @@ public class XMLWrite
   
 -   进行序列化的类没有公共的无参数构造函数。  
   
--   文件存在且是只读的 (<xref:System.IO.IOException>)。  
+-   文件存在且为只读 (<xref:System.IO.IOException>)。  
   
--   路径太长 (<xref:System.IO.PathTooLongException>)。  
+-   路径过长 (<xref:System.IO.PathTooLongException>)。  
   
 -   磁盘已满 (<xref:System.IO.IOException>)。  
   
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
  此示例在文件尚未存在时创建新文件。 如果某个应用程序需要创建文件，则该应用程序需要针对文件夹的 `Create` 访问权限。 如果文件已存在，则该应用程序只需要 `Write` 访问权限（这是较弱的特权）。 如有可能，在部署过程中创建文件，并且仅授予针对单个文件的 `Read` 访问权限（而不是针对 `Create` 文件夹的访问权限）会更加安全。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.IO.StreamWriter>   
  [如何：从 XML 文件读取对象数据 (C#)](../../../../csharp/programming-guide/concepts/serialization/how-to-read-object-data-from-an-xml-file.md)   
  [序列化 (C# )](../../../../csharp/programming-guide/concepts/serialization/index.md)
+

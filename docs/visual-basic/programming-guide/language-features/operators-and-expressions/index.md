@@ -1,53 +1,70 @@
 ---
-title: "Visual Basic 中的运算符和表达式 | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "表达式 [Visual Basic]"
-  - "操作数"
-  - "操作数, 定义"
-  - "运算符 [Visual Basic]"
-  - "运算符 [Visual Basic], 操作数"
-  - "Visual Basic 代码, 表达式"
-  - "Visual Basic 代码, 运算符"
+title: "Visual Basic 中的运算符和表达式"
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- operators [Visual Basic], operands
+- operators [Visual Basic]
+- operands, definition
+- Visual Basic code, operators
+- Visual Basic code, expressions
+- operands
+- expressions [Visual Basic]
 ms.assetid: b86f3131-94ee-448f-96cd-79611e028b26
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 18
----
-# Visual Basic 中的运算符和表达式
-[!INCLUDE[vs2017banner](../../../../visual-basic/includes/vs2017banner.md)]
+author: dotnet-bot
+ms.author: dotnetcontent
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 3675af3ac8a0a80b5fb5f208c1679dc28ab77acf
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
-运算符是一种代码元素，可在一个或多个容纳值的代码元素上执行运算。  值元素包括变量、常量、文本、属性、`Function` 和 `Operator` 过程的返回值以及表达式。  
+---
+# <a name="operators-and-expressions-in-visual-basic"></a>Visual Basic 中的运算符和表达式
+运算符是对包含值的一个或多个代码元素执行运算的代码元素。 值元素包括变量、常量、文本、属性、`Function` 和 `Operator` 过程的返回结果以及表达式。  
   
- 表达式是与运算符组合在一起的一系列值元素，它将产生一个新值。  运算符通过执行计算、比较或其他运算来处理值元素。  
+ 表达式是一系列与运算符结合使用的值元素，将生成新值。 运算符通过执行计算、比较或其他运算来处理值元素。  
   
-## 运算符的类型  
- [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 提供了以下类型的运算符：  
+## <a name="types-of-operators"></a>运算符类型  
+ [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 提供以下类型的运算符：  
   
--   [算术运算符](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)对数值执行常见计算，其中包括将数值的位模式移位。  
+-   [算术运算符](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)：对数字值执行常见计算，包括更改位模式。  
   
--   [比较运算符](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)比较两个表达式，并返回表示比较结果的 `Boolean` 值。  
+-   [比较运算符](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)：比较两个表达式，并返回 `Boolean` 值来表示比较结果。  
   
--   [串联运算符](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/concatenation-operators.md)将多个字符串联接为一个字符串。  
+-   [串联运算符](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/concatenation-operators.md)：将多个字符串联接为一个字符串。  
   
--   [Visual Basic 中的逻辑和按位运算符](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/logical-and-bitwise-operators.md)合并 `Boolean` 值或数值，并返回数据类型与这些值相同的结果。  
+-   [Visual Basic 中的逻辑和位运算运算符](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/logical-and-bitwise-operators.md)：合并 `Boolean` 或数字值，并以值的形式返回数据类型相同的结果。  
   
- 与运算符组合在一起的值元素称为该运算符的操作数。  运算符与值元素组合在一起就形成了表达式，但赋值运算符除外，它将组成语句。  有关更多信息，请参见 [语句](../../../../visual-basic/programming-guide/language-features/statements.md)。  
+ 与运算符合并的值元素称为相应运算符的操作数。 运算符与值元素共同构成了表达式，构成语句的赋值运算符除外。 有关详细信息，请参阅[语句](../../../../visual-basic/programming-guide/language-features/statements.md)。  
   
-## 表达式的求值  
- 表达式的最终结果表示一个值，该值通常是某种常见的数据类型，如 `Boolean`、`String` 或数值类型。  
+## <a name="evaluation-of-expressions"></a>表达式计算  
+ 表达式的最终结果表示采用常见数据类型（如 `Boolean`、`String` 或数字类型）的值。  
   
- 下面是表达式的示例。  
+ 下面展示了表达式示例。  
   
  `5 + 4`  
   
@@ -65,15 +82,16 @@ caps.handback.revision: 18
   
  `' The preceding expression evaluates to False.`  
   
- 几个运算符可以在一个表达式或语句中执行操作，如下面的示例所示：  
+ 多个运算符可以在一个表达式或语句中执行运算，如以下示例所示。  
   
  [!code-vb[VbVbalrOperators#56](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/index_1.vb)]  
   
- 在前面的示例中，[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 在赋值运算符 \(`=`\) 右侧的表达式中执行运算，然后将结果值赋给左侧的变量 `x`。  对于可组合到表达式中的运算符的数量没有实际限制，但是需要理解 [Visual Basic 中的运算符优先级](../../../../visual-basic/language-reference/operators/operator-precedence.md) 才能确保获得预期结果。  
+ 在上面的示例中，[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 在赋值运算符 (`=`) 右侧的表达式中执行运算，再将生成的值赋给左侧变量 `x`。 对于可以合并到表达式中的运算符数量没有实际限制，但需要了解 [Visual Basic 中的运算符优先级](../../../../visual-basic/language-reference/operators/operator-precedence.md)，以确保结果符合预期。  
   
- 有关更多信息和示例，请参见 [Operator Overloading in Visual Basic 2005](http://go.microsoft.com/fwlink/?LinkId=101703)（Visual Basic 2005 中的运算符重载）。  
+ 有关详细信息和示例，请参阅 [Visual Basic 2005 中的运算符重载](http://go.microsoft.com/fwlink/?LinkId=101703)。  
   
-## 请参阅  
+## <a name="see-also"></a>另请参阅  
  [运算符](../../../../visual-basic/language-reference/operators/index.md)   
  [运算符的有效组合](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/efficient-combination-of-operators.md)   
  [语句](../../../../visual-basic/language-reference/statements/index.md)
+

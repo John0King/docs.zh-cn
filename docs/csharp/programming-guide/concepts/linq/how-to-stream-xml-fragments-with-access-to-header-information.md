@@ -1,5 +1,5 @@
 ---
-title: "如何：通过对标头信息的访问流式处理 XML 片段 (C#) | Microsoft Docs"
+title: "如何：通过对标头信息的访问流式处理 XML 片段 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,20 +19,21 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 81d0ba2403726f76d50465e1776e6e91ea49d355
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: b7a83c9fc88b6e59cc1c8308d92464591896d312
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-stream-xml-fragments-with-access-to-header-information-c"></a>如何：通过对标头信息的访问流式处理 XML 片段 (C#)
 有时，您必须读取任意大的 XML 文件并在编写您的应用程序时可以预测应用程序的内存需求量。 如果您试图用大 XML 文件填充 XML 树，则内存占用量将与文件大小成正比，也就是说会占用过多内存。 因此，您应改用流处理技术。  
   
- 一种选择是使用 <xref:System.Xml.XmlReader> 来编写应用程序。 但您可能需要使用 [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] 来查询 XML 树。 在这种情况下，您可以编写自己的自定义轴方法。 有关详细信息，请参阅[如何：编写 LINQ to XML 轴方法 (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-write-a-linq-to-xml-axis-method.md)。  
+ 一种选择是使用 <xref:System.Xml.XmlReader> 来编写应用程序。 但您可能需要使用 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 来查询 XML 树。 在这种情况下，您可以编写自己的自定义轴方法。 有关详细信息，请参阅[如何：编写 LINQ to XML 轴方法 (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-write-a-linq-to-xml-axis-method.md)。  
   
- 若要编写自己的轴方法，请编写一个小方法，让该方法使用 <xref:System.Xml.XmlReader> 来读取各个节点，直到达到感兴趣的节点之一。 该方法随后调用 <xref:System.Xml.Linq.XNode.ReadFrom%2A>，后者从 <xref:System.Xml.XmlReader> 进行读取并实例化 XML 片段。 然后，该方法生成从 `yield return` 到该方法（枚举您的自定义轴方法的方法）的每个片段。 然后，您可以对自定义轴方法编写 LINQ 查询。  
+ 若要编写您自己的轴方法，请编写一个小方法，让该方法使用 <xref:System.Xml.XmlReader> 来读取各个节点，直到达到您感兴趣的节点之一。 该方法然后调用 <xref:System.Xml.Linq.XNode.ReadFrom%2A>，后者将从 <xref:System.Xml.XmlReader> 中读取数据并实例化 XML 片段。 然后，该方法生成从 `yield return` 到该方法（枚举您的自定义轴方法的方法）的每个片段。 然后，您可以对自定义轴方法编写 LINQ 查询。  
   
- 流处理技术最适合只需处理一次源文档的情况，您可以按文档顺序处理各个元素。 某些标准查询运算符（如 <xref:System.Linq.Enumerable.OrderBy%2A>）可以循环访问其源、收集所有数据、对数据进行排序，最后生成序列中的第一项。 请注意，如果使用可在生成第一项之前具体化源的查询运算符，则不会保持小的内存需求量。  
+ 流处理技术最适合只需处理一次源文档的情况，您可以按文档顺序处理各个元素。 某些标准查询运算符（如 <xref:System.Linq.Enumerable.OrderBy%2A>）可以循环访问其源、收集所有数据、对数据排序，最后生成序列中的第一项。 请注意，如果使用可在生成第一项之前具体化源的查询运算符，则不会保持小的内存需求量。  
   
 ## <a name="example"></a>示例  
  有时，问题会变得更有意思。 在下面的 XML 文档中，自定义轴方法的使用方也必须知道每一项所属的使用方名称。  
@@ -184,3 +185,4 @@ static void Main(string[] args)
   
 ## <a name="see-also"></a>请参阅  
  [高级 LINQ to XML 编程 (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)
+

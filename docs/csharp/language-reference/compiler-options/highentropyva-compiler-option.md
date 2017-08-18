@@ -1,5 +1,5 @@
 ---
-title: "-highentropyva（C# 编译器选项）| Microsoft Docs"
+title: "-highentropyva（C# 编译器选项）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -31,11 +31,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: c1b49faa2fb388b330c24bdff28d00872828b110
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 4cb21c109fc33a30da016fd6a42285a3a3da02e2
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="highentropyva-c-compiler-options"></a>/highentropyva（C# 编译器选项）
@@ -55,3 +55,4 @@ ms.lasthandoff: 03/13/2017
  当随机化进程的地址空间布局包含在 ASLR 中时，**/highentropyva** 选项允许 Windows 内核的兼容版本使用更高程度的熵。 使用更高程度的熵意味着，可向内存区域（例如堆栈或堆）分配更多的地址。 因此，猜测特定内存区域的位置会更加困难。  
   
  指定 **/highentropyva** 编译器选项时，目标可执行文件及其依赖的任何模块在作为 64 位进程运行时，必须能够处理大于 4 GB 的指针值。
+

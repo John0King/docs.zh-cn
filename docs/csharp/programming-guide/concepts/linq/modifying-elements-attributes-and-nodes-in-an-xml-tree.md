@@ -1,5 +1,5 @@
 ---
-title: "修改 XML 树中的元素、属性和节点 | Microsoft Docs"
+title: "修改 XML 树3 中的元素、特性和节点"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,11 +14,11 @@ ms.assetid: 0ed22e4e-4c6b-4eb1-b0eb-06685efd8c33
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 6fa51b22af73d716b01444540edb7c8d814cd293
-ms.lasthandoff: 03/13/2017
-
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 432587324fbd3560da924c7516a743e623a38b1e
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="modifying-elements-attributes-and-nodes-in-an-xml-tree"></a>修改 XML 树中的元素、特性和节点
@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2017
   
  下面的方法修改 <xref:System.Xml.Linq.XElement>。  
   
-|方法|描述|  
+|方法|说明|  
 |------------|-----------------|  
 |<xref:System.Xml.Linq.XElement.Parse%2A?displayProperty=fullName>|用已分析的 XML 替换元素。|  
 |<xref:System.Xml.Linq.XElement.RemoveAll%2A?displayProperty=fullName>|移除元素的所有内容（子节点和属性）。|  
@@ -47,7 +47,7 @@ ms.lasthandoff: 03/13/2017
   
  下面的方法修改 <xref:System.Xml.Linq.XNode>（包括 <xref:System.Xml.Linq.XElement> 或 <xref:System.Xml.Linq.XDocument>）。  
   
-|方法|描述|  
+|方法|说明|  
 |------------|-----------------|  
 |<xref:System.Xml.Linq.XNode.ReplaceWith%2A?displayProperty=fullName>|用新内容替换节点。|  
   
@@ -59,3 +59,4 @@ ms.lasthandoff: 03/13/2017
   
 ## <a name="see-also"></a>请参阅  
  [修改 XML 树 (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/modifying-xml-trees-linq-to-xml.md)
+

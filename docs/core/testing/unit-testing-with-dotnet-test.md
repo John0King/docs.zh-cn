@@ -1,5 +1,5 @@
 ---
-title: "在 .NET Core 中使用 dotnet 测试的单元测试 | Microsoft Docs"
+title: "使用 .NET 测试和 xUnit 的 .NET Core 单元测试"
 description: "在 .NET Core 中使用 dotnet 测试的单元测试"
 keywords: .NET, .NET Core
 author: ardalis
@@ -9,15 +9,14 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: bdcdb812-6f13-4f20-9e90-0c0977937142
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
-ms.openlocfilehash: cc2e823be1a3d1c0267d98c95b25126bd7d048d4
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 6bb539231e7c0101755193d612e15893f9637fe1
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 07/28/2017
 
 ---
-
-# <a name="unit-testing-in-net-core-using-dotnet-test"></a>在 .NET Core 中使用 dotnet 测试的单元测试
+# <a name="unit-testing-in-net-core-using-dotnet-test-and-xunit"></a>使用 .NET 测试和 xUnit 的 .NET Core 单元测试
 
 本教程介绍分步构建示例解决方案的交互式体验，以了解单元测试概念。 如果希望使用预构建解决方案学习本教程，请在开始前[查看或下载示例代码](https://github.com/dotnet/docs/tree/master/samples/core/getting-started/unit-testing-using-dotnet-test/)。 有关下载说明，请参阅[示例和教程](../../samples-and-tutorials/index.md#viewing-and-downloading-samples)。
 

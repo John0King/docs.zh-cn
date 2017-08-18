@@ -1,5 +1,5 @@
 ---
-title: "如何：生成 LINQ to XML 示例 (C#) | Microsoft Docs"
+title: "如何：生成 LINQ to XML 示例 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,10 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: a8ec8a4b5ad976bd09364eab51ecb4981e83b5d0
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: d95748a69ac42f1c767dcf19c9f6d2edc8c872ee
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-build-linq-to-xml-examples-c"></a>如何：生成 LINQ to XML 示例 (C#)
@@ -52,3 +53,4 @@ using System.IO.Packaging;
   
 ## <a name="see-also"></a>另请参阅  
  [LINQ to XML 编程概述 (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-programming-overview.md)
+

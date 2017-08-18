@@ -1,5 +1,5 @@
 ---
-title: "支持 LINQ 的 C# 功能 | Microsoft Docs"
+title: "支持 LINQ 的 C# 功能"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -31,17 +31,18 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: f844e967e2abb7ea23e04a797017261e33bb4d75
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 01db44482ee3230d15af5ce8e0373fb15a769609
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="c-features-that-support-linq"></a>支持 LINQ 的 C# 功能
-下一节介绍 C# 3.0 中引入的新语言构造。 虽然这些新功能在一定程度上都用于 [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] 查询，但并不限于 [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]，如果认为有用，在任何情况下都可以使用这些新功能。  
+下一节介绍 C# 3.0 中引入的新语言构造。 虽然这些新功能在一定程度上都用于 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 查询，但并不限于 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)]，如果认为有用，在任何情况下都可以使用这些新功能。  
   
 ## <a name="query-expressions"></a>查询表达式  
- 查询表达式使用类似于 SQL 或 XQuery 的声明性语法来查询 IEnumerable 集合。 在编译时，查询语法转换为对 [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] 提供程序的标准查询运算符扩展方法实现的方法调用。 应用程序通过使用 `using` 指令指定适当的命名空间来控制范围内的标准查询运算符。 下面的查询表达式获取一个字符串数组，按字符串中的第一个字符对字符串进行分组，然后对各组进行排序。  
+ 查询表达式使用类似于 SQL 或 XQuery 的声明性语法来查询 IEnumerable 集合。 在编译时，查询语法转换为对 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 提供程序的标准查询运算符扩展方法实现的方法调用。 应用程序通过使用 `using` 指令指定适当的命名空间来控制范围内的标准查询运算符。 下面的查询表达式获取一个字符串数组，按字符串中的第一个字符对字符串进行分组，然后对各组进行排序。  
   
 ```  
 var query = from str in stringArray  
@@ -86,12 +87,12 @@ select new {name = cust.Name, phone = cust.Phone};
  有关详细信息，请参阅[匿名类型](../../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)。  
   
 ## <a name="extension-methods"></a>扩展方法  
- 扩展方法是一种可与类型关联的静态方法，因此可以像实例方法那样对类型调用它。 实际上，利用此功能，可以将新方法“添加”到现有类型，而不会实际修改它们。 标准查询运算符是一组扩展方法，它们为实现 <xref:System.Collections.Generic.IEnumerable%601> 的任何类型提供 [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] 查询功能。  
+ 扩展方法是一种可与类型关联的静态方法，因此可以像实例方法那样对类型调用它。 实际上，利用此功能，可以将新方法“添加”到现有类型，而不会实际修改它们。 标准查询运算符是一组扩展方法，它们为实现 <xref:System.Collections.Generic.IEnumerable%601> 的任何类型提供 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 查询功能。  
   
- 有关详细信息，请参阅[扩展方法](../../../../csharp/programming-guide/classes-and-structs/extension-methods.md)。  
+ 有关详细信息，请参阅[扩展方法](../../../../csharp/programming-guide/classes-and-structs/extension-methods.md)  
   
 ## <a name="lambda-expressions"></a>Lambda 表达式  
- Lambda 表达式是一种内联函数，该函数使用 => 运算符将输入参数与函数体分离，并且可以在编译时转换为委托或表达式树。 在 [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] 编程中，在对标准查询运算符进行直接方法调用时，会遇到 lambda 表达式。  
+ Lambda 表达式是一种内联函数，该函数使用 => 运算符将输入参数与函数体分离，并且可以在编译时转换为委托或表达式树。 在 [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] 编程中，在对标准查询运算符进行直接方法调用时，会遇到 lambda 表达式。  
   
  有关详细信息，请参见:  
   
@@ -112,3 +113,4 @@ public string Name {get; set;}
   
 ## <a name="see-also"></a>请参阅  
  [语言集成查询 (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/index.md)
+

@@ -1,5 +1,5 @@
 ---
-title: "在 Visual Basic 中操作文件和目录 | Microsoft Docs"
+title: "在 Visual Basic 中操作文件和目录"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -41,19 +41,19 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: a5ae7f4a720c04639191edf36425426dfc339a37
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 9e66d062df07fc23dfbd5d509e08ccd08813db15
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="walkthrough-manipulating-files-and-directories-in-visual-basic"></a>演练：在 Visual Basic 中操作文件和目录
-本演练简单介绍 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] 中文件 I/O 的基础知识。 描述如何创建列出并检查目录中文本文件的小型应用程序。 对于所选的每个文本文件，该应用程序都会提供文件属性和内容的第一行。 可以选择将信息写入日志文件中。  
+本演练简单介绍 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 中文件 I/O 的基础知识。 描述如何创建列出并检查目录中文本文件的小型应用程序。 对于所选的每个文本文件，该应用程序都会提供文件属性和内容的第一行。 可以选择将信息写入日志文件中。  
   
- 本演练使用 `My.Computer.FileSystem Object` 的成员，这些成员可从 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] 中获得。 有关更多信息，请参见<xref:Microsoft.VisualBasic.FileIO.FileSystem>。 本演练结尾部分提供等效示例，该示例使用来自 <xref:System.IO> 命名空间的类。  
+ 本演练使用 `My.Computer.FileSystem Object` 的成员，这些成员可从 [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 中获得。 有关更多信息，请参见<xref:Microsoft.VisualBasic.FileIO.FileSystem>。 本演练结尾部分提供等效示例，该示例使用来自 <xref:System.IO> 命名空间的类。  
   
-[!INCLUDE[note_settings_general](../../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
 ### <a name="to-create-the-project"></a>创建项目  
   
@@ -65,7 +65,7 @@ ms.lasthandoff: 05/22/2017
   
 3.  在“名称”框中，键入 `FileExplorer` 以设置项目名称，然后单击“确定”。  
   
-     [!INCLUDE[vsprvs](../../../../csharp/includes/vsprvs_md.md)] 会将项目添加到“解决方案资源管理器”中，并打开 Windows 窗体设计器。  
+     [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] 会将项目添加到“解决方案资源管理器”中，并打开 Windows 窗体设计器。  
   
 4.  将下表中的控件添加到窗体，并设置控件属性相应的值。  
   

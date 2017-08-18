@@ -1,5 +1,5 @@
 ---
-title: "如何：联接两个集合 (LINQ to XML) (C#) | Microsoft 文档"
+title: "如何：联接两个集合 (LINQ to XML) (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,11 +14,11 @@ ms.assetid: 7b817ede-911a-4cff-9dd3-639c3fc228c9
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 30e68bb1fef31d9ef8f4ea6ea5262ae9efe466a1
-ms.lasthandoff: 03/13/2017
-
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 1ca088637629453b9d9f801b576ff195844c0bd1
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-join-two-collections-linq-to-xml-c"></a>如何：联接两个集合 (LINQ to XML) (C#)
@@ -26,7 +26,7 @@ XML 文档中的元素或属性有时可以引用另一个其他元素或属性�
   
  主题[示例 XSD 文件：客户和订单](../../../../csharp/programming-guide/concepts/linq/sample-xsd-file-customers-and-orders1.md)包含一个可用于验证此文档的 XSD。 它使用 XSD 的 `xs:key` 和 `xs:keyref` 功能，将 `CustomerID` 元素的 `Customer` 属性设置为键，并在每个 `CustomerID` 元素的 `Order` 元素和每个 `CustomerID` 元素的 `Customer` 属性之间建立关系。  
   
- 使用 [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)]，可以通过使用 `join` 子句利用这种关系。  
+ 使用 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]，可以通过使用 `join` 子句利用这种关系。  
   
  请注意，由于没有可用的索引，这种联接的运行时性能较差。  
   
@@ -138,3 +138,4 @@ Attempting to validate, custOrdDoc validated
   
 ## <a name="see-also"></a>请参阅  
  [高级查询技术 (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)
+

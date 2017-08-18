@@ -1,5 +1,5 @@
 ---
-title: "运算符（C# 参考）| Microsoft 文档"
+title: "运算符（C# 参考）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -30,11 +30,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 2596da6ef7df5a0f051b23645d5b8096e829883f
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 76d403493861e9c587672412cd2989c419b8717a
 ms.contentlocale: zh-cn
-ms.lasthandoff: 03/13/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="operator-c-reference"></a>运算符（C# 参考）
@@ -55,3 +55,4 @@ ms.lasthandoff: 03/13/2017
  [implicit](../../../csharp/language-reference/keywords/implicit.md)   
  [explicit](../../../csharp/language-reference/keywords/explicit.md)   
  [如何：在结构之间实现用户定义的转换](../../../csharp/programming-guide/statements-expressions-operators/how-to-implement-user-defined-conversions-between-structs.md)
+

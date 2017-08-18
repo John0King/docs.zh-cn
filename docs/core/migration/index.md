@@ -1,19 +1,19 @@
 ---
-title: ".NET Core 迁移到 csproj 格式 | Microsoft Docs"
+title: ".NET Core 迁移到 csproj 格式"
 description: ".NET Core project.json 到 csproj 的迁移"
 keywords: ".NET, .NET Core, .NET Core 迁移"
 author: blackdwarf
 ms.author: mairaw
-ms.date: 03/13/2017
+ms.date: 07/19/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 1feadf3d-3cfc-41dd-abb5-a4fc303a7b53
-ms.translationtype: Human Translation
-ms.sourcegitcommit: be7974018ce3195dc7344192d647fe64fb2ebcc4
-ms.openlocfilehash: 7ee369e62027aaf59e4c1a340bbdd30a643e2b75
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 1d972489536e929c8694bd6a4cab31c9f2d624a8
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/14/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 05/14/2017
 
 ![单向升级对话框，其中显示要迁移的项目的列表](media/one-way-upgrade.jpg)
 
-Visual Studio 将迁移自动选择的项目。 迁移解决方案时，如果不选择所有项目，会显示相同的对话框，要求升级该解决方案的其余项目。
+Visual Studio 将迁移自动选择的项目。 迁移解决方案时，如果不选择所有项目，会显示相同的对话框，要求升级该解决方案的其余项目。 迁移项目后，可通过在“解决方案资源管理器”窗口中右键单击该项目，并选择“编辑 \<项目名称 > .csproj”来查看和修改其内容。
 
 已迁移的文件（project.json、global.json、.xproj 和解决方案文件）会移动到备份文件夹。 迁移的解决方案文件会升级到 Visual Studio 2017，将无法在先前版本的 Visual Studio 中打开该解决方案文件。 还会保存并自动打开名为 UpgradeLog.htm 的文件，该文件包含迁移报告。
 
@@ -53,7 +53,7 @@ Visual Studio 将迁移自动选择的项目。 迁移解决方案时，如果�
 已迁移的文件（project.json、global.json 和 .xproj）会移动到备份文件夹。
 
 > [!NOTE]
-> 如果使用 VS Code，`dotnet migrate` 命令不会修改 `tasks.json` 等特定于 VS Code 的文件。 需要手动更改这些文件。 如果使用 Project Ryder 或 Visual Studio 以外的任何编辑器或集成开发环境 (IDE)，也是如此。 
+> 如果使用的是 Visual Studio Code，`dotnet migrate` 命令不会修改 `tasks.json` 等 Visual Studio Code 专属文件。 需要手动更改这些文件。 如果使用 Project Ryder 或 Visual Studio 以外的任何编辑器或集成开发环境 (IDE)，也是如此。 
 
 请参阅 [project.json 和 csproj 属性之间的映射](../tools/project-json-to-csproj.md)，了解 project.json 和 csproj 格式的比较情况。
 
@@ -87,4 +87,7 @@ Visual Studio 将迁移自动选择的项目。 迁移解决方案时，如果�
 完成这些步骤后，项目应与 RTM .NET Core csproj 格式完全兼容。 
 
 有关从旧的 csproj 格式迁移到新的 csproj 格式之前和之后情况的示例，请参阅 .NET 博客上的 [Updating Visual Studio 2017 RC – .NET Core Tooling improvements](https://blogs.msdn.microsoft.com/dotnet/2016/12/12/updating-visual-studio-2017-rc-net-core-tooling-improvements/)（更新 Visual Studio 2017 RC - .NET Core 工具改进）文章。
+
+## <a name="see-also"></a>请参阅
+[移植、迁移和升级 Visual Studio 项目](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects)
 

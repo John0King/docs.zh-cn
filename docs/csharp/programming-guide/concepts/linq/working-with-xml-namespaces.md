@@ -1,5 +1,5 @@
 ---
-title: "使用 XML 命名空间 (C#) | Microsoft Docs"
+title: "使用 XML 命名空间 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,14 +19,15 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 3b0a211d7cd699238b86c00c78f9920d4053a2d0
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 98627e6944f774bb74f705c8c8607e856e1c1195
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="working-with-xml-namespaces-c"></a>使用 XML 命名空间 (C#)
-本节中的主题描述 [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] 如何支持命名空间。  
+本节中的主题描述 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 如何支持命名空间。  
   
 ## <a name="in-this-section"></a>本节内容  
   
@@ -40,3 +41,4 @@ ms.lasthandoff: 03/13/2017
   
 ## <a name="see-also"></a>请参阅  
  [编程指南 (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)
+

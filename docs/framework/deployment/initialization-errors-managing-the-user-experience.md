@@ -1,103 +1,108 @@
 ---
 title: ".NET Framework 初始化错误：管理用户体验 | Microsoft Docs"
-ms.custom: ""
-ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - ".NET Framework, 初始化错误"
-  - "初始化错误 [.NET Framework]"
-  - "找不到 Framework 体验"
+ms.custom: 
+ms.date: 03/30/2017
+ms.prod: .net-framework
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- dotnet-clr
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- no framework found experience
+- initialization errors [.NET Framework]
+- .NET Framework, initialization errors
 ms.assetid: 680a7382-957f-4f6e-b178-4e866004a07e
 caps.latest.revision: 5
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
-caps.handback.revision: 5
+author: mairaw
+ms.author: mairaw
+manager: wpickett
+ms.translationtype: Machine Translation
+ms.sourcegitcommit: fe9ab371ab8d3eee3778412e446b7aa30b42476b
+ms.openlocfilehash: 70f0515b2b4219dcb7e143b0c81f91d3855fd433
+ms.contentlocale: zh-cn
+ms.lasthandoff: 06/02/2017
+
 ---
-# .NET Framework 初始化错误：管理用户体验
-公共语言运行时 \(CLR\) 启动系统确定将用于运行托管应用程序代码 CLR 的版本。  在某些情况下，启动系统可能无法找到可以加载 CLR 的版本。  通常在应用程序需要无效或在给定计算机上安装的 CLR 版本的应用程序时会出现此情况。  如果未发现请求的版本，则 CLR 激活系统从调用的函数或接口返回 HRESULT 错误代码，并且可能会显示一条错误信息给正在运行该应用程序的用户。  本文提供 HRESULT 代码的列表并解释了如何防止显示错误消息。  
+# <a name="net-framework-initialization-errors-managing-the-user-experience"></a>.NET Framework 初始化错误：管理用户体验
+公共语言运行时 (CLR) 激活系统确定将用于运行托管应用程序代码的 CLR 版本。 在某些情况下，激活系统可能无法找到要加载的 CLR 版本。 如果应用程序所需的 CLR 版本无效或未安装在指定计算机上，则通常会出现这种情况。 如果找不到请求的版本，CLR 激活系统将从调用的函数或接口返回一个 HRESULT 错误代码，并且会向正在运行该应用程序的用户显示一条错误消息。 这篇文章提供 HRESULT 代码的列表，并解释如何才能防止显示错误消息。  
   
- CLR 提供记录的基础结构可以帮助调试 CLR 启动问题，如 [如何：调试 CLR 激活问题](../../../docs/framework/deployment/how-to-debug-clr-activation-issues.md) 中所述。  此基础结构不应与[程序集绑定日志](../../../docs/framework/tools/fuslogvw-exe-assembly-binding-log-viewer.md)混淆，它们完全不同。  
+ CLR 提供的日志记录基础结构有助于调试 CLR 激活问题，如[如何：调试 CLR 激活问题](../../../docs/framework/deployment/how-to-debug-clr-activation-issues.md)中所述。 该基础结构不应与[程序集绑定日志](../../../docs/framework/tools/fuslogvw-exe-assembly-binding-log-viewer.md)混淆，两者完全不同。  
   
-## CLR 启动 HRESULT 代码  
- CLR 激活 API 返回 HRESULT 代码启动操作的结果移到宿主报告。  CLR 宿主应始终参考这些返回值在继续其他操作之前。  
+## <a name="clr-activation-hresult-codes"></a>CLR 激活 HRESULT 代码  
+ CLR 激活 API 返回 HRESULT 代码以报告对主机的激活操作结果。 在进行其他操作之前，CLR 主机应始终咨询这些返回值。  
   
--   CLR\_E\_SHIM\_RUNTIMELOAD  
+-   CLR_E_SHIM_RUNTIMELOAD  
   
--   CLR\_E\_SHIM\_RUNTIMEEXPORT  
+-   CLR_E_SHIM_RUNTIMEEXPORT  
   
--   CLR\_E\_SHIM\_INSTALLROOT  
+-   CLR_E_SHIM_INSTALLROOT  
   
--   CLR\_E\_SHIM\_INSTALLCOMP  
+-   CLR_E_SHIM_INSTALLCOMP  
   
--   CLR\_E\_SHIM\_LEGACYRUNTIMEALREADYBOUND  
+-   CLR_E_SHIM_LEGACYRUNTIMEALREADYBOUND  
   
--   CLR\_E\_SHIM\_SHUTDOWNINPROGRESS  
+-   CLR_E_SHIM_SHUTDOWNINPROGRESS  
   
-## “初始化错误的 UI”  
- 如果 CLR 激活系统未能加载应用程序需要的运行时的正确版本，则它向用户显示一条错误消息通知用户没有正确配置其计算机以运行该应用程序，并提供他们一个可以弥补这种情况的机会。  通常在这种情况下显示以下错误消息。  用户可以选择**“是”**转到它们可以下载应用程序的正确 .NET Framework 版本的 Microsoft 网站。  
+## <a name="ui-for-initialization-errors"></a>初始化错误的 UI  
+ 如果 CLR 激活系统无法加载应用程序所需运行时的正确版本，它将向用户显示一条错误消息，通知他们，他们的计算机未正确配置，无法运行该应用程序，并为他们提供机会来修复该问题。 在此情况下通常会显示以下错误消息。 用户可以选择“是”以转到 Microsoft 网站，从中为应用程序下载正确的 .NET Framework 版本。  
   
  ![“.NET Framework 初始化错误”对话框](../../../docs/framework/deployment/media/initerrordialog.png "InitErrorDialog")  
-针对初始化错误的典型错误消息  
+初始化错误的典型错误消息  
   
-## 解析初始化错误  
- 作为开发人员，您有控制 .NET Framework 初始化错误消息的各种选项。  例如，可以使用 API 标志防止消息显示，如下一节所述。  但是，仍然必须解决阻止应用程序加载请求的运行时的问题。  否则，您的应用程序可能根本不能运行，或者一些功能可能不可用。  
+## <a name="resolving-the-initialization-error"></a>解决初始化错误  
+ 开发人员可以通过各种选项来控制 .NET Framework 初始化错误消息。 例如，如下一节所述，可以使用 API 标志阻止显示消息。 但仍需解决阻止应用程序加载请求运行时的问题。 否则，应用程序可能无法运行，或某些功能可能不可用。  
   
- 若要修复根本问题并提供最佳的用户体验（减少错误消息），建议以下操作：  
+ 若要解决根本问题并提供最佳用户体验（更少错误消息），建议执行以下操作：  
   
--   对于 .NET Framework 3.5（及更低版本）应用程序：配置应用程序，使之支持 .NET Framework 4 或 4.5（请参见 [说明](../../../docs/framework/migration-guide/how-to-configure-an-app-to-support-net-framework-4-or-4-5.md)）。  
+-   对于 .NET Framework 3.5（和更早版本）应用程序：配置应用程序以支持 .NET Framework 4 或 4.5（请参阅[说明](../../../docs/framework/migration-guide/how-to-configure-an-app-to-support-net-framework-4-or-4-5.md)。  
   
--   对于 .NET Framework 4 应用程序：安装 .NET Framework 4 可再发行组件包，作为应用程序设置的一部分。  请参见 [部署指南（针对开发人员）](../../../docs/framework/deployment/deployment-guide-for-developers.md)。  
+-   对于 .NET Framework 4 应用程序：安装 .NET Framework 4 可再发行组件包，作为应用程序安装的一部分。 请参阅[面向开发人员的部署指南](../../../docs/framework/deployment/deployment-guide-for-developers.md)。  
   
-## 控制错误消息  
- 显示错误消息通信未找到所请求的 .NET Framework 版本中查看作为对用户的一种很有用的服务或一个小麻烦。  在任一情况下，您可以通过将标志传递给激活 API 来控制此 UI。  
+## <a name="controlling-the-error-message"></a>控制错误消息  
+ 通过显示错误消息来传达找不到请求的 .NET Framework 版本，这种方法对用户而言既有用，又不太方便。 对于任何一种情况，都可通过将标志传递给激活 API 来控制此 UI。  
   
- [ICLRMetaHostPolicy::GetRequestedRuntime](../Topic/ICLRMetaHostPolicy::GetRequestedRuntime%20Method.md) 方法接受 [METAHOST\_POLICY\_FLAGS](../../../ocs/framework/unmanaged-api/hosting/metahost-policy-flags-enumeration.md) 枚举成员作为输入。  如果找不到 CLR 的请求的版本，则您可以包括 METAHOST\_POLICY\_SHOW\_ERROR\_DIALOG 标志请求错误消息。  默认情况下，错误消息不会显示。（[ICLRMetaHost::GetRuntime](../Topic/ICLRMetaHost::GetRuntime%20Method.md) 方法不接受此标志，并且不提供任何其他方法来显示信息。）  
+ [ICLRMetaHostPolicy::GetRequestedRuntime](../../../docs/framework/unmanaged-api/hosting/iclrmetahostpolicy-getrequestedruntime-method.md) 方法接受 [METAHOST_POLICY_FLAGS](../../../docs/framework/unmanaged-api/hosting/metahost-policy-flags-enumeration.md) 枚举作为输入。 可以包括 METAHOST_POLICY_SHOW_ERROR_DIALOG 标志，以在找不到请求的 CLR 版本时请求显示错误消息。 默认情况下，不显示错误消息。 （[ICLRMetaHost::GetRuntime](../../../docs/framework/unmanaged-api/hosting/iclrmetahost-getruntime-method.md) 方法不接受此标志，且不提供任何显示该错误消息的其他方式。）  
   
- Windows 提供的 [SetErrorMode](http://go.microsoft.com/fwlink/p/?LinkID=255242)函数用于申明是否希望错误消息显示在代码运行的进程中。  您可以指定 SEM\_FAILCRITICALERRORS 标志以防止显示该错误消息。  
+ Windows 提供的 [SetErrorMode](http://go.microsoft.com/fwlink/p/?LinkID=255242) 函数可用于声名是否希望因代码在进程中运行而显示错误消息。 可以指定 SEM_FAILCRITICALERRORS 标志来阻止显示错误消息。  
   
- 但是，在某些情况下，重写应用程序进程设置的 SEM\_FAILCRITICALERRORS 设置非常重要。  例如，如果您拥有的本机 COM 组件承载CLR，并由设置了 SEM\_FAILCRITICALERRORS 的进程承载，您可能要根据在该特定应用程序进程中显示的错误消息的影响重写标志。  在这种情况下，可以使用以下标志之一来重写 SEM\_FAILCRITICALERRORS：  
+ 但是，在某些情况下，需要替代由应用程序进程设置的 SEM_FAILCRITICALERRORS 设置。 例如，如果使用本机 COM 组件托管 CLR 且托管位置位于设置 SEM_FAILCRITICALERRORS 的进程，则建议替代该标志，具体取决于在该特定应用程序进程内显示的错误消息的影响。 在这种情况下，可以使用以下一种标志替代 SEM_FAILCRITICALERRORS：  
   
--   将 METAHOST\_POLICY\_IGNORE\_ERROR\_MODE 和 [ICLRMetaHostPolicy::GetRequestedRuntime](../Topic/ICLRMetaHostPolicy::GetRequestedRuntime%20Method.md) 方法一起使用。  
+-   将 METAHOST_POLICY_IGNORE_ERROR_MODE 与 [ICLRMetaHostPolicy::GetRequestedRuntime](../../../docs/framework/unmanaged-api/hosting/iclrmetahostpolicy-getrequestedruntime-method.md) 方法一起使用。  
   
--   将 RUNTIME\_INFO\_IGNORE\_ERROR\_MODE 和 [GetRequestedRuntimeInfo](../../../ocs/framework/unmanaged-api/hosting/getrequestedruntimeinfo-function.md) 函数一起使用。  
+-   将 RUNTIME_INFO_IGNORE_ERROR_MODE 与 [GetRequestedRuntimeInfo](../../../docs/framework/unmanaged-api/hosting/getrequestedruntimeinfo-function.md) 函数一起使用。  
   
-## “CLR 提供的宿主的 UI 策略”  
- CLR 提供了各种方案的宿主，并且，这些宿主都显示错误消息，当遇到问题加载运行时要求的版本。  下表提供主机及其错误消息策略列表。  
+## <a name="ui-policy-for-clr-provided-hosts"></a>用于提供 CLR 的主机的 UI 策略  
+ CLR 包括一组适用于各种方案的主机，如果在加载所需运行时版本时遇到问题，这些主机均将显示错误消息。 下表提供了主机及其错误消息策略的列表。  
   
-|CLR 主机|描述|错误消息策略|错误消息可以禁用?|  
-|------------|--------|------------|---------------|  
-|托管的 EXE 宿主|启动托管 EXE。|显示以便缺少 .NET Framework 版本|否|  
-|托管的 COM 宿主|将托管 COM 组件加载到进程中。|显示以便缺少 .NET Framework 版本|是，通过设置 SEM\_FAILCRITICALERRORS 标志|  
-|ClickOnce 宿主|启动 ClickOnce 应用程序。|显示以便缺少 .NET Framework 版本，以 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 开头|否|  
-|XBAP 主机|启动 WPF XBAP 应用程序。|显示以便缺少 .NET Framework 版本，以 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 开头|否|  
+|CLR 主机|描述|错误消息策略|是否可以禁用错误消息？|  
+|--------------|-----------------|--------------------------|------------------------------------|  
+|托管 EXE 主机|启动托管 EXE。|缺少 .NET Framework 版本时显示|No|  
+|托管 COM 主机|将托管 COM 组件加载到进程。|缺少 .NET Framework 版本时显示|是，通过设置 SEM_FAILCRITICALERRORS 标志|  
+|ClickOnce 主机|启动 ClickOnce 应用程序。|缺少 .NET Framework 版本时显示，从 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 开始|No|  
+|XBAP 主机|启动 WPF XBAP 应用程序。|缺少 .NET Framework 版本时显示，从 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 开始|No|  
   
-## [!INCLUDE[win8](../../../includes/win8-md.md)] 行为和 UI  
- CLR 启动系统提供相同的行为，并在将象在 Windows 操作系统的其他版本执行的 [!INCLUDE[win8](../../../includes/win8-md.md)] 的 UI，只不过，在遇到问题时加载 CLR 2.0。  [!INCLUDE[win8](../../../includes/win8-md.md)] 其中包括使用 CLR 4.5 的[!INCLUDE[net_v45](../../../includes/net-v45-md.md)]。但是，[!INCLUDE[win8](../../../includes/win8-md.md)] 不包含使用 CLR 2.0 的 .NET Framework 2.0、3.0 或 3.5。  因此，默认情况下，依赖于 CLR 2.0 的应用程序在 [!INCLUDE[win8](../../../includes/win8-md.md)] 不会运行。  相反，它们显示以下对话框来使用户可以安装 .NET Framework 3.5。  用户还可以在“控制面板”中启用 .NET Framework 3.5。  两个选项在文章 [Installing the .NET Framework 3.5 on Windows 8 and later versions](../../../docs/framework/install/net-framework-3-5-on-windows-8-plus.md) 中讨论。  
+## <a name="includewin8includeswin8-mdmd-behavior-and-ui"></a>[!INCLUDE[win8](../../../includes/win8-md.md)] 行为和 UI  
+ CLR 激活系统在 [!INCLUDE[win8](../../../includes/win8-md.md)] 上提供与在其他版本 Windows 操作系统上一样的行为和 UI，除非加载 CLR 2.0 时遇到问题。 [!INCLUDE[win8](../../../includes/win8-md.md)] 包括使用 CLR 4.5 的 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]。 但是，[!INCLUDE[win8](../../../includes/win8-md.md)] 不包括 .NET Framework 2.0、3.0 或 3.5，它们都使用 CLR 2.0。 结果，依赖于 CLR 2.0 的应用程序默认情况下在 [!INCLUDE[win8](../../../includes/win8-md.md)] 上不运行。 相反，它们将显示下面的对话框，使用户能够安装 .NET Framework 3.5。 用户还可在“控制面板”中启用 .NET Framework 3.5。 这两个选项将在[在 Windows 10、Windows 8.1 和 Windows 8 上安装 .NET Framework 3.5](../../../docs/framework/install/dotnet-35-windows-10.md)一文中进行讨论。  
   
  ![Windows 8 上的“3.5 安装”对话框](../../../docs/framework/deployment/media/installdialog.png "installdialog")  
 提示按需安装 .NET Framework 3.5  
   
 > [!NOTE]
->  [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 替换用户计算机上的 .NET Framework 4 \(CLR 4\)。  因此，.NET Framework 4 应用程序无缝运行，而不在 [!INCLUDE[win8](../../../includes/win8-md.md)] 显示此对话框。  
+>  [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 取代了用户计算机上的 .NET Framework 4 (CLR 4)。 因此，.NET Framework 4 应用程序将在 [!INCLUDE[win8](../../../includes/win8-md.md)] 上顺畅运行，不会显示该对话框。  
   
- 当安装了 .NET Framework 3.5 时，用户可以运行依赖于 .NET Framework 2.0、3.0 或 3.5 的应用程序在其 [!INCLUDE[win8](../../../includes/win8-md.md)] 计算机上。  它们还可以运行 .NET Framework 1.0 和 1.1 应用程序，提供未显式配置的这些应用程序，以仅在 .NET Framework 1.0 或 1.1 上运行。  请参见 [从 .NET Framework 1.1 迁移](../../../docs/framework/migration-guide/migrating-from-the-net-framework-1-1.md)。  
+ 安装 .NET Framework 3.5 后，用户可以在其 [!INCLUDE[win8](../../../includes/win8-md.md)] 计算机上运行依赖于 .NET Framework 2.0、3.0 或 3.5 的应用程序。 他们还可以运行 .NET Framework 1.0 和 1.1 应用程序，前提是这些应用程序未显式配置为仅在 .NET Framework 1.0 或 1.1 版上运行。 请参阅[从 .NET Framework 1.1 迁移](../../../docs/framework/migration-guide/migrating-from-the-net-framework-1-1.md)。  
   
- 从开始 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]，CLR 改进启动记录包括在记录的日志项，并初始化错误消息的原因显示。  有关详细信息，请参阅[如何：调试 CLR 激活问题](../../../docs/framework/deployment/how-to-debug-clr-activation-issues.md)。  
+ 从 [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] 开始，CLR 激活日志记录获得了极大的改进，包括何时和为什么会显示初始化错误消息的日志条目。 有关详细信息，请参阅[如何：调试 CLR 激活问题](../../../docs/framework/deployment/how-to-debug-clr-activation-issues.md)。  
   
-## 请参阅  
- [部署指南（针对开发人员）](../../../docs/framework/deployment/deployment-guide-for-developers.md)   
- [如何：配置应用程序以支持 .NET Framework 4 或 4.5](../../../docs/framework/migration-guide/how-to-configure-an-app-to-support-net-framework-4-or-4-5.md)   
+## <a name="see-also"></a>另请参阅  
+ [面向开发人员的部署指南](../../../docs/framework/deployment/deployment-guide-for-developers.md)   
+ [如何：配置应用以支持 .NET Framework 4 或 4.5](../../../docs/framework/migration-guide/how-to-configure-an-app-to-support-net-framework-4-or-4-5.md)   
  [如何：调试 CLR 激活问题](../../../docs/framework/deployment/how-to-debug-clr-activation-issues.md)   
- [Installing the .NET Framework 3.5 on Windows 8 and later versions](../../../docs/framework/install/net-framework-3-5-on-windows-8-plus.md)
+ [在 Windows 10、Windows 8.1 和 Windows 8 上安装 .NET Framework 3.5](../../../docs/framework/install/dotnet-35-windows-10.md)

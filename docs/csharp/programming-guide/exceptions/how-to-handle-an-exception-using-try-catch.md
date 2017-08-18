@@ -1,5 +1,5 @@
 ---
-title: "如何：使用 try/catch 处理异常（C# 编程指南）| Microsoft 文档"
+title: "如何：使用 try-catch 处理异常（C# 编程指南）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -29,10 +29,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 10eac61f4b9bb186d28044862ebc7273c6eb07b2
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: f6f714cd1b652845e77405ff74fbfc860e71dc21
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-handle-an-exception-using-trycatch-c-programming-guide"></a>如何：使用 try/catch 处理异常（C# 编程指南）
@@ -46,7 +47,8 @@ ms.lasthandoff: 03/13/2017
 ## <a name="comments"></a>注释  
  引发异常的代码包含在 `try` 块中。 在此块后面紧挨着添加 `catch` 语句以处理 `IndexOutOfRangeException` 异常（如果发生此异常）。 `catch` 块处理 `IndexOutOfRangeException` 异常并改为引发更合理的 `ArgumentOutOfRangeException` 异常。 为了向调用方提供尽可能多的信息，请考虑将原始异常指定为新异常的 <xref:System.Exception.InnerException%2A>。 因为 <xref:System.Exception.InnerException%2A> 属性为 [readonly](../../../csharp/language-reference/keywords/readonly.md)，所以必须在新异常的构造函数中指定此属性。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [异常和异常处理](../../../csharp/programming-guide/exceptions/index.md)   
  [异常处理](../../../csharp/programming-guide/exceptions/exception-handling.md)
+

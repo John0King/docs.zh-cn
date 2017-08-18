@@ -1,5 +1,5 @@
 ---
-title: "如何：在注册表中创建项 (Visual C#) | Microsoft Docs"
+title: "如何：在注册表中创建注册表项 (Visual C#)"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -29,10 +29,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 3a377a85acdc31b426171ab6583bff92b24889b3
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 96d34df3314494fc96ad8b55d7462b67dcc7bd72
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-create-a-key-in-the-registry-visual-c"></a>如何：在注册表中创建注册表项 (Visual C#)
@@ -53,7 +54,7 @@ key.Close();
   
 -   将 `Names` 参数替换为直接存在于注册表 HKEY_CURRENT_USER 节点下的项的名称。  
   
--   将 `Nam`e 参数替换为直接存在于“Names”节点下的值的名称。  
+-   将 `Name` 参数替换为直接存在于“Names”节点下的值的名称。  
   
 ## <a name="robust-programming"></a>可靠编程  
  检查注册表结构，查找适合项的位置。 例如，可能需要打开当前用户的 Software 项，并用公司的名称创建一项。 然后将注册表值添加到公司的项上。  
@@ -77,8 +78,9 @@ key.Close();
   
  即使注册表项受访问控制列表 (ACL) 保护，在注册表中以纯文本形式存储机密信息（例如密码）也不安全。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.IO?displayProperty=fullName>   
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [文件系统和注册表（C# 编程指南）](../../../csharp/programming-guide/file-system/index.md)   
  [Read, write and delete from the registry with C#](http://www.codeproject.com/Articles/3389/Read-write-and-delete-from-registry-with-C)（使用 C# 在注册表中执行读取、写入和删除操作）
+

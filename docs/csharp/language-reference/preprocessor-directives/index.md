@@ -1,60 +1,80 @@
 ---
-title: "C# 预处理器指令 | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-f1_keywords: 
-  - "cs.preprocessor"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "关键字 [C#], 预处理器指令"
-  - "预处理器指令 [C#]"
+title: "C# 预处理器指令"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+f1_keywords:
+- cs.preprocessor
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- preprocessor directives [C#]
+- keywords [C#], preprocessor directives
 ms.assetid: f2406090-b244-4f7e-ab72-3698fefed724
 caps.latest.revision: 13
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 13
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 91bb2daefbc677fad8a3dd93b37aac996234d48c
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
+
 ---
-# C# 预处理器指令
-本节包含有关以下 C\# 预处理器指令的信息。  
+# <a name="c-preprocessor-directives"></a>C# 预处理器指令
+本节包含以下 C# 预处理器指令的相关信息。  
   
- [\#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md)  
+ [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md)  
   
- [\#else](../../../csharp/language-reference/preprocessor-directives/preprocessor-else.md)  
+ [#else](../../../csharp/language-reference/preprocessor-directives/preprocessor-else.md)  
   
- [\#elif](../../../csharp/language-reference/preprocessor-directives/preprocessor-elif.md)  
+ [#elif](../../../csharp/language-reference/preprocessor-directives/preprocessor-elif.md)  
   
- [\#endif](../../../csharp/language-reference/preprocessor-directives/preprocessor-endif.md)  
+ [#endif](../../../csharp/language-reference/preprocessor-directives/preprocessor-endif.md)  
   
- [\# define](../../../csharp/language-reference/preprocessor-directives/preprocessor-define.md)  
+ [#define](../../../csharp/language-reference/preprocessor-directives/preprocessor-define.md)  
   
- [\#undef](../../../csharp/language-reference/preprocessor-directives/preprocessor-undef.md)  
+ [#undef](../../../csharp/language-reference/preprocessor-directives/preprocessor-undef.md)  
   
- [\#warning](../../../csharp/language-reference/preprocessor-directives/preprocessor-warning.md)  
+ [#warning](../../../csharp/language-reference/preprocessor-directives/preprocessor-warning.md)  
   
- [\#error](../../../csharp/language-reference/preprocessor-directives/preprocessor-error.md)  
+ [#error](../../../csharp/language-reference/preprocessor-directives/preprocessor-error.md)  
   
- [\#line](../../../csharp/language-reference/preprocessor-directives/preprocessor-line.md)  
+ [#line](../../../csharp/language-reference/preprocessor-directives/preprocessor-line.md)  
   
- [\#region](../../../csharp/language-reference/preprocessor-directives/preprocessor-region.md)  
+ [#region](../../../csharp/language-reference/preprocessor-directives/preprocessor-region.md)  
   
- [\#endregion](../../../csharp/language-reference/preprocessor-directives/preprocessor-endregion.md)  
+ [#endregion](../../../csharp/language-reference/preprocessor-directives/preprocessor-endregion.md)  
   
- [\#pragma](../../../csharp/language-reference/preprocessor-directives/preprocessor-pragma.md)  
+ [#pragma](../../../csharp/language-reference/preprocessor-directives/preprocessor-pragma.md)  
   
- [\#pragma warning](../../../csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning.md)  
+ [#pragma warning](../../../csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning.md)  
   
- [\#pragma checksum](../../../csharp/language-reference/preprocessor-directives/preprocessor-pragma-checksum.md)  
+ [#pragma checksum](../../../csharp/language-reference/preprocessor-directives/preprocessor-pragma-checksum.md)  
   
- 请参见各个主题有关更多信息和示例。  
+ 请参阅各个主题了解更多信息和示例。  
   
- 虽然编译器没有单独的预处理器，本节中介绍的处理指令，就象一个。  它们在条件编译用于帮助。  与 C 和 C\+\+ 指令不同，不能使用这些指令创建宏。  
+ 尽管编译器没有单独的预处理器，但本节中所述的指令如同经过了预处理器的处理。 这些指令用于帮助条件编译。 不同于 C 和 C++ 指令，不能使用这些指令来创建宏。  
   
- 预处理器指令必须是行上的唯一指令。  
+ 预处理器指令必须是一行中唯一的说明。  
   
-## 请参阅  
- [C\# 参考](../../../csharp/language-reference/index.md)   
- [C\# 编程指南](../../../csharp/programming-guide/index.md)
+## <a name="see-also"></a>另请参阅  
+ [C# 参考](../../../csharp/language-reference/index.md)   
+ [C# 编程指南](../../../csharp/programming-guide/index.md)
+

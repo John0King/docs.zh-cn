@@ -1,5 +1,5 @@
 ---
-title: "-link（C# 编译器选项）| Microsoft Docs"
+title: "-link（C# 编译器选项）"
 ms.date: 2015-07-20
 ms.prod: .net
 ms.technology:
@@ -34,10 +34,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 3096dd622a0b7c5fae13412a95322b934bd38b76
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: c08f2e7f13a51fb1a350acadff5224cfa8d61aaa
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="link-c-compiler-options"></a>/link（C# 编译器选项）
@@ -45,7 +46,7 @@ ms.lasthandoff: 03/13/2017
   
 ## <a name="syntax"></a>语法  
   
-```  
+```console  
 /link:fileList  
 // -or-  
 /l:fileList  
@@ -65,7 +66,7 @@ ms.lasthandoff: 03/13/2017
 > [!NOTE]
 >  在代码中创建嵌入 COM 类型的实例时，必须使用适当的接口创建该实例。 尝试使用组件类创建嵌入 COM 类型的实例会导致错误。  
   
- 若要在 [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)] 中设置 `/link` 选项，请添加程序集引用并将 `Embed Interop Types` 属性设置为 **true**。 `Embed Interop Types` 属性的默认值为 **false**。  
+ 若要在 [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] 中设置 `/link` 选项，请添加程序集引用并将 `Embed Interop Types` 属性设置为 **true**。 `Embed Interop Types` 属性的默认值为 **false**。  
   
  如果链接到本身引用了其他 COM 程序集（程序集 B）的 COM 程序集（程序集 A），则在满足以下任一条件时，还必须链接到程序集 B：  
   
@@ -73,7 +74,7 @@ ms.lasthandoff: 03/13/2017
   
 -   调用具有程序集 B 中的返回类型或参数类型的字段、属性、事件或方法。  
   
- 与 [/reference](../../../csharp/language-reference/compiler-options/reference-compiler-option.md) 编译器选项一样，`/link` 编译器选项使用 Csc.rsp 响应文件，该文件引用常用的 [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] 程序集。 如果不希望编译器使用 Csc.rsp 文件，则使用 [/noconfig](../../../csharp/language-reference/compiler-options/noconfig-compiler-option.md) 编译器选项。  
+ 与 [/reference](../../../csharp/language-reference/compiler-options/reference-compiler-option.md) 编译器选项一样，`/link` 编译器选项使用 Csc.rsp 响应文件，该文件引用常用的 [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 程序集。 如果不希望编译器使用 Csc.rsp 文件，则使用 [/noconfig](../../../csharp/language-reference/compiler-options/noconfig-compiler-option.md) 编译器选项。  
   
  `/link` 的缩写形式是 `/l`。  
   
@@ -110,3 +111,4 @@ csc /link:COMData1.dll,COMData2.dll /out:OfficeApp.exe OfficeApp.cs
  [/noconfig (C# 编译器选项)](../../../csharp/language-reference/compiler-options/noconfig-compiler-option.md)   
  [在命令行上使用 csc.exe 生成](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)   
  [互操作性概述](../../../csharp/programming-guide/interop/interoperability-overview.md)
+

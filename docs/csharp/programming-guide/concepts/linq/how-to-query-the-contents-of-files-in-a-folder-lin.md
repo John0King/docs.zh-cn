@@ -1,5 +1,5 @@
 ---
-title: "如何：查询文件夹中文件的内容 (LINQ) (C#) | Microsoft Docs"
+title: "如何：查询文件夹中文本文件的内容 (LINQ) (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -19,13 +19,14 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 9e5d5af4e8f0d9fb19e854c62799e67aedc6ff0e
-ms.lasthandoff: 03/13/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 1aa2ef581dcba5814657681daebd07be70e498b1
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
-# <a name="how-to-query-the-contents-of-files-in-a-folder-linq-c"></a>如何：查询文件夹中文件的内容 (LINQ) (C#)
+# <a name="how-to-query-the-contents-of-text-files-in-a-folder-linq-c"></a>如何：查询文件夹中文本文件的内容 (LINQ) (C#)
 此示例演示如何查询指定目录树中的所有文件、打开每个文件并检查其内容。 此类技术可用于对目录树的内容创建索引或反向索引。 此示例中执行的是简单的字符串搜索。 但是，可使用正则表达式执行类型更复杂的模式匹配。 有关详细信息，请参阅[如何：将 LINQ 查询与正则表达式合并在一起 (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-combine-linq-queries-with-regular-expressions.md)。  
   
 ## <a name="example"></a>示例  
@@ -92,3 +93,4 @@ class QueryContents
 ## <a name="see-also"></a>请参阅  
  [LINQ 和文件目录 (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-file-directories.md)   
  [LINQ to Objects (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)
+

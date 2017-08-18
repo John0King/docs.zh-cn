@@ -1,5 +1,5 @@
 ---
-title: "安全性与注册表 (Visual Basic) | Microsoft Docs"
+title: "安全性与注册表 (Visual Basic)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -31,11 +31,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: 506271ec92eaf26409b7b380d12f6ae0622f9f90
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: 2ca25e9ce82baf9d9f59ecd887aaf2cbb301f4e3
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="security-and-the-registry-visual-basic"></a>安全性与注册表 (Visual Basic)
@@ -67,3 +67,4 @@ ms.lasthandoff: 05/22/2017
 ## <a name="see-also"></a>另请参阅  
  <xref:Microsoft.VisualBasic.MyServices.RegistryProxy>   
  [读取和写入注册表](../../../../visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md)
+

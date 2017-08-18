@@ -1,5 +1,5 @@
 ---
-title: "检索段落及其样式 (C#) | Microsoft Docs"
+title: "检索段落及其样式 (C#)"
 ms.custom: 
 ms.date: 2015-07-20
 ms.prod: .net
@@ -14,11 +14,11 @@ ms.assetid: c2f767f8-57b1-4b4b-af04-89ffb1f7067d
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: fddaa5e25befc40278888c0b401ad39a61e8e9d4
-ms.lasthandoff: 03/13/2017
-
+ms.translationtype: HT
+ms.sourcegitcommit: 306c608dc7f97594ef6f72ae0f5aaba596c936e1
+ms.openlocfilehash: db420c0aca9edadb8009556ebf476f196ee7641a
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="retrieving-the-paragraphs-and-their-styles-c"></a>检索段落及其样式 (C#)
@@ -35,7 +35,7 @@ ms.lasthandoff: 03/13/2017
 xDoc.Root.Element(w + "body").Descendants(w + "p")  
 ```  
   
- 此表达式与前一示例[查找默认段落样式 (C#)](../../../../csharp/programming-guide/concepts/linq/finding-the-default-paragraph-style.md) 中的查询的源相似。 主要区别是它使用 <xref:System.Xml.Linq.XContainer.Descendants%2A> 轴而不是 <xref:System.Xml.Linq.XContainer.Elements%2A> 轴。 该查询使用 <xref:System.Xml.Linq.XContainer.Descendants%2A> 轴，因为在包含节的文档中，段落将不是正文元素的直接子元素；而是在层次结构中的两个级别之下。 通过使用 <xref:System.Xml.Linq.XContainer.Descendants%2A> 轴，无论文档是否使用节，代码都能运行。  
+ 此表达式与前一示例[查找默认段落样式 (C#)](../../../../csharp/programming-guide/concepts/linq/finding-the-default-paragraph-style.md) 中的查询的源相似。 主要区别是它使用 <xref:System.Xml.Linq.XContainer.Descendants%2A> 轴，而不是 <xref:System.Xml.Linq.XContainer.Elements%2A> 轴。 该查询使用 <xref:System.Xml.Linq.XContainer.Descendants%2A> 轴，因为在包含节的文档中，段落将不是正文元素的直接子元素；而是在层次结构中的两个级别之下。 通过使用 <xref:System.Xml.Linq.XContainer.Descendants%2A> 轴，无论文档是否使用节，代码都能运行。  
   
 ## <a name="example"></a>示例  
  该查询使用 `let` 子句来确定包含样式节点的元素。 如果没有任何元素，则将 `styleNode` 设置为 `null`：  
@@ -44,7 +44,7 @@ xDoc.Root.Element(w + "body").Descendants(w + "p")
 let styleNode = para.Elements(w + "pPr").Elements(w + "pStyle").FirstOrDefault()  
 ```  
   
- `let` 子句首先使用<xref:System.Xml.Linq.XContainer.Elements%2A> 轴查找名为 `pPr` 的所有元素，然后使用 <xref:System.Xml.Linq.Extensions.Elements%2A> 扩展方法查找名为 `pStyle` 的所有子元素，最后使用 <xref:System.Linq.Enumerable.FirstOrDefault%2A> 标准查询运算符将集合转换为单一实例。 如果集合为空，则将 `styleNode` 设置为 `null`。 这是一个用于查找 `pStyle` 子代节点的有用方法。 请注意，如果 `pPr` 子节点不存在，代码不会通过引发异常而运行失败；相反，它会将 `styleNode` 设置为 `null`，这是此 `let` 子句的期望行为。  
+ `let` 子句首先使用 <xref:System.Xml.Linq.XContainer.Elements%2A> 轴，查找所有名为 `pPr` 的元素，然后使用 <xref:System.Xml.Linq.Extensions.Elements%2A> 扩展方法，查找所有名为 `pStyle` 的子元素，最后使用 <xref:System.Linq.Enumerable.FirstOrDefault%2A> 标准查询运算符，将集合转换为单一实例。 如果集合为空，则将 `styleNode` 设置为 `null`。 这是一个用于查找 `pStyle` 子代节点的有用方法。 请注意，如果 `pPr` 子节点不存在，代码不会通过引发异常而运行失败；相反，它会将 `styleNode` 设置为 `null`，这是此 `let` 子句的期望行为。  
   
  该查询投影一个具有两个成员 `StyleName` 和 `ParagraphNode` 的匿名类型的集合。  
   
@@ -146,3 +146,4 @@ StyleName:Code
   
 ## <a name="see-also"></a>请参阅  
  [教程：操作 WordprocessingML 文档中的内容 (C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)
+
